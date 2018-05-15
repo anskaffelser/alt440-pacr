@@ -1,0 +1,24 @@
+include::settings.adoc[]
+
+= {doctitle}
+v{revision}
+:description: This specification is a work in progress, and is developed by an independent group, based on work done by {bii} and {tc440}.
+:doctype: book
+:icons: font
+:stem:
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+
+{description}
+
+:leveloffset: +1
+
+include::definitions/index.adoc[]
+
+include::model/index.adoc[]
+
+:leveloffset: -1

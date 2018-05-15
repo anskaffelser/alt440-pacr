@@ -1,0 +1,1041 @@
+[[information-model-pac]]
+= Information model Pre-award catalogue
+
+.Information model Pre-award catalogue
+[cols="1,2,4,2",options="header"]
+
+|====
+
+|Card.
+|Business term
+|Definition
+|Data type
+
+|Catalogue
+|
+|
+|
+
+|1..1
+|Catalogue identifier
+|The identifier that enables referencing of the document instance for various purposes including referencing between transactions that are part of the same process.
+An catalogue instance must contain an identifier.
+|
+
+|0..1
+|Catalogue version
+|The version of the catalogue revision.
+To support updating the catalogue after the first submission a revision indicator is sometimes needed to differentiate the catalogue versions from each other.
+This ID ensures the catalogue provider and catalogue receiver always refer to the correct and valid version of the catalogue.
+|Text
+
+|0..1
+|Source catalogue identifier
+|Identifies the existing, already received catalogue that this message should be acted upon, so that no discrepancies occur between the suppliers and customers information.
+|
+
+|0..1
+|Catalogue action code
+|Identifies how a received catalogue should be used against existing catalogue lines sent in previous catalogues, so that no discrepancies occur between the suppliers and customers information.
+Describes how to treat existing items, not part of the received catalogue and those that are included (unchanged, changed or deleted). Default action is to fully replace the source catalogue.
+|Code
+
+|0..1
+|Catalogue name
+|A name of the catalogue for general reference.
+|Text
+
+|1..1
+|Catalogue issue date
+|The date on which the catalogue instance was issued.
+|Date
+
+|0..1
+|General payment conditions
+|Textual description of the general payment conditions that apply to all items in the catalogue.
+|
+
+|1..1
+|Process control
+|Information about the specification that apply to the transaction.
+|
+
+|1..1
+|Business process type identifier
+|Identifies the business process context in which the transaction appears.
+It enables the buyer to process the invoice in an appropriate way.
+|Identifier
+
+|1..1
+|Specification identification
+|An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.
+This identifies the European invoice norm, as well as any extensions applied.
+The identification may include the version of the specification.
+|Code
+
+|1..1
+|Catalogue validity period
+|The period during which the content of the catalogue is valid and can be used for trade.
+|
+
+|0..1
+|Period start date
+|The date when the invoice period starts.
+The date is the first day of the period.
+|Date
+
+|0..1
+|Period end date
+|The date on which the period ends.
+The date is the last day of the period.
+|Date
+
+|0..1
+|Contract reference
+|A reference to a contract that can be identified.
+|
+
+|1..1
+|Contract identifier
+|The identification of a contract.
+|Text
+
+|0..1
+|Contract type
+|The type of a contract that is being referred to (such as framework agreement) expressed as a code.
+|Text
+
+|0..1
+|Contract issue date
+|The date on which the contract is issued.
+|Date
+
+|0..1
+|Contract subdivision
+|A relevant subdivision of the contract a catalogue refers to.
+|
+
+|1..1
+|Catalogue provider
+|The party that sends the catalogue.
+The seller or a catalogue repository.
+|
+
+|0..1
+|Catalogue provider electronic address identifier
+|The electronic address of the party that sends the catalogue.
+A catalogue may contain the providing party electronic address.
+The address can be of any format and the format should be identified in the message.
+|Identifier
+
+|0..n
+|Catalogue provider standard identifier
+|The standard identifier of the party that sends the catalogue.
+Use in the absence of or in addition to Party Name.  Use an identifier known to the document recipient.
+|Identifier
+
+|0..1
+|Catalogue provider name
+|The name of the party that sends the catalogue.
+Use in the absence of or in addition to Party Identifier.
+|
+
+|0..1
+|Catalogue provider address
+|Address information.
+|
+
+|0..1
+|Address line 1
+|The main address line in an address.
+Usually the street name and number or post office box.
+|Text
+
+|0..1
+|Address line 2
+|An additional address line in an address that can be used to give further details supplementing the main line.
+|Text
+
+|0..1
+|City
+|The common name of a city where the address is.
+|Text
+
+|0..1
+|Post code
+|The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.
+|Text
+
+|0..1
+|Country subdivision
+|The subdivision of a country such as region, county, state, province etc.
+|Text
+
+|0..1
+|Country code
+|A code that identifies the country.
+The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.
+|Code
+
+|1..1
+|Catalogue receiver
+|The party to which the catalogue is sent.
+Buyer or a catalogue repository on his behalf.
+|
+
+|0..1
+|Catalogue receiver electronic address identifier
+|The electronic address of the party to which the catalogue is sent.
+A catalogue may contain the receiving party electronic address.
+The address can be of any format and the format should be identified in the message.
+|Identifier
+
+|0..1
+|Catalogue receiver standard identifier
+|The standard identifier of the party to which the catalogue is sent.
+Use in the absence of or in addition to Party Name.  Use an identifier known to the document recipient.
+|Identifier
+
+|0..1
+|Catalogue receiver name
+|The name of the party to which the catalogue is sent.
+Use in the absence of or in addition to Party Identifier.
+|
+
+|0..1
+|Catalogue receiver address
+|Address information.
+|
+
+|0..1
+|Address line 1
+|The main address line in an address.
+Usually the street name and number or post office box.
+|Text
+
+|0..1
+|Address line 2
+|An additional address line in an address that can be used to give further details supplementing the main line.
+|Text
+
+|0..1
+|City
+|The common name of a city where the address is.
+|Text
+
+|0..1
+|Post code
+|The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.
+|Text
+
+|0..1
+|Country subdivision
+|The subdivision of a country such as region, county, state, province etc.
+|Text
+
+|0..1
+|Country code
+|A code that identifies the country.
+The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.
+|Code
+
+|0..1
+|Catalogue supplier
+|The party that provides the items specified in the catalog
+|
+
+|0..1
+|Catalogue supplier standard identifier
+|The standard identifier of the party that provides the items specified in the catalogue.
+Use in the absence of or in addition to Party Name.  Use an identifier known to the document recipient.
+|Identifier
+
+|0..1
+|Catalogue supplier name
+|The party that provides the items specified in the catalogue.
+Use in the absence of or in addition to Party Identifier.
+|
+
+|0..1
+|Catalogue supplier address
+|Address information.
+|
+
+|0..1
+|Address line 1
+|The main address line in an address. Usually the street name and number or post office box.
+|Text
+
+|0..1
+|Address line 2
+|An additional address line in an address that can be used to give further details supplementing the main line.
+|Text
+
+|0..1
+|City
+|The common name of a city where the address is.
+|Text
+
+|0..1
+|Post code
+|The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.
+|Text
+
+|0..1
+|Country subdivision
+|The subdivision of a country such as region, county, state, province etc.
+|Text
+
+|0..1
+|Country code
+|A code that identifies the country.
+The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.
+|Code
+
+|0..1
+|Catalogue supplier contact
+|Used to provide contacting information for a party in general or a person.
+|
+
+|0..1
+|Contact point
+|The name of the contact point.
+|Text
+
+|0..1
+|Contact telephone number
+|A phone number for the contact point.
+|Text
+
+|0..1
+|Contact email address
+|An e-mail address for the contact point.
+|Text
+
+|0..1
+|Catalogue customer
+|The party who may order from the catalogue.
+|
+
+|0..1
+|Catalogue customer standard identifier
+|Standard identifier of the party who may order from the catalogue.
+Use in the absence of or in addition to Party Name.  Use an identifier known to the document recipient.
+|Identifier
+
+|0..1
+|Catalogue customer name
+|Name of the party who may order from the catalogue.
+Use in the absence of or in addition to Party Identifier.
+|
+
+|0..1
+|Catalogue customer contact
+|Used to provide contacting information for a party in general or a person.
+|
+
+|0..1
+|Contact point
+|The name of the contact point.
+|Text
+
+|0..1
+|Contact telephone number
+|A phone number for the contact point.
+|Text
+
+|0..1
+|Contact email address
+|An e-mail address for the contact point.
+|Text
+
+|1..n
+|Catalogue line
+|Detailed information of an item, price and its composition  in a catalogue.
+|
+
+|1..1
+|Catalogue line identifier
+|Each line must have an identifier that is unique within the document to make it possible to reference the line.
+For example, from other documents.
+|
+
+|0..1
+|Catalogue line action code
+|Identifies how a received catalogue line should be used against existing catalogue lines sent in previous catalogues, so that no discrepancies occur between the suppliers and customers information.
+See rule on catalogue version ID.
+When using Update or Delete codes, the entire Catalogue Line is updated or deleted.
+|Code
+
+|0..1
+|Catalogue line orderable indicator
+|Indicates whether the catalogue line can be ordered.
+Default value is True i.e. Item on the Catalogue Line can be ordered.
+Can be used to indicate if an Item is temporarily out of stock (via a Catalogue Update).
+|Indicator
+
+|0..1
+|Orderable unit
+|Unit to be used to order this item.
+The same item can be described in more than one catalogue line with different orderable units.
+E.g. catalogue line 1 describes item X that can be ordered in boxes at a given price.
+Line 2 may describe the same item X as orderable in pallets where the price is lower.
+|Code
+
+|0..1
+|Orderable unit factor rate
+|The factor by which the Item net price of an unit of an item can be converted to the orderable unit.
+|Numeric
+
+|0..1
+|Order quantity increment
+|The increment of orderable units that can be ordered.
+|Numeric
+
+|0..1
+|Minimum order quantity
+|UOM should be stated  by using recommendation 20 v10 The minimum number of orderable units that can be ordered according to details provided in the catalogue line, such as price.
+|Quantity
+
+|0..1
+|Maximum order quantity
+|UOM should be stated  by using recommendation 20 v10. The maximum number of orderable units that can be ordered according to details provided in the catalogue line, such as price.
+|Quantity
+
+|0..1
+|Minimum quantity guaranteed for delivery
+|UOM should be stated  by using recommendation 20 v10 The minimum quantity of an item that is guaranteed by the seller to be delivered.
+|Quantity
+
+|0..1
+|Catalogue line warranty information
+|Warranty information that applies to the catalogue line item.
+|
+
+|0..1
+|Contracted item indicator
+|Indicates if the item is offered in accordance to an existing contract.
+|Indicator
+
+|0..1
+|Transaction conditions
+|Textual description of the specific transaction conditions (purchasing, sales, payment) for an item.
+|
+
+|0..1
+|Transaction conditions code
+|Coded description of the specific transaction conditions (purchasing, sales, payment) for an item.
+They can be: ”VQ”: Variable measure indicator "RC”: Returnable unit, indicator ”SER”: Trade item is a service ”MTO”: Trade item is produced after it has been ordered
+|Code
+
+|1..1
+|Catalogue item details
+|
+|
+
+|1..1
+|Item name
+|A name for an item.
+Either the Item name or the Item description shall be provided.
+|Text
+
+|0..n
+|Item description
+|A free text detailed description of an item.
+A detailed description of the item.
+Use one description pr.
+language
+|Text
+
+|0..1
+|Item brand name
+|Name of the brand of the item to allow economic operators to distinctively describe an item in  their catalogue or pre-award catalogue.
+|
+
+|1..1
+|Item sellers identifier
+|An identifier, assigned by the seller, for the item.
+|Identifier
+
+|0..1
+|Item standard identifier
+|An item identifier based on a registered scheme.
+|Identifier
+
+|0..1
+|Manufacturers item identifier
+|The manufacturer's identifier for the item.
+|Identifier
+
+|0..n
+|Item key words
+|Used to specify searchable keywords and/or synonyms for the item." E. g., Item name = Shiny Smile / Item keyword = Toothpaste"
+|
+
+|0..n
+|External item specification URI
+|URI reference to external item information or specifications.
+E.g. web address
+|
+
+|0..1
+|Item VAT category code
+|The VAT category code for the invoiced item.
+|Code
+
+|0..1
+|Item VAT rate
+|The VAT rate, represented as percentage that applies to the item.
+A VAT rate of zero percent is applied for calculation purposes even if the item is outside the scope of VAT.
+Unless specific trade reasons apply such as exemptions.
+|Numeric
+
+|0..1
+|Item origin country
+|The code identifying the country from which the item originates.
+The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.
+Used to provide the country from which the item has its origin.
+Commonly used in cross border trade for statistical and customs purposes.
+|Code
+
+|0..n
+|Hazardous item UNDG code
+|Specification of the hazardous nature of an item according to the UNDG classification schema.
+Provides detail of the classification and nature of a hazardous item.
+|Text
+
+|0..n
+|Hazardous class identifier
+|Specification of the hazardous nature of an item according to a classification schema.
+Provides detail of the classification and nature of a hazardous item.
+|Text
+
+|0..1
+|Item in-stock indicator
+|Indicates whether an item is in the supplier's stock.
+If not in stock the supplier has to order the item himself.
+|Indicator
+
+|0..1
+|Item expiry date
+|The date on which the item will expire.
+Used to express the expiry date of the item or items in the line instance.
+|Date
+
+|0..1
+|Item best before date
+|The date until when the relevant item qualities will remain at their best.
+Used to express the best before date of the item or items in the line instance.
+|Date
+
+|0..1
+|Item batch number
+|Identification of the production batch in which the relevant items were produced.
+Identifies the production batch that the item(s) listed in the catalogue line were part of.
+|Text
+
+|0..1
+|Item net quantity
+|UOM should be stated by using recommendation 20 v10 The net quantity of the item that is contained in each consumable unit, excluding any packaging materials.
+|Quantity
+
+|0..1
+|Manufacturer name
+|The name of the manufacturer of the item.
+|
+
+|0..1
+|Item dimension description
+|Textual description of the item's dimensions.
+Used if the dimension oft he item cannot be described using standardized properties, e.g., length, height or width.
+See also the Guideline on Usage of Classification Systems for using standardized properties.
+|
+
+|0..n
+|Item classification
+|
+|
+
+|1..1
+|Item classification code
+|A code for classifying the item by its type or nature.
+|Code
+
+|0..1
+|Item classification name
+|The name of the commodity classification for this item.
+|Text
+
+|0..n
+|Item label
+|Information about the items environmental, social, ethical and quality type of labelling.
+|Class
+
+|0..1
+|Item label name
+|The name of the product label.
+|Text
+
+|0..1
+|Item label value
+|The label value that applies to the item.
+|Text
+
+|0..1
+|Item label type
+|The label type such environmental, quality, social etc.
+|Code
+
+|0..1
+|Item label reference
+|A reference to where the label specification can be found, e.g. a URI.
+|URI
+
+|0..1
+|Item label issuer party name
+|Name of the party issuing the item label.
+|Text
+
+|0..n
+|Item means of proof
+|A means of proof according to to Directives 2014/24/EU.
+|Class
+
+|1..1
+|Item means of proof idenifier
+|A unique identifier being unique in a transcaction for a Item means of proof
+|Identifier
+
+|1..1
+|Item means of proof type code
+|A code specifying the type of the Item means of proof according to Directives 2014/24/EU, e.g., if it a label, test report etc.
+|Code
+
+|0..n
+|Item means of proof name
+|Name of a item means of proof
+|Text
+
+|0..1
+|Item means of proof reference
+|A reference to an external specification of the provided means of proof.
+|URI
+
+|1..1
+|Item requirement reference
+|A reference to the corresponding Item requirement given in the corresponding pre-award catalogue request.
+|Identifier
+
+|0..n
+|Item property
+|An attribute or component of an item.
+Use for structured specification of Item Properties.
+Any properties of the item that cannot be specified in other elements.
+See also the Guideline on Usage of Classification System.
+|Class
+
+|1..1
+|Item property name
+|The name of the property.
+The name must be sufficiently descriptive to define the value.
+The definition may be supplemented with the property unit of measure when relevant.
+E.g. Size, Color, Year.
+|Text
+
+|1..1
+|Item property value
+|The value of the item property.
+E.g. XXL, Blue, 2007.
+|
+
+|0..1
+|Item property unit of measure
+|The unit of measure in which the property value is stated, if relevant.
+May not be relevant when properties are descriptive.
+|Code
+
+|0..1
+|Item property classification code
+|Code for the item property according to a property code system
+|Code
+
+|0..n
+|Item image
+|Information about an attached document.
+The main image for the item
+|
+
+|0..1
+|Attachment identifier
+|An identifier that can be used to reference the attached document, such as an unique identifier.
+|Identifier
+
+|0..n
+|Attachment description
+|A short description of the attached document
+|Text
+
+|0..1
+|Attachment description code
+|A functional description of the attachment expressed as code.
+|Code
+
+|0..1
+|Attached document
+|An attached document embedded as binary object.
+Attached document is used when documentation shall be stored with the invoice for future reference or audit purposes.
+|Binary Object
+
+|0..n
+|Attached item specification
+|Information about an attached document.
+|
+
+|0..1
+|Attachment identifier
+|An identifier that can be used to reference the attached document, such as an unique identifier.
+|Identifier
+
+|0..n
+|Attachment description
+|A short description of the attached document
+|Text
+
+|0..1
+|Attachment description code
+|A functional description of the attachment expressed as code.
+|Code
+
+|0..1
+|Attached document
+|An attached document embedded as binary object.
+Attached document is used when documentation shall be stored with the invoice for future reference or audit purposes.
+|Binary Object
+
+|0..1
+|Catalogue line validity period
+|The period during which the information in the catalogue line is valid.
+An orderable catalogue item is no longer orderable after the validity period expires.
+Used for example for promotional items or prices.
+|
+
+|0..1
+|Period start date
+|The date when the invoice period starts.
+The date is the first day of the period.
+|Date
+
+|0..1
+|Period end date
+|The date on which the period ends.
+The date is the last day of the period.
+|Date
+
+|0..n
+|Catalogue item price
+|Used to specify the price of the item.
+Can also be used to specify prices that may be dependent on quantities and/or locations.
+|
+
+|0..1
+|Item net price
+|The price of an item, exclusive of VAT, after subtracting item price discount. "The net price has to be equal with the gross price less the item price discount.
+The lists of valid currencies are registered with the ISO 4217 Maintenance Agency ""Codes for the representation of currencies and funds"". It is recommended to use the alpha-3 representation." The price is given for each orderable unit.
+|Amount
+
+|0..1
+|Item price lead time
+|This is the time until the item is ready for delivery.
+|Measure
+
+|0..1
+|Item price type
+|The type of the price so that the receiver knows if the price may be changed is indicative.
+When prices are temporary the validity period for the price should be defined by stating the price validity period.
+|Code
+
+|0..1
+|Item price quantity threshold
+|UOM should be stated  by using recommendation 20 v10 The minimum quantity of the item that can be ordered to a given price.
+|Quantity
+
+|0..1
+|Item price quantity ceiling
+|UOM should be stated  by using recommendation 20 v10 The maximum quantity of the item that can be ordered to a given price.
+|Quantity
+
+|0..1
+|Price validity period
+|The period of time when the item can be ordered to the given price
+|
+
+|0..1
+|Period start date
+|The date when the invoice period starts.
+The date is the first day of the period.
+|Date
+
+|0..1
+|Period end date
+|The date on which the period ends.
+The date is the last day of the period.
+|Date
+
+|0..n
+|Price location
+|Address information.
+Use to specify the location or area where this price applies.
+|
+
+|0..1
+|City
+|The common name of a city where the address is.
+|Text
+
+|0..1
+|Country subdivision
+|The subdivision of a country such as region, county, state, province etc.
+|Text
+
+|0..1
+|Country code
+|A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.
+|Code
+
+|0..n
+|Item comparison
+|Price information based on a standard quantity unit to enable price comparison.
+Used to provide price information based on a standard quantity unit to enable price comparison.
+|
+
+|0..1
+|Standard unit of measure
+|The standard unit of measure used to enable comparison of item price to other similar items.
+|
+
+|0..1
+|Standard unit quantity
+|The quantity of standard units that are in each consumable unit.
+E.g. if consumable units are bottles and each bottle contains 0,333 liters the standard unit quantity is 0,333
+|Numeric
+
+|0..1
+|Standardized unit price
+|The item price based on a standardized unit.
+E.g. Price of each liter.
+See guideline on Items and packing units in a catalogue.
+|Amount
+
+|0..n
+|Component related item
+|A component, accessory or other related item to an item in the catalogue.
+Catalogue items that may be components of this item.
+|
+
+|0..1
+|Item standard identifier
+|An item identifier based on a registered scheme.
+Indicate the seller's identifier for the related item.
+|Identifier
+
+|0..1
+|Related item quantity
+|UOM should be stated  by using recommendation 20 v10 Quantity of a related item.
+|Quantity
+
+|0..n
+|Required related item
+|A component, accessory or other related item to an item in the catalogue.
+Catalogue items that may be required with this item.
+|
+
+|0..1
+|Item standard identifier
+|An item identifier based on a registered scheme.
+Indicate the seller's identifier for the related item.
+|Identifier
+
+|0..1
+|Related item quantity
+|UOM should be stated  by using recommendation 20 v10 Quantity of a related item.
+|Quantity
+
+|0..n
+|Accessory related item
+|A component, accessory or other related item to an item in the catalogue.
+Items that can be used as optional accessories with the catalogue line item.
+|
+
+|0..1
+|Item standard identifier
+|An item identifier based on a registered scheme.
+Indicate the seller's identifier for the related item.
+|Identifier
+
+|0..1
+|Related item quantity
+|UOM should be stated  by using recommendation 20 v10 Quantity of a related item.
+|Quantity
+
+|0..1
+|Replaced item
+|A component, accessory or other related item to an item in the catalogue.
+The item that is being replaced with this catalogue line item.
+|
+
+|0..1
+|Item standard identifier
+|An item identifier based on a registered scheme.
+Indicate the seller's identifier for the related item.
+|Identifier
+
+|0..1
+|Related item quantity
+|UOM should be stated  by using recommendation 20 v10 Quantity of a related item.
+|Quantity
+
+|0..1
+|Item packaging
+|Item packaging information refer to the orderable unit and describe how that unit is packed, at what hierarchical level the unit is and its relation to other levels of packaging.
+|
+
+|0..1
+|Packed units
+|The packaging the item is available inside the orderable unit (next lower level packaging), and which contains the number of the unit described in Packed quantity.
+The value should be a valid UOM code like CS for case
+|Code
+
+|0..1
+|Packed quantity
+|The number of packed units that are in the orderable unit.
+E.g. if the orderable unit is a pallet that contains 30 boxes then the packed units are BOX and the packed quantity is 30.
+|Numeric
+
+|0..1
+|Consumable unit
+|The unit in which the item described in this line is intended to be consumed in or sold in to the end buyer.
+For example a bottle.
+|
+
+|0..1
+|Consumable unit quantity
+|UOM should be stated  by using recommendation 20 v10 Specifies the number of consumable units that are in each orderable unit.
+|Quantity
+
+|0..1
+|Package volume
+|The volume of the item including the packaging.
+|Measure
+
+|0..1
+|Package net weight approximate
+|The approximate package net weight of the item.
+The net weight is the weight of the item without the weight of the package.
+|Measure
+
+|0..1
+|Package net weight exact
+|The exact package net weight of the item.
+The net weight is the weight of the item without the weight of the package.
+|Measure
+
+|0..1
+|Orderable unit handling information
+|Information on how to package and handle items.
+Outside, gross measures of the orderable unit as it is packed and including the packaging with the purpose of supporting handling and shipping planning.
+|
+
+|0..1
+|Handling unit packaging level
+|The packaging level of the orderable unit.
+|Code
+
+|0..1
+|Handling unit logistic requirements
+|Description of requirements that relate to the transport of the item itself or the orderable unit in which it is contained.
+|
+
+|0..1
+|Handling unit height
+|Height of the handling unit.
+The vertical height of the orderable unit.
+|Measure
+
+|0..1
+|Handling unit length
+|Length of the handling unit.
+The horizontal measure of the longer site of the orderable unit
+|Measure
+
+|0..1
+|Handling unit width
+|Width of the handling unit.
+The horizontal measure of the shorter side of the orderable unit.
+|Measure
+
+|0..1
+|Handling unit gross weight
+|The gross weight of a handling unit.
+The weight of the orderable unit including its packaging.
+|Measure
+
+|0..1
+|Handling unit minimum storage temperature
+|Minimum storage temperature for the handling unit.
+The lower margin of the recommended storage temperature range for the item.
+|Measure
+
+|0..1
+|Handling unit maximum storage temperature
+|Maximum storage temperature for the handling unit.
+The upper margin of the recommended storage temperature range for the item.
+|Measure
+
+|0..1
+|Handling unit minimum storage humidity
+|Minimum storage humidity for the handling unit.
+|Measure
+
+|0..1
+|Handling unit maximum storage humidity
+|Maximum storage humidity for the handling unit.
+|Measure
+
+|0..1
+|Delivery location
+|Address information.
+The location where the line item is made available according to the specification stated in the catalogue line.
+|
+
+|0..1
+|Address line 1
+|The main address line in an address.
+Usually the street name and number or post office box.
+|Text
+
+|0..1
+|Address line 2
+|An additional address line in an address that can be used to give further details supplementing the main line.
+|Text
+
+|0..1
+|City
+|The common name of a city where the address is.
+|Text
+
+|0..1
+|Post code
+|The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.
+|Text
+
+|0..1
+|Country subdivision
+|The subdivision of a country such as region, county, state, province etc.
+|Text
+
+|0..1
+|Country code
+|A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.
+|Code
+
+|====
