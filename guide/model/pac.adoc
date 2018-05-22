@@ -2,7 +2,7 @@
 = Information model Pre-award catalogue
 
 .Information model Pre-award catalogue
-[cols="1,2,4,2",options="header"]
+[cols="1,2,8,1",options="header"]
 
 |====
 
