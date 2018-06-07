@@ -2,7 +2,7 @@
 = Information model Pre-award catalogue request
 
 .Information model Pre-award catalogue request
-[cols="1,2,8,1,3",options="header"]
+[cols="1,2,8,1,3,3",options="header"]
 |====
 |Card.
 |Business term
