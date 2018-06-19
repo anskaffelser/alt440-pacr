@@ -494,7 +494,7 @@ A property is describes a characteristic of an item, e.g., the lenght, width and
 |
 
 |1..1
-|Period start dat[e
+|Period start date
 |The date when the period starts
 |Date
 |
