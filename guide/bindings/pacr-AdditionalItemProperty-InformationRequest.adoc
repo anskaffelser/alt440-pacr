@@ -1,0 +1,30 @@
+= Syntax bindigs Pre-award catalogue request
+
+== Information request  ==
+
+`cac:AdditionalItemProperty[cac:ItemPropertyGroup[0]/cbc:NameCode='Information_request']`
+
+.UBL Syntax binding
+[cols="^,<,<",options="header"]
+|===
+|Card
+|Name
+|Description
+
+|
+|`cbc:ID`
+|Information request identifier
+
+|
+|`cbc:Name`
+|Information request name
+
+|
+|`cbc:NameCode/@listSchemeURI`
+|Information request reference
+
+|
+|`cbc:ImportanceCode`
+|Information request relevance
+
+|====

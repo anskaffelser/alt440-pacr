@@ -1,0 +1,50 @@
+= Syntax bindigs Pre-award catalogue request
+
+== Item property request  ==
+
+`cac:AdditionalItemProperty[cac:ItemPropertyGroup[0]/cbc:NameCode='Item_property_request']`
+
+.UBL Syntax binding
+[cols="^,<,<",options="header"]
+|===
+|Card
+|Name
+|Description
+
+|
+|`cbc:ID`
+|Item property identifier
+
+|
+|`cbc:Name`
+|Item property name
+
+|
+|`cbc:TestMethod` (?)
+|Item property description
+
+|
+|`cbc:NameCode` <<pacr-NameCode.adoc,[+]>>
+|Item property classification
+
+|
+|`cbc:ImportanceCode`
+|Item property relevance
+
+|
+|`cbc:ValueQuantity`
+|Item property value
+
+|
+|`cbc:ValueQuantity/@unitCode`
+|Item property unit of measure
+
+|
+|`cac:ItemPropertyRange/cbc:MinimumValue`
+|Item property minimum value
+
+|
+|`cac:ItemPropertyRange/cbc:MaximumValue`
+|Item property maximum value
+
+|====

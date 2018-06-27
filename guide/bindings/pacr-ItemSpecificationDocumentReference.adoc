@@ -1,0 +1,38 @@
+= Syntax bindigs Pre-award catalogue request
+
+== Additional document ==
+
+`cac:ItemSpecificationDocumentReference[cbc:DocumentTypeCode='Additional_document']`
+
+.UBL Syntax binding
+[cols="^,<,<",options="header"]
+|===
+|Card
+|Name
+|Description
+
+|
+|`cbc:ID`
+|Document identifier
+
+|
+|`cbc:Name`
+|Document name
+
+|
+|`cbc:DocumentDescription`
+|Document description
+
+|
+|`cac:ResultOfVerification/cbc:ValidationResultCode`
+|Document digest
+
+|
+|`cac:ResultOfVerification/cbc:ValidateProcess`
+|Document digest method code
+
+|
+|External document URI
+|`cac:Attachment/cac:ExternalReference/cbc:URI`
+
+|===

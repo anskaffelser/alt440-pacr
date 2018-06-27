@@ -1,0 +1,22 @@
+= Syntax bindigs Pre-award catalogue request
+
+== Item request classification ==
+
+`CommodityClassification`
+
+.UBL Syntax binding
+[cols="^,<,<",options="header"]
+|===
+|Card
+|Name
+|Description
+
+|
+|`cbc:ItemClassificationCode`
+|Item request classification code
+
+|
+|`cbc:ItemClassificationCode/@name`
+|Item request classification name
+
+|====

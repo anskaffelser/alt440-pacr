@@ -1,0 +1,38 @@
+= Syntax bindigs Pre-award catalogue request
+
+== Postal Address ==
+
+`cac:PostalAddress`
+
+.UBL Syntax binding
+[cols="^,<,<",options="header"]
+|===
+|Card
+|Name
+|Description
+
+|
+|`cac:AddressLine[0]/cbc:Line`
+|Address line 1
+
+|
+|`cac:AddressLine[1]/cbc:Line`
+|Address line 2
+
+|
+|`cbc:CityName`
+|City
+
+|
+|`cbc:PostalZone`
+|Post code
+
+|
+|`cac:Country/cbc:IdentificationCode`
+|Country code
+
+|
+|`cbc:CountrySubentityCode`
+|Country subdivision code
+
+|===

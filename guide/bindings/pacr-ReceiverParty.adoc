@@ -1,0 +1,38 @@
+= Syntax bindigs Pre-award catalogue request
+
+== Economic operator ==
+
+`cac:ReceiverParty`
+
+.UBL Syntax binding
+[cols="^,<,<",options="header"]
+|===
+|Card
+|Name
+|Description
+
+|
+|`cac:PartyIdentification/cbc:ID`
+|Economic operator identifier
+
+|
+|`cac:PartyName/cbc:Name`
+|Economic operator name
+
+|
+|`cac:EndpointID`
+|Economic operator electronic address identifier
+
+|
+|`cac:PhysicalLocation[cbc:LocationTypeCode='Country_of_registation']/cac:Address/cac:Country/cbc:IdentificationCode`
+|Country of registration
+
+|
+|`cac:PostalAddress` <<pacr-PostalAddress.adoc,[+]>>
+|Postal address
+
+|
+|`cac:Contact` <<pacr-Contact.adoc,[+]>>
+|Contact
+
+|====
