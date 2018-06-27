@@ -1,0 +1,27 @@
+= Syntax bindigs Pre-award catalogue request
+
+== Contact ==
+
+`cac:Contact`
+
+.UBL Syntax binding
+[cols="^,<,<",options="header"]
+|===
+|Card
+|Name
+|Description
+
+|
+|`cbc:ElectronicMail`
+|Contact point
+
+|
+|`cbc:Telephone`
+|Contact telephone number
+
+|
+|`cbc:ElectronicMail`
+|Contact email address
+
+
+|===

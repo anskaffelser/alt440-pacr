@@ -1,0 +1,38 @@
+= Syntax bindigs Pre-award catalogue request
+
+== Contracting body ==
+
+`cac:ProviderParty`
+
+.UBL Syntax binding
+[cols="^,<,<",options="header"]
+|===
+|Card
+|Name
+|Description
+
+|
+|`cac:PartyIdentification/cbc:ID`
+|Contracting body identifier
+
+|
+|`cac:PartyName/cbc:Name`
+|Contracting body name
+
+|
+|`cac:EndpointID`
+|Contracting body electronic address identifier
+
+|
+|`cac:PhysicalLocation[cbc:LocationTypeCode='Country_of_registation']/cac:Address/cac:Country/cbc:IdentificationCode`
+|Country of registration
+
+|
+|`cac:PostalAddress` <<pacr-PostalAddress.adoc,[+]>>
+|Postal address
+
+|
+|`cac:Contact` <<pacr-Contact.adoc,[+]>>
+|Contact
+
+|====

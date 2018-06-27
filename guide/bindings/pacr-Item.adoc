@@ -1,0 +1,66 @@
+= Syntax bindigs Pre-award catalogue request
+
+== Item request ==
+
+`cac:Item`
+
+.UBL Syntax binding
+[cols="^,<,<",options="header"]
+|===
+|Card
+|Name
+|Description
+
+|
+|`cbc:Name`
+|Item request name
+
+|
+|`cbc:Description`
+|Item request description
+
+|
+|`cac:CommodityClassification` <<pacr-CommodityClassification.adoc,[+]>>
+|Item request classification
+
+|
+|`cac:AdditionalItemProperty[cbc:NameCode='Item_request_quantity']/cbc:Value`
+|Item request quantity
+
+|
+|`cac:AdditionalItemProperty[cbc:NameCode='Item_request_minimum_quantity']/cbc:ValueQuantity`
+|Item request minimum quantity
+
+|
+|`cac:AdditionalItemProperty[cbc:NameCode='Item_request_maximum_quantity']/cbc:ValueQuantity`
+|Item request maximum quantity
+
+|
+|`cac:AdditionalItemProperty[cbc:NameCode='Item_request_minimum_price']/cbc:Value`
+|Item request minimum price
+
+|
+|`cac:AdditionalItemProperty[cbc:NameCode='Item_request_maximum_price']/cbc:Value`
+|Item request maximum price
+
+|
+|`cac:AdditionalItemProperty[cac:ItemPropertyGroup[0]/cbc:NameCode='Item_property_request']` <<pacr-AdditionalItemProperty-ItemPropertyRequest.adoc,[+]>>
+|Item property request
+
+|
+|`cac:AdditionalItemProperty[cac:ItemPropertyGroup[0]/cbc:NameCode='Item_requirement']` <<pacr-AdditionalItemProperty-ItemRequirement.adoc,[+]>>
+|Item requirement
+
+|
+|`cac:AdditionalItemProperty[cac:ItemPropertyGroup[0]/cbc:NameCode='Information_requirement']` <<pacr-AdditionalItemProperty-InformationRequest.adoc,[+]>>
+|Information request
+
+|
+|`cac:ItemSpecificationDocumentReference` <<pacr-ItemSpecificationDocumentReference.adoc,[+]>>
+|Additional document
+
+|
+|`cac:CatalogueDocumentReference/cac:Attachment/cac:ExternalReference/cbc:URI`
+|Call for tenders award criterion reference
+
+|====

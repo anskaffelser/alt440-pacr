@@ -1,0 +1,30 @@
+= Syntax bindigs Pre-award catalogue request
+
+== Catalogue request line ==
+
+`cac:CatalougeRequestLine`
+
+.UBL Syntax binding
+[cols="^,<,<",options="header"]
+|===
+|Card
+|Name
+|Description
+
+|
+|`cbc:ID`
+|Catalogue request line identifier
+
+|
+|`cac:RequiredItemLocationQuantity/cac:Price[cbc:PriceTypeCode='Estimated_value']/cbc:PriceAmount`
+|Estimated value
+
+|
+|`cac:RequiredItemLocationQuantity/cac:Price[cbc:PriceTypeCode='Total_budget_amount']/cbc:PriceAmount`
+|Total budget amount
+
+|
+|`cac:Item` <<pacr-Item.adoc,[+]>>
+|Item request
+
+|====

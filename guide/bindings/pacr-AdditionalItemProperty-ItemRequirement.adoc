@@ -1,0 +1,38 @@
+= Syntax bindigs Pre-award catalogue request
+
+== Item requirement ==
+
+`cac:AdditionalItemProperty[cac:ItemPropertyGroup[0]/cbc:NameCode='Item_requirement']`
+
+.UBL Syntax binding
+[cols="^,<,<",options="header"]
+|===
+|Card
+|Name
+|Description
+
+|
+|`cbc:ID`
+|Item requirement identifier
+
+|
+|`cbc:Name`
+|Item requirement name
+
+|
+|`cac:ItemPropertyGroup[1]/cbc:Name`
+|Item requirement type
+
+|
+|`cbc:NameCode`
+|Item requirement code
+
+|
+|`cbc:NameCode/@listSchemeURI`
+|Item requirement external reference
+
+|
+|`cbc:ImportanceCode`
+|Item requirement relevance
+
+|====

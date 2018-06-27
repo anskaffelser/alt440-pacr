@@ -1,246 +1,48 @@
 = Syntax bindigs Pre-award catalogue request
 
+`CatalogueRequest`
+
 .UBL Syntax binding
 [cols="^,<,<",options="header"]
 |===
-|Id
-|Business term
-|Binding
+|Card
+|Name
+|Description
 
-|
-|Pre-award catalogue request
-|`/CatalogueRequest`
-
-|
+|1..1
+|`cbc:ID`
 |Transaction identifier
-|`/CatalogueRequest/cbc:ID`
 
 |
+|`cbc:IssueDate`
 |Issue date
-|`/CatalogueRequest/cbc:IssueDate`
 
 |
+|`cbc:IssueTime`
 |Issue time
-|`/CatalogueRequest/cbc:IssueTime`
 
 |
+|`cbc:Note`
 |Version
-|`?`
 
 |
+|`cac:RequestedCatalogueReference`
 |Previous version reference
-|`?`
 
 |
+|`cac:ReferencedContract`
 |Call for tenders reference
-|`?`
 
 |
+|`cac:ProviderParty` <<pacr-ProviderParty.adoc,[+]>>
 |Contracting body
-|`/CatalogueRequest/cac:ProvideParty`
 
 |
+|`cac:ReceiverParty` <<pacr-ReceiverParty.adoc,[+]>>
 |Economic operator
-|`/CatalogueRequest/cac:ReceiverParty`
 
 |
+|`cac:CatalogueRequestLine` <<pacr-CatalogueRequestLine.adoc,[+]>>
 |Catalogue request line
-|`/CatalogueRequest/cac:CatalogueRequestLine`
-
-|
-|Catalogue request line identifier
-|`/CatalogueRequest/cac:CatalogueRequestLine/cbc:ID`
-
-|
-|Estimated value
-|`?`
-
-|
-|Total budget amount
-|`?`
-
-|
-|Item request
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item`
-
-|
-|Item request name
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cbc:Name`
-
-|
-|Item request description
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cbc:Description`
-
-|
-|Item request quantity
-|`?`
-
-|
-|Item request minimum quantity
-|`?`
-
-|
-|Item request maximum quantity
-|`?`
-
-|
-|Item request minimum price
-|`?`
-
-|
-|Item request maximum price
-|`?`
-
-|
-|Item request classification
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:CommodityClassification`
-
-|
-|Item request classification code
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode`
-
-|
-|Item request classification name
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@name`
-
-|
-|Item property request
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty`
-
-|
-|Item property identifier
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:ID`
-
-|
-|Item property name
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:Name`
-
-|
-|Item property description
-|`?`
-
-|
-|Item property classification
-|`-`
-
-|
-|Item property classification code
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCode`
-
-|
-|Item property classification name
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/@name`
-
-|
-|Item property relevance
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:ImportanceCode`
-
-|
-|Item property value
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity`
-
-|
-|Item property unit of measure
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity/@unitCode`
-
-|
-|Item property minimum value
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cac:RangeDimension/cbc:MinimumMeasure`
-
-|
-|Item property maximum value
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cac:RangeDimension/cbc:MaximumMeasure`
-
-|
-|Delivery period request
-|`?`
-
-|
-|Period start date
-|`?`
-
-|
-|Period end date
-|`?`
-
-|
-|Item information request
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty`
-
-|
-|Information request identifier
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:ID`
-
-|
-|Information request name
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:Name`
-
-|
-|Information request reference
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/@listSchemeURI`
-
-|
-|Information request relevance
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:ImportanceCode`
-
-|
-|Additional document
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:ItemSpecificationDocumentReference`
-
-|
-|Document identifier
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:ItemSpecificationDocumentReference/cbc:ID`
-
-|
-|Document name
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:ItemSpecificationDocumentReference/`
-
-|
-|Document description
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:ItemSpecificationDocumentReference/cbc:Name`
-
-|
-|Document digest
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:ItemSpecificationDocumentReference/cac:ResultOfVerification/cbc:ValidationResultCode`
-
-|
-|Document digest method code
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:ItemSpecificationDocumentReference/cac:ResultOfVerification/cbc:ValidateProcess`
-
-|
-|External document URI
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:ItemSpecificationDocumentReference/cac:Attachment/cac:ExternalReference/cbc:URI`
-
-|
-|Item requirement
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty`
-
-|
-|Item requirement identifier
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:ID`
-
-|
-|Item requirement name
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:Name`
-
-|
-|Item requirement type
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cac:ItemPropertyGroup/cbc:Name`
-
-|
-|Item requirement code
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCode`
-
-|
-|Item requirement external reference
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/@listSchemeURI`
-
-|
-|Item requirement relevance
-|`/CatalogueRequest/cac:CatalogueRequestLine/cac:Item/cac:AdditionalItemProperty/cbc:ImportanceCode`
-
-|
-|Call for tenders award criterion reference
-|`?`
 
 |====
