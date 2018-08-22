@@ -88,8 +88,12 @@
 
             <Element>
                 <Term>cac:PartyName</Term>
-                <Name>Economic operator name</Name>
-                <Description>The name of the economic operator.</Description>
+
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Economic operator name</Name>
+                    <Description>The name of the economic operator</Description>
+                </Element>
             </Element>
 
             <Element cardinality="0..1">
@@ -111,7 +115,7 @@
                     <Value type="EXAMPLE">0948</Value>
                 </Element>
 
-                <Element>
+                <Element cardinality="0..1">
                     <Term>cbc:CountrySubentityCode</Term>
                     <Name>Country subdivision code</Name>
                     <Description>A code that identifies a subdivision of a country, e.,g., a province or district.</Description>
@@ -132,14 +136,501 @@
                         <Description>An additional address line in an address that can be used to give further details
                             supplementing the main line</Description>
                     </Element>
+                </Element>
 
+                <Element>
+                    <Term>cac:Country</Term>
+                    <Name>Country</Name>
+
+                    <Element>
+                        <Term>cbc:Identification</Term>
+                        <Name>Country Code</Name>
+                        <Description>A code that identifies the country.</Description>
+                    </Element>
+                </Element>
+            </Element>
+
+            <Element>
+                <Term>cac:PhysicalLocation</Term>
+                <Name>Country of registration</Name> <!-- Endre navn -->
+                <Description>The country where the party is registered.</Description>
+
+                <Element>
+                    <Term>cbc:LocationTypeCode</Term>
+                    <Name>Location code</Name> <!-- Endre navn -->
+                    <Description>A code signifying the type of location. The code can be found in the code list.</Description>
+                    <Value type="EXAMPLE">Country_of_registation</Value>
+                </Element>
+
+                <Element>
+                    <Term>cac:Address</Term>
+                    <Name>Address</Name>
+
+                    <Element>
+                        <Term>cac:Country</Term>
+                        <Name>Country</Name>
+                        <Description>The country in which this address is located.</Description>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:IdentificationCode</Term>
+                            <Name>Identification code</Name> <!-- Endre navn -->
+                            <Description>A code signifying this country.</Description>
+                        </Element>
+                    </Element>
+
+                </Element>
+            </Element>
+
+            <Element>
+                <Term>cac:Contact</Term>
+                <Name>Contact person</Name>
+
+                <Element> <!-- Dette elementet skal ikke stå her, men den burde det? -->
+                    <Term>cbc:Name</Term>
+                    <Name>Contact name</Name>
+                    <Description>The contact point's name.</Description>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:Telephone</Term>
+                    <Name>Contact telephone number</Name>
+                    <Description>A phone number for the contact point.</Description>
+                </Element>
+
+                <Element> <!-- Ser ikke poenget med dette elementet -->
+                    <Term>cbc:ElectronicMail</Term>
+                    <Name>Contact point</Name>
+                    <Description>
+                        An e-mail address for the contact point.</Description>
+                </Element>
+
+                <Element>
+                    <Term>cbc:ElectronicMail</Term>
+                    <Name>Contact email address</Name>
+                    <Description>
+                        An e-mail address for the contact point.</Description>
+                </Element>
+            </Element>
+
+        </Element>
+
+        <Element>
+            <Term>cac:ProviderParty</Term>
+            <Name>Contracting body</Name>
+            <Description>The contracting authority or contracting entity who is buying supplies, services or public 
+                works using a tendering procedure as described in the applicable directive </Description>
+            
+            <Element>
+                <Term>cbc:EndpointID</Term>
+                <Name>Contracting body electronic address identifier</Name>
+                <Description>Electronic address of the contracting body.</Description>
+            </Element>
+
+            <Element>
+                <Term>cac:PartyIdentification</Term>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:ID</Term>
+                    <Name>Contracting body identifier</Name>
+                    <Description>The national identifier of a contracting body as it is legally registered
+                        (e.g. VAT identification, such as KBO).</Description>
+                </Element>
+            </Element>
+
+            <Element>
+                <Term>cac:PartyName</Term>
+                <Name>Economic operator name</Name>
+                <Description>The name of the economic operator.</Description>
+
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Contracting body name</Name>
+                    <Description>The name of the contracting body as it is registered.</Description>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:PostAddress</Term>
+                <Name>Postal address</Name>
+
+                <Element>
+                    <Term>cbc:CityName</Term>
+                    <Name>City</Name>
+                    <Description>The common name of a city where the address is located.</Description>
+                    <Value type="EXAMPLE">Oslo</Value>
+                </Element>
+
+                <Element>
+                    <Term>cbc:PostalZone</Term>
+                    <Name>Post code</Name>
+                    <Description>The identifier for an addressable group of properties according to the relevant
+                        postal service, such as a ZIP code or post code.</Description>
+                    <Value type="EXAMPLE">0948</Value>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:CountrySubentityCode</Term>
+                    <Name>Country subdivision code</Name>
+                    <Description>A code that identifies a subdivision of a country, e.,g., a province or district.</Description>
+                </Element>
+
+                <Element>
+                    <Term>cac:AddressLine</Term>
+
+                    <Element>
+                        <Term>cbc:Line</Term>
+                        <Name>Address line </Name>
+                        <Description>The main line in an address.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:Line</Term>
+                        <Name>Address line 2</Name>
+                        <Description>An additional address line in an address that can be used to give further details
+                            supplementing the main line</Description>
+                    </Element>
+                </Element>
+
+                <Element>
+                    <Term>cac:Country</Term>
+                    <Name>Country</Name>
+
+                    <Element>
+                        <Term>cbc:Identification</Term>
+                        <Name>Country Code</Name>
+                        <Description>A code that identifies the country.</Description>
+                    </Element>
+                </Element>
+            </Element>
+
+            <Element>
+                <Term>cac:PhysicalLocation</Term>
+                <Name>Country of registration</Name> <!-- Endre navn -->
+                <Description>The country where the party is registered.</Description>
+
+                <Element>
+                    <Term>cbc:LocationTypeCode</Term>
+                    <Name>Location code</Name> <!-- Endre navn -->
+                    <Description>A code signifying the type of location. The code can be found in the code list.</Description>
+                    <Value type="EXAMPLE">Country_of_registation</Value>
+                </Element>
+
+                <Element>
+                    <Term>cac:Address</Term>
+                    <Name>Address</Name>
+
+                    <Element>
+                        <Term>cac:Country</Term>
+                        <Name>Country</Name>
+                        <Description>The country in which this address is located.</Description>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:IdentificationCode</Term>
+                            <Name>Identification code</Name> <!-- Endre navn -->
+                            <Description>A code signifying this country.</Description>
+                        </Element>
+                    </Element>
+
+                </Element>
+            </Element>
+
+            <Element>
+                <Term>cac:Contact</Term>
+                <Name>Contact person</Name>
+
+                <Element> <!-- Dette elementet skal ikke stå her, men den burde det? -->
+                    <Term>cbc:Name</Term>
+                    <Name>Contact name</Name>
+                    <Description>The contact point's name.</Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:Telephone</Term>
+                    <Name>Contact telephone number</Name>
+                    <Description>A phone number for the contact point.</Description>
+                </Element>
+
+                <Element> <!-- Ser ikke poenget med dette elementet -->
+                    <Term>cbc:ElectronicMail</Term>
+                    <Name>Contact point</Name>
+                    <Description>
+                        An e-mail address for the contact point.</Description>
+                </Element>
+
+                <Element>
+                    <Term>cbc:ElectronicMail</Term>
+                    <Name>Contact email address</Name>
+                    <Description>
+                        An e-mail address for the contact point.</Description>
+                </Element>
+            </Element>
+
+        </Element>
+        
+        <Element cardinality="1..n">
+            <Term>cac:CatalogueRequestLine</Term>
+            <Name>Catalogue request line</Name>
+            <Description>A line in a pre-award cataloue request specifying</Description>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Catalogue request line identifier</Name>
+                <Description>An identifer for the catalogue request line being unique within pre-award catalogue request.</Description>
+            </Element>
+
+            <Element>
+                <Term>cac:RequiredItemLocationQuantity</Term>
+                <Name>Estimated value</Name>
+                <Description>The estimated value of the an item or an requested item.</Description>
+
+                <Element> <!-- usikker på implementering, må sjekkes opp -->
+                    <Term>cac:Price</Term>
+                    <Name>Price</Name>
+                    
+                    <Element>
+                        <Term>cbc:PriceAmount</Term>
+                        <Name>Price amount</Name>
+                    </Element>
+
+                    <Element>
+                        <Term>cbc:PriceTypeCode</Term>
+                        <Name>Price type code</Name>
+                    </Element>
+                    <Value type="EXAMPLE">Estimated_value</Value>
+                </Element>
+
+
+            </Element>
+        </Element>
+
+        <Element cardinality="1..n">
+            <Term>cac:CatalogueRequestLine</Term>
+            <Name>Catalogue request line</Name>
+            <Description>A line in a pre-award cataloue request specifying</Description>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Catalogue request line identifier</Name>
+                <Description>An identifer for the catalogue request line being unique within pre-award catalogue request.</Description>
+            </Element>
+
+            <Element>
+                <Term>cac:RequiredItemLocationQuantity</Term>
+                <Name>Total budget amount</Name>
+                <Description>The total budget amount for the requested item.</Description>
+
+                <Element> <!-- usikker på implementering, må sjekkes opp -->
+                    <Term>cac:Price</Term>
+                    <Name>Price</Name>
+
+                    <Element>
+                        <Term>cbc:PriceAmount</Term>
+                        <Name>Price amount</Name>
+                    </Element>
+
+                    <Element>
+                        <Term>cbc:PriceTypeCode</Term>
+                        <Name>Price type code</Name>
+                        <Value type="EXAMPLE">Total_budget_amount</Value>
+                    </Element>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cac:item</Term>
+                <Name>Item request</Name>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:Description</Term>
+                    <Name>Item request description</Name>
+                    <Description>A description of the item request specifying the kind of item that is requested.</Description>
+                </Element>
+
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Item request name</Name>
+                    <Description>A name for the item request, e.g., the kind of item that is requested.</Description>
+                </Element>
+                
+                <Element>
+                    <Term>cac:CatalogueDocumentReference</Term>
+                    <Name>Catalogue document reference</Name>
+
+                    <Element>
+                        <Term>cac:Attachment</Term>
+                        <Name>Attachment document</Name>
+
+                        <Element cardinality="0..1">
+                            <Term>cac:ExternalReference</Term>
+                            <Name>External reference</Name>
+
+                            <Element cardinality="0..1">
+                                <Term>cbc:URI</Term>
+                                <Name>Call for tenders award criterion reference</Name>
+                                <Description>A reference to the awarding criterion that the tender fulfills.</Description>
+                            </Element>
+                        </Element>
+                    </Element>
+                </Element>
+
+                <Element>
+                    <Term>cac:ItemSpecificationDocumentReference</Term>
+                    <Name>Item specification document reference</Name>
+
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Document identifier</Name>
+                        <Description>Identifier of a document</Description>
+                    </Element>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cbc:DocumentDescription</Term>
+                        <Name>Document description</Name>
+                        <Description>Textual description of the document.</Description>
+                    </Element>
+
+                    <Element>
+                        <Term>cac:Attachment</Term>
+                        <Name>Attachment</Name>
+                        
+                        <Element>
+                            <Term>cac:ExternalReference</Term>
+                            <Name>External reference</Name>
+                            
+                            <Element>
+                                <Term>cbc:URI</Term>
+                                <Name>External document URI</Name>
+                                <Description>The Uniform Resource Identifier (URI) that identifies where the external document is located.</Description>
+                            </Element>
+                        </Element>
+                    </Element>
+                    <Element>
+                        <Term>cac:ResultOfVerification</Term>
+                        <Name>Result of verification</Name>
+
+                        <Element>
+                            <Term>cbc:ValidationResultCode</Term>
+                            <Name>Document digest</Name>
+                            <Description>Digest of the document.</Description>
+                        </Element>
+
+                        <Element>
+                            <Term>cbc:ValidateProcess</Term>
+                            <Name>Document digest method code</Name>
+                            <Description>Code that indicates the algorithm used to calculate the hash.</Description>
+                        </Element>
+                    </Element>
+
+                </Element>
+
+                <Element>
+                    <Term>cac:CommodityClassification</Term>
+                    <Name>Commodity classification</Name>
+                    <Description>A classification of this item according to a specific system for classifying commodities.</Description>
+
+                    <Element>
+                        <Term>cbc:ItemClassification</Term>
+                        <Name>Item request classification code</Name>
+
+                        <Attribute>
+                            <Term>Name</Term>
+                            <Name>Item request classification name</Name>
+                            <Description>The name of the classification for this item.</Description>
+                        </Attribute>
+                    </Element>
+                </Element>
+                
+                <Element>
+                    <Term>cac:AdditionalItemProperty</Term>
+                    <Name>Additional item property</Name>
+                    
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Information request identifier</Name>
+                        <Description>An identifier of an information request that allows to reference the information request.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:Name</Term>
+                        <Name>Information request name</Name>
+                        <Description>A name of the requested information</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:NameCode</Term>
+
+                        <Attribute>
+                            <Term>listSchemeURI</Term>
+                            <Name>Information request reference</Name>
+                            <Description>A code representing the requested information.</Description>
+                        </Attribute>
+
+                        <Attribute>
+                            <Term>name</Term>
+                            <Name>Item property classification code</Name>
+                            <Description>Code for the item property according to a property code system</Description>
+                        </Attribute>
+                    </Element>
+
+                    <Element>
+                        <Term>cbc:TestMethod</Term>
+                        <Name>Item property description</Name>
+                        <Description>A description of the item property.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:Value</Term>
+                        <Name>Item request quantity</Name>
+                        <Description>The quantity of the requested item offered in a pre-award catalogue.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cac:ValueQuantity</Term>
+                        <Name>Item property value</Name>
+                        <Description>The value of the item property.</Description>
+
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Item property unit of measure</Name>
+                            <Description>The unit of measure in which the property value is stated, if relevant.</Description>
+                        </Attribute>
+                    </Element>
+
+                    <Element>
+                        <Term>cbc:ImportanceCode</Term>
+                        <Name>Information request relevance</Name>
+                        <Description>Relevance of the requested information in the response document, in particular,
+                            of it is mandatory or optional.</Description>
+                    </Element>
+                    
+                    <Element>
+                        <Term>cac:ItemPropertyRange</Term>
+                        <Name>Item property range</Name>
+                        
+                        <Element cardinality="0..1">
+                            <Term>cbc:MinimumValue</Term>
+                            <Name>Item property minimum value</Name>
+                            <Description>A value defining the upper boundary of the value range within which the actual
+                                value of the item property is allowed.</Description>
+                        </Element>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:MaximumValue</Term>
+                            <Name>Item property maximum value</Name>
+                            <Description>A value defining the upper boundary of the value range within which the actual
+                                value of the item property is allowed.</Description>
+                        </Element>
+                    </Element>
 
                 </Element>
 
             </Element>
-
-
+            
+            
         </Element>
+
+
+
         
 
 
