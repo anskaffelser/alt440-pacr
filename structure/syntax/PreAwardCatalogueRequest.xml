@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
+
+    <Term>reminder</Term>
+    <Name>EHF Reminder 2.0</Name>
+
+    <Property key="sch:prefix">EHF-REMINDER</Property>
+    <Property key="sch:identifier">reminder-basic</Property>
+
+    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+
+    <Document>
+        <Term>ubl:Catalogue</Term>
+
+        <Element>
+            <Term>cbc:UBLVersionID</Term>
+            <Name>UBL version identifier</Name>
+            <Description>Identifies the version of syntax that transactions are based on.</Description>
+            <Value type="EXAMPLE">2.1</Value>
+        </Element>
+
+        <Element>
+            <Term>cbc:CustomizationID</Term>
+            <Name>Customization identifier</Name>
+            <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
+            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:CatalogueRequest:2.0</Value> <!-- mÅ SJEKKES OPP!-->
+        </Element>
+
+        <Element>
+            <Term>cbc:ProfileID</Term>
+            <Name>Profile identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears.</Description>
+            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:profile:02:1.0</Value> <!-- mÅ SJEKKES OPP!-->
+        </Element>
+
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Transaction identifier</Name>
+            <Description>An identifier for the pre-award catalogue request that allows referencing the pre-award catalogue request.</Description>
+            <Value type="EXAMPLE"></Value>
+        </Element>
+        
+        <Element>
+            <Term>cbc:IssueDate</Term>
+            <Name>Issue date</Name>
+            <Description>The date something was issued.</Description>
+            <Value type="EXAMPLE">02-12-2005</Value>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cbc:IssueTime</Term>
+            <Name>Issue time</Name>
+            <Description>The time something was issued.</Description>
+            <Value type="EXAMPLE">14.45</Value>
+        </Element>
+        
+        <Element>
+            <Term>Note</Term>
+            <Name>Version</Name>
+            <Description>An identifier for the version of a transaction message.</Description>
+            <Value type="EXAMPLE"></Value>
+        </Element>
+
+        <Element>
+            <Term>cac:ReceiverParty</Term>
+            <Name>Economic operator</Name>
+            <Description>The contracting authority or contracting entity who is buying supplies, services or public
+                works using a tendering procedure as described in the applicable directive .</Description>
+
+            <Element cardinality="0..1">
+                <Term>cbc:EndpointID</Term>
+                <Name>Economic operator electronic address identifier</Name>
+                <Description>Electronic address of the economic operator.</Description>
+                <Value type="EXAMPLE">jj@sender.no</Value>
+            </Element>
+
+            <Element>
+                <Term>cac:PartyIdentification</Term>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ID</Term>
+                    <Name>Economic operator identifier</Name>
+                    <Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
+                </Element>
+            </Element>
+
+            <Element>
+                <Term>cac:PartyName</Term>
+                <Name>Economic operator name</Name>
+                <Description>The name of the economic operator.</Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:PostAddress</Term>
+                <Name>Postal address</Name>
+
+                <Element>
+                    <Term>cbc:CityName</Term>
+                    <Name>City</Name>
+                    <Description>The common name of a city where the address is located.</Description>
+                    <Value type="EXAMPLE">Oslo</Value>
+                </Element>
+
+                <Element>
+                    <Term>cbc:PostalZone</Term>
+                    <Name>Post code</Name>
+                    <Description>The identifier for an addressable group of properties according to the relevant
+                        postal service, such as a ZIP code or post code.</Description>
+                    <Value type="EXAMPLE">0948</Value>
+                </Element>
+
+                <Element>
+                    <Term>cbc:CountrySubentityCode</Term>
+                    <Name>Country subdivision code</Name>
+                    <Description>A code that identifies a subdivision of a country, e.,g., a province or district.</Description>
+                </Element>
+
+                <Element>
+                    <Term>cac:AddressLine</Term>
+                    
+                    <Element>
+                        <Term>cbc:Line</Term>
+                        <Name>Address line </Name>
+                        <Description>The main line in an address.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:Line</Term>
+                        <Name>Address line 2</Name>
+                        <Description>An additional address line in an address that can be used to give further details
+                            supplementing the main line</Description>
+                    </Element>
+
+
+                </Element>
+
+            </Element>
+
+
+        </Element>
+        
+
+
+
+    </Document>
