@@ -161,7 +161,7 @@
                     <Term>cbc:LocationTypeCode</Term>
                     <Name>Location code</Name> <!-- Change name -->
                     <Description>A code signifying the type of location. The code can be found in the code list.</Description>
-                    <Value type="EXAMPLE">Country_of_registation</Value>
+                    <Reference type="CODE_LIST">Country_of_registation</Reference>
                 </Element>
 
                 <Element>
@@ -188,7 +188,7 @@
                 <Term>cac:Contact</Term>
                 <Name>Contact person</Name>
 
-                <Element> <!-- This element is addad by myself, do you agree? -->
+                <Element> <!-- This element is added by myself, do you agree? -->
                     <Term>cbc:Name</Term>
                     <Name>Contact name</Name>
                     <Description>The contact point's name.</Description>
@@ -324,7 +324,7 @@
                     <Term>cbc:LocationTypeCode</Term>
                     <Name>Location code</Name> <!-- Change name  -->
                     <Description>A code signifying the type of location. The code can be found in the code list.</Description>
-                    <Value type="EXAMPLE">Country_of_registation</Value>
+                    <Reference type="CODE_LIST">Country_of_registation</Reference>
                 </Element>
 
                 <Element>
@@ -424,14 +424,14 @@
                         <Term>cbc:PriceTypeCode</Term>
                         <Name>Estimated value</Name>
                         <Description>The estimated value of the an item or an requested item.</Description>
-                        <Value type="FIXED">Estimated_value</Value>
+                        <Reference type="CODE_LIST">Estimated_value</Reference>
                     </Element>
 
                     <Element>
                         <Term>cbc:PriceTypeCode</Term>
                         <Name>Total budget amount</Name>
                         <Description>The total budget amount for the requested item.</Description>
-                        <Value type="FIXED">Total_budget_amount</Value>
+                        <Reference type="CODE_LIST">Total_budget_amount</Reference>
                     </Element>
 
                 </Element>
@@ -593,7 +593,9 @@
                         <Term>cbc:Value</Term>
                         <Name>Item request quantity</Name>
                         <Description>The quantity of the requested item offered in a pre-award catalogue.</Description>
-                        <Value type="FIXED">Item_request_quantity</Value>
+                        <Reference type="CODE_LIST">Item_request_quantity</Reference>
+                        <Reference type="CODE_LIST">Item_request_minimum_price</Reference>
+                        <Reference type="CODE_LIST">Item_request_maximum_price</Reference>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -605,8 +607,9 @@
                             <Term>unitCode</Term>
                             <Name>Item property unit of measure</Name>
                             <Description>The unit of measure in which the property value is stated, if relevant.</Description>
+                            <Reference type="CODE_LIST">Item_request_minimum_quantity</Reference>
+                            <Reference type="CODE_LIST">Item_request_maximum_quantity</Reference>
                         </Attribute>
-                        <Value type="FIXED">Item_request_minimum_quantity</Value>
                     </Element>
 
                     <Element>
