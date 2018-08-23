@@ -13,11 +13,11 @@
         <Title>PreAward Catalogue request</Title>
     </Resource>
     
-    <!-- <Resource>
-        <Type>Structure-1</Type>
+     <Resource>
+         <Type>Syntax-1</Type>
         <Path>structure/datamodel/PreAwardCatalogue.xml</Path>
         <Title>PreAward Catalogue </Title>
-    </Resource> -->
+    </Resource> 
     
     
 </Project>
