@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
 
-    <Term>reminder</Term>
-    <Name>EHF Reminder 2.0</Name>
-
-    <Property key="sch:prefix">EHF-REMINDER</Property>
-    <Property key="sch:identifier">reminder-basic</Property>
+    <Term>PreAwardCatalogueRequest</Term>
+    <Name>PreAward Catalogue Request</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
@@ -151,7 +148,7 @@
                         <Description>A code that identifies the country.</Description>
                         <Value type="EXAMPLE">DK</Value>
                     </Element>
-                    
+
                 </Element>
             </Element>
 

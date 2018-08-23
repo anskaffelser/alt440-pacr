@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-InformationRequest.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-InformationRequest.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemPropertyRequest.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemPropertyRequest.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemRequirement.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemRequirement.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-CatalogueRequestLine.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-CatalogueRequestLine.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-Contact.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-Contact.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-ItemSpecificationDocumentReference.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-ItemSpecificationDocumentReference.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-NameCode.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-NameCode.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-ProviderParty.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-ProviderParty.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-ReceiverParty.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-ReceiverParty.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/structure/syntax/PreAwardCatalogueRequest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/syntax/PreAwardCatalogueRequest.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,8 +27,8 @@
       <file leaf-file-name="PreAwardCatalogueRequest.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/structure/syntax/PreAwardCatalogueRequest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="155" column="22" lean-forward="true" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
+            <state relative-caret-position="85">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -346,8 +336,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/structure/syntax/PreAwardCatalogueRequest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="155" column="22" lean-forward="true" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
         </state>
       </provider>
     </entry>
