@@ -150,8 +150,8 @@
                         <Name>Country Code</Name>
                         <Description>A code that identifies the country.</Description>
                         <Value type="EXAMPLE">DK</Value>
-
                     </Element>
+                    
                 </Element>
             </Element>
 
@@ -358,7 +358,7 @@
                     <Term>cbc:Name</Term>
                     <Name>Contact name</Name>
                     <Description>The contact point's name.</Description>
-                    <Name>Birgitt Nielsen</Name>
+                    <Value type="EXAMPLE">Birgitt Nielsen</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -449,12 +449,14 @@
                     <Term>cbc:Description</Term>
                     <Name>Item request description</Name>
                     <Description>A description of the item request specifying the kind of item that is requested.</Description>
+                    <Value type="EXAMPLE">John Eddison need a samsung computer.</Value>
                 </Element>
 
                 <Element>
                     <Term>cbc:Name</Term>
                     <Name>Item request name</Name>
                     <Description>A name for the item request, e.g., the kind of item that is requested.</Description>
+                    <Value type="EXAMPLE">Samsung computer</Value>
                 </Element>
                 
                 <Element>
@@ -486,12 +488,14 @@
                         <Term>cbc:ID</Term>
                         <Name>Document identifier</Name>
                         <Description>Identifier of a document</Description>
+                        <Value type="EXAMPLE">453</Value>
                     </Element>
                     
                     <Element cardinality="0..1">
                         <Term>cbc:DocumentDescription</Term>
                         <Name>Document description</Name>
                         <Description>Textual description of the document.</Description>
+                        <Value type="EXAMPLE">The computer need to be 15.</Value>
                     </Element>
 
                     <Element>
@@ -506,9 +510,11 @@
                                 <Term>cbc:URI</Term>
                                 <Name>External document URI</Name>
                                 <Description>The Uniform Resource Identifier (URI) that identifies where the external document is located.</Description>
+                                <Value type="EXAMPLE">www.elkjop.np/computer/samsung</Value>
                             </Element>
                         </Element>
                     </Element>
+
                     <Element>
                         <Term>cac:ResultOfVerification</Term>
                         <Name>Result of verification</Name>
@@ -517,6 +523,7 @@
                             <Term>cbc:ValidationResultCode</Term>
                             <Name>Document digest</Name>
                             <Description>Digest of the document.</Description>
+                            <Value type="EXAMPLE">Includes all specifications of the item.</Value>
                         </Element>
 
                         <Element>
@@ -545,7 +552,7 @@
                     </Element>
                 </Element>
                 
-                <Element>
+                <Element> <!-- Not sure with the implementation. Need QA. -->
                     <Term>cac:AdditionalItemProperty</Term>
                     <Name>Additional item property</Name>
                     
@@ -559,6 +566,7 @@
                         <Term>cbc:Name</Term>
                         <Name>Information request name</Name>
                         <Description>A name of the requested information</Description>
+                        <Value type="EXAMPLE">Carolina Herrera</Value>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -574,6 +582,7 @@
                             <Term>name</Term>
                             <Name>Item property classification code</Name>
                             <Description>Code for the item property according to a property code system</Description>
+                            <Value type="EXAMPLE">1432</Value>
                         </Attribute>
                     </Element>
 
@@ -587,6 +596,7 @@
                         <Term>cbc:Value</Term>
                         <Name>Item request quantity</Name>
                         <Description>The quantity of the requested item offered in a pre-award catalogue.</Description>
+                        <Value type="FIXED">Item_request_quantity</Value>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -599,6 +609,7 @@
                             <Name>Item property unit of measure</Name>
                             <Description>The unit of measure in which the property value is stated, if relevant.</Description>
                         </Attribute>
+                        <Value type="FIXED">Item_request_minimum_quantity</Value>
                     </Element>
 
                     <Element>
@@ -628,11 +639,11 @@
                     </Element>
 
                 </Element>
-
             </Element>
-            
-            
+
         </Element>
 
-
     </Document>
+
+
+</Syntax>

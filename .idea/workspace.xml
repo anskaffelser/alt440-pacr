@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-InformationRequest.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-InformationRequest.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemPropertyRequest.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemPropertyRequest.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemRequirement.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemRequirement.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-CatalogueRequestLine.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-CatalogueRequestLine.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-Contact.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-Contact.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-ItemSpecificationDocumentReference.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-ItemSpecificationDocumentReference.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-NameCode.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-NameCode.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-ProviderParty.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-ProviderParty.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr-ReceiverParty.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr-ReceiverParty.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/bindings/pacr.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/bindings/pacr.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/structure/syntax/PreAwardCatalogueRequest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/syntax/PreAwardCatalogueRequest.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,18 +37,18 @@
       <file leaf-file-name="PreAwardCatalogueRequest.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/structure/syntax/PreAwardCatalogueRequest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="481" column="71" lean-forward="true" selection-start-line="481" selection-start-column="71" selection-end-line="481" selection-end-column="71" />
+            <state relative-caret-position="799">
+              <caret line="155" column="22" lean-forward="true" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pacr-CatalogueRequestLine.adoc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-CatalogueRequestLine.adoc">
+      <file leaf-file-name="pacr-ItemSpecificationDocumentReference.adoc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-ItemSpecificationDocumentReference.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="459">
-                <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <first_editor>
+                <caret column="15" selection-start-column="15" selection-end-column="15" />
               </first_editor>
               <second_editor />
             </state>
@@ -49,8 +59,8 @@
         <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-Item.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="646">
-                <caret line="38" column="82" lean-forward="true" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
+              <first_editor relative-caret-position="770">
+                <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
               </first_editor>
               <second_editor />
             </state>
@@ -58,6 +68,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>item request q</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,6 +83,16 @@
         <option value="$PROJECT_DIR$/guide/bindings/pacr-CommodityClassification.adoc" />
         <option value="$PROJECT_DIR$/guide/bindings/pacr-PostalAddress.adoc" />
         <option value="$PROJECT_DIR$/guide/bindings/pacr-Item.adoc" />
+        <option value="$PROJECT_DIR$/guide/bindings/pacr.adoc" />
+        <option value="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-InformationRequest.adoc" />
+        <option value="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemPropertyRequest.adoc" />
+        <option value="$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemRequirement.adoc" />
+        <option value="$PROJECT_DIR$/guide/bindings/pacr-CatalogueRequestLine.adoc" />
+        <option value="$PROJECT_DIR$/guide/bindings/pacr-Contact.adoc" />
+        <option value="$PROJECT_DIR$/guide/bindings/pacr-ItemSpecificationDocumentReference.adoc" />
+        <option value="$PROJECT_DIR$/guide/bindings/pacr-NameCode.adoc" />
+        <option value="$PROJECT_DIR$/guide/bindings/pacr-ProviderParty.adoc" />
+        <option value="$PROJECT_DIR$/guide/bindings/pacr-ReceiverParty.adoc" />
         <option value="$PROJECT_DIR$/structure/syntax/PreAwardCatalogueRequest.xml" />
       </list>
     </option>
@@ -189,49 +214,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-PostalAddress.adoc">
+    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-Contact.adoc">
+    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-InformationRequest.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-ReceiverParty.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="544">
-            <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-ProviderParty.adoc">
+    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemPropertyRequest.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="612">
-            <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-ItemSpecificationDocumentReference.adoc">
+    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemRequirement.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="459">
-            <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="16" />
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-CatalogueRequestLine.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
@@ -247,11 +274,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-InformationRequest.adoc">
+    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-Contact.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="459">
-            <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="30" />
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-PostalAddress.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
@@ -260,38 +297,38 @@
     <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-NameCode.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="238">
-            <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="34" />
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemPropertyRequest.adoc">
+    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-ReceiverParty.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="782">
-            <caret line="46" column="41" lean-forward="true" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr.adoc">
+    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-ProviderParty.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="561">
-            <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="27" />
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-CatalogueRequestLine.adoc">
+    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-ItemSpecificationDocumentReference.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="459">
-            <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
@@ -300,8 +337,8 @@
     <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-Item.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="646">
-            <caret line="38" column="82" lean-forward="true" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
+          <first_editor relative-caret-position="770">
+            <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
           </first_editor>
           <second_editor />
         </state>
@@ -309,8 +346,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/structure/syntax/PreAwardCatalogueRequest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="481" column="71" lean-forward="true" selection-start-line="481" selection-start-column="71" selection-end-line="481" selection-end-column="71" />
+        <state relative-caret-position="799">
+          <caret line="155" column="22" lean-forward="true" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
         </state>
       </provider>
     </entry>
