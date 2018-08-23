@@ -7,10 +7,10 @@ if [ -e $PROJECT/target ]; then
 fi
 
 # Structure
-#docker run --rm -i \
-#    -v $PROJECT:/src \
-#    -v $PROJECT/target:/target \
-#    difi/vefa-structure:0.6
+docker run --rm -i \
+    -v $PROJECT:/src \
+    -v $PROJECT/target:/target \
+    difi/vefa-structure:0.6
 
 # Guides
 docker run --rm -i -v $PROJECT:/documents -v $PROJECT/target:/target difi/asciidoctor
