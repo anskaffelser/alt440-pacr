@@ -1,0 +1,2764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.7.1">
+<meta name="description" content="This specification is a work in progress, and is developed by an independent group, based on work done by http://www.cenbii.eu/[CEN WS/BII] and https://standards.cen.eu/dyn/www/f?p=204:7:0::::FSP_ORG_ID:1976650&amp;cs=175E298F320429229DD35C9E22F4E8F76[CEN/TC 440].">
+<meta name="author" content="vx.x.x">
+<title>PreAward Catalogue Request</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
+/* Uncomment @import statement below to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:none}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #ddddd8;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+*:not(pre)>code.nobreak{word-wrap:normal}
+*:not(pre)>code.nowrap{white-space:nowrap}
+pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #ddddd8}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #ddddd8;padding-bottom:8px}
+#header .details{border-bottom:1px solid #ddddd8;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #ddddd8;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #efefed;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #efefed;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #efefed}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #ddddd8;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
+.sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;padding:1em;font-size:.8125em}
+.literalblock pre.nowrap,.literalblock pre[class].nowrap,.listingblock pre.nowrap,.listingblock pre[class].nowrap{overflow-x:auto;white-space:pre;word-wrap:normal}
+@media screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:#999}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:#999}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
+table.pyhltable td.code{padding-left:.75em;padding-right:0}
+pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #ddddd8}
+pre.pygments .lineno{display:inline-block;margin-right:.25em}
+table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock blockquote p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.5em;margin-right:.5ex;text-align:right}
+.quoteblock .quoteblock{margin-left:0;margin-right:0;padding:.5em 0;border-left:3px solid rgba(0,0,0,.6)}
+.quoteblock .quoteblock blockquote{padding:0 0 0 .75em}
+.quoteblock .quoteblock blockquote::before{display:none}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.abstract blockquote,.quoteblock.abstract blockquote p{word-spacing:0;line-height:1.6}
+.quoteblock.abstract blockquote::before,.quoteblock.abstract p::before{display:none}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd){background:#f8f8f7}
+table.stripes-none tr,table.stripes-odd tr:nth-of-type(even){background:none}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+td>div.verse{white-space:pre}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left,.imageblock[style*="float: left"]{margin:.25em .625em 1.25em 0}
+.imageblock.right,.imageblock[style*="float: right"]{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background-color:#00fafa}
+.black{color:#000}
+.black-background{background-color:#000}
+.blue{color:#0000bf}
+.blue-background{background-color:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background-color:#fa00fa}
+.gray{color:#606060}
+.gray-background{background-color:#7d7d7d}
+.green{color:#006000}
+.green-background{background-color:#007d00}
+.lime{color:#00bf00}
+.lime-background{background-color:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background-color:#7d0000}
+.navy{color:#000060}
+.navy-background{background-color:#00007d}
+.olive{color:#606000}
+.olive-background{background-color:#7d7d00}
+.purple{color:#600060}
+.purple-background{background-color:#7d007d}
+.red{color:#bf0000}
+.red-background{background-color:#fa0000}
+.silver{color:#909090}
+.silver-background{background-color:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background-color:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background-color:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background-color:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background-color:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #ddddd8!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+/*pre.CodeRay {background-color:#f7f7f8;}*/
+.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
+.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
+table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
+table.CodeRay td{vertical-align: top;line-height:1.45}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
+table.CodeRay td.code{padding:0 0 0 .5em}
+table.CodeRay td.code>pre{padding:0}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}
+</style>
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>PreAward Catalogue Request</h1>
+<div class="details">
+<span id="author" class="author">vx.x.x</span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#definitions">1. Definitions</a></li>
+<li><a href="#_information_models">2. Information models</a>
+<ul class="sectlevel2">
+<li><a href="#information-model-pacr">2.1. Information model Pre-award catalogue request</a></li>
+<li><a href="#information-model-pac">2.2. Information model Pre-award catalogue</a></li>
+</ul>
+</li>
+<li><a href="#_syntax_binding">3. Syntax binding</a>
+<ul class="sectlevel2">
+<li><a href="#_syntax_bindings_pre_award_catalogue_request">3.1. Syntax bindings Pre-award catalogue request</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This specification is a work in progress, and is developed by an independent group, based on work done by <a href="http://www.cenbii.eu/">CEN WS/BII</a> and <a href="https://standards.cen.eu/dyn/www/f?p=204:7:0::::FSP_ORG_ID:1976650&amp;cs=175E298F320429229DD35C9E22F4E8F76">CEN/TC 440</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="definitions"><a class="anchor" href="#definitions"></a>1. Definitions</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Catalogue</dt>
+<dd>
+<p>A catalogue is a structured document of items (e.g., goods and services) description that is available in a format so that it can be processed electronically.</p>
+</dd>
+<dt class="hdlist1">Pre-award catalogue request</dt>
+<dd>
+<p>A pre-award catalogue request is a catalogue of requirements on products (goods or services) intended to be bought by a Contracting Authority.<br>
+<em>SOURCE: CWA 17028-402:2016, definition 3.3</em></p>
+</dd>
+<dt class="hdlist1">Pre-award catalogue</dt>
+<dd>
+<p>A pre-award catalogue is a catalogue used by an economic operator to provide the information on the offered products as an answer to a call for tenders and the corresponding pre-award catalogue request.<br>
+<em>SOURCE: CWA 17028-402:2016, definition 3.2</em></p>
+</dd>
+<dt class="hdlist1">Post-award catalogue</dt>
+<dd>
+<p>A post-award catalogue is a catalogue used by an economic operator to provide the information in the post-award phase, i.e., to provide the information necessary for a placing an order for requested items with an economic operator.<br>
+A post-award catalogue might be based on a pre-award catalogue as well as based on a framework agreement or an agreement from a tender.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_information_models"><a class="anchor" href="#_information_models"></a>2. Information models</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="information-model-pacr"><a class="anchor" href="#information-model-pacr"></a>2.1. Information model Pre-award catalogue request</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Information model Pre-award catalogue request</caption>
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 40%;">
+<col style="width: 5%;">
+<col style="width: 15%;">
+<col style="width: 15%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Card.</th>
+<th class="tableblock halign-left valign-top">Business term</th>
+<th class="tableblock halign-left valign-top">pracc Cat term</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+<th class="tableblock halign-left valign-top">Data Type</th>
+<th class="tableblock halign-left valign-top">ePO</th>
+<th class="tableblock halign-left valign-top">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pre-award catalogue request</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A catalogue of requirements on products (goods or services) intended to be bought by a Contracting Authority.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relatad discussion at link:https://github.com/eprocurementontology/eprocurementontology/issues/46</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transaction identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specification identification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An identifier for the pre-award catalogue request that allows referencing the pre-award catalogue request.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Issue date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue issue date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date something was issued.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Issue time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Issue time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The time something was issued.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An identifier for the version of a transaction message.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Previous version reference</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A reference to the previous version of a transaction message.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Call for tenders reference</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A reference to the call for tender as issued by the contracting body.
+Creates a link between the call for tender and the tender.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contracting body</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue customer or Recievier party?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0024&amp;from=EN">Directive 2014/25/EU</a>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-044</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ePO uses Buyer instead of 'Contracting body' (see link:https://github.com/eprocurementontology/eprocurementontology/issues/3)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contracting body identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contracting body name</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the contracting body as it is registered.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-115</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ePO: Name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contracting body electronic address identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Electronic address of the contracting body.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country of registration</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The country where the party is registered.
+The country where the party</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Similar term C-102</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Postal address</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 1</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The main line in an address.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 2</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An additional address line in an address that can be used to give further details supplementing the main line.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">City</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The common name of a city where the address is located.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Post code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or post code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-023</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ePO: Postal code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code that identifies the country.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-102</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country subdivision code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code that identifies a subdivision of a country, e.,g., a province or district.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact person</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-115</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Named Contact in the ePO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact point</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An e-mail address for the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-119</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ePO: Email</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact telephone number</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A phone number for the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-116</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ePO: Phone</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact email address</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An e-mail address for the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-119</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Similar to 'Contact point'?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Economic operator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue supplier or provider party?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-026</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Economic operator identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An identifier that identifies the economic operator, such as a legal registration identifier.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Economic operator name</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the economic operator.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-050</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ePO: Name</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Economic operator electronic address
+ identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Electronic address of the economic operator.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country of registration</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The country where the party is registered.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Postal address</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 1</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The main line in an address.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 2</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An additional address line in an address that can be used to give further details supplementing the main line.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">City</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The common name of a city where the address is located.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Post code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or post code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-023</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ePO: Postal code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code that identifies the country.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-124</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ePO: Country</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country subdivision code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code that identifies a subdivision of a country, e.,g., a province or district.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact person</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-115</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ePO: Contact</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact point</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An e-mail address for the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-119</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ePO: Email</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact telephone number</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A phone number for the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-116</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ePO: Phone</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact email address</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An e-mail address for the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-119</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Similar to 'Contact point'?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue request line</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pre award catalogue line</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A line in a pre-award cataloue request specifying</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue request line identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pre award catalogue line identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An identifer for the catalogue request line being unique within pre-award catalogue request.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Estimated value</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The estimated value of the an item or an requested item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C-016</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total budget amount</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The total budget amount for the requested item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item request</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pre award catalogue item details</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item request identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An identifier for the item request being unique within a transaction.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item request name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A name for the item request, e.g., the kind of item that is requested.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item request description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A description of the item request specifying the kind of item that is requested.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item request quantity</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The quantity of the requested item offered in a pre-award catalogue.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item request minimum quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minimum order quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The minimum quantity of the requested item offered in a pre-award catalogue.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item request maximum quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maximum order quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The maximum quantity of the requested item offered in a pre-award catalogue.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item request minimum price</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The minimum price the requested item should have.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item request maximum price</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The maximum price the requested item should have.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item request classification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Commodity classification</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item classification code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item classification code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code for classifying the item by its type or nature.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item classification name</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the classification for this item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property request</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional item property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A requested property of an requested item.
+A property is describes a characteristic of an item, e.g., the lenght, width and height of an item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A property identifier for the property of the item or requested item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property description</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A description of the item property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property classification</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A classification of an item property according to a standardized property system.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property classification code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property classification code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code for the item property according to a property code system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property classification name</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the item property in the referenced classification system.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property relevance</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">States whether the property described is Required, Optional, Forbidden, For information.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the item property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property unit of measure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property unit of measure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The unit of measure in which the property value is stated, if relevant.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property minimum value</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A value defining the upper boundary of the value range within which the actual value of the item property is allowed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property maximum value</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A value defining the upper boundary of the value range within which the actual value of the item property is allowed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delivery period request</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The period of time an requested item should be delivered.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Period start date</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date when the period starts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Period end date</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date when the period ends.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item information request</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A piece of information on an item that has to be provided in the response document.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information request identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An identifier of an information request that allows to reference the information request.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information request name</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A name of the requested information.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information request reference</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code representing the requested information</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information request relevance</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relevance of the requested information in the response document, in particular, of it is mandatory or optional.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Additional document</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A document with additional specifications.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier of a document</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document name</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The file name of the document.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document description</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Textual description of the document.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document digest</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Digest of the document.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Document digest method code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code that indicates the algorithm used to calculate the hash.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">External document URI</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Uniform Resource Identifier (URI) that identifies where the external document is located.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item requirement</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A functional requirement on an item that is not related to a property of the item and has to be proven by a specification, label, test report or any other means of proof.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item requirement identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An identifier of the item requirement that allows referencing the item requirement.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item requirement name</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the requirement for the requested item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item requirement type</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code specifying the type of the item requirement, e.g., if it is a social or environmental requirement.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item requirement code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code specifying the requirement for the item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item requirement reference</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A reference to an external specification of the item requirement.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item requirement relevance</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">States whether the property described is Mandatory, Optional, Forbidden, For information.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Call for tenders award criterion reference</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A reference to the awarding criterion that the tender fulfills.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="information-model-pac"><a class="anchor" href="#information-model-pac"></a>2.2. Information model Pre-award catalogue</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Information model Pre-award catalogue</caption>
+<colgroup>
+<col style="width: 8.3333%;">
+<col style="width: 16.6666%;">
+<col style="width: 66.6666%;">
+<col style="width: 8.3335%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Card.</th>
+<th class="tableblock halign-left valign-top">Business term</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The identifier that enables referencing of the document instance for various purposes including referencing between transactions that are part of the same process.
+An catalogue instance must contain an identifier.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The version of the catalogue revision.
+To support updating the catalogue after the first submission a revision indicator is sometimes needed to differentiate the catalogue versions from each other.
+This ID ensures the catalogue provider and catalogue receiver always refer to the correct and valid version of the catalogue.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Source catalogue identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifies the existing, already received catalogue that this message should be acted upon, so that no discrepancies occur between the suppliers and customers information.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue action code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifies how a received catalogue should be used against existing catalogue lines sent in previous catalogues, so that no discrepancies occur between the suppliers and customers information.
+Describes how to treat existing items, not part of the received catalogue and those that are included (unchanged, changed or deleted). Default action is to fully replace the source catalogue.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A name of the catalogue for general reference.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue issue date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date on which the catalogue instance was issued.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General payment conditions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Textual description of the general payment conditions that apply to all items in the catalogue.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Process control</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information about the specification that apply to the transaction.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Business process type identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifies the business process context in which the transaction appears.
+It enables the buyer to process the invoice in an appropriate way.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specification identification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.
+This identifies the European invoice norm, as well as any extensions applied.
+The identification may include the version of the specification.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue validity period</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The period during which the content of the catalogue is valid and can be used for trade.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Period start date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date when the invoice period starts.
+The date is the first day of the period.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Period end date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date on which the period ends.
+The date is the last day of the period.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contract reference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A reference to a contract that can be identified.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contract identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The identification of a contract.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contract type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The type of a contract that is being referred to (such as framework agreement) expressed as a code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contract issue date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date on which the contract is issued.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contract subdivision</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A relevant subdivision of the contract a catalogue refers to.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue provider</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The party that sends the catalogue.
+The seller or a catalogue repository.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue provider electronic address identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The electronic address of the party that sends the catalogue.
+A catalogue may contain the providing party electronic address.
+The address can be of any format and the format should be identified in the message.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue provider standard identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The standard identifier of the party that sends the catalogue.
+Use in the absence of or in addition to Party Name.  Use an identifier known to the document recipient.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue provider name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the party that sends the catalogue.
+Use in the absence of or in addition to Party Identifier.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue provider address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address information.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The main address line in an address.
+Usually the street name and number or post office box.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An additional address line in an address that can be used to give further details supplementing the main line.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">City</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The common name of a city where the address is.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Post code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country subdivision</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The subdivision of a country such as region, county, state, province etc.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code that identifies the country.
+The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue receiver</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The party to which the catalogue is sent.
+Buyer or a catalogue repository on his behalf.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue receiver electronic address identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The electronic address of the party to which the catalogue is sent.
+A catalogue may contain the receiving party electronic address.
+The address can be of any format and the format should be identified in the message.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue receiver standard identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The standard identifier of the party to which the catalogue is sent.
+Use in the absence of or in addition to Party Name.  Use an identifier known to the document recipient.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue receiver name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the party to which the catalogue is sent.
+Use in the absence of or in addition to Party Identifier.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue receiver address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address information.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The main address line in an address.
+Usually the street name and number or post office box.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An additional address line in an address that can be used to give further details supplementing the main line.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">City</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The common name of a city where the address is.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Post code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country subdivision</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The subdivision of a country such as region, county, state, province etc.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code that identifies the country.
+The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue supplier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The party that provides the items specified in the catalog</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue supplier standard identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The standard identifier of the party that provides the items specified in the catalogue.
+Use in the absence of or in addition to Party Name.  Use an identifier known to the document recipient.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue supplier name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The party that provides the items specified in the catalogue.
+Use in the absence of or in addition to Party Identifier.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue supplier address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address information.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The main address line in an address. Usually the street name and number or post office box.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An additional address line in an address that can be used to give further details supplementing the main line.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">City</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The common name of a city where the address is.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Post code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country subdivision</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The subdivision of a country such as region, county, state, province etc.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code that identifies the country.
+The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue supplier contact</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to provide contacting information for a party in general or a person.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact point</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact telephone number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A phone number for the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact email address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An e-mail address for the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue customer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The party who may order from the catalogue.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue customer standard identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard identifier of the party who may order from the catalogue.
+Use in the absence of or in addition to Party Name.  Use an identifier known to the document recipient.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue customer name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the party who may order from the catalogue.
+Use in the absence of or in addition to Party Identifier.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue customer contact</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to provide contacting information for a party in general or a person.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact point</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact telephone number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A phone number for the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contact email address</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An e-mail address for the contact point.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue line</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Detailed information of an item, price and its composition  in a catalogue.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue line identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Each line must have an identifier that is unique within the document to make it possible to reference the line.
+For example, from other documents.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue line action code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifies how a received catalogue line should be used against existing catalogue lines sent in previous catalogues, so that no discrepancies occur between the suppliers and customers information.
+See rule on catalogue version ID.
+When using Update or Delete codes, the entire Catalogue Line is updated or deleted.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue line orderable indicator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates whether the catalogue line can be ordered.
+Default value is True i.e. Item on the Catalogue Line can be ordered.
+Can be used to indicate if an Item is temporarily out of stock (via a Catalogue Update).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Orderable unit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unit to be used to order this item.
+The same item can be described in more than one catalogue line with different orderable units.
+E.g. catalogue line 1 describes item X that can be ordered in boxes at a given price.
+Line 2 may describe the same item X as orderable in pallets where the price is lower.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Orderable unit factor rate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The factor by which the Item net price of an unit of an item can be converted to the orderable unit.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Order quantity increment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The increment of orderable units that can be ordered.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minimum order quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UOM should be stated  by using recommendation 20 v10 The minimum number of orderable units that can be ordered according to details provided in the catalogue line, such as price.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maximum order quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UOM should be stated  by using recommendation 20 v10. The maximum number of orderable units that can be ordered according to details provided in the catalogue line, such as price.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minimum quantity guaranteed for delivery</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UOM should be stated  by using recommendation 20 v10 The minimum quantity of an item that is guaranteed by the seller to be delivered.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue line warranty information</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Warranty information that applies to the catalogue line item.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contracted item indicator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates if the item is offered in accordance to an existing contract.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transaction conditions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Textual description of the specific transaction conditions (purchasing, sales, payment) for an item.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transaction conditions code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Coded description of the specific transaction conditions (purchasing, sales, payment) for an item.
+They can be: ”VQ”: Variable measure indicator "RC”: Returnable unit, indicator ”SER”: Trade item is a service ”MTO”: Trade item is produced after it has been ordered</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue item details</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A name for an item.
+Either the Item name or the Item description shall be provided.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A free text detailed description of an item.
+A detailed description of the item.
+Use one description pr.
+language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item brand name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the brand of the item to allow economic operators to distinctively describe an item in  their catalogue or pre-award catalogue.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item sellers identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An identifier, assigned by the seller, for the item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item standard identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An item identifier based on a registered scheme.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Manufacturers item identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The manufacturer&#8217;s identifier for the item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item key words</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to specify searchable keywords and/or synonyms for the item." E. g., Item name = Shiny Smile / Item keyword = Toothpaste"</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">External item specification URI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URI reference to external item information or specifications.
+E.g. web address</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item VAT category code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The VAT category code for the invoiced item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item VAT rate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The VAT rate, represented as percentage that applies to the item.
+A VAT rate of zero percent is applied for calculation purposes even if the item is outside the scope of VAT.
+Unless specific trade reasons apply such as exemptions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item origin country</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The code identifying the country from which the item originates.
+The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.
+Used to provide the country from which the item has its origin.
+Commonly used in cross border trade for statistical and customs purposes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hazardous item UNDG code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specification of the hazardous nature of an item according to the UNDG classification schema.
+Provides detail of the classification and nature of a hazardous item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hazardous class identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specification of the hazardous nature of an item according to a classification schema.
+Provides detail of the classification and nature of a hazardous item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item in-stock indicator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates whether an item is in the supplier&#8217;s stock.
+If not in stock the supplier has to order the item himself.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item expiry date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date on which the item will expire.
+Used to express the expiry date of the item or items in the line instance.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item best before date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date until when the relevant item qualities will remain at their best.
+Used to express the best before date of the item or items in the line instance.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item batch number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identification of the production batch in which the relevant items were produced.
+Identifies the production batch that the item(s) listed in the catalogue line were part of.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item net quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UOM should be stated by using recommendation 20 v10 The net quantity of the item that is contained in each consumable unit, excluding any packaging materials.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Manufacturer name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the manufacturer of the item.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item dimension description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Textual description of the item&#8217;s dimensions.
+Used if the dimension oft he item cannot be described using standardized properties, e.g., length, height or width.
+See also the Guideline on Usage of Classification Systems for using standardized properties.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item classification</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item classification code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code for classifying the item by its type or nature.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item classification name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the commodity classification for this item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item label</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information about the items environmental, social, ethical and quality type of labelling.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item label name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the product label.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item label value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The label value that applies to the item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item label type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The label type such environmental, quality, social etc.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item label reference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A reference to where the label specification can be found, e.g. a URI.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item label issuer party name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the party issuing the item label.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item means of proof</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A means of proof according to to Directives 2014/24/EU.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item means of proof idenifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A unique identifier being unique in a transcaction for a Item means of proof</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item means of proof type code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code specifying the type of the Item means of proof according to Directives 2014/24/EU, e.g., if it a label, test report etc.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item means of proof name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of a item means of proof</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item means of proof reference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A reference to an external specification of the provided means of proof.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item requirement reference</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A reference to the corresponding Item requirement given in the corresponding pre-award catalogue request.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An attribute or component of an item.
+Use for structured specification of Item Properties.
+Any properties of the item that cannot be specified in other elements.
+See also the Guideline on Usage of Classification System.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the property.
+The name must be sufficiently descriptive to define the value.
+The definition may be supplemented with the property unit of measure when relevant.
+E.g. Size, Color, Year.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value of the item property.
+E.g. XXL, Blue, 2007.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property unit of measure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The unit of measure in which the property value is stated, if relevant.
+May not be relevant when properties are descriptive.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item property classification code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code for the item property according to a property code system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item image</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information about an attached document.
+The main image for the item</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An identifier that can be used to reference the attached document, such as an unique identifier.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A short description of the attached document</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment description code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A functional description of the attachment expressed as code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attached document</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An attached document embedded as binary object.
+Attached document is used when documentation shall be stored with the invoice for future reference or audit purposes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Binary Object</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attached item specification</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information about an attached document.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An identifier that can be used to reference the attached document, such as an unique identifier.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A short description of the attached document</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attachment description code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A functional description of the attachment expressed as code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attached document</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An attached document embedded as binary object.
+Attached document is used when documentation shall be stored with the invoice for future reference or audit purposes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Binary Object</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue line validity period</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The period during which the information in the catalogue line is valid.
+An orderable catalogue item is no longer orderable after the validity period expires.
+Used for example for promotional items or prices.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Period start date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date when the invoice period starts.
+The date is the first day of the period.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Period end date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date on which the period ends.
+The date is the last day of the period.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue item price</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to specify the price of the item.
+Can also be used to specify prices that may be dependent on quantities and/or locations.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item net price</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The price of an item, exclusive of VAT, after subtracting item price discount. "The net price has to be equal with the gross price less the item price discount.
+The lists of valid currencies are registered with the ISO 4217 Maintenance Agency ""Codes for the representation of currencies and funds"". It is recommended to use the alpha-3 representation." The price is given for each orderable unit.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item price lead time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is the time until the item is ready for delivery.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item price type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The type of the price so that the receiver knows if the price may be changed is indicative.
+When prices are temporary the validity period for the price should be defined by stating the price validity period.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item price quantity threshold</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UOM should be stated  by using recommendation 20 v10 The minimum quantity of the item that can be ordered to a given price.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item price quantity ceiling</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UOM should be stated  by using recommendation 20 v10 The maximum quantity of the item that can be ordered to a given price.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Price validity period</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The period of time when the item can be ordered to the given price</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Period start date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date when the invoice period starts.
+The date is the first day of the period.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Period end date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The date on which the period ends.
+The date is the last day of the period.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Price location</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address information.
+Use to specify the location or area where this price applies.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">City</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The common name of a city where the address is.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country subdivision</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The subdivision of a country such as region, county, state, province etc.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item comparison</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Price information based on a standard quantity unit to enable price comparison.
+Used to provide price information based on a standard quantity unit to enable price comparison.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard unit of measure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The standard unit of measure used to enable comparison of item price to other similar items.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard unit quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The quantity of standard units that are in each consumable unit.
+E.g. if consumable units are bottles and each bottle contains 0,333 liters the standard unit quantity is 0,333</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standardized unit price</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The item price based on a standardized unit.
+E.g. Price of each liter.
+See guideline on Items and packing units in a catalogue.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amount</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Component related item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A component, accessory or other related item to an item in the catalogue.
+Catalogue items that may be components of this item.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item standard identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An item identifier based on a registered scheme.
+Indicate the seller&#8217;s identifier for the related item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Related item quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UOM should be stated  by using recommendation 20 v10 Quantity of a related item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required related item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A component, accessory or other related item to an item in the catalogue.
+Catalogue items that may be required with this item.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item standard identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An item identifier based on a registered scheme.
+Indicate the seller&#8217;s identifier for the related item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Related item quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UOM should be stated  by using recommendation 20 v10 Quantity of a related item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accessory related item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A component, accessory or other related item to an item in the catalogue.
+Items that can be used as optional accessories with the catalogue line item.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item standard identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An item identifier based on a registered scheme.
+Indicate the seller&#8217;s identifier for the related item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Related item quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UOM should be stated  by using recommendation 20 v10 Quantity of a related item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Replaced item</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A component, accessory or other related item to an item in the catalogue.
+The item that is being replaced with this catalogue line item.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item standard identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An item identifier based on a registered scheme.
+Indicate the seller&#8217;s identifier for the related item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Related item quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UOM should be stated  by using recommendation 20 v10 Quantity of a related item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item packaging</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Item packaging information refer to the orderable unit and describe how that unit is packed, at what hierarchical level the unit is and its relation to other levels of packaging.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Packed units</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The packaging the item is available inside the orderable unit (next lower level packaging), and which contains the number of the unit described in Packed quantity.
+The value should be a valid UOM code like CS for case</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Packed quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of packed units that are in the orderable unit.
+E.g. if the orderable unit is a pallet that contains 30 boxes then the packed units are BOX and the packed quantity is 30.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Numeric</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consumable unit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The unit in which the item described in this line is intended to be consumed in or sold in to the end buyer.
+For example a bottle.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consumable unit quantity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UOM should be stated  by using recommendation 20 v10 Specifies the number of consumable units that are in each orderable unit.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quantity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Package volume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The volume of the item including the packaging.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Package net weight approximate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The approximate package net weight of the item.
+The net weight is the weight of the item without the weight of the package.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Package net weight exact</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The exact package net weight of the item.
+The net weight is the weight of the item without the weight of the package.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Orderable unit handling information</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information on how to package and handle items.
+Outside, gross measures of the orderable unit as it is packed and including the packaging with the purpose of supporting handling and shipping planning.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handling unit packaging level</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The packaging level of the orderable unit.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handling unit logistic requirements</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description of requirements that relate to the transport of the item itself or the orderable unit in which it is contained.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handling unit height</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Height of the handling unit.
+The vertical height of the orderable unit.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handling unit length</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Length of the handling unit.
+The horizontal measure of the longer site of the orderable unit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handling unit width</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Width of the handling unit.
+The horizontal measure of the shorter side of the orderable unit.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handling unit gross weight</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The gross weight of a handling unit.
+The weight of the orderable unit including its packaging.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handling unit minimum storage temperature</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minimum storage temperature for the handling unit.
+The lower margin of the recommended storage temperature range for the item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handling unit maximum storage temperature</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maximum storage temperature for the handling unit.
+The upper margin of the recommended storage temperature range for the item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handling unit minimum storage humidity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minimum storage humidity for the handling unit.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Handling unit maximum storage humidity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maximum storage humidity for the handling unit.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Measure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delivery location</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address information.
+The location where the line item is made available according to the specification stated in the catalogue line.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The main address line in an address.
+Usually the street name and number or post office box.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Address line 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An additional address line in an address that can be used to give further details supplementing the main line.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">City</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The common name of a city where the address is.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Post code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country subdivision</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The subdivision of a country such as region, county, state, province etc.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Country code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syntax_binding"><a class="anchor" href="#_syntax_binding"></a>3. Syntax binding</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_syntax_bindings_pre_award_catalogue_request"><a class="anchor" href="#_syntax_bindings_pre_award_catalogue_request"></a>3.1. Syntax bindings Pre-award catalogue request</h3>
+<div class="paragraph">
+<p><code>CatalogueRequest</code></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. UBL Syntax binding</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Card</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:ID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transaction identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:IssueDate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Issue date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:IssueTime</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Issue time</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cbc:Note</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Version</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:RequestedCatalogueReference</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Previous version reference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:ReferencedContract</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Call for tenders reference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:ProviderParty</code> <a href="#pacr-ProviderParty.adoc">[+]</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contracting body</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:ReceiverParty</code> <a href="#pacr-ReceiverParty.adoc">[+]</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Economic operator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cac:CatalogueRequestLine</code> <a href="#pacr-CatalogueRequestLine.adoc">[+]</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue request line</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2018-08-23 12:52:23 CEST
+</div>
+</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>
