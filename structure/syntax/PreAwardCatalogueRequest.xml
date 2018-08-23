@@ -39,28 +39,28 @@
             <Term>cbc:ID</Term>
             <Name>Transaction identifier</Name>
             <Description>An identifier for the pre-award catalogue request that allows referencing the pre-award catalogue request.</Description>
-            <Value type="EXAMPLE"></Value>
+            <Value type="EXAMPLE">Transaction-02</Value>
         </Element>
         
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Issue date</Name>
             <Description>The date something was issued.</Description>
-            <Value type="EXAMPLE">02-12-2005</Value>
+            <Value type="EXAMPLE">2018-02-06</Value>
         </Element>
 
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
             <Name>Issue time</Name>
             <Description>The time something was issued.</Description>
-            <Value type="EXAMPLE">14.45</Value>
+            <Value type="EXAMPLE">14:23:13</Value>
         </Element>
         
         <Element>
             <Term>Note</Term>
             <Name>Version</Name>
             <Description>An identifier for the version of a transaction message.</Description>
-            <Value type="EXAMPLE"></Value>
+            <Value type="EXAMPLE">Version 3 is OK</Value>
         </Element>
 
         <Element>
@@ -73,7 +73,7 @@
                 <Term>cbc:EndpointID</Term>
                 <Name>Economic operator electronic address identifier</Name>
                 <Description>Electronic address of the economic operator.</Description>
-                <Value type="EXAMPLE">jj@sender.no</Value>
+                <Value type="EXAMPLE">64372999901</Value>
             </Element>
 
             <Element>
@@ -83,6 +83,7 @@
                     <Term>cbc:ID</Term>
                     <Name>Economic operator identifier</Name>
                     <Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
+                    <Value type="EXAMPLE">12324</Value>
                 </Element>
             </Element>
 
@@ -93,6 +94,7 @@
                     <Term>cbc:Name</Term>
                     <Name>Economic operator name</Name>
                     <Description>The name of the economic operator</Description>
+                    <Value type="EXAMPLE">Supplier ltd</Value>
                 </Element>
             </Element>
 
@@ -121,13 +123,14 @@
                     <Description>A code that identifies a subdivision of a country, e.,g., a province or district.</Description>
                 </Element>
 
-                <Element>
+                <Element> <!-- Better to use UBL CODE streetname and additionalstreetname ? -->
                     <Term>cac:AddressLine</Term>
                     
                     <Element>
                         <Term>cbc:Line</Term>
                         <Name>Address line </Name>
                         <Description>The main line in an address.</Description>
+                        <Value type="EXAMPLE">Heimdalsgate 3</Value>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -143,21 +146,23 @@
                     <Name>Country</Name>
 
                     <Element>
-                        <Term>cbc:Identification</Term>
+                        <Term>cbc:IdentificationCode</Term>
                         <Name>Country Code</Name>
                         <Description>A code that identifies the country.</Description>
+                        <Value type="EXAMPLE">DK</Value>
+
                     </Element>
                 </Element>
             </Element>
 
             <Element>
                 <Term>cac:PhysicalLocation</Term>
-                <Name>Country of registration</Name> <!-- Endre navn -->
+                <Name>Country of registration</Name> <!-- Change name -->
                 <Description>The country where the party is registered.</Description>
 
                 <Element>
                     <Term>cbc:LocationTypeCode</Term>
-                    <Name>Location code</Name> <!-- Endre navn -->
+                    <Name>Location code</Name> <!-- Change name -->
                     <Description>A code signifying the type of location. The code can be found in the code list.</Description>
                     <Value type="EXAMPLE">Country_of_registation</Value>
                 </Element>
@@ -173,8 +178,9 @@
 
                         <Element cardinality="0..1">
                             <Term>cbc:IdentificationCode</Term>
-                            <Name>Identification code</Name> <!-- Endre navn -->
+                            <Name>Identification code</Name> <!-- Change name -->
                             <Description>A code signifying this country.</Description>
+                            <Value type="EXAMPLE">UK</Value>
                         </Element>
                     </Element>
 
@@ -185,30 +191,32 @@
                 <Term>cac:Contact</Term>
                 <Name>Contact person</Name>
 
-                <Element> <!-- Dette elementet skal ikke stå her, men den burde det? -->
+                <Element> <!-- This element is addad by myself, do you agree? -->
                     <Term>cbc:Name</Term>
                     <Name>Contact name</Name>
                     <Description>The contact point's name.</Description>
+                    <Value type="EXAMPLE">Ola Nordmann</Value>
                 </Element>
                 
                 <Element cardinality="0..1">
                     <Term>cbc:Telephone</Term>
                     <Name>Contact telephone number</Name>
                     <Description>A phone number for the contact point.</Description>
+                    <Value type="EXAMPLE">94384329</Value>
                 </Element>
 
-                <Element> <!-- Ser ikke poenget med dette elementet -->
+                <Element> <!-- What is the point with this element? -->
                     <Term>cbc:ElectronicMail</Term>
                     <Name>Contact point</Name>
-                    <Description>
-                        An e-mail address for the contact point.</Description>
+                    <Description>An e-mail address for the contact point.</Description>
+                    <Value type="EXAMPLE">ola@gmail.no</Value>
                 </Element>
 
                 <Element>
                     <Term>cbc:ElectronicMail</Term>
                     <Name>Contact email address</Name>
-                    <Description>
-                        An e-mail address for the contact point.</Description>
+                    <Description>An e-mail address for the contact point.</Description>
+                    <Value type="EXAMPLE">ola.nordmann@supplier.no</Value>
                 </Element>
             </Element>
 
@@ -224,6 +232,7 @@
                 <Term>cbc:EndpointID</Term>
                 <Name>Contracting body electronic address identifier</Name>
                 <Description>Electronic address of the contracting body.</Description>
+                <Value type="EXAMPLE">74300020004</Value>
             </Element>
 
             <Element>
@@ -234,6 +243,7 @@
                     <Name>Contracting body identifier</Name>
                     <Description>The national identifier of a contracting body as it is legally registered
                         (e.g. VAT identification, such as KBO).</Description>
+                    <Value type="EXAMPLE">12345</Value>
                 </Element>
             </Element>
 
@@ -246,6 +256,7 @@
                     <Term>cbc:Name</Term>
                     <Name>Contracting body name</Name>
                     <Description>The name of the contracting body as it is registered.</Description>
+                    <Value type="EXAMPLE">David Jones</Value>
                 </Element>
             </Element>
 
@@ -257,7 +268,7 @@
                     <Term>cbc:CityName</Term>
                     <Name>City</Name>
                     <Description>The common name of a city where the address is located.</Description>
-                    <Value type="EXAMPLE">Oslo</Value>
+                    <Value type="EXAMPLE">London</Value>
                 </Element>
 
                 <Element>
@@ -265,22 +276,24 @@
                     <Name>Post code</Name>
                     <Description>The identifier for an addressable group of properties according to the relevant
                         postal service, such as a ZIP code or post code.</Description>
-                    <Value type="EXAMPLE">0948</Value>
+                    <Value type="EXAMPLE">AB119QN</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>cbc:CountrySubentityCode</Term>
                     <Name>Country subdivision code</Name>
                     <Description>A code that identifies a subdivision of a country, e.,g., a province or district.</Description>
+                    <Value type="EXAMPLE">Bolton</Value>
                 </Element>
 
-                <Element>
+                <Element> <!-- Better to use UBL CODE streetname and additionalstreetname ? -->
                     <Term>cac:AddressLine</Term>
 
                     <Element>
                         <Term>cbc:Line</Term>
                         <Name>Address line </Name>
                         <Description>The main line in an address.</Description>
+                        <Value type="EXAMPLE">Main street 3</Value>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -288,6 +301,7 @@
                         <Name>Address line 2</Name>
                         <Description>An additional address line in an address that can be used to give further details
                             supplementing the main line</Description>
+                        <Value type="EXAMPLE">Building 32</Value>
                     </Element>
                 </Element>
 
@@ -299,18 +313,19 @@
                         <Term>cbc:Identification</Term>
                         <Name>Country Code</Name>
                         <Description>A code that identifies the country.</Description>
+                        <Value type="EXAMPLE">UK</Value>
                     </Element>
                 </Element>
             </Element>
 
             <Element>
                 <Term>cac:PhysicalLocation</Term>
-                <Name>Country of registration</Name> <!-- Endre navn -->
+                <Name>Country of registration</Name> <!-- Change name -->
                 <Description>The country where the party is registered.</Description>
 
                 <Element>
                     <Term>cbc:LocationTypeCode</Term>
-                    <Name>Location code</Name> <!-- Endre navn -->
+                    <Name>Location code</Name> <!-- Change name  -->
                     <Description>A code signifying the type of location. The code can be found in the code list.</Description>
                     <Value type="EXAMPLE">Country_of_registation</Value>
                 </Element>
@@ -326,8 +341,9 @@
 
                         <Element cardinality="0..1">
                             <Term>cbc:IdentificationCode</Term>
-                            <Name>Identification code</Name> <!-- Endre navn -->
+                            <Name>Identification code</Name> <!-- Change name  -->
                             <Description>A code signifying this country.</Description>
+                            <Value type="EXAMPLE">123424</Value>
                         </Element>
                     </Element>
 
@@ -338,33 +354,48 @@
                 <Term>cac:Contact</Term>
                 <Name>Contact person</Name>
 
-                <Element> <!-- Dette elementet skal ikke stå her, men den burde det? -->
+                <Element> <!-- Just added this element, do you agree  ? -->
                     <Term>cbc:Name</Term>
                     <Name>Contact name</Name>
                     <Description>The contact point's name.</Description>
+                    <Name>Birgitt Nielsen</Name>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>cbc:Telephone</Term>
                     <Name>Contact telephone number</Name>
                     <Description>A phone number for the contact point.</Description>
+                    <Value type="EXAMPLE">84737223</Value>
                 </Element>
 
-                <Element> <!-- Ser ikke poenget med dette elementet -->
+                <Element> <!-- What is point with this element ?-->
                     <Term>cbc:ElectronicMail</Term>
                     <Name>Contact point</Name>
-                    <Description>
-                        An e-mail address for the contact point.</Description>
+                    <Description>An e-mail address for the contact point.</Description>
+                    <Value type="EXAMPLE">birgitt@ygh.com</Value>
                 </Element>
 
                 <Element>
                     <Term>cbc:ElectronicMail</Term>
                     <Name>Contact email address</Name>
-                    <Description>
-                        An e-mail address for the contact point.</Description>
+                    <Description>An e-mail address for the contact point.</Description>
+                    <Value type="EXAMPLE">birgitt.nielsen@gmail.com</Value>
                 </Element>
             </Element>
 
+        </Element>
+
+        <Element cardinality="0..1"> <!-- Need more input -->
+            <Term>cac:RequestedCatalogueReference</Term>
+            <Name>Previous version reference</Name>
+            <Description>A reference to the previous version of a transaction message.</Description>
+        </Element>
+
+        <Element>  <!-- Need more input -->
+            <Term>cac:ReferencedContract</Term>
+            <Name>Call for tenders reference</Name>
+            <Description>A reference to the call for tender as issued by the contracting body. Creates a link between
+                the call for tender and the tender.</Description>
         </Element>
         
         <Element cardinality="1..n">
@@ -375,15 +406,15 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Catalogue request line identifier</Name>
-                <Description>An identifer for the catalogue request line being unique within pre-award catalogue request.</Description>
+                <Description>An identifier for the catalogue request line being unique within pre-award catalogue request.</Description>
+                <Value type="EXAMPLE">73635</Value>
             </Element>
 
             <Element>
                 <Term>cac:RequiredItemLocationQuantity</Term>
-                <Name>Estimated value</Name>
-                <Description>The estimated value of the an item or an requested item.</Description>
+                <Name>Required Item location quantity</Name>
 
-                <Element> <!-- usikker på implementering, må sjekkes opp -->
+                <Element> <!-- Not sure with the implementation. Need QA. -->
                     <Term>cac:Price</Term>
                     <Name>Price</Name>
                     
@@ -394,47 +425,21 @@
 
                     <Element>
                         <Term>cbc:PriceTypeCode</Term>
-                        <Name>Price type code</Name>
-                    </Element>
-                    <Value type="EXAMPLE">Estimated_value</Value>
-                </Element>
-
-
-            </Element>
-        </Element>
-
-        <Element cardinality="1..n">
-            <Term>cac:CatalogueRequestLine</Term>
-            <Name>Catalogue request line</Name>
-            <Description>A line in a pre-award cataloue request specifying</Description>
-
-            <Element>
-                <Term>cbc:ID</Term>
-                <Name>Catalogue request line identifier</Name>
-                <Description>An identifer for the catalogue request line being unique within pre-award catalogue request.</Description>
-            </Element>
-
-            <Element>
-                <Term>cac:RequiredItemLocationQuantity</Term>
-                <Name>Total budget amount</Name>
-                <Description>The total budget amount for the requested item.</Description>
-
-                <Element> <!-- usikker på implementering, må sjekkes opp -->
-                    <Term>cac:Price</Term>
-                    <Name>Price</Name>
-
-                    <Element>
-                        <Term>cbc:PriceAmount</Term>
-                        <Name>Price amount</Name>
+                        <Name>Estimated value</Name>
+                        <Description>The estimated value of the an item or an requested item.</Description>
+                        <Value type="FIXED">Estimated_value</Value>
                     </Element>
 
                     <Element>
                         <Term>cbc:PriceTypeCode</Term>
-                        <Name>Price type code</Name>
-                        <Value type="EXAMPLE">Total_budget_amount</Value>
+                        <Name>Total budget amount</Name>
+                        <Description>The total budget amount for the requested item.</Description>
+                        <Value type="FIXED">Total_budget_amount</Value>
                     </Element>
+
                 </Element>
             </Element>
+
 
             <Element cardinality="0..n">
                 <Term>cac:item</Term>
@@ -628,11 +633,6 @@
             
             
         </Element>
-
-
-
-        
-
 
 
     </Document>
