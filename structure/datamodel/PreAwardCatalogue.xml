@@ -4,10 +4,8 @@
     <Term>catalogue</Term>
     <Name>Pre-Award Catalogue</Name>
 
- <!-- TODO:
     <Property key="sch:prefix">EUGEN-T68</Property>
     <Property key="sch:identifier">basic</Property>
--->
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
@@ -85,7 +83,7 @@
                 <Term>cbc:StartDate</Term>
                 <Name>Period start date</Name>
                 <Description>The date when the period starts.</Description>
-                <!-- TODO: Reference type="RULE">BII3-T68-R023</Reference -->
+                <Reference type="RULE">BII3-T68-R023</Reference>
                 <Value type="EXAMPLE">2017-06-01</Value>
             </Element>
 
@@ -93,7 +91,7 @@
                 <Term>cbc:EndDate</Term>
                 <Name>Period end date</Name>
                 <Description>The date on which the period ends.</Description>
-                <!-- TODO: Reference type="RULE">BII3-T68-R023</Reference-->
+                <Reference type="RULE">BII3-T68-R023</Reference>
                 <Value type="EXAMPLE">2017-06-30</Value>
             </Element>
         </Element>
@@ -169,7 +167,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
-                <!-- TODO: Reference type="RULE">EUGEN-T68-R012</Reference-->
+                <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -287,7 +285,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
-                <!-- TODO: Reference type="RULE">EUGEN-T68-R012</Reference -->
+                <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -311,7 +309,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
-                <!-- TODO: Reference type="RULE">EUGEN-T68-R012</Reference-->
+                <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                 <Element>
                     <Term>cbc:Name</Term>
@@ -369,7 +367,7 @@
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code</Name>
                         <Description>A code that identifies the country.</Description>
-                        <!-- TODO: Reference type="CODE_LIST">ISO3166</Reference-->
+                        <Reference type="CODE_LIST">ISO3166</Reference>
 
 <!-- TODO:
                         <Attribute>
@@ -419,7 +417,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyName</Term>
                     <Name>Party name</Name>
-                    <!-- TODO: Reference type="RULE">EUGEN-T68-R012</Reference -->
+                    <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                     <Element>
                         <Term>cbc:Name</Term>
@@ -474,7 +472,7 @@
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Country code</Name>
                             <Description>A code that identifies the country.</Description>
-                            <!-- TODO: Reference type="CODE_LIST">ISO3166</Reference -->
+                            <Reference type="CODE_LIST">ISO3166</Reference>
                             
 <!-- TODO:
                             <Attribute>
@@ -536,7 +534,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
-                    <!-- Reference type="RULE">EUGEN-T68-R012</Reference-->
+                    <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -559,7 +557,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyName</Term>
                    <Name>Party name</Name>
-                    <!-- TODO: Reference type="RULE">EUGEN-T68-R012</Reference -->
+                    <Reference type="RULE">EUGEN-T68-R012</Referenc>
 
                     <Element>
                         <Term>cbc:Name</Term>
@@ -674,7 +672,7 @@
                 <Name>Minimum order quantity</Name>
                 <Description>The smallest number of items that can be ordered.</Description>
 
-                <!-- TODO: Reference type="RULE">BII3-T68-R022</Reference -->
+                <Reference type="RULE">BII3-T68-R022</Reference>
 
 <!-- TODO: 
                 <Attribute>
@@ -728,7 +726,7 @@
                 <Term>cbc:PackLevelCode</Term>
                 <Name>Handling unit packaging level, used to indicate different pack levels and their relation</Name>
                 <Description>The packaging level of the orderable unit.</Description>
-                <!-- Reference type="CODE_LIST">GS17009</Reference -->
+                <Reference type="CODE_LIST">GS17009</Reference>
 
 <!-- TODO: 
                 <Attribute>
@@ -743,13 +741,13 @@
             <Element cardinality="0..1">
                 <Term>cac:LineValidityPeriod</Term>
                 <Name>Line validity period</Name>
-                <!-- TODO: Reference type="RULE">EUGEN-T68-R013</Reference -->
+                <Reference type="RULE">EUGEN-T68-R013</Reference>
 
                 <Element>
                     <Term>cbc:StartDate</Term>
                     <Name>Period start date</Name>
                     <Description>The date is the first day of the period.</Description>
-                    <!-- TODO: Reference type="RULE">BII3-T68-R020</Reference -->
+                    <Reference type="RULE">BII3-T68-R020</Reference>
                     <Value type="EXAMPLE">2017-06-01</Value>
                 </Element>
                 
@@ -757,7 +755,7 @@
                     <Term>cbc:EndDate</Term>
                     <Name>Period end date</Name>
                     <Description>The date is the last day of the period.</Description>
-                    <!-- TODO: Reference type="RULE">BII3-T68-R020</Reference -->
+                    <Reference type="RULE">BII3-T68-R020</Reference>
                     <Value type="EXAMPLE">2017-06-15</Value>
                 </Element>
             </Element>
@@ -819,7 +817,7 @@
                     <Term>cbc:ID</Term>
                     <Name>Item standard identifier</Name>
                     <Description>Indicate the seller's identifier for the related item.</Description>
-                    <!-- TODO: Reference type="RULE">EUGEN-T68-R011</Reference -->
+                    <Reference type="RULE">EUGEN-T68-R011</Reference>
                     <Value type="EXAMPLE">A</Value>
                 </Element>
 
@@ -1005,7 +1003,7 @@
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Country code</Name>
                             <Description>The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</Description>
-                            <!-- TODO: Reference type="CODE_LIST">ISO3166</Reference -->
+                            <Reference type="CODE_LIST">ISO3166</Reference>
                             
 <!-- TODO: 
                             <Attribute usage="Optional">
@@ -1046,7 +1044,7 @@
                         <Description>The type of the price so that the receiver knows if the price may be changed is indicative. When prices are temporary the validity period 
                             for the price should be defined by stating the price validity period.
                         </Description>
-                        <!-- TODO: Reference type="CODE_LIST">UNCL5387</Reference -->
+                        <Reference type="CODE_LIST">UNCL5387</Reference>
 
 <!-- TODO: 
                         <Attribute>
@@ -1071,15 +1069,15 @@
                     <Element cardinality="0..n">
                         <Term>cac:ValidityPeriod</Term>
                         <Name>Price validity period</Name>
-<!-- TODO: 
+
                         <Reference type="RULE">EUGEN-T68-R014</Reference>
                         <Reference type="RULE">EUGEN-T68-R015</Reference>
--->
+
                         <Element>
                             <Term>cbc:StartDate</Term>
                             <Name>Period start date</Name>
                             <Description>The date is the first day of the period.</Description>
-                            <!-- TODO: Reference type="RULE">BII3-T68-R021</Reference -->
+                            <Reference type="RULE">BII3-T68-R021</Reference>
                             <Value type="EXAMPLE">2017-06-01</Value>
                         </Element>
 
@@ -1087,7 +1085,7 @@
                             <Term>cbc:EndDate</Term>
                             <Name>Period end date</Name>
                             <Description>The date is the last day of the period.</Description>
-                            <!-- TODO: Reference type="RULE">BII3-T68-R021</Reference -->
+                            <Reference type="RULE">BII3-T68-R021</Reference>
                             <Value type="EXAMPLE">2017-06-15</Value>
                         </Element>
                     </Element>
@@ -1117,7 +1115,7 @@
                             <Attribute>
                                 <Term>currencyID</Term>
                                 <Name>Currency identifier</Name>
-                                <!-- TODO: Reference type="CODE_LIST">ISO4217</Reference -->
+                                <Reference type="CODE_LIST">ISO4217</Reference>
                                 <Value type="EXAMPLE">SEK</Value>
                             </Attribute>
                             
@@ -1321,7 +1319,7 @@
                         <Term>cbc:DocumentTypeCode</Term>
                         <Name>Attachment description code</Name>
                         <Description>A functional description of the attachment, expressed as a code</Description>
-                        <!-- TODO: Reference type="CODE_LIST">UNCL1001</Reference -->
+                        <Reference type="CODE_LIST">UNCL1001</Reference>
 
 <!-- TODO: 
                         <Attribute>
@@ -1392,9 +1390,9 @@
                         <Name>Item origin country</Name>
                         <Description>The code identifying the country from which the item
                             originates. Commonly used in cross border trade for statistical and customs purposes.</Description>
- <!-- TODO:  
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         
+ <!-- TODO:  
                         <Attribute>
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
@@ -1437,7 +1435,7 @@
                         <Description>Coded description of the specific transaction conditions
                             (purchasing, sales, payment) for an item. 
                         </Description>
-                        <!-- TODO: Reference type="CODE_LIST">TransactionCondition</Reference -->
+                        <Reference type="CODE_LIST">TransactionCondition</Reference>
                         <Value type="EXAMPLE">SER</Value>
                     </Element>
 
@@ -1469,9 +1467,9 @@
                         <Description>Specification of the hazardous nature of an item
                             according to the UNDG classification schema.
                         </Description>
-<!-- TODO:                         
                         <Reference type="CODE_LIST">UNCL8273</Reference>
                         
+<!-- TODO:                         
                         <Attribute>
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
@@ -1494,9 +1492,9 @@
                         <Term>cbc:ID</Term>
                         <Name>Item VAT category code</Name>
                         <Description>The VAT category for the item</Description>
-<!-- TODO: 
                         <Reference type="CODE_LIST">UNCL5305</Reference>
                         
+<!-- TODO: 
                         <Attribute usage="Optional">
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>              
@@ -1546,7 +1544,7 @@
                         <Name>Item property name</Name>
                         <Description>The name of the property.The name must be sufficiently descriptive to define the value. 
                             The definition may be supplemented with the property unit of measure when relevant.</Description>
-                        <!-- TODO: Reference type="RULE">BII3-T68-R015</Reference -->
+                        <Reference type="RULE">BII3-T68-R015</Reference>
                         <Value type="EXAMPLE">Color</Value>
                     
                     </Element>
@@ -1570,7 +1568,7 @@
                         <Term>cbc:Value</Term>
                         <Name>Item property value</Name>
                         <Description>The value of the item property</Description>
-                        <!-- TODO: Reference type="RULE">BII3-T68-R015</Reference -->
+                        <Reference type="RULE">BII3-T68-R015</Reference>
                         <Value type="EXAMPLE">Red</Value>
                     </Element>
 
@@ -1761,10 +1759,10 @@
                     <Element cardinality="0..1">
                         <Term>cbc:MinimumMeasure</Term>
                         <Description>The lower margin of the recommended storage temperature range for the item.</Description>
-<!-- TODO:
                         <Reference type="RULE">BII3-T68-R018</Reference>
                         <Reference type="RULE">BII3-T68-R019</Reference>
 
+<!-- TODO:
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quantity unit code</Name>
@@ -1785,10 +1783,10 @@
                     <Element cardinality="0..1">
                         <Term>cbc:MaximumMeasure</Term>
                         <Description>The upper margin of the recommended storage temperature range for the item.</Description>
-<!-- TODO:
                         <Reference type="RULE">BII3-T68-R018</Reference>
                         <Reference type="RULE">BII3-T68-R019</Reference>
 
+<!-- TODO:
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quantity unit code</Name>
