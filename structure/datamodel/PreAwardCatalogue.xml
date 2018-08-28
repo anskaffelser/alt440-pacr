@@ -1658,48 +1658,50 @@
 -->
                 </Element>
 
-<!-- TODO: Naming of label information -->
                 <Element cardinality="0..n">
                     <Term>cac:Certificate</Term>
+                    <Name>Item means of proof</Name>
+                    <Description>A means of proof according to to Directives 2014/24/EU.</Description>
 
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name>Label Identifier</Name> 
+                        <Name>Iteam means of proof identifier</Name>
+                        <Description>A unique identifier being unique in a transcaction for a Item means of proof.</Description>
                     </Element>
 
                     <Element>
                         <Term>cbc:CertificateTypeCode</Term>
-                        <Name>Item label type</Name>
-                        <Description>The label type such environmental, quality, social etc.</Description>
+                        <Name>Item means of proof type</Name>
+                        <Description>A code specifying the type of the Item means of proof according to Directives 2014/24/EU, e.g., if it a label, test report etc.</Description>
                         <Value type="EXAMPLE">NEO</Value>
                     </Element>
 
                     <Element>
                         <Term>cbc:CertificateType</Term>
-                        <Name>Item label name</Name>
-                        <Description>The name of the product label</Description>
+                        <Name>Item means of proof name</Name>
+                        <Description>Name of a item means of proof, e.g., the name of a label.</Description>
                         <Value type="EXAMPLE">Nordic Ecolabel</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:Remarks</Term>
-                        <Name>Item label value</Name>
-                        <Description>The label value that applies to the item.</Description>
+                        <Name>Item means of proof value</Name>
+                        <Description>The value according to the Item means of proof that applies to the item.</Description>
                     </Element>
 
                     <Element>
                         <Term>cac:IssuerParty</Term>
-                        <Name>Label issuer party</Name>
+                        <Name>Item means of proof issuer party</Name>
+                        <Description>The party issuing the means of proof for the item. E.g., the organisation that issues a label or test reports, etc.</Description>
 
                         <Element>
                             <Term>cac:PartyName</Term>
                             <Name>Party name</Name>
                         
-
                             <Element>
                                 <Term>cbc:Name</Term>
-                                <Name>Item label issuer party name</Name>
-                                <Description>Name of the party issuing the item label.</Description>
+                                <Name>Item means of proof issuer party name</Name>
+                                <Description>Name of the party issuing the means of proof for the item.</Description>
                                 <Value type="EXAMPLE">Svanemerket</Value>
                             </Element>
                         </Element>
@@ -1709,15 +1711,40 @@
                         <Term>cac:DocumentReference</Term>
                         <Name>Document reference</Name>
 
+                        <!-- TODO: Check, if this can be specified this way -->
                         <Element>
-                            <Term>cbc:ID</Term>
-                            <Name>Item label reference</Name>
-                            <Description>A reference to where the label specification can be
-                                found, e.g. a URI.
-                            </Description>
-                            <Value type="EXAMPLE">www.nordic-ecolabel.org</Value>
+                            <Term>cbc:DocumentTypeCode</Term>
+                            <Description>Pseudo code indicating the DocumentReference as an  Items means of proof reference</Description>
+                            <Value type="FIXED">Item_means_of_proof_reference</Value>
+                        </Element>
+
+                        <Element>
+                            <Term>cbc:ID</Term> <!-- TODO: cbc:ID appropriate as a URI? -->
+                            <Name>Item means of proof reference</Name>
+                            <Description>A reference to an external specification of the provided means of proof.</Description>
+                            <Value type="EXAMPLE">http://www.nordic-ecolabel.org</Value>
                         </Element>
                     </Element>
+
+                    <Element cardinality="0..n">
+                        <Term>cac:DocumentReference</Term>
+                        <Name>Document reference</Name>
+
+                        <!-- TODO: Check, if this can be specified this way -->
+                        <Element>
+                            <Term>cbc:DocumentTypeCode</Term>
+                            <Description>Pseudo code indicating the DocumentReference as an  Items means of proof reference</Description>
+                            <Value type="FIXED">Item_means_of_proof_reference</Value>
+                        </Element>
+
+                        <Element>
+                            <Term>cbc:ID</Term> <!-- TODO: cbc:ID appropriate as a URI? -->
+                            <Name>Item requirement reference</Name>
+                            <Description>A reference to the corresponding Item requirement given in the corresponding pre-award catalogue request.</Description>
+                            <Value type="EXAMPLE">urn:sample:difi:pacr:aaaba1a2-d107-426d-8a64-698b678756d5:item-requirement:2</Value>
+                        </Element>
+                    </Element>
+
                 </Element>
 
                 <Element cardinality="0..n">
