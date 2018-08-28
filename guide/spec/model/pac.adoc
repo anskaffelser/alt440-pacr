@@ -51,6 +51,11 @@ Describes how to treat existing items, not part of the received catalogue and th
 |Date
 
 |0..1
+|Catalogue issue time
+|The time on which the catalogue instance was issued.
+|Time
+
+|0..1
 |General payment conditions
 |Textual description of the general payment conditions that apply to all items in the catalogue.
 |

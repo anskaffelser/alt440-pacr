@@ -55,15 +55,12 @@
             <Value type="EXAMPLE">2017-06-01</Value>
         </Element>
 
-<!-- TODO:
-        Not part of the information model
-
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
-            <Name>The time on which the pre-award catalogue was issued.</Name>
+            <Name>Catalogue issue time</Name>
+            <Description>The time on which the pre-award catalogue was issued.</Description>
             <Value type="EXAMPLE">10:00:00</Value>
         </Element>
--->
 
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
