@@ -19,11 +19,12 @@
         <Title>PreAward Catalogue </Title>
     </Resource> 
     
-  <!--  <!-\- Code lists -\->
+  <!-- Code lists -->
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ICD.xml</Path>
+        <Path>structure/codelist/icd.xml</Path>
     </Resource>
+  
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
@@ -40,7 +41,7 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec21-9e.xml</Path>
     </Resource>
-    
+    <!--  
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/MimeCode.xml</Path>
