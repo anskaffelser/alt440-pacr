@@ -19,5 +19,35 @@
         <Title>PreAward Catalogue </Title>
     </Resource> 
     
+    <!-- Code lists -->
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ICD.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ISO4217_2015.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec20-11e.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec21-9e.xml</Path>
+    </Resource>
     
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/MimeCode.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/TrueFalse.xml</Path>
+    </Resource>
+   
 </Project>
