@@ -51,6 +51,11 @@ Describes how to treat existing items, not part of the received catalogue and th
 |Date
 
 |0..1
+|Catalogue issue time
+|The time on which the catalogue instance was issued.
+|Time
+
+|0..1
 |General payment conditions
 |Textual description of the general payment conditions that apply to all items in the catalogue.
 |
@@ -617,9 +622,24 @@ See also the Guideline on Usage of Classification Systems for using standardized
 |Text
 
 |0..1
+|Item means of proof value
+|Name of a item means of proof
+|Text
+
+|0..n
 |Item means of proof reference
 |A reference to an external specification of the provided means of proof.
 |URI
+
+|1..1
+|Item means of proof issuer party
+|The party issuing the means of proof for the item. E.g., the organisation that issues a label or test reports, etc.
+|Class
+
+|1..1
+|Item means of proof issuer party name
+|The name of the party issuing the means of proof for the item.
+|Text
 
 |1..1
 |Item requirement reference
