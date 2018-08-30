@@ -1,6 +1,8 @@
 [[information-model-pac]]
 = Information model Pre-award catalogue
 
+#Add model diagram?#
+
 .Information model Pre-award catalogue
 [cols="1,2,8,1",options="header"]
 

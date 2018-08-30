@@ -1,3 +1,8 @@
+//Internal
+:link-pracc-req: https://test-vefa.difi.no/alt440/pacr/syntax/PreAwardCatalogueRequest/tree/[Pre award catalogue request]
+:link-pracc-cat: https://test-vefa.difi.no/alt440/pacr/syntax/catalogue/tree/ [Pre award catalogue]
+
+
 //PEPPOL
 :peppol: https://peppol.eu/?rel=undefined[PEPPOL]
 :common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[PEPPOL BIS common text and introduction]
@@ -13,8 +18,8 @@
 :tc440: https://standards.cen.eu/dyn/www/f?p=204:7:0::::FSP_ORG_ID:1976650&cs=175E298F320429229DD35C9E22F4E8F76[CEN/TC 440]
 
 //UBL
-:ubl: http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL 2.1]
-:ubl-catalogue: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Catalogue-2.1.xsd[UBL Catalogue 2.1]
+:ubl: http://docs.oasis-open.org/ubl/UBL-2.2.html[UBL 2.2]
+:ubl-catalogue: http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/maindoc/UBL-Catalogue-2.2.xsd[UBL Catalogue 2.2]
 
 
 //ISO:

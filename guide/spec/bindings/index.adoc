@@ -1,7 +1,7 @@
-= Syntax binding
+[[binding]]
+= Syntax mapping and detailed information content
 
-:leveloffset: +1
+Detailed descriptions, use of code lists, attributes, fixed values etc. are found in
 
-include::pacr.adoc[]
-
-:leveloffset: -1
+* {link-pracc-req} and
+* {link-pracc-cat}.

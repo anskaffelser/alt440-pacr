@@ -17,10 +17,16 @@ v{revision}
 
 :leveloffset: +1
 
+include::introduction.adoc[]
+
 include::definitions/index.adoc[]
 
 include::model/index.adoc[]
 
 include::bindings/index.adoc[]
+
+include::codes/index.adoc[]
+
+include::datatypes/index.adoc[]
 
 :leveloffset: -1

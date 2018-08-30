@@ -1,0 +1,4 @@
+[preface]
+= Introduction
+
+The purpose of this document is to describe a common format for the pre award catalogue messages in the European market, and to facilitate an efficient implementation and increased use of electronic collaboration, both in the tendering process as well as in the bridging between pre- and post award catalogues.
