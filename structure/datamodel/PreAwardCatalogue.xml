@@ -557,7 +557,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyName</Term>
                    <Name>Party name</Name>
-                    <Reference type="RULE">EUGEN-T68-R012</Referenc>
+                    <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                     <Element>
                         <Term>cbc:Name</Term>
