@@ -198,13 +198,6 @@
                     <Value type="EXAMPLE">94384329</Value>
                 </Element>
 
-                <Element> <!-- What is the point with this element? -->
-                    <Term>cbc:ElectronicMail</Term>
-                    <Name>Contact point</Name>
-                    <Description>An e-mail address for the contact point.</Description>
-                    <Value type="EXAMPLE">ola@gmail.no</Value>
-                </Element>
-
                 <Element>
                     <Term>cbc:ElectronicMail</Term>
                     <Name>Contact email address</Name>
@@ -355,13 +348,6 @@
                     <Name>Contact telephone number</Name>
                     <Description>A phone number for the contact point.</Description>
                     <Value type="EXAMPLE">84737223</Value>
-                </Element>
-
-                <Element> <!-- What is point with this element ? -->
-                    <Term>cbc:ElectronicMail</Term>
-                    <Name>Contact point</Name>
-                    <Description>An e-mail address for the contact point.</Description>
-                    <Value type="EXAMPLE">birgitt@ygh.com</Value>
                 </Element>
 
                 <Element>
