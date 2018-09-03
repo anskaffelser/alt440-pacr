@@ -388,11 +388,20 @@
             <Description>A reference to the previous version of a transaction message.</Description>
         </Element>
 
-        <Element>  <!-- Need more input -->
+        <Element>
             <Term>cac:ReferencedContract</Term>
-            <Name>Call for tenders reference</Name>
-            <Description>A reference to the call for tender as issued by the contracting body. Creates a link between
-                the call for tender and the tender.</Description>
+            <!--
+            This term has no coressponding business term, as it is only
+            needed to bind a bussines term to an element within this
+            element.
+            -->
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Call for tenders reference</Name>
+                <Description>A reference to the call for tender as issued by the contracting body. Creates a link between
+                    the call for tender and the tender.</Description>
+                <Value type="EXAMPLE">123456-2018</value>
+            </Element>
         </Element>
         
         <Element cardinality="1..n">
