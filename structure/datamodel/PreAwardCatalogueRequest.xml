@@ -382,10 +382,19 @@
 
         </Element>
 
-        <Element cardinality="0..1"> <!-- Need more input -->
+        <Element cardinality="0..1">
             <Term>cac:RequestedCatalogueReference</Term>
-            <Name>Previous version reference</Name>
-            <Description>A reference to the previous version of a transaction message.</Description>
+            <!--
+            This term has no coressponding business term, as it is only
+            needed to bind a bussines term to an element within this
+            element.
+            -->
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Previous version reference</Name>
+                <Description>A reference to the previous version of a transaction message.</Description>
+                <Value type="EXAMPLE">12345.2018.1</Value>
+            </Element>
         </Element>
 
         <Element>
