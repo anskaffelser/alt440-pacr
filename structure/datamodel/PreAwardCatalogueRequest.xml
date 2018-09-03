@@ -15,7 +15,7 @@
             <Term>cbc:UBLVersionID</Term>
             <Name>UBL version identifier</Name>
             <Description>Identifies the version of syntax that transactions are based on.</Description>
-            <Value type="EXAMPLE">2.1</Value>
+            <Value type="FIXED">2.2</Value>
         </Element>
 
         <Element>
@@ -42,7 +42,7 @@
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Issue date</Name>
-            <Description>The date something was issued.</Description>
+            <Description>The date something was issued. YYYY-MM-DD.</Description>
             <Value type="EXAMPLE">2018-02-06</Value>
         </Element>
 
@@ -64,7 +64,7 @@
             <Term>cac:ReceiverParty</Term>
             <Name>Economic operator</Name>
             <Description>The contracting authority or contracting entity who is buying supplies, services or public
-                works using a tendering procedure as described in the applicable directive .</Description>
+                works using a tendering procedure as described in the applicable directive.</Description>
 
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
@@ -117,7 +117,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:CountrySubentityCode</Term>
                     <Name>Country subdivision code</Name>
-                    <Description>A code that identifies a subdivision of a country, e.,g., a province or district.</Description>
+                    <Description>A code that identifies a subdivision of a country, e.g., a province or district.</Description>
                 </Element>
 
                 <Element> <!-- Better to use UBL CODE streetname and additionalstreetname ? -->
@@ -134,7 +134,7 @@
                         <Term>cbc:Line</Term>
                         <Name>Address line 2</Name>
                         <Description>An additional address line in an address that can be used to give further details
-                            supplementing the main line</Description>
+                            supplementing the main line.</Description>
                     </Element>
                 </Element>
 
@@ -161,7 +161,7 @@
                     <Term>cbc:LocationTypeCode</Term>
                     <Name>Location code</Name> <!-- Change name -->
                     <Description>A code signifying the type of location. The code can be found in the code list.</Description>
-                    <Reference type="CODE_LIST">Country_of_registation</Reference>
+                    <Reference type="CODE_LIST">IS03166-1_Alpha</Reference> <!-- Country_of_registation -->
                 </Element>
 
                 <Element>
@@ -324,7 +324,7 @@
                     <Term>cbc:LocationTypeCode</Term>
                     <Name>Location code</Name> <!-- Change name  -->
                     <Description>A code signifying the type of location. The code can be found in the code list.</Description>
-                    <Reference type="CODE_LIST">Country_of_registation</Reference>
+                    <Reference type="CODE_LIST">IS03166-1_Alpha</Reference> <!-- Country_of_registation -->
                 </Element>
 
                 <Element>
