@@ -179,7 +179,7 @@ The country where the party
 |1..1
 |Contact point
 |
-|The name of the contact point.
+|The contact point's name.
 |Name
 |
 |
@@ -310,7 +310,7 @@ The country where the party
 |1..1
 |Contact point
 |
-|The name of the contact.
+|The contact point's name.
 |Name
 |
 |

@@ -184,9 +184,9 @@
                 <Term>cac:Contact</Term>
                 <Name>Contact person</Name>
 
-                <Element> <!-- This element is added by myself, do you agree? -->
+                <Element>
                     <Term>cbc:Name</Term>
-                    <Name>Contact name</Name>
+                    <Name>Contact point</Name>
                     <Description>The contact point's name.</Description>
                     <Value type="EXAMPLE">Ola Nordmann</Value>
                 </Element>
@@ -336,9 +336,9 @@
                 <Term>cac:Contact</Term>
                 <Name>Contact person</Name>
 
-                <Element> <!-- Just added this element, do you agree  ? -->
+                <Element>
                     <Term>cbc:Name</Term>
-                    <Name>Contact name</Name>
+                    <Name>Contact point</Name>
                     <Description>The contact point's name.</Description>
                     <Value type="EXAMPLE">Birgitt Nielsen</Value>
                 </Element>
