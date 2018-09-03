@@ -20,10 +20,10 @@
     <cac:ReceiverParty>
         <cbc:EndpointID>753923352</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID>98457332</cbc:ID>
+            <cbc:ID schemeID="GLN">98457332</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>Fisherman company ltd</cbc:Name>
+            <cbc:Name>Fisherman supplier company ltd</cbc:Name>
         </cac:PartyName>
         <cac:PostalAddress>
             <cbc:CityName>Oslo</cbc:CityName>
@@ -32,8 +32,117 @@
             <cac:AddressLine>
                 <cbc:Line>Kirkegata 34</cbc:Line>
             </cac:AddressLine>
+            <cac:Country>
+                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">NO</cbc:IdentificationCode>
+            </cac:Country>
         </cac:PostalAddress>
+        <cac:Contact>
+            <cbc:Name>Ole Simensen</cbc:Name>
+            <cbc:Telephone>94837528</cbc:Telephone>
+            <cbc:ElectronicMail>ole.simensen@supplier.com</cbc:ElectronicMail>
+        </cac:Contact>
     </cac:ReceiverParty>
 
+    <!-- end::receiverparty[] -->
+
+    <!-- tag::providerparty[] -->
+
+    <cac:ProviderParty>
+        <cbc:EndpointID>1122334455</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID>2761245</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Provider name</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+            <cbc:CityName>London</cbc:CityName>
+            <cbc:PostalZone>AN224QH</cbc:PostalZone>
+            <cbc:CountrySubentityCode>X</cbc:CountrySubentityCode>
+            <cac:AddressLine>
+                <cbc:Line>Main street 5</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">GB</cbc:IdentificationCode>
+            </cac:Country>
+        </cac:PostalAddress>
+        <cac:PhysicalLocation>
+            <cbc:LocationTypeCode listID="ISO3166-1_Alpha2">NO</cbc:LocationTypeCode>
+            <cac:Address>
+                <cac:Country>
+                    <cbc:IdentificationCode>546247</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:Address>
+        </cac:PhysicalLocation>
+        <cac:Contact>
+            <cbc:Name>Hans Eriksson</cbc:Name>
+            <cbc:Telephone>98415274</cbc:Telephone>
+            <cbc:ElectronicMail>hans.eriksson@provider.com</cbc:ElectronicMail>
+        </cac:Contact>
+
+    </cac:ProviderParty>
+
+    <!-- end::providerparty[] -->
+
+
+    <!-- NEED INPUT HERE!! -->
+
+    <cac:RequestCatalogueReference></cac:RequestCatalogueReference>
+
+    <cac:ReferencedContract></cac:ReferencedContract>
+
+    <!-- tag::cataloguerequestline[] -->
+
+    <cac:CatalogueRequestLine>
+        <cbc:ID>5134432</cbc:ID>
+        <cac:RequiredItemLocationQuantity>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="GBP">4579</cbc:PriceAmount> <!-- codelist ISO4217_2015 -->
+                <cbc:PriceTypeCode listID="ISO4217_2015">GBP</cbc:PriceTypeCode>
+            </cac:Price>
+        </cac:RequiredItemLocationQuantity>
+        <cac:Item>
+            <cbc:Description>We need black Apple iPhone 7, with 32GB.</cbc:Description>
+            <cbc:Name>iPhone 7</cbc:Name>
+            <cac:CatalogueDocumentReference>
+                <cac:Attachment>
+                    <cac:ExternalReference>
+                        <cbc:URI>http://www.example.com/apple/iPhone/7/index.html</cbc:URI>
+                    </cac:ExternalReference>
+                </cac:Attachment>
+            </cac:CatalogueDocumentReference>
+            <cac:ItemSpecificationDocumentReference>
+                <cbc:ID>7</cbc:ID>
+                <cbc:DocumentDescription languageID="en">Iphone to stuff members.</cbc:DocumentDescription>
+                <cac:Attachment>
+                    <cac:ExternalReference>
+                        <cbc:URI>http://www.example.com/apple/iPhone/7/stuff/index.html</cbc:URI>
+                    </cac:ExternalReference>
+                </cac:Attachment>
+                <cac:ResultOfVerification>
+                    <cbc:ValidationResultCode></cbc:ValidationResultCode> <!-- What to write here? -->
+                    <cbc:ValidateProcess>1234-abc</cbc:ValidateProcess>
+                </cac:ResultOfVerification>
+            </cac:ItemSpecificationDocumentReference>
+            <cac:CommodityClassification>
+                <cbc:ItemClassificationCode name="ABC">124</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <cac:AdditionalItemProperty>
+                <cbc:ID>254</cbc:ID>
+                <cbc:Name>Carolina Dickmerk</cbc:Name>
+                <cbc:NameCode name="AA" listSchemeURI="X">42</cbc:NameCode> <!-- Any idea? -->
+                <cbc:TestMethod>Test the item.</cbc:TestMethod>
+                <cbc:Value>124</cbc:Value>
+                <cbc:ValueQuantity unitCode="1224">74</cbc:ValueQuantity>
+                <cbc:ImportanceCode>mandatory</cbc:ImportanceCode>
+                <cac:ItemPropertyRange>
+                    <cbc:MinimumValue>2</cbc:MinimumValue>
+                    <cbc:MaximumValue>52</cbc:MaximumValue>
+                </cac:ItemPropertyRange>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+    </cac:CatalogueRequestLine>
+
+    <!-- end::cataloguerequestline[] -->
 
 </ubl:CatalogueRequest>

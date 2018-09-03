@@ -365,7 +365,7 @@
                     <Value type="EXAMPLE">84737223</Value>
                 </Element>
 
-                <Element> <!-- What is point with this element ?-->
+                <Element> <!-- What is point with this element ? -->
                     <Term>cbc:ElectronicMail</Term>
                     <Name>Contact point</Name>
                     <Description>An e-mail address for the contact point.</Description>
@@ -538,7 +538,7 @@
                     <Description>A classification of this item according to a specific system for classifying commodities.</Description>
 
                     <Element>
-                        <Term>cbc:ItemClassification</Term>
+                        <Term>cbc:ItemClassificationCode</Term>
                         <Name>Item request classification code</Name>
 
                         <Attribute>
