@@ -5,5 +5,5 @@ include::guide/settings.adoc[]
 .UBL example of price
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=Price]
+include::{snippet-dir}/PreAwardCatalogue-example.xml[tags=Price]
 ----

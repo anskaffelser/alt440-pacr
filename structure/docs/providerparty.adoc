@@ -1,9 +1,9 @@
 include::guide/settings.adoc[]
 
-= Provider Party
+//= Provider Party
 
 .UBL example of provider party
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=ProviderParty]
+include::{snippet-dir}/PreAwardCatalogue-example.xml[tags=ProviderParty]
 ----
