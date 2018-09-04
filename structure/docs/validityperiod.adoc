@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+= Validity period
+
+.UBL example of validity period
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=validityperiod]
+----
