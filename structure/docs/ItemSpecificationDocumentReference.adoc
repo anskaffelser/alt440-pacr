@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+= Item Specification Document Reference
+
+.UBL example of item specification document reference
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=ItemSpecificationDocumentReference]
+----

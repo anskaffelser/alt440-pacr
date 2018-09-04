@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+= Receiver Party
+
+.UBL example of receiver party
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogueRequest-example.xml[tags=ReceiverParty-Request]
+----

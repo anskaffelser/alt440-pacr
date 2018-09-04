@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+= Classified Tax Category
+
+.UBL example of classified tax category
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=ClassifiedTaxCategory]
+----

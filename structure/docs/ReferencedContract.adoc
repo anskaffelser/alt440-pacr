@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+= Referenced Contract
+
+.UBL example of referenced contract
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=ReferencedContract]
+----

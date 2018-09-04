@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+= Item Comparison
+
+.UBL example of item comparison
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=ItemComparison]
+----

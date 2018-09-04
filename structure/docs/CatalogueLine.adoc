@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+= Catalogue line
+
+.UBL example of catalogue line
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=CatalogueLine]
+----

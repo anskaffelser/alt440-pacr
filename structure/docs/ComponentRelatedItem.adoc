@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+= Component Related Item
+
+.UBL example of component related item
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=ComponentRelatedItem]
+----

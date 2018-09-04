@@ -15,7 +15,7 @@
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
     <cbc:note>Payment deadline 2018-12-01.</cbc:note>
 
-    <!-- tag::receiverparty[] -->
+    <!-- tag::ReceiverParty-Request[] -->
 
     <cac:ReceiverParty>
         <cbc:EndpointID>753923352</cbc:EndpointID>
@@ -42,11 +42,9 @@
             <cbc:ElectronicMail>ole.simensen@supplier.com</cbc:ElectronicMail>
         </cac:Contact>
     </cac:ReceiverParty>
+    <!-- end::ReceiverParty-Request[] -->
 
-    <!-- end::receiverparty[] -->
-
-    <!-- tag::providerparty[] -->
-
+    <!-- tag::ProviderParty-Request[] -->
     <cac:ProviderParty>
         <cbc:EndpointID>1122334455</cbc:EndpointID>
         <cac:PartyIdentification>
@@ -79,10 +77,8 @@
             <cbc:Telephone>98415274</cbc:Telephone>
             <cbc:ElectronicMail>hans.eriksson@provider.com</cbc:ElectronicMail>
         </cac:Contact>
-
     </cac:ProviderParty>
-
-    <!-- end::providerparty[] -->
+    <!-- end::ProviderParty-Request[] -->
 
 
     <!-- NEED INPUT HERE!! -->
@@ -91,8 +87,7 @@
 
     <cac:ReferencedContract></cac:ReferencedContract>
 
-    <!-- tag::cataloguerequestline[] -->
-
+    <!-- tag::CatalogueRequestLine[] -->
     <cac:CatalogueRequestLine>
         <cbc:ID>5134432</cbc:ID>
         <cac:RequiredItemLocationQuantity>
@@ -142,7 +137,6 @@
             </cac:AdditionalItemProperty>
         </cac:Item>
     </cac:CatalogueRequestLine>
-
-    <!-- end::cataloguerequestline[] -->
+    <!-- end::CatalogueRequestLine[] -->
 
 </ubl:CatalogueRequest>

@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+= Complementary Related Item
+
+.UBL example of complementary related item
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=ComplementaryRelatedItem]
+----

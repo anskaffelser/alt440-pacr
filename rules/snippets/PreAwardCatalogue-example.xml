@@ -8,23 +8,332 @@
     <!-- Snippet file for Alt440- PreAward Catalogue  -->
 
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-    <cbc:CustomizationID></cbc:CustomizationID> <!-- Need input -->
-    <cbc:ProfileID></cbc:ProfileID> <!-- Need input -->
+    <cbc:CustomizationID>ds</cbc:CustomizationID> <!-- Need input -->
+    <cbc:ProfileID>fa</cbc:ProfileID> <!-- Need input -->
     <cbc:ID>j3a3-ik53-tr35-3fw7</cbc:ID>
     <cbc:Name>Catalogue name</cbc:Name>
     <cbc:IssueDate>2018-10-20</cbc:IssueDate>
     <cbc:IssueTime>15:34:57</cbc:IssueTime>
     <cbc:note>Payment deadline 2018-11-01.</cbc:note>
     <cbc:VersionID>1</cbc:VersionID>
-
-    tag::validityperiod[]
+    <!-- tag::ValidityPeriod[] -->
 
     <cac:ValidityPeriod>
         <cbc:StartDate>2018-10-20</cbc:StartDate>
         <cbc:EndDate>2018-10-30</cbc:EndDate>
     </cac:ValidityPeriod>
+    <!-- end::ValidityPeriod[] -->
 
-    end::validityperiod[]
+    <!-- tag::ReferencedContract[] -->
+    <cac:ReferencedContract>
+        <cbc:ID>8173</cbc:ID>
+        <cbc:IssueDate>2018-08-01</cbc:IssueDate>
+        <cbc:ContractTypeCode listID="UNCL1001">21</cbc:ContractTypeCode>
+        <cac:ContractDocumentReference>
+            <cbc:ID>TU-343</cbc:ID>
+        </cac:ContractDocumentReference>
+    </cac:ReferencedContract>
+    <!-- end::ReferencedContract[] -->
+
+    <!-- tag::ProviderParty[] -->
+    <cac:ProviderParty>
+        <cbc:EndpointID schemeID="SE:VATNO">TJ5241254623</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID>ST0242892522</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Hans Jensen</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+            <cbc:StreetName>GI Københavnsvej 2</cbc:StreetName>
+            <cbc:AdditionalStreetName>Building 3</cbc:AdditionalStreetName>
+            <cbc:CityName>København</cbc:CityName>
+            <cbc:PostalZone>3550</cbc:PostalZone>
+            <cbc:CountrySubentity>Slangerup</cbc:CountrySubentity>
+            <cac:Country>
+                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">DK</cbc:IdentificationCode>
+            </cac:Country>
+        </cac:PostalAddress>
+    </cac:ProviderParty>
+    <!-- end::ProviderParty[] -->
+
+    <!-- tag::ReceiverParty[] -->
+    <cac:ReceiverParty>
+        <cbc:EndpointID>14534789</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID>9375302</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Giovanni Tommaso Capon</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+            <cbc:StreetName>Via Goffredo Mameli 25</cbc:StreetName>
+            <cbc:AdditionalStreetName>Building 2</cbc:AdditionalStreetName>
+            <cbc:CityName>Porchiano Del Monte</cbc:CityName>
+            <cbc:PostalZone>05022</cbc:PostalZone>
+            <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
+            <cac:Country>
+                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">IT</cbc:IdentificationCode>
+            </cac:Country>
+        </cac:PostalAddress>
+    </cac:ReceiverParty>
+    <!-- end::ReceiverParty[] -->
+
+    <!-- tag::SellerSupplierParty[] -->
+    <cac:SellerSupplierParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID>34343476336</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Dieter Meier</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Koenigstrasse 12</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building 54</cbc:AdditionalStreetName>
+                <cbc:CityName>Tambach-Dietharz</cbc:CityName>
+                <cbc:PostalZone>99897</cbc:PostalZone>
+                <cbc:CountrySubentity>Freistaat Thüringen</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode listID="ISO3166-1_Alpha2">DE</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:Contact>
+                <cbc:Name>Andrea Herz</cbc:Name>
+                <cbc:Telephone>0461548690</cbc:Telephone>
+                <cbc:Telefax>0461548691</cbc:Telefax>
+                <cbc:ElectronicMail>andrea.herz@supplier.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:SellerSupplierParty>
+    <!-- end::SellerSupplierParty[] -->
+
+    <!-- tag::ContractorCustomerParty[] -->
+    <cac:ContractorCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID>1278</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Emiliano Russo</cbc:Name>
+            </cac:PartyName>
+            <cac:Contact>
+                <cbc:Name>Rodrigo Tommasso</cbc:Name>
+                <cbc:Telephone>03576125600</cbc:Telephone>
+                <cbc:Telefax>03576125601</cbc:Telefax>
+                <cbc:ElectronicMail>rodrigo.tommasso@supplier.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:ContractorCustomerParty>
+    <!-- end::ContractorCustomerParty[] -->
+
+    <!-- tag::CatalogueLine[] -->
+    <cac:CatalogueLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:ContractSubdivision>Part 1</cbc:ContractSubdivision>
+        <cbc:OrderableIndicator>true</cbc:OrderableIndicator> <!-- Codelist: TrueFalse -->
+        <cbc:OrderableUnit>14</cbc:OrderableUnit> <!-- Codelist: UNECERec20-11e -->
+        <cbc:ContentUnitQuantity>34</cbc:ContentUnitQuantity>
+        <cbc:OrderQuantityIncrementNumeric>2</cbc:OrderQuantityIncrementNumeric>
+        <cbc:MinimumOrderQuantity>1</cbc:MinimumOrderQuantity>
+        <cbc:MaximumOrderQuantity>500</cbc:MaximumOrderQuantity>
+        <cbc:WarrantyInformation>5 years warranty</cbc:WarrantyInformation>
+        <cbc:PackLevelCode>IF</cbc:PackLevelCode> <!-- Codelist: UNECERec21-9e -->
+        <cac:LineValidityPeriod>
+            <cbc:StartDate>2018-10-20</cbc:StartDate>
+            <cbc:EndDate>2018-10-30</cbc:EndDate>
+        </cac:LineValidityPeriod>
+
+        <!-- tag::ItemComparison[] -->
+        <cac:ItemComparison>
+            <cbc:PriceAmount currencyID="EUR">142.00</cbc:PriceAmount> <!-- Codelist: ISO4217_2015-->
+            <cbc:Quantity>0.5</cbc:Quantity>
+        </cac:ItemComparison>
+        <!-- end::ItemComparison[] -->
+
+        <!-- tag::ComponentRelatedItem[] -->
+        <cac:ComponentRelatedItem>
+            <cbc:ID>B1</cbc:ID>
+            <cbc:Quantity>4</cbc:Quantity>
+        </cac:ComponentRelatedItem>
+        <!-- end::ComponentRelatedItem[] -->
+
+        <!-- tag::ReplacedRelatedItem[] -->   <!-- Include this as a tag notation or not ? -->
+        <cac:ReplacedRelatedItem>
+            <cbc:ID>AA</cbc:ID>
+            <cbc:Quantity>16</cbc:Quantity>
+        </cac:ReplacedRelatedItem>
+        <!-- end::ReplacedRelatedItem[] -->
+
+        <!-- tag::ComplementaryRelatedItem[] -->
+        <cac:ComplementaryRelatedItem>
+            <cbc:ID>R2</cbc:ID>
+            <cbc:Quantity>3161</cbc:Quantity>
+        </cac:ComplementaryRelatedItem>
+        <!-- tag::ComplementaryRelatedItem[] -->
+
+        <!-- tag::ReplacedRelatedItem[] --> <!-- Include this as a tag notation or not ? -->
+        <cac:ReplacedRelatedItem>
+            <cbc:ID>BB</cbc:ID>
+            <cbc:Quantity>31</cbc:Quantity>
+        </cac:ReplacedRelatedItem>
+        <!-- tag::ReplacedRelatedItem[] -->
+
+        <!-- tag::RequiredItemLocationQuantity[] --> <!-- Include this as a tag notation or not ? -->
+        <cac:RequiredItemLocationQuantity>
+            <cac:ApplicableTerritoryAddress>
+                <cbc:StreetName>Via Goffredo Mameli 32</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building 43A</cbc:AdditionalStreetName>
+                <cbc:CityName>Porchiano Del Monte</cbc:CityName>
+                <cbc:PostalZone>05022</cbc:PostalZone>
+                <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode listID="ISO3166_Alpha2">IT</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:ApplicableTerritoryAddress>
+
+            <!-- tag::Price[] -->
+            <cac:Price>
+                <cbc:PriceAmount currencyID="EUR">120</cbc:PriceAmount>
+                <cbc:PriceTypeCode>CP</cbc:PriceTypeCode> <!-- Not sure, double check!! -->
+                <cbc:OrderableUnitFactorRate>5</cbc:OrderableUnitFactorRate>
+                <cac:ValidityPeriod>
+                    <cbc:StartDate>2018-10-20</cbc:StartDate>
+                    <cbc:EndDate>2018-10-30</cbc:EndDate>
+                </cac:ValidityPeriod>
+                <cac:AllowanceCharge>
+                    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+                    <cbc:AllowanceChargeReason>Return the customer's discount.</cbc:AllowanceChargeReason>
+                    <cbc:Amount currencyID="EUR">12</cbc:Amount>
+                </cac:AllowanceCharge>
+            </cac:Price>
+            <!-- end::Price[] -->
+
+            <!-- tag::DeliveryUnit[] -->
+            <cac:DeliveryUnit>
+                <cbc:BatchQuantity>10</cbc:BatchQuantity>
+                <cbc:ConsumerUnitQuantity>2</cbc:ConsumerUnitQuantity>
+            </cac:DeliveryUnit>
+            <!-- end::DeliveryUnit[] -->
+        </cac:RequiredItemLocationQuantity>
+        <!-- end::RequiredItemLocationQuantity[] -->
+
+        <!-- tag::Item[] -->
+        <cac:Item>
+            <cbc:Description>The item is x size, and is powerful with...</cbc:Description>
+            <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric> <!-- Codelist: UNECERec20-11e -->
+            <cbc:Name>ABC</cbc:Name>
+            <cbc:Keyword>Pastilles</cbc:Keyword>
+            <cbc:BrandName>Fisherman's friend</cbc:BrandName>
+            <cac:SellersItemIdentification>
+                <cbc:ID>T5</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:ManufacturersItemIdentification>
+                <cbc:ID>N72</cbc:ID>
+            </cac:ManufacturersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID>452733563835</cbc:ID>
+                <cbc:ExtendedID>B72-24GY</cbc:ExtendedID>
+            </cac:StandardItemIdentification>
+
+            <!-- tag::ItemSpecificationDocumentReference[] -->
+            <cac:ItemSpecificationDocumentReference>
+                <cbc:ID>ie353-ior24-iedt25-pry463</cbc:ID>
+                <cbc:DocumentTypeCode>4</cbc:DocumentTypeCode>
+                <cbc:DocumentType>Contains menthol, citrus, mint, aspartam,...</cbc:DocumentType>
+                <cbc:DocumentDescription>Strong pastilles, good for illness....</cbc:DocumentDescription>
+                <cac:Attachment>
+                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png">JKEAGAGE98QHJ02NAGAE83HJ3QLJGQ3</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
+                    <cac:ExternalReference>
+                        <cbc:URI>https://fishermen/mint/yellow</cbc:URI>
+                    </cac:ExternalReference>
+                </cac:Attachment>
+            </cac:ItemSpecificationDocumentReference>
+            <!-- end::ItemSpecificationDocumentReference[] -->
+
+            <cac:OriginCountry>
+                <cbc:IdentificationCode listID="ISO3166_Alpha2">ES</cbc:IdentificationCode>
+            </cac:OriginCountry>
+            <cac:CommodityClassification>
+                <cbc:ItemClassificationCode>465353</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <cac:TransactionConditions>
+                <cbc:ActionCode></cbc:ActionCode> <!-- Need input -->
+                <cbc:Description>2% discount of the payment; reason of delayed delivery.</cbc:Description>
+            </cac:TransactionConditions>
+            <cac:HazardousItem>
+                <cbc:ID>55AG</cbc:ID>
+                <cbc:UNDGCode>1164</cbc:UNDGCode>
+            </cac:HazardousItem>
+
+            <!-- tag::ClassifiedTaxCategory[] -->
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID> <!-- Need VAT codelist ref. -->
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <!-- end::ClassifiedTaxCategory[] -->
+
+            <!-- tag::AdditionalItemProperty[] -->
+            <cac:AdditionalItemProperty>
+                <cbc:ID>X4</cbc:ID>
+                <cbc:Name>Sugarfree fisherman's friend</cbc:Name>
+                <cbc:NameCode>21</cbc:NameCode> <!-- Need to ref. to codelist UNCL7081. Must include UNCL7081 in the codelist. -->
+                <cbc:ValueQuantity unitCodeListID="UNECERec20-11e">58</cbc:ValueQuantity> <!-- How to refer to the codelist UNECERec20-11e? -->
+            </cac:AdditionalItemProperty>
+            <!-- end::AdditionalItemProperty[] -->
+
+            <cac:ManufacturerParty>
+                <cac:PartyName>
+                    <cbc:Name>Fisherman's for everyone ltd</cbc:Name>
+                </cac:PartyName>
+            </cac:ManufacturerParty>
+            <cac:ItemInstance>
+                <cbc:BestBeforeDate>2019-12-20</cbc:BestBeforeDate>
+                <cac:AdditionalItemProperty>
+                    <cbc:Name>Sugar rate</cbc:Name>
+                    <cac:RangeDimension>
+                        <cbc:Description>25 g per package, with 90g sugar.</cbc:Description>
+                    </cac:RangeDimension>
+                </cac:AdditionalItemProperty>
+            </cac:ItemInstance>
+            <cac:Certificate>
+                <cbc:ID>147</cbc:ID>
+                <cbc:CertificateTypeCode>NEO</cbc:CertificateTypeCode> <!-- Need some codelist here. -->
+                <cbc:CertificateType>Sweden sugarlabel</cbc:CertificateType>
+                <cbc:Remarks>The lab test is highly qualified, but is not 100% right.</cbc:Remarks>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>Benchmark</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+                <cac:DocumentReference>
+                    <cbc:DocumentTypeCode>Fisherman/sugar/rate</cbc:DocumentTypeCode>
+                    <cbc:ID>http://www.sugarlabel.org/sweden</cbc:ID>
+                </cac:DocumentReference>
+                <cac:DocumentReference>
+                    <cbc:DocumentTypeCode>Fisherman/sugar/rate</cbc:DocumentTypeCode>
+                    <cbc:ID>urn:sample:fisherman:era22-khwr35-ga32:item-sugar-rate</cbc:ID> <!-- Is it OK?-->
+                </cac:DocumentReference>
+            </cac:Certificate>
+            <cac:Dimension> <!-- NOT sure with the implementation. -->
+                <cbc:Measure unitCode="UNECERec20-11e">DG</cbc:Measure>
+                <cbc:MinimumMeasure unitCode="">3</cbc:MinimumMeasure> <!-- Which codelist? -->
+                <cbc:MaximumMeasure unitCode="">20</cbc:MaximumMeasure> <!-- Which codelist? -->
+            </cac:Dimension>
+        </cac:Item>
+        <!-- end::Item[] -->
+
+        <!-- tag::CallForTendersLineReference[] --> <!-- Include this as a tag notation or not ? -->
+        <cac:CallForTendersLineReference>
+            <cbc:LineID>AA32</cbc:LineID>
+        </cac:CallForTendersLineReference>
+        <!-- end::CallForTendersLineReference[] -->
+
+    </cac:CatalogueLine>
+    <!-- end::catalogueline[] -->
 
 
 </ubl:Catalogue>

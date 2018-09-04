@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+= Replaced Related Item
+
+.UBL example of replaced related item
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=ReplacedRelatedItem]
+----

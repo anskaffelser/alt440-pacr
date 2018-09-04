@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+= Price
+
+.UBL example of price
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=Price]
+----
