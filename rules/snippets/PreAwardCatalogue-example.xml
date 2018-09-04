@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ubl:Catalogue
+        xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+    <!-- Snippet file for Alt440- PreAward Catalogue  -->
+
+    <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
+    <cbc:CustomizationID></cbc:CustomizationID> <!-- Need input -->
+    <cbc:ProfileID></cbc:ProfileID> <!-- Need input -->
+    <cbc:ID>j3a3-ik53-tr35-3fw7</cbc:ID>
+    <cbc:Name>Catalogue name</cbc:Name>
+    <cbc:IssueDate>2018-10-20</cbc:IssueDate>
+    <cbc:IssueTime>15:34:57</cbc:IssueTime>
+    <cbc:note>Payment deadline 2018-11-01.</cbc:note>
+    <cbc:VersionID>1</cbc:VersionID>
+
+    tag::validityperiod[]
+
+    <cac:ValidityPeriod>
+        <cbc:StartDate>2018-10-20</cbc:StartDate>
+        <cbc:EndDate>2018-10-30</cbc:EndDate>
+    </cac:ValidityPeriod>
+
+    end::validityperiod[]
+
+
+</ubl:Catalogue>

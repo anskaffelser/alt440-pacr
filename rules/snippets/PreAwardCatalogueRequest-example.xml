@@ -11,9 +11,9 @@
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:CatalogueRequest:2.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:02:1.0</cbc:ProfileID>
     <cbc:ID>8a2cbf-9b7b-4f13-8490-fr723</cbc:ID>
-    <cbc:IssueDate>2018-10-20</cbc:IssueDate>
+    <cbc:IssueDate>2018-11-15</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
-    <cbc:note>Need to double check the order delivery.</cbc:note>
+    <cbc:note>Payment deadline 2018-12-01.</cbc:note>
 
     <!-- tag::receiverparty[] -->
 
