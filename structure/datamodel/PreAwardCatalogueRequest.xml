@@ -65,6 +65,7 @@
             <Name>Economic operator</Name>
             <Description>The contracting authority or contracting entity who is buying supplies, services or public
                 works using a tendering procedure as described in the applicable directive.</Description>
+            <Property key="doc">structure/docs/ReceiverParty-Request.adoc</Property>
 
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>

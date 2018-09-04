@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/structure/docs/AdditionalItemProperty.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/CallForTendersLineReference.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/CatalogueLine.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/CatalogueRequestLine.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ClassifiedTaxCategory.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ComplementaryRelatedItem.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ComponentRelatedItem.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ContractorCustomerParty.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/DeliveryUnit.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/Item.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ItemComparison.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ItemSpecificationDocumentReference.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/Price.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ProviderParty-Request.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ProviderParty.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ReceiverParty-Request.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ReceiverParty.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ReferencedContract.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ReplacedRelatedItem.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/RequiredItemLocationQuantity.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/SellerSupplierParty.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/cataloguerequestline.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/providerparty.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/receiverparty.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/validityperiod.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,57 +12,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="3">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="PreAwardCatalogue-example.xml" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="772">
-                    <caret line="328" column="18" selection-start-line="328" selection-start-column="18" selection-end-line="328" selection-end-column="45" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PreAwardCatalogueRequest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="67" column="68" selection-start-line="67" selection-start-column="68" selection-end-line="67" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ProviderParty.adoc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/structure/docs/ProviderParty.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor>
                 <caret selection-end-line="8" selection-end-column="4" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComplementaryRelatedItem.adoc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/docs/ComplementaryRelatedItem.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="119">
-                <caret line="7" column="85" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequiredItemLocationQuantity.adoc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/docs/RequiredItemLocationQuantity.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="119">
-                <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
               </first_editor>
               <second_editor />
             </state>
@@ -169,12 +107,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CallForTendersLineReference.adoc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CallForTendersLineReference.adoc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/structure/docs/CallForTendersLineReference.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="119">
                 <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.adoc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
+          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="544">
+                <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               </first_editor>
               <second_editor />
             </state>
@@ -222,7 +172,6 @@
         <option value="$PROJECT_DIR$/guide/bindings/pacr-ReceiverParty.adoc" />
         <option value="$PROJECT_DIR$/structure/syntax/PreAwardCatalogueRequest.xml" />
         <option value="$PROJECT_DIR$/rules/example/PreAwardCatalogueRequest-example.xml" />
-        <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" />
         <option value="$PROJECT_DIR$/structure/docs/receiverparty.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/validityperiod.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/main.adoc" />
@@ -255,6 +204,7 @@
         <option value="$PROJECT_DIR$/structure/docs/ClassifiedTaxCategory.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/AdditionalItemProperty.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/CallForTendersLineReference.adoc" />
+        <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" />
       </list>
     </option>
   </component>
@@ -309,12 +259,6 @@
               <item name="alt440-pacr" type="b2602c69:ProjectViewProjectNode" />
               <item name="alt440-pacr" type="462c0819:PsiDirectoryNode" />
               <item name="structure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alt440-pacr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alt440-pacr" type="462c0819:PsiDirectoryNode" />
-              <item name="structure" type="462c0819:PsiDirectoryNode" />
-              <item name="codelist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="alt440-pacr" type="b2602c69:ProjectViewProjectNode" />
@@ -426,16 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="595">
-            <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/guide/spec/settings.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
@@ -537,13 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="959">
           <caret line="138" column="31" selection-start-line="138" selection-start-column="31" selection-end-line="138" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10948">
-          <caret line="644" lean-forward="true" selection-start-line="644" selection-end-line="644" />
         </state>
       </provider>
     </entry>
@@ -741,6 +668,23 @@
             <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="544">
+            <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="67" column="68" selection-start-line="67" selection-start-column="68" selection-end-line="67" selection-end-column="68" />
         </state>
       </provider>
     </entry>
