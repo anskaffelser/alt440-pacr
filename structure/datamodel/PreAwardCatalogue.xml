@@ -77,7 +77,7 @@
             <Term>cac:ValidityPeriod</Term>
             <Name>Pre award catalogue validity period</Name>
             <Description>The validity period must include both start date and end date, and the start date must be earlier than the end date</Description>
-            <Property key="doc">structure/docs/validity-period.adoc</Property>
+            <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
 
             <Element>
                 <Term>cbc:StartDate</Term>
@@ -100,7 +100,7 @@
             <Term>cac:ReferencedContract</Term>
             <Name>Contract reference</Name>
             <Description>A reference to a contract that can be identified.</Description>
-            <Property key="doc">structure/docs/procurement-ref.adoc</Property>
+            <Property key="doc">structure/docs/ReferencedContract.adoc</Property>
 
             <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
@@ -147,7 +147,7 @@
             <Term>cac:ProviderParty</Term>
             <Name>Provider party</Name>
             <Description>The party that sends the catalogue.</Description> 
-            <Property key="doc">structure/docs/provider.adoc</Property>
+            <Property key="doc">structure/docs/ProviderParty.adoc</Property>
 
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
@@ -265,7 +265,7 @@
             <Term>cac:ReceiverParty</Term>
             <Name>Catalogue receiver</Name> <!-- TODO: Different name, subelements as well -->
             <Description>The party to which the catalogue is sent.</Description>
-            <Property key="doc">structure/docs/receiver.adoc</Property>
+            <Property key="doc">structure/docs/ReceiverParty.adoc</Property>
 
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
@@ -386,6 +386,7 @@
             <Term>cac:SellerSupplierParty</Term>
             <Name>Catalogue supplier</Name>
             <Description>The party that provides the items specified in the catalog, must be used if the supplier is different from the catalogue provider</Description>
+            <Property key="doc">structure/docs/SellerSupplierParty.adoc</Property>
 
             <Element>
                 <Term>cac:Party</Term>
@@ -526,6 +527,7 @@
             <Term>cac:ContractorCustomerParty</Term>
             <Name>Catalogue Customer</Name>
             <Description>The party who may order from the catalogue, must be used if the customer party is different from the receiver party</Description>
+            <Property key="doc">structure/docs/ContractCustomerParty.adoc</Property>
 
             <Element>
                 <Term>cac:Party</Term>
@@ -606,7 +608,7 @@
             <Term>cac:CatalogueLine</Term>
             <Name>Pre award catalogue line</Name>
             <Description>Detailed information of an item, price and its composition  in a pre-award catalogue.</Description>
-            <Property key="doc">structure/docs/line.adoc</Property>
+            <Property key="doc">structure/docs/CatalogueLine.adoc</Property>
 
             <Element>
                 <Term>cbc:ID</Term>
@@ -764,7 +766,7 @@
                 <Term>cac:ItemComparison</Term>
                 <Name>Item comparison</Name>
                 <Description>Used for comparing prices for different articles with various quantities. E.g. Price of each liter.</Description>
-                <Property key="doc">structure/docs/item-comparison.adoc</Property>
+                <Property key="doc">structure/docs/ItemComparison.adoc</Property>
 
                 <Element cardinality="0..1">
                     <Term>cbc:PriceAmount</Term>
@@ -811,7 +813,7 @@
                 <Term>cac:ComponentRelatedItem</Term>
                 <Name>Component related item</Name>
                 <Description>Component related items are products that are connected in a product line or a logistics structure, e.g. consumer units and trading units of the same article.</Description>
-                <Property key="doc">structure/docs/component-related.adoc</Property>
+                <Property key="doc">structure/docs/ComponentRelatedItem.adoc</Property>
 
                 <Element cardinality="0..1">
                     <Term>cbc:ID</Term>
@@ -885,7 +887,7 @@
                 <Term>cac:ComplementaryRelatedItem</Term>
                 <Name>Complementary related item</Name>
                 <Description>Complementary related item is used for items that might be sold together with a product, e.g. disk station to a laptop.</Description>
-                <Property key="doc">structure/docs/complementary-related.adoc</Property>
+                <Property key="doc">structure/docs/ComplementaryRelatedItem.adoc</Property>
 
                 <Element cardinality="0..1">
                     <Term>cbc:ID</Term>
@@ -923,6 +925,7 @@
                 <Term>cac:ReplacedRelatedItem</Term>
                 <Name>Replacement product</Name>
                 <Description>Replacement product is used to identify a product replacing an existing product in the Catalogue.</Description>
+                <Property key="doc">structure/docs/ReplacedRelatedItem.adoc</Property>
 
                 <Element cardinality="0..1">
                     <Term>cbc:ID</Term>
@@ -959,6 +962,7 @@
                 <Term>cac:RequiredItemLocationQuantity</Term>
                 <Name>Item Location Quantity</Name>
                 <Description>Properties of the item in this catalogue line that are dependent on location and quantity.</Description>
+                <Property key="doc">structure/docs/RequiredItemLocationQuantity.adoc</Property>
 
                 <Element cardinality="0..n">
                     <Term>cac:ApplicableTerritoryAddress</Term>
@@ -1021,7 +1025,7 @@
                     <Term>cac:Price</Term>
                     <Name>Price</Name>
                     <Description>Used to give the item net price as well as conditional price related to a specific location or a quanity, as well as campaing prices.</Description>
-                    <Property key="doc">structure/docs/price.adoc</Property>
+                    <Property key="doc">structure/docs/Price.adoc</Property>
 
                     <Element>
                         <Term>cbc:PriceAmount</Term>
@@ -1069,6 +1073,7 @@
                     <Element cardinality="0..n">
                         <Term>cac:ValidityPeriod</Term>
                         <Name>Price validity period</Name>
+                        <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
 
                         <Reference type="RULE">EUGEN-T68-R014</Reference>
                         <Reference type="RULE">EUGEN-T68-R015</Reference>
@@ -1128,6 +1133,7 @@
                 <Element cardinality="0..n">
                     <Term>cac:DeliveryUnit</Term>
                     <Name>Delivery unit</Name>
+                    <Property key="doc">structure/docs/DeliveryUnit.adoc</Property>
 
                     <Element>
                         <Term>cbc:BatchQuantity</Term>
@@ -1181,7 +1187,7 @@
             <Element>
                 <Term>cac:Item</Term>
                 <Name>Pre award catalogue item details</Name>
-                <Property key="doc">structure/docs/item.adoc</Property>
+                <Property key="doc">structure/docs/Item.adoc</Property>
 
                 <Element cardinality="0..1">
                     <Term>cbc:Description</Term>
@@ -1305,7 +1311,7 @@
                     <Term>cac:ItemSpecificationDocumentReference</Term>
                     <Name>Attached item specifications</Name>
                     <Description>Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended to use external references in the form of URI’s for attachments.</Description>
-                    <Property key="doc">structure/docs/attachments.adoc</Property>
+                    <Property key="doc">structure/docs/ItemSpecificationDocumentReference.adoc</Property>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -1486,7 +1492,7 @@
                     <Term>cac:ClassifiedTaxCategory</Term>
                     <Name>Classified tax category</Name>
                     <Description>VAT information</Description>
-                    <Property key="doc">structure/docs/vat.adoc</Property>
+                    <Property key="doc">structure/docs/ClassifiedTaxCategory.adoc</Property>
                     
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
@@ -1529,7 +1535,7 @@
                     <Term>cac:AdditionalItemProperty</Term>
                     <Name>Additional item property</Name>
                     <Description>Additional properties are meant for product properties that cannot be sent in any of the defined elements in PreAward Catalogue. Additional properties consist of the Name of the property and the actual Value.</Description>
-                    <Property key="doc">structure/docs/additional.adoc</Property>
+                    <Property key="doc">structure/docs/AdditionalItemProperty.adoc</Property>
                     
 
                     <Element cardinality="0..1">
@@ -1614,6 +1620,7 @@
                     <Element cardinality="0..n">
                         <Term>cac:AdditionalItemProperty</Term>
                         <Name>Additional item property</Name>
+                        <Property key="doc">structure/docs/AdditionalItemProperty.adoc</Property>
 
                         <Element>
                             <Term>cbc:Name</Term>
@@ -1837,6 +1844,7 @@
                 <Term>cac:CallForTendersLineReference</Term>
                 <Name>Call for Tenders line reference</Name>
                 <Description>Reference to a Line on a Call For Tenders document.</Description>
+                <Property key="doc">structure/docs/CallForTendersLineReference.adoc</Property>
 
                 <Element>
                     <Term>cbc:LineID</Term>
