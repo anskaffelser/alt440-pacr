@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Seller Supplier Party
+//= Seller Supplier Party
 
 .UBL example of seller supplier party
 [source, xml, indent=0]

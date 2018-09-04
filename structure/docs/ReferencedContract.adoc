@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Referenced Contract
+//= Referenced Contract
 
 .UBL example of referenced contract
 [source, xml, indent=0]

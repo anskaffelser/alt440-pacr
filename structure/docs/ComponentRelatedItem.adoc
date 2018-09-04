@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Component Related Item
+//= Component Related Item
 
 .UBL example of component related item
 [source, xml, indent=0]

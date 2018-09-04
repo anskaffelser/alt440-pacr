@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Contractor Customer Party
+//= Contractor Customer Party
 
 .UBL example of contractor customer party
 [source, xml, indent=0]

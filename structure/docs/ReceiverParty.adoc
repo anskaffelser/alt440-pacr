@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Receiver Party
+//= Receiver Party
 
 .UBL example of provider party
 [source, xml, indent=0]

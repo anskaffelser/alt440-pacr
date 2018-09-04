@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Required Item Location Quantity
+//= Required Item Location Quantity
 
 .UBL example of required item location quantity
 [source, xml, indent=0]

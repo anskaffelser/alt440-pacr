@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Call For Tenders Line Reference
+//= Call For Tenders Line Reference
 
 .UBL example of call for tenders line reference
 [source, xml, indent=0]

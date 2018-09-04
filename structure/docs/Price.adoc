@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Price
+//= Price
 
 .UBL example of price
 [source, xml, indent=0]

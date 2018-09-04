@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Complementary Related Item
+//= Complementary Related Item
 
 .UBL example of complementary related item
 [source, xml, indent=0]

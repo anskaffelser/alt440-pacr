@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Classified Tax Category
+//= Classified Tax Category
 
 .UBL example of classified tax category
 [source, xml, indent=0]

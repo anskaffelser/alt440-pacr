@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Delivery Unit
+//= Delivery Unit
 
 .UBL example of delivery unit
 [source, xml, indent=0]

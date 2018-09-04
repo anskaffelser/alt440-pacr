@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Additional Item Property
+//= Additional Item Property
 
 .UBL example of additional item property
 [source, xml, indent=0]

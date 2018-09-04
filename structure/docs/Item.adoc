@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Item
+//= Item
 
 .UBL example of item
 [source, xml, indent=0]

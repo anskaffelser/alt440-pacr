@@ -1,7 +1,7 @@
 :lang: en
 :doctitle: PreAward Catalogue Request
 :revision: x.x.x
-//:shared-dir: shared
+:shared-dir: shared
 
 :rules-dir: /tmp/rules
 :snippet-dir: ../rules/snippets

@@ -527,7 +527,7 @@
             <Term>cac:ContractorCustomerParty</Term>
             <Name>Catalogue Customer</Name>
             <Description>The party who may order from the catalogue, must be used if the customer party is different from the receiver party</Description>
-            <Property key="doc">structure/docs/ContractCustomerParty.adoc</Property>
+            <Property key="doc">structure/docs/ContractorCustomerParty.adoc</Property>
 
             <Element>
                 <Term>cac:Party</Term>

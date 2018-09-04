@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Provider party
+//= Provider party
 
 .UBL example of provider party
 [source, xml, indent=0]

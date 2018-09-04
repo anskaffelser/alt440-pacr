@@ -1,6 +1,6 @@
 include::guide/settings.adoc[]
 
-= Catalogue line
+//= Catalogue line
 
 .UBL example of catalogue line
 [source, xml, indent=0]
