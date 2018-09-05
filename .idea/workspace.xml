@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/guide/settings.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,30 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Price.adoc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/docs/Price.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="20" selection-start-column="20" selection-end-column="20" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProviderParty.adoc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/docs/ProviderParty.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="20" selection-start-column="20" selection-end-column="20" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProviderParty-Request.adoc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/structure/docs/ProviderParty-Request.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
@@ -102,7 +79,33 @@
         <entry file="file://$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor>
+                <caret column="15" selection-start-column="15" selection-end-column="15" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.adoc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guide/settings.adoc">
+          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="170">
+                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.adoc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guide/spec/settings.adoc">
+          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="119">
+                <caret line="7" selection-start-line="7" selection-end-line="11" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -207,6 +210,7 @@
         <option value="$PROJECT_DIR$/structure/docs/RequiredItemLocationQuantity.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/ReplacedRelatedItem.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/SellerSupplierParty.adoc" />
+        <option value="$PROJECT_DIR$/guide/settings.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" />
       </list>
     </option>
@@ -233,6 +237,12 @@
               <item name="alt440-pacr" type="b2602c69:ProjectViewProjectNode" />
               <item name="alt440-pacr" type="462c0819:PsiDirectoryNode" />
               <item name="guide" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="alt440-pacr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alt440-pacr" type="462c0819:PsiDirectoryNode" />
+              <item name="guide" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="alt440-pacr" type="b2602c69:ProjectViewProjectNode" />
@@ -336,7 +346,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemPropertyRequest.adoc" />
     <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-AdditionalItemProperty-ItemRequirement.adoc" />
     <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-CatalogueRequestLine.adoc" />
     <entry file="file://$PROJECT_DIR$/guide/bindings/pacr-CommodityClassification.adoc" />
@@ -443,16 +452,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="544">
             <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guide/spec/settings.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
           </first_editor>
           <second_editor />
         </state>
@@ -668,10 +667,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/guide/spec/settings.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="7" selection-start-line="7" selection-end-line="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/settings.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="170">
+            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="15" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
