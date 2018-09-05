@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/spec/settings.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/settings.adoc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,12 +26,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.adoc" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.adoc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/guide/spec/settings.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="17">
-                <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+                <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
               </first_editor>
               <second_editor />
             </state>
@@ -54,15 +54,15 @@
         <entry file="file://$PROJECT_DIR$/structure/docs/AdditionalItemProperty.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+              <first_editor relative-caret-position="85">
+                <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ValidityPeriod.adoc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ValidityPeriod.adoc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
@@ -159,10 +159,10 @@
         <option value="$PROJECT_DIR$/structure/docs/ReplacedRelatedItem.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/SellerSupplierParty.adoc" />
         <option value="$PROJECT_DIR$/guide/settings.adoc" />
-        <option value="$PROJECT_DIR$/guide/spec/settings.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/main.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/AdditionalItemProperty.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" />
+        <option value="$PROJECT_DIR$/guide/spec/settings.adoc" />
       </list>
     </option>
   </component>
@@ -608,16 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/spec/settings.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
@@ -631,8 +621,8 @@
     <entry file="file://$PROJECT_DIR$/structure/docs/AdditionalItemProperty.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           </first_editor>
           <second_editor />
         </state>
@@ -643,6 +633,16 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="136">
             <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/spec/settings.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>
