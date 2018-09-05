@@ -1,4 +1,4 @@
-include::guide/spec/settings.adoc[]
+//include::guide/spec/settings.adoc[]
 
 //= Validity period
 

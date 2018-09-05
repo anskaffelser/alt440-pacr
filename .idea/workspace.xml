@@ -2,27 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/structure/docs/AdditionalItemProperty.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/AdditionalItemProperty.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/CallForTendersLineReference.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/CallForTendersLineReference.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/CatalogueLine.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/CatalogueLine.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/CatalogueRequestLine.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/CatalogueRequestLine.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ClassifiedTaxCategory.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ClassifiedTaxCategory.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ComplementaryRelatedItem.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ComplementaryRelatedItem.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ComponentRelatedItem.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ComponentRelatedItem.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ContractorCustomerParty.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ContractorCustomerParty.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/DeliveryUnit.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/DeliveryUnit.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/Item.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/Item.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ItemComparison.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ItemComparison.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ItemSpecificationDocumentReference.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ItemSpecificationDocumentReference.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/Price.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/Price.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ProviderParty-Request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ProviderParty-Request.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ProviderParty.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ProviderParty.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ReceiverParty-Request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ReceiverParty-Request.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ReceiverParty.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ReceiverParty.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ReferencedContract.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ReferencedContract.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/ReplacedRelatedItem.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ReplacedRelatedItem.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/RequiredItemLocationQuantity.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/RequiredItemLocationQuantity.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/docs/SellerSupplierParty.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/SellerSupplierParty.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -124,7 +103,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor>
-                <caret column="15" selection-start-column="15" selection-end-column="21" />
+                <caret column="2" selection-start-column="2" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -209,7 +188,6 @@
         <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" />
         <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
         <option value="$PROJECT_DIR$/guide/spec/settings.adoc" />
-        <option value="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/AdditionalItemProperty.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/CallForTendersLineReference.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/CatalogueLine.adoc" />
@@ -231,6 +209,7 @@
         <option value="$PROJECT_DIR$/structure/docs/RequiredItemLocationQuantity.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/ReplacedRelatedItem.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/SellerSupplierParty.adoc" />
+        <option value="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" />
       </list>
     </option>
   </component>
@@ -695,7 +674,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor>
-            <caret column="15" selection-start-column="15" selection-end-column="21" />
+            <caret column="2" selection-start-column="2" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
