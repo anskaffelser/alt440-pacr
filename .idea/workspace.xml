@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/guide/settings.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/settings.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/settings.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/spec/main.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/main.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/spec/settings.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/settings.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,72 +29,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReceiverParty.adoc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/docs/ReceiverParty.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="20" selection-start-column="20" selection-end-column="20" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReceiverParty-Request.adoc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/docs/ReceiverParty-Request.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="20" selection-start-column="20" selection-end-column="20" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReferencedContract.adoc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/docs/ReferencedContract.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="20" selection-start-column="20" selection-end-column="20" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidityPeriod.adoc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="15" selection-start-column="15" selection-end-column="15" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="settings.adoc" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/guide/settings.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="68">
-                <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.adoc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/guide/spec/settings.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="204">
-                <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <first_editor relative-caret-position="17">
+                <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.adoc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
+          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="20" selection-start-column="20" selection-end-column="20" />
               </first_editor>
               <second_editor />
             </state>
@@ -154,7 +109,6 @@
         <option value="$PROJECT_DIR$/rules/example/PreAwardCatalogueRequest-example.xml" />
         <option value="$PROJECT_DIR$/structure/docs/receiverparty.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/validityperiod.adoc" />
-        <option value="$PROJECT_DIR$/guide/spec/main.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/providerparty.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/providerparty-request.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/receiverparty-request.adoc" />
@@ -163,7 +117,6 @@
         <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" />
         <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
-        <option value="$PROJECT_DIR$/guide/spec/settings.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/AdditionalItemProperty.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/CallForTendersLineReference.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/CatalogueLine.adoc" />
@@ -185,8 +138,10 @@
         <option value="$PROJECT_DIR$/structure/docs/RequiredItemLocationQuantity.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/ReplacedRelatedItem.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/SellerSupplierParty.adoc" />
-        <option value="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" />
         <option value="$PROJECT_DIR$/guide/settings.adoc" />
+        <option value="$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc" />
+        <option value="$PROJECT_DIR$/guide/spec/main.adoc" />
+        <option value="$PROJECT_DIR$/guide/spec/settings.adoc" />
       </list>
     </option>
   </component>
@@ -422,26 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="544">
-            <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/docs/AdditionalItemProperty.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="15" selection-start-column="15" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/docs/CallForTendersLineReference.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
@@ -572,36 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/structure/docs/ProviderParty-Request.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="20" selection-start-column="20" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/docs/ReceiverParty-Request.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="20" selection-start-column="20" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/docs/ReferencedContract.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="20" selection-start-column="20" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/docs/ReplacedRelatedItem.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
@@ -632,11 +537,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/guide/settings.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="68">
+            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="20" selection-start-column="20" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/docs/ReferencedContract.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="20" selection-start-column="20" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor>
-            <caret column="15" selection-start-column="15" selection-end-column="15" />
+            <caret column="19" selection-start-column="19" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/docs/ReceiverParty-Request.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="20" selection-start-column="20" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/docs/AdditionalItemProperty.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="15" selection-start-column="15" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
@@ -652,21 +607,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/spec/settings.adoc">
+    <entry file="file://$PROJECT_DIR$/structure/docs/ProviderParty-Request.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <first_editor>
+            <caret column="20" selection-start-column="20" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/settings.adoc">
+    <entry file="file://$PROJECT_DIR$/guide/spec/settings.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           </first_editor>
           <second_editor />
         </state>
