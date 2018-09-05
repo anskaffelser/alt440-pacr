@@ -1,4 +1,4 @@
-include::guide/settings.adoc[]
+include::guide/spec/settings.adoc[]
 
 //= Additional Item Property
 
