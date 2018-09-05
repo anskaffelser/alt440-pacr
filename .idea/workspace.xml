@@ -102,9 +102,7 @@
         <entry file="file://$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="2" selection-start-column="2" selection-end-column="2" />
-              </first_editor>
+              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -673,9 +671,7 @@
     <entry file="file://$PROJECT_DIR$/structure/docs/ValidityPeriod.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="2" selection-start-column="2" selection-end-column="2" />
-          </first_editor>
+          <first_editor />
           <second_editor />
         </state>
       </provider>
