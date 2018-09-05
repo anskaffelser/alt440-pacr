@@ -16,8 +16,8 @@
     <cbc:IssueTime>15:34:57</cbc:IssueTime>
     <cbc:note>Payment deadline 2018-11-01.</cbc:note>
     <cbc:VersionID>1</cbc:VersionID>
-    <!-- tag::ValidityPeriod[] -->
 
+    <!-- tag::ValidityPeriod[] -->
     <cac:ValidityPeriod>
         <cbc:StartDate>2018-10-20</cbc:StartDate>
         <cbc:EndDate>2018-10-30</cbc:EndDate>

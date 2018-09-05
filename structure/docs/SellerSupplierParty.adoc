@@ -5,5 +5,5 @@ include::guide/settings.adoc[]
 .UBL example of seller supplier party
 [source, xml, indent=0]
 ----
-include::{snippet-dir}/PreAwardCatalogue-example.xml[tags=SellerSupplierParty]
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=SellerSupplierParty]
 ----
