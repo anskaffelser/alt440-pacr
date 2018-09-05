@@ -1,13 +1,15 @@
 :lang: en
 
 :doctitle: PreAward Catalogue Request
+include::../settings.adoc[]
+
 :revision: x.x.x
 :shared-dir: shared
 
 :rules-dir: /tmp/rules
 :snippet-dir: ../rules/snippets
 
-include::../settings.adoc[]
+
 
 include::{shared-dir}/links.adoc[]
 
