@@ -1,5 +1,5 @@
 :lang: en
-include::../guide/spec/settings.adoc[]
+include::../settings.adoc[]
 
 :doctitle: PreAward Catalogue Request
 
