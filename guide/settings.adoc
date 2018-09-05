@@ -7,7 +7,8 @@
 :rules-dir: /tmp/rules
 :snippet-dir: ../rules/snippets
 
+include::../settings.adoc[]
+
 include::{shared-dir}/links.adoc[]
 
 
-include::../settings.adoc[]
