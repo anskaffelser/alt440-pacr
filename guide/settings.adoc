@@ -1,5 +1,5 @@
 :lang: en
-include::../spec/settings.adoc[]
+include::../settings.adoc[]
 
 :doctitle: PreAward Catalogue Request
 
@@ -10,4 +10,3 @@ include::../spec/settings.adoc[]
 :snippet-dir: ../rules/snippets
 
 include::{shared-dir}/links.adoc[]
-
