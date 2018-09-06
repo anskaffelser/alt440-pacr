@@ -4,6 +4,9 @@
     <Term>PreAwardCatalogueRequest</Term>
     <Name>PreAward Catalogue Request</Name>
 
+    <Property key="sch:prefix">CatReq</Property>
+    <Property key="sch:identifier">CatReq-basic</Property>
+    
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
@@ -126,22 +129,18 @@
                     <Description>A code that identifies a subdivision of a country, e.g., a province or district.</Description>
                 </Element>
 
-                <Element> <!-- Better to use UBL CODE streetname and additionalstreetname ? -->
-                    <Term>cac:AddressLine</Term>
-                    
-                    <Element>
-                        <Term>cbc:Line</Term>
-                        <Name>Address line </Name>
-                        <Description>The main line in an address.</Description>
-                        <Value type="EXAMPLE">Heimdalsgate 3</Value>
-                    </Element>
+                <Element>
+                    <Term>cbc:StreetName</Term>
+                    <Name>Address line 1</Name>
+                    <Description>The main line in an address.</Description>
+                    <Value type="EXAMPLE">Heimdalsgate 3</Value>
+                </Element>
 
-                    <Element cardinality="0..1">
-                        <Term>cbc:Line</Term>
-                        <Name>Address line 2</Name>
-                        <Description>An additional address line in an address that can be used to give further details
-                            supplementing the main line.</Description>
-                    </Element>
+                <Element cardinality="0..1">
+                    <Term>cbc:AdditionalStreetName</Term>
+                    <Name>Address line 2</Name>
+                    <Description>An additional address line in an address that can be used to give further details
+                        supplementing the main line.</Description>
                 </Element>
 
                 <Element>
@@ -193,9 +192,9 @@
                 <Term>cac:Contact</Term>
                 <Name>Contact person</Name>
 
-                <Element> <!-- This element is added by myself, do you agree? -->
+                <Element>
                     <Term>cbc:Name</Term>
-                    <Name>Contact name</Name>
+                    <Name>Contact point</Name>
                     <Description>The contact point's name.</Description>
                     <Value type="EXAMPLE">Ola Nordmann</Value>
                 </Element>
@@ -205,13 +204,6 @@
                     <Name>Contact telephone number</Name>
                     <Description>A phone number for the contact point.</Description>
                     <Value type="EXAMPLE">94384329</Value>
-                </Element>
-
-                <Element> <!-- What is the point with this element? -->
-                    <Term>cbc:ElectronicMail</Term>
-                    <Name>Contact point</Name>
-                    <Description>An e-mail address for the contact point.</Description>
-                    <Value type="EXAMPLE">ola@gmail.no</Value>
                 </Element>
 
                 <Element>
@@ -287,6 +279,7 @@
                     <Value type="EXAMPLE">Bolton</Value>
                 </Element>
 
+<<<<<<< HEAD
                 <Element> <!-- Better to use UBL CODE streetname and additionalstreetname ? -->
                     <Term>cac:AddressLine</Term>
 
@@ -296,14 +289,21 @@
                         <Description>The main line in an address.</Description>
                         <Value type="EXAMPLE">Main street 3</Value>
                     </Element>
+=======
+                <Element>
+                    <Term>cbc:StreetName</Term>
+                    <Name>Address line 1</Name>
+                    <Description>The main line in an address.</Description>
+                    <Value type="EXAMPLE">Main street 3</Value>
+                </Element>
+>>>>>>> 507b3c79c276c8693f8d72843fc2b1cda06c1c51
 
-                    <Element cardinality="0..1">
-                        <Term>cbc:Line</Term>
-                        <Name>Address line 2</Name>
-                        <Description>An additional address line in an address that can be used to give further details
-                            supplementing the main line</Description>
-                        <Value type="EXAMPLE">Building 32</Value>
-                    </Element>
+                <Element cardinality="0..1">
+                    <Term>cbc:AdditionalStreetName</Term>
+                    <Name>Address line 2</Name>
+                    <Description>An additional address line in an address that can be used to give further details
+                        supplementing the main line</Description>
+                    <Value type="EXAMPLE">Building 32</Value>
                 </Element>
 
                 <Element>
@@ -355,9 +355,9 @@
                 <Term>cac:Contact</Term>
                 <Name>Contact person</Name>
 
-                <Element> <!-- Just added this element, do you agree  ? -->
+                <Element>
                     <Term>cbc:Name</Term>
-                    <Name>Contact name</Name>
+                    <Name>Contact point</Name>
                     <Description>The contact point's name.</Description>
                     <Value type="EXAMPLE">Birgitt Nielsen</Value>
                 </Element>
@@ -367,13 +367,6 @@
                     <Name>Contact telephone number</Name>
                     <Description>A phone number for the contact point.</Description>
                     <Value type="EXAMPLE">84737223</Value>
-                </Element>
-
-                <Element> <!-- What is point with this element ? -->
-                    <Term>cbc:ElectronicMail</Term>
-                    <Name>Contact point</Name>
-                    <Description>An e-mail address for the contact point.</Description>
-                    <Value type="EXAMPLE">birgitt@ygh.com</Value>
                 </Element>
 
                 <Element>
@@ -386,17 +379,35 @@
 
         </Element>
 
-        <Element cardinality="0..1"> <!-- Need more input -->
+        <Element cardinality="0..1">
             <Term>cac:RequestedCatalogueReference</Term>
-            <Name>Previous version reference</Name>
-            <Description>A reference to the previous version of a transaction message.</Description>
+            <!--
+            This term has no coressponding business term, as it is only
+            needed to bind a bussines term to an element within this
+            element.
+            -->
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Previous version reference</Name>
+                <Description>A reference to the previous version of a transaction message.</Description>
+                <Value type="EXAMPLE">12345.2018.1</Value>
+            </Element>
         </Element>
 
-        <Element>  <!-- Need more input -->
+        <Element>
             <Term>cac:ReferencedContract</Term>
-            <Name>Call for tenders reference</Name>
-            <Description>A reference to the call for tender as issued by the contracting body. Creates a link between
-                the call for tender and the tender.</Description>
+            <!--
+            This term has no coressponding business term, as it is only
+            needed to bind a bussines term to an element within this
+            element.
+            -->
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Call for tenders reference</Name>
+                <Description>A reference to the call for tender as issued by the contracting body. Creates a link between
+                    the call for tender and the tender.</Description>
+                <Value type="EXAMPLE">123456-2018</Value>
+            </Element>
         </Element>
         
         <Element cardinality="1..n">

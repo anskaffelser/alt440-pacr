@@ -179,10 +179,10 @@ The country where the party
 |1..1
 |Contact point
 |
-|An e-mail address for the contact point.
+|The contact point's name.
 |Name
-|C-119
-|ePO: Email
+|
+|
 
 
 |0..1
@@ -199,7 +199,7 @@ The country where the party
 |An e-mail address for the contact point.
 |Text
 |C-119
-|Similar to 'Contact point'?
+|ePO: Email
 
 
 |0..1
@@ -303,17 +303,17 @@ The country where the party
 |Contact person
 |
 |
-| Class
+|Class
 |C-115
 |ePO: Contact
 
 |1..1
 |Contact point
 |
-|An e-mail address for the contact point.
+|The contact point's name.
 |Name
-|C-119
-|ePO: Email
+|
+|
 
 |0..1
 |Contact telephone number
@@ -329,7 +329,7 @@ The country where the party
 |An e-mail address for the contact point.
 |String
 |C-119
-|Similar to 'Contact point'?
+|ePO: Email
 
 
 |1..n
