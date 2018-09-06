@@ -20,36 +20,40 @@
 
         <Element>
             <Term>cbc:CustomizationID</Term>
-            <Name>Customization identifier</Name>
-            <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
+            <Name>Transaction identifier</Name>
+            <Description>An identification of the specification containing the total set of rules regarding semantic
+                content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
             <Value type="FIXED">urn:fdc:difi.no:2017:ehf:CatalogueRequest:2.0</Value> <!-- mÅ SJEKKES OPP!-->
         </Element>
 
         <Element>
             <Term>cbc:ProfileID</Term>
-            <Name>Profile identifier</Name>
-            <Description>Identifies the business process context in which the transaction appears.</Description>
+            <Name>Business process type identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears. It enables the buyer
+                to process the document in an appropriate way.</Description>
             <Value type="FIXED">urn:fdc:difi.no:2017:ehf:profile:02:1.0</Value> <!-- mÅ SJEKKES OPP!-->
         </Element>
 
         <Element>
             <Term>cbc:ID</Term>
             <Name>Transaction identifier</Name>
-            <Description>An identifier for the pre-award catalogue request that allows referencing the pre-award catalogue request.</Description>
+            <Description>An identifier for the pre-award catalogue request that allows referencing the pre-award
+                catalogue request.</Description>
             <Value type="EXAMPLE">Transaction-02</Value>
         </Element>
         
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Issue date</Name>
-            <Description>The date something was issued. YYYY-MM-DD.</Description>
+            <Description>The date when the catalogue request was issued, on form YYYY-MM-DD. Date shall not include
+            timezone information.</Description>
             <Value type="EXAMPLE">2018-02-06</Value>
         </Element>
 
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
             <Name>Issue time</Name>
-            <Description>The time something was issued.</Description>
+            <Description>The time when the catalogue request was issued. Time shall not include timezone information.</Description>
             <Value type="EXAMPLE">14:23:13</Value>
         </Element>
         
@@ -63,8 +67,9 @@
         <Element>
             <Term>cac:ReceiverParty</Term>
             <Name>Economic operator</Name>
-            <Description>The contracting authority or contracting entity who is buying supplies, services or public
-                works using a tendering procedure as described in the applicable directive.</Description>
+            <Description>Any natural or legal person or public entity or group of such persons and/or entities,
+                including any temporary association of undertakings, which offers the execution of works and/or a work,
+                the supply of products or the provision of services on the market.</Description>
             <Property key="doc">structure/docs/ReceiverParty-Request.adoc</Property>
 
             <Element cardinality="0..1">
@@ -172,12 +177,11 @@
                     <Element>
                         <Term>cac:Country</Term>
                         <Name>Country</Name>
-                        <Description>The country in which this address is located.</Description>
 
                         <Element cardinality="0..1">
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Identification code</Name> <!-- Change name -->
-                            <Description>A code signifying this country.</Description>
+                            <Description>A code that identifies the country.</Description>
                             <Value type="EXAMPLE">UK</Value>
                         </Element>
                     </Element>
@@ -248,8 +252,6 @@
 
             <Element>
                 <Term>cac:PartyName</Term>
-                <Name>Economic operator name</Name>
-                <Description>The name of the economic operator.</Description>
 
                 <Element>
                     <Term>cbc:Name</Term>
@@ -290,7 +292,7 @@
 
                     <Element>
                         <Term>cbc:Line</Term>
-                        <Name>Address line </Name>
+                        <Name>Address line</Name>
                         <Description>The main line in an address.</Description>
                         <Value type="EXAMPLE">Main street 3</Value>
                     </Element>
@@ -309,9 +311,10 @@
                     <Name>Country</Name>
 
                     <Element>
-                        <Term>cbc:Identification</Term>
+                        <Term>cbc:IdentificationCode</Term>
                         <Name>Country Code</Name>
-                        <Description>A code that identifies the country.</Description>
+                        <Description>A code that identifies the country. This code can be found in the codelist "ISO3166_Alpha2"</Description>
+                        <Reference type="CODE_LIST">IS03166-1_Alpha</Reference>
                         <Value type="EXAMPLE">UK</Value>
                     </Element>
                 </Element>
@@ -336,12 +339,11 @@
                     <Element>
                         <Term>cac:Country</Term>
                         <Name>Country</Name>
-                        <Description>The country in which this address is located.</Description>
 
                         <Element cardinality="0..1">
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Identification code</Name> <!-- Change name  -->
-                            <Description>A code signifying this country.</Description>
+                            <Description>A code that identifies the country.</Description>
                             <Value type="EXAMPLE">123424</Value>
                         </Element>
                     </Element>
@@ -400,7 +402,7 @@
         <Element cardinality="1..n">
             <Term>cac:CatalogueRequestLine</Term>
             <Name>Catalogue request line</Name>
-            <Description>A line in a pre-award cataloue request specifying</Description>
+            <Description>A line in a pre-award catalogue request specifying</Description>
             <Property key="doc">structure/docs/CatalogueRequestLine.adoc</Property>
 
             
@@ -437,7 +439,6 @@
                         <Description>The total budget amount for the requested item.</Description>
                         <Reference type="CODE_LIST">Total_budget_amount</Reference>
                     </Element>
-
                 </Element>
             </Element>
 
