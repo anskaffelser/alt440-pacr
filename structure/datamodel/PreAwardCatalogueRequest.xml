@@ -280,16 +280,7 @@
                 </Element>
 
 
-                <Element> <!-- Better to use UBL CODE streetname and additionalstreetname ? -->
-                    <Term>cac:AddressLine</Term>
-
-                    <Element>
-                        <Term>cbc:Line</Term>
-                        <Name>Address line</Name>
-                        <Description>The main line in an address.</Description>
-                        <Value type="EXAMPLE">Main street 3</Value>
-                    </Element>
-
+        
                 <Element>
                     <Term>cbc:StreetName</Term>
                     <Name>Address line 1</Name>
@@ -428,28 +419,27 @@
                 <Term>cac:RequiredItemLocationQuantity</Term>
                 <Name>Required Item location quantity</Name>
 
-                <Element> <!-- Not sure with the implementation. Need QA. -->
+                <Element> <!-- Not sure with the implementation. Need QA. 
+                Fixed binding, but should it be mandatory elements?-->
                     <Term>cac:Price</Term>
                     <Name>Price</Name>
+                    <Description>To state both the estimated price and the total budget price (maximum price), repeat the Price class for each type</Description>
                     
                     <Element>
                         <Term>cbc:PriceAmount</Term>
                         <Name>Price amount</Name>
+                        <Description>The estimated price, or the maximum budget price, according to the corresponding price type</Description>
                     </Element>
 
                     <Element>
                         <Term>cbc:PriceTypeCode</Term>
-                        <Name>Estimated value</Name>
-                        <Description>The estimated value of the an item or an requested item.</Description>
-                        <Reference type="CODE_LIST">Estimated_value</Reference>
+                        <Name>Price type code</Name>
+                        <Description>A coded value for the type of price, estimated or maximum price</Description>
+                        <Reference type="CODE_LIST">UNCL5387</Reference>
+                        <Value type="EXAMPLE">ES</Value>
                     </Element>
 
-                    <Element>
-                        <Term>cbc:PriceTypeCode</Term>
-                        <Name>Total budget amount</Name>
-                        <Description>The total budget amount for the requested item.</Description>
-                        <Reference type="CODE_LIST">Total_budget_amount</Reference>
-                    </Element>
+          
                 </Element>
             </Element>
 
