@@ -2,7 +2,7 @@
 :link-pracc-req: https://test-vefa.difi.no/alt440/pacr/syntax/PreAwardCatalogueRequest/tree/[Pre award catalogue request]
 :link-pracc-cat: https://test-vefa.difi.no/alt440/pacr/syntax/catalogue/tree/[Pre award catalogue]
 :link-codelist: https://test-vefa.difi.no/alt440/pacr/codelist/[Code list section]
-
+:codelist-ICD: https://test-vefa.difi.no/alt440/pacr/codelist/ICD/[ICD list]
 
 //PEPPOL
 :peppol: https://peppol.eu/?rel=undefined[PEPPOL]

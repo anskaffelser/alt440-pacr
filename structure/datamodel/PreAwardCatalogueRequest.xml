@@ -389,7 +389,7 @@
                 <Name>Call for tenders reference</Name>
                 <Description>A reference to the call for tender as issued by the contracting body. Creates a link between
                     the call for tender and the tender.</Description>
-                <Value type="EXAMPLE">123456-2018</value>
+                <Value type="EXAMPLE">123456-2018</Value>
             </Element>
         </Element>
         
