@@ -1,4 +1,4 @@
-include::/settings.adoc[]
+include::../settings.adoc[]
 
 = {doctitle}
 v{revision}
@@ -29,7 +29,7 @@ include::codes/index.adoc[]
 
 include::datatypes/index.adoc[]
 
-include::rules/index.adoc[]
+//include::rules/index.adoc[]
 
 
 :leveloffset: -1
