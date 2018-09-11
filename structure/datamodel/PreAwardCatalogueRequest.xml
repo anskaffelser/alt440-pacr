@@ -157,35 +157,41 @@
                 </Element>
             </Element>
 
-            <Element>
-                <Term>cac:PhysicalLocation</Term>
-                <Name>Country of registration</Name> <!-- Change name -->
-                <Description>The country where the party is registered.</Description>
+            <Element cardinality="0..1">
+                <Term>cac:PartyLegalEntity</Term>
+                <!--
+                This term has no coressponding business term, as it is only
+                needed to bind a bussines term to an element within this
+                element.
+                -->
 
                 <Element>
-                    <Term>cbc:LocationTypeCode</Term>
-                    <Name>Location code</Name> <!-- Change name -->
-                    <Description>A code signifying the type of location. The code can be found in the code list.</Description>
-                    <Reference type="CODE_LIST">IS03166-1_Alpha</Reference> <!-- Country_of_registation -->
-                </Element>
-
-                <Element>
-                    <Term>cac:Address</Term>
-                    <Name>Address</Name>
+                    <Term>cac:RegistrationAddress</Term>
+                    <!--
+                    This term has no coressponding business term, as it is only
+                    needed to bind a bussines term to an element within this
+                    element.
+                    -->
 
                     <Element>
                         <Term>cac:Country</Term>
-                        <Name>Country</Name>
+                        <!--
+                        This term has no coressponding business term, as it is only
+                        needed to bind a bussines term to an element within this
+                        element.
+                        -->
 
-                        <Element cardinality="0..1">
+                        <Element>
                             <Term>cbc:IdentificationCode</Term>
-                            <Name>Identification code</Name> <!-- Change name -->
-                            <Description>A code that identifies the country.</Description>
-                            <Value type="EXAMPLE">UK</Value>
+                            <Name>Country of registration</Name>
+                            <Description>The country where the party is registered.</Description>
+                            <Reference type="CODE_LIST">IS03166-1_Alpha</Reference>
+                            <Value type="EXAMPLE">NO</Value>
                         </Element>
-                    </Element>
 
+                    </Element>
                 </Element>
+
             </Element>
 
             <Element>
@@ -311,35 +317,41 @@
                 </Element>
             </Element>
 
-            <Element>
-                <Term>cac:PhysicalLocation</Term>
-                <Name>Country of registration</Name> <!-- Change name -->
-                <Description>The country where the party is registered.</Description>
+            <Element cardinality="0..1">
+                <Term>cac:PartyLegalEntity</Term>
+                <!--
+                This term has no coressponding business term, as it is only
+                needed to bind a bussines term to an element within this
+                element.
+                -->
 
                 <Element>
-                    <Term>cbc:LocationTypeCode</Term>
-                    <Name>Location code</Name> <!-- Change name  -->
-                    <Description>A code signifying the type of location. The code can be found in the code list.</Description>
-                    <Reference type="CODE_LIST">IS03166-1_Alpha</Reference> <!-- Country_of_registation -->
-                </Element>
-
-                <Element>
-                    <Term>cac:Address</Term>
-                    <Name>Address</Name>
+                    <Term>cac:RegistrationAddress</Term>
+                    <!--
+                    This term has no coressponding business term, as it is only
+                    needed to bind a bussines term to an element within this
+                    element.
+                    -->
 
                     <Element>
                         <Term>cac:Country</Term>
-                        <Name>Country</Name>
+                        <!--
+                        This term has no coressponding business term, as it is only
+                        needed to bind a bussines term to an element within this
+                        element.
+                        -->
 
-                        <Element cardinality="0..1">
+                        <Element>
                             <Term>cbc:IdentificationCode</Term>
-                            <Name>Identification code</Name> <!-- Change name  -->
-                            <Description>A code that identifies the country.</Description>
-                            <Value type="EXAMPLE">123424</Value>
+                            <Name>Country of registration</Name>
+                            <Description>The country where the party is registered.</Description>
+                            <Reference type="CODE_LIST">IS03166-1_Alpha</Reference>
+                            <Value type="EXAMPLE">NO</Value>
                         </Element>
-                    </Element>
 
+                    </Element>
                 </Element>
+
             </Element>
 
             <Element>
