@@ -16,26 +16,30 @@
 
         <Element>
             <Term>cbc:UBLVersionID</Term>
-            <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance.</Description>
+            <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of
+                the elements that might be encountered in the current instance.</Description>
             <Value type="FIXED">2.2</Value>
         </Element>
 
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identification</Name>
-            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
+            <Description>An identification of the specification containing the total set of rules regarding semantic
+                content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
         </Element>
 
         <Element>
             <Term>cbc:ProfileID</Term>
             <Name>Business process type identifier</Name>
-            <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
+            <Description>Identifies the business process context in which the transaction appears. It enables the buyer
+                to process the document in an appropriate way.</Description>
         </Element>
 
         <Element>
             <Term>cbc:ID</Term>
             <Name>Pre-award catalogue identifier</Name>
-            <Description>The identifier that enables referencing of the document instance for various purposes including referencing between transactions that are part of the same process.</Description>
+            <Description>The identifier that enables referencing of the document instance for various purposes including
+                referencing between transactions that are part of the same process.</Description>
             <Value type="EXAMPLE">123</Value>
         </Element>
 
@@ -76,7 +80,8 @@
         <Element>
             <Term>cac:ValidityPeriod</Term>
             <Name>Pre award catalogue validity period</Name>
-            <Description>The validity period must include both start date and end date, and the start date must be earlier than the end date</Description>
+            <Description>The validity period must include both start date and end date, and the start date must be
+                earlier than the end date</Description>
             <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
 
             <Element>
@@ -105,7 +110,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
                 <Name>Contract identifier</Name>
-                <Description>Normally not used in preaward catalogues, but might be used in re-opening of Tender, DPS etc</Description>
+                <Description>Normally not used in preaward catalogues, but might be used in re-opening of Tender, DPS etc.</Description>
             </Element>
 
             <Element cardinality="0..1">
@@ -137,7 +142,9 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Reference number</Name>
-                    <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
+                    <Description>An identifier that is specified by the buyer and used as a reference number for all
+                        documents in the procurement process. It is also known as procurement project identifier,
+                        procurement reference number or contract folder identifier.</Description>
                     <Value type="EXAMPLE">PPID-2</Value>
                 </Element>
             </Element>
@@ -176,7 +183,7 @@
 
                     <Attribute>
                         <Term>schemeID</Term>
-                        <Name>Identifier Scheme Identifier<</Name>
+                        <Name>Identifier Scheme Identifier</Name>
                         <Description>The identifier for the applied identification. Scheme id mandatory use "ZZZ" for unidentified scheme.</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Reference type="CODE_LIST">ICD_UNKNOWN</Reference>
@@ -185,7 +192,7 @@
 
                     <Attribute>
                         <Term>schemeVersionID</Term>
-                        <Name>Identifier Scheme Version<</Name>
+                        <Name>Identifier Scheme Version</Name>
                         <Description>Version of the applied identification scheme.</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Reference type="CODE_LIST">ICD_UNKNOWN</Reference>
