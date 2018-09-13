@@ -90,7 +90,24 @@
     <!-- tag::CatalogueRequestLine[] -->
     <cac:CatalogueRequestLine>
         <cbc:ID>5134432</cbc:ID>
+        <cac:LineValidityPeriod>
+            <cbc:StartDate>2017-05-15</cbc:StartDate>
+            <cbc:StartTime>09:00:00</cbc:StartTime>
+            <cbc:EndDate>2017-05-17</cbc:EndDate>
+            <cbc:EndTime>¨15:00:00</cbc:EndTime>
+            <cbc:Description>Booking hotel room for two days.</cbc:Description>
+        </cac:LineValidityPeriod>
         <cac:RequiredItemLocationQuantity>
+            <cac:ApplicableTerritoryAddress>
+                <cbc:StreetName>Tværgyden 40</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building 5C</cbc:AdditionalStreetName>
+                <cbc:CityName>Klampenborg</cbc:CityName>
+                <cbc:PostalZone>2930</cbc:PostalZone>
+                <cbc:CountrySubentity>Region Sjælland</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode listID="ISO3166_Alpha2">DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:ApplicableTerritoryAddress>
             <cac:Price>
                 <cbc:PriceAmount currencyID="GBP">4579</cbc:PriceAmount> <!-- codelist ISO4217_2015 -->
                 <cbc:PriceTypeCode listID="ISO4217_2015">GBP</cbc:PriceTypeCode>

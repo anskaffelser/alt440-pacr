@@ -141,7 +141,10 @@
         <cbc:PackLevelCode>IF</cbc:PackLevelCode> <!-- Codelist: UNECERec21-9e -->
         <cac:LineValidityPeriod>
             <cbc:StartDate>2018-10-20</cbc:StartDate>
+            <cbc:StartTime>12:55:00</cbc:StartTime>
             <cbc:EndDate>2018-10-30</cbc:EndDate>
+            <cbc:EndTime>23:42:00</cbc:EndTime>
+            <cbc:Description>Write something meaningful.</cbc:Description>
         </cac:LineValidityPeriod>
 
         <!-- tag::ItemComparison[] -->

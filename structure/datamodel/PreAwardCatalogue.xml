@@ -785,17 +785,17 @@
                 </Element>
 
                 <Element>
-                    <Term>cbc:Description</Term>
-                    <Name>Description</Name>
-                    <Description>The description of this period- expressed as text.</Description>
-                    <Value type="EXAMPLE">200 Kr for each night at the Scandic Hotel.</Value>
-                </Element>
-
-                <Element>
                     <Term>cbc:EndTime</Term>
                     <Name>Period end time</Name>
                     <Description>The time of the last period day.</Description>
                     <Value type="EXAMPLE">22:30:00</Value>
+                </Element>
+
+                <Element>
+                    <Term>cbc:Description</Term>
+                    <Name>Description</Name>
+                    <Description>The description of this period- expressed as text.</Description>
+                    <Value type="EXAMPLE">200 Kr for each night at the Scandic Hotel.</Value>
                 </Element>
             </Element>
 
