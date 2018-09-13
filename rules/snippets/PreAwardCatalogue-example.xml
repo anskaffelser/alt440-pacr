@@ -175,14 +175,16 @@
         </cac:ComplementaryRelatedItem>
         <!-- tag::ComplementaryRelatedItem[] -->
 
-        <!-- tag::ReplacedRelatedItem[] --> <!-- Include this as a tag notation or not ? -->
+        <!-- tag::ReplacedRelatedItem2[] -->
+        <!-- Include this as a tag notation or not ? -->
         <cac:ReplacedRelatedItem>
             <cbc:ID>BB</cbc:ID>
             <cbc:Quantity>31</cbc:Quantity>
         </cac:ReplacedRelatedItem>
-        <!-- tag::ReplacedRelatedItem[] -->
+        <!-- end::ReplacedRelatedItem2[] -->
 
-        <!-- tag::RequiredItemLocationQuantity[] --> <!-- Include this as a tag notation or not ? -->
+        <!-- tag::RequiredItemLocationQuantity[] -->
+        <!-- Include this as a tag notation or not ? -->
         <cac:RequiredItemLocationQuantity>
             <cac:ApplicableTerritoryAddress>
                 <cbc:StreetName>Via Goffredo Mameli 32</cbc:StreetName>
@@ -218,6 +220,7 @@
                 <cbc:ConsumerUnitQuantity>2</cbc:ConsumerUnitQuantity>
             </cac:DeliveryUnit>
             <!-- end::DeliveryUnit[] -->
+
         </cac:RequiredItemLocationQuantity>
         <!-- end::RequiredItemLocationQuantity[] -->
 
