@@ -90,6 +90,7 @@
     <!-- tag::CatalogueRequestLine[] -->
     <cac:CatalogueRequestLine>
         <cbc:ID>5134432</cbc:ID>
+        <!-- tag::LineValidityPeriod-Request[] -->
         <cac:LineValidityPeriod>
             <cbc:StartDate>2017-05-15</cbc:StartDate>
             <cbc:StartTime>09:00:00</cbc:StartTime>
@@ -97,7 +98,11 @@
             <cbc:EndTime>¨15:00:00</cbc:EndTime>
             <cbc:Description>Booking hotel room for two days.</cbc:Description>
         </cac:LineValidityPeriod>
+        <!-- end::LineValidityPeriod-Request[] -->
+
+        <!-- tag::RequiredItemLocationQuantity-Request[] -->
         <cac:RequiredItemLocationQuantity>
+            <!-- tag::ApplicableTerritoryAddress-Request[] -->
             <cac:ApplicableTerritoryAddress>
                 <cbc:StreetName>Tværgyden 40</cbc:StreetName>
                 <cbc:AdditionalStreetName>Building 5C</cbc:AdditionalStreetName>
@@ -108,14 +113,23 @@
                     <cbc:IdentificationCode listID="ISO3166_Alpha2">DK</cbc:IdentificationCode>
                 </cac:Country>
             </cac:ApplicableTerritoryAddress>
+            <!-- end::ApplicableTerritoryAddress-Request[] -->
+
+            <!-- tag::Price-Request[] -->
             <cac:Price>
                 <cbc:PriceAmount currencyID="GBP">4579</cbc:PriceAmount> <!-- codelist ISO4217_2015 -->
                 <cbc:PriceTypeCode listID="ISO4217_2015">GBP</cbc:PriceTypeCode>
             </cac:Price>
+            <!-- tag::Price-Request[] -->
         </cac:RequiredItemLocationQuantity>
+        <!-- end::RequiredItemLocationQuantity-Request[] -->
+
+        <!-- tag::Item-Request[] -->
         <cac:Item>
             <cbc:Description>We need black Apple iPhone 7, with 32GB.</cbc:Description>
             <cbc:Name>iPhone 7</cbc:Name>
+
+            <!-- tag::CatalogueDocumentReference-Request[] -->
             <cac:CatalogueDocumentReference>
                 <cac:Attachment>
                     <cac:ExternalReference>
@@ -123,6 +137,9 @@
                     </cac:ExternalReference>
                 </cac:Attachment>
             </cac:CatalogueDocumentReference>
+            <!-- end::CatalogueDocumentReference-Request[] -->
+
+            <!-- tag::ItemSpecificationDocumentReference-Request[] -->
             <cac:ItemSpecificationDocumentReference>
                 <cbc:ID>7</cbc:ID>
                 <cbc:DocumentDescription languageID="en">Iphone to stuff members.</cbc:DocumentDescription>
@@ -136,9 +153,15 @@
                     <cbc:ValidateProcess>1234-abc</cbc:ValidateProcess>
                 </cac:ResultOfVerification>
             </cac:ItemSpecificationDocumentReference>
+            <!-- end::ItemSpecificationDocumentReference-Request[] -->
+
+            <!-- tag::CommodityClassification-Request[] -->
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode name="ABC">124</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
+            <!-- end::CommodityClassification-Request[] -->
+
+            <!-- tag::AdditionalItemProperty-Request[] -->
             <cac:AdditionalItemProperty>
                 <cbc:ID>254</cbc:ID>
                 <cbc:Name>Carolina Dickmerk</cbc:Name>
@@ -152,7 +175,9 @@
                     <cbc:MaximumValue>52</cbc:MaximumValue>
                 </cac:ItemPropertyRange>
             </cac:AdditionalItemProperty>
+            <!-- end::AdditionalItemProperty-Request[] -->
         </cac:Item>
+        <!-- end::Item-Request[] -->
     </cac:CatalogueRequestLine>
     <!-- end::CatalogueRequestLine[] -->
 

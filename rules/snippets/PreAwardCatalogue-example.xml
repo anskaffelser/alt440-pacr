@@ -139,6 +139,8 @@
         <cbc:MaximumOrderQuantity>500</cbc:MaximumOrderQuantity>
         <cbc:WarrantyInformation>5 years warranty</cbc:WarrantyInformation>
         <cbc:PackLevelCode>IF</cbc:PackLevelCode> <!-- Codelist: UNECERec21-9e -->
+
+        <!-- tag::LineValidityPeriod[] -->
         <cac:LineValidityPeriod>
             <cbc:StartDate>2018-10-20</cbc:StartDate>
             <cbc:StartTime>12:55:00</cbc:StartTime>
@@ -146,6 +148,7 @@
             <cbc:EndTime>23:42:00</cbc:EndTime>
             <cbc:Description>Write something meaningful.</cbc:Description>
         </cac:LineValidityPeriod>
+        <!-- end::LineValidityPeriod[] -->
 
         <!-- tag::ItemComparison[] -->
         <cac:ItemComparison>
@@ -173,7 +176,7 @@
             <cbc:ID>R2</cbc:ID>
             <cbc:Quantity>3161</cbc:Quantity>
         </cac:ComplementaryRelatedItem>
-        <!-- tag::ComplementaryRelatedItem[] -->
+        <!-- end::ComplementaryRelatedItem[] -->
 
         <!-- tag::ReplacedRelatedItem2[] -->
         <!-- Include this as a tag notation or not ? -->
@@ -186,6 +189,7 @@
         <!-- tag::RequiredItemLocationQuantity[] -->
         <!-- Include this as a tag notation or not ? -->
         <cac:RequiredItemLocationQuantity>
+            <!-- tag::ApplicableTerritoryAddress[] -->
             <cac:ApplicableTerritoryAddress>
                 <cbc:StreetName>Via Goffredo Mameli 32</cbc:StreetName>
                 <cbc:AdditionalStreetName>Building 43A</cbc:AdditionalStreetName>
@@ -196,6 +200,7 @@
                     <cbc:IdentificationCode listID="ISO3166_Alpha2">IT</cbc:IdentificationCode>
                 </cac:Country>
             </cac:ApplicableTerritoryAddress>
+            <!-- end::ApplicableTerritoryAddress[] -->
 
             <!-- tag::Price[] -->
             <cac:Price>
@@ -247,7 +252,7 @@
                 <cbc:ID>ie353-ior24-iedt25-pry463</cbc:ID>
                 <cbc:DocumentTypeCode>4</cbc:DocumentTypeCode>
                 <cbc:DocumentType>Contains menthol, citrus, mint, aspartam,...</cbc:DocumentType>
-                <cbc:DocumentDescription>Strong pastilles, good for illness....</cbc:DocumentDescription>
+                <cbc:DocumentDescription>Strong pastilles, good for illness,...</cbc:DocumentDescription>
                 <cac:Attachment>
                     <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png">JKEAGAGE98QHJ02NAGAE83HJ3QLJGQ3</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
                     <cac:ExternalReference>
@@ -332,7 +337,8 @@
         </cac:Item>
         <!-- end::Item[] -->
 
-        <!-- tag::CallForTendersLineReference[] --> <!-- Include this as a tag notation or not ? -->
+        <!-- tag::CallForTendersLineReference[] -->
+        <!-- Include this as a tag notation or not ? -->
         <cac:CallForTendersLineReference>
             <cbc:LineID>AA32</cbc:LineID>
         </cac:CallForTendersLineReference>
