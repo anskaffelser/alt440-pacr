@@ -95,7 +95,7 @@
             <Element>
                 <Term>cbc:EndDate</Term>
                 <Name>Period end date</Name>
-                <Description>The date on which the period ends.</Description>
+                <Description>The date when the period ends.</Description>
                 <Reference type="RULE">BII3-T68-R023</Reference>
                 <Value type="EXAMPLE">2017-06-30</Value>
             </Element>
@@ -768,13 +768,34 @@
                     <Reference type="RULE">BII3-T68-R020</Reference>
                     <Value type="EXAMPLE">2017-06-01</Value>
                 </Element>
-                
+
+                <Element>
+                    <Term>cbc:StartTime</Term>
+                    <Name>Period start time</Name>
+                    <Description>The time of the first period day.</Description>
+                    <Value type="EXAMPLE">13:00:00</Value>
+                </Element>
+
                 <Element>
                     <Term>cbc:EndDate</Term>
                     <Name>Period end date</Name>
                     <Description>The date is the last day of the period.</Description>
                     <Reference type="RULE">BII3-T68-R020</Reference>
                     <Value type="EXAMPLE">2017-06-15</Value>
+                </Element>
+
+                <Element>
+                    <Term>cbc:Description</Term>
+                    <Name>Description</Name>
+                    <Description>The description of this period- expressed as text.</Description>
+                    <Value type="EXAMPLE">200 Kr for each night at the Scandic Hotel.</Value>
+                </Element>
+
+                <Element>
+                    <Term>cbc:EndTime</Term>
+                    <Name>Period end time</Name>
+                    <Description>The time of the last period day.</Description>
+                    <Value type="EXAMPLE">22:30:00</Value>
                 </Element>
             </Element>
 
@@ -1022,7 +1043,9 @@
                         <Element cardinality="0..1">
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Country code</Name>
-                            <Description>The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</Description>
+                            <Description>The lists of valid countries are registered with the ISO 3166-1 Maintenance agency,
+                                "Codes for the representation of names of countries and their subdivisions". It is recommended
+                                to use the alpha-2 representation.</Description>
                             <Reference type="CODE_LIST">ISO3166</Reference>
                             
 <!-- TODO: 
@@ -1040,13 +1063,15 @@
                 <Element cardinality="0..1">
                     <Term>cac:Price</Term>
                     <Name>Price</Name>
-                    <Description>Used to give the item net price as well as conditional price related to a specific location or a quanity, as well as campaing prices.</Description>
+                    <Description>Used to give the item net price as well as conditional price related to a specific location
+                        or a quantity, as well as campaign prices.</Description>
                     <Property key="doc">structure/docs/Price.adoc</Property>
 
                     <Element>
                         <Term>cbc:PriceAmount</Term>
                         <Name>Item net price</Name>
-                        <Description>The net price has to be equal with the gross price less the item price discount. The price for the item at the specified locations.</Description>
+                        <Description>The net price has to be equal with the gross price less the item price discount.
+                            The price for the item at the specified locations.</Description>
 <!-- TODO: 
                         <Attribute>
                             <Term>currencyID</Term>
@@ -1062,8 +1087,7 @@
                         <Term>cbc:PriceTypeCode</Term>
                         <Name>Item price type</Name>
                         <Description>The type of the price so that the receiver knows if the price may be changed is indicative. When prices are temporary the validity period 
-                            for the price should be defined by stating the price validity period.
-                        </Description>
+                            for the price should be defined by stating the price validity period.</Description>
                         <Reference type="CODE_LIST">UNCL5387</Reference>
 
 <!-- TODO: 
@@ -1080,10 +1104,8 @@
                         <Term>cbc:OrderableUnitFactorRate</Term>
                         <Name>Orderable unit factor rate</Name>
                         <Description>The factor by which the base price unit of an item can be
-                            converted to the orderable unit.
-                        </Description>
+                            converted to the orderable unit.</Description>
                         <Value type="EXAMPLE">10</Value>
-                       
                     </Element>
 
                     <Element cardinality="0..n">
@@ -1113,19 +1135,19 @@
 
                     <Element cardinality="0..1">
                         <Term>cac:AllowanceCharge</Term>
-                        <Name>Price discount, used only for information purpose</Name>
+                        <Name>Price discount- used only for information purpose</Name>
 
                         <Element>
                             <Term>cbc:ChargeIndicator</Term>
                             <Name>Charge indicator</Name>
-                            <Description>the only allowed value is ´false´</Description>
+                            <Description>The only allowed value is 'false'.</Description>
                             <Value type="FIXED">false</Value>
                         </Element>
 
                         <Element>
                             <Term>cbc:AllowanceChargeReason</Term>
                             <Name>Allowance reason</Name>
-                            <Description>The reason for the allowance, expressed as text.</Description>
+                            <Description>The reason for the allowance- expressed as text.</Description>
                             <Value type="EXAMPLE">Returning customer discount</Value>
                         </Element>
 
@@ -1208,7 +1230,8 @@
                 <Element cardinality="0..1">
                     <Term>cbc:Description</Term>
                     <Name>Item description</Name>
-                    <Description>The Item description allows for describing the item and its features in more detail than the Item name. Use one description pr. language</Description>
+                    <Description>The Item description allows for describing the item and its features in more detail than
+                        the Item name. Use one description pr. language.</Description>
                     <Value type="EXAMPLE">This is a rather long item description, often very detailed</Value>
                 </Element>
 
@@ -1219,7 +1242,7 @@
 <!-- TODO: 
                     <Attribute>
                         <Term>unitCode</Term>
-                        <Name>Quanitity unit code</Name>
+                        <Name>Quantity unit code</Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
@@ -1253,14 +1276,14 @@
                 <Element cardinality="0..1">
                     <Term>cbc:Keyword</Term>
                     <Name>Item key words</Name>
-                    <Description>Used to specify searchable keywords and/or synonyms for the item.</Description>
+                    <Description>Used to specify searchable keywords and/or synonyms for the specific item.</Description>
                     <Value type="EXAMPLE">Toothpaste</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>cbc:BrandName</Term>
                     <Name>Item brand name</Name>
-                    <Description>Name of the brand of the item to allow economic operators to distinctively describe an item in  their
+                    <Description>Name of the brand of the item to allow economic operators to distinctively describe an item in their
                         catalogue or pre-award catalogue.</Description>
                     <Value type="EXAMPLE">Solidox</Value>
                 </Element>
@@ -1272,7 +1295,8 @@
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Item sellers identifier</Name>
-                        <Description>An identifier, assigned by the seller, for the item. This element is not mandatory because some companies may not have the identifier yer at the time of issuing the pre-award catalogue.</Description>
+                        <Description>An identifier, assigned by the seller, for the item. This element is not mandatory because
+                            some companies may not have the identifier yer at the time of issuing the pre-award catalogue.</Description>
                    <Value type="EXAMPLE">A2</Value>
                     </Element>
                     
@@ -1303,7 +1327,7 @@
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Item standard identifier</Name>
-                        <Description>The standard identifier of the catalogue item</Description>
+                        <Description>The standard identifier of the catalogue item.</Description>
 <!-- TODO: 
                         <Attribute>
                             <Term>schemeID</Term>
@@ -1318,7 +1342,7 @@
                         <Term>cbc:ExtendedID</Term>
                         <Name>Item sellers extended identifier</Name>
                         <Description>An extended identifier issued by the seller to identify
-                            items with specific properties. Use for structured identification of an Item variant.</Description>
+                            items with specific properties. Used for structured identification of an Item variant.</Description>
                         <Value type="EXAMPLE">A23-Z45</Value>
                     </Element>
                 </Element>
@@ -1326,21 +1350,21 @@
                 <Element cardinality="0..n">
                     <Term>cac:ItemSpecificationDocumentReference</Term>
                     <Name>Attached item specifications</Name>
-                    <Description>Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended to use external references in the form of URI’s for attachments.</Description>
+                    <Description>Attachments can be sent on line level in the Catalogue. This can be images or additional
+                        descriptions of a product. It is strongly recommended to use external references in the form of URI's for attachments.</Description>
                     <Property key="doc">structure/docs/ItemSpecificationDocumentReference.adoc</Property>
 
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Attachment identifier</Name>
-                        <Description>An identifier that can be used to reference the attached document, such as an unique identifier
-                        </Description>
+                        <Description>An identifier that can be used to reference the attached document, such as an unique identifier.</Description>
                         <Value type="EXAMPLE">88d15eaa-3805-42e4-825f-5e240838104d</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:DocumentTypeCode</Term>
                         <Name>Attachment description code</Name>
-                        <Description>A functional description of the attachment, expressed as a code</Description>
+                        <Description>A functional description of the attachment, expressed as a code.</Description>
                         <Reference type="CODE_LIST">UNCL1001</Reference>
 
 <!-- TODO: 
@@ -1356,7 +1380,7 @@
                     <Element cardinality="0..1">
                         <Term>cbc:DocumentType</Term>
                         <Name>Document type</Name>
-                        <Description>A functional description of the attachment</Description>
+                        <Description>A functional description of the attachment.</Description>
                         <Value type="EXAMPLE">Product specification</Value>
                     </Element>
 
@@ -1374,8 +1398,7 @@
                         <Element cardinality="0..1">
                             <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                             <Name>Attached document</Name>
-                            <Description>A binary large object containing an attached document. Base 64 encoded
-                            </Description>
+                            <Description>A binary large object containing an attached document. Base 64 encoded.</Description>
 <!-- TODO: 
                             <Attribute>
                                 <Term>mimeCode</Term>
@@ -1433,7 +1456,8 @@
                     <Element>
                         <Term>cbc:ItemClassificationCode</Term>
                         <Name>Item classification code</Name>
-                        <Description>A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
+                        <Description>A code for classifying the item by its type or nature. Classification codes are used
+                            to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
 <!-- TODO: 
                         <Attribute usage="Optional">
                             <Term>listID</Term>

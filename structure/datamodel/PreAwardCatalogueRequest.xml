@@ -415,9 +415,111 @@
                 <Value type="EXAMPLE">73635</Value>
             </Element>
 
+            <Element cardinality="0..1">
+                <Term>cac:LineValidityPeriod</Term>
+                <Name>Line validity period</Name>
+                <Reference type="RULE">EUGEN-T68-R013</Reference>
+
+                <Element>
+                    <Term>cbc:StartDate</Term>
+                    <Name>Period start date</Name>
+                    <Description>The date is the first day of the period.</Description>
+                    <Reference type="RULE">BII3-T68-R020</Reference>
+                    <Value type="EXAMPLE">2017-06-01</Value>
+                </Element>
+
+                <Element>
+                    <Term>cbc:StartTime</Term>
+                    <Name>Period start time</Name>
+                    <Description>The time of the first period day.</Description>
+                    <Value type="EXAMPLE">13:00:00</Value>
+                </Element>
+
+                <Element>
+                    <Term>cbc:EndDate</Term>
+                    <Name>Period end date</Name>
+                    <Description>The date is the last day of the period.</Description>
+                    <Reference type="RULE">BII3-T68-R020</Reference>
+                    <Value type="EXAMPLE">2017-06-15</Value>
+                </Element>
+
+                <Element>
+                    <Term>cbc:Description</Term>
+                    <Name>Description</Name>
+                    <Description>The description of this period- expressed as text.</Description>
+                    <Value type="EXAMPLE">200 Kr for each night at the Scandic Hotel.</Value>
+                </Element>
+
+                <Element>
+                    <Term>cbc:EndTime</Term>
+                    <Name>Period end time</Name>
+                    <Description>The time of the last period day.</Description>
+                    <Value type="EXAMPLE">22:30:00</Value>
+                </Element>
+            </Element>
+
             <Element>
                 <Term>cac:RequiredItemLocationQuantity</Term>
                 <Name>Required Item location quantity</Name>
+
+                <Element cardinality="0..n">
+                    <Term>cac:ApplicableTerritoryAddress</Term>
+                    <Name>Delivery location</Name>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:StreetName</Term>
+                        <Name>Address line 1</Name>
+                        <Description>Usually the street name and number or post office box.</Description>
+                        <Value type="EXAMPLE">Københavnsgate 23</Value>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:AdditionalStreetName</Term>
+                        <Name>Address line 2</Name>
+                        <Value type="EXAMPLE">Building 6</Value>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CityName</Term>
+                        <Name>City</Name>
+                        <Value type="EXAMPLE">Bergen</Value>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:PostalZone</Term>
+                        <Name>Post code</Name>
+                        <Value type="EXAMPLE">5510</Value>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CountrySubentity</Term>
+                        <Name>Country subdivision</Name>
+                        <Value type="EXAMPLE">Hordaland</Value>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cac:Country</Term>
+                        <Name>Country</Name>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:IdentificationCode</Term>
+                            <Name>Country code</Name>
+                            <Description>The lists of valid countries are registered with the ISO 3166-1 Maintenance agency,
+                                "Codes for the representation of names of countries and their subdivisions". It is recommended
+                                to use the alpha-2 representation.</Description>
+                            <Reference type="CODE_LIST">ISO3166</Reference>
+
+                            <!-- TODO:
+                                                        <Attribute usage="Optional">
+                                                            <Term>listID</Term>
+                                                            <Name>Code list identifier</Name>
+                                                            <Value type="FIXED">ISO3166-1:Alpha2</Value>
+                                                        </Attribute>
+                            -->
+                            <Value type="EXAMPLE">NO</Value>
+                        </Element>
+                    </Element>
+                </Element>
 
                 <Element> <!-- Not sure with the implementation. Need QA. 
                 Fixed binding, but should it be mandatory elements?-->
