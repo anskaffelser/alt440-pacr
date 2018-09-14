@@ -119,7 +119,7 @@
                 <cbc:PriceAmount currencyID="GBP">4579</cbc:PriceAmount> <!-- codelist ISO4217_2015 -->
                 <cbc:PriceTypeCode listID="ISO4217_2015">GBP</cbc:PriceTypeCode>
             </cac:Price>
-            <!-- tag::Price-Request[] -->
+            <!-- end::Price-Request[] -->
         </cac:RequiredItemLocationQuantity>
         <!-- end::RequiredItemLocationQuantity-Request[] -->
 
