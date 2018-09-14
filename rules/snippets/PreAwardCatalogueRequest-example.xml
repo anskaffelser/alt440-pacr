@@ -86,7 +86,7 @@
 
     <cac:ReferencedContract></cac:ReferencedContract>
 
-    
+
     <cac:CatalogueRequestLine>
         <cbc:ID>5134432</cbc:ID>
         <!-- tag::LineValidityPeriod-Request[] -->
@@ -125,7 +125,7 @@
 
         <!-- tag::Item-Request[] -->
         <cac:Item>
-            <cbc:Description>We need black Apple iPhone 7, with 32GB.</cbc:Description>
+            <cbc:Description>We need black Apple iPhone 7 with 32GB.</cbc:Description>
             <cbc:Name>iPhone 7</cbc:Name>
 
             <!-- tag::CatalogueDocumentReference-Request[] -->
@@ -141,7 +141,7 @@
             <!-- tag::ItemSpecificationDocumentReference-Request[] -->
             <cac:ItemSpecificationDocumentReference>
                 <cbc:ID>7</cbc:ID>
-                <cbc:DocumentDescription languageID="en">Iphone to stuff members.</cbc:DocumentDescription>
+                <cbc:DocumentDescription languageID="en">iPhone to stuff members.</cbc:DocumentDescription>
                 <cac:Attachment>
                     <cac:ExternalReference>
                         <cbc:URI>http://www.example.com/apple/iPhone/7/stuff/index.html</cbc:URI>
