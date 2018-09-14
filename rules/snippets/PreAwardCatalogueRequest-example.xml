@@ -177,6 +177,7 @@
             <!-- end::AdditionalItemProperty-Request[] -->
         </cac:Item>
         <!-- end::Item-Request[] -->
+
     </cac:CatalogueRequestLine>
     <!-- end::CatalogueRequestLine[] -->
 

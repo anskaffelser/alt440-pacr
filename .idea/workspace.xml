@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,11 +24,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PreAwardCatalogueRequest-example.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PreAwardCatalogue-example.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="185" column="34" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreAwardCatalogueRequest-example.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+            <state relative-caret-position="1024">
+              <caret line="176" column="58" lean-forward="true" selection-start-line="176" selection-start-column="58" selection-end-line="176" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -150,8 +160,8 @@
         <option value="$PROJECT_DIR$/structure/docs/LineValidityPeriod-Request.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/ReceiverParty.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/RequiredItemLocationQuantity-Request.adoc" />
-        <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
         <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" />
+        <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
       </list>
     </option>
   </component>
@@ -282,7 +292,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2109375" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.32967034" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -719,17 +729,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
+    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="1024">
+          <caret line="176" column="58" lean-forward="true" selection-start-line="176" selection-start-column="58" selection-end-line="176" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
+    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+        <state relative-caret-position="389">
+          <caret line="185" column="34" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
         </state>
       </provider>
     </entry>

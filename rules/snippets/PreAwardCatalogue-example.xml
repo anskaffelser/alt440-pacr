@@ -164,12 +164,12 @@
         </cac:ComponentRelatedItem>
         <!-- end::ComponentRelatedItem[] -->
 
-        <!-- tag::ReplacedRelatedItem[] -->   <!-- Include this as a tag notation or not ? -->
+   <!-- Include this as a tag notation or not ? -->
         <cac:ReplacedRelatedItem>
             <cbc:ID>AA</cbc:ID>
             <cbc:Quantity>16</cbc:Quantity>
         </cac:ReplacedRelatedItem>
-        <!-- end::ReplacedRelatedItem[] -->
+
 
         <!-- tag::ComplementaryRelatedItem[] -->
         <cac:ComplementaryRelatedItem>
@@ -178,13 +178,12 @@
         </cac:ComplementaryRelatedItem>
         <!-- end::ComplementaryRelatedItem[] -->
 
-        <!-- tag::ReplacedRelatedItem2[] -->
+
         <!-- Include this as a tag notation or not ? -->
         <cac:ReplacedRelatedItem>
             <cbc:ID>BB</cbc:ID>
             <cbc:Quantity>31</cbc:Quantity>
         </cac:ReplacedRelatedItem>
-        <!-- end::ReplacedRelatedItem2[] -->
 
         <!-- tag::RequiredItemLocationQuantity[] -->
         <!-- Include this as a tag notation or not ? -->
