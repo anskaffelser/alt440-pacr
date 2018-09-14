@@ -2,7 +2,7 @@ include::guide/settings.adoc[]
 
 //= Provider party
 
-.UBL example of provider party
+.UBL example of additional item property
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/PreAwardCatalogueRequest-example.xml[tags=AdditionalItemProperty-Request]

@@ -2,7 +2,7 @@ include::guide/settings.adoc[]
 
 //= Provider party
 
-.UBL example of provider party
+.UBL example of required item location quantity
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/PreAwardCatalogueRequest-example.xml[tags=RequiredItemLocationQuantity-Request]

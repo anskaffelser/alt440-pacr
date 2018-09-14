@@ -2,7 +2,7 @@ include::guide/settings.adoc[]
 
 //= Provider party
 
-.UBL example of provider party
+.UBL example of commodity classification
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/PreAwardCatalogueRequest-example.xml[tags=CommodityClassification-Request]

@@ -2,7 +2,7 @@ include::guide/settings.adoc[]
 
 //= Call For Tenders Line Reference
 
-.UBL example of call for tenders line reference
+.UBL example of line validity period
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=LineValidityPeriod]
