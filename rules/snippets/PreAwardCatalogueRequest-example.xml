@@ -16,7 +16,6 @@
     <cbc:note>Payment deadline 2018-12-01.</cbc:note>
 
     <!-- tag::ReceiverParty-Request[] -->
-
     <cac:ReceiverParty>
         <cbc:EndpointID>753923352</cbc:EndpointID>
         <cac:PartyIdentification>
@@ -87,7 +86,7 @@
 
     <cac:ReferencedContract></cac:ReferencedContract>
 
-    <!-- tag::CatalogueRequestLine[] -->
+    
     <cac:CatalogueRequestLine>
         <cbc:ID>5134432</cbc:ID>
         <!-- tag::LineValidityPeriod-Request[] -->
@@ -179,6 +178,6 @@
         </cac:Item>
         <!-- end::Item-Request[] -->
     </cac:CatalogueRequestLine>
-    <!-- end::CatalogueRequestLine[] -->
+
 
 </ubl:CatalogueRequest>
