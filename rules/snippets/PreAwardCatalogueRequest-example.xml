@@ -86,7 +86,7 @@
 
     <cac:ReferencedContract></cac:ReferencedContract>
 
-    <!-- tag::CatalogueRequestLine[] -->
+
     <cac:CatalogueRequestLine>
         <cbc:ID>5134432</cbc:ID>
         <!-- tag::LineValidityPeriod-Request[] -->
@@ -179,6 +179,6 @@
         <!-- end::Item-Request[] -->
 
     </cac:CatalogueRequestLine>
-    <!-- end::CatalogueRequestLine[] -->
+
 
 </ubl:CatalogueRequest>

@@ -405,7 +405,6 @@
             <Term>cac:CatalogueRequestLine</Term>
             <Name>Catalogue request line</Name>
             <Description>A line in a pre-award catalogue request specifying</Description>
-            <Property key="doc">structure/docs/CatalogueRequestLine.adoc</Property>
 
             
             <Element>
@@ -419,6 +418,7 @@
                 <Term>cac:LineValidityPeriod</Term>
                 <Name>Line validity period</Name>
                 <Reference type="RULE">EUGEN-T68-R013</Reference>
+                <Property key="doc">structure/docs/LineValidityPeriod-Request.adoc</Property>
 
                 <Element>
                     <Term>cbc:StartDate</Term>
@@ -461,10 +461,12 @@
             <Element>
                 <Term>cac:RequiredItemLocationQuantity</Term>
                 <Name>Required Item location quantity</Name>
+                <Property key="doc">structure/docs/RequiredItemLocationQuantity-Request.adoc</Property>
 
                 <Element cardinality="0..n">
                     <Term>cac:ApplicableTerritoryAddress</Term>
                     <Name>Delivery location</Name>
+                    <Property key="doc">structure/docs/ApplicableTerritoryAddress-Request.adoc</Property>
 
                     <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
@@ -526,6 +528,7 @@
                     <Term>cac:Price</Term>
                     <Name>Price</Name>
                     <Description>To state both the estimated price and the total budget price (maximum price), repeat the Price class for each type</Description>
+                    <Property key="doc">structure/docs/Price-Request.adoc</Property>
                     
                     <Element>
                         <Term>cbc:PriceAmount</Term>
@@ -549,6 +552,7 @@
             <Element cardinality="0..n">
                 <Term>cac:item</Term>
                 <Name>Item request</Name>
+                <Property key="doc">structure/docs/Item-Request.adoc</Property>
 
                 <Element cardinality="0..1">
                     <Term>cbc:Description</Term>
@@ -567,6 +571,7 @@
                 <Element>
                     <Term>cac:CatalogueDocumentReference</Term>
                     <Name>Catalogue document reference</Name>
+                    <Property key="doc">structure/docs/CatalogueDocumentReference-Request.adoc</Property>
 
                     <Element>
                         <Term>cac:Attachment</Term>
@@ -588,6 +593,7 @@
                 <Element>
                     <Term>cac:ItemSpecificationDocumentReference</Term>
                     <Name>Item specification document reference</Name>
+                    <Property key="doc">structure/docs/ItemSpecificationDocumentReference-Request.adoc</Property>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -644,6 +650,7 @@
                     <Term>cac:CommodityClassification</Term>
                     <Name>Commodity classification</Name>
                     <Description>A classification of this item according to a specific system for classifying commodities.</Description>
+                    <Property key="doc">structure/docs/CommodityClassification-Request.adoc</Property>
 
                     <Element>
                         <Term>cbc:ItemClassificationCode</Term>
@@ -660,6 +667,7 @@
                 <Element> <!-- Not sure with the implementation. Need QA. -->
                     <Term>cac:AdditionalItemProperty</Term>
                     <Name>Additional item property</Name>
+                    <Property key="doc">structure/docs/AdditionalItemProperty-Request.adoc</Property>
                     
                     <Element>
                         <Term>cbc:ID</Term>

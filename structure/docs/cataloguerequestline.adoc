@@ -1,9 +1,0 @@
-include::guide/settings.adoc[]
-
-//= Catalogue request line
-
-.UBL example of catalogue request line
-[source, xml, indent=0]
-----
-include::../{snippet-dir}/PreAwardCatalogueRequest-example.xml[tags=CatalogueRequestLine]
-----
