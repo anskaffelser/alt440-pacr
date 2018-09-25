@@ -839,7 +839,7 @@ Used to provide price information based on a standard quantity unit to enable pr
 |Standard unit quantity
 |The quantity of standard units that are in each consumable unit.
 E.g. if consumable units are bottles and each bottle contains 0,333 liters the standard unit quantity is 0,333
-|Numeric
+|Quantity
 
 |0..1
 |Standardized unit price
@@ -931,7 +931,7 @@ The value should be a valid UOM code like CS for case
 |Packed quantity
 |The number of packed units that are in the orderable unit.
 E.g. if the orderable unit is a pallet that contains 30 boxes then the packed units are BOX and the packed quantity is 30.
-|Numeric
+|Quantity
 
 |0..1
 |Consumable unit
