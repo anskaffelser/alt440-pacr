@@ -79,7 +79,7 @@
 
         <Element>
             <Term>cac:ValidityPeriod</Term>
-            <Name>Pre award catalogue validity period</Name>
+            <Name>Pre-award catalogue validity period</Name>
             <Description>The validity period must include both start date and end date, and the start date must be
                 earlier than the end date</Description>
             <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
@@ -163,6 +163,7 @@
 
                 <Attribute>
                     <Term>schemeID</Term>
+                    <Name>Identification scheme identifier</Name>
                     <Description>The identification of the identification scheme.</Description>
                     <Reference type="CODE_LIST">ICD</Reference>
                     <Value type="EXAMPLE">SE:VATNO</Value>
@@ -183,7 +184,7 @@
 
                     <Attribute>
                         <Term>schemeID</Term>
-                        <Name>Identifier Scheme Identifier</Name>
+                        <Name>Identification scheme identifier</Name>
                         <Description>The identifier for the applied identification. Scheme id mandatory use "ZZZ" for unidentified scheme.</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Reference type="CODE_LIST">ICD_UNKNOWN</Reference>
@@ -264,13 +265,11 @@
                         <Name>Country code</Name>
                         <Description>A code that identifies the country.</Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
-<!-- TODO:
                         <Attribute>
                             <Term>listID</Term>
                             <Description>The identification of a list of codes.</Description>
                             <Value type="FIXED">ISO3166-1:Alpha2</Value>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">SE</Value>
                     </Element>
                 </Element>
@@ -287,14 +286,13 @@
                 <Term>cbc:EndpointID</Term>
                 <Name>Catalogue receiver electronic address identifier</Name>
                 <Description>The electronic address of the party to which the catalogue is sent.</Description>
-<!-- TODO:
                 <Attribute>
                     <Term>schemeID</Term>
+                    <Name>Identification scheme identifier</Name>
                     <Description>The identification of the identification scheme.</Description>
                     <Reference type="CODE_LIST">ICD</Reference>
                     <Value type="EXAMPLE">NO:ORGNR</Value>
                 </Attribute>
--->                
                 <Value type="EXAMPLE">987654321</Value>
             </Element>
 
@@ -307,18 +305,15 @@
                     <Term>cbc:ID</Term>
                     <Name>Catalogue receiver standard identifier</Name>
                     <Description>The standard identifier of the party to which the catalogue is sent.</Description>
-<!-- TODO:
                     <Attribute>
                         <Term>schemeID</Term>
-                        <Name>Identification Scheme. Identifier</Name>
+                        <Name>Identification scheme identifier</Name>
                         <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Reference type="CODE_LIST">ICD_UNKNOWN</Reference>
                         <Value type="EXAMPLE">NO:ORGNR</Value>
                     </Attribute>
--->                    
-                    <Value type="EXAMPLE">987654321</Value>
-                    
+                    <Value type="EXAMPLE">987654321</Value>                    
                 </Element>
             </Element>
 
@@ -384,16 +379,15 @@
                         <Name>Country code</Name>
                         <Description>A code that identifies the country.</Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
-
-<!-- TODO:
                         <Attribute>
                             <Term>listID</Term>
+                            <Name>Code list identifier</Name>
                             <Description>The identification of a list of codes.</Description>
                             <Value type="FIXED">ISO3166-1:Alpha2</Value>
                         </Attribute>
--->
                         <Value type="EXAMPLE">NO</Value>
                     </Element>
+
                 </Element>
             </Element>
         </Element>
@@ -417,16 +411,14 @@
                         <Term>cbc:ID</Term>
                         <Name>Catalogue supplier standard identifier</Name>
                         <Description>The standard identifier of the party that provides the items specified in the catalogue.</Description>
-<!-- TODO:
                         <Attribute>
                             <Term>schemeID</Term>
-                            <Name>Identification Scheme. Identifier</Name>
+                            <Name>Identification scheme identifier</Name>
                             <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Reference type="CODE_LIST">ICD_UNKNOWN</Reference>
                             <Value type="EXAMPLE">GLN</Value>
                         </Attribute>
--->                       
                         <Value type="EXAMPLE">1298234392874923874892</Value>
                     </Element>
                 </Element>
@@ -490,14 +482,12 @@
                             <Name>Country code</Name>
                             <Description>A code that identifies the country.</Description>
                             <Reference type="CODE_LIST">ISO3166</Reference>
-                            
-<!-- TODO:
                             <Attribute>
                                 <Term>listID</Term>
+                                <Name>Code list identifier</Name>
                                 <Description>The identification of a list of codes.</Description>
                                 <Value type="FIXED">ISO3166-1:Alpha2</Value>
                             </Attribute>
--->                            
                             <Value type="EXAMPLE">SE</Value>
                         </Element>
                     </Element>
@@ -558,16 +548,14 @@
                         <Term>cbc:ID</Term>
                         <Name>Catalogue customer standard identifier</Name>
                         <Description>Standard identifier of the party who may order from the catalogue.</Description>
-<!-- TODO:                        
                         <Attribute>
                             <Term>schemeID</Term>
-                            <Name>Identification Scheme. Identifier</Name>
+                            <Name>Identification scheme identifier</Name>
                             <Description>Scheme id mandatory use "ZZZ" for unidentified scheme. The identification of the identification scheme.</Description>
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Reference type="CODE_LIST">ICD_UNKNOWN</Reference>
                             <Value type="EXAMPLE">ZZZ</Value>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">23947</Value>
                     </Element>
                 </Element>
@@ -622,13 +610,13 @@
 
         <Element cardinality="1..n">
             <Term>cac:CatalogueLine</Term>
-            <Name>Pre award catalogue line</Name>
+            <Name>Pre-award catalogue line</Name>
             <Description>Detailed information of an item, price and its composition  in a pre-award catalogue.</Description>
             <Property key="doc">structure/docs/CatalogueLine.adoc</Property>
 
             <Element>
                 <Term>cbc:ID</Term>
-                <Name>Pre award catalogue line identifier</Name>
+                <Name>Pre-award catalogue line identifier</Name>
                 <Description>Each line must have an identifier that is unique within the document to make it possible to reference the line. For example, from other documents.</Description>
                 <Value type="EXAMPLE">1</Value>
             </Element>
@@ -660,22 +648,19 @@
                 <Term>cbc:ContentUnitQuantity</Term>
                 <Name>Item net quantity</Name>
                 <Description>The net quantity of the item that is contained in each consumable unit, excluding any packaging materials.</Description>
-<!-- TODO: 
                 <Attribute>
                     <Term>unitCode</Term>
-                    <Name>Quantity Unit. Code</Name>
+                    <Name>Quantity unit code</Name>
                     <Description>The unit of the quantity</Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">MLT</Value>
-                </Attribute>
-                
+                </Attribute>                
                 <Attribute>
                     <Term>unitCodeListID</Term>
-                    <Name>Quantity Unit. Code List Identifier</Name>
+                    <Name>Quantity unit code list identifier</Name>
                     <Description>The list identifier for the unit of the quantity</Description>
                     <Value type="FIXED">UNECERec20</Value>
                 </Attribute>
--->                
             </Element>
 
             <Element cardinality="0..1">
@@ -689,25 +674,20 @@
                 <Term>cbc:MinimumOrderQuantity</Term>
                 <Name>Minimum order quantity</Name>
                 <Description>The smallest number of items that can be ordered.</Description>
-
                 <Reference type="RULE">BII3-T68-R022</Reference>
-
-<!-- TODO: 
                 <Attribute>
                     <Term>unitCode</Term>
-                    <Name>Quantity Unit. Code</Name>
+                    <Name>Quantity unit code</Name>
                     <Description>The unit of the quantity</Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">EA</Value>
-                </Attribute>
-                
+                </Attribute>                
                 <Attribute>
                     <Term>unitCodeListID</Term>
-                    <Name>Quantity Unit. Code List Identifier</Name>
+                    <Name>Quantity unit code list identifier</Name>
                     <Description>The list identifier for the unit of the quantity</Description>
                     <Value type="FIXED">UNECERec20</Value>
                 </Attribute>
--->                
                 <Value type="DEFAULT">1</Value>
             </Element>
 
@@ -715,22 +695,19 @@
                 <Term>cbc:MaximumOrderQuantity</Term>
                 <Name>Maximum order quantity</Name>
                 <Description>The largest number of items that can be ordered.</Description>
-<!-- TODO: 
                 <Attribute>
                     <Term>unitCode</Term>
-                    <Name>Quantity Unit. Code</Name>
+                    <Name>Quantity unit code</Name>
                     <Description>The unit of the quantity</Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">EA</Value>
-                </Attribute>                
-                
+                </Attribute>
                 <Attribute>
                     <Term>unitCodeListID</Term>
-                    <Name>Quantity Unit. Code List Identifier</Name>
+                    <Name>Quantity unit code list identifier</Name>
                     <Description>The list identifier for the unit of the quantity</Description>
                     <Value type="FIXED">UNECERec20</Value>
                 </Attribute>
--->                
                 <Value type="EXAMPLE">1000</Value>
             </Element>
 
@@ -742,17 +719,15 @@
 
             <Element cardinality="0..1">
                 <Term>cbc:PackLevelCode</Term>
-                <Name>Handling unit packaging level, used to indicate different pack levels and their relation</Name>
-                <Description>The packaging level of the orderable unit.</Description>
+                <Name>Handling unit packaging level</Name>
+                <Description>The packaging level of the orderable unit used to indicate different pack levels and their relation.</Description>
                 <Reference type="CODE_LIST">GS17009</Reference>
-
-<!-- TODO: 
                 <Attribute>
                     <Term>listID</Term>
+                    <Name>Code list identifier</Name>
                     <Description>The identification of a list of codes.</Description>
                     <Value type="FIXED">GS17009:PEPPOL</Value>
                 </Attribute>
--->
                 <Value type="EXAMPLE">TU</Value>
             </Element>
             
@@ -809,39 +784,32 @@
                     <Term>cbc:PriceAmount</Term>
                     <Name>Standardized unit price</Name>
                     <Description>Item comparison unit price defining price for a certain quantity.</Description>
-<!-- TODO: 
                     <Attribute>
                         <Term>currencyID</Term>
                         <Name>Currency identifier</Name>
                         <Reference type="CODE_LIST">ISO4217</Reference>
                         <Value type="EXAMPLE">SEK</Value>
                     </Attribute>
--->                    
-                    <Value type="EXAMPLE">120.00</Value>
-                    
+                    <Value type="EXAMPLE">120.00</Value>                    
                 </Element>
 
                 <Element>
                     <Term>cbc:Quantity</Term>
                     <Name>Standard unit quantity</Name>
                     <Description>E.g. if consumable units are bottles and each bottle contains 0,333 liters the standard unit quantity is 0,333.</Description>
-<!-- TODO: 
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">LTR</Value>
                     </Attribute>
-                    
                     <Attribute>
                         <Term>unitCodeListID</Term>
-                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Name>Quantity unit code list identifier</Name>
                         <Description>The list identifier for the unit of the quantity</Description>
                         <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
--->                    
-                    <Value type="EXAMPLE">0.333</Value>
-                    
+                    <Value type="EXAMPLE">0.333</Value>                    
                 </Element>
                 
             </Element>
@@ -864,22 +832,18 @@
                     <Term>cbc:Quantity</Term>
                     <Name>Related item quantity</Name>
                     <Description>Quantity of a related item</Description>
-
-<!-- TODO: 
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
-                    </Attribute>
-                    
+                    </Attribute>                    
                     <Attribute>
                         <Term>unitCodeListID</Term>
-                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Name>Quantity unit code list identifier</Name>
                         <Description>The list identifier for the unit of the quantity</Description>
                         <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
--->                    
                     <Value type="EXAMPLE">5</Value>
                 </Element>
             </Element>
@@ -901,21 +865,18 @@
                     <Term>cbc:Quantity</Term>
                     <Name>Related item quantity</Name>
                     <Description>UOM should be stated  by using recommendation 20 v10</Description>
-<!-- TODO: 
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
-                    </Attribute>
-                         
+                    </Attribute>                        
                     <Attribute>
                         <Term>unitCodeListID</Term>
-                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Name>Quantity unit code list identifier</Name>
                         <Description>The list identifier for the unit of the quantity</Description>
                         <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
--->                    
                     <Value type="EXAMPLE">10</Value>
                 </Element>
             </Element>
@@ -937,24 +898,20 @@
                 <Element cardinality="0..1">
                     <Term>cbc:Quantity</Term>
                     <Name>Related item quantity</Name>
-                    <Description>UOM should be stated  by using recommendation 20 v10</Description>
-<!-- TODO: 
+                    <Description>UOM should be stated by using recommendation 20 v10</Description>
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">MLT</Value>
-                    </Attribute>
-                    
+                    </Attribute>                    
                     <Attribute>
                         <Term>unitCodeListID</Term>
-                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Name>Quantity unit code list identifier</Name>
                         <Description>The list identifier for the unit of the quantity</Description>
                         <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
--->                    
-                    <Value type="EXAMPLE">1000</Value>
-                    
+                    <Value type="EXAMPLE">1000</Value>                    
                 </Element>
             </Element>
 
@@ -976,21 +933,18 @@
                     <Term>cbc:Quantity</Term>
                     <Name>Related item quantity</Name>
                     <Description>UOM should be stated  by using recommendation 20 v10</Description>
-<!-- TODO: 
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quanitity unit code</Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
-                    
                     <Attribute>
                         <Term>unitCodeListID</Term>
-                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Name>Quantity unit code list identifier</Name>
                         <Description>The list identifier for the unit of the quantity</Description>
                         <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
--->                    
                     <Value type="EXAMPLE">10</Value>
                 </Element>
             </Element>
@@ -1046,15 +1000,12 @@
                             <Description>The lists of valid countries are registered with the ISO 3166-1 Maintenance agency,
                                 "Codes for the representation of names of countries and their subdivisions". It is recommended
                                 to use the alpha-2 representation.</Description>
-                            <Reference type="CODE_LIST">ISO3166</Reference>
-                            
-<!-- TODO: 
+                            <Reference type="CODE_LIST">ISO3166</Reference> 
                             <Attribute usage="Optional">
                                 <Term>listID</Term>
                                 <Name>Code list identifier</Name>
                                 <Value type="FIXED">ISO3166-1:Alpha2</Value>
                             </Attribute>
--->                            
                             <Value type="EXAMPLE">NO</Value>
                         </Element>
                     </Element>
@@ -1072,14 +1023,12 @@
                         <Name>Item net price</Name>
                         <Description>The net price has to be equal with the gross price less the item price discount.
                             The price for the item at the specified locations.</Description>
-<!-- TODO: 
                         <Attribute>
                             <Term>currencyID</Term>
                             <Name>Currency identifier</Name>
                             <Reference type="CODE_LIST">ISO4217</Reference>
                             <Value type="EXAMPLE">SEK</Value>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">100.00</Value>
                     </Element>
 
@@ -1089,14 +1038,11 @@
                         <Description>The type of the price so that the receiver knows if the price may be changed is indicative. When prices are temporary the validity period 
                             for the price should be defined by stating the price validity period.</Description>
                         <Reference type="CODE_LIST">UNCL5387</Reference>
-
-<!-- TODO: 
                         <Attribute>
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
                             <Value type="FIXED">UNCL5387</Value>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">CP</Value>
                     </Element>
 
@@ -1177,45 +1123,37 @@
                         <Term>cbc:BatchQuantity</Term>
                         <Name>Batch quantity</Name>
                         <Description>The quantity of ordered Items that constitutes a batch for delivery purposes.</Description>
-
-<!-- TODO: 
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quanitity unit code</Name>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">EA</Value>
-                        </Attribute>
-                        
+                        </Attribute>                        
                         <Attribute>
                             <Term>unitCodeListID</Term>
                             <Name>Quantity Unit. Code List Identifier</Name>
                             <Description>The list identifier for the unit of the quantity</Description>
                             <Value type="FIXED">UNECERec20</Value>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">12</Value>
-                        
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:ConsumerUnitQuantity</Term>
                         <Name>Consumable unit quantity</Name>
                         <Description>Number of Consumer items in the orderable unit. E.g. number of bottles on a Pallet.</Description>
-<!-- TODO: 
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quanitity unit code</Name>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="EXAMPLE">EA</Value>
-                        </Attribute>
-                        
+                        </Attribute>                        
                         <Attribute>
                             <Term>unitCodeListID</Term>
-                            <Name>Quantity Unit. Code List Identifier</Name>
+                            <Name>Code list identifier</Name>
                             <Description>The list identifier for the unit of the quantity</Description>
                             <Value type="FIXED">UNECERec20</Value>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">5</Value>
                         
                     </Element>
@@ -1224,7 +1162,7 @@
 
             <Element>
                 <Term>cac:Item</Term>
-                <Name>Pre award catalogue item details</Name>
+                <Name>Pre-award catalogue item details</Name>
                 <Property key="doc">structure/docs/Item.adoc</Property>
 
                 <Element cardinality="0..1">
@@ -1239,21 +1177,18 @@
                     <Term>cbc:PackQuantity</Term>
                     <Name>Packed Quantity</Name>
                     <Description>The number of packed units that are in the orderable unit.</Description>
-<!-- TODO: 
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quantity unit code</Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
-                    </Attribute>
-                    
+                    </Attribute>                    
                     <Attribute>
                         <Term>unitCodeListID</Term>
-                        <Name>Quantity Unit. Code List Identifier</Name>
+                        <Name>Quantity code list identifier</Name>
                         <Description>The list identifier for the unit of the quantity</Description>
                         <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
--->                    
                     <Value type="EXAMPLE">12</Value>
                 </Element>
 
@@ -1310,12 +1245,10 @@
                         <Term>cbc:ID</Term>
                         <Name>Manufacturers item identifier</Name>
                         <Description>The manufacturer's identifier for the item.</Description>
-<!-- TODO: 
                         <Attribute usage="Optional">
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">B32</Value>
                     </Element>
                 </Element>
@@ -1328,13 +1261,11 @@
                         <Term>cbc:ID</Term>
                         <Name>Item standard identifier</Name>
                         <Description>The standard identifier of the catalogue item.</Description>
-<!-- TODO: 
                         <Attribute>
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
                             <Value type="EXAMPLE">GTIN</Value>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">984719043710294792</Value>
                     </Element>
 
@@ -1366,14 +1297,11 @@
                         <Name>Attachment description code</Name>
                         <Description>A functional description of the attachment, expressed as a code.</Description>
                         <Reference type="CODE_LIST">UNCL1001</Reference>
-
-<!-- TODO: 
                         <Attribute>
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
                             <Value type="FIXED">UNCL1001</Value>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">6</Value>
                     </Element>
 
@@ -1399,14 +1327,12 @@
                             <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                             <Name>Attached document</Name>
                             <Description>A binary large object containing an attached document. Base 64 encoded.</Description>
-<!-- TODO: 
                             <Attribute>
                                 <Term>mimeCode</Term>
                                 <Description>Mime type of the attached document</Description>
                                 <Reference type="CODE_LIST">MimeCode</Reference>
                                 <Value type="EXAMPLE">application/pdf</Value>
                             </Attribute>
--->                            
                             <Value type="EXAMPLE">UEVQUE9MIEJJUyBQcmUgYXdhcmQgQ2F0YWxvZ3VlIGV4YW1wbGUgYXR0YWNoZW1lbnQ=</Value>
                         </Element>
 
@@ -1436,16 +1362,12 @@
                         <Description>The code identifying the country from which the item
                             originates. Commonly used in cross border trade for statistical and customs purposes.</Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
-                        
- <!-- TODO:  
                         <Attribute>
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
                             <Value type="FIXED">ISO3166-1:Alpha2</Value>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">CN</Value>
-                        
                     </Element>
                 </Element>
 
@@ -1458,18 +1380,14 @@
                         <Name>Item classification code</Name>
                         <Description>A code for classifying the item by its type or nature. Classification codes are used
                             to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
-<!-- TODO: 
                         <Attribute usage="Optional">
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
                             <Value type="EXAMPLE">UNSPSC</Value>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">53131502</Value>
                     </Element>
                 </Element>
-               
-                
 
                 <Element cardinality="0..1">
                     <Term>cac:TransactionConditions</Term>
@@ -1504,7 +1422,6 @@
                         <Description>Specification of the hazardous nature of an item
                             according to a classification schema.
                         </Description>
-             
                     </Element>
 
                     <Element cardinality="0..1">
@@ -1514,17 +1431,12 @@
                             according to the UNDG classification schema.
                         </Description>
                         <Reference type="CODE_LIST">UNCL8273</Reference>
-                        
-<!-- TODO:                         
                         <Attribute>
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>
                             <Value type="FIXED">UNCL8273</Value>
                         </Attribute>
--->                       
                         <Value type="EXAMPLE">0131</Value>
-
-  
                     </Element>
                 </Element>
 
@@ -1539,14 +1451,11 @@
                         <Name>Item VAT category code</Name>
                         <Description>The VAT category for the item</Description>
                         <Reference type="CODE_LIST">UNCL5305</Reference>
-                        
-<!-- TODO: 
                         <Attribute usage="Optional">
                             <Term>listID</Term>
                             <Name>Code list identifier</Name>              
                             <Value type="FIXED">UNCL5305</Value>
                         </Attribute>
--->                        
                         <Value type="EXAMPLE">S</Value>
                     </Element>
 
@@ -1720,6 +1629,10 @@
                         <Term>cbc:CertificateTypeCode</Term>
                         <Name>Item means of proof type</Name>
                         <Description>A code specifying the type of the Item means of proof according to Directives 2014/24/EU, e.g., if it a label, test report etc.</Description>
+                        <Attribute usage="Optional">
+                            <Term>listID</Term>
+                            <Name>Code list identifier</Name>              
+                        </Attribute>
                         <Value type="EXAMPLE">NEO</Value>
                     </Element>
 
@@ -1890,6 +1803,10 @@
                     <Term>cbc:LineID</Term>
                     <Name>Requested deliverable identifier</Name>
                     <Description>Identifier for a requested deliverable.</Description>
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Description>The identification of the identification scheme.</Description>
+                    </Attribute>
                 </Element>
             </Element>
         </Element>
