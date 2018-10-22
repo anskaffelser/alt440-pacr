@@ -418,7 +418,6 @@
             <Name>Catalogue request line</Name>
             <Description>A line in a pre-award catalogue request specifying</Description>
 
-            
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Catalogue request line identifier</Name>
@@ -441,32 +440,11 @@
                 </Element>
 
                 <Element>
-                    <Term>cbc:StartTime</Term>
-                    <Name>Period start time</Name>
-                    <Description>The time of the first period day.</Description>
-                    <Value type="EXAMPLE">13:00:00</Value>
-                </Element>
-
-                <Element>
                     <Term>cbc:EndDate</Term>
                     <Name>Period end date</Name>
                     <Description>The date is the last day of the period.</Description>
                     <Reference type="RULE">BII3-T68-R020</Reference>
                     <Value type="EXAMPLE">2017-06-15</Value>
-                </Element>
-
-                <Element>
-                    <Term>cbc:EndTime</Term>
-                    <Name>Period end time</Name>
-                    <Description>The time of the last period day.</Description>
-                    <Value type="EXAMPLE">22:30:00</Value>
-                </Element>
-
-                <Element>
-                    <Term>cbc:Description</Term>
-                    <Name>Description</Name>
-                    <Description>The description of this period- expressed as text.</Description>
-                    <Value type="EXAMPLE">200 Kr for each night at the Scandic Hotel.</Value>
                 </Element>
             </Element>
 
@@ -474,6 +452,20 @@
                 <Term>cac:RequiredItemLocationQuantity</Term>
                 <Name>Required Item location quantity</Name>
                 <Property key="doc">structure/docs/RequiredItemLocationQuantity-Request.adoc</Property>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:MinimumQuantity</Term>
+                    <Name>Minimum quantity</Name>
+                    <Description>The minimum quantity that can be ordered to qualify for a specific price.</Description>
+                    <Value type="EXAMPLE">2 rooms</Value>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:MaximumQuantity</Term>
+                    <Name>Maximum quantity</Name>
+                    <Description>The maximum quantity that can be ordered to qualify for a specific price.</Description>
+                    <Value type="EXAMPLE">3 rooms</Value>
+                </Element>
 
                 <Element cardinality="0..n">
                     <Term>cac:ApplicableTerritoryAddress</Term>

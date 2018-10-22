@@ -745,13 +745,6 @@
                 </Element>
 
                 <Element>
-                    <Term>cbc:StartTime</Term>
-                    <Name>Period start time</Name>
-                    <Description>The time of the first period day.</Description>
-                    <Value type="EXAMPLE">13:00:00</Value>
-                </Element>
-
-                <Element>
                     <Term>cbc:EndDate</Term>
                     <Name>Period end date</Name>
                     <Description>The date is the last day of the period.</Description>
@@ -759,19 +752,6 @@
                     <Value type="EXAMPLE">2017-06-15</Value>
                 </Element>
 
-                <Element>
-                    <Term>cbc:EndTime</Term>
-                    <Name>Period end time</Name>
-                    <Description>The time of the last period day.</Description>
-                    <Value type="EXAMPLE">22:30:00</Value>
-                </Element>
-
-                <Element>
-                    <Term>cbc:Description</Term>
-                    <Name>Description</Name>
-                    <Description>The description of this period- expressed as text.</Description>
-                    <Value type="EXAMPLE">200 Kr for each night at the Scandic Hotel.</Value>
-                </Element>
             </Element>
 
             <Element cardinality="0..n">
@@ -892,7 +872,6 @@
                     <Name>Item standard identifier</Name>
                     <Description>Indicate the seller's identifier for the related item.</Description>
                     <Value type="EXAMPLE">A2</Value>
-
                 </Element>
 
                 <Element cardinality="0..1">
@@ -926,7 +905,6 @@
                     <Name>Item standard identifier</Name>
                     <Description>Indicate the seller's identifier for the related item.</Description>
                     <Value type="EXAMPLE">AA</Value>
-
                 </Element>
 
                 <Element>
@@ -954,6 +932,20 @@
                 <Name>Item Location Quantity</Name>
                 <Description>Properties of the item in this catalogue line that are dependent on location and quantity.</Description>
                 <Property key="doc">structure/docs/RequiredItemLocationQuantity.adoc</Property>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:MinimumQuantity</Term>
+                    <Name>Minimum quantity</Name>
+                    <Description>The minimum quantity that can be ordered to qualify for a specific price.</Description>
+                    <Value type="EXAMPLE">2 rooms</Value>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:MaximumQuantity</Term>
+                    <Name>Maximum quantity</Name>
+                    <Description>The maximum quantity that can be ordered to qualify for a specific price.</Description>
+                    <Value type="EXAMPLE">3 rooms</Value>
+                </Element>
 
                 <Element cardinality="0..n">
                     <Term>cac:ApplicableTerritoryAddress</Term>
