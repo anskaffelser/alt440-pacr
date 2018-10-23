@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Additional item property name code</Title>
+    <Identifier>property</Identifier>
+    <Version>1.0</Version>
+    <Agency>OpenPEPPOL</Agency>
+    
+
+    <Code>
+        <Id>PROP</Id>
+        <Name>Requested item property</Name>
+    </Code>
+
+    <Code>
+        <Id>INFO</Id>
+        <Name>Requested item informations</Name>
+    </Code>
+
+</CodeList>

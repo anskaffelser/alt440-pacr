@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Information request relevance</Title>
+    <Identifier>relevance</Identifier>
+    <Version>1.0</Version>
+    <Agency>OpenPEPPOL</Agency>
+    
+
+    <Code>
+        <Id>M</Id>
+        <Name>Mandatory</Name>
+    </Code>
+
+    <Code>
+        <Id>O</Id>
+        <Name>Optional</Name>
+    </Code>
+    
+    <Code>
+        <Id>F</Id>
+        <Name>Forbidden</Name>
+    </Code>
+    
+    <Code>
+        <Id>I</Id>
+        <Name>For information</Name>
+    </Code>
+
+</CodeList>

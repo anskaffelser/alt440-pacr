@@ -45,15 +45,16 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL5387.xml</Path>
     </Resource>
-    <!--  
+    
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/MimeCode.xml</Path>
+        <Path>structure/codelist/relevance.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/TrueFalse.xml</Path>
-    </Resource>-->
+        <Path>structure/codelist/property.xml</Path>
+    </Resource>
+  
     
     <!-- Namespaces -->
     <Resource>

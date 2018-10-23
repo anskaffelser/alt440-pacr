@@ -12,18 +12,11 @@
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
     <Document>
-        <Term>ubl:Catalogue</Term>
-
-        <Element>
-            <Term>cbc:UBLVersionID</Term>
-            <Name>UBL version identifier</Name>
-            <Description>Identifies the version of syntax that transactions are based on.</Description>
-            <Value type="FIXED">2.2</Value>
-        </Element>
+        <Term>ubl:CatalogueRequest</Term>
 
         <Element>
             <Term>cbc:CustomizationID</Term>
-            <Name>Transaction identifier</Name>
+            <Name>Specification identifier</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic
                 content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
             <Value type="FIXED">urn:fdc:difi.no:2017:ehf:CatalogueRequest:2.0</Value> <!-- mÅ SJEKKES OPP!-->
@@ -39,16 +32,15 @@
 
         <Element>
             <Term>cbc:ID</Term>
-            <Name>Transaction identifier</Name>
-            <Description>An identifier for the pre-award catalogue request that allows referencing the pre-award
-                catalogue request.</Description>
+            <Name>Document identifier</Name>
+            <Description>An identifier for this pre-award catalogue request document</Description>
             <Value type="EXAMPLE">Transaction-02</Value>
         </Element>
         
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Issue date</Name>
-            <Description>The date when the catalogue request was issued, on form YYYY-MM-DD. Date shall not include
+            <Description>The date when the catalogue request was issued, format YYYY-MM-DD. Date shall not include
             timezone information.</Description>
             <Value type="EXAMPLE">2018-02-06</Value>
         </Element>
@@ -58,13 +50,6 @@
             <Name>Issue time</Name>
             <Description>The time when the catalogue request was issued. Time shall not include timezone information.</Description>
             <Value type="EXAMPLE">14:23:13</Value>
-        </Element>
-        
-        <Element>
-            <Term>Note</Term>
-            <Name>Version</Name>
-            <Description>An identifier for the version of a transaction message.</Description>
-            <Value type="EXAMPLE">Version 3 is OK</Value>
         </Element>
 
         <Element>
@@ -85,7 +70,7 @@
             <Element>
                 <Term>cac:PartyIdentification</Term>
                 
-                <Element cardinality="0..1">
+                <Element>
                     <Term>cbc:ID</Term>
                     <Name>Economic operator identifier</Name>
                     <Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
@@ -95,8 +80,7 @@
 
             <Element>
                 <Term>cac:PartyName</Term>
-
-                <Element>
+              <Element>
                     <Term>cbc:Name</Term>
                     <Name>Economic operator name</Name>
                     <Description>The name of the economic operator</Description>
@@ -105,17 +89,31 @@
             </Element>
 
             <Element cardinality="0..1">
-                <Term>cac:PostAddress</Term>
+                <Term>cac:PostalAddress</Term>
                 <Name>Postal address</Name>
 
-                <Element>
+                <Element cardinality="0..1">
+                    <Term>cbc:StreetName</Term>
+                    <Name>Address line 1</Name>
+                    <Description>The main line in an address.</Description>
+                    <Value type="EXAMPLE">Heimdalsgate 3</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:AdditionalStreetName</Term>
+                    <Name>Address line 2</Name>
+                    <Description>An additional address line in an address that can be used to give further details
+                        supplementing the main line.</Description>
+                </Element>
+                
+                <Element cardinality="0..1">
                     <Term>cbc:CityName</Term>
                     <Name>City</Name>
                     <Description>The common name of a city where the address is located.</Description>
                     <Value type="EXAMPLE">Oslo</Value>
                 </Element>
 
-                <Element>
+                <Element cardinality="0..1">
                     <Term>cbc:PostalZone</Term>
                     <Name>Post code</Name>
                     <Description>The identifier for an addressable group of properties according to the relevant
@@ -127,20 +125,6 @@
                     <Term>cbc:CountrySubentityCode</Term>
                     <Name>Country subdivision code</Name>
                     <Description>A code that identifies a subdivision of a country, e.g., a province or district.</Description>
-                </Element>
-
-                <Element>
-                    <Term>cbc:StreetName</Term>
-                    <Name>Address line 1</Name>
-                    <Description>The main line in an address.</Description>
-                    <Value type="EXAMPLE">Heimdalsgate 3</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:AdditionalStreetName</Term>
-                    <Name>Address line 2</Name>
-                    <Description>An additional address line in an address that can be used to give further details
-                        supplementing the main line.</Description>
                 </Element>
 
                 <Element>
@@ -159,33 +143,21 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyLegalEntity</Term>
-                <!--
-                This term has no coressponding business term, as it is only
-                needed to bind a bussines term to an element within this
-                element.
-                -->
+               <Name>Economic operators legal entity information</Name>
 
                 <Element>
                     <Term>cac:RegistrationAddress</Term>
-                    <!--
-                    This term has no coressponding business term, as it is only
-                    needed to bind a bussines term to an element within this
-                    element.
-                    -->
+                    <Name>Economic operators legal registration address</Name>
 
                     <Element>
                         <Term>cac:Country</Term>
-                        <!--
-                        This term has no coressponding business term, as it is only
-                        needed to bind a bussines term to an element within this
-                        element.
-                        -->
+                      <Name>Country</Name>
 
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
-                            <Name>Country of registration</Name>
-                            <Description>The country where the party is registered.</Description>
-                            <Reference type="CODE_LIST">IS03166-1_Alpha</Reference>
+                            <Name>Economic operators country of legal registration</Name>
+                            <Description>The country where the economic operator is registered.</Description>
+                            <Reference type="CODE_LIST">IS03166</Reference>
                             <Value type="EXAMPLE">NO</Value>
                         </Element>
 
@@ -194,11 +166,11 @@
 
             </Element>
 
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cac:Contact</Term>
                 <Name>Contact person</Name>
 
-                <Element>
+                <Element cardinality="0..1">
                     <Term>cbc:Name</Term>
                     <Name>Contact point</Name>
                     <Description>The contact point's name.</Description>
@@ -229,7 +201,7 @@
                 works using a tendering procedure as described in the applicable directive </Description>
             <Property key="doc">structure/docs/ProviderParty-Request.adoc</Property>
             
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
                 <Name>Contracting body electronic address identifier</Name>
                 <Description>Electronic address of the contracting body.</Description>
@@ -239,7 +211,7 @@
             <Element>
                 <Term>cac:PartyIdentification</Term>
 
-                <Element cardinality="0..1">
+                <Element>
                     <Term>cbc:ID</Term>
                     <Name>Contracting body identifier</Name>
                     <Description>The national identifier of a contracting body as it is legally registered
@@ -260,17 +232,33 @@
             </Element>
 
             <Element cardinality="0..1">
-                <Term>cac:PostAddress</Term>
+                <Term>cac:PostalAddress</Term>
                 <Name>Postal address</Name>
 
-                <Element>
+                <Element cardinality="0..1">
+                    <Term>cbc:StreetName</Term>
+                    <Name>Address line 1</Name>
+                    <Description>The main line in an address.</Description>
+                    <Value type="EXAMPLE">Main street 3</Value>
+                </Element>
+                
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:AdditionalStreetName</Term>
+                    <Name>Address line 2</Name>
+                    <Description>An additional address line in an address that can be used to give further details
+                        supplementing the main line</Description>
+                    <Value type="EXAMPLE">Building 32</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
                     <Term>cbc:CityName</Term>
                     <Name>City</Name>
                     <Description>The common name of a city where the address is located.</Description>
                     <Value type="EXAMPLE">London</Value>
                 </Element>
 
-                <Element>
+                <Element cardinality="0..1">
                     <Term>cbc:PostalZone</Term>
                     <Name>Post code</Name>
                     <Description>The identifier for an addressable group of properties according to the relevant
@@ -283,24 +271,6 @@
                     <Name>Country subdivision code</Name>
                     <Description>A code that identifies a subdivision of a country, e.,g., a province or district.</Description>
                     <Value type="EXAMPLE">Bolton</Value>
-                </Element>
-
-
-        
-                <Element>
-                    <Term>cbc:StreetName</Term>
-                    <Name>Address line 1</Name>
-                    <Description>The main line in an address.</Description>
-                    <Value type="EXAMPLE">Main street 3</Value>
-                </Element>
-
-
-                <Element cardinality="0..1">
-                    <Term>cbc:AdditionalStreetName</Term>
-                    <Name>Address line 2</Name>
-                    <Description>An additional address line in an address that can be used to give further details
-                        supplementing the main line</Description>
-                    <Value type="EXAMPLE">Building 32</Value>
                 </Element>
 
                 <Element>
@@ -319,46 +289,34 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyLegalEntity</Term>
-                <!--
-                This term has no coressponding business term, as it is only
-                needed to bind a bussines term to an element within this
-                element.
-                -->
-
+                <Name>Contracting body legal entity information</Name>
+                
                 <Element>
                     <Term>cac:RegistrationAddress</Term>
-                    <!--
-                    This term has no coressponding business term, as it is only
-                    needed to bind a bussines term to an element within this
-                    element.
-                    -->
-
+                    <Name>Contracting body legal registration address</Name>
+                    
                     <Element>
                         <Term>cac:Country</Term>
-                        <!--
-                        This term has no coressponding business term, as it is only
-                        needed to bind a bussines term to an element within this
-                        element.
-                        -->
-
+                        <Name>Country</Name>
+                        
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
-                            <Name>Country of registration</Name>
-                            <Description>The country where the party is registered.</Description>
-                            <Reference type="CODE_LIST">IS03166-1_Alpha</Reference>
+                            <Name>Contracting body country of legal registration</Name>
+                            <Description>The country where the contracting body is registered.</Description>
+                            <Reference type="CODE_LIST">IS03166</Reference>
                             <Value type="EXAMPLE">NO</Value>
                         </Element>
-
+                        
                     </Element>
                 </Element>
-
+                
             </Element>
 
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cac:Contact</Term>
                 <Name>Contact person</Name>
 
-                <Element>
+                <Element cardinality="0..1">
                     <Term>cbc:Name</Term>
                     <Name>Contact point</Name>
                     <Description>The contact point's name.</Description>
@@ -372,7 +330,7 @@
                     <Value type="EXAMPLE">84737223</Value>
                 </Element>
 
-                <Element>
+                <Element cardinality="0..1">
                     <Term>cbc:ElectronicMail</Term>
                     <Name>Contact email address</Name>
                     <Description>An e-mail address for the contact point.</Description>
@@ -384,31 +342,32 @@
 
         <Element cardinality="0..1">
             <Term>cac:RequestedCatalogueReference</Term>
-            <!--
-            This term has no coressponding business term, as it is only
-            needed to bind a bussines term to an element within this
-            element.
-            -->
+            <Name>Requested catalogue reference</Name>
+            <Description>A reference to a specific Catalogue; used if the Catalogue Request is for an update.</Description> 
             <Element>
                 <Term>cbc:ID</Term>
-                <Name>Previous version reference</Name>
-                <Description>A reference to the previous version of a transaction message.</Description>
-                <Value type="EXAMPLE">12345.2018.1</Value>
+                <Name>Catalogue identifier</Name>
+                <Description>The catalogue identifier of the catalogue for which an update is requested.</Description>
+                <Value type="EXAMPLE">12345.2018</Value>
+            </Element>
+            <Element>
+                <Term>cbc:VersionID</Term>
+                <Name>Catalogue version</Name>
+                <Description>The version number of the catalogue for which an update is requested.</Description>
+                <Value type="EXAMPLE">2.0</Value>
             </Element>
         </Element>
+        
+ 
 
         <Element>
             <Term>cac:ReferencedContract</Term>
-            <!--
-            This term has no corresponding business term, as it is only
-            needed to bind a business term to an element within this
-            element.
-            -->
+          <Name>Call for tenders reference</Name>
+           
             <Element>
                 <Term>cbc:ID</Term>
-                <Name>Call for tenders reference</Name>
-                <Description>A reference to the call for tender as issued by the contracting body. Creates a link between
-                    the call for tender and the tender.</Description>
+                <Name>Call for tenders reference identifier</Name>
+                <Description>A reference to the call for tender as issued by the contracting body.</Description>
                 <Value type="EXAMPLE">123456-2018</Value>
             </Element>
         </Element>
@@ -428,109 +387,110 @@
             <Element cardinality="0..1">
                 <Term>cac:LineValidityPeriod</Term>
                 <Name>Line validity period</Name>
-                <Reference type="RULE">EUGEN-T68-R013</Reference>
+                <Description>The validity period for this item request. If used, both start and end date must be present</Description>
+             
                 <Property key="doc">structure/docs/LineValidityPeriod-Request.adoc</Property>
 
                 <Element>
                     <Term>cbc:StartDate</Term>
                     <Name>Period start date</Name>
-                    <Description>The date is the first day of the period.</Description>
-                    <Reference type="RULE">BII3-T68-R020</Reference>
+                    <Description>The validity start date for the requested item, the date must be the same, or ealier than the validity end date. 
+                        Format YYYY-MM-DD. Date shall not include timezone information. </Description>            
                     <Value type="EXAMPLE">2017-06-01</Value>
                 </Element>
 
                 <Element>
                     <Term>cbc:EndDate</Term>
                     <Name>Period end date</Name>
-                    <Description>The date is the last day of the period.</Description>
-                    <Reference type="RULE">BII3-T68-R020</Reference>
+                    <Description>The validity end date for the requested item, the date must be the same, or later than the validity start date.
+                        Format YYYY-MM-DD. Date shall not include timezone information.</Description>
                     <Value type="EXAMPLE">2017-06-15</Value>
                 </Element>
             </Element>
 
-            <Element>
+            <Element cardinality="1..n">
                 <Term>cac:RequiredItemLocationQuantity</Term>
                 <Name>Required Item location quantity</Name>
                 <Property key="doc">structure/docs/RequiredItemLocationQuantity-Request.adoc</Property>
 
                 <Element cardinality="0..1">
+                    <!-- Do we need the unitCode attribute? -->
                     <Term>cbc:MinimumQuantity</Term>
                     <Name>Minimum quantity</Name>
-                    <Description>The minimum quantity that can be ordered to qualify for a specific price.</Description>
+                    <Description>The minimum quantity for this item request/location. To specify an exact quantity, use the same quantity in both minimum and maximum quantity.</Description>
                     <Value type="EXAMPLE">2 rooms</Value>
                 </Element>
 
                 <Element cardinality="0..1">
+                    <!-- Do we need the unitCode attribute? -->
                     <Term>cbc:MaximumQuantity</Term>
                     <Name>Maximum quantity</Name>
-                    <Description>The maximum quantity that can be ordered to qualify for a specific price.</Description>
+                    <Description>The maximum quantity for this item request/location. To specify an exact quantity, use the same quantity in both minimum and maximum quantity.</Description>
                     <Value type="EXAMPLE">3 rooms</Value>
                 </Element>
 
-                <Element cardinality="0..n">
+                <Element cardinality="0..1">
                     <Term>cac:ApplicableTerritoryAddress</Term>
-                    <Name>Delivery location</Name>
+                    <Name>Applicable sales location</Name>
+                    <Description>This element is used if there are specific locations requested for the item.</Description>
                     <Property key="doc">structure/docs/ApplicableTerritoryAddress-Request.adoc</Property>
 
                     <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
                         <Name>Address line 1</Name>
-                        <Description>Usually the street name and number or post office box.</Description>
-                        <Value type="EXAMPLE">Københavnsgate 23</Value>
+                        <Description>The main line in an address.</Description>
+                        <Value type="EXAMPLE">Main street 3</Value>
                     </Element>
-
+                    
+                    
                     <Element cardinality="0..1">
                         <Term>cbc:AdditionalStreetName</Term>
                         <Name>Address line 2</Name>
-                        <Value type="EXAMPLE">Building 6</Value>
+                        <Description>An additional address line in an address that can be used to give further details
+                            supplementing the main line</Description>
+                        <Value type="EXAMPLE">Building 32</Value>
                     </Element>
-
+                    
                     <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
                         <Name>City</Name>
-                        <Value type="EXAMPLE">Bergen</Value>
+                        <Description>The common name of a city where the address is located.</Description>
+                        <Value type="EXAMPLE">London</Value>
                     </Element>
-
+                    
                     <Element cardinality="0..1">
                         <Term>cbc:PostalZone</Term>
                         <Name>Post code</Name>
-                        <Value type="EXAMPLE">5510</Value>
+                        <Description>The identifier for an addressable group of properties according to the relevant
+                            postal service, such as a ZIP code or post code.</Description>
+                        <Value type="EXAMPLE">AB119QN</Value>
                     </Element>
-
+                    
                     <Element cardinality="0..1">
-                        <Term>cbc:CountrySubentity</Term>
-                        <Name>Country subdivision</Name>
-                        <Value type="EXAMPLE">Hordaland</Value>
+                        <Term>cbc:CountrySubentityCode</Term>
+                        <Name>Country subdivision code</Name>
+                        <Description>A code that identifies a subdivision of a country, e.,g., a province or district.</Description>
+                        <Value type="EXAMPLE">Bolton</Value>
                     </Element>
-
-                    <Element cardinality="0..1">
+                    
+                    <Element>
                         <Term>cac:Country</Term>
                         <Name>Country</Name>
-
-                        <Element cardinality="0..1">
+                        
+                        <Element>
                             <Term>cbc:IdentificationCode</Term>
-                            <Name>Country code</Name>
-                            <Description>The lists of valid countries are registered with the ISO 3166-1 Maintenance agency,
-                                "Codes for the representation of names of countries and their subdivisions". It is recommended
-                                to use the alpha-2 representation.</Description>
-                            <Reference type="CODE_LIST">ISO3166</Reference>
-
-                            <!-- TODO:
-                                                        <Attribute usage="Optional">
-                                                            <Term>listID</Term>
-                                                            <Name>Code list identifier</Name>
-                                                            <Value type="FIXED">ISO3166-1:Alpha2</Value>
-                                                        </Attribute>
-                            -->
-                            <Value type="EXAMPLE">NO</Value>
+                            <Name>Country Code</Name>
+                            <Description>A code that identifies the country. This code can be found in the codelist "ISO3166_Alpha2"</Description>
+                            <Reference type="CODE_LIST">IS03166</Reference>
+                            <Value type="EXAMPLE">UK</Value>
                         </Element>
                     </Element>
                 </Element>
 
-                <Element> <!-- Not sure with the implementation. Need QA. 
-                Fixed binding, but should it be mandatory elements?-->
+                <Element cardinality="0..1">
                     <Term>cac:Price</Term>
                     <Name>Price</Name>
+                    <!-- Cannot repeat the price element in the schema, is it sufficient to only state one kind of price pr location? -->
                     <Description>To state both the estimated price and the total budget price (maximum price), repeat the Price class for each type</Description>
                     <Property key="doc">structure/docs/Price-Request.adoc</Property>
                     
@@ -538,7 +498,17 @@
                         <Term>cbc:PriceAmount</Term>
                         <Name>Price amount</Name>
                         <Description>The estimated price, or the maximum budget price, according to the corresponding price type</Description>
+                        
+                        <Attribute>
+                            <Term>currencyID</Term>
+                            <Name>Currency identifier</Name>
+                            <Description>Currency code from ISO 4217</Description>
+                            <Reference type="CODE_LIST">ISO4217</Reference>
+                            <Value type="EXAMPLE">SEK</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">200.00</Value>
                     </Element>
+                    
 
                     <Element>
                         <Term>cbc:PriceTypeCode</Term>
@@ -553,8 +523,9 @@
             </Element>
 
 
-            <Element cardinality="0..n">
-                <Term>cac:item</Term>
+            <Element>
+                <!-- Element is 1..1 in the schema... -->
+                <Term>cac:Item</Term>
                 <Name>Item request</Name>
                 <Property key="doc">structure/docs/Item-Request.adoc</Property>
 
@@ -572,27 +543,14 @@
                     <Value type="EXAMPLE">Samsung computer</Value>
                 </Element>
                 
-                <Element>
-                    <Term>cac:CatalogueDocumentReference</Term>
-                    <Name>Catalogue document reference</Name>
-                    <Property key="doc">structure/docs/CatalogueDocumentReference-Request.adoc</Property>
-
-                    <Element>
-                        <Term>cac:Attachment</Term>
-                        <Name>Attachment document</Name>
-
-                        <Element cardinality="0..1">
-                            <Term>cac:ExternalReference</Term>
-                            <Name>External reference</Name>
-
-                            <Element cardinality="0..1">
-                                <Term>cbc:URI</Term>
-                                <Name>Call for tenders award criterion reference</Name>
-                                <Description>A reference to the awarding criterion that the tender fulfills.</Description>
-                            </Element>
-                        </Element>
-                    </Element>
+                <Element cardinality="0..1">
+                    <!-- What is the purpose of this? -->
+                    <Term>cbc:AdditionalInformation</Term>
+                    <Name>Call for tenders award criterion reference</Name>
+                    <Description>A reference to the awarding criterion that the tender fulfills</Description>
                 </Element>
+                
+ 
 
                 <Element>
                     <Term>cac:ItemSpecificationDocumentReference</Term>
@@ -602,7 +560,7 @@
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Document identifier</Name>
-                        <Description>Identifier of a document</Description>
+                        <Description>Identifier of a referenced document</Description>
                         <Value type="EXAMPLE">453</Value>
                     </Element>
                     
@@ -620,31 +578,33 @@
                         <Element>
                             <Term>cac:ExternalReference</Term>
                             <Name>External reference</Name>
-                            
                             <Element>
                                 <Term>cbc:URI</Term>
                                 <Name>External document URI</Name>
                                 <Description>The Uniform Resource Identifier (URI) that identifies where the external document is located.</Description>
                                 <Value type="EXAMPLE">www.elkjop.np/computer/samsung</Value>
                             </Element>
-                        </Element>
-                    </Element>
-
-                    <Element>
-                        <Term>cac:ResultOfVerification</Term>
-                        <Name>Result of verification</Name>
-
-                        <Element>
-                            <Term>cbc:ValidationResultCode</Term>
-                            <Name>Document digest</Name>
-                            <Description>Digest of the document.</Description>
-                            <Value type="EXAMPLE">Includes all specifications of the item.</Value>
-                        </Element>
-
-                        <Element>
-                            <Term>cbc:ValidateProcess</Term>
-                            <Name>Document digest method code</Name>
-                            <Description>Code that indicates the algorithm used to calculate the hash.</Description>
+                            
+                            <Element>
+                                <Term>cbc:DocumentHash</Term>
+                                <Name>Document digest</Name>
+                                <Description>Digest of the document.</Description>
+                                <Value type="EXAMPLE">Includes all specifications of the item.</Value>
+                            </Element>
+                            
+                            <Element>
+                                <Term>cbc:HashAlgorithmMethod</Term>
+                                <Name>Document digest method code</Name>
+                                <Description>Code that indicates the algorithm used to calculate the hash.</Description>
+                            </Element>
+                            
+                            <Element>
+                                <Term>cbc:FileName</Term>
+                                <Name>Document file name</Name>
+                                <Description>The file name of the document.</Description>
+                            </Element>
+                            
+                         
                         </Element>
                     </Element>
 
@@ -659,85 +619,104 @@
                     <Element>
                         <Term>cbc:ItemClassificationCode</Term>
                         <Name>Item request classification code</Name>
+                        <Description>A code for classifying the item by its type or nature</Description>
 
                         <Attribute>
-                            <Term>Name</Term>
+                            <!-- Not sure this is correct, what is meant by "The name of the classification for this item?" -->
+                            <Term>listName</Term>
                             <Name>Item request classification name</Name>
                             <Description>The name of the classification for this item.</Description>
+                            <Value type="EXAMPLE">eClass</Value>
                         </Attribute>
                     </Element>
                 </Element>
                 
                 <Element> <!-- Not sure with the implementation. Need QA. -->
                     <Term>cac:AdditionalItemProperty</Term>
-                    <Name>Additional item property</Name>
+                    <Name>Requested item property and requested item information</Name>
+                    <Description>This element is used to provide information on both requested item properies and requested item information</Description>
                     <Property key="doc">structure/docs/AdditionalItemProperty-Request.adoc</Property>
                     
+                    <!-- Description not part of schema -->
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name>Information request identifier</Name>
+                        <Name>Requested property or information identifier</Name>
                         <Description>An identifier of an information request that allows to reference the information request.</Description>
                     </Element>
 
-                    <Element cardinality="0..1">
+                    <Element>
                         <Term>cbc:Name</Term>
                         <Name>Information request name</Name>
-                        <Description>A name of the requested information</Description>
-                        <Value type="EXAMPLE">Carolina Herrera</Value>
+                        <Description>A name of the requested item property</Description>
+                        <Value type="EXAMPLE">Color</Value>
                     </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:NameCode</Term>
-
-                        <Attribute>
-                            <Term>listSchemeURI</Term>
-                            <Name>Information request reference</Name>
-                            <Description>A code representing the requested information.</Description>
-                        </Attribute>
-
-                        <Attribute>
-                            <Term>name</Term>
-                            <Name>Item property classification code</Name>
-                            <Description>Code for the item property according to a property code system</Description>
-                            <Value type="EXAMPLE">1432</Value>
-                        </Attribute>
-                    </Element>
-
+                    
                     <Element>
-                        <Term>cbc:TestMethod</Term>
-                        <Name>Item property description</Name>
-                        <Description>A description of the item property.</Description>
+                        <Term>cbc:NameCode</Term>
+                        <Name>Property or Information code</Name>
+                        <Description>A code to specify if the element is a property or information</Description>
+                        <Reference type="CODE_LIST">property</Reference>
+                        <Value type="EXAMPLE">PROP</Value>
                     </Element>
+
 
                     <Element cardinality="0..1">
                         <Term>cbc:Value</Term>
-                        <Name>Item request quantity</Name>
-                        <Description>The quantity of the requested item offered in a pre-award catalogue.</Description>
-                        <Reference type="CODE_LIST">Item_request_quantity</Reference>
-                        <Reference type="CODE_LIST">Item_request_minimum_price</Reference>
-                        <Reference type="CODE_LIST">Item_request_maximum_price</Reference>
+                        <Name>Requested item property value</Name>
+                        <Description>Red</Description>
+                        
                     </Element>
 
                     <Element cardinality="0..1">
-                        <Term>cac:ValueQuantity</Term>
-                        <Name>Item property value</Name>
-                        <Description>The value of the item property.</Description>
+                        <Term>cbc:ValueQuantity</Term>
+                        <Name>Item property value quantity</Name>
+                        <Description>The quantity of the requested item property.</Description>
 
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Item property unit of measure</Name>
                             <Description>The unit of measure in which the property value is stated, if relevant.</Description>
-                            <Reference type="CODE_LIST">Item_request_minimum_quantity</Reference>
-                            <Reference type="CODE_LIST">Item_request_maximum_quantity</Reference>
+                            
                         </Attribute>
                     </Element>
-
+                    
                     <Element>
                         <Term>cbc:ImportanceCode</Term>
                         <Name>Information request relevance</Name>
-                        <Description>Relevance of the requested information in the response document, in particular,
-                            of it is mandatory or optional.</Description>
+                        <Description>Relevance of the requested information in the response document, in particular, if it is mandatory (M) or optional (O).</Description>
+                        <Reference type="CODE_LIST">relevance</Reference>
+                        <Value type="EXAMPLE">M</Value>
                     </Element>
+                    
+                    <Element>
+                        <Term>cac:ItemPropertyGroup</Term>
+                        <Name>Item property classification</Name>
+                        <Description>A classification of an item property according to a standardized property system.</Description>
+                        
+                        <Element>
+                            <Term>cbc:ID</Term>
+                            <Name>Item property classification code</Name>
+                            <Description>Code for the item property according to a property code system</Description>
+                            <Value type="EXAMPLE">294723.947</Value>
+                        </Element>
+                        
+                        <Element cardinality="0..1">
+                            <Term>cbc:Name</Term>
+                            <Name>Item property classification name</Name>
+                            <Description>The name of the item property in the referenced classification system.</Description>
+                            <Value type="EXAMPLE">eClass</Value>
+                        </Element>
+                        
+                        <Element>
+                            <Term>cbc:ImportanceCode</Term>
+                            <Name>Item property relevance</Name>
+                            <Description>States whether the property described is Mandatory (M), Optional (O), Forbidden (F), For information (I).</Description>
+                            <Reference type="CODE_LIST">relevance</Reference>
+                            <Value type="EXAMPLE">I</Value>
+                        </Element>
+                        
+                    </Element>
+                    
                     
                     <Element>
                         <Term>cac:ItemPropertyRange</Term>
@@ -759,6 +738,94 @@
                     </Element>
 
                 </Element>
+           
+            <Element cardinality="0..n">
+                <Term>cac:Certificate</Term>
+                <Name>Requested item requirements</Name>
+                <Description>A functional requirement on an item that is not related to a property of the item and has to be proven by a 
+                    specification, label, test report or any other means of proof.</Description>
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Item requirement identifier</Name>
+                    <Description>An identifier of the item requirement that allows referencing the item requirement.</Description>
+                    <Value type="EXAMPLE">1</Value>
+                </Element>
+                
+                <Element>
+                    <Term>cbc:CertificateTypeCode</Term>
+                    <Name>Item requirement code</Name>
+                    <Description>A code specifying the requirement for the item.</Description>
+                    <Value type="EXAMPLE">ECO</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CertificateType</Term>
+                    <Name>Item requirement name</Name>
+                    <Description>The name of the requirement for the requested item.</Description>
+                    <Value type="EXAMPLE">Environmental</Value>
+                </Element>
+           
+                <Element>
+                    <Term>cbc:Remarks</Term>
+                    <Name>Item requirement relevance</Name>
+                    <Description>States whether the property described is Mandatory (M), Optional (O), Forbidden (F), For information (I).</Description>
+                    <Reference type="CODE_LIST">relevance</Reference>
+                    <Value type="EXAMPLE">I</Value>
+                </Element>
+                
+                <Element>
+                    <Term>cac:IssuerParty</Term>
+                    <Name>Issuer party</Name>
+                    
+                    <Element>
+                        <Term>cac:PartyName</Term>
+                        <Name>Party name</Name>
+                        
+                        <Element>
+                            <Term>cbc:Name</Term>
+                            <Name>Issuer party name</Name>
+                            <Description>The name of the issuer of the certificate, label or other means of proof</Description>
+                            
+                        </Element>
+                        
+                    </Element>
+                    
+                </Element>
+                
+               <Element cardinality="0..1">
+                   <Term>cac:DocumentReference</Term>
+                   <Name>Document reference</Name>
+                   
+                   <Element>
+                       <Term>cbc:ID</Term>
+                       <Name>Attachment identifier</Name>
+                       <Description>The identifier for the attachment</Description>
+                       <Value type="EXAMPLE">123</Value>
+                       
+                   </Element>
+                   
+                   <Element>
+                       <Term>cac:Attachment</Term>
+                       <Name>Attachment</Name>
+                                       
+                       <Element>
+                           <Term>cac:ExternalReference</Term>
+                           <Name>External reference</Name>
+                           
+                           <Element>
+                               <Term>cbc:URI</Term>
+                               <Name>Item requirement reference</Name>
+                               <Description>A reference to an external specification of the item requirement.</Description>
+                               <Value type="EXAMPLE">www.eco.np/labels</Value>
+                           </Element>
+                           
+                       </Element>
+                   </Element>
+               </Element>
+
+            </Element>
+            
             </Element>
 
         </Element>
