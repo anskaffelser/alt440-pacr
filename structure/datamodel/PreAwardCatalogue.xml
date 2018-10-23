@@ -1106,50 +1106,6 @@
                     </Element>
                 </Element>
 
-                <Element cardinality="0..n">
-                    <Term>cac:DeliveryUnit</Term>
-                    <Name>Delivery unit</Name>
-                    <Property key="doc">structure/docs/DeliveryUnit.adoc</Property>
-
-                    <Element>
-                        <Term>cbc:BatchQuantity</Term>
-                        <Name>Batch quantity</Name>
-                        <Description>The quantity of ordered Items that constitutes a batch for delivery purposes.</Description>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Quanitity unit code</Name>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">EA</Value>
-                        </Attribute>                        
-                        <Attribute>
-                            <Term>unitCodeListID</Term>
-                            <Name>Quantity Unit. Code List Identifier</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">12</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:ConsumerUnitQuantity</Term>
-                        <Name>Consumable unit quantity</Name>
-                        <Description>Number of Consumer items in the orderable unit. E.g. number of bottles on a Pallet.</Description>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Quanitity unit code</Name>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">EA</Value>
-                        </Attribute>                        
-                        <Attribute>
-                            <Term>unitCodeListID</Term>
-                            <Name>Code list identifier</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">5</Value>
-                        
-                    </Element>
-                </Element>
             </Element>
 
             <Element>
