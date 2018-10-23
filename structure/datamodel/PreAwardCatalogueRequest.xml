@@ -232,7 +232,7 @@
             <Element>
                 <Term>cbc:EndpointID</Term>
                 <Name>Contracting body electronic address identifier</Name>
-                <Description>Electronic address of the contracting body.</Description>
+                <Description>Identifies the contracting body's electronic address.</Description>
                 <Value type="EXAMPLE">74300020004</Value>
             </Element>
 
@@ -285,8 +285,6 @@
                     <Value type="EXAMPLE">Bolton</Value>
                 </Element>
 
-
-        
                 <Element>
                     <Term>cbc:StreetName</Term>
                     <Name>Address line 1</Name>
@@ -475,31 +473,35 @@
                     <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
                         <Name>Address line 1</Name>
-                        <Description>Usually the street name and number or post office box.</Description>
+                        <Description>The main address line in an address. Usually the street name and number or post office box.</Description>
                         <Value type="EXAMPLE">Københavnsgate 23</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:AdditionalStreetName</Term>
                         <Name>Address line 2</Name>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                         <Value type="EXAMPLE">Building 6</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
                         <Name>City</Name>
+                        <Description>The common name of the city, town or village, where the address is located.</Description>
                         <Value type="EXAMPLE">Bergen</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:PostalZone</Term>
                         <Name>Post code</Name>
+                        <Description>The identifier for an addressable group of properties according to the relevant postal service.</Description>
                         <Value type="EXAMPLE">5510</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:CountrySubentity</Term>
                         <Name>Country subdivision</Name>
+                        <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
                         <Value type="EXAMPLE">Hordaland</Value>
                     </Element>
 
@@ -602,7 +604,7 @@
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Document identifier</Name>
-                        <Description>Identifier of a document</Description>
+                        <Description>Identifier of a document.</Description>
                         <Value type="EXAMPLE">453</Value>
                     </Element>
                     
