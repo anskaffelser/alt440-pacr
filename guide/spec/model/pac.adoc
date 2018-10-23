@@ -975,7 +975,7 @@ Outside, gross measures of the orderable unit as it is packed and including the 
 |0..1
 |Handling unit logistic requirements
 |Description of requirements that relate to the transport of the item itself or the orderable unit in which it is contained.
-|
+|Class
 
 |0..1
 |Handling unit height
