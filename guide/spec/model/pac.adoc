@@ -470,6 +470,11 @@ language
 |Identifier
 
 |0..1
+|Item sellers extended identifier
+|An extended identifier issued by the seller to identify items with specific properties. Used for structured identification of an item variant.
+|Identifier
+
+|0..1
 |Manufacturers item identifier
 |The manufacturer's identifier for the item.
 |Identifier
