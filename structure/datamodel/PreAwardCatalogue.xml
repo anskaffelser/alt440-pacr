@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
-    
+
     <Term>catalogue</Term>
     <Name>Pre-Award Catalogue</Name>
 
@@ -153,7 +153,7 @@
         <Element>
             <Term>cac:ProviderParty</Term>
             <Name>Provider party</Name>
-            <Description>The party that sends the catalogue.</Description> 
+            <Description>The party that sends the catalogue.</Description>
             <Property key="doc">structure/docs/ProviderParty.adoc</Property>
 
             <Element cardinality="0..1">
@@ -168,7 +168,7 @@
                     <Reference type="CODE_LIST">ICD</Reference>
                     <Value type="EXAMPLE">SE:VATNO</Value>
                 </Attribute>
-                
+
                 <Value type="EXAMPLE">SE5679083242</Value>
             </Element>
 
@@ -225,7 +225,7 @@
                     <Term>cbc:StreetName</Term>
                     <Name>Address line 1</Name>
                     <Description>The main address line in an address.</Description>
-                  <Value type="EXAMPLE">Storgatan 12</Value>
+                    <Value type="EXAMPLE">Storgatan 12</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -278,7 +278,7 @@
 
         <Element>
             <Term>cac:ReceiverParty</Term>
-            <Name>Catalogue receiver</Name> <!-- TODO: Different name, subelements as well -->
+            <Name>Catalogue receiver</Name>            <!-- TODO: Different name, subelements as well -->
             <Description>The party to which the catalogue is sent.</Description>
             <Property key="doc">structure/docs/ReceiverParty.adoc</Property>
 
@@ -313,7 +313,7 @@
                         <Reference type="CODE_LIST">ICD_UNKNOWN</Reference>
                         <Value type="EXAMPLE">NO:ORGNR</Value>
                     </Attribute>
-                    <Value type="EXAMPLE">987654321</Value>                    
+                    <Value type="EXAMPLE">987654321</Value>
                 </Element>
             </Element>
 
@@ -333,7 +333,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PostalAddress</Term>
                 <Name>Postal address</Name>
-              
+
 
                 <Element cardinality="0..1">
                     <Term>cbc:StreetName</Term>
@@ -562,7 +562,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:PartyName</Term>
-                   <Name>Party name</Name>
+                    <Name>Party name</Name>
                     <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                     <Element>
@@ -654,7 +654,7 @@
                     <Description>The unit of the quantity</Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">MLT</Value>
-                </Attribute>                
+                </Attribute>
                 <Attribute>
                     <Term>unitCodeListID</Term>
                     <Name>Quantity unit code list identifier</Name>
@@ -681,7 +681,7 @@
                     <Description>The unit of the quantity</Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">EA</Value>
-                </Attribute>                
+                </Attribute>
                 <Attribute>
                     <Term>unitCodeListID</Term>
                     <Name>Quantity unit code list identifier</Name>
@@ -730,7 +730,7 @@
                 </Attribute>
                 <Value type="EXAMPLE">TU</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cac:LineValidityPeriod</Term>
                 <Name>Line validity period</Name>
@@ -770,7 +770,7 @@
                         <Reference type="CODE_LIST">ISO4217</Reference>
                         <Value type="EXAMPLE">SEK</Value>
                     </Attribute>
-                    <Value type="EXAMPLE">120.00</Value>                    
+                    <Value type="EXAMPLE">120.00</Value>
                 </Element>
 
                 <Element>
@@ -789,9 +789,9 @@
                         <Description>The list identifier for the unit of the quantity</Description>
                         <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
-                    <Value type="EXAMPLE">0.333</Value>                    
+                    <Value type="EXAMPLE">0.333</Value>
                 </Element>
-                
+
             </Element>
 
             <Element cardinality="0..n">
@@ -817,7 +817,7 @@
                         <Name>Quanitity unit code</Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
-                    </Attribute>                    
+                    </Attribute>
                     <Attribute>
                         <Term>unitCodeListID</Term>
                         <Name>Quantity unit code list identifier</Name>
@@ -850,7 +850,7 @@
                         <Name>Quanitity unit code</Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
-                    </Attribute>                        
+                    </Attribute>
                     <Attribute>
                         <Term>unitCodeListID</Term>
                         <Name>Quantity unit code list identifier</Name>
@@ -883,14 +883,14 @@
                         <Name>Quanitity unit code</Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">MLT</Value>
-                    </Attribute>                    
+                    </Attribute>
                     <Attribute>
                         <Term>unitCodeListID</Term>
                         <Name>Quantity unit code list identifier</Name>
                         <Description>The list identifier for the unit of the quantity</Description>
                         <Value type="FIXED">UNECERec20</Value>
                     </Attribute>
-                    <Value type="EXAMPLE">1000</Value>                    
+                    <Value type="EXAMPLE">1000</Value>
                 </Element>
             </Element>
 
@@ -992,7 +992,7 @@
                             <Description>The lists of valid countries are registered with the ISO 3166-1 Maintenance agency,
                                 "Codes for the representation of names of countries and their subdivisions". It is recommended
                                 to use the alpha-2 representation.</Description>
-                            <Reference type="CODE_LIST">ISO3166</Reference> 
+                            <Reference type="CODE_LIST">ISO3166</Reference>
                             <Attribute usage="Optional">
                                 <Term>listID</Term>
                                 <Name>Code list identifier</Name>
@@ -1099,57 +1099,13 @@
                                 <Reference type="CODE_LIST">ISO4217</Reference>
                                 <Value type="EXAMPLE">SEK</Value>
                             </Attribute>
-                            
+
                             <Value type="EXAMPLE">12.00</Value>
-                            
+
                         </Element>
                     </Element>
                 </Element>
 
-                <Element cardinality="0..n">
-                    <Term>cac:DeliveryUnit</Term>
-                    <Name>Delivery unit</Name>
-                    <Property key="doc">structure/docs/DeliveryUnit.adoc</Property>
-
-                    <Element>
-                        <Term>cbc:BatchQuantity</Term>
-                        <Name>Batch quantity</Name>
-                        <Description>The quantity of ordered Items that constitutes a batch for delivery purposes.</Description>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Quanitity unit code</Name>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">EA</Value>
-                        </Attribute>                        
-                        <Attribute>
-                            <Term>unitCodeListID</Term>
-                            <Name>Quantity Unit. Code List Identifier</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">12</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:ConsumerUnitQuantity</Term>
-                        <Name>Consumable unit quantity</Name>
-                        <Description>Number of Consumer items in the orderable unit. E.g. number of bottles on a Pallet.</Description>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Quanitity unit code</Name>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">EA</Value>
-                        </Attribute>                        
-                        <Attribute>
-                            <Term>unitCodeListID</Term>
-                            <Name>Code list identifier</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">5</Value>
-                        
-                    </Element>
-                </Element>
             </Element>
 
             <Element>
@@ -1174,7 +1130,7 @@
                         <Name>Quantity unit code</Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">EA</Value>
-                    </Attribute>                    
+                    </Attribute>
                     <Attribute>
                         <Term>unitCodeListID</Term>
                         <Name>Quantity code list identifier</Name>
@@ -1224,9 +1180,9 @@
                         <Name>Item sellers identifier</Name>
                         <Description>An identifier, assigned by the seller, for the item. This element is not mandatory because
                             some companies may not have the identifier yer at the time of issuing the pre-award catalogue.</Description>
-                   <Value type="EXAMPLE">A2</Value>
+                        <Value type="EXAMPLE">A2</Value>
                     </Element>
-                    
+
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1440,7 +1396,7 @@
                     <Name>Classified tax category</Name>
                     <Description>VAT information</Description>
                     <Property key="doc">structure/docs/ClassifiedTaxCategory.adoc</Property>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
                         <Name>Item VAT category code</Name>
@@ -1448,7 +1404,7 @@
                         <Reference type="CODE_LIST">UNCL5305</Reference>
                         <Attribute usage="Optional">
                             <Term>listID</Term>
-                            <Name>Code list identifier</Name>              
+                            <Name>Code list identifier</Name>
                             <Value type="FIXED">UNCL5305</Value>
                         </Attribute>
                         <Value type="EXAMPLE">S</Value>
@@ -1480,7 +1436,7 @@
                     <Name>Additional item property</Name>
                     <Description>Additional properties are meant for product properties that cannot be sent in any of the defined elements in PreAward Catalogue. Additional properties consist of the Name of the property and the actual Value.</Description>
                     <Property key="doc">structure/docs/AdditionalItemProperty.adoc</Property>
-                    
+
 
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
@@ -1496,7 +1452,7 @@
                             The definition may be supplemented with the property unit of measure when relevant.</Description>
                         <Reference type="RULE">BII3-T68-R015</Reference>
                         <Value type="EXAMPLE">Color</Value>
-                    
+
                     </Element>
 
                     <Element cardinality="0..1">
@@ -1510,7 +1466,7 @@
                             <Name>Code list identifier</Name>
                             <Value type="EXAMPLE">UNCL7081</Value>
                         </Attribute>
-                        
+
                         <Value type="EXAMPLE">35</Value>
                     </Element>
 
@@ -1529,7 +1485,7 @@
                             stated, if relevant. May not be relevant when properties are descriptive.</Description>
                         <Value type="EXAMPLE">EA</Value>
                     </Element>
-                    
+
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1576,7 +1532,7 @@
                             <Term>cac:RangeDimension</Term>
                             <Name>Range dimension</Name>
                             <Description>The range of values for the dimensions of this property.</Description>
-<!-- TODO: Also Range dimension
+                            <!-- TODO: Also Range dimension
                             <Element>
                                 <Term>cbc:AttributeID</Term>
                                 <Name>Attribute identifier</Name>
@@ -1588,11 +1544,11 @@
                                 <Term>cbc:Description</Term>
                                 <Name>Item dimension description</Name>
                                 <Description>Textual description of the item's dimensions. Used if the dimension of the item cannot be described using standardized properties, e.g., length, height or width.</Description>
-                            <Value type="EXAMPLE">G</Value>
+                                <Value type="EXAMPLE">G</Value>
                             </Element>
                         </Element>
                     </Element>
-<!-- TODO: 
+                    <!-- TODO: 
                     <Element cardinality="0..1">
                         <Term>cac:LotIdentification</Term>
                         <Name>Lot identification</Name>
@@ -1626,7 +1582,7 @@
                         <Description>A code specifying the type of the Item means of proof according to Directives 2014/24/EU, e.g., if it a label, test report etc.</Description>
                         <Attribute usage="Optional">
                             <Term>listID</Term>
-                            <Name>Code list identifier</Name>              
+                            <Name>Code list identifier</Name>
                         </Attribute>
                         <Value type="EXAMPLE">NEO</Value>
                     </Element>
@@ -1652,7 +1608,7 @@
                         <Element>
                             <Term>cac:PartyName</Term>
                             <Name>Party name</Name>
-                        
+
                             <Element>
                                 <Term>cbc:Name</Term>
                                 <Name>Item means of proof issuer party name</Name>
@@ -1674,7 +1630,7 @@
                         </Element>
 
                         <Element>
-                            <Term>cbc:ID</Term> <!-- TODO: cbc:ID appropriate as a URI? -->
+                            <Term>cbc:ID</Term>                            <!-- TODO: cbc:ID appropriate as a URI? -->
                             <Name>Item means of proof reference</Name>
                             <Description>A reference to an external specification of the provided means of proof.</Description>
                             <Value type="EXAMPLE">http://www.nordic-ecolabel.org</Value>
@@ -1693,7 +1649,7 @@
                         </Element>
 
                         <Element>
-                            <Term>cbc:ID</Term> <!-- TODO: cbc:ID appropriate as a URI? -->
+                            <Term>cbc:ID</Term>                            <!-- TODO: cbc:ID appropriate as a URI? -->
                             <Name>Item requirement reference</Name>
                             <Description>A reference to the corresponding Item requirement given in the corresponding pre-award catalogue request.</Description>
                             <Value type="EXAMPLE">urn:sample:difi:pacr:aaaba1a2-d107-426d-8a64-698b678756d5:item-requirement:2</Value>
@@ -1702,90 +1658,222 @@
 
                 </Element>
 
-                <Element cardinality="0..n">
+                <Element cardinality="0..1">
                     <Term>cac:Dimension</Term>
                     <Name>Dimension</Name>
-
-<!-- TODO: Name
                     <Element>
                         <Term>cbc:AttributeID</Term>
                         <Name>Attribute identifier</Name>
                         <Description>An identifier for the attribute to which the measure applies.</Description>
                         <Reference type="CODE_LIST">UNCL6313</Reference>
-                        <Value type="EXAMPLE">GW</Value>
+                        <Value type="FIXED">HT</Value>
                     </Element>
--->
-                    <Element cardinality="0..1">
+                    <Element>
                         <Term>cbc:Measure</Term>
-                        <Description>The measure of the item/packaging unit.</Description>          
-
-<!-- TODO: Name
+                        <Name>Handling unit height</Name>
+                        <Description>Height of the handling unit. The vertical height of the orderable unit.</Description>
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quandtity unit code</Name>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">KGM</Value>
+                            <Value type="EXAMPLE">MTR</Value>
                         </Attribute>
-                        
                         <Attribute>
                             <Term>unitCodeListID</Term>
                             <Name>Quantity Unit. Code List Identifier</Name>
                             <Description>The list identifier for the unit of the quantity</Description>
                             <Value type="FIXED">UNECERec20</Value>
                         </Attribute>
--->                        
-                        <Value type="EXAMPLE">1250</Value>
-                        
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:MinimumMeasure</Term>
-                        <Description>The lower margin of the recommended storage temperature range for the item.</Description>
-                        <Reference type="RULE">BII3-T68-R018</Reference>
-                        <Reference type="RULE">BII3-T68-R019</Reference>
-
-<!-- TODO:
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Quantity unit code</Name>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">CEL</Value>
-                        </Attribute>
-                        
-                        <Attribute>
-                            <Term>unitCodeListID</Term>
-                            <Name>Quantity Unit. Code List Identifier</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
-                        </Attribute>
--->                        
-                        <Value type="EXAMPLE">4</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:MaximumMeasure</Term>
-                        <Description>The upper margin of the recommended storage temperature range for the item.</Description>
-                        <Reference type="RULE">BII3-T68-R018</Reference>
-                        <Reference type="RULE">BII3-T68-R019</Reference>
-
-<!-- TODO:
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Quantity unit code</Name>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">CEL</Value>
-                        </Attribute>
-                        
-                        <Attribute>
-                            <Term>unitCodeListID</Term>
-                            <Name>Quantity Unit. Code List Identifier</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
-                        </Attribute>
--->                        
-                        <Value type="EXAMPLE">10</Value>
+                        <Value type="EXAMPLE">3</Value>
                     </Element>
                 </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:Dimension</Term>
+                    <Name>Dimension</Name>
+                    <Element>
+                        <Term>cbc:AttributeID</Term>
+                        <Name>Attribute identifier</Name>
+                        <Description>An identifier for the attribute to which the measure applies.</Description>
+                        <Reference type="CODE_LIST">UNCL6313</Reference>
+                        <Value type="FIXED">LN</Value>
+                    </Element>
+                    <Element>
+                        <Term>cbc:Measure</Term>
+                        <Name>Handling unit length</Name>
+                        <Description>Length of the handling unit. The horizontal measure of the longer site of the orderable unit</Description>
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Measure unit code</Name>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="EXAMPLE">MTR</Value>
+                        </Attribute>
+                        <Attribute>
+                            <Term>unitCodeListVersionID</Term>
+                            <Name>Measure unit code list</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">2</Value>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:Dimension</Term>
+                    <Name>Dimension</Name>
+                    <Element>
+                        <Term>cbc:AttributeID</Term>
+                        <Name>Attribute identifier</Name>
+                        <Description>An identifier for the attribute to which the measure applies.</Description>
+                        <Reference type="CODE_LIST">UNCL6313</Reference>
+                        <Value type="FIXED">WD</Value>
+                    </Element>
+                    <Element>
+                        <Term>cbc:Measure</Term>
+                        <Name>Handling unit width</Name>
+                        <Description>Width of the handling unit. The horizontal measure of the shorter side of the orderable unit.</Description>
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Measure unit code</Name>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="EXAMPLE">MTR</Value>
+                        </Attribute>
+                        <Attribute>
+                            <Term>unitCodeListVersionID</Term>
+                            <Name>Measure unit code list</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">0.5</Value>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:Dimension</Term>
+                    <Name>Dimension</Name>
+                    <Element>
+                        <Term>cbc:AttributeID</Term>
+                        <Name>Attribute identifier</Name>
+                        <Description>An identifier for the attribute to which the measure applies.</Description>
+                        <Reference type="CODE_LIST">UNCL6313</Reference>
+                        <Value type="FIXED">AAB</Value>
+                    </Element>
+                    <Element>
+                        <Term>cbc:Measure</Term>
+                        <Name>Handling unit gross weight</Name>
+                        <Description>The gross weight of a handling unit. The weight of the orderable unit including its packaging.</Description>
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Measure unit code</Name>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="EXAMPLE">KGM</Value>
+                        </Attribute>
+                        <Attribute>
+                            <Term>unitCodeListVersionID</Term>
+                            <Name>Measure unit code list</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">21</Value>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:Dimension</Term>
+                    <Name>Dimension</Name>
+                    <Element>
+                        <Term>cbc:AttributeID</Term>
+                        <Name>Attribute identifier</Name>
+                        <Description>An identifier for the attribute to which the measure applies.</Description>
+                        <Reference type="CODE_LIST">UNCL6313</Reference>
+                        <Value type="FIXED">TC</Value>
+                    </Element>
+                    <Element>
+                        <Term>cbc:MinimumMeasure</Term>
+                        <Name>Handling unit minimum storage temperature</Name>
+                        <Description>Minimum storage temperature for the handling unit. The lower margin of the recommended storage temperature range for the item.</Description>
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Measure unit code</Name>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="EXAMPLE">CEL</Value>
+                        </Attribute>
+                        <Attribute>
+                            <Term>unitCodeListVersionID</Term>
+                            <Name>Measure unit code list</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">10</Value>
+                    </Element>
+                    <Element>
+                        <Term>cbc:MaximumMeasure</Term>
+                        <Name>Handling unit maximum storage temperature</Name>
+                        <Description>Maximum storage temperature for the handling unit. The upper margin of the recommended storage temperature range for the item.</Description>
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Measure unit code</Name>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="EXAMPLE">CEL</Value>
+                        </Attribute>
+                        <Attribute>
+                            <Term>unitCodeListVersionID</Term>
+                            <Name>Measure unit code list</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">15</Value>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:Dimension</Term>
+                    <Name>Dimension</Name>
+                    <Element>
+                        <Term>cbc:AttributeID</Term>
+                        <Name>Attribute identifier</Name>
+                        <Description>An identifier for the attribute to which the measure applies.</Description>
+                        <Reference type="CODE_LIST">UNCL6313</Reference>
+                        <Value type="FIXED">AAO</Value>
+                    </Element>
+                    <Element>
+                        <Term>cbc:MinimumMeasure</Term>
+                        <Name>Handling unit minimum storage humidity</Name>
+                        <Description>Minimum storage humidity for the handling unit.</Description>
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Measure unit code</Name>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="EXAMPLE">P1</Value>
+                        </Attribute>
+                        <Attribute>
+                            <Term>unitCodeListVersionID</Term>
+                            <Name>Measure unit code list</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">10</Value>
+                    </Element>
+                    <Element>
+                        <Term>cbc:MaximumMeasure</Term>
+                        <Name>Handling unit maximum storage humidity</Name>
+                        <Description>Maximum storage humidity for the handling unit.</Description>
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Measure unit code</Name>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="EXAMPLE">P1</Value>
+                        </Attribute>
+                        <Attribute>
+                            <Term>unitCodeListVersionID</Term>
+                            <Name>Measure unit code list</Name>
+                            <Description>The list identifier for the unit of the quantity</Description>
+                            <Value type="FIXED">UNECERec20</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">20</Value>
+                    </Element>
+                </Element>
+
             </Element>
 
             <Element cardinality="0..1">
