@@ -1260,12 +1260,15 @@
                         </Attribute>
                         <Value type="EXAMPLE">984719043710294792</Value>
                     </Element>
-
                     <Element cardinality="0..1">
                         <Term>cbc:ExtendedID</Term>
                         <Name>Item sellers extended identifier</Name>
                         <Description>An extended identifier issued by the seller to identify
                             items with specific properties. Used for structured identification of an Item variant.</Description>
+                        <Attribute usage="optional">
+                            <Term>schemeID</Term>
+                            <Name>Scheme identifier</Name>
+                        </Attribute>
                         <Value type="EXAMPLE">A23-Z45</Value>
                     </Element>
                 </Element>
