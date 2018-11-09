@@ -898,7 +898,7 @@
                 <Term>cac:ReplacedRelatedItem</Term>
                 <Name>Replacement product</Name>
                 <Description>Replacement product is used to identify a product replacing an existing product in the Catalogue.</Description>
-                <Property key="doc">structure/docs/ReplacedRelatedItem.adoc</Property>
+                <!-- <Property key="doc">structure/docs/ReplacedRelatedItem.adoc</Property> -->
 
                 <Element cardinality="0..1">
                     <Term>cbc:ID</Term>
@@ -1027,7 +1027,7 @@
                     <Element cardinality="0..1">
                         <Term>cbc:PriceTypeCode</Term>
                         <Name>Item price type</Name>
-                        <Description>The type of the price so that the receiver knows if the price may be changed is indicative. When prices are temporary the validity period 
+                        <Description>The type of the price so that the receiver knows if the price may be changed is indicative. When prices are temporary the validity period
                             for the price should be defined by stating the price validity period.</Description>
                         <Reference type="CODE_LIST">UNCL5387</Reference>
                         <Attribute>
@@ -1145,7 +1145,7 @@
                     <Name>Packed units</Name>
                     <Description>The packaging the item is available inside the orderable
                         unit (next lower level packaging), and which contains the
-                        number of the unit described in Packed quantity. 
+                        number of the unit described in Packed quantity.
                     </Description>
                 </Element>
 
@@ -1348,7 +1348,7 @@
                         <Term>cbc:ActionCode</Term>
                         <Name>Transaction conditions code</Name>
                         <Description>Coded description of the specific transaction conditions
-                            (purchasing, sales, payment) for an item. 
+                            (purchasing, sales, payment) for an item.
                         </Description>
                         <Reference type="CODE_LIST">TransactionCondition</Reference>
                         <Value type="EXAMPLE">SER</Value>
@@ -1448,7 +1448,7 @@
                     <Element>
                         <Term>cbc:Name</Term>
                         <Name>Item property name</Name>
-                        <Description>The name of the property.The name must be sufficiently descriptive to define the value. 
+                        <Description>The name of the property.The name must be sufficiently descriptive to define the value.
                             The definition may be supplemented with the property unit of measure when relevant.</Description>
                         <Reference type="RULE">BII3-T68-R015</Reference>
                         <Value type="EXAMPLE">Color</Value>
@@ -1548,7 +1548,7 @@
                             </Element>
                         </Element>
                     </Element>
-                    <!-- TODO: 
+                    <!-- TODO:
                     <Element cardinality="0..1">
                         <Term>cac:LotIdentification</Term>
                         <Name>Lot identification</Name>
