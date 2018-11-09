@@ -25,16 +25,22 @@
             <cbc:Name>Fisherman supplier company ltd</cbc:Name>
         </cac:PartyName>
         <cac:PostalAddress>
+            <cbc:StreetName>Kirkegata 34</cbc:StreetName>
+            <cbc:AdditionalStreetName>Building C</cbc:AdditionalStreetName>
             <cbc:CityName>Oslo</cbc:CityName>
             <cbc:PostalZone>0923</cbc:PostalZone>
-            <cbc:CountrySubentityCode>3</cbc:CountrySubentityCode> <!-- double check -->
-            <cac:AddressLine>
-                <cbc:Line>Kirkegata 34</cbc:Line>
-            </cac:AddressLine>
+            <cbc:CountrySubentityCode>Region A</cbc:CountrySubentityCode> <!-- double check -->
             <cac:Country>
                 <cbc:IdentificationCode listID="ISO3166-1_Alpha2">NO</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
+        <cac:PartyLegalEntity>
+            <cac:RegistrationAddress>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:RegistrationAddress>
+        </cac:PartyLegalEntity>
         <cac:Contact>
             <cbc:Name>Ole Simensen</cbc:Name>
             <cbc:Telephone>94837528</cbc:Telephone>
