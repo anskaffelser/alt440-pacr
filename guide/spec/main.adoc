@@ -21,6 +21,12 @@ include::introduction.adoc[]
 
 include::definitions/index.adoc[]
 
+include::background.adoc[]
+
+include::process.adoc[]
+
+include::process-request.adoc[]
+
 include::requirements/index.adoc[]
 
 include::model/index.adoc[]

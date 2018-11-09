@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/guide/spec/background.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guide/spec/detailed-descriptions.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guide/spec/process-request.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guide/spec/process.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/spec/definitions/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/definitions/index.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guide/spec/main.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/main.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide/spec/process-request.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/process-request.adoc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,12 +33,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.adoc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.adoc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="510">
-                <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <first_editor relative-caret-position="459">
+                <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               </first_editor>
               <second_editor />
             </state>
@@ -55,7 +50,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="51">
-                <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+                <caret line="3" selection-start-line="3" selection-end-line="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -66,20 +61,20 @@
         <entry file="file://$PROJECT_DIR$/guide/spec/process.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="17">
-                <caret line="1" selection-start-line="1" selection-end-line="17" selection-end-column="14" />
+              <first_editor relative-caret-position="289">
+                <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="process-request.adoc" pinned="false" current-in-tab="false">
+      <file leaf-file-name="process-request.adoc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/guide/spec/process-request.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="33" selection-start-column="33" selection-end-column="33" />
+              <first_editor relative-caret-position="663">
+                <caret line="39" selection-start-line="39" selection-end-line="39" />
               </first_editor>
               <second_editor />
             </state>
@@ -101,7 +96,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="306">
-                <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+                <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -112,8 +107,8 @@
         <entry file="file://$PROJECT_DIR$/guide/spec/usecases.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="425">
-                <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+              <first_editor relative-caret-position="153">
+                <caret line="9" selection-start-line="9" selection-end-line="38" />
               </first_editor>
               <second_editor />
             </state>
@@ -124,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
-              <caret line="84" column="24" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="84" selection-end-column="24" />
+              <caret line="84" column="24" selection-start-line="52" selection-start-column="4" selection-end-line="84" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -220,8 +215,8 @@
         <option value="$PROJECT_DIR$/guide/spec/detailed-descriptions.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/process.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/Process-Request.adoc" />
-        <option value="$PROJECT_DIR$/guide/spec/process-request.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/main.adoc" />
+        <option value="$PROJECT_DIR$/guide/spec/process-request.adoc" />
       </list>
     </option>
   </component>
@@ -697,7 +692,7 @@
     <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
-          <caret line="84" column="24" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="84" selection-end-column="24" />
+          <caret line="84" column="24" selection-start-line="52" selection-start-column="4" selection-end-line="84" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -722,16 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/spec/usecases.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="425">
-            <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/guide/spec/definitions.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
@@ -746,7 +731,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="306">
-            <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
@@ -764,7 +749,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="51">
-            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <caret line="3" selection-start-line="3" selection-end-line="3" />
           </first_editor>
           <second_editor />
         </state>
@@ -773,18 +758,8 @@
     <entry file="file://$PROJECT_DIR$/guide/spec/process.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" selection-start-line="1" selection-end-line="17" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guide/spec/process-request.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="33" selection-start-column="33" selection-end-column="33" />
+          <first_editor relative-caret-position="289">
+            <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           </first_editor>
           <second_editor />
         </state>
@@ -793,8 +768,28 @@
     <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="510">
-            <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <first_editor relative-caret-position="459">
+            <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/spec/usecases.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" selection-start-line="9" selection-end-line="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/spec/process-request.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="663">
+            <caret line="39" selection-start-line="39" selection-end-line="39" />
           </first_editor>
           <second_editor />
         </state>
