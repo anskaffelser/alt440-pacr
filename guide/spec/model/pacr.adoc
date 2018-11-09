@@ -1,7 +1,10 @@
 [[information-model-pacr]]
 = Information model Pre-award catalogue request
 
-#Add model diagram?#
+image::images/CatalogueRequest.jpg[catalogue request class diagram]
+
+
+#Remove the table??#
 
 .Information model Pre-award catalogue request
 [cols="1,2,2,8,1,3,3",options="header"]

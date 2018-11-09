@@ -156,7 +156,7 @@
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Economic operators country of legal registration</Name>
-                            <Description>The country where the economic operator is registered.</Description>
+                            <Description>The country where the economic operator is registered. Use the alpha-2 code as found in the codelist "ISO 3166"</Description>
                             <Reference type="CODE_LIST">IS03166</Reference>
                             <Value type="EXAMPLE">NO</Value>
                         </Element>
@@ -280,8 +280,8 @@
                     <Element>
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country Code</Name>
-                        <Description>A code that identifies the country. This code can be found in the codelist "ISO3166_Alpha2"</Description>
-                        <Reference type="CODE_LIST">IS03166-1_Alpha</Reference>
+                        <Description>A code that identifies the country. Use the alpha-2 code as found in the codelist "ISO 3166"</Description>
+                        <Reference type="CODE_LIST">IS03166</Reference>
                         <Value type="EXAMPLE">UK</Value>
                     </Element>
                 </Element>
@@ -302,7 +302,7 @@
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Contracting body country of legal registration</Name>
-                            <Description>The country where the contracting body is registered.</Description>
+                            <Description>The country where the contracting body is registered. Use the alpha-2 code as found in the codelist "ISO 3166"</Description>
                             <Reference type="CODE_LIST">IS03166</Reference>
                             <Value type="EXAMPLE">NO</Value>
                         </Element>
@@ -379,22 +379,22 @@
 
             <Element>
                 <Term>cbc:ID</Term>
-                <Name>Catalogue request line identifier</Name>
-                <Description>An identifier for the catalogue request line being unique within pre-award catalogue request.</Description>
+                <Name>Catalogue request item identifier</Name>
+                <Description>An identifier for the catalogue request item being unique within pre-award catalogue request.</Description>
                 <Value type="EXAMPLE">73635</Value>
             </Element>
 
             <Element cardinality="0..1">
                 <Term>cac:LineValidityPeriod</Term>
-                <Name>Line validity period</Name>
-                <Description>The validity period for this item request. If used, both start and end date must be present</Description>
+                <Name>Line delivery period</Name>
+                <Description>The requested delivery period for this item request. If used, both start and end date must be present</Description>
              
                 <Property key="doc">structure/docs/LineValidityPeriod-Request.adoc</Property>
 
                 <Element>
                     <Term>cbc:StartDate</Term>
                     <Name>Period start date</Name>
-                    <Description>The validity start date for the requested item, the date must be the same, or ealier than the validity end date. 
+                    <Description>The requested delivery start date for the item, the date must be the same, or ealier than the delivery end date. 
                         Format YYYY-MM-DD. Date shall not include timezone information. </Description>            
                     <Value type="EXAMPLE">2017-06-01</Value>
                 </Element>
@@ -402,7 +402,7 @@
                 <Element>
                     <Term>cbc:EndDate</Term>
                     <Name>Period end date</Name>
-                    <Description>The validity end date for the requested item, the date must be the same, or later than the validity start date.
+                    <Description>The requested delivery end date for the item, the date must be the same, or later than the delivery start date.
                         Format YYYY-MM-DD. Date shall not include timezone information.</Description>
                     <Value type="EXAMPLE">2017-06-15</Value>
                 </Element>
@@ -480,7 +480,7 @@
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Country Code</Name>
-                            <Description>A code that identifies the country. This code can be found in the codelist "ISO3166_Alpha2"</Description>
+                            <Description>A code that identifies the country. Use the alpha-2 code as found in the codelist "ISO 3166"</Description>
                             <Reference type="CODE_LIST">IS03166</Reference>
                             <Value type="EXAMPLE">UK</Value>
                         </Element>
@@ -506,7 +506,9 @@
                             <Reference type="CODE_LIST">ISO4217</Reference>
                             <Value type="EXAMPLE">SEK</Value>
                         </Attribute>
+                      
                         <Value type="EXAMPLE">200.00</Value>
+                        
                     </Element>
                     
 
@@ -622,7 +624,6 @@
                         <Description>A code for classifying the item by its type or nature</Description>
 
                         <Attribute>
-                            <!-- Not sure this is correct, what is meant by "The name of the classification for this item?" -->
                             <Term>listName</Term>
                             <Name>Item request classification name</Name>
                             <Description>The name of the classification for this item.</Description>
@@ -631,10 +632,11 @@
                     </Element>
                 </Element>
                 
-                <Element> <!-- Not sure with the implementation. Need QA. -->
+                <Element> 
+                    
                     <Term>cac:AdditionalItemProperty</Term>
                     <Name>Requested item property and requested item information</Name>
-                    <Description>This element is used to provide information on both requested item properies and requested item information</Description>
+                    <Description>This element is used to provide information on both requested item properies and requested item information. The element cbc:NameCode is used to specify if the information in this element repetition is a property or an information.</Description>
                     <Property key="doc">structure/docs/AdditionalItemProperty-Request.adoc</Property>
                     
                     <!-- Description not part of schema -->
@@ -646,7 +648,7 @@
 
                     <Element>
                         <Term>cbc:Name</Term>
-                        <Name>Information request name</Name>
+                        <Name>Property or Information request name</Name>
                         <Description>A name of the requested item property</Description>
                         <Value type="EXAMPLE">Color</Value>
                     </Element>
@@ -662,8 +664,9 @@
 
                     <Element cardinality="0..1">
                         <Term>cbc:Value</Term>
-                        <Name>Requested item property value</Name>
-                        <Description>Red</Description>
+                        <Name>Requested item property value or requested item information reference</Name>
+                        <Description>The value of the item property.</Description>
+                        <Value type="EXAMPLE">Red</Value>
                         
                     </Element>
 
@@ -680,15 +683,24 @@
                         </Attribute>
                     </Element>
                     
+                    <Element cardinality="0..1">
+                        <Term>cbc:ValueQualifier</Term>
+                        <Name>Property description</Name>
+                        <Description>Free text description of the property</Description>
+                        <Value type="EXAMPLE">Red</Value>
+                        
+                    </Element>
+                    
+                    
                     <Element>
                         <Term>cbc:ImportanceCode</Term>
-                        <Name>Information request relevance</Name>
-                        <Description>Relevance of the requested information in the response document, in particular, if it is mandatory (M) or optional (O).</Description>
+                        <Name>Property or Information request relevance</Name>
+                        <Description>Relevance of the requested property or information in the response document</Description>
                         <Reference type="CODE_LIST">relevance</Reference>
                         <Value type="EXAMPLE">M</Value>
                     </Element>
                     
-                    <Element>
+                    <Element cardinality="0..1">
                         <Term>cac:ItemPropertyGroup</Term>
                         <Name>Item property classification</Name>
                         <Description>A classification of an item property according to a standardized property system.</Description>
@@ -759,7 +771,7 @@
                     <Value type="EXAMPLE">ECO</Value>
                 </Element>
                 
-                <Element cardinality="0..1">
+                <Element>
                     <Term>cbc:CertificateType</Term>
                     <Name>Item requirement name</Name>
                     <Description>The name of the requirement for the requested item.</Description>

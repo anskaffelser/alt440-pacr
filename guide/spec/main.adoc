@@ -21,6 +21,8 @@ include::introduction.adoc[]
 
 include::definitions/index.adoc[]
 
+include::requirements/index.adoc[]
+
 include::model/index.adoc[]
 
 include::bindings/index.adoc[]
