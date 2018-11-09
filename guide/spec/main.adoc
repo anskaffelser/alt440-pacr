@@ -27,6 +27,8 @@ include::process.adoc[]
 
 include::process-request.adoc[]
 
+include::detailed-descriptions.adoc[]
+
 include::requirements/index.adoc[]
 
 include::model/index.adoc[]

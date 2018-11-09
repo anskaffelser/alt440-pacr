@@ -1,3 +1,6 @@
 = Detailed Descriptions
 
 == Roles and Actor
+
+.EHF Cataloguue Request rolediagram.
+image::images/rolediagram-request.png[align="center"]
