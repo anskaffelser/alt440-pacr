@@ -65,6 +65,8 @@ a|It shall be possible to specify the required physical location for an requeste
 |It shall be possible to specify the "non-functional" requirements on requested items referring to environmental, social or other "non-functional" characteristics of the item requirements that might be prooven by a means of proof according to 2014/24/EU, Art. 43.
 |tir-030
 |It shall be possible to provide additional specification for an requested item as an additional document, e.g., technical specifications or blueprints.
+|tir-031
+|It shall be possible to specify an upper price limit on a requested item.
 
 2+h|Item property
 |tir-050
