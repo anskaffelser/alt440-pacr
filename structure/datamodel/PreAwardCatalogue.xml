@@ -1569,11 +1569,12 @@
                     <Term>cac:Certificate</Term>
                     <Name>Item means of proof</Name>
                     <Description>A means of proof according to to Directives 2014/24/EU.</Description>
+                    <Property key="doc">structure/docs/Certificate.adoc</Property>
 
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name>Iteam means of proof identifier</Name>
-                        <Description>A unique identifier being unique in a transcaction for a Item means of proof.</Description>
+                        <Name>Item means of proof identifier</Name>
+                        <Description>A unique identifier being unique in a transaction for a Item means of proof.</Description>
                     </Element>
 
                     <Element>
@@ -1613,7 +1614,7 @@
                                 <Term>cbc:Name</Term>
                                 <Name>Item means of proof issuer party name</Name>
                                 <Description>Name of the party issuing the means of proof for the item.</Description>
-                                <Value type="EXAMPLE">Svanemerket</Value>
+                                <Value type="EXAMPLE">Nordic Ecolabelling</Value>
                             </Element>
                         </Element>
                     </Element>
@@ -1621,41 +1622,34 @@
                     <Element cardinality="0..n">
                         <Term>cac:DocumentReference</Term>
                         <Name>Document reference</Name>
-
-                        <!-- TODO: Check, if this can be specified this way -->
+                        <Description>
+                            This element is bound to two different business terms:
+                            Item means of proof reference or Item requirement reference.
+                            To indicate the, if the document reference is a reference
+                            to an means of proof, use the code Item_means_of_proof_reference.
+                            For an Item requirement reference use the code
+                            Item_requirement_reference.
+                        </Description>
                         <Element>
                             <Term>cbc:DocumentTypeCode</Term>
-                            <Description>Pseudo code indicating the DocumentReference as an  Items means of proof reference</Description>
-                            <Value type="FIXED">Item_means_of_proof_reference</Value>
+                            <Description>
+                                Pseudo code indicating the DocumentReference as an Items means of proof reference
+                                or an Item requirement reference.
+                            </Description>
+                            <Value type="FIXED">Item_means_of_proof_reference or Item_requirement_reference</Value>
                         </Element>
-
                         <Element>
-                            <Term>cbc:ID</Term>                            <!-- TODO: cbc:ID appropriate as a URI? -->
-                            <Name>Item means of proof reference</Name>
-                            <Description>A reference to an external specification of the provided means of proof.</Description>
-                            <Value type="EXAMPLE">http://www.nordic-ecolabel.org</Value>
+                            <Term>cbc:ID</Term>
+                            <Name>Item means of proof reference or Item requirement reference</Name>
+                            <Description>
+                                Item means of proof reference is reference to an external specification
+                                of the provided means of proof. An Item requirement reference is a
+                                reference to the corresponding Item requirement given in the corresponding
+                                pre-award catalogue request this pre-award catalogue is build on.
+                            </Description>
+                            <Value type="EXAMPLE">http://www.nordic-ecolabel.org or urn:sample:difi:pacr:aaaba1a2-d107-426d-8a64-698b678756d5:item-requirement:2</Value>
                         </Element>
                     </Element>
-
-                    <Element cardinality="0..n">
-                        <Term>cac:DocumentReference</Term>
-                        <Name>Document reference</Name>
-
-                        <!-- TODO: Check, if this can be specified this way -->
-                        <Element>
-                            <Term>cbc:DocumentTypeCode</Term>
-                            <Description>Pseudo code indicating the DocumentReference as an  Items means of proof reference</Description>
-                            <Value type="FIXED">Item_means_of_proof_reference</Value>
-                        </Element>
-
-                        <Element>
-                            <Term>cbc:ID</Term>                            <!-- TODO: cbc:ID appropriate as a URI? -->
-                            <Name>Item requirement reference</Name>
-                            <Description>A reference to the corresponding Item requirement given in the corresponding pre-award catalogue request.</Description>
-                            <Value type="EXAMPLE">urn:sample:difi:pacr:aaaba1a2-d107-426d-8a64-698b678756d5:item-requirement:2</Value>
-                        </Element>
-                    </Element>
-
                 </Element>
 
                 <Element cardinality="0..1">
