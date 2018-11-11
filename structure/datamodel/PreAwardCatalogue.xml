@@ -1658,25 +1658,48 @@
 
                 </Element>
 
-                <Element cardinality="0..1">
+                <Element cardinality="0..n">
                     <Term>cac:Dimension</Term>
-                    <Name>Dimension</Name>
+                    <Name>Handling unit dimensions</Name>
+                    <Property key="doc">structure/docs/Dimension.adoc</Property>
+                    <Description>
+                        The element is used for describing the various dimensions of the handling
+                        unit. The element cbc:AttributeID is used to define which dimension is
+                        described by the dimension element. The following mapping applies for the
+                        cbc:AttributeID: HT = Handling unit height, LN = Handling unit length,
+                        WD = Handling unit width, AAB = Handling unit gross weight,
+                        TC = Handling unit minimum/maximum temperature,
+                        AAO = Handling unit minimum/maximum storage humidity
+                    </Description>
                     <Element>
                         <Term>cbc:AttributeID</Term>
                         <Name>Attribute identifier</Name>
                         <Description>An identifier for the attribute to which the measure applies.</Description>
                         <Reference type="CODE_LIST">UNCL6313</Reference>
-                        <Value type="FIXED">HT</Value>
+                        <Value type="FIXED">HT or LN or WD or AAB or TC or AAO</Value>
+                        <Attribute>
+                            <Term>Scheme identifier</Term>
+                            <Name>schemeID</Name>
+                            <Value type="FIXED">UNCL6313</Value>
+                        </Attribute>
                     </Element>
-                    <Element>
+                    <Element cardinality="0..1">
                         <Term>cbc:Measure</Term>
-                        <Name>Handling unit height</Name>
-                        <Description>Height of the handling unit. The vertical height of the orderable unit.</Description>
+                        <Name>
+                            Handling unit height or length or width or gross weight
+                        </Name>
+                        <Description>
+                            The dimensions of the handling unit:
+                            (1) Handling unit height: The vertical height of the orderable unit.
+                            (2) Handling unit length: The horizontal measure of the longer site of the orderable unit.
+                            (3) Handling unit width: The horizontal measure of the shorter side of the orderable unit.
+                            (4) Handling unit gross weight: The gross weight of the orderable unit including its packaging.
+                        </Description>
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Quandtity unit code</Name>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">MTR</Value>
+                            <Value type="EXAMPLE">MTR or KGM</Value>
                         </Attribute>
                         <Attribute>
                             <Term>unitCodeListID</Term>
@@ -1686,117 +1709,19 @@
                         </Attribute>
                         <Value type="EXAMPLE">3</Value>
                     </Element>
-                </Element>
-
                 <Element cardinality="0..1">
-                    <Term>cac:Dimension</Term>
-                    <Name>Dimension</Name>
-                    <Element>
-                        <Term>cbc:AttributeID</Term>
-                        <Name>Attribute identifier</Name>
-                        <Description>An identifier for the attribute to which the measure applies.</Description>
-                        <Reference type="CODE_LIST">UNCL6313</Reference>
-                        <Value type="FIXED">LN</Value>
-                    </Element>
-                    <Element>
-                        <Term>cbc:Measure</Term>
-                        <Name>Handling unit length</Name>
-                        <Description>Length of the handling unit. The horizontal measure of the longer site of the orderable unit</Description>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Measure unit code</Name>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">MTR</Value>
-                        </Attribute>
-                        <Attribute>
-                            <Term>unitCodeListVersionID</Term>
-                            <Name>Measure unit code list</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">2</Value>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:Dimension</Term>
-                    <Name>Dimension</Name>
-                    <Element>
-                        <Term>cbc:AttributeID</Term>
-                        <Name>Attribute identifier</Name>
-                        <Description>An identifier for the attribute to which the measure applies.</Description>
-                        <Reference type="CODE_LIST">UNCL6313</Reference>
-                        <Value type="FIXED">WD</Value>
-                    </Element>
-                    <Element>
-                        <Term>cbc:Measure</Term>
-                        <Name>Handling unit width</Name>
-                        <Description>Width of the handling unit. The horizontal measure of the shorter side of the orderable unit.</Description>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Measure unit code</Name>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">MTR</Value>
-                        </Attribute>
-                        <Attribute>
-                            <Term>unitCodeListVersionID</Term>
-                            <Name>Measure unit code list</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">0.5</Value>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:Dimension</Term>
-                    <Name>Dimension</Name>
-                    <Element>
-                        <Term>cbc:AttributeID</Term>
-                        <Name>Attribute identifier</Name>
-                        <Description>An identifier for the attribute to which the measure applies.</Description>
-                        <Reference type="CODE_LIST">UNCL6313</Reference>
-                        <Value type="FIXED">AAB</Value>
-                    </Element>
-                    <Element>
-                        <Term>cbc:Measure</Term>
-                        <Name>Handling unit gross weight</Name>
-                        <Description>The gross weight of a handling unit. The weight of the orderable unit including its packaging.</Description>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Measure unit code</Name>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">KGM</Value>
-                        </Attribute>
-                        <Attribute>
-                            <Term>unitCodeListVersionID</Term>
-                            <Name>Measure unit code list</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">21</Value>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:Dimension</Term>
-                    <Name>Dimension</Name>
-                    <Element>
-                        <Term>cbc:AttributeID</Term>
-                        <Name>Attribute identifier</Name>
-                        <Description>An identifier for the attribute to which the measure applies.</Description>
-                        <Reference type="CODE_LIST">UNCL6313</Reference>
-                        <Value type="FIXED">TC</Value>
-                    </Element>
-                    <Element>
                         <Term>cbc:MinimumMeasure</Term>
                         <Name>Handling unit minimum storage temperature</Name>
-                        <Description>Minimum storage temperature for the handling unit. The lower margin of the recommended storage temperature range for the item.</Description>
+                        <Description>
+                            The minimum dimensions of the handling unit:
+                            (1) Handling unit minimum storage temperature: The lower margin of the recommended storage temperature range for the item.
+                            (2) Handling unit minimum storage humidity: The lower margin of the recommendaded storage temperature range for the item.
+                        </Description>
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Measure unit code</Name>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">CEL</Value>
+                            <Value type="EXAMPLE">CEL or P1</Value>
                         </Attribute>
                         <Attribute>
                             <Term>unitCodeListVersionID</Term>
@@ -1806,15 +1731,19 @@
                         </Attribute>
                         <Value type="EXAMPLE">10</Value>
                     </Element>
-                    <Element>
+                    <Element cardinality="0..1">
                         <Term>cbc:MaximumMeasure</Term>
                         <Name>Handling unit maximum storage temperature</Name>
-                        <Description>Maximum storage temperature for the handling unit. The upper margin of the recommended storage temperature range for the item.</Description>
+                        <Description>
+                            The maximum dimensions of the handling unit:
+                            (1) Handling unit maximum storage temperature: The upper margin of the recommended storage temperature range for the item.
+                            (2) Handling unit maximum storage humidity: The upper margin of the recommended storage humidity range for the item.
+                        </Description>
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Measure unit code</Name>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">CEL</Value>
+                            <Value type="EXAMPLE">CEL or P1</Value>
                         </Attribute>
                         <Attribute>
                             <Term>unitCodeListVersionID</Term>
@@ -1823,54 +1752,6 @@
                             <Value type="FIXED">UNECERec20</Value>
                         </Attribute>
                         <Value type="EXAMPLE">15</Value>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:Dimension</Term>
-                    <Name>Dimension</Name>
-                    <Element>
-                        <Term>cbc:AttributeID</Term>
-                        <Name>Attribute identifier</Name>
-                        <Description>An identifier for the attribute to which the measure applies.</Description>
-                        <Reference type="CODE_LIST">UNCL6313</Reference>
-                        <Value type="FIXED">AAO</Value>
-                    </Element>
-                    <Element>
-                        <Term>cbc:MinimumMeasure</Term>
-                        <Name>Handling unit minimum storage humidity</Name>
-                        <Description>Minimum storage humidity for the handling unit.</Description>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Measure unit code</Name>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">P1</Value>
-                        </Attribute>
-                        <Attribute>
-                            <Term>unitCodeListVersionID</Term>
-                            <Name>Measure unit code list</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">10</Value>
-                    </Element>
-                    <Element>
-                        <Term>cbc:MaximumMeasure</Term>
-                        <Name>Handling unit maximum storage humidity</Name>
-                        <Description>Maximum storage humidity for the handling unit.</Description>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Measure unit code</Name>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">P1</Value>
-                        </Attribute>
-                        <Attribute>
-                            <Term>unitCodeListVersionID</Term>
-                            <Name>Measure unit code list</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">20</Value>
                     </Element>
                 </Element>
 

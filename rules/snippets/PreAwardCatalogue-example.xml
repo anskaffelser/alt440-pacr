@@ -328,11 +328,27 @@
                     <cbc:ID>urn:sample:fisherman:era22-khwr35-ga32:item-sugar-rate</cbc:ID> <!-- Is it OK?-->
                 </cac:DocumentReference>
             </cac:Certificate>
-            <cac:Dimension> <!-- NOT sure with the implementation. -->
-                <cbc:Measure unitCode="UNECERec20-11e">DG</cbc:Measure>
-                <cbc:MinimumMeasure unitCode="">3</cbc:MinimumMeasure> <!-- Which codelist? -->
-                <cbc:MaximumMeasure unitCode="">20</cbc:MaximumMeasure> <!-- Which codelist? -->
+
+            <!-- tag::Dimension[] -->
+            <cac:Dimension>
+                <cbc:AttributeID schemeID="UNCL6313">HT</cbc:AttributeID>
+                <cbc:Measure unitCode="MTR" unitCodeListVersionID="UNECERec20">1</cbc:Measure>
             </cac:Dimension>
+            <cac:Dimension>
+                <cbc:AttributeID schemeID="UNCL6313">LN</cbc:AttributeID>
+                <cbc:Measure unitCode="MTR" unitCodeListVersionID="UNECERec20">1.2</cbc:Measure>
+            </cac:Dimension>
+            <cac:Dimension>
+                <cbc:AttributeID schemeID="UNCL6313">WD</cbc:AttributeID>
+                <cbc:Measure unitCode="MTR" unitCodeListVersionID="UNECERec20">0.75</cbc:Measure>
+            </cac:Dimension>
+            <cac:Dimension>
+                <cbc:AttributeID schemeID="UNCL6313">TC</cbc:AttributeID>
+                <cbc:MinimumMeasure unitCode="CEL" unitCodeListVersionID="UNECERec20">10</cbc:MinimumMeasure>
+                <cbc:MaximumMeasure unitCode="CEL" unitCodeListVersionID="UNECERec20">30</cbc:MaximumMeasure>
+            </cac:Dimension>
+            <!-- end::Dimension[] -->
+
         </cac:Item>
         <!-- end::Item[] -->
 
