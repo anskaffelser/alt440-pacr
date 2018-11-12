@@ -4,10 +4,17 @@
 
 == Pre-Award Catalogue and Request Diagram
 
+
+
+
 .EHF Catalogue and request rolediagram.
-image::images/rolediagram.png[align="center",500,300]
+image::images/rolediagram.png[align="center",width= 500, height=500]
+
+
+
 
 == Use Cases Pre-Award Catalogue Request
+
 
 === Use case 1
 
