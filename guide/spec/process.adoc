@@ -8,7 +8,7 @@
 
 
 .EHF Catalogue and request rolediagram.
-image::images/rolediagram.png[align="center",width= 500, height=500]
+image::images/rolediagram.png[align="center",width= 2000, height=2000]
 
 
 
