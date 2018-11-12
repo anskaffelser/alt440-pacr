@@ -25,3 +25,4 @@ The following diagram shows the roles involved in the pre-award catalogue and re
 .EHF Catalogue and request rolediagram.
 image::images/processdiagram.png[align="center"]
 
+==
