@@ -3,8 +3,15 @@
 
 The purpose of this document is to describe a common format for the pre award catalogue messages in the European market, and to facilitate an efficient implementation and increased use of electronic collaboration, both in the tendering process as well as in the bridging between pre- and post award catalogues.
 
-:leveloffset: +1
+Pre-award catalogue request is the tool for Contracting authority (CA) to structure requirements for goods, services and works. Pre-award catalogue request contains a generic description of the needs to CA. Based on the generic descriptions and requirements the economic operator (EO) create pre-award catalogue based on their own assortment of goods, services or works to fulfil the requirement of the CA. Requirements of proof can be included and the evidence must be provided by EO in pre-award catalogue.
 
-//include::usecases.adoc[]
+Example of generic description can be classifications systems such as UNSPSC, CPV or eCl@ss. Examples of generic requirements are codes that can be proven by labels and other means of proof.
 
-:leveloffset: -1
+Certification/attestation of certain skills as surgical nurse, midwife, different kinds of engineers or other speciality of occupation can also be used. CA has stored the generic description and requirements from the pre-award catalogue request in the tendering system, and can undertake an automated evaluation of the different offers from different EO´s with pre-award catalogue as a structured and standardized input.
+
+In the evaluation process the pre-award catalogues will be stored. After signing will the contract with EO (´s) be transferred to the eProcurement system (catalogue tool) to be used as baseline. The purpose is to check the electronic product catalogue towards the contract when or if the EOs update the catalogue.
+
+Pre-award catalogue request can be used in a Dynamic Purchasing System (DPS) as a carrier of CAs needs towards suppliers qualified in to the DPS supplier group. Automatically evaluation of incoming, tender in the form of pre-award catalogue, will save CA handling cost. DPS will also stimulate SMB to get involved in tenders because the needs can be more to the point and easier to handle.
+
+Using electronic catalogues in the tendering process will save processing time both for EO´s and CA´s and will enhance transparency and traceability of goods, services and works. To achieve good and effective processes the EO should have their own eSubmission systems based on a 4-corner model to be able to communicate with different tendering platforms based on standard formats and PEPPOL eDelivery network.
+

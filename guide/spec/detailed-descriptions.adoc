@@ -1,6 +1,27 @@
 = Detailed Descriptions
 
-== Roles and Actor
+This chapter describes selected parts of the information contents of the EHF catalogue and request.
 
-.EHF Cataloguue Request rolediagram.
-image::images/rolediagram-request.png[align="center"]
+== Parties and Roles
+
+The important parties and roles in pre-award catalogue and request is described below.
+
+****
+Contracting body (CA)::
+The contracting authority or contracting entity who is buying supplies, services or tendering works.
+
+Economic operator (EO)::
+Party participating with a tender in a procurement process to sell goods, services or works.
+
+Customer::
+The customer is the legal person or organization who is in demand of a product, service or works. Examples of customer roles are buyer, consignee, debtor and contracting body.
+
+Supplier::
+The supplier is the legal person or organization who provides a product, service or works. Examples of supplier roles are seller, consignor, creditor and economic operator.
+****
+
+The following diagram shows the roles involved in the pre-award catalogue and request.
+
+.EHF Catalogue and request rolediagram.
+image::images/processdiagram.png[align="center"]
+
