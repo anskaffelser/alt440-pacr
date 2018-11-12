@@ -13,3 +13,7 @@ Pre-award catalogue request can be used in a Dynamic Purchasing System (DPS) as 
 
 Using electronic catalogues in the tendering process will save processing time both for EO´s and CA´s and will enhance transparency and traceability of goods, services and works. To achieve good and effective processes the EO should have their own eSubmission systems based on a 4-corner model to be able to communicate with different tendering platforms based on standard formats and PEPPOL eDelivery network.
 
+This diagram illustrate the catalogue process:
+
+.Diagram for the catalogue processes.
+image::images/processdiagram.png[align="center"]

@@ -1,6 +1,6 @@
 = Detailed Descriptions
 
-This chapter describes selected parts of the information contents of the EHF catalogue and request.
+This chapter describes selected parts of the information contents of the EHF Pre-Award Catalogue and EHF Pre-Award Catalogue Request.
 
 == Parties and Roles
 
@@ -20,10 +20,10 @@ Supplier::
 The supplier is the legal person or organization who provides a product, service or works. Examples of supplier roles are seller, consignor, creditor and economic operator.
 ****
 
-The following diagram shows the roles involved in the pre-award catalogue and request.
+The following diagram illustrates the parties and roles involved in the Pre-Award Catalogue and Catalogue Request.
 
 .EHF Catalogue and request rolediagram.
-image::images/processdiagram.png[align="center"]
+image::images/rolediagram.png[align="center",1200, 800]
 
 
 == Quantities and Units

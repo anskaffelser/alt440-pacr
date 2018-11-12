@@ -4,13 +4,14 @@
 
 == Pre-Award Catalogue and Request Diagram
 
+The following diagrams illustrates the basic EHF Pre-Award Catalogue and EHF Pre-Award Catalogue Request processes.
+
+.EHF Pre-Award Catalogue process.
+image::images/catalogueDiagram.png[align="center"]
 
 
-
-.EHF Catalogue and request rolediagram.
-image::images/rolediagram.png[align="center",1200, 800]
-
-
+.EHF Pre-Award Catalogue Request process.
+image::images/catalogueRequestDiagram.png[align="center"]
 
 
 == Use Cases Pre-Award Catalogue Request
