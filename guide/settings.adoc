@@ -1,7 +1,7 @@
 :lang: en
 
 
-:doctitle: PreAward Catalogue Request
+:doctitle: Pre-Award Catalogue and Request
 
 :revision: x.x.x
 :shared-dir: shared

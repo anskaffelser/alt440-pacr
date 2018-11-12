@@ -25,4 +25,34 @@ The following diagram shows the roles involved in the pre-award catalogue and re
 .EHF Catalogue and request rolediagram.
 image::images/processdiagram.png[align="center"]
 
-==
+
+== Quantities and Units
+
+There are various quantities and units that can be used in both Pre-Award Catalogue and Catalogue Request. Here is a detailed list of
+relevant quantities and units:
+
+****
+Orderable unit (OrderableUnit)::
+The unit in which the item described in this catalogue line can be ordered.
+
+Item net quantity (ContentUnitQuantity)::
+The net quantity of the item that is contained in each consumable unit (excluding packaging material), e.g. ml in bottles of Shampoo.
+
+Order quantity increment (OrderQuantityIncrementNumeric)::
+Possible limitation to the number of articles that can be ordered. If the Quantity increment is 6 the article shall be ordered in a quantity of 6, 12, 18 etc.
+
+Minimum order quantity (MinimumOrderQuantity)::
+The smallest number of items that can be ordered (most often 1).
+
+Maximum order quantity (MaximumOrderQuantity)::
+The largest number of items that can be ordered (most often unlimited).
+
+Packed quantity (Item/PackQuantity)::
+Number of items on next lower level, e.g. number of Consumer units in a Trading unit.
+
+Consumable unit quantity (Item/PackSizeNumeric)::
+Number of Consumer items in the orderable unit. E.g. number of bottles on a Pallet.
+
+Item quantity for component related item(ComponentRelatedItem/Quantity)::
+Quantity of the related component.
+****
