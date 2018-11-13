@@ -9,13 +9,13 @@
  
     
     <Code>
-        <Id>ES</Id>
-        <Name>Estimated price</Name>
-        <Description>Code specifying an estimated price.</Description>
+        <Id>ABG</Id>
+        <Name>Minimum price</Name>
+        <Description>The minimum price</Description>
     </Code>
     <Code>
         <Id>NE</Id>
-        <Name>Not-to-exceed price</Name>
+        <Name>Maximum price (Not-to-exceed price)</Name>
         <Description>Code specifying a price that cannot be increased.</Description>
     </Code>
     
