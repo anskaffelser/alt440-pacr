@@ -329,7 +329,7 @@
                     <cbc:ID>urn:sample:difi:pacr:aaaba1a2-d107-426d-8a64-698b678756d5:item-requirement:2</cbc:ID>
                 </cac:DocumentReference>
             </cac:Certificate>
-
+            <!-- end::Certificate[] -->
 
             <!-- tag::Dimension[] -->
             <cac:Dimension>
