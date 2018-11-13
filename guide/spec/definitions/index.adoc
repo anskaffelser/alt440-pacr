@@ -5,22 +5,22 @@
 Catalogue::
 A catalogue is a structured document of items (e.g., goods and services) description that is available in a format so that it can be processed electronically.
 
-Pre-award catalogue request::
+Pre-Award catalogue request::
 A pre-award catalogue request is a catalogue of requirements on products (goods or services) intended to be bought by a Contracting Authority. +
 _SOURCE: CWA 17028-402:2016, definition 3.3_
 
-Pre-award catalogue::
+Pre-Award catalogue::
 A pre-award catalogue is a catalogue used by an economic operator to provide the information on the offered products as an answer to a call for tenders and the corresponding pre-award catalogue request. +
 _SOURCE: CWA 17028-402:2016, definition 3.2_
 
-Post-award catalogue::
+Post-Award catalogue::
 A post-award catalogue is a catalogue used by an economic operator to provide the information in the post-award phase, i.e., to provide the information necessary for a placing an order for requested items with an economic operator. +
 A post-award catalogue might be based on a pre-award catalogue as well as based on a framework agreement or an agreement from a tender.
 
 Catalogue provider::
 The party that sends the catalogue.
 
-Receiver::
+Catalogue receiver::
 The party that receives the catalogue.
 
 Supplier::
@@ -28,4 +28,10 @@ The party that provides the items specified in the catalogue.
 
 Customer::
 The party that might order from the catalogue.
+
+Buyer::
+The buyer is the legal person or organization acting on behalf of the customer and who buys or purchases the goods or services.
+
+Seller::
+The seller is the legal person or organization acting on behalf of the supplier and who sells goods or services to the customer.
 ****

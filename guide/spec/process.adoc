@@ -9,7 +9,7 @@
 The following diagram illustrates the basic EHF Pre-Award Catalogue process.
 
 .EHF Pre-Award Catalogue process.
-image::images/catalogueDiagram.png[align="center"]
+image::images/catalogueDiagram.png[align="center",800,800]
 
 === Use Case
 
@@ -59,7 +59,7 @@ A CA wants to buy goods, services or works that can be described easily. "Descri
 After subscribing to a tender, an economic operator from Norway uses its tendering platform 123-Nor to receive the structured documents and store it in his system.  The system fill inn information about products and services, using information from the EO´s ERP system, in to pre-award catalogue, EPSD and other tender documents, and prepare for a submission of the tender. Contracting authority´s tendering platform ABC-Germania receive tendering documents and import the pre-award catalogue into the evaluation system and compare all received pre-award catalogues with each other and find the best tender of products or services automatically.
 
 
-=== Use case 4
+==== Use case 4
 
 An EO finds an interesting business opportunity after a search on TED. The tender informs the EO that this is a Dynamic Purchasing System (DPS) process. EO must qualify into the system. First, the EO sends a subscription message to the contracting body to let them know that he is interested. This puts him on the list of interested economic operators. CA sends out the qualifications documents, ESPD request, and EO let his system fill out the ESPD response. EO send ESPD response and CA automatically evaluate the documents and sends a request to a public data base containing evidence. The result is positive, and CA qualify EO into the DPS.
 
