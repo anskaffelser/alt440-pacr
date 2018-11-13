@@ -1504,10 +1504,10 @@
                     </Element>
                 </Element>
 
-                <Element cardinality="0..n">
+                <Element cardinality="0..1">
                     <Term>cac:ItemInstance</Term>
                     <Name>Item instance</Name>
-                    <Description>Definition>A trackable, unique instantiation of this item.</Description>
+                    <Description>A trackable, unique instantiation of this item.</Description>
 
                     <Element cardinality="0..1">
                         <Term>cbc:BestBeforeDate</Term>
@@ -1517,52 +1517,6 @@
                         <Value type="EXAMPLE">2017-12-31</Value>
                     </Element>
 
-                    <Element cardinality="0..n">
-                        <Term>cac:AdditionalItemProperty</Term>
-                        <Name>Additional item property</Name>
-                        <Property key="doc">structure/docs/AdditionalItemProperty.adoc</Property>
-
-                        <Element>
-                            <Term>cbc:Name</Term>
-                            <Description>The name of this item property.</Description>
-                            <Value type="EXAMPLE">Energy rating</Value>
-                        </Element>
-
-                        <Element>
-                            <Term>cac:RangeDimension</Term>
-                            <Name>Range dimension</Name>
-                            <Description>The range of values for the dimensions of this property.</Description>
-                            <!-- TODO: Also Range dimension
-                            <Element>
-                                <Term>cbc:AttributeID</Term>
-                                <Name>Attribute identifier</Name>
-                                <Description>An identifier for the attribute to which the measure applies.</Description>
-                                <Value type="EXAMPLE">1</Value>
-                            </Element>
--->
-                            <Element>
-                                <Term>cbc:Description</Term>
-                                <Name>Item dimension description</Name>
-                                <Description>Textual description of the item's dimensions. Used if the dimension of the item cannot be described using standardized properties, e.g., length, height or width.</Description>
-                                <Value type="EXAMPLE">G</Value>
-                            </Element>
-                        </Element>
-                    </Element>
-                    <!-- TODO:
-                    <Element cardinality="0..1">
-                        <Term>cac:LotIdentification</Term>
-                        <Name>Lot identification</Name>
-                        <Description>The lot identifier of this item instance (the identifier that allows recall of the item if necessary).</Description>
-
-                        <Element>
-                            <Term>cbc:ExpiryDate</Term>
-                            <Name>Item expiry date</Name>
-                            <Description>The date on which the item will expire. Used to express the expiry date of the item or items in the line instance.
-                                A expiration time or period has to be specified to check consistency with the post-award catalogue.</Description>
-                            <Value type="EXAMPLE">2017-12-31</Value>
-                        </Element>
-                    </Element>
--->
                 </Element>
 
                 <Element cardinality="0..n">
