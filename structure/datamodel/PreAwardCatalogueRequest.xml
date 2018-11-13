@@ -27,16 +27,25 @@
             <Name>Business process type identifier</Name>
             <Description>Identifies the business process context in which the transaction appears. It enables the buyer
                 to process the document in an appropriate way.</Description>
-            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:profile:02:1.0</Value> <!-- mÅ SJEKKES OPP!-->
+            <Value type="EXAMPLE">urn:fdc:difi.no:2017:ehf:profile:02:1.0</Value> <!-- mÅ SJEKKES OPP!-->
         </Element>
 
         <Element>
             <Term>cbc:ID</Term>
-            <Name>Document identifier</Name>
-            <Description>An identifier for this pre-award catalogue request document</Description>
+            <Name>Transaction identifier</Name>
+            <Description>An identifier for this pre-award catalogue request document that allows referencing</Description>
+            
+            <Attribute>
+                <Term>schemeVersionID</Term>
+                <Name>Catalogue version</Name>
+                <Description>The version number of this catalogue request</Description>
+                <Value type="EXAMPLE">2.1</Value>
+            </Attribute>
+            
             <Value type="EXAMPLE">Transaction-02</Value>
         </Element>
         
+     
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Issue date</Name>
@@ -54,7 +63,7 @@
 
         <Element>
             <Term>cac:ReceiverParty</Term>
-            <Name>Economic operator</Name>
+            <Name>Receiver party or Economic operator</Name>
             <Description>Any natural or legal person or public entity or group of such persons and/or entities,
                 including any temporary association of undertakings, which offers the execution of works and/or a work,
                 the supply of products or the provision of services on the market.</Description>
@@ -64,6 +73,14 @@
                 <Term>cbc:EndpointID</Term>
                 <Name>Economic operator electronic address identifier</Name>
                 <Description>Electronic address of the economic operator.</Description>
+                
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>Scheme identifier for receiver party electronic address</Name>
+                    <Reference type="CODE_LIST">EAID</Reference>
+                    <Value type="EXAMPLE">0192</Value>
+                </Attribute>
+                
                 <Value type="EXAMPLE">64372999901</Value>
             </Element>
 
@@ -74,6 +91,14 @@
                     <Term>cbc:ID</Term>
                     <Name>Economic operator identifier</Name>
                     <Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
+               
+                    <Attribute usage="optional">
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier for receiver party identification</Name>
+                        <Reference type="CODE_LIST">ICD</Reference>
+                        <Value type="EXAMPLE">0192</Value>
+                    </Attribute>
+                    
                     <Value type="EXAMPLE">12324</Value>
                 </Element>
             </Element>
@@ -135,6 +160,7 @@
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country Code</Name>
                         <Description>A code that identifies the country.</Description>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">DK</Value>
                     </Element>
 
@@ -157,7 +183,7 @@
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Economic operators country of legal registration</Name>
                             <Description>The country where the economic operator is registered. Use the alpha-2 code as found in the codelist "ISO 3166"</Description>
-                            <Reference type="CODE_LIST">IS03166</Reference>
+                            <Reference type="CODE_LIST">ISO3166</Reference>
                             <Value type="EXAMPLE">NO</Value>
                         </Element>
 
@@ -205,6 +231,14 @@
                 <Term>cbc:EndpointID</Term>
                 <Name>Contracting body electronic address identifier</Name>
                 <Description>Electronic address of the contracting body.</Description>
+                
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>Scheme identifier for provider party electronic address</Name>
+                    <Reference type="CODE_LIST">EAID</Reference>
+                    <Value type="EXAMPLE">0192</Value>
+                </Attribute>
+                
                 <Value type="EXAMPLE">74300020004</Value>
             </Element>
 
@@ -216,6 +250,13 @@
                     <Name>Contracting body identifier</Name>
                     <Description>The national identifier of a contracting body as it is legally registered
                         (e.g. VAT identification, such as KBO).</Description>
+                    
+                    <Attribute usage="optional">
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier for provider party identification</Name>
+                        <Reference type="CODE_LIST">ICD</Reference>
+                        <Value type="EXAMPLE">0192</Value>
+                    </Attribute>
                     <Value type="EXAMPLE">12345</Value>
                 </Element>
             </Element>
@@ -281,7 +322,7 @@
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country Code</Name>
                         <Description>A code that identifies the country. Use the alpha-2 code as found in the codelist "ISO 3166"</Description>
-                        <Reference type="CODE_LIST">IS03166</Reference>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">UK</Value>
                     </Element>
                 </Element>
@@ -303,7 +344,7 @@
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Contracting body country of legal registration</Name>
                             <Description>The country where the contracting body is registered. Use the alpha-2 code as found in the codelist "ISO 3166"</Description>
-                            <Reference type="CODE_LIST">IS03166</Reference>
+                            <Reference type="CODE_LIST">ISO3166</Reference>
                             <Value type="EXAMPLE">NO</Value>
                         </Element>
                         
@@ -343,17 +384,18 @@
         <Element cardinality="0..1">
             <Term>cac:RequestedCatalogueReference</Term>
             <Name>Requested catalogue reference</Name>
-            <Description>A reference to a specific Catalogue; used if the Catalogue Request is for an update.</Description> 
+            <Description>A reference to a specific Catalogue request; used if the Catalogue Request is updated.</Description> 
             <Element>
                 <Term>cbc:ID</Term>
-                <Name>Catalogue identifier</Name>
-                <Description>The catalogue identifier of the catalogue for which an update is requested.</Description>
+                <Name>Catalogue request identifier</Name>
+                <Description>The catalogue request identifier for the updated catalogue request</Description>
                 <Value type="EXAMPLE">12345.2018</Value>
             </Element>
+        
             <Element>
-                <Term>cbc:VersionID</Term>
-                <Name>Catalogue version</Name>
-                <Description>The version number of the catalogue for which an update is requested.</Description>
+                <Term>cbc:PreviousVersionID</Term>
+                <Name>Previous version identifier</Name>
+                <Description>The previous version of the catalogue request that is superseded by this version.</Description>
                 <Value type="EXAMPLE">2.0</Value>
             </Element>
         </Element>
@@ -414,11 +456,12 @@
                 <Property key="doc">structure/docs/RequiredItemLocationQuantity-Request.adoc</Property>
 
                 <Element cardinality="0..1">
-                    <!-- Do we need the unitCode attribute? -->
                     <Term>cbc:MinimumQuantity</Term>
                     <Name>Minimum quantity</Name>
                     <Description>The minimum quantity for this item request/location. To specify an exact quantity, use the same quantity in both minimum and maximum quantity.</Description>
+             
                     <Value type="EXAMPLE">2 rooms</Value>
+                    
                 </Element>
 
                 <Element cardinality="0..1">
@@ -481,7 +524,7 @@
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Country Code</Name>
                             <Description>A code that identifies the country. Use the alpha-2 code as found in the codelist "ISO 3166"</Description>
-                            <Reference type="CODE_LIST">IS03166</Reference>
+                            <Reference type="CODE_LIST">ISO3166</Reference>
                             <Value type="EXAMPLE">UK</Value>
                         </Element>
                     </Element>
@@ -490,7 +533,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:Price</Term>
                     <Name>Price</Name>
-                    <!-- Cannot repeat the price element in the schema, is it sufficient to only state one kind of price pr location? -->
                     <Description>To state both the estimated price and the total budget price (maximum price), repeat the Price class for each type</Description>
                     <Property key="doc">structure/docs/Price-Request.adoc</Property>
                     
@@ -517,7 +559,7 @@
                         <Name>Price type code</Name>
                         <Description>A coded value for the type of price, estimated or maximum price.</Description>
                         <Reference type="CODE_LIST">UNCL5387</Reference>
-                        <Value type="EXAMPLE">ES</Value>
+                        <Value type="EXAMPLE">NE</Value>
                     </Element>
 
           
@@ -526,7 +568,7 @@
 
 
             <Element>
-                <!-- Element is 1..1 in the schema... -->
+
                 <Term>cac:Item</Term>
                 <Name>Item request</Name>
                 <Property key="doc">structure/docs/Item-Request.adoc</Property>
@@ -545,15 +587,6 @@
                     <Value type="EXAMPLE">Samsung computer</Value>
                 </Element>
                 
-                <Element cardinality="0..1">
-                    <!-- What is the purpose of this? -->
-                    <Term>cbc:AdditionalInformation</Term>
-                    <Name>Call for tenders award criterion reference</Name>
-                    <Description>A reference to the awarding criterion that the tender fulfills</Description>
-                </Element>
-                
- 
-
                 <Element>
                     <Term>cac:ItemSpecificationDocumentReference</Term>
                     <Name>Item specification document reference</Name>

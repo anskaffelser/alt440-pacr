@@ -1,6 +1,63 @@
 = Detailed Descriptions
 
-== Roles and Actor
+This chapter describes selected parts of the information contents of the EHF Pre-Award Catalogue and EHF Pre-Award Catalogue Request.
 
-.EHF Cataloguue Request rolediagram.
-image::images/rolediagram-request.png[align="center"]
+== Parties and Roles
+
+The important parties and roles in pre-award catalogue and request is described below.
+
+****
+Contracting body (CA)::
+The contracting authority or contracting entity who is buying supplies, services or tendering works.
+
+Economic operator (EO)::
+Party participating with a tender in a procurement process to sell goods, services or works.
+
+Customer::
+The customer is the legal person or organization who is in demand of a product, service or works. Examples of customer roles are buyer, consignee, debtor and contracting body.
+
+Supplier::
+The supplier is the legal person or organization who provides a product, service or works. Examples of supplier roles are seller, consignor, creditor and economic operator.
+****
+
+The following diagram illustrates the parties and roles involved in the Pre-Award Catalogue and Catalogue Request.
+
+{empty} +
+{empty} +
+
+.EHF Catalogue and request rolediagram.
+image::images/rolediagram.png[align="center",1200, 800]
+
+{empty} +
+
+
+== Quantities and Units
+
+There are various quantities and units that can be used in both Pre-Award Catalogue and Catalogue Request. Here is a detailed list of
+relevant quantities and units:
+
+****
+Orderable unit (OrderableUnit)::
+The unit in which the item described in this catalogue line can be ordered.
+
+Item net quantity (ContentUnitQuantity)::
+The net quantity of the item that is contained in each consumable unit (excluding packaging material), e.g. ml in bottles of Shampoo.
+
+Order quantity increment (OrderQuantityIncrementNumeric)::
+Possible limitation to the number of articles that can be ordered. If the Quantity increment is 6 the article shall be ordered in a quantity of 6, 12, 18 etc.
+
+Minimum order quantity (MinimumOrderQuantity)::
+The smallest number of items that can be ordered (most often 1).
+
+Maximum order quantity (MaximumOrderQuantity)::
+The largest number of items that can be ordered (most often unlimited).
+
+Packed quantity (Item/PackQuantity)::
+Number of items on next lower level, e.g. number of Consumer units in a Trading unit.
+
+Consumable unit quantity (Item/PackSizeNumeric)::
+Number of Consumer items in the orderable unit. E.g. number of bottles on a Pallet.
+
+Item quantity for component related item(ComponentRelatedItem/Quantity)::
+Quantity of the related component.
+****

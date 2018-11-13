@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+//= Item
+
+.UBL example of item
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=Certificate]
+----
