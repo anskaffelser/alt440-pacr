@@ -35,12 +35,12 @@
             <Name>Transaction identifier</Name>
             <Description>An identifier for this pre-award catalogue request document that allows referencing</Description>
             
-          <!--  <Attribute>
+            <Attribute>
                 <Term>schemeVersionID</Term>
                 <Name>Catalogue version</Name>
                 <Description>The version number of this catalogue request</Description>
                 <Value type="EXAMPLE">2.1</Value>
-            </Attribute>-->
+            </Attribute>
             
             <Value type="EXAMPLE">Transaction-02</Value>
         </Element>
@@ -74,12 +74,12 @@
                 <Name>Economic operator electronic address identifier</Name>
                 <Description>Electronic address of the economic operator.</Description>
                 
-             <!--   <Attribute>
+                <Attribute>
                     <Term>schemeID</Term>
                     <Name>Scheme identifier for receiver party electronic address</Name>
                     <Reference type="CODE_LIST">EAID</Reference>
                     <Value type="EXAMPLE">0192</Value>
-                </Attribute>-->
+                </Attribute>
                 
                 <Value type="EXAMPLE">64372999901</Value>
             </Element>
@@ -92,12 +92,12 @@
                     <Name>Economic operator identifier</Name>
                     <Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
                
-                   <!-- <Attribute usage="optional">
+                    <Attribute usage="optional">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier for receiver party identification</Name>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0192</Value>
-                    </Attribute>-->
+                    </Attribute>
                     
                     <Value type="EXAMPLE">12324</Value>
                 </Element>
@@ -232,12 +232,12 @@
                 <Name>Contracting body electronic address identifier</Name>
                 <Description>Electronic address of the contracting body.</Description>
                 
-                <!--<Attribute>
+                <Attribute>
                     <Term>schemeID</Term>
                     <Name>Scheme identifier for provider party electronic address</Name>
                     <Reference type="CODE_LIST">EAID</Reference>
                     <Value type="EXAMPLE">0192</Value>
-                </Attribute>-->
+                </Attribute>
                 
                 <Value type="EXAMPLE">74300020004</Value>
             </Element>
@@ -251,12 +251,12 @@
                     <Description>The national identifier of a contracting body as it is legally registered
                         (e.g. VAT identification, such as KBO).</Description>
                     
-                   <!-- <Attribute usage="optional">
+                    <Attribute usage="optional">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier for provider party identification</Name>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0192</Value>
-                    </Attribute>-->
+                    </Attribute>
                     <Value type="EXAMPLE">12345</Value>
                 </Element>
             </Element>
