@@ -16,4 +16,16 @@ _SOURCE: CWA 17028-402:2016, definition 3.2_
 Post-award catalogue::
 A post-award catalogue is a catalogue used by an economic operator to provide the information in the post-award phase, i.e., to provide the information necessary for a placing an order for requested items with an economic operator. +
 A post-award catalogue might be based on a pre-award catalogue as well as based on a framework agreement or an agreement from a tender.
+
+Catalogue provider::
+The party that sends the catalogue.
+
+Receiver::
+The party that receives the catalogue.
+
+Supplier::
+The party that provides the items specified in the catalogue.
+
+Customer::
+The party that might order from the catalogue.
 ****
