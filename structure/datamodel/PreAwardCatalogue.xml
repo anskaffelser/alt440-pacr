@@ -110,7 +110,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
                 <Name>Contract identifier</Name>
-                <Description>Normally not used in preaward catalogues, but might be used in re-opening of Tender, DPS etc.</Description>
+                <Description>Normally not used in pre-award catalogues, but might be used in re-opening of Tender, DPS etc.</Description>
             </Element>
 
             <Element cardinality="0..1">
