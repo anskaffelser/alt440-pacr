@@ -29,7 +29,7 @@ The following diagram illustrates the parties and roles involved in the Pre-Awar
 image::images/rolediagram.png[align="center",1200, 800]
 
 {empty} +
-{empty} +
+
 
 == Quantities and Units
 

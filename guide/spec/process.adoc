@@ -1,8 +1,11 @@
 
 = The Pre-Award Catalogue and Catalogue Request Process and Typical Use Cases
 
+{empty} +
 
 == Pre-Award Catalogue
+
+{empty} +
 
 === Process Diagram
 
@@ -10,6 +13,8 @@ The following diagram illustrates the basic EHF Pre-Award Catalogue process.
 
 .EHF Pre-Award Catalogue process.
 image::images/catalogueDiagram.png[align="center",900,900]
+
+{empty} +
 
 === Use Case
 
@@ -30,12 +35,16 @@ The central unit import the catalogue into their catalogue tool and check the qu
 
 == Pre-Award Catalogue Request
 
+{empty} +
+
 === Process Diagram
 
 The following diagram illustrates the basic EHF Pre-Award Catalogue Request process.
 
 .EHF Pre-Award Catalogue Request process.
 image::images/catalogueRequestDiagram.png[align="center",900,900]
+
+{empty} +
 
 === Use Cases
 
