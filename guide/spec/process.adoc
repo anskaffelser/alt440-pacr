@@ -9,7 +9,7 @@
 The following diagram illustrates the basic EHF Pre-Award Catalogue process.
 
 .EHF Pre-Award Catalogue process.
-image::images/catalogueDiagram.png[align="center",800,800]
+image::images/catalogueDiagram.png[align="center",900,900]
 
 === Use Case
 
@@ -35,7 +35,7 @@ The central unit import the catalogue into their catalogue tool and check the qu
 The following diagram illustrates the basic EHF Pre-Award Catalogue Request process.
 
 .EHF Pre-Award Catalogue Request process.
-image::images/catalogueRequestDiagram.png[align="center"]
+image::images/catalogueRequestDiagram.png[align="center",900,900]
 
 === Use Cases
 
