@@ -160,6 +160,7 @@
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country Code</Name>
                         <Description>A code that identifies the country.</Description>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">DK</Value>
                     </Element>
 
@@ -458,10 +459,7 @@
                     <Term>cbc:MinimumQuantity</Term>
                     <Name>Minimum quantity</Name>
                     <Description>The minimum quantity for this item request/location. To specify an exact quantity, use the same quantity in both minimum and maximum quantity.</Description>
-                   
-                    <Attribute>
-                        
-                    </Attribute>
+             
                     <Value type="EXAMPLE">2 rooms</Value>
                     
                 </Element>
