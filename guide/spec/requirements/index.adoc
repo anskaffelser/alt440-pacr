@@ -4,4 +4,6 @@
 
 include::request-req.adoc[]
 
+include::req.adoc[]
+
 :leveloffset: -1
