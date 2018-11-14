@@ -115,3 +115,4 @@
 |It shall be possible to specify a range of allowed values for an item property. In order to allow the supplier to offer only values in the range the contracting body needs (e.g. for a RAM memory the contracting body needs values of 1, 2 or 3 GB and no other values, for a maintenance service the action is request within 1 day). The values information allows also a validation check with respect to the offer of the economic operator.
 |tir-406
 |An item property might be described using free text.
+|===
