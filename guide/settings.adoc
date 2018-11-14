@@ -1,7 +1,7 @@
 :lang: en
 
 
-:doctitle: Pre-Award Catalogue and Request
+:doctitle: EHF Pre-Award Catalogue and Catalogue Request
 
 :revision: x.x.x
 :shared-dir: shared

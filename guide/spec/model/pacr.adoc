@@ -467,7 +467,7 @@ The country where the party
 |Item property request
 |	Additional item property
 |A requested property of an requested item.
-A property is describes a characteristic of an item, e.g., the lenght, width and height of an item.
+A property describes a characteristic of an item, e.g., the length, width and height of an item.
 |Class
 |
 |

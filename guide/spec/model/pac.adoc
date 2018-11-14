@@ -21,7 +21,7 @@
 |1..1
 |Catalogue identifier
 |The identifier that enables referencing of the document instance for various purposes including referencing between transactions that are part of the same process.
-An catalogue instance must contain an identifier.
+A catalogue instance must contain an identifier.
 |
 
 |0..1
@@ -559,7 +559,7 @@ Identifies the production batch that the item(s) listed in the catalogue line we
 |0..1
 |Item dimension description
 |Textual description of the item's dimensions.
-Used if the dimension oft he item cannot be described using standardized properties, e.g., length, height or width.
+Used if the dimension of the item cannot be described using standardized properties, e.g., length, height or width.
 See also the Guideline on Usage of Classification Systems for using standardized properties.
 |
 
@@ -610,12 +610,12 @@ See also the Guideline on Usage of Classification Systems for using standardized
 
 |0..n
 |Item means of proof
-|A means of proof according to to Directives 2014/24/EU.
+|A means of proof according to Directives 2014/24/EU.
 |Class
 
 |1..1
-|Item means of proof idenifier
-|A unique identifier being unique in a transcaction for a Item means of proof
+|Item means of proof identifier
+|A unique identifier being unique in a transcaction for a Item means of proof.
 |Identifier
 
 |1..1
@@ -625,12 +625,12 @@ See also the Guideline on Usage of Classification Systems for using standardized
 
 |0..n
 |Item means of proof name
-|Name of a item means of proof
+|Name of an item means of proof.
 |Text
 
 |0..1
 |Item means of proof value
-|Name of a item means of proof
+|Value of an item means of proof.
 |Text
 
 |0..n
@@ -683,7 +683,7 @@ May not be relevant when properties are descriptive.
 
 |0..1
 |Item property classification code
-|Code for the item property according to a property code system
+|Code for the item property according to a property code system.
 |Code
 
 |0..n
@@ -699,7 +699,7 @@ The main image for the item
 
 |0..n
 |Attachment description
-|A short description of the attached document
+|A short description of the attached document.
 |Text
 
 |0..1
