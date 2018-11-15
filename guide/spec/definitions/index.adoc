@@ -24,10 +24,10 @@ Catalogue receiver::
 The party that receives the catalogue.
 
 Supplier::
-The party that provides the items specified in the catalogue.
+The supplier is the legal person or organization who provides a product, service or works. Examples of supplier roles are seller, consignor, creditor and economic operator.
 
 Customer::
-The party that might order from the catalogue.
+The customer is the legal person or organization who is in demand of a product, service or works. Examples of customer roles are buyer, consignee, debtor and contracting body.
 
 Buyer::
 The buyer is the legal person or organization acting on behalf of the customer and who buys or purchases the goods or services.
