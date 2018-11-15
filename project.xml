@@ -24,7 +24,10 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/icd.xml</Path>
     </Resource>
-  
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/eaid.xml</Path>
+    </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
