@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+//= Provider party
+
+.UBL example of certificate
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogueRequest-example.xml[tags=Certificate-Request]
+----

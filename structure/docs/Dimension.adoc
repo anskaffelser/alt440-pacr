@@ -2,7 +2,7 @@ include::guide/settings.adoc[]
 
 //= Dimension
 
-.UBL example of item
+.UBL example of dimension
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=Dimension]

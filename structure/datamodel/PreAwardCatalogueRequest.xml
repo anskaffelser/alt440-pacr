@@ -15,6 +15,13 @@
         <Term>ubl:CatalogueRequest</Term>
 
         <Element>
+            <Term>cbc:UBLVersionID</Term>
+            <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of
+                the elements that might be encountered in the current instance.</Description>
+            <Value type="FIXED">2.2</Value>
+        </Element>
+
+        <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identifier</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic
@@ -76,7 +83,7 @@
 
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
-                <Name>Reciever party/Economic operator electronic address identifier</Name>
+                <Name>Receiver party/Economic operator electronic address identifier</Name>
                 <Description>Electronic address of the economic operator.</Description>
                 <DataType>Identifier</DataType>
                 
@@ -92,6 +99,7 @@
 
             <Element>
                 <Term>cac:PartyIdentification</Term>
+                <Name>Party identification</Name>
                 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -112,6 +120,8 @@
 
             <Element>
                 <Term>cac:PartyName</Term>
+                <Name>Party name</Name>
+
               <Element>
                     <Term>cbc:Name</Term>
                     <Name>Receiver/Economic operator name</Name>
@@ -152,7 +162,6 @@
 
 
             <Include>part/contact.xml</Include>
-            
 
         </Element>
 
@@ -181,6 +190,7 @@
 
             <Element>
                 <Term>cac:PartyIdentification</Term>
+                <Name>Party identification</Name>
 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -201,6 +211,7 @@
 
             <Element>
                 <Term>cac:PartyName</Term>
+                <Name>Party name</Name>
 
                 <Element>
                     <Term>cbc:Name</Term>
@@ -383,8 +394,7 @@
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Main street 3</Value>
                     </Element>
-                    
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:AdditionalStreetName</Term>
                         <Name>Address line 2</Name>
@@ -443,8 +453,9 @@
                     <Element>
                         <Term>cbc:PriceAmount</Term>
                         <Name>Price amount</Name>
-                        <Description>The mimimum price (ABG) or the maximum price (NE), according to the corresponding price type code</Description>
+                        <Description>The minimum price (ABG) or the maximum price (NE), according to the corresponding price type code</Description>
                         <DataType>Price amount</DataType>
+
                         <Attribute>
                             <Term>currencyID</Term>
                             <Name>Currency identifier</Name>
@@ -454,9 +465,7 @@
                         </Attribute>
                       
                         <Value type="EXAMPLE">200.00</Value>
-                        
                     </Element>
-                    
 
                     <Element>
                         <Term>cbc:PriceTypeCode</Term>
@@ -467,13 +476,11 @@
                         <Value type="EXAMPLE">NE</Value>
                     </Element>
 
-          
                 </Element>
             </Element>
 
 
             <Element>
-
                 <Term>cac:Item</Term>
                 <Name>Item request</Name>
                 <Property key="doc">structure/docs/Item-Request.adoc</Property>
@@ -522,6 +529,7 @@
                         <Element>
                             <Term>cac:ExternalReference</Term>
                             <Name>External reference</Name>
+
                             <Element>
                                 <Term>cbc:URI</Term>
                                 <Name>External document URI</Name>
@@ -551,8 +559,6 @@
                                 <Description>The file name of the document.</Description>
                                 <DataType>Text</DataType>
                             </Element>
-                            
-                         
                         </Element>
                     </Element>
 
@@ -589,13 +595,12 @@
                     </Element>
                 </Element>
                 
-                <Element cardinality="0..n"> 
-                    
+                <Element cardinality="0..n">
                     <Term>cac:AdditionalItemProperty</Term>
                     <Name>Requested item property and requested item information</Name>
-                    <Description>This element is used to provide information on both requested item properies and requested item information. The element cbc:NameCode is used to specify if the information in this element repetition is a property or an information.</Description>
+                    <Description>This element is used to provide information on both requested item properies and requested item information.
+                        The element cbc:NameCode is used to specify if the information in this element repetition is a property or an information.</Description>
                     <Property key="doc">structure/docs/AdditionalItemProperty-Request.adoc</Property>
-                    
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -621,14 +626,12 @@
                         <Value type="EXAMPLE">PROP</Value>
                     </Element>
 
-
                     <Element cardinality="0..1">
                         <Term>cbc:Value</Term>
                         <Name>Requested item property value or requested item information reference</Name>
                         <Description>The value of the item property.</Description>
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Red</Value>
-                        
                     </Element>
 
                     <Element cardinality="0..1">
@@ -649,7 +652,6 @@
                             <Reference type="CODE_LIST">UNECERec21</Reference>
                             <Value type="EXAMPLE">C62</Value>
                         </Attribute>
-                        
                     </Element>
                     
                     <Element cardinality="0..1">
@@ -658,10 +660,8 @@
                         <Description>Free text description of the property</Description>
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Red</Value>
-                        
                     </Element>
-                    
-                    
+
                     <Element>
                         <Term>cbc:ImportanceCode</Term>
                         <Name>Property or Information request relevance</Name>
@@ -700,7 +700,6 @@
                             <Reference type="CODE_LIST">relevance</Reference>
                             <Value type="EXAMPLE">I</Value>
                         </Element>
-                        
                     </Element>
                     
                     
@@ -727,98 +726,99 @@
 
                 </Element>
            
-            <Element cardinality="0..n">
-                <Term>cac:Certificate</Term>
-                <Name>Requested item requirements</Name>
-                <Description>A functional requirement on an item that is not related to a property of the item and has to be proven by a 
-                    specification, label, test report or any other means of proof.</Description>
-                
-                <Element>
-                    <Term>cbc:ID</Term>
-                    <Name>Item requirement identifier</Name>
-                    <Description>An identifier of the item requirement that allows referencing the item requirement.</Description>
-                    <DataType>Identifier</DataType>
-                    <Value type="EXAMPLE">1</Value>
-                </Element>
-                
-                <Element>
-                    <Term>cbc:CertificateTypeCode</Term>
-                    <Name>Item requirement code</Name>
-                    <Description>A code specifying the requirement for the item.</Description>
-                    <DataType>Code</DataType>
-                    <Value type="EXAMPLE">ECO</Value>
-                </Element>
-                
-                <Element>
-                    <Term>cbc:CertificateType</Term>
-                    <Name>Item requirement name</Name>
-                    <Description>The name of the requirement for the requested item.</Description>
-                    <DataType>Text</DataType>
-                    <Value type="EXAMPLE">Environmental</Value>
-                </Element>
-           
-                <Element>
-                    <Term>cbc:Remarks</Term>
-                    <Name>Item requirement relevance</Name>
-                    <Description>States whether the property described is Mandatory (M), Optional (O), Forbidden (F), For information (I).</Description>
-                    <DataType>Code</DataType>
-                    <Reference type="CODE_LIST">relevance</Reference>
-                    <Value type="EXAMPLE">I</Value>
-                </Element>
-                
-                <Element>
-                    <Term>cac:IssuerParty</Term>
-                    <Name>Issuer party</Name>
-                    
+                <Element cardinality="0..n">
+                    <Term>cac:Certificate</Term>
+                    <Name>Requested item requirements</Name>
+                    <Description>A functional requirement on an item that is not related to a property of the item and has to be proven by a
+                        specification, label, test report or any other means of proof.</Description>
+                    <Property key="doc">structure/docs/Certificate-Request.adoc</Property>
+
                     <Element>
-                        <Term>cac:PartyName</Term>
-                        <Name>Party name</Name>
-                        
-                        <Element>
-                            <Term>cbc:Name</Term>
-                            <Name>Issuer party name</Name>
-                            <Description>The name of the issuer of the certificate, label or other means of proof</Description>
-                            <DataType>Text</DataType>
-                        </Element>
-                        
+                        <Term>cbc:ID</Term>
+                        <Name>Item requirement identifier</Name>
+                        <Description>An identifier of the item requirement that allows referencing the item requirement.</Description>
+                        <DataType>Identifier</DataType>
+                        <Value type="EXAMPLE">1</Value>
                     </Element>
-                    
-                </Element>
-                
-               <Element cardinality="0..1">
-                   <Term>cac:DocumentReference</Term>
-                   <Name>Document reference</Name>
-                   
-                   <Element>
-                       <Term>cbc:ID</Term>
-                       <Name>Attachment identifier</Name>
-                       <Description>The identifier for the attachment</Description>
-                       <DataType>Identifier</DataType>
-                       <Value type="EXAMPLE">123</Value>
-                       
-                   </Element>
-                   
-                   <Element>
-                       <Term>cac:Attachment</Term>
-                       <Name>Attachment</Name>
-                                       
+
+                    <Element>
+                        <Term>cbc:CertificateTypeCode</Term>
+                        <Name>Item requirement code</Name>
+                        <Description>A code specifying the requirement for the item.</Description>
+                        <DataType>Code</DataType>
+                        <Value type="EXAMPLE">ECO</Value>
+                    </Element>
+
+                    <Element>
+                        <Term>cbc:CertificateType</Term>
+                        <Name>Item requirement name</Name>
+                        <Description>The name of the requirement for the requested item.</Description>
+                        <DataType>Text</DataType>
+                        <Value type="EXAMPLE">Environmental</Value>
+                    </Element>
+
+                    <Element>
+                        <Term>cbc:Remarks</Term>
+                        <Name>Item requirement relevance</Name>
+                        <Description>States whether the property described is Mandatory (M), Optional (O), Forbidden (F), For information (I).</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="CODE_LIST">relevance</Reference>
+                        <Value type="EXAMPLE">I</Value>
+                    </Element>
+
+                    <Element>
+                        <Term>cac:IssuerParty</Term>
+                        <Name>Issuer party</Name>
+
+                        <Element>
+                            <Term>cac:PartyName</Term>
+                            <Name>Party name</Name>
+
+                            <Element>
+                                <Term>cbc:Name</Term>
+                                <Name>Issuer party name</Name>
+                                <Description>The name of the issuer of the certificate, label or other means of proof</Description>
+                                <DataType>Text</DataType>
+                            </Element>
+
+                        </Element>
+
+                    </Element>
+
+                   <Element cardinality="0..1">
+                       <Term>cac:DocumentReference</Term>
+                       <Name>Document reference</Name>
+
                        <Element>
-                           <Term>cac:ExternalReference</Term>
-                           <Name>External reference</Name>
-                           
+                           <Term>cbc:ID</Term>
+                           <Name>Attachment identifier</Name>
+                           <Description>The identifier for the attachment</Description>
+                           <DataType>Identifier</DataType>
+                           <Value type="EXAMPLE">123</Value>
+
+                       </Element>
+
+                       <Element>
+                           <Term>cac:Attachment</Term>
+                           <Name>Attachment</Name>
+
                            <Element>
-                               <Term>cbc:URI</Term>
-                               <Name>Item requirement reference</Name>
-                               <Description>A reference to an external specification of the item requirement.</Description>
-                               <DataType>Text</DataType>
-                               <Value type="EXAMPLE">www.eco.np/labels</Value>
+                               <Term>cac:ExternalReference</Term>
+                               <Name>External reference</Name>
+
+                               <Element>
+                                   <Term>cbc:URI</Term>
+                                   <Name>Item requirement reference</Name>
+                                   <Description>A reference to an external specification of the item requirement.</Description>
+                                   <DataType>Text</DataType>
+                                   <Value type="EXAMPLE">www.eco.np/labels</Value>
+                               </Element>
+
                            </Element>
-                           
                        </Element>
                    </Element>
-               </Element>
 
-            </Element>
+                </Element>
             
             </Element>
 

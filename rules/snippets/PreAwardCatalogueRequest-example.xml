@@ -13,7 +13,6 @@
     <cbc:ID>8a2cbf-9b7b-4f13-8490-fr723</cbc:ID>
     <cbc:IssueDate>2018-11-15</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
-    <cbc:note>Payment deadline 2018-12-01.</cbc:note>
 
     <!-- tag::ReceiverParty-Request[] -->
     <cac:ReceiverParty>
@@ -59,24 +58,22 @@
             <cbc:Name>Provider name</cbc:Name>
         </cac:PartyName>
         <cac:PostalAddress>
+            <cbc:StreetName>Main street 3</cbc:StreetName>
+            <cbc:AdditionalStreetName>Building C</cbc:AdditionalStreetName>
             <cbc:CityName>London</cbc:CityName>
             <cbc:PostalZone>AN224QH</cbc:PostalZone>
             <cbc:CountrySubentityCode>X</cbc:CountrySubentityCode>
-            <cac:AddressLine>
-                <cbc:Line>Main street 5</cbc:Line>
-            </cac:AddressLine>
             <cac:Country>
                 <cbc:IdentificationCode listID="ISO3166-1_Alpha2">GB</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
-        <cac:PhysicalLocation>
-            <cbc:LocationTypeCode listID="ISO3166-1_Alpha2">NO</cbc:LocationTypeCode>
-            <cac:Address>
+        <cac:PartyLegalEntity>
+            <cac:RegistrationAddress>
                 <cac:Country>
-                    <cbc:IdentificationCode>546247</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>GB</cbc:IdentificationCode>
                 </cac:Country>
-            </cac:Address>
-        </cac:PhysicalLocation>
+            </cac:RegistrationAddress>
+        </cac:PartyLegalEntity>
         <cac:Contact>
             <cbc:Name>Hans Eriksson</cbc:Name>
             <cbc:Telephone>98415274</cbc:Telephone>
@@ -86,11 +83,14 @@
     <!-- end::ProviderParty-Request[] -->
 
 
-    <!-- NEED INPUT HERE!! -->
+    <cac:RequestCatalogueReference>
+        <cbc:ID>123456</cbc:ID>
+        <cbc:PreviousVersionID>1.0</cbc:PreviousVersionID>
+    </cac:RequestCatalogueReference>
 
-    <cac:RequestCatalogueReference></cac:RequestCatalogueReference>
-
-    <cac:ReferencedContract></cac:ReferencedContract>
+    <cac:ReferencedContract>
+        <cbc:ID>1234-2018</cbc:ID>
+    </cac:ReferencedContract>
 
 
     <cac:CatalogueRequestLine>
@@ -98,15 +98,14 @@
         <!-- tag::LineValidityPeriod-Request[] -->
         <cac:LineValidityPeriod>
             <cbc:StartDate>2017-05-15</cbc:StartDate>
-            <cbc:StartTime>09:00:00</cbc:StartTime>
             <cbc:EndDate>2017-05-17</cbc:EndDate>
-            <cbc:EndTime>¨15:00:00</cbc:EndTime>
-            <cbc:Description>Booking hotel room for two days.</cbc:Description>
         </cac:LineValidityPeriod>
         <!-- end::LineValidityPeriod-Request[] -->
 
         <!-- tag::RequiredItemLocationQuantity-Request[] -->
         <cac:RequiredItemLocationQuantity>
+            <cbc:MinimumQuantity>2</cbc:MinimumQuantity>
+            <cbc:MaximumQuantity>4</cbc:MaximumQuantity>
             <!-- tag::ApplicableTerritoryAddress-Request[] -->
             <cac:ApplicableTerritoryAddress>
                 <cbc:StreetName>Tværgyden 40</cbc:StreetName>
@@ -134,16 +133,6 @@
             <cbc:Description>We need black Apple iPhone 7 with 32GB.</cbc:Description>
             <cbc:Name>iPhone 7</cbc:Name>
 
-            <!-- tag::CatalogueDocumentReference-Request[] -->
-            <cac:CatalogueDocumentReference>
-                <cac:Attachment>
-                    <cac:ExternalReference>
-                        <cbc:URI>http://www.example.com/apple/iPhone/7/index.html</cbc:URI>
-                    </cac:ExternalReference>
-                </cac:Attachment>
-            </cac:CatalogueDocumentReference>
-            <!-- end::CatalogueDocumentReference-Request[] -->
-
             <!-- tag::ItemSpecificationDocumentReference-Request[] -->
             <cac:ItemSpecificationDocumentReference>
                 <cbc:ID>7</cbc:ID>
@@ -151,12 +140,11 @@
                 <cac:Attachment>
                     <cac:ExternalReference>
                         <cbc:URI>http://www.example.com/apple/iPhone/7/stuff/index.html</cbc:URI>
+                        <cbc:DocumentHash>Need to be 32 GB, black with special glasses.</cbc:DocumentHash>
+                        <cbc:HashAlgorithmMethod>6564135dghaha</cbc:HashAlgorithmMethod>
+                        <cbc:FileName>iPhone7-request</cbc:FileName>
                     </cac:ExternalReference>
                 </cac:Attachment>
-                <cac:ResultOfVerification>
-                    <cbc:ValidationResultCode></cbc:ValidationResultCode> <!-- What to write here? -->
-                    <cbc:ValidateProcess>1234-abc</cbc:ValidateProcess>
-                </cac:ResultOfVerification>
             </cac:ItemSpecificationDocumentReference>
             <!-- end::ItemSpecificationDocumentReference-Request[] -->
 
@@ -169,20 +157,50 @@
             <!-- tag::AdditionalItemProperty-Request[] -->
             <cac:AdditionalItemProperty>
                 <cbc:ID>254</cbc:ID>
-                <cbc:Name>Carolina Dickmerk</cbc:Name>
-                <cbc:NameCode name="AA" listSchemeURI="X">42</cbc:NameCode> <!-- Any idea? -->
+                <cbc:Name>Mobilephone</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode> <!-- Codelist property -->
                 <cbc:TestMethod>Test the item.</cbc:TestMethod>
                 <cbc:Value>124</cbc:Value>
                 <cbc:ValueQuantity unitCode="1224">74</cbc:ValueQuantity>
-                <cbc:ImportanceCode>mandatory</cbc:ImportanceCode>
+                <cbc:ValueQualifier>Black</cbc:ValueQualifier>
+                <cbc:ImportanceCode>Mandatory</cbc:ImportanceCode>
+                <cac:ItemPropertyGroup>
+                    <cbc:ID>46468</cbc:ID>
+                    <cbc:Name>iPhone</cbc:Name>
+                    <cbc:ImportanceCode>I</cbc:ImportanceCode>
+                </cac:ItemPropertyGroup>
                 <cac:ItemPropertyRange>
-                    <cbc:MinimumValue>2</cbc:MinimumValue>
-                    <cbc:MaximumValue>52</cbc:MaximumValue>
+                    <cbc:MinimumValue>20</cbc:MinimumValue>
+                    <cbc:MaximumValue>74</cbc:MaximumValue>
                 </cac:ItemPropertyRange>
             </cac:AdditionalItemProperty>
             <!-- end::AdditionalItemProperty-Request[] -->
         </cac:Item>
         <!-- end::Item-Request[] -->
+
+        <!-- tag::Certificate-Request[] -->
+        <cac:Certificate>
+            <cbc:ID>111</cbc:ID>
+            <cbc:CertificateTypeCode>ECO</cbc:CertificateTypeCode>
+            <cbc:CertificateType>Environmental</cbc:CertificateType>
+            <cbc:Remarks>I</cbc:Remarks>
+            <cac:IssuerParty>
+                <cac:PartyName>
+                    <cbc:Name>Nordic Ecolabelling</cbc:Name>
+                </cac:PartyName>
+            </cac:IssuerParty>
+            <cac:DocumentReference>
+                <cbc:ID>23143</cbc:ID>
+                <cac:Attachment>
+                    <cac:ExternalReference>
+                        <cbc:URI>http://www.environmental.org</cbc:URI>
+                    </cac:ExternalReference>
+                </cac:Attachment>
+
+            </cac:DocumentReference>
+        </cac:Certificate>
+        <!-- end::Certificate-Request[] -->
+
 
     </cac:CatalogueRequestLine>
 

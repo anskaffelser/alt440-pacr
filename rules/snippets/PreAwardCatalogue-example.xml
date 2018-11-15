@@ -301,7 +301,7 @@
                 <cbc:ID>1</cbc:ID>
                 <cbc:CertificateTypeCode>NEO</cbc:CertificateTypeCode>
                 <cbc:CertificateType>Nordic Ecolabel</cbc:CertificateType>
-                <cbc:Remarks>The value...</cbc:Remarks>
+                <cbc:Remarks>I</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>Nordic Ecolabelling</cbc:Name>
