@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1" cardinality="0..1">
+    <Term>cac:PostalAddress</Term>
+    <Name>Postal address</Name>
+    
+    <Element cardinality="0..1">
+        <Term>cbc:StreetName</Term>
+        <Name>Address line 1</Name>
+        <Description>The main line in an address.</Description>
+        <DataType>Text</DataType>
+        <Value type="EXAMPLE">Heimdalsgate 3</Value>
+    </Element>
+    
+    <Element cardinality="0..1">
+        <Term>cbc:AdditionalStreetName</Term>
+        <Name>Address line 2</Name>
+        <Description>An additional address line in an address that can be used to give further details
+            supplementing the main line.</Description>
+        <DataType>Text</DataType>
+    </Element>
+    
+    <Element cardinality="0..1">
+        <Term>cbc:CityName</Term>
+        <Name>City</Name>
+        <Description>The common name of a city where the address is located.</Description>
+        <DataType>Text</DataType>
+        <Value type="EXAMPLE">Oslo</Value>
+    </Element>
+    
+    <Element cardinality="0..1">
+        <Term>cbc:PostalZone</Term>
+        <Name>Post code</Name>
+        <Description>The identifier for an addressable group of properties according to the relevant
+            postal service, such as a ZIP code or post code.</Description>
+        <DataType>Text</DataType>
+        <Value type="EXAMPLE">0948</Value>
+    </Element>
+    
+    <Element cardinality="0..1">
+        <Term>cbc:CountrySubentityCode</Term>
+        <Name>Country subdivision code</Name>
+        <Description>A code that identifies a subdivision of a country, e.g., a province or district.</Description>
+        <DataType>Text</DataType>
+    </Element>
+    
+    <Element>
+        <Term>cac:Country</Term>
+        <Name>Country</Name>
+        
+        <Element>
+            <Term>cbc:IdentificationCode</Term>
+            <Name>Country Code</Name>
+            <Description>A code that identifies the country.</Description>
+            <DataType>Code</DataType>
+            <Reference type="CODE_LIST">ISO3166</Reference>
+            <Value type="EXAMPLE">DK</Value>
+        </Element>
+        
+    </Element>
+</Element>
