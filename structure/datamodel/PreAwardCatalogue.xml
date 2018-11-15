@@ -1049,10 +1049,9 @@
                     <Element cardinality="0..n">
                         <Term>cac:ValidityPeriod</Term>
                         <Name>Price validity period</Name>
-                        <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
-
                         <Reference type="RULE">EUGEN-T68-R014</Reference>
                         <Reference type="RULE">EUGEN-T68-R015</Reference>
+                        <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
 
                         <Element>
                             <Term>cbc:StartDate</Term>
@@ -1609,9 +1608,7 @@
                 <Element cardinality="0..n">
                     <Term>cac:Dimension</Term>
                     <Name>Handling unit dimensions</Name>
-                    <Property key="doc">structure/docs/Dimension.adoc</Property>
-                    <Description>
-                        The element is used for describing the various dimensions of the handling
+                    <Description>The element is used for describing the various dimensions of the handling
                         unit. The element cbc:AttributeID is used to define which dimension is
                         described by the dimension element. The following mapping applies for the
                         cbc:AttributeID: HT = Handling unit height, LN = Handling unit length,
@@ -1619,18 +1616,22 @@
                         TC = Handling unit minimum/maximum temperature,
                         AAO = Handling unit minimum/maximum storage humidity
                     </Description>
+                    <Property key="doc">structure/docs/Dimension.adoc</Property>
+
                     <Element>
                         <Term>cbc:AttributeID</Term>
                         <Name>Attribute identifier</Name>
                         <Description>An identifier for the attribute to which the measure applies.</Description>
                         <Reference type="CODE_LIST">UNCL6313</Reference>
-                        <Value type="FIXED">HT or LN or WD or AAB or TC or AAO</Value>
+
                         <Attribute>
                             <Term>Scheme identifier</Term>
                             <Name>schemeID</Name>
                             <Value type="FIXED">UNCL6313</Value>
                         </Attribute>
+                        <Value type="FIXED">HT or LN or WD or AAB or TC or AAO</Value>
                     </Element>
+
                     <Element cardinality="0..1">
                         <Term>cbc:Measure</Term>
                         <Name>
@@ -1657,7 +1658,8 @@
                         </Attribute>
                         <Value type="EXAMPLE">3</Value>
                     </Element>
-                <Element cardinality="0..1">
+
+                    <Element cardinality="0..1">
                         <Term>cbc:MinimumMeasure</Term>
                         <Name>Handling unit minimum storage temperature</Name>
                         <Description>
@@ -1679,6 +1681,7 @@
                         </Attribute>
                         <Value type="EXAMPLE">10</Value>
                     </Element>
+
                     <Element cardinality="0..1">
                         <Term>cbc:MaximumMeasure</Term>
                         <Name>Handling unit maximum storage temperature</Name>

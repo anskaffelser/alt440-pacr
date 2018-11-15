@@ -135,18 +135,15 @@
         <cbc:OrderableUnit>14</cbc:OrderableUnit> <!-- Codelist: UNECERec20-11e -->
         <cbc:ContentUnitQuantity>34</cbc:ContentUnitQuantity>
         <cbc:OrderQuantityIncrementNumeric>2</cbc:OrderQuantityIncrementNumeric>
-        <cbc:MinimumOrderQuantity>1</cbc:MinimumOrderQuantity>
-        <cbc:MaximumOrderQuantity>500</cbc:MaximumOrderQuantity>
+        <cbc:MinimumOrderQuantity>1</cbc:MinimumOrderQuantity> <!-- Codelist: UNECERec20-11e -->
+        <cbc:MaximumOrderQuantity>500</cbc:MaximumOrderQuantity> <!-- Codelist: UNECERec20-11e -->
         <cbc:WarrantyInformation>5 years warranty</cbc:WarrantyInformation>
         <cbc:PackLevelCode>IF</cbc:PackLevelCode> <!-- Codelist: UNECERec21-9e -->
 
         <!-- tag::LineValidityPeriod[] -->
         <cac:LineValidityPeriod>
             <cbc:StartDate>2018-10-20</cbc:StartDate>
-            <cbc:StartTime>12:55:00</cbc:StartTime>
             <cbc:EndDate>2018-10-30</cbc:EndDate>
-            <cbc:EndTime>23:42:00</cbc:EndTime>
-            <cbc:Description>Write something meaningful.</cbc:Description>
         </cac:LineValidityPeriod>
         <!-- end::LineValidityPeriod[] -->
 
@@ -164,12 +161,10 @@
         </cac:ComponentRelatedItem>
         <!-- end::ComponentRelatedItem[] -->
 
-   <!-- Include this as a tag notation or not ? -->
         <cac:ReplacedRelatedItem>
             <cbc:ID>AA</cbc:ID>
             <cbc:Quantity>16</cbc:Quantity>
         </cac:ReplacedRelatedItem>
-
 
         <!-- tag::ComplementaryRelatedItem[] -->
         <cac:ComplementaryRelatedItem>
@@ -179,19 +174,19 @@
         <!-- end::ComplementaryRelatedItem[] -->
 
 
-        <!-- Include this as a tag notation or not ? -->
         <cac:ReplacedRelatedItem>
             <cbc:ID>BB</cbc:ID>
             <cbc:Quantity>31</cbc:Quantity>
         </cac:ReplacedRelatedItem>
 
         <!-- tag::RequiredItemLocationQuantity[] -->
-        <!-- Include this as a tag notation or not ? -->
         <cac:RequiredItemLocationQuantity>
             <!-- tag::ApplicableTerritoryAddress[] -->
+            <cbc:MaximumQuantity>1</cbc:MaximumQuantity>
+            <cbc:MaximumQuantity>2</cbc:MaximumQuantity>
             <cac:ApplicableTerritoryAddress>
                 <cbc:StreetName>Via Goffredo Mameli 32</cbc:StreetName>
-                <cbc:AdditionalStreetName>Building 43A</cbc:AdditionalStreetName>
+                <cbc:AdditionalStreetName>Building A</cbc:AdditionalStreetName>
                 <cbc:CityName>Porchiano Del Monte</cbc:CityName>
                 <cbc:PostalZone>05022</cbc:PostalZone>
                 <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
@@ -204,7 +199,7 @@
             <!-- tag::Price[] -->
             <cac:Price>
                 <cbc:PriceAmount currencyID="EUR">120</cbc:PriceAmount>
-                <cbc:PriceTypeCode>CP</cbc:PriceTypeCode> <!-- Not sure, double check!! -->
+                <cbc:PriceTypeCode>CP</cbc:PriceTypeCode>
                 <cbc:OrderableUnitFactorRate>5</cbc:OrderableUnitFactorRate>
                 <cac:ValidityPeriod>
                     <cbc:StartDate>2018-10-20</cbc:StartDate>
@@ -218,20 +213,15 @@
             </cac:Price>
             <!-- end::Price[] -->
 
-            <!-- tag::DeliveryUnit[] -->
-            <cac:DeliveryUnit>
-                <cbc:BatchQuantity>10</cbc:BatchQuantity>
-                <cbc:ConsumerUnitQuantity>2</cbc:ConsumerUnitQuantity>
-            </cac:DeliveryUnit>
-            <!-- end::DeliveryUnit[] -->
-
         </cac:RequiredItemLocationQuantity>
         <!-- end::RequiredItemLocationQuantity[] -->
+
 
         <!-- tag::Item[] -->
         <cac:Item>
             <cbc:Description>The item is x size, and is powerful with...</cbc:Description>
-            <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric> <!-- Codelist: UNECERec20-11e -->
+            <cbc:PackQuantity>EA</cbc:PackQuantity> <!-- Codelist: UNECERec20-11e -->
+            <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric>
             <cbc:Name>ABC</cbc:Name>
             <cbc:Keyword>Pastilles</cbc:Keyword>
             <cbc:BrandName>Fisherman's friend</cbc:BrandName>
@@ -291,6 +281,7 @@
                 <cbc:ID>X4</cbc:ID>
                 <cbc:Name>Sugarfree fisherman's friend</cbc:Name>
                 <cbc:NameCode>21</cbc:NameCode> <!-- Need to ref. to codelist UNCL7081. Must include UNCL7081 in the codelist. -->
+                <cbc:Value>White</cbc:Value>
                 <cbc:ValueQuantity unitCodeListID="UNECERec20-11e">58</cbc:ValueQuantity> <!-- How to refer to the codelist UNECERec20-11e? -->
             </cac:AdditionalItemProperty>
             <!-- end::AdditionalItemProperty[] -->
@@ -300,14 +291,9 @@
                     <cbc:Name>Fisherman's for everyone ltd</cbc:Name>
                 </cac:PartyName>
             </cac:ManufacturerParty>
+
             <cac:ItemInstance>
-                <cbc:BestBeforeDate>2019-12-20</cbc:BestBeforeDate>
-                <cac:AdditionalItemProperty>
-                    <cbc:Name>Sugar rate</cbc:Name>
-                    <cac:RangeDimension>
-                        <cbc:Description>25 g per package, with 90g sugar.</cbc:Description>
-                    </cac:RangeDimension>
-                </cac:AdditionalItemProperty>
+                <cbc:BestBeforeDate>2019-12-20</cbc:BestBeforeDate>>
             </cac:ItemInstance>
 
             <!-- tag::Certificate[] -->
@@ -315,18 +301,15 @@
                 <cbc:ID>1</cbc:ID>
                 <cbc:CertificateTypeCode>NEO</cbc:CertificateTypeCode>
                 <cbc:CertificateType>Nordic Ecolabel</cbc:CertificateType>
+                <cbc:Remarks>The value...</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>Nordic Ecolabelling</cbc:Name>
                     </cac:PartyName>
                 </cac:IssuerParty>
                 <cac:DocumentReference>
-                    <cbc:DocumentTypeCode>Item_means_of_proof_reference</cbc:DocumentTypeCode>
-                    <cbc:ID>https://www.nordic-ecolabel.org/certification/regulations/</cbc:ID>
-                </cac:DocumentReference>
-                <cac:DocumentReference>
-                    <cbc:DocumentTypeCode>Item_requirement_reference</cbc:DocumentTypeCode>
-                    <cbc:ID>urn:sample:difi:pacr:aaaba1a2-d107-426d-8a64-698b678756d5:item-requirement:2</cbc:ID>
+                    <cbc:DocumentTypeCode>Item_means_of_proof_reference or Item_requirement_reference</cbc:DocumentTypeCode>
+                    <cbc:ID>http://www.nordic-ecolabel.org or urn:sample:difi:pacr:aaaba1a2-d107-426d-8a64-698b678756d5:item-requirement:2</cbc:ID>
                 </cac:DocumentReference>
             </cac:Certificate>
             <!-- end::Certificate[] -->
@@ -335,17 +318,6 @@
             <cac:Dimension>
                 <cbc:AttributeID schemeID="UNCL6313">HT</cbc:AttributeID>
                 <cbc:Measure unitCode="MTR" unitCodeListVersionID="UNECERec20">1</cbc:Measure>
-            </cac:Dimension>
-            <cac:Dimension>
-                <cbc:AttributeID schemeID="UNCL6313">LN</cbc:AttributeID>
-                <cbc:Measure unitCode="MTR" unitCodeListVersionID="UNECERec20">1.2</cbc:Measure>
-            </cac:Dimension>
-            <cac:Dimension>
-                <cbc:AttributeID schemeID="UNCL6313">WD</cbc:AttributeID>
-                <cbc:Measure unitCode="MTR" unitCodeListVersionID="UNECERec20">0.75</cbc:Measure>
-            </cac:Dimension>
-            <cac:Dimension>
-                <cbc:AttributeID schemeID="UNCL6313">TC</cbc:AttributeID>
                 <cbc:MinimumMeasure unitCode="CEL" unitCodeListVersionID="UNECERec20">10</cbc:MinimumMeasure>
                 <cbc:MaximumMeasure unitCode="CEL" unitCodeListVersionID="UNECERec20">30</cbc:MaximumMeasure>
             </cac:Dimension>
@@ -355,7 +327,6 @@
         <!-- end::Item[] -->
 
         <!-- tag::CallForTendersLineReference[] -->
-        <!-- Include this as a tag notation or not ? -->
         <cac:CallForTendersLineReference>
             <cbc:LineID>AA32</cbc:LineID>
         </cac:CallForTendersLineReference>
