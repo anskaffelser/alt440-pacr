@@ -15,19 +15,12 @@
         <Term>ubl:CatalogueRequest</Term>
 
         <Element>
-            <Term>cbc:UBLVersionID</Term>
-            <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of
-                the elements that might be encountered in the current instance.</Description>
-            <Value type="FIXED">2.2</Value>
-        </Element>
-
-        <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identifier</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic
                 content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:CatalogueRequest:2.0</Value>
+            <Value type="EXAMPLE">urn:fdc:difi.no:2017:ehf:CatalogueRequest:2.0</Value>
         </Element>
 
         <Element>
@@ -390,56 +383,71 @@
                     <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
                         <Name>Address line 1</Name>
-                        <Description>The main line in an address.</Description>
+                        <Description>The main address line in an address.</Description>
                         <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Main street 3</Value>
+                        <Value type="EXAMPLE">Main Street 1</Value>
                     </Element>
-
+                    
                     <Element cardinality="0..1">
                         <Term>cbc:AdditionalStreetName</Term>
                         <Name>Address line 2</Name>
-                        <Description>An additional address line in an address that can be used to give further details
-                            supplementing the main line</Description>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                         <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Building 32</Value>
+                        <Value type="EXAMPLE">Po Box 351</Value>
                     </Element>
                     
                     <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
-                        <Name>City</Name>
-                        <Description>The common name of a city where the address is located.</Description>
+                        <Name>City name</Name>
+                        <Description>The common name of the city, town or village, where the Seller address is located.</Description>
                         <DataType>Text</DataType>
+                        
                         <Value type="EXAMPLE">London</Value>
                     </Element>
                     
                     <Element cardinality="0..1">
                         <Term>cbc:PostalZone</Term>
                         <Name>Post code</Name>
-                        <Description>The identifier for an addressable group of properties according to the relevant
-                            postal service, such as a ZIP code or post code.</Description>
+                        <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                        </Description>
                         <DataType>Text</DataType>
-                        <Value type="EXAMPLE">AB119QN</Value>
+                        <Value type="EXAMPLE">W1G 8LZ</Value>
                     </Element>
                     
                     <Element cardinality="0..1">
-                        <Term>cbc:CountrySubentityCode</Term>
-                        <Name>Country subdivision code</Name>
-                        <Description>A code that identifies a subdivision of a country, e.,g., a province or district.</Description>
+                        <Term>cbc:CountrySubentity</Term>
+                        <Name>Country subdivision</Name>
+                        <Description>The subdivision of a country.</Description>
                         <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Bolton</Value>
+                        <Value type="EXAMPLE">Region A</Value>
+                    </Element>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cac:AddressLine</Term>
+                        <Name>ADDRESS LINE</Name>
+                        
+                        <Element>
+                            <Term>cbc:Line</Term>
+                            <Name>Address line 3</Name>
+                            <Description>An additional address line in an address that can be used to give further details supplementing the
+                                main line.
+                            </Description>
+                            <DataType>Text</DataType>
+                            <Value type="EXAMPLE">Building 23</Value>
+                        </Element>
                     </Element>
                     
                     <Element>
                         <Term>cac:Country</Term>
-                        <Name>Country</Name>
+                        <Name>COUNTRY</Name>
                         
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
-                            <Name>Country Code</Name>
-                            <Description>A code that identifies the country. Use the alpha-2 code as found in the codelist "ISO 3166"</Description>
-                            <DataType>Code</DataType>
+                            <Name>Country code</Name>
+                            <Description>A code that identifies the country.</Description>
+                            <DataType>Text</DataType>
                             <Reference type="CODE_LIST">ISO3166</Reference>
-                            <Value type="EXAMPLE">UK</Value>
+                            <Value type="EXAMPLE">GB</Value>
                         </Element>
                     </Element>
                 </Element>
@@ -501,7 +509,7 @@
                     <Value type="EXAMPLE">Samsung computer</Value>
                 </Element>
                 
-                <Element>
+                <Element cardinality="0..n">
                     <Term>cac:ItemSpecificationDocumentReference</Term>
                     <Name>Additional document reference</Name>
                     <Property key="doc">structure/docs/ItemSpecificationDocumentReference-Request.adoc</Property>
@@ -564,7 +572,7 @@
 
                 </Element>
 
-                <Element>
+                <Element cardinality="0..n">
                     <Term>cac:CommodityClassification</Term>
                     <Name>Commodity classification</Name>
                     <Description>A classification of this item according to a specific system for classifying commodities.</Description>
@@ -643,7 +651,7 @@
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Value quantity unit of measure</Name>
-                            <Description>The unit of measure that applies to the value quantity.
+                            <Description>The unit of measure that applfies to the value quantity.
                                 Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                                 The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                             </Description>
@@ -703,7 +711,7 @@
                     </Element>
                     
                     
-                    <Element>
+                    <Element cardinality="0..1">
                         <Term>cac:ItemPropertyRange</Term>
                         <Name>Item property range</Name>
                         
