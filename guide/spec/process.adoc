@@ -42,7 +42,7 @@ The central unit import the catalogue into their catalogue tool and check the qu
 The following diagram illustrates the basic EHF Pre-Award Catalogue Request process.
 
 .EHF Pre-Award Catalogue Request process.
-image::images/catalogueRequestDiagram.png[align="center",900,900]
+image::images/catalogueRequestDiagram1.png[align="center",900,900]
 
 {empty} +
 
