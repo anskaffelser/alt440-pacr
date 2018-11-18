@@ -30,9 +30,9 @@
 |tir-010
 |It shall be possible to state the issue time.
 |tir-011
-|A pre award catalogue request shall contain information on the contracting body.
+|A pre award catalogue request shall contain information on the contracting authority.
 |tir-012
-|#A pre award catalogue request shall contain information on the receiver (often the economic operator)#
+|A pre award catalogue request shall contain information on the receiver, often an economic operator.
 |tir-013
 |The receiver shall be identified with a name, in addition the postal address, the country of registration, an endpoint and an identifier might be used.
 |tir-014

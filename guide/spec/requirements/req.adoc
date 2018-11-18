@@ -5,7 +5,7 @@
 | Description
 
 2+h|General requirements
-|tir-001	
+|tir-001
 |The specification on the requested kind of goods and/or services shall be provided in a structured description.
 |tir-002
 |A pre-award catalogue shall contain the procurement reference number of the call for tenders.

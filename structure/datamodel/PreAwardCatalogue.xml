@@ -132,7 +132,7 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Reference number</Name>
-                    <DataType>DocumentReference</DataType>
+                    <DataType>Document reference</DataType>
                     <Description>An identifier that is specified by the buyer and used as a reference number for all
                         documents in the procurement process. It is also known as procurement project identifier,
                         procurement reference number or contract folder identifier.</Description>
@@ -1552,7 +1552,7 @@
                         <Description>
                             The minimum dimensions of the handling unit:
                             (1) Handling unit minimum storage temperature: The lower margin of the recommended storage temperature range for the item.
-                            (2) Handling unit minimum storage humidity: The lower margin of the recommendaded storage temperature range for the item.
+                            (2) Handling unit minimum storage humidity: The lower margin of the recommended storage temperature range for the item.
                         </Description>
                         <Attribute>
                             <Term>unitCode</Term>

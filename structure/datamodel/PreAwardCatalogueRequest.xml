@@ -337,7 +337,7 @@
                     <Attribute usage="optional">
                         <Term>unitCode</Term>
                         <Name>Minimum quantity unit of measure</Name>
-                        <Description>The unit of measure that applies to the mimimum quantity.
+                        <Description>The unit of measure that applies to the minimum quantity.
                             Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
@@ -543,7 +543,7 @@
                                 <Name>External document URI</Name>
                                 <Description>The Uniform Resource Identifier (URI) that identifies where the external document is located.</Description>
                                 <DataType>Text</DataType>
-                                <Value type="EXAMPLE">www.elkjop.np/computer/samsung</Value>
+                                <Value type="EXAMPLE">http://www.elkjop.np/computer/samsung</Value>
                             </Element>
                             
                             <Element>
@@ -606,7 +606,7 @@
                 <Element cardinality="0..n">
                     <Term>cac:AdditionalItemProperty</Term>
                     <Name>Requested item property and requested item information</Name>
-                    <Description>This element is used to provide information on both requested item properies and requested item information.
+                    <Description>This element is used to provide information on both requested item properties and requested item information.
                         The element cbc:NameCode is used to specify if the information in this element repetition is a property or an information.</Description>
                     <Property key="doc">structure/docs/AdditionalItemProperty-Request.adoc</Property>
 
@@ -651,7 +651,7 @@
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Value quantity unit of measure</Name>
-                            <Description>The unit of measure that applfies to the value quantity.
+                            <Description>The unit of measure that applies to the value quantity.
                                 Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                                 The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                             </Description>

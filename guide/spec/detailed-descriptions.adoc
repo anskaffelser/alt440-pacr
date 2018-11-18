@@ -7,7 +7,7 @@ This chapter describes selected parts of the information contents of the EHF Pre
 The important parties and roles in pre-award catalogue and request is described below.
 
 ****
-Contracting body (CA)::
+Contracting authority (CA)::
 The contracting authority or contracting entity who is buying supplies, services or tendering works.
 
 Economic operator (EO)::
@@ -33,15 +33,14 @@ image::images/rolediagram.png[align="center",1200, 800]
 
 == Quantities and Units
 
-There are various quantities and units that can be used in both Pre-Award Catalogue and Catalogue Request. Here is a detailed list of
-relevant quantities and units:
+There are various quantities and units that can be used in both Pre-award catalogue and Pre-award catalogue request. Here is a detailed list of relevant quantities and units:
 
 ****
 Orderable unit (OrderableUnit)::
 The unit in which the item described in this catalogue line can be ordered.
 
 Item net quantity (ContentUnitQuantity)::
-The net quantity of the item that is contained in each consumable unit (excluding packaging material), e.g. ml in bottles of Shampoo.
+The net quantity of the item that is contained in each consumable unit (excluding packaging material), e.g. ml in bottles of shampoo.
 
 Order quantity increment (OrderQuantityIncrementNumeric)::
 Possible limitation to the number of articles that can be ordered. If the Quantity increment is 6 the article shall be ordered in a quantity of 6, 12, 18 etc.
@@ -56,8 +55,27 @@ Packed quantity (Item/PackQuantity)::
 Number of items on next lower level, e.g. number of Consumer units in a Trading unit.
 
 Consumable unit quantity (Item/PackSizeNumeric)::
-Number of Consumer items in the orderable unit. E.g. number of bottles on a Pallet.
+Number of Consumer items in the orderable unit. E.g. number of bottles on a pallet.
 
 Item quantity for component related item(ComponentRelatedItem/Quantity)::
 Quantity of the related component.
+
+Handling unit height or length or width or gross weight (Dimension/Measure)
+The dimensions of the handling unit.
+
+Handling unit minimum storage temperature (Dimension/MinimumMeasure)
+The lower margin of the recommended storage temperature range for the item.
+
+Handling unit maximum storage temperature (Dimension/MaximumMeasure)
+The upper margin of the recommended storage temperature range for the item.
+
+Handling unit minimum storage humidity (Dimension/MinimumMeasure)
+The lower margin of the recommended storage humidity range for the item.
+
+Handling unit maximum storage humidity (Dimension/MaximumMeasure)
+The upper margin of the recommended storage humidity range for the item.
+
+Item property value quantity (AdditionalItemProperty/ValueQuantity)
+The quantity of the requested item property.
+
 ****
