@@ -84,7 +84,6 @@
         <Element>
             <Term>cac:ValidityPeriod</Term>
             <Name>Pre-award catalogue validity period</Name>
-            <DataType>Class</DataType>
             <Description>The validity period must include both start date and end date, and the start date must be
                 earlier than the end date</Description>
             <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
@@ -113,7 +112,6 @@
         <Element cardinality="0..1">
             <Term>cac:ReferencedContract</Term>
             <Name>Contract reference</Name>
-            <DataType>Class</DataType>
             <Description>A reference to a contract that can be identified.</Description>
             <Property key="doc">structure/docs/ReferencedContract.adoc</Property>
 
@@ -130,7 +128,6 @@
             <Element>
                 <Term>cac:ContractDocumentReference</Term>
                 <Name>Procurement reference</Name>
-                <DataType>Class</DataType>
 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -147,7 +144,6 @@
         <Element>
             <Term>cac:ProviderParty</Term>
             <Name>Provider party</Name>
-            <DataType>Class</DataType>
             <Description>The party that sends the catalogue.</Description>
             <Property key="doc">structure/docs/ProviderParty.adoc</Property>
 
@@ -171,7 +167,6 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
-                <DataType>Class</DataType>
                 <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                 <Element>
@@ -212,7 +207,6 @@
         <Element>
             <Term>cac:ReceiverParty</Term>
             <Name>Catalogue receiver</Name>            <!-- TODO: Different name, subelements as well -->
-            <DataType>Class</DataType>
             <Description>The party to which the catalogue is sent.</Description>
             <Property key="doc">structure/docs/ReceiverParty.adoc</Property>
 
@@ -234,7 +228,6 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
-                <DataType>Class</DataType>
                 <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                 <Element>
@@ -276,14 +269,12 @@
         <Element cardinality="0..1">
             <Term>cac:SellerSupplierParty</Term>
             <Name>Catalogue supplier</Name>
-            <DataType>Class</DataType>
             <Description>The party that provides the items specified in the catalog, must be used if the supplier is different from the catalogue provider</Description>
             <Property key="doc">structure/docs/SellerSupplierParty.adoc</Property>
 
             <Element>
                 <Term>cac:Party</Term>
                 <Name>Party</Name>
-                <DataType>Class</DataType>
 
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
@@ -333,14 +324,12 @@
         <Element cardinality="0..1">
             <Term>cac:ContractorCustomerParty</Term>
             <Name>Catalogue Customer</Name>
-            <DataType>Class</DataType>
             <Description>The party who may order from the catalogue, must be used if the customer party is different from the receiver party</Description>
             <Property key="doc">structure/docs/ContractorCustomerParty.adoc</Property>
 
             <Element>
                 <Term>cac:Party</Term>
                 <Name>Party</Name>
-                <DataType>Class</DataType>
 
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
@@ -389,7 +378,6 @@
         <Element cardinality="1..n">
             <Term>cac:CatalogueLine</Term>
             <Name>Pre-award catalogue line</Name>
-            <DataType>Class</DataType>
             <Description>Detailed information of an item, price and its composition  in a pre-award catalogue.</Description>
             <Property key="doc">structure/docs/CatalogueLine.adoc</Property>
 
@@ -519,7 +507,6 @@
             <Element cardinality="0..1">
                 <Term>cac:LineValidityPeriod</Term>
                 <Name>Line validity period</Name>
-                <DataType>Class</DataType>
 
                 <Element>
                     <Term>cbc:StartDate</Term>
@@ -545,7 +532,6 @@
             <Element cardinality="0..n">
                 <Term>cac:ItemComparison</Term>
                 <Name>Item comparison</Name>
-                <DataType>Class</DataType>
                 <Description>Used for comparing prices for different articles with various quantities. E.g. Price of each liter.</Description>
                 <Property key="doc">structure/docs/ItemComparison.adoc</Property>
 
@@ -589,7 +575,6 @@
             <Element cardinality="0..n">
                 <Term>cac:ComponentRelatedItem</Term>
                 <Name>Component related item</Name>
-                <DataType>Class</DataType>
                 <Description>Component related items are products that are connected in a product line or a logistics structure, e.g. consumer units and trading units of the same article.</Description>
                 <Property key="doc">structure/docs/ComponentRelatedItem.adoc</Property>
 
@@ -625,7 +610,6 @@
             <Element cardinality="0..n">
                 <Term>cac:RequiredRelatedItem</Term>
                 <Name>Required related item</Name>
-                <DataType>Class</DataType>
                 <Description>Required related items are products that are bundled and ordered/invoiced together, e.g. bottles and desposits.</Description>
                 <!-- <Property key="doc">structure/docs/required-related.adoc</Property> -->
 
@@ -660,7 +644,6 @@
             <Element cardinality="0..n">
                 <Term>cac:ComplementaryRelatedItem</Term>
                 <Name>Complementary related item</Name>
-                <DataType>Class</DataType>
                 <Description>Complementary related item is used for items that might be sold together with a product, e.g. disk station to a laptop.</Description>
                 <Property key="doc">structure/docs/ComplementaryRelatedItem.adoc</Property>
 
@@ -695,7 +678,6 @@
             <Element cardinality="0..n">
                 <Term>cac:ReplacedRelatedItem</Term>
                 <Name>Replacement product</Name>
-                <DataType>Class</DataType>
                 <Description>Replacement product is used to identify a product replacing an existing product in the Catalogue.</Description>
                 <!-- <Property key="doc">structure/docs/ReplacedRelatedItem.adoc</Property> -->
 
@@ -730,7 +712,6 @@
             <Element cardinality="0..n">
                 <Term>cac:RequiredItemLocationQuantity</Term>
                 <Name>Item Location Quantity</Name>
-                <DataType>Class</DataType>
                 <Description>Properties of the item in this catalogue line that are dependent on location and quantity.</Description>
                 <Property key="doc">structure/docs/RequiredItemLocationQuantity.adoc</Property>
 
@@ -779,7 +760,6 @@
                 <Element cardinality="0..n">
                     <Term>cac:ApplicableTerritoryAddress</Term>
                     <Name>Delivery location</Name>
-                    <DataType>Class</DataType>
 
                     <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
@@ -826,7 +806,6 @@
                     <Element cardinality="0..1">
                         <Term>cac:AddressLine</Term>
                         <Name>Address line LINE</Name>
-                        <DataType>Class</DataType>
 
                         <Element>
                             <Term>cbc:Line</Term>
@@ -857,7 +836,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:Price</Term>
                     <Name>Price</Name>
-                    <DataType>Class</DataType>
                     <Description>Used to give the item net price as well as conditional price related to a specific location
                         or a quantity, as well as campaign prices.</Description>
                     <Property key="doc">structure/docs/Price.adoc</Property>
@@ -904,7 +882,6 @@
                     <Element cardinality="0..n">
                         <Term>cac:ValidityPeriod</Term>
                         <Name>Price validity period</Name>
-                        <DataType>Class</DataType>
                         <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
 
                         <Element>
@@ -932,7 +909,6 @@
                     <Element cardinality="0..1">
                         <Term>cac:AllowanceCharge</Term>
                         <Name>Price discount- used only for information purpose</Name>
-                        <DataType>Class</DataType>
 
                         <Element>
                             <Term>cbc:ChargeIndicator</Term>
@@ -973,7 +949,6 @@
             <Element>
                 <Term>cac:Item</Term>
                 <Name>Pre-award catalogue item details</Name>
-                <DataType>Class</DataType>
                 <Property key="doc">structure/docs/Item.adoc</Property>
 
                 <Element cardinality="0..1">
@@ -1043,7 +1018,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:SellersItemIdentification</Term>
                     <Name>Sellers item identification</Name>
-                    <DataType>Class</DataType>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -1059,7 +1033,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:ManufacturersItemIdentification</Term>
                     <Name>Manufacturers item identification</Name>
-                    <DataType>Class</DataType>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -1074,7 +1047,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:StandardItemIdentification</Term>
                     <Name>Standard item identification</Name>
-                    <DataType>Class</DataType>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -1112,7 +1084,6 @@
                 <Element cardinality="0..n">
                     <Term>cac:ItemSpecificationDocumentReference</Term>
                     <Name>Attached item specifications</Name>
-                    <DataType>Class</DataType>
                     <Description>Attachments can be sent on line level in the Catalogue. This can be images or additional
                         descriptions of a product. It is strongly recommended to use external references in the form of URI's for attachments.</Description>
                     <Property key="doc">structure/docs/ItemSpecificationDocumentReference.adoc</Property>
@@ -1158,7 +1129,6 @@
                     <Element cardinality="0..1">
                         <Term>cac:Attachment</Term>
                         <Name>Attachment</Name>
-                        <DataType>Class</DataType>
 
                         <Element cardinality="0..1">
                             <Term>cbc:EmbeddedDocumentBinaryObject</Term>
@@ -1177,7 +1147,6 @@
                         <Element cardinality="0..1">
                             <Term>cac:ExternalReference</Term>
                             <Name>External reference</Name>
-                            <DataType>Class</DataType>
 
                             <Element cardinality="0..1">
                                 <Term>cbc:URI</Term>
@@ -1195,7 +1164,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:OriginCountry</Term>
                     <Name>Origin country</Name>
-                    <DataType>Class</DataType>
 
                     <Element cardinality="0..1">
                         <Term>cbc:IdentificationCode</Term>
@@ -1216,7 +1184,6 @@
                 <Element cardinality="0..n">
                     <Term>cac:CommodityClassification</Term>
                     <Name>Commodity classification</Name>
-                    <DataType>Class</DataType>
 
                     <Element>
                         <Term>cbc:ItemClassificationCode</Term>
@@ -1236,7 +1203,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:TransactionConditions</Term>
                     <Name>Transaction conditions</Name>
-                    <DataType>Class</DataType>
 
                     <Element cardinality="0..1">
                         <Term>cbc:ActionCode</Term>
@@ -1262,7 +1228,6 @@
                 <Element cardinality="0..n">
                     <Term>cac:HazardousItem</Term>
                     <Name>Hazardous item</Name>
-                    <DataType>Class</DataType>
 
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
@@ -1293,7 +1258,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:ClassifiedTaxCategory</Term>
                     <Name>Classified tax category</Name>
-                    <DataType>Class</DataType>
                     <Description>VAT information</Description>
                     <Property key="doc">structure/docs/ClassifiedTaxCategory.adoc</Property>
 
@@ -1324,7 +1288,6 @@
                     <Element>
                         <Term>cac:TaxScheme</Term>
                         <Name>Tax scheme</Name>
-                        <DataType>Class</DataType>
 
                         <Element>
                             <Term>cbc:ID</Term>
@@ -1338,7 +1301,6 @@
                 <Element cardinality="0..n">
                     <Term>cac:AdditionalItemProperty</Term>
                     <Name>Additional item property</Name>
-                    <DataType>Class</DataType>
                     <Description>Additional properties are meant for product properties that cannot be sent in any of the defined elements in PreAward Catalogue. Additional properties consist of the Name of the property and the actual Value.</Description>
                     <Property key="doc">structure/docs/AdditionalItemProperty.adoc</Property>
 
@@ -1402,12 +1364,10 @@
                 <Element cardinality="0..1">
                     <Term>cac:ManufacturerParty</Term>
                     <Name>Manufacturer party</Name>
-                    <DataType>Class</DataType>
 
                     <Element cardinality="0..1">
                         <Term>cac:PartyName</Term>
                         <Name>Party name</Name>
-                        <DataType>Class</DataType>
 
                         <Element>
                             <Term>cbc:Name</Term>
@@ -1421,7 +1381,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:ItemInstance</Term>
                     <Name>Item instance</Name>
-                    <DataType>Class</DataType>
                     <Description>A trackable, unique instantiation of this item.</Description>
 
                     <Element cardinality="0..1">
@@ -1438,7 +1397,6 @@
                 <Element cardinality="0..n">
                     <Term>cac:Certificate</Term>
                     <Name>Item means of proof</Name>
-                    <DataType>Class</DataType>
                     <Description>A means of proof according to to Directives 2014/24/EU.</Description>
                     <Property key="doc">structure/docs/Certificate.adoc</Property>
 
@@ -1479,7 +1437,6 @@
                     <Element>
                         <Term>cac:IssuerParty</Term>
                         <Name>Item means of proof issuer party</Name>
-                        <DataType>Class</DataType>
                         <Description>The party issuing the means of proof for the item. E.g., the organisation that issues a label or test reports, etc.</Description>
 
                         <Element>
@@ -1500,7 +1457,6 @@
                     <Element cardinality="0..n">
                         <Term>cac:DocumentReference</Term>
                         <Name>Document reference</Name>
-                        <DataType>Class</DataType>
                         <Description>
                             This element is bound to two different business terms:
                             Item means of proof reference or Item requirement reference.
@@ -1536,7 +1492,6 @@
                 <Element cardinality="0..n">
                     <Term>cac:Dimension</Term>
                     <Name>Handling unit dimensions</Name>
-                    <DataType>Class</DataType>
                     <Description>The element is used for describing the various dimensions of the handling
                         unit. The element cbc:AttributeID is used to define which dimension is
                         described by the dimension element. The following mapping applies for the
@@ -1644,7 +1599,6 @@
             <Element cardinality="0..1">
                 <Term>cac:CallForTendersLineReference</Term>
                 <Name>Call for Tenders line reference</Name>
-                <DataType>Class</DataType>
                 <Description>Reference to a Line on a Call For Tenders document.</Description>
                 <Property key="doc">structure/docs/CallForTendersLineReference.adoc</Property>
 
