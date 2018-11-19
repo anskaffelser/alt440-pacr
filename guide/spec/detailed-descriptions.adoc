@@ -170,25 +170,23 @@ The quantity of the requested item property.
 ****
 
 .Example of quantites and units.
-----
-
 |===
 |Description |Element (from CatalogueLine level) |1 bottle | Case of 6 bottles | Pallet of 18 cases
 
-|Line identifier
-|Sellers item identifier
-|Item name
-|Orderable Unit
-|Packaging level
-|Packed quantity
-|Packed quantity unit
-|Consumable unit quantity
-|Item net quantity
-|Item net quantity unit
-|Minimum order quantity
-|Minimum order quantity unit
-|Component related item identifier
-|Item quantity for component related item
+|*Line identifier*
+|*Sellers item identifier*
+|*Item name*
+|*Orderable Unit*
+|*Packaging level*
+|*Packed quantity*
+|*Packed quantity unit*
+|*Consumable unit quantity*
+|*Item net quantity*
+|*Item net quantity unit*
+|*Minimum order quantity*
+|*Minimum order quantity unit*
+|*Component related item identifier*
+|*Item quantity for component related item*
 
 |ID
 |SellersItemIdentification/ID
@@ -249,7 +247,6 @@ The quantity of the requested item property.
 |PF
 |222
 |18
-
 |===
 ----
 
@@ -386,6 +383,7 @@ If binary objects are attached to the PreAward Catalogue, the valid values for m
 
 
 == Prices
+[[Price]]
 
 All prices in the format are related to the article or service within this Pre-Award Catalogue. The following prices can be stated:
 
