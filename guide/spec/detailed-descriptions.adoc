@@ -170,91 +170,32 @@ The quantity of the requested item property.
 ****
 
 .Example of quantites and units.
+
+[cols="5h,2,2,2,2", options="header"]
 |===
 |Description |Element (from CatalogueLine level) |1 bottle | Case of 6 bottles | Pallet of 18 cases
+|*Line identifier*| ID| 1| 2| 3
+|*Sellers item identifier* | SellersItemIdentification/ID | 2222| 222| 22
+|*Item name* | Item/Name |Milk 1L|6 x 1L Milk| Milk
+|*Orderable Unit* | OrderableUnit| EA| CS| PF
+|*Packaging level* | PackLevelCode|CU |TU| DU
+|*Packed quantity* |Item/PackQuantity|  |6 |18
+|*Packed quantity unit* |Item/PackQuantity/@unitCode| |EA |CS
+|*Consumable unit quantity*|Item/PackSizeNumeric |1 |6 |180
+|*Item net quantity* |ContentUnitQuantity |250|1500|30000
+|*Item net quantity unit*|ContentUnitQuantity/@unitCode|MLT|MLT|MLT
+|*Minimum order quantity*|MinimumOrderQuantity|1 | 1| 1
+|*Minimum order quantity unit*|MinimumOrderQuantity/@unitCode|EA |CS | PF
+|*Component related item identifier*|ComponentRelatedItem/ID| |2222 | 222
+|*Item quantity for component related item*|ComponentRelatedItem/Quantity| |10 |18
 
-|*Line identifier*
-|*Sellers item identifier*
-|*Item name*
-|*Orderable Unit*
-|*Packaging level*
-|*Packed quantity*
-|*Packed quantity unit*
-|*Consumable unit quantity*
-|*Item net quantity*
-|*Item net quantity unit*
-|*Minimum order quantity*
-|*Minimum order quantity unit*
-|*Component related item identifier*
-|*Item quantity for component related item*
-
-|ID
-|SellersItemIdentification/ID
-|Item/Name
-|OrderableUnit
-|PackLevelCode
-|Item/PackQuantity
-|Item/PackQuantity/@unitCode
-|Item/PackSizeNumeric
-|ContentUnitQuantity
-|ContentUnitQuantity/@unitCode
-|MinimumOrderQuantity
-|MinimumOrderQuantity/@unitCode
-|ComponentRelatedItem/ID
-|ComponentRelatedItem/Quantity
-
-|6
-|2222
-|Milk 1L
-|EA
-|CU
-|
-|
-|1
-|250
-|MLT
-|1
-|EA
-|
-|
-
-|8
-|222
-|6X 1L Milk
-|CS
-|TU
-|6
-|EA
-|6
-|1500
-|MLT
-|1
-|CS
-|2222
-|10
-
-|10
-|22
-|Milk
-|PF
-|DU
-|18
-|CS
-|180
-|30000
-|MLT
-|1
-|PF
-|222
-|18
 |===
-----
 
 [source]
-.Example of catalogue line with line identifier = 4 in the above table
+.Example of catalogue line with line identifier = 6 in the above table
 ----
 <cac:CatalogueLine>
-  <cbc:ID>4</cbc:ID>
+  <cbc:ID>6</cbc:ID>
   <cbc:OrderableUnit>EA</cbc:OrderableUnit>
   <cbc:ContentUnitQuantity unitCode="MLT" unitCodeListID="UNECERec20">250</cbc:ContentUnitQuantity>
   <cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
