@@ -137,20 +137,19 @@
         </cac:ItemComparison>
 
         <cac:ComponentRelatedItem>
-            <cbc:ID>B1</cbc:ID>
-            <cbc:Quantity>4</cbc:Quantity>
+            <cbc:ID>12345648</cbc:ID>
+            <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">12</cbc:Quantity>
         </cac:ComponentRelatedItem>
 
-        <cac:ReplacedRelatedItem>
-            <cbc:ID>AA</cbc:ID>
-            <cbc:Quantity>16</cbc:Quantity>
-        </cac:ReplacedRelatedItem>
+        <cac:RequiredRelatedItem>
+            <cbc:ID>4567899</cbc:ID>
+            <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:Quantity>
+        </cac:RequiredRelatedItem>
 
         <cac:ComplementaryRelatedItem>
-            <cbc:ID>R2</cbc:ID>
-            <cbc:Quantity>3161</cbc:Quantity>
+            <cbc:ID>4566664</cbc:ID>
+            <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:Quantity>
         </cac:ComplementaryRelatedItem>
-
 
         <cac:ReplacedRelatedItem>
             <cbc:ID>BB</cbc:ID>
