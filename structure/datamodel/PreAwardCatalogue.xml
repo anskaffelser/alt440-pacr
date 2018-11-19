@@ -1347,10 +1347,6 @@
                         <Name>Item means of proof type</Name>
                         <DataType>Code</DataType>
                         <Description>A code specifying the type of the Item means of proof according to Directives 2014/24/EU, e.g., if it a label, test report etc.</Description>
-                        <Attribute usage="Optional">
-                            <Term>listID</Term>
-                            <Name>Code list identifier</Name>
-                        </Attribute>
                         <Value type="EXAMPLE">NEO</Value>
                     </Element>
 

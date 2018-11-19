@@ -12,14 +12,14 @@
         <Path>structure/datamodel/PreAwardCatalogueRequest.xml</Path>
         <Title>PreAward Catalogue request</Title>
     </Resource>
-    
-     <Resource>
-         <Type>Syntax-1</Type>
+
+    <Resource>
+        <Type>Syntax-1</Type>
         <Path>structure/datamodel/PreAwardCatalogue.xml</Path>
         <Title>PreAward Catalogue </Title>
-    </Resource> 
-    
-  <!-- Code lists -->
+    </Resource>
+
+    <!-- Code lists -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/icd.xml</Path>
@@ -43,6 +43,10 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec21-9e.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1001.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -80,8 +84,8 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/GS17009.xml</Path>
     </Resource>
-  
-    
+
+
     <!-- Namespaces -->
     <Resource>
         <Type>Namespace-1</Type>
@@ -91,5 +95,5 @@
         <Type>Namespace-1</Type>
         <Path>structure/namespace/cbc.xml</Path>
     </Resource>
-   
+
 </Project>
