@@ -105,7 +105,7 @@ Additional properties consist of the Name of the property and the actual Value.
     <cac:CommodityClassification>
         <cbc:ItemClassificationCode listID="UNSPSC" listName="eClass">12345678</cbc:ItemClassificationCode>
     </cac:CommodityClassification>
-    <cac:AdditionalItemProperty> <1>
+    <cac:AdditionalItemProperty>
       <cbc:ID>1</ID>
       <cbc:Name>Fettinnhold</cbc:Name>
       <cbc:NameCode>PROP</NameCode>
@@ -118,7 +118,7 @@ Additional properties consist of the Name of the property and the actual Value.
         <cbc:MaximumValue>1.5 liter</cbc:MaximumValue>
       </cac:ItemPropertyRange>
     </cac:AdditionalItemProperty>
-    <cac:Certificate> <2>
+    <cac:Certificate>
         <cbc:ID>1</cbc:ID>
         <cbc:CertificateTypeCode>ECO</cbc:CertificateTypeCode>
         <cbc:CertificateType>Environmental</cbc:CertificateType>
@@ -128,7 +128,7 @@ Additional properties consist of the Name of the property and the actual Value.
                 <cbc:Name>Nordic Ecolabelling<cbc:Name>
             </cac:PartyName>
         </cac:IssuerParty>
-        <cac:DocumentReference> <3>
+        <cac:DocumentReference>
             <cbc:ID>12</cbc:ID>
             <cac:Attachment>
                 <cac:ExternalReference>
