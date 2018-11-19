@@ -60,22 +60,22 @@ Number of Consumer items in the orderable unit. E.g. number of bottles on a pall
 Item quantity for component related item(ComponentRelatedItem/Quantity)::
 Quantity of the related component.
 
-Handling unit height or length or width or gross weight (Dimension/Measure)
+Handling unit height or length or width or gross weight (Dimension/Measure)::
 The dimensions of the handling unit.
 
-Handling unit minimum storage temperature (Dimension/MinimumMeasure)
+Handling unit minimum storage temperature (Dimension/MinimumMeasure)::
 The lower margin of the recommended storage temperature range for the item.
 
-Handling unit maximum storage temperature (Dimension/MaximumMeasure)
+Handling unit maximum storage temperature (Dimension/MaximumMeasure)::
 The upper margin of the recommended storage temperature range for the item.
 
-Handling unit minimum storage humidity (Dimension/MinimumMeasure)
+Handling unit minimum storage humidity (Dimension/MinimumMeasure)::
 The lower margin of the recommended storage humidity range for the item.
 
-Handling unit maximum storage humidity (Dimension/MaximumMeasure)
+Handling unit maximum storage humidity (Dimension/MaximumMeasure)::
 The upper margin of the recommended storage humidity range for the item.
 
-Item property value quantity (AdditionalItemProperty/ValueQuantity)
+Item property value quantity (AdditionalItemProperty/ValueQuantity)::
 The quantity of the requested item property.
 
 ****
