@@ -79,3 +79,63 @@ Item property value quantity (AdditionalItemProperty/ValueQuantity)::
 The quantity of the requested item property.
 
 ****
+
+== Additional Item Properties
+
+Additional properties are meant for product properties that cannot be sent in any of the defined elements in Pre-Award Catalogue request.
+Additional properties consist of the Name of the property and the actual Value.
+
+.Example of additional properties:
+---
+* Color
+* fat percentage in food
+* Size
+---
+
+[source,xml]
+.UBL example of applying Additional item property in Pre-Award catalogue request.
+----
+<cac:Item>
+    <cbc:Description>Standard melk med fettinnhold på 2%</cbc:Description>
+    <cbc:Name>Standard melk</cbc:Name>
+    <cac:ItemSpecificationDocumentReference>
+        <cbc:ID>23</cbc:ID>
+        <!-- ... -->
+    </cac:ItemSpecificationDocumentReference>
+    <cac:CommodityClassification>
+        <cbc:ItemClassificationCode listID="UNSPSC" listName="eClass">12345678</cbc:ItemClassificationCode>
+    </cac:CommodityClassification>
+    <cac:AdditionalItemProperty> <1>
+      <cbc:ID>1</ID>
+      <cbc:Name>Fettinnhold</cbc:Name>
+      <cbc:NameCode>PROP</NameCode>
+      <cbc:Value></cbc:Value>
+      <cbc:ValueQuantity unitCode="P1">2 %<cbc:ValueQuantity>
+      <cbc:ImportanceCode>M</cbc:ImportanceCode>
+      <!-- ... -->
+      <cac:ItemPropertyRange>
+        <cbc:MinimumValue>1 liter</cbc:MinimumValue>
+        <cbc:MaximumValue>1.5 liter</cbc:MaximumValue>
+      </cac:ItemPropertyRange>
+    </cac:AdditionalItemProperty>
+    <cac:Certificate> <2>
+        <cbc:ID>1</cbc:ID>
+        <cbc:CertificateTypeCode>ECO</cbc:CertificateTypeCode>
+        <cbc:CertificateType>Environmental</cbc:CertificateType>
+        <cbc:Remarks>M</cbc:Remarks>
+        <cac:IssuerParty>
+            <cac:PartyName>
+                <cbc:Name>Nordic Ecolabelling<cbc:Name>
+            </cac:PartyName>
+        </cac:IssuerParty>
+        <cac:DocumentReference> <3>
+            <cbc:ID>12</cbc:ID>
+            <cac:Attachment>
+                <cac:ExternalReference>
+                    <cbc:URI>www.eco.no/milk</cbc:URI>
+                </cac:ExternalReference>
+            </cac:Attachment>
+        </cac:DocumentReference>
+    </cac:Certificate>
+</cac:Item>
+----

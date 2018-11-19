@@ -12,7 +12,7 @@
 The following diagram illustrates the basic EHF Pre-Award Catalogue process.
 
 .EHF Pre-Award Catalogue process.
-image::images/catalogueDiagram.png[align="center",900,900]
+image::images/catalogueDiagram1.png[align="center",900,900]
 
 {empty} +
 
