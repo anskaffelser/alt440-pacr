@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>UNCL5387 Catalogue request price specification code</Title>
+    <Identifier>UNCL5387-req</Identifier>
+    <Version>D.17A</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>openPEPPOL</Subset>
+ 
+    
+    <Code>
+        <Id>ABG</Id>
+        <Name>Minimum price</Name>
+        <Description>The minimum price</Description>
+    </Code>
+    <Code>
+        <Id>NE</Id>
+        <Name>Maximum price (Not-to-exceed price)</Name>
+        <Description>Code specifying a price that cannot be increased.</Description>
+    </Code>
+    
+   
+</CodeList>

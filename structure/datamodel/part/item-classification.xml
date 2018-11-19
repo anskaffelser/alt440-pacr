@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1" cardinality="0..n">
+ 
+        <Term>cac:CommodityClassification</Term>
+        <Name>Commodity classification</Name>
+        <Description>A classification of this item according to a specific system for classifying commodities.</Description>
+        <Property key="doc">structure/docs/CommodityClassification-Request.adoc</Property>
+        
+        <Element>
+            <Term>cbc:ItemClassificationCode</Term>
+            <Name>Item request classification code</Name>
+            <Description>A code for classifying the item by its type or nature</Description>
+            <DataType>Code</DataType>
+            
+            <Attribute>
+                <Term>listID</Term>
+                <Name>Item classification identification scheme identifier</Name>
+                <Description>The identification scheme identifier of the Item classification identifier</Description>
+                <Reference type="CODE_LIST">UNCL7143</Reference>
+                <Value type="EXAMPLE">STI</Value>
+            </Attribute>
+            
+            <Attribute>
+                <Term>listName</Term>
+                <Name>Item request classification name</Name>
+                <Description>The name of the classification for this item.</Description>
+                <Value type="EXAMPLE">eClass</Value>
+            </Attribute>
+            
+            <Value type="EXAMPLE">230482343</Value>
+        </Element>
+    </Element>

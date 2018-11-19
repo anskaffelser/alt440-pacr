@@ -188,7 +188,6 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
-                <DataType>Text</DataType>
                 <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                 <Element>
@@ -206,7 +205,7 @@
 
         <Element>
             <Term>cac:ReceiverParty</Term>
-            <Name>Catalogue receiver</Name>            <!-- TODO: Different name, subelements as well -->
+            <Name>Catalogue receiver</Name> 
             <Description>The party to which the catalogue is sent.</Description>
             <Property key="doc">structure/docs/ReceiverParty.adoc</Property>
 
@@ -279,7 +278,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
-                    <DataType>Identifier</DataType>
                     <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                     <Element>
@@ -303,8 +301,6 @@
                     <Term>cac:PartyName</Term>
                     <Name>Party name</Name>
                     <DataType>Text</DataType>
-                    <Reference type="RULE">EUGEN-T68-R012</Reference>
-
                     <Element>
                         <Term>cbc:Name</Term>
                         <Name>Catalogue supplier name</Name>
@@ -334,8 +330,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
-                    <DataType>Identifier</DataType>
-                    <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -357,8 +351,6 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyName</Term>
                     <Name>Party name</Name>
-                    <DataType>Text</DataType>
-                    <Reference type="RULE">EUGEN-T68-R012</Reference>
 
                     <Element>
                         <Term>cbc:Name</Term>
@@ -410,7 +402,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:OrderableUnit</Term>
                 <Name>Orderable unit</Name>
-                <DataType>Text</DataType>
+                <DataType>Code</DataType>
                 <Description>The unit in which the item described in this catalogue line can be ordered. Mandatory if the item is orderable
                     Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                     The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
@@ -440,7 +432,7 @@
 
             <Element cardinality="0..1">
                 <Term>cbc:OrderQuantityIncrementNumeric</Term>
-                <DataType>Decimal</DataType>
+                <DataType>Quantity</DataType>
                 <Name>Order quantity increment</Name>
                 <Description>Possible limitation to the number of articles that can be ordered. If the Quantity increment is 6 the article must be ordered in a quantity of 6, 12, 18 etc.</Description>
                 <Value type="EXAMPLE">5</Value>
@@ -451,7 +443,6 @@
                 <Name>Minimum order quantity</Name>
                 <DataType>Quantity</DataType>
                 <Description>The smallest number of items that can be ordered.</Description>
-                <Reference type="RULE">BII3-T68-R022</Reference>
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Quantity unit code</Name>
@@ -507,6 +498,7 @@
             <Element cardinality="0..1">
                 <Term>cac:LineValidityPeriod</Term>
                 <Name>Line validity period</Name>
+                <Description>The line validity period must be the same, or within the document validity period, if it exists.</Description>
 
                 <Element>
                     <Term>cbc:StartDate</Term>
@@ -565,7 +557,7 @@
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Reference type="CODE_LIST">UNECERec21</Reference>
                         
-                        <Value type="EXAMPLE">EA</Value>
+                        <Value type="EXAMPLE">H87</Value>
                     </Attribute>
                     <Value type="EXAMPLE">0.333</Value>
                 </Element>
@@ -583,7 +575,6 @@
                     <Name>Item standard identifier</Name>
                     <DataType>Identifier</DataType>
                     <Description>Indicate the seller's identifier for the related item.</Description>
-                    <Reference type="RULE">EUGEN-T68-R011</Reference>
                     <Value type="EXAMPLE">A</Value>
                 </Element>
 
@@ -625,7 +616,7 @@
                     <Term>cbc:Quantity</Term>
                     <Name>Related item quantity</Name>
                     <DataType>Quantity</DataType>
-                    <Description>UOM should be stated  by using recommendation 20 v10</Description>
+                    <Description>Required related item quantity, the quantity of the products bundled with the products on this line.</Description>
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quantity unit code</Name>
@@ -659,7 +650,7 @@
                     <Term>cbc:Quantity</Term>
                     <Name>Related item quantity</Name>
                     <DataType>Quantity</DataType>
-                    <Description>UOM should be stated by using recommendation 20 v10</Description>
+                    <Description>Complementary item quantity, the quantity of the products that might be sold together with the products on this line.</Description>
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quantity unit code</Name>
@@ -693,7 +684,7 @@
                     <Term>cbc:Quantity</Term>
                     <Name>Related item quantity</Name>
                     <DataType>Quantity</DataType>
-                    <Description>UOM should be stated  by using recommendation 20 v10</Description>
+                    <Description>Replaced item quantity, the quantity of the products replacing the products on this line.</Description>
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quantity unit code</Name>
@@ -862,11 +853,6 @@
                         <Description>The type of the price so that the receiver knows if the price may be changed is indicative. When prices are temporary the validity period
                             for the price should be defined by stating the price validity period.</Description>
                         <Reference type="CODE_LIST">UNCL5387</Reference>
-                        <Attribute>
-                            <Term>listID</Term>
-                            <Name>Code list identifier</Name>
-                            <Value type="FIXED">UNCL5387</Value>
-                        </Attribute>
                         <Value type="EXAMPLE">CP</Value>
                     </Element>
 
@@ -882,6 +868,7 @@
                     <Element cardinality="0..n">
                         <Term>cac:ValidityPeriod</Term>
                         <Name>Price validity period</Name>
+                        <Description>The price validity period must be the same, or within the line validity period if it exists</Description>
                         <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
 
                         <Element>
@@ -905,43 +892,6 @@
                         </Element>
                     </Element>
                     
-<!-- Remove element? -->
-                    <Element cardinality="0..1">
-                        <Term>cac:AllowanceCharge</Term>
-                        <Name>Price discount- used only for information purpose</Name>
-
-                        <Element>
-                            <Term>cbc:ChargeIndicator</Term>
-                            <Name>Charge indicator</Name>
-                            <DataType>Boolean</DataType>
-                            <Description>The only allowed value is 'false'.</Description>
-                            <Value type="FIXED">false</Value>
-                        </Element>
-
-                        <Element>
-                            <Term>cbc:AllowanceChargeReason</Term>
-                            <Name>Allowance reason</Name>
-                            <DataType>Text</DataType>
-                            <Description>The reason for the allowance- expressed as text.</Description>
-                            <Value type="EXAMPLE">Returning customer discount</Value>
-                        </Element>
-
-                        <Element>
-                            <Term>cbc:Amount</Term>
-                            <Name>Allowance amount</Name>
-                            <DataType>Amount</DataType>
-
-                            <Attribute>
-                                <Term>currencyID</Term>
-                                <Name>Currency identifier</Name>
-                                <Reference type="CODE_LIST">ISO4217</Reference>
-                                <Value type="EXAMPLE">SEK</Value>
-                            </Attribute>
-
-                            <Value type="EXAMPLE">12.00</Value>
-
-                        </Element>
-                    </Element>
                 </Element>
 
             </Element>
@@ -956,7 +906,15 @@
                     <Name>Item description</Name>
                     <DataType>Text</DataType>
                     <Description>The Item description allows for describing the item and its features in more detail than
-                        the Item name. Use one description pr. language.</Description>
+                        the Item name. It is only allowed to send one description element pr. language.</Description>
+                    
+                    <Attribute>
+                        <Term>languageID</Term>
+                        <Name>Language identifier</Name>
+                        <Description>Language identifier to indicate which language the description is stated in.</Description>
+                        <Reference type="CODE_LIST">language</Reference>
+                        <Value>en</Value>
+                    </Attribute>
                     <Value type="EXAMPLE">This is a rather long item description, often very detailed</Value>
                 </Element>
 
@@ -975,7 +933,7 @@
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Reference type="CODE_LIST">UNECERec21</Reference>
                         
-                        <Value type="EXAMPLE">EA</Value>
+                        <Value type="EXAMPLE">XBX</Value>
                     </Attribute>
                     <Value type="EXAMPLE">12</Value>
                 </Element>
@@ -1072,11 +1030,7 @@
                         <DataType>Identifier</DataType>
                         <Description>An extended identifier issued by the seller to identify
                             items with specific properties. Used for structured identification of an Item variant.</Description>
-                        
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name>Scheme identifier</Name>
-                        </Attribute>
+
                         <Value type="EXAMPLE">A23-Z45</Value>
                     </Element>
                 </Element>
@@ -1091,7 +1045,7 @@
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Attachment identifier</Name>
-                        <DataType>Identifier</DataType>
+                        <DataType>DocumentReference</DataType>
                         <Description>An identifier that can be used to reference the attached document, such as an unique identifier.</Description>
                         <Value type="EXAMPLE">88d15eaa-3805-42e4-825f-5e240838104d</Value>
                     </Element>
@@ -1102,11 +1056,7 @@
                         <DataType>Code</DataType>
                         <Description>A functional description of the attachment, expressed as a code.</Description>
                         <Reference type="CODE_LIST">UNCL1001</Reference>
-                        <Attribute>
-                            <Term>listID</Term>
-                            <Name>Code list identifier</Name>
-                            <Value type="FIXED">UNCL1001</Value>
-                        </Attribute>
+                      
                         <Value type="EXAMPLE">6</Value>
                     </Element>
 
@@ -1141,6 +1091,12 @@
                                 <Reference type="CODE_LIST">MimeCode</Reference>
                                 <Value type="EXAMPLE">application/pdf</Value>
                             </Attribute>
+                            
+                            <Attribute>
+                                <Term>filename</Term>
+                                <Description>File name of the attached document</Description>
+                                <Value type="EXAMPLE">prod-spec.pdf</Value>
+                            </Attribute>
                             <Value type="EXAMPLE">UEVQUE9MIEJJUyBQcmUgYXdhcmQgQ2F0YWxvZ3VlIGV4YW1wbGUgYXR0YWNoZW1lbnQ=</Value>
                         </Element>
 
@@ -1151,7 +1107,7 @@
                             <Element cardinality="0..1">
                                 <Term>cbc:URI</Term>
                                 <Name>External item specification URI</Name>
-                                <DataType>String</DataType>
+                                <DataType>Identifier</DataType>
                                 <Description>URI reference to external item information or specifications. E.g. web address
                                 </Description>
                                 <Value type="EXAMPLE">https://test-vefa.difi.no/peppolbis/pracc/catalogue</Value>
@@ -1172,33 +1128,11 @@
                         <Description>The code identifying the country from which the item
                             originates. Commonly used in cross border trade for statistical and customs purposes.</Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
-                        <Attribute>
-                            <Term>listID</Term>
-                            <Name>Code list identifier</Name>
-                            <Value type="FIXED">ISO3166-1:Alpha2</Value>
-                        </Attribute>
                         <Value type="EXAMPLE">CN</Value>
                     </Element>
                 </Element>
 
-                <Element cardinality="0..n">
-                    <Term>cac:CommodityClassification</Term>
-                    <Name>Commodity classification</Name>
-
-                    <Element>
-                        <Term>cbc:ItemClassificationCode</Term>
-                        <Name>Item classification code</Name>
-                        <DataType>Code</DataType>
-                        <Description>A code for classifying the item by its type or nature. Classification codes are used
-                            to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
-                        <Attribute usage="Optional">
-                            <Term>listID</Term>
-                            <Name>Code list identifier</Name>
-                            <Value type="EXAMPLE">UNSPSC</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">53131502</Value>
-                    </Element>
-                </Element>
+                <Include>part/item-classification.xml</Include>
 
                 <Element cardinality="0..1">
                     <Term>cac:TransactionConditions</Term>
@@ -1246,11 +1180,7 @@
                             according to the UNDG classification schema.
                         </Description>
                         <Reference type="CODE_LIST">UNCL8273</Reference>
-                        <Attribute>
-                            <Term>listID</Term>
-                            <Name>Code list identifier</Name>
-                            <Value type="FIXED">UNCL8273</Value>
-                        </Attribute>
+                      
                         <Value type="EXAMPLE">0131</Value>
                     </Element>
                 </Element>
@@ -1267,11 +1197,7 @@
                         <DataType>Code</DataType>
                         <Description>The VAT category for the item</Description>
                         <Reference type="CODE_LIST">UNCL5305</Reference>
-                        <Attribute usage="Optional">
-                            <Term>listID</Term>
-                            <Name>Code list identifier</Name>
-                            <Value type="FIXED">UNCL5305</Value>
-                        </Attribute>
+                      
                         <Value type="EXAMPLE">S</Value>
                     </Element>
 
@@ -1319,7 +1245,6 @@
                         <DataType>Text</DataType>
                         <Description>The name of the property.The name must be sufficiently descriptive to define the value.
                             The definition may be supplemented with the property unit of measure when relevant.</Description>
-                        <Reference type="RULE">BII3-T68-R015</Reference>
                         <Value type="EXAMPLE">Color</Value>
 
                     </Element>
@@ -1330,14 +1255,6 @@
                         <DataType>Code</DataType>
                         <Description>Code for the item property according to a property code system
                         </Description>
-
-                        <Attribute usage="Optional">
-                            <Term>listID</Term>
-                            <Name>Code list identifier</Name>
-                            <DataType>Identifier</DataType>
-                            <Value type="EXAMPLE">UNCL7081</Value>
-                        </Attribute>
-
                         <Value type="EXAMPLE">35</Value>
                     </Element>
 
@@ -1346,17 +1263,35 @@
                         <Name>Item property value</Name>
                         <DataType>Text</DataType>
                         <Description>The value of the item property</Description>
-                        <Reference type="RULE">BII3-T68-R015</Reference>
                         <Value type="EXAMPLE">Red</Value>
                     </Element>
 
                     <Element cardinality="0..1">
+                        <Term>cbc:ValueQuantity</Term>
+                        <Name>Item property value quantity</Name>
+                        <Description>The quantity of the item property.</Description>
+                        <DataType>Quantity</DataType>
+                        
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Value quantity unit of measure</Name>
+                            <Description>The unit of measure that applies to the value quantity.
+                                Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                                The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
+                            </Description>
+                            <DataType>Code</DataType>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Reference type="CODE_LIST">UNECERec21</Reference>
+                            <Value type="EXAMPLE">C62</Value>
+                        </Attribute>
+                    </Element>
+                    
+                    <Element cardinality="0..1">
                         <Term>cbc:ValueQualifier</Term>
-                        <Name>Item property unit of measure</Name>
-                        <DataType>String</DataType>
-                        <Description>The unit of measure in which the property value is
-                            stated, if relevant. May not be relevant when properties are descriptive.</Description>
-                        <Value type="EXAMPLE">EA</Value>
+                        <Name>Property description</Name>
+                        <Description>Free text description of the property</Description>
+                        <DataType>Text</DataType>
+                        <Value type="EXAMPLE">Red</Value>
                     </Element>
 
                 </Element>
@@ -1365,7 +1300,7 @@
                     <Term>cac:ManufacturerParty</Term>
                     <Name>Manufacturer party</Name>
 
-                    <Element cardinality="0..1">
+                    <Element>
                         <Term>cac:PartyName</Term>
                         <Name>Party name</Name>
 
@@ -1484,7 +1419,7 @@
                                 reference to the corresponding Item requirement given in the corresponding
                                 pre-award catalogue request this pre-award catalogue is build on.
                             </Description>
-                            <Value type="EXAMPLE">http://www.nordic-ecolabel.org or urn:sample:difi:pacr:aaaba1a2-d107-426d-8a64-698b678756d5:item-requirement:2</Value>
+                            <Value type="EXAMPLE">http://www.nordic-ecolabel.org</Value>
                         </Element>
                     </Element>
                 </Element>
@@ -1508,20 +1443,13 @@
                         <DataType>Identifier</DataType>
                         <Description>An identifier for the attribute to which the measure applies.</Description>
                         <Reference type="CODE_LIST">UNCL6313</Reference>
-
-                        <Attribute>
-                            <Term>Scheme identifier</Term>
-                            <Name>schemeID</Name>
-                            <Value type="FIXED">UNCL6313</Value>
-                        </Attribute>
-                        <Value type="FIXED">HT or LN or WD or AAB or TC or AAO</Value>
+                        <Value type="EXAMPLE">HT</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:Measure</Term>
                         <DataType>Quantity</DataType>
-                        <Name>
-                            Handling unit height or length or width or gross weight
+                        <Name> Handling unit height or length or width or gross weight
                         </Name>
                         <Description>
                             The dimensions of the handling unit:
@@ -1532,15 +1460,15 @@
                         </Description>
                         <Attribute>
                             <Term>unitCode</Term>
-                            <Name>Quantity unit code</Name>
+                            <Name>Unit of measure</Name>
+                            <Description>The unit of measure that applies to the value quantity.
+                                Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                                The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
+                            </Description>
+                            <DataType>Code</DataType>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">MTR or KGM</Value>
-                        </Attribute>
-                        <Attribute>
-                            <Term>unitCodeListID</Term>
-                            <Name>Quantity Unit. Code List Identifier</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
+                            <Reference type="CODE_LIST">UNECERec21</Reference>
+                            <Value type="EXAMPLE">C62</Value>
                         </Attribute>
                         <Value type="EXAMPLE">3</Value>
                     </Element>
@@ -1556,15 +1484,15 @@
                         </Description>
                         <Attribute>
                             <Term>unitCode</Term>
-                            <Name>Measure unit code</Name>
+                            <Name>Unit of measure</Name>
+                            <Description>The unit of measure that applies to the value quantity.
+                                Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                                The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
+                            </Description>
+                            <DataType>Code</DataType>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">CEL or P1</Value>
-                        </Attribute>
-                        <Attribute>
-                            <Term>unitCodeListVersionID</Term>
-                            <Name>Measure unit code list</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
+                            <Reference type="CODE_LIST">UNECERec21</Reference>
+                            <Value type="EXAMPLE">C62</Value>
                         </Attribute>
                         <Value type="EXAMPLE">10</Value>
                     </Element>
@@ -1580,15 +1508,15 @@
                         </Description>
                         <Attribute>
                             <Term>unitCode</Term>
-                            <Name>Measure unit code</Name>
+                            <Name>Unit of measure</Name>
+                            <Description>The unit of measure that applies to the value quantity.
+                                Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                                The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
+                            </Description>
+                            <DataType>Code</DataType>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Value type="EXAMPLE">CEL or P1</Value>
-                        </Attribute>
-                        <Attribute>
-                            <Term>unitCodeListVersionID</Term>
-                            <Name>Measure unit code list</Name>
-                            <Description>The list identifier for the unit of the quantity</Description>
-                            <Value type="FIXED">UNECERec20</Value>
+                            <Reference type="CODE_LIST">UNECERec21</Reference>
+                            <Value type="EXAMPLE">C62</Value>
                         </Attribute>
                         <Value type="EXAMPLE">15</Value>
                     </Element>
@@ -1607,10 +1535,6 @@
                     <Name>Requested deliverable identifier</Name>
                     <DataType>Identifier</DataType>
                     <Description>Identifier for a requested deliverable.</Description>
-                    <Attribute usage="Optional">
-                        <Term>schemeID</Term>
-                        <Description>The identification of the identification scheme.</Description>
-                    </Attribute>
                 </Element>
             </Element>
         </Element>

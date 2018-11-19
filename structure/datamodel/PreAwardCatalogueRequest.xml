@@ -480,7 +480,7 @@
                         <Name>Price type code</Name>
                         <Description>A coded value for the type of price, estimated or maximum price.</Description>
                         <DataType>Code</DataType>
-                        <Reference type="CODE_LIST">UNCL5387</Reference>
+                        <Reference type="CODE_LIST">UNCL5387-req</Reference>
                         <Value type="EXAMPLE">NE</Value>
                     </Element>
 
@@ -571,37 +571,9 @@
                     </Element>
 
                 </Element>
+                
+                <Include>part/item-classification.xml</Include>
 
-                <Element cardinality="0..n">
-                    <Term>cac:CommodityClassification</Term>
-                    <Name>Commodity classification</Name>
-                    <Description>A classification of this item according to a specific system for classifying commodities.</Description>
-                    <Property key="doc">structure/docs/CommodityClassification-Request.adoc</Property>
-
-                    <Element>
-                        <Term>cbc:ItemClassificationCode</Term>
-                        <Name>Item request classification code</Name>
-                        <Description>A code for classifying the item by its type or nature</Description>
-                        <DataType>Code</DataType>
-                        
-                        <Attribute>
-                            <Term>listID</Term>
-                            <Name>Item classification identification scheme identifier</Name>
-                            <Description>The identification scheme identifier of the Item classification identifier</Description>
-                            <Reference type="CODE_LIST">UNCL7143</Reference>
-                            <Value type="EXAMPLE">STI</Value>
-                        </Attribute>
-                        
-                        <Attribute>
-                            <Term>listName</Term>
-                            <Name>Item request classification name</Name>
-                            <Description>The name of the classification for this item.</Description>
-                            <Value type="EXAMPLE">eClass</Value>
-                        </Attribute>
-                        
-                        <Value type="EXAMPLE">230482343</Value>
-                    </Element>
-                </Element>
                 
                 <Element cardinality="0..n">
                     <Term>cac:AdditionalItemProperty</Term>
