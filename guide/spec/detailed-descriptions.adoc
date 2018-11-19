@@ -86,11 +86,11 @@ Additional properties are meant for product properties that cannot be sent in an
 Additional properties consist of the Name of the property and the actual Value.
 
 .Example of additional properties:
----
+----
 * Color
 * fat percentage in food
 * Size
----
+----
 
 [source,xml]
 .UBL example of applying Additional item property in Pre-Award catalogue request.
