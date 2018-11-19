@@ -5,37 +5,31 @@
         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 
-    <!-- Snippet file for Alt440- PreAward Catalogue  -->
 
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:PrAcc-Catalogue:2.0</cbc:CustomizationID> <!-- Need input -->
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:02:1.0</cbc:ProfileID> <!-- Need input -->
-    <cbc:ID>j3a3-ik53-tr35-3fw7</cbc:ID>
-    <cbc:Name>Catalogue name</cbc:Name>
-    <cbc:IssueDate>2018-10-20</cbc:IssueDate>
-    <cbc:IssueTime>15:34:57</cbc:IssueTime>
+    <cbc:ID>GADD-2101</cbc:ID>
+    <cbc:Name>Milk Catalogue</cbc:Name>
+    <cbc:IssueDate>2018-10-02</cbc:IssueDate>
+    <cbc:IssueTime>15:00:00</cbc:IssueTime>
     <cbc:note>Payment deadline 2018-11-01.</cbc:note>
     <cbc:VersionID>1</cbc:VersionID>
 
-    <!-- tag::ValidityPeriod[] -->
     <cac:ValidityPeriod>
-        <cbc:StartDate>2018-10-20</cbc:StartDate>
+        <cbc:StartDate>2018-10-02</cbc:StartDate>
         <cbc:EndDate>2018-10-30</cbc:EndDate>
     </cac:ValidityPeriod>
-    <!-- end::ValidityPeriod[] -->
 
-    <!-- tag::ReferencedContract[] -->
     <cac:ReferencedContract>
-        <cbc:ID>8173</cbc:ID>
-        <cbc:IssueDate>2018-08-01</cbc:IssueDate>
+        <cbc:ID>1234</cbc:ID>
+        <cbc:IssueDate>2018-09-01</cbc:IssueDate>
         <cbc:ContractTypeCode listID="UNCL1001">21</cbc:ContractTypeCode>
         <cac:ContractDocumentReference>
-            <cbc:ID>TU-343</cbc:ID>
+            <cbc:ID>TR-12</cbc:ID>
         </cac:ContractDocumentReference>
     </cac:ReferencedContract>
-    <!-- end::ReferencedContract[] -->
 
-    <!-- tag::ProviderParty[] -->
     <cac:ProviderParty>
         <cbc:EndpointID schemeID="SE:VATNO">TJ5241254623</cbc:EndpointID>
         <cac:PartyIdentification>
@@ -55,9 +49,7 @@
             </cac:Country>
         </cac:PostalAddress>
     </cac:ProviderParty>
-    <!-- end::ProviderParty[] -->
 
-    <!-- tag::ReceiverParty[] -->
     <cac:ReceiverParty>
         <cbc:EndpointID>14534789</cbc:EndpointID>
         <cac:PartyIdentification>
@@ -77,16 +69,14 @@
             </cac:Country>
         </cac:PostalAddress>
     </cac:ReceiverParty>
-    <!-- end::ReceiverParty[] -->
 
-    <!-- tag::SellerSupplierParty[] -->
     <cac:SellerSupplierParty>
         <cac:Party>
             <cac:PartyIdentification>
                 <cbc:ID>34343476336</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
-                <cbc:Name>Dieter Meier</cbc:Name>
+                <cbc:Name>Milk party</cbc:Name>
             </cac:PartyName>
             <cac:PostalAddress>
                 <cbc:StreetName>Koenigstrasse 12</cbc:StreetName>
@@ -106,16 +96,14 @@
             </cac:Contact>
         </cac:Party>
     </cac:SellerSupplierParty>
-    <!-- end::SellerSupplierParty[] -->
 
-    <!-- tag::ContractorCustomerParty[] -->
     <cac:ContractorCustomerParty>
         <cac:Party>
             <cac:PartyIdentification>
                 <cbc:ID>1278</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
-                <cbc:Name>Emiliano Russo</cbc:Name>
+                <cbc:Name>Milk shop</cbc:Name>
             </cac:PartyName>
             <cac:Contact>
                 <cbc:Name>Rodrigo Tommasso</cbc:Name>
@@ -125,9 +113,7 @@
             </cac:Contact>
         </cac:Party>
     </cac:ContractorCustomerParty>
-    <!-- end::ContractorCustomerParty[] -->
 
-    <!-- tag::CatalogueLine[] -->
     <cac:CatalogueLine>
         <cbc:ID>2</cbc:ID>
         <cbc:ContractSubdivision>Part 1</cbc:ContractSubdivision>
@@ -137,54 +123,41 @@
         <cbc:OrderQuantityIncrementNumeric>2</cbc:OrderQuantityIncrementNumeric>
         <cbc:MinimumOrderQuantity>1</cbc:MinimumOrderQuantity> <!-- Codelist: UNECERec20-11e -->
         <cbc:MaximumOrderQuantity>500</cbc:MaximumOrderQuantity> <!-- Codelist: UNECERec20-11e -->
-        <cbc:WarrantyInformation>5 years warranty</cbc:WarrantyInformation>
-        <cbc:PackLevelCode>IF</cbc:PackLevelCode> <!-- Codelist: UNECERec21-9e -->
+        <cbc:WarrantyInformation>1 month warranty.</cbc:WarrantyInformation>
+        <cbc:PackLevelCode>CT</cbc:PackLevelCode> <!-- Codelist: UNECERec21-9e -->
 
-        <!-- tag::LineValidityPeriod[] -->
         <cac:LineValidityPeriod>
             <cbc:StartDate>2018-10-20</cbc:StartDate>
             <cbc:EndDate>2018-10-30</cbc:EndDate>
         </cac:LineValidityPeriod>
-        <!-- end::LineValidityPeriod[] -->
 
-        <!-- tag::ItemComparison[] -->
         <cac:ItemComparison>
-            <cbc:PriceAmount currencyID="EUR">142.00</cbc:PriceAmount> <!-- Codelist: ISO4217_2015-->
-            <cbc:Quantity>0.5</cbc:Quantity>
+            <cbc:PriceAmount currencyID="EUR">10.00</cbc:PriceAmount> <!-- Codelist: ISO4217_2015-->
+            <cbc:Quantity unitCode="">1</cbc:Quantity>
         </cac:ItemComparison>
-        <!-- end::ItemComparison[] -->
 
-        <!-- tag::ComponentRelatedItem[] -->
         <cac:ComponentRelatedItem>
             <cbc:ID>B1</cbc:ID>
             <cbc:Quantity>4</cbc:Quantity>
         </cac:ComponentRelatedItem>
-        <!-- end::ComponentRelatedItem[] -->
 
-        <!-- tag::RequiredRelatedItem[] -->
-        <cac:RequiredRelatedItem>
+        <cac:ReplacedRelatedItem>
             <cbc:ID>AA</cbc:ID>
             <cbc:Quantity>16</cbc:Quantity>
-        </cac:RequiredRelatedItem>
-        <!-- end::RequiredRelatedItem[] -->
+        </cac:ReplacedRelatedItem>
 
-        <!-- tag::ComplementaryRelatedItem[] -->
         <cac:ComplementaryRelatedItem>
             <cbc:ID>R2</cbc:ID>
             <cbc:Quantity>3161</cbc:Quantity>
         </cac:ComplementaryRelatedItem>
-        <!-- end::ComplementaryRelatedItem[] -->
 
-        <!-- tag::ReplacedRelatedItem[] -->
+
         <cac:ReplacedRelatedItem>
             <cbc:ID>BB</cbc:ID>
             <cbc:Quantity>31</cbc:Quantity>
         </cac:ReplacedRelatedItem>
-        <!-- end::ReplacedRelatedItem[] -->
 
-        <!-- tag::RequiredItemLocationQuantity[] -->
         <cac:RequiredItemLocationQuantity>
-            <!-- tag::ApplicableTerritoryAddress[] -->
             <cbc:MaximumQuantity>1</cbc:MaximumQuantity>
             <cbc:MaximumQuantity>2</cbc:MaximumQuantity>
             <cac:ApplicableTerritoryAddress>
@@ -197,15 +170,13 @@
                     <cbc:IdentificationCode listID="ISO3166_Alpha2">IT</cbc:IdentificationCode>
                 </cac:Country>
             </cac:ApplicableTerritoryAddress>
-            <!-- end::ApplicableTerritoryAddress[] -->
 
-            <!-- tag::Price[] -->
             <cac:Price>
                 <cbc:PriceAmount currencyID="EUR">120</cbc:PriceAmount>
                 <cbc:PriceTypeCode>CP</cbc:PriceTypeCode>
                 <cbc:OrderableUnitFactorRate>5</cbc:OrderableUnitFactorRate>
                 <cac:ValidityPeriod>
-                    <cbc:StartDate>2018-10-20</cbc:StartDate>
+                    <cbc:StartDate>2018-10-02</cbc:StartDate>
                     <cbc:EndDate>2018-10-30</cbc:EndDate>
                 </cac:ValidityPeriod>
                 <cac:AllowanceCharge>
@@ -214,15 +185,11 @@
                     <cbc:Amount currencyID="EUR">12</cbc:Amount>
                 </cac:AllowanceCharge>
             </cac:Price>
-            <!-- end::Price[] -->
-
         </cac:RequiredItemLocationQuantity>
-        <!-- end::RequiredItemLocationQuantity[] -->
 
 
-        <!-- tag::Item[] -->
         <cac:Item>
-            <cbc:Description>The item is x size, and is powerful with...</cbc:Description>
+            <cbc:Description>Standard melk med fettinnhold på 3%.</cbc:Description>
             <cbc:PackQuantity>EA</cbc:PackQuantity> <!-- Codelist: UNECERec20-11e -->
             <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric>
             <cbc:Name>ABC</cbc:Name>
@@ -239,7 +206,6 @@
                 <cbc:ExtendedID>B72-24GY</cbc:ExtendedID>
             </cac:StandardItemIdentification>
 
-            <!-- tag::ItemSpecificationDocumentReference[] -->
             <cac:ItemSpecificationDocumentReference>
                 <cbc:ID>ie353-ior24-iedt25-pry463</cbc:ID>
                 <cbc:DocumentTypeCode>4</cbc:DocumentTypeCode>
@@ -252,7 +218,6 @@
                     </cac:ExternalReference>
                 </cac:Attachment>
             </cac:ItemSpecificationDocumentReference>
-            <!-- end::ItemSpecificationDocumentReference[] -->
 
             <cac:OriginCountry>
                 <cbc:IdentificationCode listID="ISO3166_Alpha2">ES</cbc:IdentificationCode>
@@ -269,7 +234,6 @@
                 <cbc:UNDGCode>1164</cbc:UNDGCode>
             </cac:HazardousItem>
 
-            <!-- tag::ClassifiedTaxCategory[] -->
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>S</cbc:ID> <!-- Need VAT codelist ref. -->
                 <cbc:Percent>25</cbc:Percent>
@@ -277,9 +241,7 @@
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
-            <!-- end::ClassifiedTaxCategory[] -->
 
-            <!-- tag::AdditionalItemProperty[] -->
             <cac:AdditionalItemProperty>
                 <cbc:ID>X4</cbc:ID>
                 <cbc:Name>Sugarfree fisherman's friend</cbc:Name>
@@ -287,7 +249,6 @@
                 <cbc:Value>White</cbc:Value>
                 <cbc:ValueQuantity unitCodeListID="UNECERec20-11e">58</cbc:ValueQuantity> <!-- How to refer to the codelist UNECERec20-11e? -->
             </cac:AdditionalItemProperty>
-            <!-- end::AdditionalItemProperty[] -->
 
             <cac:ManufacturerParty>
                 <cac:PartyName>
@@ -299,7 +260,6 @@
                 <cbc:BestBeforeDate>2019-12-20</cbc:BestBeforeDate>>
             </cac:ItemInstance>
 
-            <!-- tag::Certificate[] -->
             <cac:Certificate>
                 <cbc:ID>1</cbc:ID>
                 <cbc:CertificateTypeCode>NEO</cbc:CertificateTypeCode>
@@ -315,28 +275,21 @@
                     <cbc:ID>http://www.nordic-ecolabel.org or urn:sample:difi:pacr:aaaba1a2-d107-426d-8a64-698b678756d5:item-requirement:2</cbc:ID>
                 </cac:DocumentReference>
             </cac:Certificate>
-            <!-- end::Certificate[] -->
 
-            <!-- tag::Dimension[] -->
             <cac:Dimension>
                 <cbc:AttributeID schemeID="UNCL6313">HT</cbc:AttributeID>
                 <cbc:Measure unitCode="MTR" unitCodeListVersionID="UNECERec20">1</cbc:Measure>
                 <cbc:MinimumMeasure unitCode="CEL" unitCodeListVersionID="UNECERec20">10</cbc:MinimumMeasure>
                 <cbc:MaximumMeasure unitCode="CEL" unitCodeListVersionID="UNECERec20">30</cbc:MaximumMeasure>
             </cac:Dimension>
-            <!-- end::Dimension[] -->
 
         </cac:Item>
-        <!-- end::Item[] -->
 
-        <!-- tag::CallForTendersLineReference[] -->
         <cac:CallForTendersLineReference>
             <cbc:LineID>AA32</cbc:LineID>
         </cac:CallForTendersLineReference>
-        <!-- end::CallForTendersLineReference[] -->
 
     </cac:CatalogueLine>
-    <!-- end::catalogueline[] -->
 
 
 </ubl:Catalogue>

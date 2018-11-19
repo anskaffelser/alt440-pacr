@@ -82,7 +82,6 @@
     </cac:ProviderParty>
     <!-- end::ProviderParty-Request[] -->
 
-
     <cac:RequestCatalogueReference>
         <cbc:ID>123456</cbc:ID>
         <cbc:PreviousVersionID>1.0</cbc:PreviousVersionID>

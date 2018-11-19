@@ -1,0 +1,9 @@
+include::guide/settings.adoc[]
+
+//= Required Item Location Quantity
+
+.UBL example of required related item.
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=RequiredRelatedItem]
+----
