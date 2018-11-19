@@ -111,6 +111,7 @@ Additional properties consist of the Name of the property and the actual Value.
       <cbc:NameCode>PROP</NameCode>
       <cbc:Value></cbc:Value>
       <cbc:ValueQuantity unitCode="P1">2 %<cbc:ValueQuantity>
+      <cbc:ValueQualifier>Mengde fett<cbc:ValueQualifier>
       <cbc:ImportanceCode>M</cbc:ImportanceCode>
       <!-- ... -->
       <cac:ItemPropertyRange>
@@ -137,5 +138,29 @@ Additional properties consist of the Name of the property and the actual Value.
             </cac:Attachment>
         </cac:DocumentReference>
     </cac:Certificate>
+</cac:Item>
+----
+
+
+[source,xml]
+.UBL example of applying Additional item property in Pre-Award catalogue request. We continue with the presented example.
+----
+<cac:Item>
+    <!-- ... -->
+    <cac:AdditionalItemProperty>
+      <cbc:ID>1</ID>
+      <cbc:Name>OrderableUnit</cbc:Name>
+      <cbc:NameCode>PROP</NameCode>
+      <cbc:Value>CT</cbc:Value>
+      <cbc:ValueQuantity><cbc:ValueQuantity>
+      <cbc:ValueQualifier>Papp kartong<cbc:ValueQualifier>
+      <cbc:ImportanceCode>M</cbc:ImportanceCode>
+      <!-- ... -->
+      <cac:ItemPropertyRange>
+        <cbc:MinimumValue></cbc:MinimumValue>
+        <cbc:MaximumValue></cbc:MaximumValue>
+      </cac:ItemPropertyRange>
+    </cac:AdditionalItemProperty>
+    <!-- ... -->
 </cac:Item>
 ----
