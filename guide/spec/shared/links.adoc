@@ -3,6 +3,9 @@
 :link-pracc-cat: https://test-vefa.difi.no/alt440/pacr/syntax/catalogue/tree/[Pre award catalogue]
 :link-codelist: https://test-vefa.difi.no/alt440/pacr/codelist/[Code list section]
 :codelist-ICD: https://test-vefa.difi.no/alt440/pacr/codelist/ICD/[ICD list]
+:eaid: https://test-vefa.difi.no/alt440/pacr/codelist/eaid/[Code list for electronic address]
+
+
 
 //PEPPOL
 :peppol: https://peppol.eu/?rel=undefined[PEPPOL]
