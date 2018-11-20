@@ -24,7 +24,7 @@
                 regarding semantic content, cardinalities and business rules to which the data
                 contained in the instance document conforms.</Description>
             <DataType>Identifier</DataType>
-            <Value type="EXAMPLE">urn:fdc:difi.no:2017:ehf:CatalogueRequest:2.0</Value>
+            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:pacr:1.0</Value>
         </Element>
 
         <Element>
@@ -33,7 +33,7 @@
             <Description>Identifies the business process context in which the transaction appears.
                 It enables the buyer to process the document in an appropriate way.</Description>
             <DataType>Identifier</DataType>
-            <Value type="EXAMPLE">urn:fdc:difi.no:2017:ehf:profile:02:1.0</Value>
+            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:profile:03:1.0</Value>
         </Element>
 
         <Element>

@@ -20,7 +20,7 @@
             <Description>An identification of the specification containing the total set of rules regarding semantic
                 content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
             <DataType>Identifier</DataType>
-            <Value type="EXAMPLE">urn:fdc:difi.no:2017:ehf:PrAcc-Catalogue:2.0</Value>
+            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:pac:1.0</Value>
         </Element>
 
         <Element>
@@ -29,7 +29,7 @@
             <Description>Identifies the business process context in which the transaction appears. It enables the buyer
                 to process the document in an appropriate way.</Description>
             <DataType>Identifier</DataType>
-            <Value type="EXAMPLE">urn:fdc:difi.no:2017:ehf:profile:02:1.0</Value>
+            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:profile:03:1.0</Value>
         </Element>
 
         <Element>
@@ -40,7 +40,7 @@
             <DataType>Identifier</DataType>
             <Value type="EXAMPLE">123</Value>
         </Element>
-        
+
         <Element cardinality="0..1">
             <Term>cbc:ActionCode</Term>
             <Name>Catalogue action code</Name>
@@ -77,7 +77,7 @@
             <Name>Catalogue issue time</Name>
             <Description>The time on which the pre-award catalogue was issued. Time shall not include timezone information.</Description>
             <DataType>Time</DataType>
-           
+
             <Value type="EXAMPLE">10:00:00</Value>
         </Element>
 
@@ -101,7 +101,7 @@
             <Name>Pre-award catalogue validity period</Name>
             <Description>The validity period must include both start date and end date, and the start date must be
                 earlier than the end date</Description>
-           
+
             <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
 
             <Element>
@@ -217,14 +217,14 @@
                     <Value type="EXAMPLE">Provider name</Value>
                 </Element>
             </Element>
-            
+
             <Include>part/postal-address.xml</Include>
 
         </Element>
 
         <Element>
             <Term>cac:ReceiverParty</Term>
-            <Name>Catalogue receiver</Name> 
+            <Name>Catalogue receiver</Name>
             <Description>The party to which the catalogue is sent.</Description>
             <Property key="doc">structure/docs/ReceiverParty.adoc</Property>
 
@@ -234,7 +234,7 @@
                 <Description>The electronic address of the party to which the catalogue is sent.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="RULE">EHF-COMMON-R010</Reference>
-                
+
                 <Attribute>
                     <Term>schemeID</Term>
                     <Name>Identification scheme identifier</Name>
@@ -264,7 +264,7 @@
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
-                    
+
                     <Value type="EXAMPLE">987654321</Value>
                 </Element>
             </Element>
@@ -283,7 +283,7 @@
                     <Value type="EXAMPLE">Catalogue receiver name</Value>
                 </Element>
             </Element>
-            
+
             <Include>part/postal-address.xml</Include>
 
         </Element>
@@ -317,7 +317,7 @@
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0192</Value>
                         </Attribute>
-                        
+
                         <Value type="EXAMPLE">1298234392874923874892</Value>
                     </Element>
                 </Element>
@@ -327,7 +327,7 @@
                     <Name>Party name</Name>
                     <DataType>Text</DataType>
                     <Reference type="RULE">EHF-PAC-R004</Reference>
-                    
+
                     <Element>
                         <Term>cbc:Name</Term>
                         <Name>Catalogue supplier name</Name>
@@ -338,7 +338,7 @@
                 </Element>
 
                 <Include>part/postal-address.xml</Include>
-                
+
                 <Include>part/contact.xml</Include>
 
             </Element>
@@ -373,7 +373,7 @@
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0192</Value>
                         </Attribute>
-                        
+
                         <Value type="EXAMPLE">23947</Value>
                     </Element>
                 </Element>
@@ -394,7 +394,7 @@
 
 
                 <Include>part/contact.xml</Include>
-                
+
             </Element>
         </Element>
 
@@ -423,7 +423,7 @@
                 <Reference type="CODE_LIST">ActionCode_line</Reference>
                 <Value type="EXAMPLE">Update</Value>
             </Element>
-            
+
             <Element cardinality="0..1">
                 <Term>cbc:ContractSubdivision</Term>
                 <Name>Contract subdivision</Name>
@@ -469,7 +469,7 @@
                     <Reference type="CODE_LIST">UNECERec21</Reference>
                     <Value type="EXAMPLE">MLT</Value>
                 </Attribute>
-                
+
             </Element>
 
             <Element cardinality="0..1">
@@ -495,10 +495,10 @@
                     </Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Reference type="CODE_LIST">UNECERec21</Reference>
-                    
+
                     <Value type="EXAMPLE">EA</Value>
                 </Attribute>
-               
+
                 <Value type="DEFAULT">1</Value>
             </Element>
 
@@ -517,10 +517,10 @@
                     </Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Reference type="CODE_LIST">UNECERec21</Reference>
-                    
+
                     <Value type="EXAMPLE">EA</Value>
                 </Attribute>
-             
+
                 <Value type="EXAMPLE">1000</Value>
             </Element>
 
@@ -537,7 +537,7 @@
                 <Description>The packaging level of the orderable unit used to indicate different pack levels and their relation.</Description>
                 <DataType>Code</DataType>
                 <Reference type="CODE_LIST">GS17009</Reference>
-              
+
                 <Value type="EXAMPLE">TU</Value>
             </Element>
 
@@ -557,7 +557,7 @@
                     <Reference type="RULE">EHF-COMMON-R030</Reference>
                     <Value type="EXAMPLE">2017-06-01</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cbc:EndDate</Term>
                     <Name>Period end date</Name>
@@ -607,7 +607,7 @@
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Reference type="CODE_LIST">UNECERec21</Reference>
-                        
+
                         <Value type="EXAMPLE">H87</Value>
                     </Attribute>
                     <Value type="EXAMPLE">0.333</Value>
@@ -642,7 +642,7 @@
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Reference type="CODE_LIST">UNECERec21</Reference>
-                        
+
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
                     <Value type="EXAMPLE">5</Value>
@@ -676,7 +676,7 @@
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Reference type="CODE_LIST">UNECERec21</Reference>
-                        
+
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
                     <Value type="EXAMPLE">10</Value>
@@ -710,7 +710,7 @@
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Reference type="CODE_LIST">UNECERec21</Reference>
-                        
+
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
                     <Value type="EXAMPLE">1000</Value>
@@ -744,7 +744,7 @@
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Reference type="CODE_LIST">UNECERec21</Reference>
-                        
+
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
                     <Value type="EXAMPLE">10</Value>
@@ -771,10 +771,10 @@
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Reference type="CODE_LIST">UNECERec21</Reference>
-                        
+
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
-                    
+
                     <Value type="EXAMPLE">2 rooms</Value>
                 </Element>
 
@@ -792,10 +792,10 @@
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Reference type="CODE_LIST">UNECERec21</Reference>
-                        
+
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
-                    
+
                     <Value type="EXAMPLE">3 rooms</Value>
                 </Element>
 
@@ -810,7 +810,7 @@
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Main Street 1</Value>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:AdditionalStreetName</Term>
                         <Name>Address line 2</Name>
@@ -818,7 +818,7 @@
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Po Box 351</Value>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
                         <Name>City name</Name>
@@ -827,7 +827,7 @@
 
                         <Value type="EXAMPLE">London</Value>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:PostalZone</Term>
                         <Name>Post code</Name>
@@ -836,7 +836,7 @@
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">W1G 8LZ</Value>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:CountrySubentity</Term>
                         <Name>Country subdivision</Name>
@@ -844,7 +844,7 @@
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Region A</Value>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cac:AddressLine</Term>
                         <Name>Address line LINE</Name>
@@ -859,11 +859,11 @@
                             <Value type="EXAMPLE">Building 23</Value>
                         </Element>
                     </Element>
-                    
+
                     <Element>
                         <Term>cac:Country</Term>
                         <Name>Country</Name>
-                        
+
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Country code</Name>
@@ -933,7 +933,7 @@
                             <Reference type="RULE">EHF-COMMON-R030</Reference>
                             <Value type="EXAMPLE">2017-06-01</Value>
                         </Element>
-                        
+
                         <Element>
                             <Term>cbc:EndDate</Term>
                             <Name>Period end date</Name>
@@ -946,7 +946,7 @@
                             <Value type="EXAMPLE">2017-06-15</Value>
                         </Element>
                     </Element>
-                    
+
                 </Element>
 
             </Element>
@@ -987,7 +987,7 @@
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Reference type="CODE_LIST">UNECERec21</Reference>
-                        
+
                         <Value type="EXAMPLE">XBX</Value>
                     </Attribute>
                     <Value type="EXAMPLE">12</Value>
@@ -1076,12 +1076,12 @@
                             <Description>The identification scheme identifier of the Item standard identifier</Description>
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0160</Value>
-                            
+
                         </Attribute>
-                        
+
                         <Value type="EXAMPLE">984719043710294792</Value>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:ExtendedID</Term>
                         <Name>Item sellers extended identifier</Name>
@@ -1114,7 +1114,7 @@
                         <Description>A functional description of the attachment, expressed as a code.</Description>
                         <DataType>Code</DataType>
                         <Reference type="CODE_LIST">UNCL1001</Reference>
-                      
+
                         <Value type="EXAMPLE">6</Value>
                     </Element>
 
@@ -1149,7 +1149,7 @@
                                 <Reference type="CODE_LIST">MimeCode</Reference>
                                 <Value type="EXAMPLE">application/pdf</Value>
                             </Attribute>
-                            
+
                             <Attribute>
                                 <Term>filename</Term>
                                 <Description>File name of the attached document</Description>
@@ -1238,7 +1238,7 @@
                         </Description>
                         <DataType>Code</DataType>
                         <Reference type="CODE_LIST">UNCL8273</Reference>
-                      
+
                         <Value type="EXAMPLE">0131</Value>
                     </Element>
                 </Element>
@@ -1255,7 +1255,7 @@
                         <Description>The VAT category for the item</Description>
                         <DataType>Code</DataType>
                         <Reference type="CODE_LIST">UNCL5305</Reference>
-                      
+
                         <Value type="EXAMPLE">S</Value>
                     </Element>
 
@@ -1331,7 +1331,7 @@
                         <Name>Item property value quantity</Name>
                         <Description>The quantity of the item property.</Description>
                         <DataType>Quantity</DataType>
-                        
+
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Value quantity unit of measure</Name>
@@ -1345,7 +1345,7 @@
                             <Value type="EXAMPLE">C62</Value>
                         </Attribute>
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:ValueQualifier</Term>
                         <Name>Property description</Name>
