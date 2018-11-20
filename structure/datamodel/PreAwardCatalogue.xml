@@ -5,8 +5,8 @@
     <Name>Pre-Award Catalogue</Name>
 
     <Property key="sch:prefix">EHF-PAC</Property>
-    <Property key="sch:identifier">Cat-basic</Property>
-    <Property key="sch:pathprefix">pac</Property>
+    <Property key="sch:identifier">pac-basic</Property>
+    <Property key="sch:pathprefix">pacr</Property>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>

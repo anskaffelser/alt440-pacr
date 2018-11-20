@@ -4,13 +4,13 @@
         schemaVersion="iso" queryBinding="xslt2">
 
     <title>Rules for EHF PreAward Catalogue request (EHF Forespørselskatalog)</title>
-    
+
     <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" prefix="cbc"/>
     <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" prefix="cac"/>
     <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2" prefix="ubl"/>
     <ns uri="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
     <ns uri="utils" prefix="u"/>
-    
+
     <!-- Functions -->
 
     <xi:include href="parts/function/gln.xml"/>
@@ -20,7 +20,7 @@
 
     <include href="parts/common/empty-elements.sch"/>
     <include href="parts/common/rules.sch"/>
-    <include href="../../target/generated/CatReq-basic.sch"/>
+    <include href="../../target/generated/pacr-basic.sch"/>
     <include href="parts/EHF-M-PACR.sch"/>
 
 </schema>

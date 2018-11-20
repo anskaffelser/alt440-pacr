@@ -5,7 +5,7 @@
     <Name>PreAward Catalogue Request</Name>
 
     <Property key="sch:prefix">EHF-PACR</Property>
-    <Property key="sch:identifier">CatReq-basic</Property>
+    <Property key="sch:identifier">pacr-basic</Property>
     <Property key="sch:pathprefix">pacr</Property>
 
     <Namespace prefix="ubl"
