@@ -33,16 +33,16 @@ image::images/rolediagram.png[align="center",1200, 800]
 
 == Validity Period
 
-In the PreAward the following validity periods can be stated:
+In the Pre-Award the following validity periods can be stated:
 
-* Validity period on document level (mandatory), used to state the validity period for the entire PreAward Catalogue.
+* Validity period on document level (mandatory), used to state the validity period for the entire Pre-Award Catalogue.
 * Validity period for a catalogue line
 * Validity period for price (See also section 4.7)
 
 WARNING: All validity periods shall have both start date and end date, and the start date shall be earlier than the end date
 
 
-Example of validity periods in a PreAward Catalogue:
+Example of validity periods in a Pre-Award Catalogue:
 
 [source]
 .Document level (mandatory)
@@ -91,7 +91,7 @@ Types of relations:
 * Component related items are products that are connected in a product line or a logistics structure, e.g. consumer units and trading units of the same article.
 * Complementary related item is used for items that might be sold together with a product, e.g. disk station to a laptop.
 
-Examples of related products in a PreAward Catalogue message
+Examples of related products in a Pre-Award Catalogue message
 
 .Bundled products
 [source, xml, indent=0]
@@ -216,7 +216,7 @@ The quantity of the requested item property.
 
 == Logistics Information
 
-The PreAward Catalogue includes elements to support the need for logistics information which is a requirement in many industries. These elements are not mandatory, but trading partners can agree upon the use in the commercial agreements.
+The Pre-Award Catalogue includes elements to support the need for logistics information which is a requirement in many industries. These elements are not mandatory, but trading partners can agree upon the use in the commercial agreements.
 
 The Logistics elements can be used to specify different pack levels for the same article. This shall be done as follows:
 
@@ -229,9 +229,9 @@ The Logistics elements can be used to specify different pack levels for the same
 * It shall be stated if the pack level is orderable.
 * The relation between pack levels shall be specified, e.g. that a Dispatch unit contains Traded units.
 
-WARNING: When component related items are used, all the items in the PreAward Catalogue shall specify the Sellers item identifier
+WARNING: When component related items are used, all the items in the Pre-Award Catalogue shall specify the Sellers item identifier
 
-Below is an example of Logistics information in a PreAward Catalogue message.
+Below is an example of Logistics information in a Pre-Award Catalogue message.
 
 .Catalogue line for Dispatch unit, highest pack level.
 [source, xml, indent=0]
@@ -307,7 +307,7 @@ Below is an example of Logistics information in a PreAward Catalogue message.
 
 Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended to use external references in the form of URI’s for attachments.
 
-If binary objects are attached to the PreAward Catalogue, the valid values for mimetype can be found in codelist.
+If binary objects are attached to the Pre-Award Catalogue, the valid values for mimetype can be found in codelist.
 
 [source]
 .Example of using external reference
@@ -351,7 +351,7 @@ All prices in the format are related to the article or service within this Pre-A
 
 Be aware that no Gross prices can be sent in the format (price before discount and charges). All prices shall have Currency as an attribute. Currency shall be according to Code list.
 
-Example of Prices in PreAward Catalogue:
+Example of Prices in Pre-Award Catalogue:
 
 [source]
 .Item Price
@@ -445,7 +445,7 @@ Certificate TypeCode: OrganicLabel (Ecological)
 
 == Additional Item Properties
 
-Additional properties are meant for product properties that cannot be sent in any of the defined elements in PreAward Catalogue. Additional properties consist of the Name of the property and the actual Value.
+Additional properties are meant for product properties that cannot be sent in any of the defined elements in Pre-Award Catalogue. Additional properties consist of the Name of the property and the actual Value.
 
 .Example of additional properties:
 * Color
@@ -456,7 +456,7 @@ Stated with amount per 100 g/ml.
 * Genetically modified +
 Legal values: True, False
 
-.Example of use in the PreAward PreAward Catalogue message
+.Example of use in the Pre-Award Catalogue message
 ====
 
 [source]
@@ -546,7 +546,7 @@ Keywords are sent to let the Buyer search for a product without knowing the Prod
 
 VAT information on line level is provided in the class cac:ClassifiedTaxCategory.
 
-VAT information is optional in the Pre-Award Catalogue. Catalogue receivers may require VAT-information in the PreAward Catalogue.
+VAT information is optional in the Pre-Award Catalogue. Catalogue receivers may require VAT-information in the Pre-Award Catalogue.
 
 .Example of using VAT.
 [source, xml, indent=0]
