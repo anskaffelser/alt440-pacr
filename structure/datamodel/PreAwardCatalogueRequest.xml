@@ -87,6 +87,7 @@
                 <Name>Receiver party/Economic operator electronic address identifier</Name>
                 <Description>Electronic address of the economic operator.</Description>
                 <DataType>Identifier</DataType>
+                <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                 <Attribute>
                     <Term>schemeID</Term>
@@ -108,6 +109,7 @@
                     <Description>An identifier that identifies the receiver/economic operator, such
                         as a legal registration identifier.</Description>
                     <DataType>Identifier</DataType>
+                    <Reference type="RULE">EHF-COMMON-R011</Reference>
                     <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                     <Attribute usage="optional">
@@ -183,6 +185,7 @@
                 <Name>Contracting body electronic address identifier</Name>
                 <Description>Electronic address of the contracting body.</Description>
                 <DataType>Identifier</DataType>
+                <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                 <Attribute>
                     <Term>schemeID</Term>
@@ -198,6 +201,7 @@
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
                 <Reference type="RULE">EHF-PACR-R002</Reference>
+                
 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -205,6 +209,7 @@
                     <Description>The national identifier of a contracting body as it is legally
                         registered (e.g. VAT identification, such as KBO).</Description>
                     <DataType>Identifier</DataType>
+                    <Reference type="RULE">EHF-COMMON-R011</Reference>
                     <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                     <Attribute usage="optional">

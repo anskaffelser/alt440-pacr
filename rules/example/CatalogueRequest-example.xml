@@ -13,9 +13,9 @@
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
 
     <cac:ReceiverParty>
-        <cbc:EndpointID>14534789</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">991825827</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID>9375302</cbc:ID>
+            <cbc:ID schemeID="0192">991825827</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Giovanna milk company</cbc:Name>
@@ -27,7 +27,7 @@
             <cbc:PostalZone>05022</cbc:PostalZone>
             <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
             <cac:Country>
-                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">IT</cbc:IdentificationCode>
+                <cbc:IdentificationCode>IT</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
         <cac:PartyLegalEntity>
@@ -45,9 +45,9 @@
     </cac:ReceiverParty>
 
     <cac:ProviderParty>
-        <cbc:EndpointID schemeID="SE:VATNO">TJ5241254623</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">490512349</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID>ST0242892522</cbc:ID>
+            <cbc:ID schemeID="0192">490512349</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Matbutikken Ltd.</cbc:Name>
@@ -59,7 +59,7 @@
             <cbc:PostalZone>3550</cbc:PostalZone>
             <cbc:CountrySubentity>Slangerup</cbc:CountrySubentity>
             <cac:Country>
-                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">DK</cbc:IdentificationCode>
+                <cbc:IdentificationCode>DK</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
         <cac:PartyLegalEntity>
@@ -76,10 +76,10 @@
         </cac:Contact>
     </cac:ProviderParty>
 
-    <cac:RequestCatalogueReference>
+    <cac:RequestedCatalogueReference>
         <cbc:ID>123456</cbc:ID>
         <cbc:PreviousVersionID>1.0</cbc:PreviousVersionID>
-    </cac:RequestCatalogueReference>
+    </cac:RequestedCatalogueReference>
 
     <cac:ReferencedContract>
         <cbc:ID>1234-2018</cbc:ID>
@@ -93,7 +93,7 @@
         </cac:LineValidityPeriod>
 
         <cac:RequiredItemLocationQuantity>
-            <cbc:MaximumQuantity>1</cbc:MaximumQuantity>
+            <cbc:MinimumQuantity>1</cbc:MinimumQuantity>
             <cbc:MaximumQuantity>20</cbc:MaximumQuantity>
             <cac:ApplicableTerritoryAddress>
                 <cbc:StreetName>Via Goffredo Mameli 32</cbc:StreetName>
@@ -102,7 +102,7 @@
                 <cbc:PostalZone>05022</cbc:PostalZone>
                 <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
                 <cac:Country>
-                    <cbc:IdentificationCode listID="ISO3166_Alpha2">IT</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>IT</cbc:IdentificationCode>
                 </cac:Country>
             </cac:ApplicableTerritoryAddress>
 
@@ -136,7 +136,7 @@
             <cac:AdditionalItemProperty>
                 <cbc:ID>1</cbc:ID>
                 <cbc:Name>Mobilephone</cbc:Name>
-                <cbc:NameCode>PROP</cbc:NameCode> <!-- Codelist property -->
+                <cbc:NameCode>PROP</cbc:NameCode>
                 <cbc:TestMethod>Test the item.</cbc:TestMethod>
                 <cbc:Value>Red carton</cbc:Value>
                 <cbc:ValueQuantity unitCode="1224">74</cbc:ValueQuantity>

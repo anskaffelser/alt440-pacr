@@ -7,8 +7,8 @@
 
 
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-    <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:PrAcc-Catalogue:2.0</cbc:CustomizationID> <!-- Need input -->
-    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:02:1.0</cbc:ProfileID> <!-- Need input -->
+    <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:PrAcc-Catalogue:2.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:02:1.0</cbc:ProfileID>
     <cbc:ID>GADD-2101</cbc:ID>
     <cbc:Name>Milk Catalogue</cbc:Name>
     <cbc:IssueDate>2018-10-02</cbc:IssueDate>
@@ -24,16 +24,16 @@
     <cac:ReferencedContract>
         <cbc:ID>1234-2018</cbc:ID>
         <cbc:IssueDate>2018-09-01</cbc:IssueDate>
-        <cbc:ContractTypeCode listID="UNCL1001">21</cbc:ContractTypeCode>
+        <cbc:ContractTypeCode>21</cbc:ContractTypeCode>
         <cac:ContractDocumentReference>
             <cbc:ID>TR-12</cbc:ID>
         </cac:ContractDocumentReference>
     </cac:ReferencedContract>
 
     <cac:ProviderParty>
-        <cbc:EndpointID schemeID="SE:VATNO">TJ5241254623</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">490512349</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID>ST0242892522</cbc:ID>
+            <cbc:ID schemeID="0192">490512349</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Hans Jensen</cbc:Name>
@@ -45,15 +45,15 @@
             <cbc:PostalZone>3550</cbc:PostalZone>
             <cbc:CountrySubentity>Slangerup</cbc:CountrySubentity>
             <cac:Country>
-                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">DK</cbc:IdentificationCode>
+                <cbc:IdentificationCode>DK</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
     </cac:ProviderParty>
 
     <cac:ReceiverParty>
-        <cbc:EndpointID>14534789</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">991825827</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID>9375302</cbc:ID>
+            <cbc:ID schemeID="0192">991825827</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Giovanni Tommaso Capon</cbc:Name>
@@ -65,7 +65,7 @@
             <cbc:PostalZone>05022</cbc:PostalZone>
             <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
             <cac:Country>
-                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">IT</cbc:IdentificationCode>
+                <cbc:IdentificationCode>IT</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
     </cac:ReceiverParty>
@@ -85,7 +85,7 @@
                 <cbc:PostalZone>99897</cbc:PostalZone>
                 <cbc:CountrySubentity>Freistaat Thüringen</cbc:CountrySubentity>
                 <cac:Country>
-                    <cbc:IdentificationCode listID="ISO3166-1_Alpha2">DE</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>DE</cbc:IdentificationCode>
                 </cac:Country>
             </cac:PostalAddress>
             <cac:Contact>
@@ -207,7 +207,7 @@
 
             <cac:ItemSpecificationDocumentReference>
                 <cbc:ID>123456789</cbc:ID>
-                <cbc:DocumentTypeCode listID="UNCL1001">4</cbc:DocumentTypeCode>
+                <cbc:DocumentTypeCode>4</cbc:DocumentTypeCode>
                 <cbc:DocumentType>Milk specification</cbc:DocumentType>
                 <cbc:DocumentDescription>Report providing the specification of the milk.</cbc:DocumentDescription>
                 <cac:Attachment>
@@ -219,7 +219,7 @@
             </cac:ItemSpecificationDocumentReference>
 
             <cac:OriginCountry>
-                <cbc:IdentificationCode listID="ISO3166_Alpha2">DE</cbc:IdentificationCode>
+                <cbc:IdentificationCode>DE</cbc:IdentificationCode>
             </cac:OriginCountry>
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode>465353</cbc:ItemClassificationCode>

@@ -155,6 +155,7 @@
                 <Name>Catalogue provider electronic address identifier</Name>
                 <Description>The electronic address of the party that sends the catalogue.</Description>
                 <DataType>Identifier</DataType>
+                <Reference type="RULE">EHF-COMMON-R010</Reference>
 
                 <Attribute>
                     <Term>schemeID</Term>
@@ -177,6 +178,7 @@
                     <Name>Catalogue provider standard identifier</Name>
                     <Description>The standard identifier of the party that sends the catalogue.</Description>
                     <DataType>Identifier</DataType>
+                    <Reference type="RULE">EHF-COMMON-R011</Reference>
                     <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                     <Attribute usage="optional">
@@ -218,6 +220,8 @@
                 <Name>Catalogue receiver electronic address identifier</Name>
                 <Description>The electronic address of the party to which the catalogue is sent.</Description>
                 <DataType>Identifier</DataType>
+                <Reference type="RULE">EHF-COMMON-R010</Reference>
+                
                 <Attribute>
                     <Term>schemeID</Term>
                     <Name>Identification scheme identifier</Name>
@@ -238,6 +242,7 @@
                     <Name>Catalogue receiver standard identifier</Name>
                     <Description>The standard identifier of the party to which the catalogue is sent.</Description>
                     <DataType>Identifier</DataType>
+                    <Reference type="RULE">EHF-COMMON-R011</Reference>
                     <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                     <Attribute usage="optional">
@@ -290,6 +295,7 @@
                         <Name>Catalogue supplier standard identifier</Name>
                         <Description>The standard identifier of the party that provides the items specified in the catalogue.</Description>
                         <DataType>Identifier</DataType>
+                        <Reference type="RULE">EHF-COMMON-R011</Reference>
                         <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                         <Attribute usage="optional">
@@ -345,6 +351,7 @@
                         <Name>Catalogue customer standard identifier</Name>
                         <Description>Standard identifier of the party who may order from the catalogue.</Description>
                         <DataType>Identifier</DataType>
+                        <Reference type="RULE">EHF-COMMON-R011</Reference>
                         <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                         <Attribute usage="optional">
