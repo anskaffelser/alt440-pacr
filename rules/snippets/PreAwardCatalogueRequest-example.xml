@@ -174,31 +174,33 @@
                 </cac:ItemPropertyRange>
             </cac:AdditionalItemProperty>
             <!-- end::AdditionalItemProperty-Request[] -->
+
+            <!-- tag::Certificate-Request[] -->
+            <cac:Certificate>
+                <cbc:ID>111</cbc:ID>
+                <cbc:CertificateTypeCode>ECO</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Environmental</cbc:CertificateType>
+                <cbc:Remarks>I</cbc:Remarks>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>Nordic Ecolabelling</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+                <cac:DocumentReference>
+                    <cbc:ID>23143</cbc:ID>
+                    <cac:Attachment>
+                        <cac:ExternalReference>
+                            <cbc:URI>http://www.environmental.org</cbc:URI>
+                        </cac:ExternalReference>
+                    </cac:Attachment>
+
+                </cac:DocumentReference>
+            </cac:Certificate>
+            <!-- end::Certificate-Request[] -->
+
         </cac:Item>
         <!-- end::Item-Request[] -->
 
-        <!-- tag::Certificate-Request[] -->
-        <cac:Certificate>
-            <cbc:ID>111</cbc:ID>
-            <cbc:CertificateTypeCode>ECO</cbc:CertificateTypeCode>
-            <cbc:CertificateType>Environmental</cbc:CertificateType>
-            <cbc:Remarks>I</cbc:Remarks>
-            <cac:IssuerParty>
-                <cac:PartyName>
-                    <cbc:Name>Nordic Ecolabelling</cbc:Name>
-                </cac:PartyName>
-            </cac:IssuerParty>
-            <cac:DocumentReference>
-                <cbc:ID>23143</cbc:ID>
-                <cac:Attachment>
-                    <cac:ExternalReference>
-                        <cbc:URI>http://www.environmental.org</cbc:URI>
-                    </cac:ExternalReference>
-                </cac:Attachment>
-
-            </cac:DocumentReference>
-        </cac:Certificate>
-        <!-- end::Certificate-Request[] -->
 
 
     </cac:CatalogueRequestLine>

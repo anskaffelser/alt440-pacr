@@ -18,11 +18,11 @@
 
     <cac:ValidityPeriod>
         <cbc:StartDate>2018-10-02</cbc:StartDate>
-        <cbc:EndDate>2018-10-30</cbc:EndDate>
+        <cbc:EndDate>2018-12-31</cbc:EndDate>
     </cac:ValidityPeriod>
 
     <cac:ReferencedContract>
-        <cbc:ID>1234</cbc:ID>
+        <cbc:ID>1234-2018</cbc:ID>
         <cbc:IssueDate>2018-09-01</cbc:IssueDate>
         <cbc:ContractTypeCode listID="UNCL1001">21</cbc:ContractTypeCode>
         <cac:ContractDocumentReference>
@@ -100,7 +100,7 @@
     <cac:ContractorCustomerParty>
         <cac:Party>
             <cac:PartyIdentification>
-                <cbc:ID>1278</cbc:ID>
+                <cbc:ID>123456</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>Milk shop</cbc:Name>
@@ -153,12 +153,12 @@
 
         <cac:ReplacedRelatedItem>
             <cbc:ID>BB</cbc:ID>
-            <cbc:Quantity>31</cbc:Quantity>
+            <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">10</cbc:Quantity>
         </cac:ReplacedRelatedItem>
 
         <cac:RequiredItemLocationQuantity>
             <cbc:MaximumQuantity>1</cbc:MaximumQuantity>
-            <cbc:MaximumQuantity>2</cbc:MaximumQuantity>
+            <cbc:MaximumQuantity>20</cbc:MaximumQuantity>
             <cac:ApplicableTerritoryAddress>
                 <cbc:StreetName>Via Goffredo Mameli 32</cbc:StreetName>
                 <cbc:AdditionalStreetName>Building A</cbc:AdditionalStreetName>
@@ -171,7 +171,7 @@
             </cac:ApplicableTerritoryAddress>
 
             <cac:Price>
-                <cbc:PriceAmount currencyID="EUR">120</cbc:PriceAmount>
+                <cbc:PriceAmount currencyID="EUR">20</cbc:PriceAmount>
                 <cbc:PriceTypeCode>CP</cbc:PriceTypeCode>
                 <cbc:OrderableUnitFactorRate>5</cbc:OrderableUnitFactorRate>
                 <cac:ValidityPeriod>
@@ -188,12 +188,12 @@
 
 
         <cac:Item>
-            <cbc:Description>Standard melk med fettinnhold på 3%.</cbc:Description>
+            <cbc:Description>Standard milk with 3 % fat</cbc:Description>
             <cbc:PackQuantity>EA</cbc:PackQuantity> <!-- Codelist: UNECERec20-11e -->
             <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric>
-            <cbc:Name>ABC</cbc:Name>
-            <cbc:Keyword>Pastilles</cbc:Keyword>
-            <cbc:BrandName>Fisherman's friend</cbc:BrandName>
+            <cbc:Name>Milk with low fat</cbc:Name>
+            <cbc:Keyword>Milk</cbc:Keyword>
+            <cbc:BrandName>Milk with 3% fat</cbc:BrandName>
             <cac:SellersItemIdentification>
                 <cbc:ID>T5</cbc:ID>
             </cac:SellersItemIdentification>
@@ -206,27 +206,27 @@
             </cac:StandardItemIdentification>
 
             <cac:ItemSpecificationDocumentReference>
-                <cbc:ID>ie353-ior24-iedt25-pry463</cbc:ID>
-                <cbc:DocumentTypeCode>4</cbc:DocumentTypeCode>
-                <cbc:DocumentType>Contains menthol, citrus, mint, aspartam,...</cbc:DocumentType>
-                <cbc:DocumentDescription>Strong pastilles, good for illness,...</cbc:DocumentDescription>
+                <cbc:ID>123456789</cbc:ID>
+                <cbc:DocumentTypeCode listID="UNCL1001">4</cbc:DocumentTypeCode>
+                <cbc:DocumentType>Milk specification</cbc:DocumentType>
+                <cbc:DocumentDescription>Report providing the specification of the milk.</cbc:DocumentDescription>
                 <cac:Attachment>
                     <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png">JKEAGAGE98QHJ02NAGAE83HJ3QLJGQ3</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
                     <cac:ExternalReference>
-                        <cbc:URI>https://fishermen/mint/yellow</cbc:URI>
+                        <cbc:URI>https://milk/lowpercentage</cbc:URI>
                     </cac:ExternalReference>
                 </cac:Attachment>
             </cac:ItemSpecificationDocumentReference>
 
             <cac:OriginCountry>
-                <cbc:IdentificationCode listID="ISO3166_Alpha2">ES</cbc:IdentificationCode>
+                <cbc:IdentificationCode listID="ISO3166_Alpha2">DE</cbc:IdentificationCode>
             </cac:OriginCountry>
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode>465353</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:TransactionConditions>
-                <cbc:ActionCode></cbc:ActionCode> <!-- Need input -->
-                <cbc:Description>2% discount of the payment; reason of delayed delivery.</cbc:Description>
+                <cbc:ActionCode>SER</cbc:ActionCode> <!-- Need input -->
+                <cbc:Description>Bank payment</cbc:Description>
             </cac:TransactionConditions>
             <cac:HazardousItem>
                 <cbc:ID>55AG</cbc:ID>
@@ -234,7 +234,7 @@
             </cac:HazardousItem>
 
             <cac:ClassifiedTaxCategory>
-                <cbc:ID>S</cbc:ID> <!-- Need VAT codelist ref. -->
+                <cbc:ID listID="UNCL5305">S</cbc:ID> <!-- Need VAT codelist ref. -->
                 <cbc:Percent>25</cbc:Percent>
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
@@ -242,28 +242,28 @@
             </cac:ClassifiedTaxCategory>
 
             <cac:AdditionalItemProperty>
-                <cbc:ID>X4</cbc:ID>
-                <cbc:Name>Sugarfree fisherman's friend</cbc:Name>
-                <cbc:NameCode>21</cbc:NameCode> <!-- Need to ref. to codelist UNCL7081. Must include UNCL7081 in the codelist. -->
-                <cbc:Value>White</cbc:Value>
-                <cbc:ValueQuantity unitCodeListID="UNECERec20-11e">58</cbc:ValueQuantity> <!-- How to refer to the codelist UNECERec20-11e? -->
+                <cbc:ID>1</ID>
+                <cbc:Name>Fatcontant</cbc:Name>
+                <cbc:NameCode>PROP</NameCode>
+                <cbc:Value>Red carton</cbc:Value>
+                <cbc:ValueQualifier>EA</cbc:ValueQualifier>
             </cac:AdditionalItemProperty>
 
             <cac:ManufacturerParty>
                 <cac:PartyName>
-                    <cbc:Name>Fisherman's for everyone ltd</cbc:Name>
+                    <cbc:Name>Milk factory</cbc:Name>
                 </cac:PartyName>
             </cac:ManufacturerParty>
 
             <cac:ItemInstance>
-                <cbc:BestBeforeDate>2019-12-20</cbc:BestBeforeDate>>
+                <cbc:BestBeforeDate>2019-05-20</cbc:BestBeforeDate>>
             </cac:ItemInstance>
 
             <cac:Certificate>
                 <cbc:ID>1</cbc:ID>
                 <cbc:CertificateTypeCode>NEO</cbc:CertificateTypeCode>
                 <cbc:CertificateType>Nordic Ecolabel</cbc:CertificateType>
-                <cbc:Remarks>I</cbc:Remarks>
+                <cbc:Remarks>M</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>Nordic Ecolabelling</cbc:Name>
@@ -287,8 +287,6 @@
         <cac:CallForTendersLineReference>
             <cbc:LineID>AA32</cbc:LineID>
         </cac:CallForTendersLineReference>
-
     </cac:CatalogueLine>
-
 
 </ubl:Catalogue>

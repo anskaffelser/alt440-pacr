@@ -192,10 +192,10 @@ The quantity of the requested item property.
 |===
 
 [source]
-.Example of catalogue line with line identifier = 6 in the above table
+.Example of catalogue line with line identifier = 1 from the above table.
 ----
 <cac:CatalogueLine>
-  <cbc:ID>6</cbc:ID>
+  <cbc:ID>1</cbc:ID>
   <cbc:OrderableUnit>EA</cbc:OrderableUnit>
   <cbc:ContentUnitQuantity unitCode="MLT" unitCodeListID="UNECERec20">250</cbc:ContentUnitQuantity>
   <cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
