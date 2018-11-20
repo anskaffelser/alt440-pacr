@@ -51,6 +51,10 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
+        <Path>structure/codelist/languageCode.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
         <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
     </Resource>
     <Resource>
@@ -96,6 +100,14 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/MimeCode.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ActionCode_header.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ActionCode_line.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>

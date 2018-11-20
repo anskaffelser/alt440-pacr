@@ -201,7 +201,7 @@
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
                 <Reference type="RULE">EHF-PACR-R002</Reference>
-                
+
 
                 <Element>
                     <Term>cbc:ID</Term>

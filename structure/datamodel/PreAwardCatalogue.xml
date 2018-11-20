@@ -40,6 +40,19 @@
             <DataType>Identifier</DataType>
             <Value type="EXAMPLE">123</Value>
         </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:ActionCode</Term>
+            <Name>Catalogue action code</Name>
+            <Description>Identifies how a received catalogue should be used against existing
+                catalogue lines sent in previous catalogues, so that no discrepancies occur between
+                the suppliers and customers information. Describes how to treat existing items, not
+                part of the received catalogue and those that are included (unchanged, changed or
+                deleted). Default action is to fully replace the source catalogue.</Description>
+            <DataType>Code</DataType>
+            <Reference type="CODE_LIST">ActionCode_header</Reference>
+            <Value type="EXAMPLE">Add</Value>
+        </Element>
 
         <Element cardinality="0..1">
             <Term>cbc:Name</Term>
@@ -399,7 +412,18 @@
                 <Value type="EXAMPLE">1</Value>
             </Element>
 
-<!-- Remove element? -->
+            <Element cardinality="0..1">
+                <Term>cbc:ActionCode</Term>
+                <Name>Line action code</Name>
+                <Description>Used to instruct the catalogue receier on what action should be taken
+                    on the identified line when revising a catalogue. See rule on catalogue version
+                    ID. When using Update or Delete codes, the entire Catalogue Line is updated or
+                    deleted.</Description>
+                <DataType>Code</DataType>
+                <Reference type="CODE_LIST">ActionCode_line</Reference>
+                <Value type="EXAMPLE">Update</Value>
+            </Element>
+            
             <Element cardinality="0..1">
                 <Term>cbc:ContractSubdivision</Term>
                 <Name>Contract subdivision</Name>
@@ -943,7 +967,7 @@
                         <Term>languageID</Term>
                         <Name>Language identifier</Name>
                         <Description>Language identifier to indicate which language the description is stated in.</Description>
-                        <Reference type="CODE_LIST">language</Reference>
+                        <Reference type="CODE_LIST">languageCode</Reference>
                         <Value type="EXAMPLE">en</Value>
                     </Attribute>
                     <Value type="EXAMPLE">This is a rather long item description, often very detailed</Value>
