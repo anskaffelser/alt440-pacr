@@ -30,21 +30,21 @@
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/common.sch</Path>
         <Title>Common rules</Title>
-        <Property key="sch:pathprefix">pacr</Property>
+        <Property key="pathprefix">pacr</Property>
     </Resource>
     <Resource>
         <Identifier>pac-business</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/EHF-M-PAC.sch</Path>
         <Title>Business rules for EHF PreAward Catalogue</Title>
-        <Property key="sch:pathprefix">pacr</Property>
+        <Property key="pathprefix">pacr</Property>
     </Resource>
     <Resource>
         <Identifier>pacr-business</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/EHF-M-PACR.sch</Path>
         <Title>Business rules for EHF PreAward Catalogue request</Title>
-        <Property key="sch:pathprefix">pacr</Property>
+        <Property key="pathprefix">pacr</Property>
     </Resource>
 
     <!-- Code lists -->
