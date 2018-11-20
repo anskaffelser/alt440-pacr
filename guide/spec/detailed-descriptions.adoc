@@ -236,7 +236,23 @@ Below is an example of Logistics information in a PreAward Catalogue message.
 .Catalogue line for Dispatch unit, highest pack level.
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/Snippet_68_log.xml[tags=du]
+<cac:CatalogueLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:OrderableIndicator>false</cbc:OrderableIndicator>
+		<cbc:PackLevelCode listID="GS17009:PEPPOL">DU</cbc:PackLevelCode>
+		<cac:ComponentRelatedItem>
+			<cbc:ID>222222</cbc:ID> <!--1-->
+			<cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">12</cbc:Quantity> <!--2-->
+		</cac:ComponentRelatedItem>
+		<cac:Item>
+			<cbc:Description>Soft drink, pallet</cbc:Description>
+			<cbc:PackQuantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:PackQuantity>
+			<cbc:Name languageID="en">Soft drink</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>111111</cbc:ID>
+			</cac:SellersItemIdentification>
+		</cac:Item>
+	</cac:CatalogueLine>
 ----
 <1>  References the sellers item identification for the component line
 <2>  Quantity of that component (each dispatch unit contains 12 traded units)
