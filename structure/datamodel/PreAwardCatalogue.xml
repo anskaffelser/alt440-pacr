@@ -123,8 +123,6 @@
                 <Value type="EXAMPLE">21381</Value>
             </Element>
 
-            </Element>
-
             <Element>
                 <Term>cac:ContractDocumentReference</Term>
                 <Name>Procurement reference</Name>
@@ -139,7 +137,7 @@
                     <Value type="EXAMPLE">PPID-2</Value>
                 </Element>
             </Element>
-      
+        </Element>
 
         <Element>
             <Term>cac:ProviderParty</Term>
