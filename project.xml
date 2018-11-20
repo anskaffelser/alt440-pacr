@@ -19,6 +19,27 @@
         <Title>PreAward Catalogue </Title>
     </Resource>
 
+    <!-- Rules -->
+    <Resource>
+        <Identifier>common</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/common.sch</Path>
+        <Title>Common rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>PAC</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/EHF-M-PAC.sch</Path>
+        <Title>Business rules for EHF PreAward Catalogue</Title>
+    </Resource>
+    <Resource>
+        <Identifier>PACR</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/EHF-M-PACR.sch</Path>
+        <Title>Business rules for EHF PreAward Catalogue request</Title>
+    </Resource>
+    
+    
     <!-- Code lists -->
     <Resource>
         <Type>CodeList-1</Type>
