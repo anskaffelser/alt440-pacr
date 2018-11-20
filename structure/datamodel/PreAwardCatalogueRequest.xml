@@ -97,7 +97,7 @@
                 <Value type="EXAMPLE">64372999901</Value>
             </Element>
 
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
 
@@ -119,7 +119,7 @@
                 </Element>
             </Element>
 
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
 
@@ -191,7 +191,7 @@
                 <Value type="EXAMPLE">74300020004</Value>
             </Element>
 
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
 
@@ -212,7 +212,7 @@
                 </Element>
             </Element>
 
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
 
