@@ -145,4 +145,20 @@
         <Path>structure/namespace/cbc.xml</Path>
     </Resource>
 
+    <!-- Files -->
+    <Resource>
+        <Type>native:File</Type>
+        <Title>Example files</Title>
+        <Property key="download">ehf-pacr-examples.zip</Property>
+        <Property key="filename">examples.zip</Property>
+        <Property key="virtual">true</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Title>Schematron files</Title>
+        <Property key="download">ehf-pacr-schematron.zip</Property>
+        <Property key="filename">schematron.zip</Property>
+        <Property key="virtual">true</Property>
+    </Resource>
+
 </Project>
