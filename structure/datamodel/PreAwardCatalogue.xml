@@ -913,7 +913,7 @@
                         <Name>Language identifier</Name>
                         <Description>Language identifier to indicate which language the description is stated in.</Description>
                         <Reference type="CODE_LIST">language</Reference>
-                        <Value>en</Value>
+                        <Value type="EXAMPLE">en</Value>
                     </Attribute>
                     <Value type="EXAMPLE">This is a rather long item description, often very detailed</Value>
                 </Element>
