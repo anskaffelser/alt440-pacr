@@ -7,10 +7,10 @@ if [ -e $PROJECT/target ]; then
 fi
 
 # Structure
-docker run --rm -i \
-    -v $PROJECT:/src \
-    -v $PROJECT/target:/target \
-    difi/vefa-structure:0.7
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target:/target difi/vefa-structure:0.7
+
+# Validator
+docker run --rm -i -v $PROJECT:/src difi/vefa-validator build -x -t -n no.difi.ehf.preaward.g2.pacr -a rules -target target/validator /src
 
 # Schematron
 for sch in $PROJECT/rules/sch/*.sch; do
@@ -25,4 +25,4 @@ docker run --rm -i -v $PROJECT/rules/example:/src -v $PROJECT/target/site/files:
 docker run --rm -i -v $PROJECT:/documents -v $PROJECT/target:/target difi/asciidoctor
 
 # Fix ownership
-docker run --rm -i -v $PROJECT:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
+docker run --rm -i -v $PROJECT:/src alpine:3.6 chown -R $(id -u).$(id -g) /src/target
