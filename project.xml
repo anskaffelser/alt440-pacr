@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>Alt440-PreAward Catalogue and request</Name>
+    <Name>EHF Pre-Award Catalogue and Request</Name>
 
-    <Documentation path="spec/">Specification</Documentation>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>spec/</Path>
+        <Title>Specification</Title>
+    </Resource>
 
     <!-- Data models -->
 
@@ -20,6 +24,7 @@
     </Resource>
 
     <!-- Rules -->
+
     <Resource>
         <Identifier>common</Identifier>
         <Type>native:Schematron</Type>
@@ -38,9 +43,9 @@
         <Path>rules/sch/parts/EHF-M-PACR.sch</Path>
         <Title>Business rules for EHF PreAward Catalogue request</Title>
     </Resource>
-    
-    
+
     <!-- Code lists -->
+
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/icd.xml</Path>
@@ -126,8 +131,8 @@
         <Path>structure/codelist/GS17009.xml</Path>
     </Resource>
 
-
     <!-- Namespaces -->
+
     <Resource>
         <Type>Namespace-1</Type>
         <Path>structure/namespace/cac.xml</Path>
