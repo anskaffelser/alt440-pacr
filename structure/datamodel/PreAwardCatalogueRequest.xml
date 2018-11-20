@@ -4,8 +4,9 @@
     <Term>PreAwardCatalogueRequest</Term>
     <Name>PreAward Catalogue Request</Name>
 
-    <Property key="sch:prefix">CatReq</Property>
+    <Property key="sch:prefix">EHF-PACR</Property>
     <Property key="sch:identifier">CatReq-basic</Property>
+    <Property key="sch:pathprefix">pacr</Property>
 
     <Namespace prefix="ubl"
         >urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2</Namespace>

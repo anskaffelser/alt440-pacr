@@ -32,16 +32,18 @@
         <Title>Common rules</Title>
     </Resource>
     <Resource>
-        <Identifier>PAC</Identifier>
+        <Identifier>pac</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/EHF-M-PAC.sch</Path>
         <Title>Business rules for EHF PreAward Catalogue</Title>
+        <Property key="sch:pathprefix">pac</Property>
     </Resource>
     <Resource>
-        <Identifier>PACR</Identifier>
+        <Identifier>pacr</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/parts/EHF-M-PACR.sch</Path>
         <Title>Business rules for EHF PreAward Catalogue request</Title>
+        <Property key="sch:pathprefix">pacr</Property>
     </Resource>
 
     <!-- Code lists -->
