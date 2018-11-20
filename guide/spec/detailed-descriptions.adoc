@@ -37,7 +37,7 @@ In the PreAward the following validity periods can be stated:
 
 * Validity period on document level (mandatory), used to state the validity period for the entire PreAward Catalogue.
 * Validity period for a catalogue line
-* Validity period for price (See also <<price>>)
+* Validity period for price (See also section 4.7)
 
 WARNING: All validity periods shall have both start date and end date, and the start date shall be earlier than the end date
 
@@ -306,7 +306,7 @@ Below is an example of Logistics information in a PreAward Catalogue message.
 
 Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended to use external references in the form of URI’s for attachments.
 
-If binary objects are attached to the PreAward Catalogue, the valid values for mimetype can be found in section <<Mime code of attached document>>
+If binary objects are attached to the PreAward Catalogue, the valid values for mimetype can be found in codelist.
 
 [source]
 .Example of using external reference
@@ -340,7 +340,6 @@ If binary objects are attached to the PreAward Catalogue, the valid values for m
 
 
 == Prices
-[[Price]]
 
 All prices in the format are related to the article or service within this Pre-Award Catalogue. The following prices can be stated:
 
@@ -409,17 +408,17 @@ Introducing these classification codes in pre-award catalogue will support the a
 <| Logo
 | Information
 
-| image:label-neo.png[Svanemerket]
+| image::images/label-neo.png[Svanemerket]
 | *Svanemerket* +
 Classification Code (ID): NEO +
 Certificate TypeCode: EcoLabel (Environment)
 
-| image:label-fbl.png[Fairtrade]
+| image::images/label-fbl.png[Fairtrade]
 | *Fairtrade* +
 Classification Code (ID): FBL +
 Certificate TypeCode: SosialLabel (Social responsibility)
 
-| image:label-eop.png[EU organic products label]
+| image::images/label-eop.png[EU organic products label]
 | *EU organic products label* +
 Classification Code (ID): EOP +
 Certificate TypeCode: OrganicLabel (Ecological)
