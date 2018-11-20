@@ -65,10 +65,12 @@
             test="($CatalogueLineValidityStart &gt;= $CatalogueValidityStart) and ($CatalogueLineValidityStart &lt;= $CatalogueValidityEnd) 
             and ($CatalogueLineValidityEnd &lt;= $CatalogueValidityEnd) and ($CatalogueLineValidityEnd &gt;= $CatalogueValidityStart)"        
             flag="fatal">Catalogue line validity period SHALL be within the range of the whole catalogue validity period</assert>
+        
         <assert id="EHF-PAC-R013"
             test="($CatalogueLineValidityStart &lt;= $CatalogueLineValidityEnd)"
             flag="fatal">A line validity period end date SHALL be later or equal to the line validity period start date
         </assert>
+        
         <assert id="EHF-PAC-R011"
             test="($CataloguePriceValidityStart &gt;= $CatalogueLineValidityStart) and ($CataloguePriceValidityStart &lt;= $CatalogueLineValidityEnd) 
             and ($CataloguePriceValidityEnd &lt;= $CatalogueLineValidityEnd) and ($CataloguePriceValidityEnd &gt;= $CatalogueLineValidityStart)"        

@@ -62,11 +62,19 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL6313.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL7143.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL8273.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/MimeCode.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>

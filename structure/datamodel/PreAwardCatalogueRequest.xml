@@ -60,6 +60,7 @@
             <Description>The date when the catalogue request was issued, format YYYY-MM-DD. Date
                 shall not include timezone information.</Description>
             <DataType>Date</DataType>
+            <Reference type="RULE">EHF-COMMON-R030</Reference>
             <Value type="EXAMPLE">2018-02-06</Value>
         </Element>
 
@@ -100,13 +101,14 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
-
+                <Reference type="RULE">EHF-PACR-R003</Reference>
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Receiver/Economic operator identifier</Name>
                     <Description>An identifier that identifies the receiver/economic operator, such
                         as a legal registration identifier.</Description>
                     <DataType>Identifier</DataType>
+                    <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                     <Attribute usage="optional">
                         <Term>schemeID</Term>
@@ -122,6 +124,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
+                <Reference type="RULE">EHF-PACR-R003</Reference>
 
                 <Element>
                     <Term>cbc:Name</Term>
@@ -194,6 +197,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
+                <Reference type="RULE">EHF-PACR-R002</Reference>
 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -201,6 +205,7 @@
                     <Description>The national identifier of a contracting body as it is legally
                         registered (e.g. VAT identification, such as KBO).</Description>
                     <DataType>Identifier</DataType>
+                    <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                     <Attribute usage="optional">
                         <Term>schemeID</Term>
@@ -215,6 +220,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
+                <Reference type="RULE">EHF-PACR-R002</Reference>
 
                 <Element>
                     <Term>cbc:Name</Term>
@@ -328,6 +334,8 @@
                         the same, or ealier than the delivery end date. Format YYYY-MM-DD. Date
                         shall not include timezone information. </Description>
                     <DataType>Date</DataType>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
+                    <Reference type="RULE">EHF-PACR-R013</Reference>
                     <Value type="EXAMPLE">2017-06-01</Value>
                 </Element>
 
@@ -338,6 +346,8 @@
                         same, or later than the delivery start date. Format YYYY-MM-DD. Date shall
                         not include timezone information.</Description>
                     <DataType>Date</DataType>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
+                    <Reference type="RULE">EHF-PACR-R013</Reference>
                     <Value type="EXAMPLE">2017-06-15</Value>
                 </Element>
             </Element>
@@ -500,6 +510,7 @@
                         <Description>The minimum price (ABG) or the maximum price (NE), according to
                             the corresponding price type code</Description>
                         <DataType>Price amount</DataType>
+                        <Reference type="RULE">EHF-PACR-R006</Reference>
 
                         <Attribute>
                             <Term>currencyID</Term>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 
     <Term>catalogue</Term>
     <Name>Pre-Award Catalogue</Name>
@@ -55,6 +55,7 @@
             <Description>The date on which the catalogue instance was issued, format YYYY-MM-DD. Date shall not include
                 timezone information</Description>
             <DataType>Date</DataType>
+            <Reference type="RULE">EHF-COMMON-R030</Reference>
             <Value type="EXAMPLE">2017-06-01</Value>
         </Element>
 
@@ -63,6 +64,7 @@
             <Name>Catalogue issue time</Name>
             <Description>The time on which the pre-award catalogue was issued. Time shall not include timezone information.</Description>
             <DataType>Time</DataType>
+           
             <Value type="EXAMPLE">10:00:00</Value>
         </Element>
 
@@ -86,6 +88,7 @@
             <Name>Pre-award catalogue validity period</Name>
             <Description>The validity period must include both start date and end date, and the start date must be
                 earlier than the end date</Description>
+           
             <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
 
             <Element>
@@ -94,7 +97,8 @@
                 <Description>The date when the period starts, format YYYY-MM-DD. Date shall not include
                     timezone information</Description>
                 <DataType>Date</DataType>
-                <Reference type="RULE">BII3-T68-R023</Reference>
+                <Reference type="RULE">EHF-PAC-R001</Reference>
+                <Reference type="RULE">EHF-COMMON-R030</Reference>
                 <Value type="EXAMPLE">2017-06-01</Value>
             </Element>
 
@@ -104,7 +108,8 @@
                 <Description>The date when the period ends, format YYYY-MM-DD. Date shall not include
                     timezone information</Description>
                 <DataType>Date</DataType>
-                <Reference type="RULE">BII3-T68-R023</Reference>
+                <Reference type="RULE">EHF-PAC-R001</Reference>
+                <Reference type="RULE">EHF-COMMON-R030</Reference>
                 <Value type="EXAMPLE">2017-06-30</Value>
             </Element>
         </Element>
@@ -165,13 +170,14 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
-                <Reference type="RULE">EUGEN-T68-R012</Reference>
+                <Reference type="RULE">EHF-PAC-R002</Reference>
 
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Catalogue provider standard identifier</Name>
                     <Description>The standard identifier of the party that sends the catalogue.</Description>
                     <DataType>Identifier</DataType>
+                    <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                     <Attribute usage="optional">
                         <Term>schemeID</Term>
@@ -186,7 +192,7 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
-                <Reference type="RULE">EUGEN-T68-R012</Reference>
+                <Reference type="RULE">EHF-PAC-R002</Reference>
 
                 <Element>
                     <Term>cbc:Name</Term>
@@ -225,13 +231,14 @@
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
-                <Reference type="RULE">EUGEN-T68-R012</Reference>
+                <Reference type="RULE">EHF-PAC-R003</Reference>
 
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Catalogue receiver standard identifier</Name>
                     <Description>The standard identifier of the party to which the catalogue is sent.</Description>
                     <DataType>Identifier</DataType>
+                    <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                     <Attribute usage="optional">
                         <Term>schemeID</Term>
@@ -248,7 +255,7 @@
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
                 <DataType>Text</DataType>
-                <Reference type="RULE">EUGEN-T68-R012</Reference>
+                <Reference type="RULE">EHF-PAC-R003</Reference>
 
                 <Element>
                     <Term>cbc:Name</Term>
@@ -276,13 +283,14 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
-                    <Reference type="RULE">EUGEN-T68-R012</Reference>
+                    <Reference type="RULE">EHF-PAC-R004</Reference>
 
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Catalogue supplier standard identifier</Name>
                         <Description>The standard identifier of the party that provides the items specified in the catalogue.</Description>
                         <DataType>Identifier</DataType>
+                        <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                         <Attribute usage="optional">
                             <Term>schemeID</Term>
@@ -299,6 +307,8 @@
                     <Term>cac:PartyName</Term>
                     <Name>Party name</Name>
                     <DataType>Text</DataType>
+                    <Reference type="RULE">EHF-PAC-R004</Reference>
+                    
                     <Element>
                         <Term>cbc:Name</Term>
                         <Name>Catalogue supplier name</Name>
@@ -328,12 +338,14 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
+                    <Reference type="RULE">EHF-PAC-R005</Reference>
 
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Catalogue customer standard identifier</Name>
                         <Description>Standard identifier of the party who may order from the catalogue.</Description>
                         <DataType>Identifier</DataType>
+                        <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                         <Attribute usage="optional">
                             <Term>schemeID</Term>
@@ -349,6 +361,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:PartyName</Term>
                     <Name>Party name</Name>
+                    <Reference type="RULE">EHF-PAC-R005</Reference>
 
                     <Element>
                         <Term>cbc:Name</Term>
@@ -441,6 +454,8 @@
                 <Name>Minimum order quantity</Name>
                 <Description>The smallest number of items that can be ordered.</Description>
                 <DataType>Quantity</DataType>
+                <Reference type="RULE">EHF-PAC-R009</Reference>
+                <Reference type="RULE">EHF-PAC-R010</Reference>
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Quantity unit code</Name>
@@ -461,6 +476,8 @@
                 <Name>Maximum order quantity</Name>
                 <Description>The largest number of items that can be ordered.</Description>
                 <DataType>Quantity</DataType>
+                <Reference type="RULE">EHF-PAC-R008</Reference>
+                <Reference type="RULE">EHF-PAC-R010</Reference>
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Quantity unit code</Name>
@@ -504,6 +521,9 @@
                     <Description>The line validity start date, the date must be the same, or earlier than the delivery end date.
                         Format YYYY-MM-DD. Date shall not include timezone information. </Description>
                     <DataType>Date</DataType>
+                    <Reference type="RULE">EHF-PAC-R007</Reference>
+                    <Reference type="RULE">EHF-PAC-R013</Reference>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
                     <Value type="EXAMPLE">2017-06-01</Value>
                 </Element>
                 
@@ -513,6 +533,9 @@
                     <Description>The line validity end date, the date must be the same, or later than the delivery start date.
                         Format YYYY-MM-DD. Date shall not include timezone information.</Description>
                     <DataType>Date</DataType>
+                    <Reference type="RULE">EHF-PAC-R007</Reference>
+                    <Reference type="RULE">EHF-PAC-R013</Reference>
+                    <Reference type="RULE">EHF-COMMON-R030</Reference>
                     <Value type="EXAMPLE">2017-06-15</Value>
                 </Element>
             </Element>
@@ -528,6 +551,7 @@
                     <Name>Standardized unit price</Name>
                     <Description>Item comparison unit price defining price for a certain quantity.</Description>
                     <DataType>PriceAmount</DataType>
+                    <Reference type="RULE">EHF-PAC-R006</Reference>
 
                         <Attribute>
                             <Term>currencyID</Term>
@@ -873,6 +897,9 @@
                             <Description>The price validity period start date, the date must be the same, or ealier than the delivery end date.
                                 Format YYYY-MM-DD. Date shall not include timezone information. </Description>
                             <DataType>Date</DataType>
+                            <Reference type="RULE">EHF-PAC-R011</Reference>
+                            <Reference type="RULE">EHF-PAC-R016</Reference>
+                            <Reference type="RULE">EHF-COMMON-R030</Reference>
                             <Value type="EXAMPLE">2017-06-01</Value>
                         </Element>
                         
@@ -882,6 +909,9 @@
                             <Description>The price validity period end date, the date must be the same, or later than the delivery start date.
                                 Format YYYY-MM-DD. Date shall not include timezone information.</Description>
                             <DataType>Date</DataType>
+                            <Reference type="RULE">EHF-PAC-R011</Reference>
+                            <Reference type="RULE">EHF-PAC-R016</Reference>
+                            <Reference type="RULE">EHF-COMMON-R030</Reference>
                             <Value type="EXAMPLE">2017-06-15</Value>
                         </Element>
                     </Element>
@@ -970,6 +1000,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:SellersItemIdentification</Term>
                     <Name>Sellers item identification</Name>
+                    <Reference type="RULE">EHF-PAC-R012</Reference>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -999,12 +1030,14 @@
                 <Element cardinality="0..1">
                     <Term>cac:StandardItemIdentification</Term>
                     <Name>Standard item identification</Name>
+                    <Reference type="RULE">EHF-PAC-R012</Reference>
 
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Item standard identifier</Name>
                         <Description>The standard identifier of the catalogue item.</Description>
                         <DataType>Identifier</DataType>
+                        <Reference type="RULE">EHF-COMMON-R040</Reference>
 
                         <Attribute>
                             <Term>schemeID</Term>
@@ -1202,6 +1235,8 @@
                             the item. A VAT rate of zero percent is applied for calculation purposes even if the item is outside the scope of VAT.
                             Unless specific trade reasons apply such as exemptions.</Description>
                         <DataType>Percentage</DataType>
+                        <Reference type="RULE">EHF-PAC-R014</Reference>
+                        <Reference type="RULE">EHF-PAC-R015</Reference>
                         <Value type="EXAMPLE">25</Value>
                     </Element>
 
@@ -1318,6 +1353,7 @@
                         <Description>The date until when the relevant item qualities will
                             remain at their best. Used to express the best before date of the item or items in the line instance.</Description>
                         <DataType>Date</DataType>
+                        <Reference type="RULE">EHF-COMMON-R030</Reference>
                         <Value type="EXAMPLE">2017-12-31</Value>
                     </Element>
 
@@ -1529,4 +1565,4 @@
             </Element>
         </Element>
     </Document>
-</Syntax>
+</Structure>
