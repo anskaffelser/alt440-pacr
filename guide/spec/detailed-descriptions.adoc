@@ -242,7 +242,8 @@ Below is an example of Logistics information in a PreAward Catalogue message.
 		<cbc:PackLevelCode listID="GS17009:PEPPOL">DU</cbc:PackLevelCode>
 		<cac:ComponentRelatedItem>
 			<cbc:ID>222222</cbc:ID> <!--1-->
-			<cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">12</cbc:Quantity> <!--2-->
+			<cbc:Quantity unitCode="EA"
+			unitCodeListID="UNECERec20">12</cbc:Quantity> <!--2-->
 		</cac:ComponentRelatedItem>
 		<cac:Item>
 			<cbc:Description>Soft drink, pallet</cbc:Description>
@@ -425,7 +426,7 @@ Certificate TypeCode: OrganicLabel (Ecological)
 |===
 
 [source]
-.Example of labeling in an PreAward Catalogue message
+.Example of labeling in a Pre-Award Catalogue message.
 ----
 <cac:Certificate>
   <cbc:ID>NEO</cbc:ID>
@@ -527,7 +528,6 @@ If a product is classified as Hazardous item, a reference to the relevant UNDG-c
 == Keyword
 
 Keywords are sent to let the Buyer search for a product without knowing the Product ID or name. Keywords can be repeated, but the number should be limited to ensure correct handling in the receiving system.  If more than one Keyword is sent, they should be put in the same tag separated by the %-sign since this is already being used by several actors (but a different sign can be agreed by the trading partners).
-
 
 [source]
 .Example of several Keywords in the same tag.
