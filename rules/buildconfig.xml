@@ -2,6 +2,7 @@
 <buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
 
     <testfolder>example</testfolder>
+    <testfolder>snippets</testfolder>
     <testfolder>unit-PAC</testfolder>
     <testfolder>unit-PACR</testfolder>
 
