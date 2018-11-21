@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/spec/appendix/profiles/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/appendix/profiles/index.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/spec/appendix/profiles/info.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/appendix/profiles/info.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/spec/main.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/main.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/spec/shared/appendix/ubl.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/shared/appendix/ubl.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/spec/shared/links.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/shared/links.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/buildconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/buildconfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/example/usecase1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/example/usecase1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/example/usecase3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/example/usecase3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/unit-PAC/EHF-PAC-R011.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/unit-PAC/EHF-PAC-R011.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/unit-PAC/EHF-PAC-R012.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/unit-PAC/EHF-PAC-R012.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/unit-PAC/EHF-PAC-R014.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/unit-PAC/EHF-PAC-R014.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/unit-PAC/EHF-PAC-R015.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/unit-PAC/EHF-PAC-R015.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/codelist/languageCode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/codelist/languageCode.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,12 +48,21 @@
         <entry file="file://$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1841">
-              <caret line="142" column="59" lean-forward="true" selection-start-line="142" selection-start-column="59" selection-end-line="142" selection-end-column="59" />
+              <caret line="142" column="59" selection-start-line="142" selection-start-column="59" selection-end-line="142" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PreAwardCatalogueRequest-example.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PreAwardCatalogue-example.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="581">
+              <caret line="257" column="39" selection-start-line="257" selection-start-column="39" selection-end-line="257" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreAwardCatalogueRequest-example.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="344">
@@ -90,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/rules/example/usecase1.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="163" column="42" lean-forward="true" selection-start-line="163" selection-start-column="42" selection-end-line="163" selection-end-column="42" />
+              <caret line="163" column="42" selection-start-line="163" selection-start-column="42" selection-end-line="163" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -99,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/rules/example/usecase3.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="600">
-              <caret line="176" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="176" />
+              <caret line="176" selection-start-line="86" selection-start-column="4" selection-end-line="176" />
             </state>
           </provider>
         </entry>
@@ -108,7 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>contractor</find>
       <find>rece</find>
       <find>provider</find>
       <find>codelist</find>
@@ -138,6 +131,7 @@
       <find>actionco</find>
       <find>action</find>
       <find>additionalit</find>
+      <find>additionalite</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,13 +184,13 @@
         <option value="$PROJECT_DIR$/rules/example/Catalogue-example.xsd" />
         <option value="$PROJECT_DIR$/guide/spec/detailed-descriptions.adoc" />
         <option value="$PROJECT_DIR$/rules/example/Catalogue-example.xml" />
-        <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" />
         <option value="$PROJECT_DIR$/rules/example/usecase3.xml" />
         <option value="$PROJECT_DIR$/rules/example/usecase1.xml" />
         <option value="$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml" />
         <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" />
+        <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
       </list>
     </option>
   </component>
@@ -746,13 +740,6 @@
     <entry file="file://$PROJECT_DIR$/rules/example/Catalogue-example.rng">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="331" column="51" lean-forward="true" selection-start-line="331" selection-start-column="51" selection-end-line="331" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/guide/spec/detailed-descriptions.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
@@ -787,14 +774,14 @@
     <entry file="file://$PROJECT_DIR$/rules/example/usecase3.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
-          <caret line="176" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="176" />
+          <caret line="176" selection-start-line="86" selection-start-column="4" selection-end-line="176" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rules/example/usecase1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="163" column="42" lean-forward="true" selection-start-line="163" selection-start-column="42" selection-end-line="163" selection-end-column="42" />
+          <caret line="163" column="42" selection-start-line="163" selection-start-column="42" selection-end-line="163" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -808,7 +795,7 @@
     <entry file="file://$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1841">
-          <caret line="142" column="59" lean-forward="true" selection-start-line="142" selection-start-column="59" selection-end-line="142" selection-end-column="59" />
+          <caret line="142" column="59" selection-start-line="142" selection-start-column="59" selection-end-line="142" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -816,6 +803,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="161" column="34" selection-start-line="161" selection-start-column="34" selection-end-line="161" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="257" column="39" selection-start-line="257" selection-start-column="39" selection-end-line="257" selection-end-column="39" />
         </state>
       </provider>
     </entry>

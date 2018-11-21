@@ -243,8 +243,8 @@
             <cac:ItemSpecificationDocumentReference>
                 <cbc:ID>ie353-ior24-iedt25-pry463</cbc:ID>
                 <cbc:DocumentTypeCode>4</cbc:DocumentTypeCode>
-                <cbc:DocumentType>Contains menthol, citrus, mint, aspartam,...</cbc:DocumentType>
-                <cbc:DocumentDescription>Strong pastilles, good for illness,...</cbc:DocumentDescription>
+                <cbc:DocumentType>Contains menthol, citrus, mint, aspartam.</cbc:DocumentType>
+                <cbc:DocumentDescription>Strong pastilles, good for illness.</cbc:DocumentDescription>
                 <cac:Attachment>
                     <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png">YSB0ZXN0IGRvY3VtZW50CgoK</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
                     <cac:ExternalReference>
@@ -255,7 +255,7 @@
             <!-- end::ItemSpecificationDocumentReference[] -->
 
             <cac:OriginCountry>
-                <cbc:IdentificationCode listID="ISO3166_Alpha2">ES</cbc:IdentificationCode>
+                <cbc:IdentificationCode>ES</cbc:IdentificationCode>
             </cac:OriginCountry>
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode>465353</cbc:ItemClassificationCode>
