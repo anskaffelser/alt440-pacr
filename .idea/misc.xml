@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/guide/spec/settings.adoc" />
+  <component name="ProjectResources">
+    <resource url="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2" location="$USER_HOME$/Library/ubl-2.2/maindoc/UBL-Catalogue-2.2.xsd" />
+    <resource url="urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2" location="$USER_HOME$/Library/ubl-2.2/maindoc/UBL-CatalogueRequest-2.2.xsd" />
+    <default-html-doctype>jar:file:\C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.1.5\lib\platform-impl.jar!\standardSchemas\xhtml1-transitional.xsd</default-html-doctype>
+    <xml-schema-version>XMLSchema_1_1</xml-schema-version>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

@@ -82,10 +82,10 @@
     </cac:ProviderParty>
     <!-- end::ProviderParty-Request[] -->
 
-    <cac:RequestCatalogueReference>
+    <cac:RequestedCatalogueReference>
         <cbc:ID>123456</cbc:ID>
         <cbc:PreviousVersionID>1.0</cbc:PreviousVersionID>
-    </cac:RequestCatalogueReference>
+    </cac:RequestedCatalogueReference>
 
     <cac:ReferencedContract>
         <cbc:ID>1234-2018</cbc:ID>

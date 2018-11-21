@@ -14,7 +14,7 @@
     <cbc:Name>Catalogue name</cbc:Name>
     <cbc:IssueDate>2018-10-20</cbc:IssueDate>
     <cbc:IssueTime>15:34:57</cbc:IssueTime>
-    <cbc:note>Payment deadline 2018-11-01.</cbc:note>
+    <cbc:Note>Payment deadline 2018-11-01.</cbc:Note>
     <cbc:VersionID>1</cbc:VersionID>
 
     <!-- tag::ValidityPeriod[] -->
@@ -185,7 +185,7 @@
         <!-- tag::RequiredItemLocationQuantity[] -->
         <cac:RequiredItemLocationQuantity>
             <!-- tag::ApplicableTerritoryAddress[] -->
-            <cbc:MaximumQuantity>1</cbc:MaximumQuantity>
+            <cbc:MinimumQuantity>1</cbc:MinimumQuantity>
             <cbc:MaximumQuantity>2</cbc:MaximumQuantity>
             <cac:ApplicableTerritoryAddress>
                 <cbc:StreetName>Via Goffredo Mameli 32</cbc:StreetName>
@@ -223,7 +223,7 @@
         <!-- tag::Item[] -->
         <cac:Item>
             <cbc:Description>The item is x size, and is powerful with...</cbc:Description>
-            <cbc:PackQuantity>EA</cbc:PackQuantity> <!-- Codelist: UNECERec20-11e -->
+            <cbc:PackQuantity>10.00</cbc:PackQuantity> <!-- Codelist: UNECERec20-11e -->
             <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric>
             <cbc:Name>ABC</cbc:Name>
             <cbc:Keyword>Pastilles</cbc:Keyword>
@@ -246,7 +246,7 @@
                 <cbc:DocumentType>Contains menthol, citrus, mint, aspartam,...</cbc:DocumentType>
                 <cbc:DocumentDescription>Strong pastilles, good for illness,...</cbc:DocumentDescription>
                 <cac:Attachment>
-                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png">JKEAGAGE98QHJ02NAGAE83HJ3QLJGQ3</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
+                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png">dGhpcyBpcyBhIHRlc3QgZG9jdW1lbnQK</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
                     <cac:ExternalReference>
                         <cbc:URI>https://fishermen/mint/yellow</cbc:URI>
                     </cac:ExternalReference>
@@ -296,7 +296,7 @@
             </cac:ManufacturerParty>
 
             <cac:ItemInstance>
-                <cbc:BestBeforeDate>2019-12-20</cbc:BestBeforeDate>>
+                <cbc:BestBeforeDate>2019-12-20</cbc:BestBeforeDate>
             </cac:ItemInstance>
 
             <!-- tag::Certificate[] -->
@@ -311,8 +311,8 @@
                     </cac:PartyName>
                 </cac:IssuerParty>
                 <cac:DocumentReference>
-                    <cbc:DocumentTypeCode>Item_means_of_proof_reference or Item_requirement_reference</cbc:DocumentTypeCode>
                     <cbc:ID>http://www.nordic-ecolabel.org or urn:sample:difi:pacr:aaaba1a2-d107-426d-8a64-698b678756d5:item-requirement:2</cbc:ID>
+                    <cbc:DocumentTypeCode>Item_means_of_proof_reference or Item_requirement_reference</cbc:DocumentTypeCode>
                 </cac:DocumentReference>
             </cac:Certificate>
             <!-- end::Certificate[] -->
