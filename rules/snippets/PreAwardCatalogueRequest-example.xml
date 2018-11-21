@@ -8,17 +8,17 @@
     <!-- Snippet file for Alt440- PreAward Catalogue request   -->
 
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-    <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:CatalogueRequest:2.0</cbc:CustomizationID>
-    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:02:1.0</cbc:ProfileID>
+    <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pacr:1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0<</cbc:ProfileID>
     <cbc:ID>8a2cbf-9b7b-4f13-8490-fr723</cbc:ID>
     <cbc:IssueDate>2018-11-15</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
 
     <!-- tag::ReceiverParty-Request[] -->
     <cac:ReceiverParty>
-        <cbc:EndpointID>753923352</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">753923352</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="GLN">98457332</cbc:ID>
+            <cbc:ID schemeID="0192">753923352</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Fisherman supplier company ltd</cbc:Name>
@@ -30,7 +30,7 @@
             <cbc:PostalZone>0923</cbc:PostalZone>
             <cbc:CountrySubentityCode>Region A</cbc:CountrySubentityCode> <!-- double check -->
             <cac:Country>
-                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">NO</cbc:IdentificationCode>
+                <cbc:IdentificationCode>NO</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
         <cac:PartyLegalEntity>
@@ -50,9 +50,9 @@
 
     <!-- tag::ProviderParty-Request[] -->
     <cac:ProviderParty>
-        <cbc:EndpointID>1122334455</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">654215785</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID>2761245</cbc:ID>
+            <cbc:ID schemeID="0192">654215785</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Provider name</cbc:Name>
@@ -64,7 +64,7 @@
             <cbc:PostalZone>AN224QH</cbc:PostalZone>
             <cbc:CountrySubentityCode>X</cbc:CountrySubentityCode>
             <cac:Country>
-                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">GB</cbc:IdentificationCode>
+                <cbc:IdentificationCode>GB</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
         <cac:PartyLegalEntity>
@@ -91,7 +91,6 @@
         <cbc:ID>1234-2018</cbc:ID>
     </cac:ReferencedContract>
 
-
     <cac:CatalogueRequestLine>
         <cbc:ID>5134432</cbc:ID>
         <!-- tag::LineValidityPeriod-Request[] -->
@@ -113,7 +112,7 @@
                 <cbc:PostalZone>2930</cbc:PostalZone>
                 <cbc:CountrySubentity>Region Sjælland</cbc:CountrySubentity>
                 <cac:Country>
-                    <cbc:IdentificationCode listID="ISO3166_Alpha2">DK</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
                 </cac:Country>
             </cac:ApplicableTerritoryAddress>
             <!-- end::ApplicableTerritoryAddress-Request[] -->
@@ -121,7 +120,7 @@
             <!-- tag::Price-Request[] -->
             <cac:Price>
                 <cbc:PriceAmount currencyID="GBP">4579</cbc:PriceAmount> <!-- codelist ISO4217_2015 -->
-                <cbc:PriceTypeCode listID="ISO4217_2015">GBP</cbc:PriceTypeCode>
+                <cbc:PriceTypeCode>GBP</cbc:PriceTypeCode>
             </cac:Price>
             <!-- end::Price-Request[] -->
         </cac:RequiredItemLocationQuantity>
@@ -135,7 +134,7 @@
             <!-- tag::ItemSpecificationDocumentReference-Request[] -->
             <cac:ItemSpecificationDocumentReference>
                 <cbc:ID>7</cbc:ID>
-                <cbc:DocumentDescription languageID="en">iPhone to stuff members.</cbc:DocumentDescription>
+                <cbc:DocumentDescription>iPhone to stuff members.</cbc:DocumentDescription>
                 <cac:Attachment>
                     <cac:ExternalReference>
                         <cbc:URI>http://www.example.com/apple/iPhone/7/stuff/index.html</cbc:URI>

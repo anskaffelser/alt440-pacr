@@ -8,8 +8,8 @@
     <!-- Snippet file for Alt440- PreAward Catalogue  -->
 
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-    <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:PrAcc-Catalogue:2.0</cbc:CustomizationID> <!-- Need input -->
-    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:02:1.0</cbc:ProfileID> <!-- Need input -->
+    <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pac:1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
     <cbc:ID>j3a3-ik53-tr35-3fw7</cbc:ID>
     <cbc:Name>Catalogue name</cbc:Name>
     <cbc:IssueDate>2018-10-20</cbc:IssueDate>
@@ -28,7 +28,7 @@
     <cac:ReferencedContract>
         <cbc:ID>8173</cbc:ID>
         <cbc:IssueDate>2018-08-01</cbc:IssueDate>
-        <cbc:ContractTypeCode listID="UNCL1001">21</cbc:ContractTypeCode>
+        <cbc:ContractTypeCode>21</cbc:ContractTypeCode>
         <cac:ContractDocumentReference>
             <cbc:ID>TU-343</cbc:ID>
         </cac:ContractDocumentReference>
@@ -37,9 +37,9 @@
 
     <!-- tag::ProviderParty[] -->
     <cac:ProviderParty>
-        <cbc:EndpointID schemeID="SE:VATNO">TJ5241254623</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">495214785</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID>ST0242892522</cbc:ID>
+            <cbc:ID schemeID="0192">495214785</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Hans Jensen</cbc:Name>
@@ -51,7 +51,7 @@
             <cbc:PostalZone>3550</cbc:PostalZone>
             <cbc:CountrySubentity>Slangerup</cbc:CountrySubentity>
             <cac:Country>
-                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">DK</cbc:IdentificationCode>
+                <cbc:IdentificationCode>DK</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
     </cac:ProviderParty>
@@ -59,9 +59,9 @@
 
     <!-- tag::ReceiverParty[] -->
     <cac:ReceiverParty>
-        <cbc:EndpointID>14534789</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">145324789</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID>9375302</cbc:ID>
+            <cbc:ID schemeID="0192">145324789</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Giovanni Tommaso Capon</cbc:Name>
@@ -73,7 +73,7 @@
             <cbc:PostalZone>05022</cbc:PostalZone>
             <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
             <cac:Country>
-                <cbc:IdentificationCode listID="ISO3166-1_Alpha2">IT</cbc:IdentificationCode>
+                <cbc:IdentificationCode>IT</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
     </cac:ReceiverParty>
@@ -95,7 +95,7 @@
                 <cbc:PostalZone>99897</cbc:PostalZone>
                 <cbc:CountrySubentity>Freistaat Thüringen</cbc:CountrySubentity>
                 <cac:Country>
-                    <cbc:IdentificationCode listID="ISO3166-1_Alpha2">DE</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>DE</cbc:IdentificationCode>
                 </cac:Country>
             </cac:PostalAddress>
             <cac:Contact>
@@ -131,14 +131,14 @@
     <cac:CatalogueLine>
         <cbc:ID>2</cbc:ID>
         <cbc:ContractSubdivision>Part 1</cbc:ContractSubdivision>
-        <cbc:OrderableIndicator>true</cbc:OrderableIndicator> <!-- Codelist: TrueFalse -->
-        <cbc:OrderableUnit>14</cbc:OrderableUnit> <!-- Codelist: UNECERec20-11e -->
+        <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+        <cbc:OrderableUnit>14</cbc:OrderableUnit>
         <cbc:ContentUnitQuantity>34</cbc:ContentUnitQuantity>
         <cbc:OrderQuantityIncrementNumeric>2</cbc:OrderQuantityIncrementNumeric>
-        <cbc:MinimumOrderQuantity>1</cbc:MinimumOrderQuantity> <!-- Codelist: UNECERec20-11e -->
-        <cbc:MaximumOrderQuantity>500</cbc:MaximumOrderQuantity> <!-- Codelist: UNECERec20-11e -->
+        <cbc:MinimumOrderQuantity>1</cbc:MinimumOrderQuantity>
+        <cbc:MaximumOrderQuantity>500</cbc:MaximumOrderQuantity>
         <cbc:WarrantyInformation>5 years warranty</cbc:WarrantyInformation>
-        <cbc:PackLevelCode>IF</cbc:PackLevelCode> <!-- Codelist: UNECERec21-9e -->
+        <cbc:PackLevelCode>IF</cbc:PackLevelCode>
 
         <!-- tag::LineValidityPeriod[] -->
         <cac:LineValidityPeriod>
@@ -149,36 +149,36 @@
 
         <!-- tag::ItemComparison[] -->
         <cac:ItemComparison>
-            <cbc:PriceAmount currencyID="EUR">142.00</cbc:PriceAmount> <!-- Codelist: ISO4217_2015-->
-            <cbc:Quantity>0.5</cbc:Quantity>
+            <cbc:PriceAmount currencyID="EUR">142.00</cbc:PriceAmount>
+            <cbc:Quantity unitCode="XBX">0.5</cbc:Quantity>
         </cac:ItemComparison>
         <!-- end::ItemComparison[] -->
 
         <!-- tag::ComponentRelatedItem[] -->
         <cac:ComponentRelatedItem>
             <cbc:ID>B1</cbc:ID>
-            <cbc:Quantity>4</cbc:Quantity>
+            <cbc:Quantity unitCode="EA">4</cbc:Quantity>
         </cac:ComponentRelatedItem>
         <!-- end::ComponentRelatedItem[] -->
 
         <!-- tag::RequiredRelatedItem[] -->
         <cac:RequiredRelatedItem>
             <cbc:ID>AA</cbc:ID>
-            <cbc:Quantity>16</cbc:Quantity>
+            <cbc:Quantity unitCode="EA">16</cbc:Quantity>
         </cac:RequiredRelatedItem>
         <!-- end::RequiredRelatedItem[] -->
 
         <!-- tag::ComplementaryRelatedItem[] -->
         <cac:ComplementaryRelatedItem>
             <cbc:ID>R2</cbc:ID>
-            <cbc:Quantity>3161</cbc:Quantity>
+            <cbc:Quantity unitCode="EA">3161</cbc:Quantity>
         </cac:ComplementaryRelatedItem>
         <!-- end::ComplementaryRelatedItem[] -->
 
         <!-- tag::ReplacedRelatedItem[] -->
         <cac:ReplacedRelatedItem>
             <cbc:ID>BB</cbc:ID>
-            <cbc:Quantity>31</cbc:Quantity>
+            <cbc:Quantity unitCode="EA">31</cbc:Quantity>
         </cac:ReplacedRelatedItem>
         <!-- end::ReplacedRelatedItem[] -->
 
@@ -186,7 +186,7 @@
         <cac:RequiredItemLocationQuantity>
             <!-- tag::ApplicableTerritoryAddress[] -->
             <cbc:MinimumQuantity>1</cbc:MinimumQuantity>
-            <cbc:MaximumQuantity>2</cbc:MaximumQuantity>
+            <cbc:MaximumQuantity>12</cbc:MaximumQuantity>
             <cac:ApplicableTerritoryAddress>
                 <cbc:StreetName>Via Goffredo Mameli 32</cbc:StreetName>
                 <cbc:AdditionalStreetName>Building A</cbc:AdditionalStreetName>
@@ -194,7 +194,7 @@
                 <cbc:PostalZone>05022</cbc:PostalZone>
                 <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
                 <cac:Country>
-                    <cbc:IdentificationCode listID="ISO3166_Alpha2">IT</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>IT</cbc:IdentificationCode>
                 </cac:Country>
             </cac:ApplicableTerritoryAddress>
             <!-- end::ApplicableTerritoryAddress[] -->
@@ -223,7 +223,7 @@
         <!-- tag::Item[] -->
         <cac:Item>
             <cbc:Description>The item is x size, and is powerful with...</cbc:Description>
-            <cbc:PackQuantity>10.00</cbc:PackQuantity> <!-- Codelist: UNECERec20-11e -->
+            <cbc:PackQuantity>10.00</cbc:PackQuantity>
             <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric>
             <cbc:Name>ABC</cbc:Name>
             <cbc:Keyword>Pastilles</cbc:Keyword>
@@ -246,7 +246,7 @@
                 <cbc:DocumentType>Contains menthol, citrus, mint, aspartam,...</cbc:DocumentType>
                 <cbc:DocumentDescription>Strong pastilles, good for illness,...</cbc:DocumentDescription>
                 <cac:Attachment>
-                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png">dGhpcyBpcyBhIHRlc3QgZG9jdW1lbnQK</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
+                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png">YSB0ZXN0IGRvY3VtZW50CgoK</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
                     <cac:ExternalReference>
                         <cbc:URI>https://fishermen/mint/yellow</cbc:URI>
                     </cac:ExternalReference>
@@ -261,7 +261,7 @@
                 <cbc:ItemClassificationCode>465353</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:TransactionConditions>
-                <cbc:ActionCode></cbc:ActionCode> <!-- Need input -->
+                <cbc:ActionCode>SER</cbc:ActionCode>
                 <cbc:Description>2% discount of the payment; reason of delayed delivery.</cbc:Description>
             </cac:TransactionConditions>
             <cac:HazardousItem>
@@ -271,7 +271,7 @@
 
             <!-- tag::ClassifiedTaxCategory[] -->
             <cac:ClassifiedTaxCategory>
-                <cbc:ID>S</cbc:ID> <!-- Need VAT codelist ref. -->
+                <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
@@ -283,9 +283,9 @@
             <cac:AdditionalItemProperty>
                 <cbc:ID>X4</cbc:ID>
                 <cbc:Name>Sugarfree fisherman's friend</cbc:Name>
-                <cbc:NameCode>21</cbc:NameCode> <!-- Need to ref. to codelist UNCL7081. Must include UNCL7081 in the codelist. -->
+                <cbc:NameCode>PROP</cbc:NameCode>
                 <cbc:Value>White</cbc:Value>
-                <cbc:ValueQuantity unitCodeListID="UNECERec20-11e">58</cbc:ValueQuantity> <!-- How to refer to the codelist UNECERec20-11e? -->
+                <cbc:ValueQualifier>EA</cbc:ValueQualifier>
             </cac:AdditionalItemProperty>
             <!-- end::AdditionalItemProperty[] -->
 
@@ -319,10 +319,10 @@
 
             <!-- tag::Dimension[] -->
             <cac:Dimension>
-                <cbc:AttributeID schemeID="UNCL6313">HT</cbc:AttributeID>
-                <cbc:Measure unitCode="MTR" unitCodeListVersionID="UNECERec20">1</cbc:Measure>
-                <cbc:MinimumMeasure unitCode="CEL" unitCodeListVersionID="UNECERec20">10</cbc:MinimumMeasure>
-                <cbc:MaximumMeasure unitCode="CEL" unitCodeListVersionID="UNECERec20">30</cbc:MaximumMeasure>
+                <cbc:AttributeID>HT</cbc:AttributeID>
+                <cbc:Measure unitCode="MTR">1</cbc:Measure>
+                <cbc:MinimumMeasure unitCode="CEL">10</cbc:MinimumMeasure>
+                <cbc:MaximumMeasure unitCode="CEL">30</cbc:MaximumMeasure>
             </cac:Dimension>
             <!-- end::Dimension[] -->
 
