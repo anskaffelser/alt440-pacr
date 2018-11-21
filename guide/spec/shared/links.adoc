@@ -24,7 +24,8 @@
 //UBL
 :ubl: http://docs.oasis-open.org/ubl/UBL-2.2.html[UBL 2.2]
 :ubl-catalogue: http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/maindoc/UBL-Catalogue-2.2.xsd[UBL Catalogue 2.2]
-
+:ubl-catalogue-request: http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/maindoc/UBL-CatalogueRequest-2.2.xsd[UBL Catalogue request 2.2]
+:link-oasis-ubl-22-resources: http://docs.oasis-open.org/ubl/os-UBL-2.2/
 
 //ISO:
 :ISO15000: https://www.iso.org/standard/61433.html[ISO 15000-5:2014]

@@ -1,0 +1,21 @@
+
+[[prof-03]]
+= Customization and Profile identifiers
+
+In the table below you will find the values to be used as the specification identifier and the business process type for this profile
+
+[cols="3s,4a,4a", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
+
+
+| Pre-award Catalogue request
+| urn:fdc:difi.no:2017:ehf:pacr:1.0
+.2+.^| urn:fdc:difi.no:2017:ehf:profile:03:1.0
+
+| Pre-award Catalogue
+|urn:fdc:difi.no:2017:ehf:pac:1.0
+
+|===

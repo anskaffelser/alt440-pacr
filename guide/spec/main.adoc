@@ -37,7 +37,7 @@ include::codes/index.adoc[]
 
 include::datatypes/index.adoc[]
 
-//include::{shared-dir}/content/validation/index.adoc[]
+include::appendix/index.adoc[]
 
 
 :leveloffset: -1
