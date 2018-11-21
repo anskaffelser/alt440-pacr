@@ -159,7 +159,7 @@
                 <cbc:NameCode>PROP</cbc:NameCode> <!-- Codelist property -->
                 <cbc:TestMethod>Test the item.</cbc:TestMethod>
                 <cbc:Value>124</cbc:Value>
-                <cbc:ValueQuantity unitCode="1224">74</cbc:ValueQuantity>
+                <cbc:ValueQuantity>74</cbc:ValueQuantity>
                 <cbc:ValueQualifier>Black</cbc:ValueQualifier>
                 <cbc:ImportanceCode>Mandatory</cbc:ImportanceCode>
                 <cac:ItemPropertyGroup>
