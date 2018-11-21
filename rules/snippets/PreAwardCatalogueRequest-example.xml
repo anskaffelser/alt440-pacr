@@ -9,7 +9,7 @@
 
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pacr:1.0</cbc:CustomizationID>
-    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0<</cbc:ProfileID>
+    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
     <cbc:ID>8a2cbf-9b7b-4f13-8490-fr723</cbc:ID>
     <cbc:IssueDate>2018-11-15</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
