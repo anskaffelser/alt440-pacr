@@ -5,8 +5,6 @@
         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 
-
-    <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pac:1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
     <cbc:ID>GADD-2101</cbc:ID>
@@ -23,8 +21,6 @@
 
     <cac:ReferencedContract>
         <cbc:ID>1234-2018</cbc:ID>
-        <cbc:IssueDate>2018-09-01</cbc:IssueDate>
-        <cbc:ContractTypeCode>21</cbc:ContractTypeCode>
         <cac:ContractDocumentReference>
             <cbc:ID>TR-12</cbc:ID>
         </cac:ContractDocumentReference>
@@ -91,7 +87,6 @@
             <cac:Contact>
                 <cbc:Name>Andrea Herz</cbc:Name>
                 <cbc:Telephone>0461548690</cbc:Telephone>
-                <cbc:Telefax>0461548691</cbc:Telefax>
                 <cbc:ElectronicMail>andrea.herz@supplier.com</cbc:ElectronicMail>
             </cac:Contact>
         </cac:Party>
@@ -108,7 +103,6 @@
             <cac:Contact>
                 <cbc:Name>Rodrigo Tommasso</cbc:Name>
                 <cbc:Telephone>03576125600</cbc:Telephone>
-                <cbc:Telefax>03576125601</cbc:Telefax>
                 <cbc:ElectronicMail>rodrigo.tommasso@supplier.com</cbc:ElectronicMail>
             </cac:Contact>
         </cac:Party>
@@ -119,16 +113,16 @@
         <cbc:ContractSubdivision>Part 1</cbc:ContractSubdivision>
         <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
         <cbc:OrderableUnit>14</cbc:OrderableUnit>
-        <cbc:ContentUnitQuantity>34</cbc:ContentUnitQuantity>
+        <cbc:ContentUnitQuantity unitCode="MLT">34</cbc:ContentUnitQuantity>
         <cbc:OrderQuantityIncrementNumeric>2</cbc:OrderQuantityIncrementNumeric>
-        <cbc:MinimumOrderQuantity>1</cbc:MinimumOrderQuantity>
-        <cbc:MaximumOrderQuantity>500</cbc:MaximumOrderQuantity>
+        <cbc:MinimumOrderQuantity unitCode="EA">1</cbc:MinimumOrderQuantity>
+        <cbc:MaximumOrderQuantity unitCode="EA">500</cbc:MaximumOrderQuantity>
         <cbc:WarrantyInformation>1 month warranty.</cbc:WarrantyInformation>
-        <cbc:PackLevelCode>CT</cbc:PackLevelCode>
+        <cbc:PackLevelCode>CU</cbc:PackLevelCode>
 
         <cac:LineValidityPeriod>
-            <cbc:StartDate>2018-10-20</cbc:StartDate>
-            <cbc:EndDate>2018-10-30</cbc:EndDate>
+            <cbc:StartDate>2018-10-02</cbc:StartDate>
+            <cbc:EndDate>2018-12-31</cbc:EndDate>
         </cac:LineValidityPeriod>
 
         <cac:ItemComparison>
@@ -176,20 +170,15 @@
                 <cbc:OrderableUnitFactorRate>5</cbc:OrderableUnitFactorRate>
                 <cac:ValidityPeriod>
                     <cbc:StartDate>2018-10-02</cbc:StartDate>
-                    <cbc:EndDate>2018-10-30</cbc:EndDate>
+                    <cbc:EndDate>2018-12-31</cbc:EndDate>
                 </cac:ValidityPeriod>
-                <cac:AllowanceCharge>
-                    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-                    <cbc:AllowanceChargeReason>Return the customer's discount.</cbc:AllowanceChargeReason>
-                    <cbc:Amount currencyID="EUR">12</cbc:Amount>
-                </cac:AllowanceCharge>
             </cac:Price>
         </cac:RequiredItemLocationQuantity>
 
 
         <cac:Item>
-            <cbc:Description>Standard milk with 3 % fat</cbc:Description>
-            <cbc:PackQuantity>12</cbc:PackQuantity>
+            <cbc:Description languageID="en">Standard milk with 3 % fat</cbc:Description>
+            <cbc:PackQuantity unitCode="XBX">12</cbc:PackQuantity>
             <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric>
             <cbc:Name>Milk with low fat</cbc:Name>
             <cbc:Keyword>Milk</cbc:Keyword>
@@ -201,12 +190,12 @@
                 <cbc:ID>N72</cbc:ID>
             </cac:ManufacturersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID>452733563835</cbc:ID>
+                <cbc:ID schemeID="0160">452733563835</cbc:ID>
                 <cbc:ExtendedID>B72-24GY</cbc:ExtendedID>
             </cac:StandardItemIdentification>
 
             <cac:ItemSpecificationDocumentReference>
-                <cbc:ID>123456789</cbc:ID>
+                <cbc:ID schemeID="0160">123456789</cbc:ID>
                 <cbc:DocumentTypeCode>4</cbc:DocumentTypeCode>
                 <cbc:DocumentType>Milk specification</cbc:DocumentType>
                 <cbc:DocumentDescription>Report providing the specification of the milk.</cbc:DocumentDescription>
@@ -222,7 +211,7 @@
                 <cbc:IdentificationCode>DE</cbc:IdentificationCode>
             </cac:OriginCountry>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode>465353</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI" listName="eClass">465353</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:TransactionConditions>
                 <cbc:ActionCode>SER</cbc:ActionCode>
@@ -230,7 +219,7 @@
             </cac:TransactionConditions>
             <cac:HazardousItem>
                 <cbc:ID>55AG</cbc:ID>
-                <cbc:UNDGCode>1164</cbc:UNDGCode>
+                <cbc:UNDGCode>IMD</cbc:UNDGCode>
             </cac:HazardousItem>
 
             <cac:ClassifiedTaxCategory>
@@ -240,6 +229,7 @@
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
+
 
             <cac:AdditionalItemProperty>
                 <cbc:ID>1</cbc:ID>

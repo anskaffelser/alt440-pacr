@@ -1240,7 +1240,7 @@
                         <DataType>Code</DataType>
                         <Reference type="CODE_LIST">UNCL8273</Reference>
 
-                        <Value type="EXAMPLE">0131</Value>
+                        <Value type="EXAMPLE">ADR</Value>
                     </Element>
                 </Element>
 

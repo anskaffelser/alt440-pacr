@@ -7,7 +7,6 @@
 
     <!-- Snippet file for Alt440- PreAward Catalogue  -->
 
-    <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pac:1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
     <cbc:ID>j3a3-ik53-tr35-3fw7</cbc:ID>
@@ -27,8 +26,6 @@
     <!-- tag::ReferencedContract[] -->
     <cac:ReferencedContract>
         <cbc:ID>8173</cbc:ID>
-        <cbc:IssueDate>2018-08-01</cbc:IssueDate>
-        <cbc:ContractTypeCode>21</cbc:ContractTypeCode>
         <cac:ContractDocumentReference>
             <cbc:ID>TU-343</cbc:ID>
         </cac:ContractDocumentReference>
@@ -37,9 +34,9 @@
 
     <!-- tag::ProviderParty[] -->
     <cac:ProviderParty>
-        <cbc:EndpointID schemeID="0192">495214785</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="0192">495214785</cbc:ID>
+            <cbc:ID schemeID="0192">987654325</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Hans Jensen</cbc:Name>
@@ -59,9 +56,9 @@
 
     <!-- tag::ReceiverParty[] -->
     <cac:ReceiverParty>
-        <cbc:EndpointID schemeID="0192">145324789</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">123456785</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="0192">145324789</cbc:ID>
+            <cbc:ID schemeID="0192">123456785</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Giovanni Tommaso Capon</cbc:Name>
@@ -101,7 +98,6 @@
             <cac:Contact>
                 <cbc:Name>Andrea Herz</cbc:Name>
                 <cbc:Telephone>0461548690</cbc:Telephone>
-                <cbc:Telefax>0461548691</cbc:Telefax>
                 <cbc:ElectronicMail>andrea.herz@supplier.com</cbc:ElectronicMail>
             </cac:Contact>
         </cac:Party>
@@ -120,7 +116,6 @@
             <cac:Contact>
                 <cbc:Name>Rodrigo Tommasso</cbc:Name>
                 <cbc:Telephone>03576125600</cbc:Telephone>
-                <cbc:Telefax>03576125601</cbc:Telefax>
                 <cbc:ElectronicMail>rodrigo.tommasso@supplier.com</cbc:ElectronicMail>
             </cac:Contact>
         </cac:Party>
@@ -133,12 +128,12 @@
         <cbc:ContractSubdivision>Part 1</cbc:ContractSubdivision>
         <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
         <cbc:OrderableUnit>14</cbc:OrderableUnit>
-        <cbc:ContentUnitQuantity>34</cbc:ContentUnitQuantity>
+        <cbc:ContentUnitQuantity unitCode="MLT">34</cbc:ContentUnitQuantity>
         <cbc:OrderQuantityIncrementNumeric>2</cbc:OrderQuantityIncrementNumeric>
-        <cbc:MinimumOrderQuantity>1</cbc:MinimumOrderQuantity>
-        <cbc:MaximumOrderQuantity>500</cbc:MaximumOrderQuantity>
+        <cbc:MinimumOrderQuantity unitCode="EA">1</cbc:MinimumOrderQuantity>
+        <cbc:MaximumOrderQuantity unitCode="EA">500</cbc:MaximumOrderQuantity>
         <cbc:WarrantyInformation>5 years warranty</cbc:WarrantyInformation>
-        <cbc:PackLevelCode>IF</cbc:PackLevelCode>
+        <cbc:PackLevelCode>TU</cbc:PackLevelCode>
 
         <!-- tag::LineValidityPeriod[] -->
         <cac:LineValidityPeriod>
@@ -208,11 +203,6 @@
                     <cbc:StartDate>2018-10-20</cbc:StartDate>
                     <cbc:EndDate>2018-10-30</cbc:EndDate>
                 </cac:ValidityPeriod>
-                <cac:AllowanceCharge>
-                    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-                    <cbc:AllowanceChargeReason>Return the customer's discount.</cbc:AllowanceChargeReason>
-                    <cbc:Amount currencyID="EUR">12</cbc:Amount>
-                </cac:AllowanceCharge>
             </cac:Price>
             <!-- end::Price[] -->
 
@@ -222,8 +212,8 @@
 
         <!-- tag::Item[] -->
         <cac:Item>
-            <cbc:Description>The item is x size, and is powerful with...</cbc:Description>
-            <cbc:PackQuantity>10.00</cbc:PackQuantity>
+            <cbc:Description languageID="en">The item is x size, and is powerful with...</cbc:Description>
+            <cbc:PackQuantity unitCode="XBX">10.00</cbc:PackQuantity>
             <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric>
             <cbc:Name>ABC</cbc:Name>
             <cbc:Keyword>Pastilles</cbc:Keyword>
@@ -235,7 +225,7 @@
                 <cbc:ID>N72</cbc:ID>
             </cac:ManufacturersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID>452733563835</cbc:ID>
+                <cbc:ID schemeID="0160">452733563835</cbc:ID>
                 <cbc:ExtendedID>B72-24GY</cbc:ExtendedID>
             </cac:StandardItemIdentification>
 
@@ -246,7 +236,7 @@
                 <cbc:DocumentType>Contains menthol, citrus, mint, aspartam.</cbc:DocumentType>
                 <cbc:DocumentDescription>Strong pastilles, good for illness.</cbc:DocumentDescription>
                 <cac:Attachment>
-                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png">YSB0ZXN0IGRvY3VtZW50CgoK</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
+                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png" filename="fisherman-spec.pdf">YSB0ZXN0IGRvY3VtZW50CgoK</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
                     <cac:ExternalReference>
                         <cbc:URI>https://fishermen/mint/yellow</cbc:URI>
                     </cac:ExternalReference>
@@ -258,7 +248,7 @@
                 <cbc:IdentificationCode>ES</cbc:IdentificationCode>
             </cac:OriginCountry>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode>465353</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI" listName="eClass">465353</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:TransactionConditions>
                 <cbc:ActionCode>SER</cbc:ActionCode>
@@ -266,7 +256,7 @@
             </cac:TransactionConditions>
             <cac:HazardousItem>
                 <cbc:ID>55AG</cbc:ID>
-                <cbc:UNDGCode>1164</cbc:UNDGCode>
+                <cbc:UNDGCode>ADR</cbc:UNDGCode>
             </cac:HazardousItem>
 
             <!-- tag::ClassifiedTaxCategory[] -->

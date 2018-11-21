@@ -5,10 +5,9 @@
         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 
-    <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pacr:1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
-    <cbc:ID>8a2cbf-9b7b-4f13-8490-fr723</cbc:ID>
+    <cbc:ID schemeVersionID="2.0">8a2cbf-9b7b-4f13-8490-fr723</cbc:ID>
     <cbc:IssueDate>2018-10-15</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
 
@@ -108,7 +107,7 @@
 
             <cac:Price>
                 <cbc:PriceAmount currencyID="EUR">20</cbc:PriceAmount>
-                <cbc:PriceTypeCode>CP</cbc:PriceTypeCode>
+                <cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
             </cac:Price>
         </cac:RequiredItemLocationQuantity>
 
@@ -130,16 +129,15 @@
             </cac:ItemSpecificationDocumentReference>
 
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode name="ABC">465353</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listName="eClass" listID="STI">465353</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
 
             <cac:AdditionalItemProperty>
                 <cbc:ID>1</cbc:ID>
                 <cbc:Name>Mobilephone</cbc:Name>
                 <cbc:NameCode>PROP</cbc:NameCode>
-                <cbc:TestMethod>Test the item.</cbc:TestMethod>
                 <cbc:Value>Red carton</cbc:Value>
-                <cbc:ValueQuantity>74</cbc:ValueQuantity>
+                <cbc:ValueQuantity unitCode="C62">74</cbc:ValueQuantity>
                 <cbc:ValueQualifier>EA</cbc:ValueQualifier>
                 <cbc:ImportanceCode>M</cbc:ImportanceCode>
                 <cac:ItemPropertyGroup>

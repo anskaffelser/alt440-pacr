@@ -5,15 +5,15 @@
        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pacr:1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
-    <cbc:ID>2</cbc:ID>
+    <cbc:ID schemeVersionID="13.0">2</cbc:ID>
     <cbc:IssueDate>2018-01-01</cbc:IssueDate>
     <cbc:IssueTime>15:00:00</cbc:IssueTime>
     
     
     <cac:ReceiverParty>
-        <cbc:EndpointID schemeID="0192">643543844</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID>643543844</cbc:ID>
+            <cbc:ID>987654325</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Hospital Ltd.</cbc:Name>
@@ -23,7 +23,6 @@
             <cbc:AdditionalStreetName>Building C</cbc:AdditionalStreetName>
             <cbc:CityName>Oslo</cbc:CityName>
             <cbc:PostalZone>0154</cbc:PostalZone>
-            <cbc:CountrySubentity>Oslo</cbc:CountrySubentity>
             <cac:Country>
                 <cbc:IdentificationCode>NO</cbc:IdentificationCode>
             </cac:Country>
@@ -43,9 +42,9 @@
     </cac:ReceiverParty>
 
     <cac:ProviderParty>
-        <cbc:EndpointID schemeID="0192">451425478</cbc:EndpointID>
+        <cbc:EndpointID schemeID="0192">123456785</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID>451425478</cbc:ID>
+            <cbc:ID>123456785</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Job offer ltd.</cbc:Name>
@@ -55,7 +54,6 @@
             <cbc:AdditionalStreetName>Building B</cbc:AdditionalStreetName>
             <cbc:CityName>Harstad</cbc:CityName>
             <cbc:PostalZone>9415</cbc:PostalZone>
-            <cbc:CountrySubentityCode>Region A</cbc:CountrySubentityCode>
             <cac:Country>
                 <cbc:IdentificationCode>NO</cbc:IdentificationCode>
             </cac:Country>
@@ -76,7 +74,7 @@
 
     <cac:RequestedCatalogueReference>
         <cbc:ID>14578</cbc:ID>
-        <cbc:VersionID>2.0</cbc:VersionID>
+        <cbc:PreviousVersionID>2.0</cbc:PreviousVersionID>
     </cac:RequestedCatalogueReference>
 
     <cac:ReferencedContract>
@@ -106,7 +104,7 @@
             </cac:ApplicableTerritoryAddress>
             <cac:Price>
                 <cbc:PriceAmount currencyID="NOK">15000.00</cbc:PriceAmount>
-                <cbc:PriceTypeCode>NOK</cbc:PriceTypeCode>
+                <cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
             </cac:Price>
         </cac:RequiredItemLocationQuantity>
 
@@ -128,7 +126,7 @@
             </cac:ItemSpecificationDocumentReference>
 
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="ABC">123</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI" listName="eClass">123</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
 
             <cac:AdditionalItemProperty>
@@ -136,9 +134,9 @@
                 <cbc:Name>Nurse</cbc:Name>
                 <cbc:NameCode>PROP</cbc:NameCode>
                 <cbc:Value>Women</cbc:Value>
-                <cbc:ValueQuantity unitCode="1224">10</cbc:ValueQuantity>
+                <cbc:ValueQuantity unitCode="XBX">10</cbc:ValueQuantity>
                 <cbc:ValueQualifier>Women</cbc:ValueQualifier>
-                <cbc:ImportanceCode>Mandatory</cbc:ImportanceCode>
+                <cbc:ImportanceCode>M</cbc:ImportanceCode>
                 <cac:ItemPropertyGroup>
                     <cbc:ID>1235</cbc:ID>
                     <cbc:Name>Nurse</cbc:Name>
