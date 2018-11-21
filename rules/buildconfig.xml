@@ -3,7 +3,7 @@
 
     <testfolder>example</testfolder>
     <testfolder>unit-PAC</testfolder>
-<!--    <testfolder>unit-PACR</testfolder>-->
+    <testfolder>unit-PACR</testfolder>
 
     <configuration>
         <identifier>ehf-pacr-1.0</identifier>

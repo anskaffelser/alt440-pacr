@@ -451,7 +451,7 @@
                 </Description>
                 <DataType>Code</DataType>
                 <Reference type="CODE_LIST">UNECERec20</Reference>
-                <Reference type="CODE_LIST">UNECERec21</Reference>
+                
                 <Value type="EXAMPLE">MLT</Value>
             </Element>
 
@@ -467,7 +467,7 @@
                         The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                     </Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
-                    <Reference type="CODE_LIST">UNECERec21</Reference>
+                    
                     <Value type="EXAMPLE">MLT</Value>
                 </Attribute>
 
@@ -495,7 +495,7 @@
                         The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                     </Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
-                    <Reference type="CODE_LIST">UNECERec21</Reference>
+                    
 
                     <Value type="EXAMPLE">EA</Value>
                 </Attribute>
@@ -517,7 +517,7 @@
                         The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                     </Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
-                    <Reference type="CODE_LIST">UNECERec21</Reference>
+                    
 
                     <Value type="EXAMPLE">EA</Value>
                 </Attribute>
@@ -607,7 +607,7 @@
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Reference type="CODE_LIST">UNECERec21</Reference>
+                        
 
                         <Value type="EXAMPLE">H87</Value>
                     </Attribute>
@@ -642,7 +642,7 @@
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Reference type="CODE_LIST">UNECERec21</Reference>
+                        
 
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
@@ -676,7 +676,7 @@
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Reference type="CODE_LIST">UNECERec21</Reference>
+                        
 
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
@@ -710,7 +710,7 @@
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Reference type="CODE_LIST">UNECERec21</Reference>
+                        
 
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
@@ -744,7 +744,7 @@
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Reference type="CODE_LIST">UNECERec21</Reference>
+                        
 
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
@@ -771,7 +771,7 @@
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Reference type="CODE_LIST">UNECERec21</Reference>
+                        
 
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
@@ -792,7 +792,7 @@
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Reference type="CODE_LIST">UNECERec21</Reference>
+                        
 
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
@@ -987,7 +987,7 @@
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Reference type="CODE_LIST">UNECERec21</Reference>
+                        
 
                         <Value type="EXAMPLE">XBX</Value>
                     </Attribute>
@@ -1342,7 +1342,7 @@
                             </Description>
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Reference type="CODE_LIST">UNECERec21</Reference>
+                            
                             <Value type="EXAMPLE">C62</Value>
                         </Attribute>
                     </Element>
@@ -1525,7 +1525,7 @@
                             </Description>
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Reference type="CODE_LIST">UNECERec21</Reference>
+                            
                             <Value type="EXAMPLE">C62</Value>
                         </Attribute>
                         <Value type="EXAMPLE">3</Value>
@@ -1549,7 +1549,7 @@
                             </Description>
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Reference type="CODE_LIST">UNECERec21</Reference>
+                            
                             <Value type="EXAMPLE">C62</Value>
                         </Attribute>
                         <Value type="EXAMPLE">10</Value>
@@ -1573,7 +1573,7 @@
                             </Description>
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
-                            <Reference type="CODE_LIST">UNECERec21</Reference>
+                            
                             <Value type="EXAMPLE">C62</Value>
                         </Attribute>
                         <Value type="EXAMPLE">15</Value>
