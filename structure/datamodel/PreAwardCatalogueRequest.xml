@@ -97,7 +97,7 @@
                     <Value type="EXAMPLE">0192</Value>
                 </Attribute>
 
-                <Value type="EXAMPLE">643729935</Value>
+                <Value type="EXAMPLE">987654325</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -120,7 +120,7 @@
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
 
-                    <Value type="EXAMPLE">643729935</Value>
+                    <Value type="EXAMPLE">987654325</Value>
                 </Element>
             </Element>
 
@@ -195,7 +195,7 @@
                     <Value type="EXAMPLE">0192</Value>
                 </Attribute>
 
-                <Value type="EXAMPLE">742454758</Value>
+                <Value type="EXAMPLE">123456785</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -219,7 +219,7 @@
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
-                    <Value type="EXAMPLE">742454758</Value>
+                    <Value type="EXAMPLE">123456785</Value>
                 </Element>
             </Element>
 
