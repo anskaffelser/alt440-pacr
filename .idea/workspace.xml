@@ -4,12 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" line="60" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/example/Catalogue-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/example/Catalogue-example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" afterDir="false" />
-    </list>
+    <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,6 +15,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.adoc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
+          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="68">
+                <caret line="4" column="86" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="EHF-M-PAC.sch" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rules/sch/parts/EHF-M-PAC.sch">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Catalogue-example.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Catalogue-example.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rules/example/Catalogue-example.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="344">
@@ -105,9 +112,9 @@
       <find>componentre</find>
       <find>requiredre</find>
       <find>cac:item</find>
-      <find>cac:Item</find>
       <find>embedded</find>
       <find>Item</find>
+      <find>cac:Item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,7 +151,6 @@
         <option value="$PROJECT_DIR$/guide/spec/definitions.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/Process-Request.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/process-request.adoc" />
-        <option value="$PROJECT_DIR$/guide/spec/main.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/introduction.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/background.adoc" />
         <option value="$PROJECT_DIR$/guide/settings.adoc" />
@@ -167,6 +173,7 @@
         <option value="$PROJECT_DIR$/rules/example/Catalogue-example.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" />
         <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
+        <option value="$PROJECT_DIR$/guide/spec/main.adoc" />
       </list>
     </option>
   </component>
@@ -677,16 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="425">
-            <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/guide/spec/process.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
@@ -786,6 +783,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="186" column="43" lean-forward="true" selection-start-line="186" selection-start-column="43" selection-end-line="186" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/spec/main.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="68">
+            <caret line="4" column="86" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

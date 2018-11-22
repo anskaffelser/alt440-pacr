@@ -2,7 +2,7 @@ include::../settings.adoc[]
 
 = {doctitle}
 v{revision}
-:description: This document describes the new version of Pre-Award Catalogue (called " EHF Tilbudskatalog" in Norwegian) and Pre-Award Catalogue Request (called "EHF Forespørselskatalog" in Norwegian). The document is part of Norwegian "Agency of Public Management and eGovernment" (Difi) standardization work related to electronic commerce.
+:description: This document describes the new version of Pre-Award Catalogue (called "EHF Tilbudskatalog" in Norwegian) and Pre-Award Catalogue Request (called "EHF Forespørselskatalog" in Norwegian). The document is part of Norwegian "Agency of Public Management and eGovernment" (Difi) standardization work related to electronic commerce.
 :doctype: book
 :icons: font
 :stem:
