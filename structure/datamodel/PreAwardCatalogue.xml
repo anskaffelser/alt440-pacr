@@ -964,7 +964,7 @@
                         the Item name. It is only allowed to send one description element pr. language.</Description>
                     <DataType>Text</DataType>
 
-                    <Attribute>
+                    <Attribute usage="optional">
                         <Term>languageID</Term>
                         <Name>Language identifier</Name>
                         <Description>Language identifier to indicate which language the description is stated in.</Description>
@@ -1011,7 +1011,7 @@
                     <DataType>Text</DataType>
                     <Value type="EXAMPLE">Item name</Value>
                     
-                    <Attribute>
+                    <Attribute usage="optional">
                         <Term>languageID</Term>
                         <Name>Language identifier</Name>
                         <Description>Language identifier to indicate which language the description is stated in.</Description>
