@@ -957,7 +957,7 @@
                 <Name>Pre-award catalogue item details</Name>
                 <Property key="doc">structure/docs/Item.adoc</Property>
 
-                <Element cardinality="0..1">
+                <Element cardinality="0..n">
                     <Term>cbc:Description</Term>
                     <Name>Item description</Name>
                     <Description>The Item description allows for describing the item and its features in more detail than
@@ -1004,12 +1004,21 @@
                     <DataType>Decimal</DataType>
                 </Element>
 
-                <Element>
+                <Element cardinality="1..n">
                     <Term>cbc:Name</Term>
                     <Name>Item name</Name>
                     <Description>A name for an item.</Description>
                     <DataType>Text</DataType>
                     <Value type="EXAMPLE">Item name</Value>
+                    
+                    <Attribute>
+                        <Term>languageID</Term>
+                        <Name>Language identifier</Name>
+                        <Description>Language identifier to indicate which language the description is stated in.</Description>
+                        <Reference type="CODE_LIST">languageCode</Reference>
+                        <Value type="EXAMPLE">en</Value>
+                    </Attribute>
+                    
                 </Element>
 
                 <Element cardinality="0..1">

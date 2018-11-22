@@ -20,7 +20,7 @@
                 <Value type="EXAMPLE">STI</Value>
             </Attribute>
             
-            <Attribute>
+            <Attribute usage="optional">
                 <Term>listName</Term>
                 <Name>Item request classification name</Name>
                 <Description>The name of the classification for this item.</Description>
