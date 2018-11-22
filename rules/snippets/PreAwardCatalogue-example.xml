@@ -216,7 +216,7 @@
             <cbc:Description languageID="en">The item is x size, and is powerful with...</cbc:Description>
             <cbc:PackQuantity unitCode="XBX">10.00</cbc:PackQuantity>
             <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric>
-            <cbc:Name>ABC</cbc:Name>
+            <cbc:Name languageID="en">ABC</cbc:Name>
             <cbc:Keyword>Pastilles</cbc:Keyword>
             <cbc:BrandName>Fisherman's friend</cbc:BrandName>
             <cac:SellersItemIdentification>

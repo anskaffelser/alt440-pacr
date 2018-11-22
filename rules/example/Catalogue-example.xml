@@ -181,7 +181,7 @@
             <cbc:Description languageID="en">Standard milk with 3 % fat</cbc:Description>
             <cbc:PackQuantity unitCode="XBX">12</cbc:PackQuantity>
             <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric>
-            <cbc:Name>Milk with low fat</cbc:Name>
+            <cbc:Name languageID="en">Milk with low fat</cbc:Name>
             <cbc:Keyword>Milk</cbc:Keyword>
             <cbc:BrandName>Milk with 3% fat</cbc:BrandName>
             <cac:SellersItemIdentification>

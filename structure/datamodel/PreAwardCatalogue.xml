@@ -1009,7 +1009,7 @@
                     <Name>Item name</Name>
                     <Description>A name for an item.</Description>
                     <DataType>Text</DataType>
-                    <Value type="EXAMPLE">Item name</Value>
+
                     
                     <Attribute usage="optional">
                         <Term>languageID</Term>
@@ -1018,6 +1018,7 @@
                         <Reference type="CODE_LIST">languageCode</Reference>
                         <Value type="EXAMPLE">en</Value>
                     </Attribute>
+                    <Value type="EXAMPLE">Item name</Value>
                     
                 </Element>
 
