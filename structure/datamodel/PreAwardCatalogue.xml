@@ -179,7 +179,7 @@
                     <Value type="EXAMPLE">0192</Value>
                 </Attribute>
 
-                <Value type="EXAMPLE">542451248</Value>
+                <Value type="EXAMPLE">123456785</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -201,7 +201,7 @@
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
-                    <Value type="EXAMPLE">542451248</Value>
+                    <Value type="EXAMPLE">123456785</Value>
                 </Element>
             </Element>
 
@@ -243,7 +243,7 @@
                     <Reference type="CODE_LIST">eaid</Reference>
                     <Value type="EXAMPLE">0192</Value>
                 </Attribute>
-                <Value type="EXAMPLE">987654321</Value>
+                <Value type="EXAMPLE">987654325</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -266,7 +266,7 @@
                         <Value type="EXAMPLE">0192</Value>
                     </Attribute>
 
-                    <Value type="EXAMPLE">987654321</Value>
+                    <Value type="EXAMPLE">987654325</Value>
                 </Element>
             </Element>
 
@@ -319,7 +319,7 @@
                             <Value type="EXAMPLE">0192</Value>
                         </Attribute>
 
-                        <Value type="EXAMPLE">1298234392874923874892</Value>
+                        <Value type="EXAMPLE">123456785</Value>
                     </Element>
                 </Element>
 
@@ -375,7 +375,7 @@
                             <Value type="EXAMPLE">0192</Value>
                         </Attribute>
 
-                        <Value type="EXAMPLE">23947</Value>
+                        <Value type="EXAMPLE">987654325</Value>
                     </Element>
                 </Element>
 
@@ -627,7 +627,7 @@
                     <Name>Item standard identifier</Name>
                     <Description>Indicate the seller's identifier for the related item.</Description>
                     <DataType>Identifier</DataType>
-                    <Value type="EXAMPLE">A</Value>
+                    <Value type="EXAMPLE">1234</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1156,7 +1156,7 @@
                                 <Description>File name of the attached document</Description>
                                 <Value type="EXAMPLE">prod-spec.pdf</Value>
                             </Attribute>
-                            <Value type="EXAMPLE">UEVQUE9MIEJJUyBQcmUgYXdhcmQgQ2F0YWxvZ3VlIGV4YW1wbGUgYXR0YWNoZW1lbnQ=</Value>
+                            <Value type="EXAMPLE">YU4gRVhBTVBMRSBGSUxF</Value>
                         </Element>
 
                         <Element cardinality="0..1">
@@ -1593,6 +1593,7 @@
                     <Name>Requested deliverable identifier</Name>
                     <Description>Identifier for a requested deliverable.</Description>
                     <DataType>Identifier</DataType>
+                    <Value type="EXAMPLE">11112222</Value>
                 </Element>
             </Element>
         </Element>

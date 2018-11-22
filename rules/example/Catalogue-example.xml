@@ -8,6 +8,7 @@
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pac:1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
     <cbc:ID>GADD-2101</cbc:ID>
+    <cbc:ActionCode>Update</cbc:ActionCode>
     <cbc:Name>Milk Catalogue</cbc:Name>
     <cbc:IssueDate>2018-10-02</cbc:IssueDate>
     <cbc:IssueTime>15:00:00</cbc:IssueTime>
