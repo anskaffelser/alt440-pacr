@@ -249,7 +249,7 @@
                 <cbc:IdentificationCode>ES</cbc:IdentificationCode>
             </cac:OriginCountry>
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="STI" listName="eClass">465353</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI">465353</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:TransactionConditions>
                 <cbc:ActionCode>SER</cbc:ActionCode>

@@ -9,7 +9,7 @@
 
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pacr:1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
-    <cbc:ID schemeVersionID="3.0">8a2cbf-9b7b-4f13-8490-fr723</cbc:ID>
+    <cbc:ID>8a2cbf-9b7b-4f13-8490-fr723</cbc:ID>
     <cbc:IssueDate>2018-11-15</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
 
@@ -116,7 +116,7 @@
 
             <!-- tag::Price-Request[] -->
             <cac:Price>
-                <cbc:PriceAmount currencyID="GBP">4579</cbc:PriceAmount> <!-- codelist ISO4217_2015 -->
+                <cbc:PriceAmount currencyID="GBP">4579</cbc:PriceAmount>
                 <cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
             </cac:Price>
             <!-- end::Price-Request[] -->
@@ -145,7 +145,7 @@
 
             <!-- tag::CommodityClassification-Request[] -->
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="STI" listName="eClass">124</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI">124</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <!-- end::CommodityClassification-Request[] -->
 

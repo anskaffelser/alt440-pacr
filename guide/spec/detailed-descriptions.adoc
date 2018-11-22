@@ -98,7 +98,7 @@ Examples of related products in a Pre-Award Catalogue message
 ----
 <cac:RequiredRelatedItem>
     <cbc:ID>987654</cbc:ID>
-    <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:Quantity>
+    <cbc:Quantity unitCode="EA">1</cbc:Quantity>
 </cac:RequiredRelatedItem>
 ----
 
@@ -107,7 +107,7 @@ Examples of related products in a Pre-Award Catalogue message
 ----
 <cac:ComponentRelatedItem>
     <cbc:ID>89388789930</cbc:ID>
-    <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">12</cbc:Quantity>
+    <cbc:Quantity unitCode="EA">12</cbc:Quantity>
 </cac:ComponentRelatedItem>
 ----
 
@@ -116,13 +116,13 @@ Examples of related products in a Pre-Award Catalogue message
 ----
 <cac:ComplementaryRelatedItem>
     <cbc:ID>123456</cbc:ID>
-    <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:Quantity>
+    <cbc:Quantity unitCode="EA">1</cbc:Quantity>
 </cac:ComplementaryRelatedItem>
 ----
 
 == Quantities and Units
 
-There are various quantities and units that can be used in both Pre-award catalogue and Pre-award catalogue request. Here is a detailed list of relevant quantities and units:
+There are various quantities and units that can be used in the Pre-award catalogue. Here is a detailed list of relevant quantities and units:
 
 ****
 Orderable unit (OrderableUnit)::
@@ -197,10 +197,10 @@ The quantity of the requested item property.
 <cac:CatalogueLine>
   <cbc:ID>1</cbc:ID>
   <cbc:OrderableUnit>EA</cbc:OrderableUnit>
-  <cbc:ContentUnitQuantity unitCode="MLT" unitCodeListID="UNECERec20">250</cbc:ContentUnitQuantity>
+  <cbc:ContentUnitQuantity unitCode="MLT">250</cbc:ContentUnitQuantity>
   <cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
-  <cbc:MinimumOrderQuantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:MinimumOrderQuantity>
-  <cbc:PackLevelCode listID="GS17009:PEPPOL">CU</cbc:PackLevelCode>
+  <cbc:MinimumOrderQuantity unitCode="EA">1</cbc:MinimumOrderQuantity>
+  <cbc:PackLevelCode>CU</cbc:PackLevelCode>
   ...
   <cac:Item>
     <cbc:Name languageID="en">Milk 1 Liter</cbc:Name>
@@ -239,15 +239,14 @@ Below is an example of Logistics information in a Pre-Award Catalogue message.
 <cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:OrderableIndicator>false</cbc:OrderableIndicator>
-		<cbc:PackLevelCode listID="GS17009:PEPPOL">DU</cbc:PackLevelCode>
+		<cbc:PackLevelCode>DU</cbc:PackLevelCode>
 		<cac:ComponentRelatedItem>
 			<cbc:ID>222222</cbc:ID> <!--1-->
-			<cbc:Quantity unitCode="EA"
-			unitCodeListID="UNECERec20">12</cbc:Quantity> <!--2-->
+			<cbc:Quantity unitCode="EA">12</cbc:Quantity> <!--2-->
 		</cac:ComponentRelatedItem>
 		<cac:Item>
 			<cbc:Description>Soft drink, pallet</cbc:Description>
-			<cbc:PackQuantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:PackQuantity>
+			<cbc:PackQuantity unitCode="EA">1</cbc:PackQuantity>
 			<cbc:Name languageID="en">Soft drink</cbc:Name>
 			<cac:SellersItemIdentification>
 				<cbc:ID>111111</cbc:ID>
@@ -266,14 +265,14 @@ Below is an example of Logistics information in a Pre-Award Catalogue message.
     <cbc:ID>2</cbc:ID>
     <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
     <cbc:OrderableUnit>5</cbc:OrderableUnit>
-    <cbc:PackLevelCode listID="GS17009:PEPPOL">TU</cbc:PackLevelCode>
+    <cbc:PackLevelCode>TU</cbc:PackLevelCode>
     <cac:ComponentRelatedItem>
         <cbc:ID>333333</cbc:ID> <!--1-->
-        <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">6</cbc:Quantity> <!--2-->
+        <cbc:Quantity unitCode="EA">6</cbc:Quantity> <!--2-->
     </cac:ComponentRelatedItem>
     <cac:Item>
         <cbc:Description>Soft drink, trading unit</cbc:Description>
-        <cbc:PackQuantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:PackQuantity>
+        <cbc:PackQuantity unitCode="EA">1</cbc:PackQuantity>
         <cbc:Name languageID="en">Soft drink</cbc:Name>
         <cac:SellersItemIdentification>
             <cbc:ID>222222</cbc:ID>
@@ -290,10 +289,10 @@ Below is an example of Logistics information in a Pre-Award Catalogue message.
 <cac:CatalogueLine>
     <cbc:ID>3</cbc:ID>
     <cbc:OrderableIndicator>false</cbc:OrderableIndicator>
-    <cbc:PackLevelCode listID="GS17009:PEPPOL">CU</cbc:PackLevelCode>
+    <cbc:PackLevelCode>CU</cbc:PackLevelCode>
     <cac:Item>
         <cbc:Description>Soft drink 4-pack</cbc:Description>
-        <cbc:PackQuantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:PackQuantity>
+        <cbc:PackQuantity unitCode="EA">1</cbc:PackQuantity>
         <cbc:Name languageID="en">Soft drink</cbc:Name>
         <cac:SellersItemIdentification>
             <cbc:ID>333333</cbc:ID>
@@ -309,8 +308,9 @@ Attachments can be sent on line level in the Catalogue. This can be images or ad
 
 If binary objects are attached to the Pre-Award Catalogue, the valid values for mimetype can be found in codelist.
 
-[source]
+
 .Example of using external reference
+[source, xml, indent=0]
 ----
 <cac:Item>
   ...
@@ -333,7 +333,7 @@ If binary objects are attached to the Pre-Award Catalogue, the valid values for 
 <cac:ItemSpecificationDocumentReference>
     <cbc:ID>2384-34232-342-34-2333</cbc:ID>
     <cac:Attachment>
-        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf"
+        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specification.pdf"
             >ZGVmYXVsdA==</cbc:EmbeddedDocumentBinaryObject>
     </cac:Attachment>
 </cac:ItemSpecificationDocumentReference>
@@ -353,8 +353,9 @@ Be aware that no Gross prices can be sent in the format (price before discount a
 
 Example of Prices in Pre-Award Catalogue:
 
-[source]
+
 .Item Price
+[source, xml, indent=0]
 ----
 <cac:RequiredItemLocationQuantity>
   <cac:Price>
@@ -367,22 +368,24 @@ Example of Prices in Pre-Award Catalogue:
 <cac:RequiredItemLocationQuantity>
 ----
 
-[source]
+
 .Comparison Price
+[source, xml, indent=0]
 ----
 <cac:ItemComparision>
   <cbc:PriceAmount currencyID="NOK">100.00</cbc:PriceAmount>
-  <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:Quantity>
+  <cbc:Quantity unitCode="EA">1</cbc:Quantity>
 </cac:ItemComparision>
 ----
 
-[source]
+
 .Conditional Price
+[source, xml, indent=0]
 ----
 <cac:RequiredItemLocationQuantity>
   <cac:Price>
     <cbc:PriceAmount currencyID="NOK">75.00</cbc:PriceAmount>
-    <cbc:BaseQuantity unitCode="EA" unitCodeListID="UNECERec20">100</cbc:BaseQuantity>
+    <cbc:BaseQuantity unitCode="EA">100</cbc:BaseQuantity>
     <cac:ValidityPeriod>
       <cbc:StartDate>2012-04-26</cbc:StartDate>
       <cbc:EndDate>2012-05-26</cbc:EndDate>
@@ -425,8 +428,9 @@ Classification Code (ID): EOP +
 Certificate TypeCode: OrganicLabel (Ecological)
 |===
 
-[source]
+
 .Example of labeling in a Pre-Award Catalogue message.
+[source, xml, indent=0]
 ----
 <cac:Certificate>
   <cbc:ID>NEO</cbc:ID>
@@ -459,25 +463,25 @@ Legal values: True, False
 .Example of use in the Pre-Award Catalogue message
 ====
 
-[source]
+[source, xml, indent=0]
 ----
 <cac:AdditionalItemProperty>
-  <cbc:Name languageID="en">Color</cbc:Name>
-  <cbc:Value languageID="en">Red</cbc:Value>
+  <cbc:Name>Color</cbc:Name>
+  <cbc:Value>Red</cbc:Value>
   <cbc:ValueQualifier>Color</cbc:ValueQualifier>
 </cac:AdditionalItemProperty>
 ----
 
-[source]
+[source, xml, indent=0]
 ----
 <cac:AdditionalItemProperty>
   <cbc:Name>NutritionProtein</cbc:Name>
-  <cbc:ValueQuantity unitCode="GRM" unitCodeListID="UNECERec20">2.5</cbc:ValueQuantity>
+  <cbc:ValueQuantity unitCode="GRM">2.5</cbc:ValueQuantity>
   <cbc:ValueQualifier>Nutrition</cbc:ValueQualifier>
 </cac:AdditionalItemProperty>
 ----
 
-[source]
+[source, xml, indent=0]
 ----
 <cac:AdditionalItemProperty>
     <cbc:Name>Allergens</cbc:Name>
@@ -488,7 +492,7 @@ Legal values: True, False
 </cac:AdditionalItemProperty>
 ----
 
-[source]
+[source, xml, indent=0]
 ----
 <cac:AdditionalItemProperty>
   <cbc:Name>GeneticallyModified</cbc:Name>
@@ -507,7 +511,7 @@ If a product is classified as Hazardous item, a reference to the relevant UNDG-c
 ----
 <cac:HazardousItem>
     <cbc:ID>0024</cbc:ID>
-    <cbc:UNDGCode listID="UNCL8273">ADR</cbc:UNDGCode>
+    <cbc:UNDGCode>ADR</cbc:UNDGCode>
 </cac:HazardousItem>
 ----
 
@@ -516,7 +520,7 @@ If a product is classified as Hazardous item, a reference to the relevant UNDG-c
 ----
 <cac:ItemSpecificationDocumentReference>
     <cbc:ID>1</cbc:ID>
-    <cbc:DocumentDescription languageID="en">HMS Safety sheet</cbc:DocumentDescription>
+    <cbc:DocumentDescription>HMS Safety sheet</cbc:DocumentDescription>
     <cac:Attachment>
         <cac:ExternalReference>
             <cbc:URI>http://www.klif.no/no/Tema/Kjemikalier/Klassifisering-og-merking-av-kjemikalier-CLP/Klassifisering-CLP-avsnitt-I-II-og-V/</cbc:URI>
@@ -529,8 +533,9 @@ If a product is classified as Hazardous item, a reference to the relevant UNDG-c
 
 Keywords are sent to let the Buyer search for a product without knowing the Product ID or name. Keywords can be repeated, but the number should be limited to ensure correct handling in the receiving system.  If more than one Keyword is sent, they should be put in the same tag separated by the %-sign since this is already being used by several actors (but a different sign can be agreed by the trading partners).
 
-[source]
+
 .Example of several Keywords in the same tag.
+[source, xml, indent=0]
 ----
 <cac:Item>
   <cbc:Description> Pallet of water </cbc:Description>
@@ -544,15 +549,16 @@ Keywords are sent to let the Buyer search for a product without knowing the Prod
 
 == VAT
 
-VAT information on line level is provided in the class cac:ClassifiedTaxCategory.
+VAT information on line level is provided in the class `cac:ClassifiedTaxCategory`.
 
 VAT information is optional in the Pre-Award Catalogue. Catalogue receivers may require VAT-information in the Pre-Award Catalogue.
+
 
 .Example of using VAT.
 [source, xml, indent=0]
 ----
 <cac:ClassifiedTaxCategory>
-    <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+    <cbc:ID>S</cbc:ID>
     <cbc:Percent>25</cbc:Percent>
     <cac:TaxScheme>
         <cbc:ID>VAT</cbc:ID>
