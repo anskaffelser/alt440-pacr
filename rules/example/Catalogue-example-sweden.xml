@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ubl:Catalogue
+        xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+
+    <cac:CatalogueLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:ActionCode>Add</cbc:ActionCode>
+        <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+        <cbc:OrderableUnit>CT</cbc:OrderableUnit>
+
+
+        <cac:RequiredItemLocationQuantity>
+
+            <cac:Price>
+                <cbc:PriceAmount currencyID="SEK">7.51</cbc:PriceAmount>
+                <cbc:PriceTypeCode>CT</cbc:PriceTypeCode>
+            </cac:Price>
+        </cac:RequiredItemLocationQuantity>
+
+
+        <cac:Item>
+            <cbc:Name languageID="se">Standardmjölk 1 lit</cbc:Name>
+
+            <cac:SellersItemIdentification>
+                <cbc:ID>123</cbc:ID>
+            </cac:SellersItemIdentification>
+
+            <cac:CommodityClassification>
+                <cbc:ItemClassificationCode listID="STI">12345678</cbc:ItemClassificationCode> <!-- Her skal det være UNSPSC 12345678 -->
+            </cac:CommodityClassification>
+
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>P1</cbc:ID>
+                <cbc:Name>Fat</cbc:Name>
+                <cbc:Value>3 %</cbc:Value>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>P8</cbc:ID>
+                <cbc:Name>Climate change (GWP)</cbc:Name>
+                <cbc:NameCode>EPD</cbc:NameCode>
+                <cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity> <!-- 1 (kg CO2-e)/liter -->
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>P10</cbc:ID>
+                <cbc:Name>Freshwater consumption</cbc:Name>
+                <cbc:NameCode>EPD</cbc:NameCode>
+                <cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity> <!-- x (liter/liter) -->
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>P8</cbc:ID>
+                <cbc:Name>Eutrophication, aquatic</cbc:Name>
+                <cbc:NameCode>EPD</cbc:NameCode>
+                <cbc:ValueQuantity>1</cbc:ValueQuantity> <!-- x (kg NO3-eq)/liter -->
+            </cac:AdditionalItemProperty>
+
+
+            <cac:Certificate>
+                <cbc:ID>1</cbc:ID>
+                <cbc:CertificateTypeCode>KRAV</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Environmental</cbc:CertificateType>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>NA</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+
+                <cac:DocumentReference>
+                    <cbc:ID>https://www.krav.se/</cbc:ID>
+                    <cbc:DocumentTypeCode>Item_means_of_proof_reference</cbc:DocumentTypeCode>
+                </cac:DocumentReference>
+            </cac:Certificate>
+
+            <cac:Certificate>
+                <cbc:ID>2</cbc:ID>
+                <cbc:CertificateTypeCode>ECO</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Organic</cbc:CertificateType>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>NA</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+
+                <cac:DocumentReference>
+                    <cbc:ID>http://www.greenorganic.org</cbc:ID>
+                    <cbc:DocumentTypeCode>Item_means_of_proof_reference</cbc:DocumentTypeCode>
+                </cac:DocumentReference>
+            </cac:Certificate>
+
+            <cac:Dimension>
+                <cbc:AttributeID>HT</cbc:AttributeID>
+                <cbc:Measure unitCode="MTR">1</cbc:Measure>
+                <cbc:MinimumMeasure unitCode="CEL">10</cbc:MinimumMeasure>
+                <cbc:MaximumMeasure unitCode="CEL">30</cbc:MaximumMeasure>
+            </cac:Dimension>
+
+        </cac:Item>
+
+        <cac:CallForTendersLineReference>
+            <cbc:LineID>1</cbc:LineID>
+        </cac:CallForTendersLineReference>
+    </cac:CatalogueLine>
+
+</ubl:Catalogue>

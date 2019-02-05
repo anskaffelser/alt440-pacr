@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ubl:CatalogueRequest
+        xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2"
+        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+
+    <cac:CatalogueRequestLine>
+        <cbc:ID>1</cbc:ID>
+        <cac:LineValidityPeriod>
+            <cbc:StartDate>2018-10-20</cbc:StartDate>
+            <cbc:EndDate>2018-10-30</cbc:EndDate>
+        </cac:LineValidityPeriod>
+
+        <cac:RequiredItemLocationQuantity>
+            <cbc:MinimumQuantity unitCode="LTR">1000</cbc:MinimumQuantity>
+            <cbc:MaximumQuantity unitCode="LTR">2000</cbc:MaximumQuantity>
+        </cac:RequiredItemLocationQuantity>
+
+        <cac:Item>
+            <cbc:Description>Standard milk with 3 % fat.</cbc:Description>
+            <cbc:Name>Milk standard</cbc:Name>
+
+            <cac:ItemSpecificationDocumentReference> <!-- I have added this element and including some information -->
+                <cbc:ID>123456789</cbc:ID>
+                <cbc:DocumentDescription>Report providing the specification of the milk.</cbc:DocumentDescription>
+                <cac:Attachment>
+                    <cac:ExternalReference>
+                        <cbc:URI>https://milk/lowpercentage</cbc:URI>
+                        <cbc:DocumentHash>Need to be 3% fat.</cbc:DocumentHash>
+                        <cbc:HashAlgorithmMethod>6564agag</cbc:HashAlgorithmMethod>
+                        <cbc:FileName>Milk-specification</cbc:FileName>
+                    </cac:ExternalReference>
+                </cac:Attachment>
+            </cac:ItemSpecificationDocumentReference>
+
+            <cac:CommodityClassification>
+                <cbc:ItemClassificationCode listID="STI">12345678</cbc:ItemClassificationCode> <!-- Her skal det være UNSPSC 12345678 -->
+            </cac:CommodityClassification>
+
+            <cac:AdditionalItemProperty> <!-- Mangler elementet cbc:TestMethod som svenskene har foreslått -->
+                <cbc:ID>P1</cbc:ID>
+                <cbc:Name>PROP:Fat</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode>
+                <cbc:ValueQuantity unitCode="P1">3</cbc:ValueQuantity> <!-- 3% -->
+                <cbc:ValueQualifier>Mängd fett</cbc:ValueQualifier>
+                <cbc:ImportanceCode>M</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty> <!-- Mangler elementet cbc:TestMethod som svenskene har foreslått -->
+                <cbc:ID>P2</cbc:ID>
+                <cbc:Name>Item net quantity</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode>
+                <cbc:ImportanceCode>M</cbc:ImportanceCode>
+
+                <cac:ItemPropertyRange> <!-- I have added this element and including some information -->
+                    <cbc:MinimumValue>1 liter</cbc:MinimumValue>
+                    <cbc:MaximumValue>1.5 liter</cbc:MaximumValue>
+                </cac:ItemPropertyRange>
+
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>3</cbc:ID>
+                <cbc:Name>Orderable Unit</cbc:Name>
+                <cbc:NameCode>INF</cbc:NameCode>
+                <cbc:ImportanceCode>M</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>4</cbc:ID>
+                <cbc:Name>Item net quantity</cbc:Name>
+                <cbc:NameCode>INF</cbc:NameCode>
+                <cbc:ImportanceCode>M</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>5</cbc:ID>
+                <cbc:Name>PackSizeNumeric</cbc:Name>
+                <cbc:NameCode>INF</cbc:NameCode>
+                <cbc:ImportanceCode>O</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>6</cbc:ID>
+                <cbc:Name>Name</cbc:Name>
+                <cbc:NameCode>INF</cbc:NameCode>
+                <cbc:ImportanceCode>M</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>7</cbc:ID>
+                <cbc:Name>ItemNetPrice</cbc:Name>
+                <cbc:NameCode>INF</cbc:NameCode>
+                <cbc:ImportanceCode>M</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty> <!-- Mangler elementet cbc:TestMethod som svenskene har foreslått -->
+                <cbc:ID>P8</cbc:ID>
+                <cbc:Name>PROP:Climate change (GWP)</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode>
+                <cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity> <!-- 1 (kg CO2-e)/liter -->
+                <cbc:ValueQualifier>EPD</cbc:ValueQualifier>
+                <cbc:ImportanceCode>M</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>P9</cbc:ID>
+                <cbc:Name>PROP:Land system change</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode>
+                <cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity> <!-- (m2-years agr)/liter
+ -->
+                <cbc:ImportanceCode>O</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty> <!-- Mangler elementet cbc:TestMethod som svenskene har foreslått -->
+                <cbc:ID>P10</cbc:ID>
+                <cbc:Name>PROP:Freshwater consumption</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode>
+                <cbc:ValueQuantity unitCode="C62">2</cbc:ValueQuantity> <!-- x  (liter/liter) -->
+                <cbc:ValueQualifier>EPD</cbc:ValueQualifier>
+                <cbc:ImportanceCode>M</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>P11</cbc:ID>
+                <cbc:Name>PROP:Hazardous particles</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode>
+                <cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity> <!-- (kg PM2.5-eq)/liter -->
+                <cbc:ImportanceCode>O</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty> <!-- Mangler elementet cbc:TestMethod som svenskene har foreslått -->
+                <cbc:ID>P12</cbc:ID>
+                <cbc:Name>PROP:Eutrophication, aquatic</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode>
+                <cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity> <!-- x  (kg NO3-eq)/liter -->
+                <cbc:ValueQualifier>EPD</cbc:ValueQualifier>
+                <cbc:ImportanceCode>M</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>P13</cbc:ID>
+                <cbc:Name>PROP:Aicidification</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode>
+                <cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity> <!-- (m2 UES)/liter -->
+                <cbc:ImportanceCode>O</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>P14</cbc:ID>
+                <cbc:Name>PROP:Photochemical ozon</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode>
+                <cbc:ValueQuantity unitCode="C62">1</cbc:ValueQuantity> <!-- (m2*ppm*hours)/liter -->
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>P15</cbc:ID>
+                <cbc:Name>PROP:Atmospheric aerosol loading</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode>
+                <cbc:ImportanceCode>O</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+            <cac:AdditionalItemProperty>
+                <cbc:ID>P16</cbc:ID>
+                <cbc:Name>PROP:Biodiversity loss</cbc:Name>
+                <cbc:NameCode>PROP</cbc:NameCode>
+                <cbc:ImportanceCode>O</cbc:ImportanceCode>
+            </cac:AdditionalItemProperty>
+
+
+            <cac:Certificate>
+                <cbc:ID>1</cbc:ID>
+                <cbc:CertificateTypeCode>KRAV</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Environmental</cbc:CertificateType>
+                <cbc:Remarks>M</cbc:Remarks>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>NA</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+            </cac:Certificate>
+
+            <cac:Certificate>
+                <cbc:ID>2</cbc:ID>
+                <cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Organic</cbc:CertificateType>
+                <cbc:Remarks>M</cbc:Remarks>
+
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>NA</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+
+                <cac:DocumentReference> <!-- Lagt inn selv -->
+                   <cbc:DocumentDescription>Organic sources above the minimum requirement of 85%.</cbc:DocumentDescription>
+                </cac:DocumentReference>
+
+            </cac:Certificate>
+
+        </cac:Item>
+
+
+
+
+    </cac:CatalogueRequestLine>
+
+
+</ubl:CatalogueRequest>
