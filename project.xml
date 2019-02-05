@@ -129,6 +129,10 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/GS17009.xml</Path>
     </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/DocumentReference.xml</Path>
+    </Resource>
 
     <!-- Namespaces -->
 
