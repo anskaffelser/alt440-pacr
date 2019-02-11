@@ -1470,14 +1470,12 @@
                         </Description>
                         <Element>
                             <Term>cbc:DocumentTypeCode</Term>
-                            <Name>Document reference type code</Name>
                             <Description>
                                 Pseudo code indicating the DocumentReference as an Items means of proof reference
-                                or an Item requirement reference. </Description>
+                                or an Item requirement reference.
+                            </Description>
                             <DataType>Code</DataType>
-                            <!-- <Value type="FIXED">Item_means_of_proof_reference or Item_requirement_reference</Value>-->
-                            <Reference type="CODE_LIST">DocumentReference</Reference>
-                            <Value type="EXAMPLE">Item_means_of_proof_reference</Value>
+                            <Value type="FIXED">Item_means_of_proof_reference or Item_requirement_reference</Value>
                         </Element>
                         <Element>
                             <Term>cbc:ID</Term>
