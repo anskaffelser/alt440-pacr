@@ -153,19 +153,21 @@
 
             <cac:Certificate>
                 <cbc:ID>1</cbc:ID>
-                <cbc:CertificateTypeCode>NEO</cbc:CertificateTypeCode>
-                <cbc:CertificateType>Nordic Ecolabel</cbc:CertificateType>
-                <cbc:Remarks>M</cbc:Remarks>
+                <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Total energy consumption of the milk.</cbc:CertificateType>
+                <cbc:Remarks>Absolute</cbc:Remarks> <!-- Absolute or Award requirement -->
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>Nordic Ecolabelling</cbc:Name>
                     </cac:PartyName>
                 </cac:IssuerParty>
                 <cac:DocumentReference>
-                    <cbc:ID>23143</cbc:ID>
+                    <cbc:ID>1</cbc:ID>
+                    <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
+                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
                     <cac:Attachment>
                         <cac:ExternalReference>
-                            <cbc:URI>http://www.environmental.org</cbc:URI>
+                            <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
                         </cac:ExternalReference>
                     </cac:Attachment>
                 </cac:DocumentReference>
