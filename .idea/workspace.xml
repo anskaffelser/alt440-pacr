@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/rules/example/sweden-request-example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/example/Catalogue-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/example/Catalogue-example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/example/Catalogue-example.xml1.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/example/Catalogue-example.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +21,8 @@
             <file leaf-file-name="PreAwardCatalogue-example.xml" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="204">
-                    <caret line="300" column="37" selection-start-line="300" selection-start-column="37" selection-end-line="300" selection-end-column="37" />
+                  <state relative-caret-position="324">
+                    <caret line="147" column="28" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="28" />
                   </state>
                 </provider>
               </entry>
@@ -72,8 +64,8 @@
       <file leaf-file-name="PreAwardCatalogueRequest-example.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="187" column="71" lean-forward="true" selection-start-line="187" selection-start-column="71" selection-end-line="187" selection-end-column="71" />
+            <state relative-caret-position="324">
+              <caret line="120" column="48" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -82,7 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>item dimension</find>
       <find>country of reg</find>
       <find>item</find>
       <find>COMPO</find>
@@ -112,6 +103,7 @@
       <find>cac:Item</find>
       <find>propert</find>
       <find>certificate</find>
+      <find>priceamount</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,8 +161,8 @@
         <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" />
         <option value="$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml" />
         <option value="$PROJECT_DIR$/rules/example/Catalogue-example.xml" />
-        <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
         <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" />
+        <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
       </list>
     </option>
   </component>
@@ -685,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="300" column="37" selection-start-line="300" selection-start-column="37" selection-end-line="300" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rules/example/New-Request-example.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -708,8 +693,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="187" column="71" lean-forward="true" selection-start-line="187" selection-start-column="71" selection-end-line="187" selection-end-column="71" />
+        <state relative-caret-position="324">
+          <caret line="120" column="48" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="147" column="28" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="28" />
         </state>
       </provider>
     </entry>

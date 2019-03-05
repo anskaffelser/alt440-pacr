@@ -145,7 +145,7 @@
 
         <!-- tag::ItemComparison[] -->
         <cac:ItemComparison>
-            <cbc:PriceAmount currencyID="DK">10</cbc:PriceAmount>
+            <cbc:PriceAmount currencyID="NOK">10</cbc:PriceAmount>
             <cbc:Quantity unitCode="CLT">0.5</cbc:Quantity>
         </cac:ItemComparison>
         <!-- end::ItemComparison[] -->
@@ -197,7 +197,7 @@
 
             <!-- tag::Price[] -->
             <cac:Price>
-                <cbc:PriceAmount currencyID="DK">150.00</cbc:PriceAmount>
+                <cbc:PriceAmount currencyID="NOK">150.00</cbc:PriceAmount>
                 <cbc:PriceTypeCode>CP</cbc:PriceTypeCode>
                 <cbc:OrderableUnitFactorRate>5</cbc:OrderableUnitFactorRate>
                 <cac:ValidityPeriod>
@@ -311,6 +311,7 @@
                     <cbc:DocumentType>Green requirement</cbc:DocumentType>
                     <cac:Attachment>
                         <cac:ExternalReference>
+                            <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
                             <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
                         </cac:ExternalReference>
                     </cac:Attachment>

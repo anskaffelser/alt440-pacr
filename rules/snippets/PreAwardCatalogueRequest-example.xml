@@ -118,7 +118,7 @@
 
             <!-- tag::Price-Request[] -->
             <cac:Price>
-                <cbc:PriceAmount currencyID="DK">5000</cbc:PriceAmount>
+                <cbc:PriceAmount currencyID="NOK">5000</cbc:PriceAmount>
                 <cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
             </cac:Price>
             <!-- end::Price-Request[] -->
