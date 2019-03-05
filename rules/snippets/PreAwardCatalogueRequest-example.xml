@@ -10,7 +10,7 @@
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pacr:1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
     <cbc:ID schemeVersionID="3.0">8a2cbf-9b7b-4f13-8490-fr723</cbc:ID>
-    <cbc:IssueDate>2018-11-15</cbc:IssueDate>
+    <cbc:IssueDate>2018-10-10</cbc:IssueDate>
     <cbc:IssueTime>12:00:00</cbc:IssueTime>
 
     <!-- tag::ReceiverParty-Request[] -->
@@ -20,28 +20,29 @@
             <cbc:ID schemeID="0192">123456785</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>Fisherman supplier company ltd</cbc:Name>
+            <cbc:Name>Pen company</cbc:Name>
         </cac:PartyName>
         <cac:PostalAddress>
-            <cbc:StreetName>Kirkegata 34</cbc:StreetName>
-            <cbc:AdditionalStreetName>Building C</cbc:AdditionalStreetName>
-            <cbc:CityName>Oslo</cbc:CityName>
-            <cbc:PostalZone>0923</cbc:PostalZone>
+            <cbc:StreetName>Via Goffredo Mameli 25</cbc:StreetName>
+            <cbc:AdditionalStreetName>Building 2</cbc:AdditionalStreetName>
+            <cbc:CityName>Porchiano Del Monte</cbc:CityName>
+            <cbc:PostalZone>05022</cbc:PostalZone>
+            <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
             <cac:Country>
-                <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                <cbc:IdentificationCode>IT</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
         <cac:PartyLegalEntity>
             <cac:RegistrationAddress>
                 <cac:Country>
-                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>IT</cbc:IdentificationCode>
                 </cac:Country>
             </cac:RegistrationAddress>
         </cac:PartyLegalEntity>
         <cac:Contact>
-            <cbc:Name>Ole Simensen</cbc:Name>
-            <cbc:Telephone>94837528</cbc:Telephone>
-            <cbc:ElectronicMail>ole.simensen@supplier.com</cbc:ElectronicMail>
+            <cbc:Name>Rodrigo Tommasso</cbc:Name>
+            <cbc:Telephone>03576125600</cbc:Telephone>
+            <cbc:ElectronicMail>rodrigo.tommasso@pencompany.com</cbc:ElectronicMail>
         </cac:Contact>
     </cac:ReceiverParty>
     <!-- end::ReceiverParty-Request[] -->
@@ -53,28 +54,29 @@
             <cbc:ID schemeID="0192">987654325</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>Provider name</cbc:Name>
+            <cbc:Name>X company</cbc:Name>
         </cac:PartyName>
         <cac:PostalAddress>
-            <cbc:StreetName>Main street 3</cbc:StreetName>
-            <cbc:AdditionalStreetName>Building C</cbc:AdditionalStreetName>
-            <cbc:CityName>London</cbc:CityName>
-            <cbc:PostalZone>AN224QH</cbc:PostalZone>
+            <cbc:StreetName>GI Københavnsvej 2</cbc:StreetName>
+            <cbc:AdditionalStreetName>Building 3</cbc:AdditionalStreetName>
+            <cbc:CityName>København</cbc:CityName>
+            <cbc:PostalZone>3550</cbc:PostalZone>
+            <cbc:CountrySubentity>Slangerup</cbc:CountrySubentity>
             <cac:Country>
-                <cbc:IdentificationCode>GB</cbc:IdentificationCode>
+                <cbc:IdentificationCode>DK</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
         <cac:PartyLegalEntity>
             <cac:RegistrationAddress>
                 <cac:Country>
-                    <cbc:IdentificationCode>GB</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
                 </cac:Country>
             </cac:RegistrationAddress>
         </cac:PartyLegalEntity>
         <cac:Contact>
-            <cbc:Name>Hans Eriksson</cbc:Name>
-            <cbc:Telephone>98415274</cbc:Telephone>
-            <cbc:ElectronicMail>hans.eriksson@provider.com</cbc:ElectronicMail>
+            <cbc:Name>Andrea Eriksen</cbc:Name>
+            <cbc:Telephone>22115522</cbc:Telephone>
+            <cbc:ElectronicMail>andrea.eriksen@xcompany.com</cbc:ElectronicMail>
         </cac:Contact>
     </cac:ProviderParty>
     <!-- end::ProviderParty-Request[] -->
@@ -92,31 +94,31 @@
         <cbc:ID>5134432</cbc:ID>
         <!-- tag::LineValidityPeriod-Request[] -->
         <cac:LineValidityPeriod>
-            <cbc:StartDate>2017-05-15</cbc:StartDate>
-            <cbc:EndDate>2017-05-17</cbc:EndDate>
+            <cbc:StartDate>2018-10-11</cbc:StartDate>
+            <cbc:EndDate>2018-12-30</cbc:EndDate>
         </cac:LineValidityPeriod>
         <!-- end::LineValidityPeriod-Request[] -->
 
         <!-- tag::RequiredItemLocationQuantity-Request[] -->
         <cac:RequiredItemLocationQuantity>
-            <cbc:MinimumQuantity>2</cbc:MinimumQuantity>
-            <cbc:MaximumQuantity>4</cbc:MaximumQuantity>
+            <cbc:MinimumQuantity>1</cbc:MinimumQuantity>
+            <cbc:MaximumQuantity>10</cbc:MaximumQuantity>
             <!-- tag::ApplicableTerritoryAddress-Request[] -->
             <cac:ApplicableTerritoryAddress>
-                <cbc:StreetName>Tværgyden 40</cbc:StreetName>
-                <cbc:AdditionalStreetName>Building 5C</cbc:AdditionalStreetName>
-                <cbc:CityName>Klampenborg</cbc:CityName>
-                <cbc:PostalZone>2930</cbc:PostalZone>
-                <cbc:CountrySubentity>Region Sjælland</cbc:CountrySubentity>
+                <cbc:StreetName>Via Goffredo Mameli 25</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building 2</cbc:AdditionalStreetName>
+                <cbc:CityName>Porchiano Del Monte</cbc:CityName>
+                <cbc:PostalZone>05022</cbc:PostalZone>
+                <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
                 <cac:Country>
-                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>IT</cbc:IdentificationCode>
                 </cac:Country>
             </cac:ApplicableTerritoryAddress>
             <!-- end::ApplicableTerritoryAddress-Request[] -->
 
             <!-- tag::Price-Request[] -->
             <cac:Price>
-                <cbc:PriceAmount currencyID="GBP">4579</cbc:PriceAmount>
+                <cbc:PriceAmount currencyID="DK">5000</cbc:PriceAmount>
                 <cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
             </cac:Price>
             <!-- end::Price-Request[] -->
@@ -125,19 +127,19 @@
 
         <!-- tag::Item-Request[] -->
         <cac:Item>
-            <cbc:Description>We need black Apple iPhone 7 with 32GB.</cbc:Description>
-            <cbc:Name>iPhone 7</cbc:Name>
+            <cbc:Description>We need pen with 0.7 and 0.5 thickness.</cbc:Description>
+            <cbc:Name>Pen</cbc:Name>
 
             <!-- tag::ItemSpecificationDocumentReference-Request[] -->
             <cac:ItemSpecificationDocumentReference>
-                <cbc:ID>7</cbc:ID>
-                <cbc:DocumentDescription>iPhone to stuff members.</cbc:DocumentDescription>
+                <cbc:ID>1</cbc:ID>
+                <cbc:DocumentDescription>Quality pen to office usage with renewable ink.</cbc:DocumentDescription>
                 <cac:Attachment>
                     <cac:ExternalReference>
-                        <cbc:URI>http://www.example.com/apple/iPhone/7/stuff/index.html</cbc:URI>
-                        <cbc:DocumentHash>Need to be 32 GB, black with special glasses.</cbc:DocumentHash>
-                        <cbc:HashAlgorithmMethod>6564135dghaha</cbc:HashAlgorithmMethod>
-                        <cbc:FileName>iPhone7-request</cbc:FileName>
+                        <cbc:URI>http://www.quality-pen.com/renewable</cbc:URI>
+                        <cbc:DocumentHash>Need to 0.7 and 0.5 thick and renewable ink.</cbc:DocumentHash>
+                        <cbc:HashAlgorithmMethod>TmVlZCB0byAwLjcgYW5kIDAuNSB0aGljayBhbmQgcmVuZXdhYmxlIGluay4=</cbc:HashAlgorithmMethod>
+                        <cbc:FileName>pen-request</cbc:FileName>
                     </cac:ExternalReference>
                 </cac:Attachment>
             </cac:ItemSpecificationDocumentReference>
@@ -151,44 +153,45 @@
 
             <!-- tag::AdditionalItemProperty-Request[] -->
             <cac:AdditionalItemProperty>
-                <cbc:ID>254</cbc:ID>
-                <cbc:Name>Mobilephone</cbc:Name>
+                <cbc:ID>1</cbc:ID>
+                <cbc:Name>Color</cbc:Name>
                 <cbc:NameCode>PROP</cbc:NameCode>
-                <cbc:Value>124</cbc:Value>
-                <cbc:ValueQuantity unitCode="C62">74</cbc:ValueQuantity>
+                <cbc:Value>Red</cbc:Value>
+                <cbc:ValueQuantity unitCode="C62">50</cbc:ValueQuantity>
                 <cbc:ValueQualifier>Black</cbc:ValueQualifier>
                 <cbc:ImportanceCode>M</cbc:ImportanceCode>
                 <cac:ItemPropertyGroup>
                     <cbc:ID>46468</cbc:ID>
-                    <cbc:Name>iPhone</cbc:Name>
+                    <cbc:Name>Pen</cbc:Name>
                     <cbc:ImportanceCode>I</cbc:ImportanceCode>
                 </cac:ItemPropertyGroup>
                 <cac:ItemPropertyRange>
-                    <cbc:MinimumValue>20</cbc:MinimumValue>
-                    <cbc:MaximumValue>74</cbc:MaximumValue>
+                    <cbc:MinimumValue>10</cbc:MinimumValue>
+                    <cbc:MaximumValue>100</cbc:MaximumValue>
                 </cac:ItemPropertyRange>
             </cac:AdditionalItemProperty>
             <!-- end::AdditionalItemProperty-Request[] -->
 
             <!-- tag::Certificate-Request[] -->
             <cac:Certificate>
-                <cbc:ID>111</cbc:ID>
-                <cbc:CertificateTypeCode>ECO</cbc:CertificateTypeCode>
-                <cbc:CertificateType>Environmental</cbc:CertificateType>
-                <cbc:Remarks>I</cbc:Remarks>
+                <cbc:ID>1</cbc:ID>
+                <cbc:CertificateTypeCode>Lifetime extension</cbc:CertificateTypeCode>
+                <cbc:CertificateType>LCA</cbc:CertificateType>
+                <cbc:Remarks>Absolute requirement</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>Nordic Ecolabelling</cbc:Name>
                     </cac:PartyName>
                 </cac:IssuerParty>
                 <cac:DocumentReference>
-                    <cbc:ID>23143</cbc:ID>
+                    <cbc:ID>1</cbc:ID>
+                    <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
+                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
                     <cac:Attachment>
                         <cac:ExternalReference>
-                            <cbc:URI>http://www.environmental.org</cbc:URI>
+                            <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
                         </cac:ExternalReference>
                     </cac:Attachment>
-
                 </cac:DocumentReference>
             </cac:Certificate>
             <!-- end::Certificate-Request[] -->

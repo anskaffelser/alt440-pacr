@@ -1404,37 +1404,49 @@
                 <Element cardinality="0..n">
                     <Term>cac:Certificate</Term>
                     <Name>Item means of proof</Name>
-                    <Description>A means of proof according to to Directives 2014/24/EU.</Description>
+                    <Description>A means of proof according to the Directives 2014/24/EU.</Description>
+
+                    <!--<Name>Item means of proof</Name>
+                    <Description>A means of proof according to to Directives 2014/24/EU.</Description> -->
                     <Property key="doc">structure/docs/Certificate.adoc</Property>
 
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Item means of proof identifier</Name>
-                        <Description>A unique identifier being unique in a transaction for a Item means of proof.</Description>
+                        <Description>A unique identifier being unique in a transaction for an Item means of proof.</Description>
                         <DataType>Identifier</DataType>
                     </Element>
 
                     <Element>
                         <Term>cbc:CertificateTypeCode</Term>
-                        <Name>Item means of proof type</Name>
+                        <Name>General item requirement evidence (means of proof)</Name>
+                        <Description>A means of general item requirement.</Description>
+                        <Value type="EXAMPLE">Energy consumption</Value>
+                        <!--<Name>Item means of proof type</Name>
                         <Description>A code specifying the type of the Item means of proof according to Directives 2014/24/EU, e.g., if it a label, test report etc.</Description>
                         <DataType>Code</DataType>
-                        <Value type="EXAMPLE">NEO</Value>
+                        <Value type="EXAMPLE">NEO</Value> -->
                     </Element>
 
                     <Element>
                         <Term>cbc:CertificateType</Term>
-                        <Name>Item means of proof name</Name>
+                        <Name>Specified item requirement evidence (means of proof)</Name>
+                        <Description>A means of specified item requirement based on "General item requirement".</Description>
+                        <Value type="EXAMPLE">Total energy consumption of the computer.</Value>
+                        <!--<Name>Item means of proof name</Name>
                         <Description>Name of a item means of proof, e.g., the name of a label.</Description>
                         <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Nordic Ecolabel</Value>
+                        <Value type="EXAMPLE">Nordic Ecolabel</Value> -->
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:Remarks</Term>
-                        <Name>Item means of proof value</Name>
+                        <Name>Item means of proof absolute or award requirement</Name>
+                        <Description>Item means of absolute or award requirement.</Description>
+                        <Value type="EXAMPLE">Absolute</Value>
+                        <!--<Name>Item means of proof value</Name>
                         <Description>The value according to the Item means of proof that applies to the item.</Description>
-                        <DataType>Text</DataType>
+                        <DataType>Text</DataType> -->
                     </Element>
 
                     <Element>
@@ -1460,26 +1472,22 @@
                     <Element cardinality="0..n">
                         <Term>cac:DocumentReference</Term>
                         <Name>Document reference</Name>
-                        <Description>
+                        <!--<Description>
                             This element is bound to two different business terms:
                             Item means of proof reference or Item requirement reference.
                             To indicate the, if the document reference is a reference
                             to an means of proof, use the code Item_means_of_proof_reference.
                             For an Item requirement reference use the code
                             Item_requirement_reference.
-                        </Description>
-                        <Element>
-                            <Term>cbc:DocumentTypeCode</Term>
-                            <Description>
-                                Pseudo code indicating the DocumentReference as an Items means of proof reference
-                                or an Item requirement reference.
-                            </Description>
-                            <DataType>Code</DataType>
-                            <Value type="FIXED">Item_means_of_proof_reference or Item_requirement_reference</Value>
-                        </Element>
+                        </Description> -->
+
+
                         <Element>
                             <Term>cbc:ID</Term>
-                            <Name>Item means of proof reference or Item requirement reference</Name>
+                            <Name>Item means of proof attachment identifier</Name>
+                            <Description>The identifier for the item means of proof attachment.</Description>
+                            <Value type="EXAMPLE">1</Value>
+                            <!-- <Name>Item means of proof reference or Item requirement reference</Name>
                             <Description>
                                 Item means of proof reference is reference to an external specification
                                 of the provided means of proof. An Item requirement reference is a
@@ -1487,8 +1495,47 @@
                                 pre-award catalogue request this pre-award catalogue is build on.
                             </Description>
                             <DataType>Identifier</DataType>
-                            <Value type="EXAMPLE">http://www.nordic-ecolabel.org</Value>
+                            <Value type="EXAMPLE">http://www.nordic-ecolabel.org</Value> -->
                         </Element>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:DocumentTypeCode</Term>
+                            <Name>Item means of proof accepted evidence type</Name>
+                            <Description>The accepted evidence types from Procurement Directive art.44 are: Type 1 labelling (ISO 14024),
+                                Type 2 labelling (ISO 14021), Type 3 labelling (ISO 14025), Certification, Test report, or Other means of proof.</Description>
+                            <Value type="EXAMPLE">Type 1</Value>
+                            <!--<Description>
+                                Pseudo code indicating the DocumentReference as an Items means of proof reference
+                                or an Item requirement reference.
+                            </Description>
+                            <DataType>Code</DataType>
+                            <Value type="FIXED">Item_means_of_proof_reference or Item_requirement_reference</Value> -->
+                        </Element>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:DocumentType</Term>
+                            <Name>Item means of proof policy relevant requirement</Name>
+                            <Description>Policy relevant requirement, allowed values: Green, social or innovative.</Description>
+                            <Value type="EXAMPLE">Green requirement</Value>
+                        </Element>
+
+                        <Element cardinality="0..1">
+                            <Term>cac:Attachment</Term>
+                            <Name>Attachment</Name>
+                            
+                            <Element cardinality="0..1">
+                                <Term>cac:ExternalReference</Term>
+                                <Name>External reference</Name>
+                                
+                                <Element cardinality="0..1">
+                                    <Term>cbc:URI</Term>
+                                    <Name>Item means of proof requirement reference</Name>
+                                    <Description>A reference to an external specification.</Description>
+                                    <Value type="EXAMPLE">http://www.nordic-ecolabel.org</Value>
+                                </Element>
+                            </Element>
+                        </Element>
+
                     </Element>
                 </Element>
 

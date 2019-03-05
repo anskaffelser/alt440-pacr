@@ -40,7 +40,7 @@
             <cbc:ID schemeID="0192">987654325</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>Hans Jensen</cbc:Name>
+            <cbc:Name>X company</cbc:Name>
         </cac:PartyName>
         <cac:PostalAddress>
             <cbc:StreetName>GI Københavnsvej 2</cbc:StreetName>
@@ -62,7 +62,7 @@
             <cbc:ID schemeID="0192">123456785</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>Giovanni Tommaso Capon</cbc:Name>
+            <cbc:Name>Pen company</cbc:Name>
         </cac:PartyName>
         <cac:PostalAddress>
             <cbc:StreetName>Via Goffredo Mameli 25</cbc:StreetName>
@@ -81,25 +81,25 @@
     <cac:SellerSupplierParty>
         <cac:Party>
             <cac:PartyIdentification>
-                <cbc:ID>34343476336</cbc:ID>
+                <cbc:ID schemeID="0192">987654325</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
-                <cbc:Name>Dieter Meier</cbc:Name>
+                <cbc:Name>X company</cbc:Name>
             </cac:PartyName>
             <cac:PostalAddress>
-                <cbc:StreetName>Koenigstrasse 12</cbc:StreetName>
-                <cbc:AdditionalStreetName>Building 54</cbc:AdditionalStreetName>
-                <cbc:CityName>Tambach-Dietharz</cbc:CityName>
-                <cbc:PostalZone>99897</cbc:PostalZone>
-                <cbc:CountrySubentity>Freistaat Thüringen</cbc:CountrySubentity>
+                <cbc:StreetName>GI Københavnsvej 2</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building 3</cbc:AdditionalStreetName>
+                <cbc:CityName>København</cbc:CityName>
+                <cbc:PostalZone>3550</cbc:PostalZone>
+                <cbc:CountrySubentity>Slangerup</cbc:CountrySubentity>
                 <cac:Country>
-                    <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
                 </cac:Country>
             </cac:PostalAddress>
             <cac:Contact>
-                <cbc:Name>Andrea Herz</cbc:Name>
-                <cbc:Telephone>0461548690</cbc:Telephone>
-                <cbc:ElectronicMail>andrea.herz@supplier.com</cbc:ElectronicMail>
+                <cbc:Name>Andrea Eriksen</cbc:Name>
+                <cbc:Telephone>22115522</cbc:Telephone>
+                <cbc:ElectronicMail>andrea.eriksen@xcompany.com</cbc:ElectronicMail>
             </cac:Contact>
         </cac:Party>
     </cac:SellerSupplierParty>
@@ -109,15 +109,15 @@
     <cac:ContractorCustomerParty>
         <cac:Party>
             <cac:PartyIdentification>
-                <cbc:ID>1278</cbc:ID>
+                <cbc:ID schemeID="0192">123456785</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
-                <cbc:Name>Emiliano Russo</cbc:Name>
+                <cbc:Name>Pen company</cbc:Name>
             </cac:PartyName>
             <cac:Contact>
                 <cbc:Name>Rodrigo Tommasso</cbc:Name>
                 <cbc:Telephone>03576125600</cbc:Telephone>
-                <cbc:ElectronicMail>rodrigo.tommasso@supplier.com</cbc:ElectronicMail>
+                <cbc:ElectronicMail>rodrigo.tommasso@pencompany.com</cbc:ElectronicMail>
             </cac:Contact>
         </cac:Party>
     </cac:ContractorCustomerParty>
@@ -125,14 +125,14 @@
 
     <!-- tag::CatalogueLine[] -->
     <cac:CatalogueLine>
-        <cbc:ID>2</cbc:ID>
+        <cbc:ID>1</cbc:ID>
         <cbc:ContractSubdivision>Part 1</cbc:ContractSubdivision>
         <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
-        <cbc:OrderableUnit>14</cbc:OrderableUnit>
-        <cbc:ContentUnitQuantity unitCode="MLT">34</cbc:ContentUnitQuantity>
-        <cbc:OrderQuantityIncrementNumeric>2</cbc:OrderQuantityIncrementNumeric>
+        <cbc:OrderableUnit>H87</cbc:OrderableUnit>
+        <cbc:ContentUnitQuantity unitCode="H87">50</cbc:ContentUnitQuantity>
+        <cbc:OrderQuantityIncrementNumeric>10</cbc:OrderQuantityIncrementNumeric>
         <cbc:MinimumOrderQuantity unitCode="EA">1</cbc:MinimumOrderQuantity>
-        <cbc:MaximumOrderQuantity unitCode="EA">500</cbc:MaximumOrderQuantity>
+        <cbc:MaximumOrderQuantity unitCode="EA">50</cbc:MaximumOrderQuantity>
         <cbc:WarrantyInformation>5 years warranty</cbc:WarrantyInformation>
         <cbc:PackLevelCode>TU</cbc:PackLevelCode>
 
@@ -145,15 +145,15 @@
 
         <!-- tag::ItemComparison[] -->
         <cac:ItemComparison>
-            <cbc:PriceAmount currencyID="EUR">142.00</cbc:PriceAmount>
-            <cbc:Quantity unitCode="XBX">0.5</cbc:Quantity>
+            <cbc:PriceAmount currencyID="DK">10</cbc:PriceAmount>
+            <cbc:Quantity unitCode="CLT">0.5</cbc:Quantity>
         </cac:ItemComparison>
         <!-- end::ItemComparison[] -->
 
         <!-- tag::ComponentRelatedItem[] -->
         <cac:ComponentRelatedItem>
             <cbc:ID>B1</cbc:ID>
-            <cbc:Quantity unitCode="EA">4</cbc:Quantity>
+            <cbc:Quantity unitCode="EA">5</cbc:Quantity>
         </cac:ComponentRelatedItem>
         <!-- end::ComponentRelatedItem[] -->
 
@@ -167,14 +167,14 @@
         <!-- tag::ComplementaryRelatedItem[] -->
         <cac:ComplementaryRelatedItem>
             <cbc:ID>R2</cbc:ID>
-            <cbc:Quantity unitCode="EA">3161</cbc:Quantity>
+            <cbc:Quantity unitCode="EA">10</cbc:Quantity>
         </cac:ComplementaryRelatedItem>
         <!-- end::ComplementaryRelatedItem[] -->
 
         <!-- tag::ReplacedRelatedItem[] -->
         <cac:ReplacedRelatedItem>
             <cbc:ID>BB</cbc:ID>
-            <cbc:Quantity unitCode="EA">31</cbc:Quantity>
+            <cbc:Quantity unitCode="EA">1</cbc:Quantity>
         </cac:ReplacedRelatedItem>
         <!-- end::ReplacedRelatedItem[] -->
 
@@ -182,10 +182,10 @@
         <cac:RequiredItemLocationQuantity>
             <!-- tag::ApplicableTerritoryAddress[] -->
             <cbc:MinimumQuantity>1</cbc:MinimumQuantity>
-            <cbc:MaximumQuantity>12</cbc:MaximumQuantity>
+            <cbc:MaximumQuantity>10</cbc:MaximumQuantity>
             <cac:ApplicableTerritoryAddress>
-                <cbc:StreetName>Via Goffredo Mameli 32</cbc:StreetName>
-                <cbc:AdditionalStreetName>Building A</cbc:AdditionalStreetName>
+                <cbc:StreetName>Via Goffredo Mameli 25</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building 2</cbc:AdditionalStreetName>
                 <cbc:CityName>Porchiano Del Monte</cbc:CityName>
                 <cbc:PostalZone>05022</cbc:PostalZone>
                 <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
@@ -197,7 +197,7 @@
 
             <!-- tag::Price[] -->
             <cac:Price>
-                <cbc:PriceAmount currencyID="EUR">120</cbc:PriceAmount>
+                <cbc:PriceAmount currencyID="DK">150.00</cbc:PriceAmount>
                 <cbc:PriceTypeCode>CP</cbc:PriceTypeCode>
                 <cbc:OrderableUnitFactorRate>5</cbc:OrderableUnitFactorRate>
                 <cac:ValidityPeriod>
@@ -213,12 +213,12 @@
 
         <!-- tag::Item[] -->
         <cac:Item>
-            <cbc:Description languageID="en">The item is x size, and is powerful with...</cbc:Description>
-            <cbc:PackQuantity unitCode="XBX">10.00</cbc:PackQuantity>
-            <cbc:PackSizeNumeric>20</cbc:PackSizeNumeric>
-            <cbc:Name languageID="en">ABC</cbc:Name>
-            <cbc:Keyword>Pastilles</cbc:Keyword>
-            <cbc:BrandName>Fisherman's friend</cbc:BrandName>
+            <cbc:Description languageID="en">Pen with 0.7 thickness.</cbc:Description>
+            <cbc:PackQuantity unitCode="XBX">10</cbc:PackQuantity>
+            <cbc:PackSizeNumeric>10</cbc:PackSizeNumeric>
+            <cbc:Name languageID="en">0.7 pen</cbc:Name>
+            <cbc:Keyword>Pen</cbc:Keyword>
+            <cbc:BrandName>XYZ pen</cbc:BrandName>
             <cac:SellersItemIdentification>
                 <cbc:ID>T5</cbc:ID>
             </cac:SellersItemIdentification>
@@ -234,27 +234,30 @@
             <cac:ItemSpecificationDocumentReference>
                 <cbc:ID>ie353-ior24-iedt25-pry463</cbc:ID>
                 <cbc:DocumentTypeCode>4</cbc:DocumentTypeCode>
-                <cbc:DocumentType>Contains menthol, citrus, mint, aspartam.</cbc:DocumentType>
-                <cbc:DocumentDescription>Strong pastilles, good for illness.</cbc:DocumentDescription>
+                <cbc:DocumentType>The pen contains renewable ink.</cbc:DocumentType>
+                <cbc:DocumentDescription>Report providing information about the renewable inks.</cbc:DocumentDescription>
                 <cac:Attachment>
-                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png" filename="fisherman-spec.pdf">YSB0ZXN0IGRvY3VtZW50CgoK</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
+                    <cbc:EmbeddedDocumentBinaryObject mimeCode="image/png" filename="fisherman-spec.pdf">cmVuZXdhYmxlIGluawo=</cbc:EmbeddedDocumentBinaryObject> <!-- Codelist: MimeCode -->
                     <cac:ExternalReference>
-                        <cbc:URI>https://fishermen/mint/yellow</cbc:URI>
+                        <cbc:URI>https://xyz-pen.com/renewable-ink</cbc:URI>
                     </cac:ExternalReference>
                 </cac:Attachment>
             </cac:ItemSpecificationDocumentReference>
             <!-- end::ItemSpecificationDocumentReference[] -->
 
             <cac:OriginCountry>
-                <cbc:IdentificationCode>ES</cbc:IdentificationCode>
+                <cbc:IdentificationCode>DK</cbc:IdentificationCode>
             </cac:OriginCountry>
+
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="STI">465353</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI">CPC-3020000-1</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
+
             <cac:TransactionConditions>
                 <cbc:ActionCode>SER</cbc:ActionCode>
-                <cbc:Description>2% discount of the payment; reason of delayed delivery.</cbc:Description>
+                <cbc:Description>Bank payment for the items.</cbc:Description>
             </cac:TransactionConditions>
+
             <cac:HazardousItem>
                 <cbc:ID>55AG</cbc:ID>
                 <cbc:UNDGCode>ADR</cbc:UNDGCode>
@@ -272,38 +275,45 @@
 
             <!-- tag::AdditionalItemProperty[] -->
             <cac:AdditionalItemProperty>
-                <cbc:ID>X4</cbc:ID>
-                <cbc:Name>Sugarfree fisherman's friend</cbc:Name>
+                <cbc:ID>1</cbc:ID>
+                <cbc:Name>Blue pen</cbc:Name>
                 <cbc:NameCode>PROP</cbc:NameCode>
-                <cbc:Value>White</cbc:Value>
-                <cbc:ValueQualifier>EA</cbc:ValueQualifier>
+                <cbc:Value>Blue design</cbc:Value>
+                <cbc:ValueQuantity unitCode="C62">20</cbc:ValueQuantity>
+                <cbc:ValueQualifier>Blue</cbc:ValueQualifier>
             </cac:AdditionalItemProperty>
             <!-- end::AdditionalItemProperty[] -->
 
             <cac:ManufacturerParty>
                 <cac:PartyName>
-                    <cbc:Name>Fisherman's for everyone ltd</cbc:Name>
+                    <cbc:Name>Pen company</cbc:Name>
                 </cac:PartyName>
             </cac:ManufacturerParty>
 
             <cac:ItemInstance>
-                <cbc:BestBeforeDate>2019-12-20</cbc:BestBeforeDate>
+                <cbc:BestBeforeDate>2020-12-20</cbc:BestBeforeDate>
             </cac:ItemInstance>
 
             <!-- tag::Certificate[] -->
             <cac:Certificate>
                 <cbc:ID>1</cbc:ID>
-                <cbc:CertificateTypeCode>NEO</cbc:CertificateTypeCode>
-                <cbc:CertificateType>Nordic Ecolabel</cbc:CertificateType>
-                <cbc:Remarks>I</cbc:Remarks>
+                <cbc:CertificateTypeCode>Lifetime extension</cbc:CertificateTypeCode>
+                <cbc:CertificateType>LCA</cbc:CertificateType>
+                <cbc:Remarks>Absolute requirement</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>Nordic Ecolabelling</cbc:Name>
                     </cac:PartyName>
                 </cac:IssuerParty>
                 <cac:DocumentReference>
-                    <cbc:ID>http://www.nordic-ecolabel.org or urn:sample:difi:pacr:aaaba1a2-d107-426d-8a64-698b678756d5:item-requirement:2</cbc:ID>
-                    <cbc:DocumentTypeCode>Item_means_of_proof_reference or Item_requirement_reference</cbc:DocumentTypeCode>
+                    <cbc:ID>1</cbc:ID>
+                    <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
+                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cac:Attachment>
+                        <cac:ExternalReference>
+                            <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
+                        </cac:ExternalReference>
+                    </cac:Attachment>
                 </cac:DocumentReference>
             </cac:Certificate>
             <!-- end::Certificate[] -->
@@ -311,9 +321,9 @@
             <!-- tag::Dimension[] -->
             <cac:Dimension>
                 <cbc:AttributeID>HT</cbc:AttributeID>
-                <cbc:Measure unitCode="MTR">1</cbc:Measure>
-                <cbc:MinimumMeasure unitCode="CEL">10</cbc:MinimumMeasure>
-                <cbc:MaximumMeasure unitCode="CEL">30</cbc:MaximumMeasure>
+                <cbc:Measure unitCode="CMT">6</cbc:Measure>
+                <cbc:MinimumMeasure unitCode="CEL">1</cbc:MinimumMeasure>
+                <cbc:MaximumMeasure unitCode="CEL">15</cbc:MaximumMeasure>
             </cac:Dimension>
             <!-- end::Dimension[] -->
 

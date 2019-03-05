@@ -811,20 +811,20 @@
 
                     <Element>
                         <Term>cbc:CertificateType</Term>
-                        <Name>Specified item requirement</Name>
-                        <Description>A specified item requirement based on the general item requirement from element "cbc:CertificateTypeCode".</Description>
+                        <Name>Specified item requirements</Name>
+                        <Description>A specified item requirement according to (based on) the general item requirement from element "cbc:CertificateTypeCode".</Description>
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Total energy consumption of the computer.</Value>
                     </Element>
 
                     <Element>
                         <Term>cbc:Remarks</Term>
-                        <Name>Absolute or Award requirement</Name>
+                        <Name>Item Absolute or Award requirement</Name>
                         <Description>States whether the item are absolute or award required.</Description>
                         <DataType>Code</DataType>
                         <!-- <Reference type="CODE_LIST">relevance</Reference> -->
                         <!-- Lage en kodeliste for absolute or award required ? -->
-                        <Value type="EXAMPLE">Absolute</Value>
+                        <Value type="EXAMPLE">Absolute requirement</Value> <!-- Absolute or award requirement. Vi dropper ordet "requirement" ?-->
                     </Element>
 
                     <Element>
@@ -861,7 +861,7 @@
                         
                         <Element cardinality="0..1">
                             <Term>cbc:DocumentTypeCode</Term>
-                            <Name>Accepted evidence types</Name>
+                            <Name>Item accepted evidence type</Name>
                             <Description>The accepted evidence types from Procurement Directive art.44 are: Type 1 labelling (ISO 14024), Type 2 labelling (ISO 14021), Type 3 labelling (ISO 14025),
                             Certification, Test report, or Other means of proof.</Description>
                             <!-- Lage en kodeliste her? -->
@@ -870,7 +870,7 @@
 
                         <Element cardinality="0..1">
                             <Term>cbc:DocumentType</Term>
-                            <Name>Policy relevant requirement</Name>
+                            <Name>Item policy relevant requirement</Name>
                             <Description>The policy relevant requirements are: green, social or innovative.</Description>
                             <!-- Lage en kodeliste her? -->
                             <Value type="EXAMPLE">Green requirement</Value>
