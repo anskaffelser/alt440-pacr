@@ -176,7 +176,7 @@
             <cac:Certificate>
                 <cbc:ID>1</cbc:ID>
                 <cbc:CertificateTypeCode>Lifetime extension</cbc:CertificateTypeCode>
-                <cbc:CertificateType>LCA</cbc:CertificateType>
+                <cbc:CertificateType>Recirculate plastic</cbc:CertificateType>
                 <cbc:Remarks>Absolute requirement</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
@@ -186,6 +186,50 @@
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
                     <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
+                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cac:Attachment>
+                        <cac:ExternalReference>
+                            <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
+                        </cac:ExternalReference>
+                    </cac:Attachment>
+                </cac:DocumentReference>
+            </cac:Certificate>
+
+            <cac:Certificate>
+                <cbc:ID>2</cbc:ID>
+                <cbc:CertificateTypeCode>Lifetime extension</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Recirculate ink</cbc:CertificateType>
+                <cbc:Remarks>Absolute requirement</cbc:Remarks>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>Recycled Content</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+                <cac:DocumentReference>
+                    <cbc:ID>1</cbc:ID>
+                    <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
+                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cac:Attachment>
+                        <cac:ExternalReference>
+                            <cbc:URI>https://www.ftc.gov/</cbc:URI>
+                        </cac:ExternalReference>
+                    </cac:Attachment>
+                </cac:DocumentReference>
+            </cac:Certificate>
+
+            <cac:Certificate>
+                <cbc:ID>3</cbc:ID>
+                <cbc:CertificateTypeCode>Lifetime extension</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Renewable material</cbc:CertificateType>
+                <cbc:Remarks>Absolute requirement</cbc:Remarks>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>Nordic Ecolabelling</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+                <cac:DocumentReference>
+                    <cbc:ID>1</cbc:ID>
+                    <cbc:DocumentTypeCode>Type 2</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Green requirement</cbc:DocumentType>
                     <cac:Attachment>
                         <cac:ExternalReference>

@@ -173,6 +173,29 @@
                 </cac:Attachment>
             </cac:DocumentReference>
         </cac:Certificate>
+
+        <cac:Certificate>
+            <cbc:ID>2</cbc:ID>
+            <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode>
+            <cbc:CertificateType>Low energy usage when producing milk.</cbc:CertificateType>
+            <cbc:Remarks>Absolute requirement</cbc:Remarks>
+            <cac:IssuerParty>
+                <cac:PartyName>
+                    <cbc:Name>Nordic Ecolabelling</cbc:Name>
+                </cac:PartyName>
+            </cac:IssuerParty>
+            <cac:DocumentReference>
+                <cbc:ID>1</cbc:ID>
+                <cbc:DocumentTypeCode>Type 2</cbc:DocumentTypeCode>
+                <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                <cac:Attachment>
+                    <cac:ExternalReference>
+                        <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
+                    </cac:ExternalReference>
+                </cac:Attachment>
+            </cac:DocumentReference>
+        </cac:Certificate>
+
         </cac:Item>
 
 

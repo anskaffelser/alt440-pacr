@@ -13,7 +13,7 @@
         <cac:Item>
             <!-- ... -->
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="STI">UNSPSC 12345678</cbc:ItemClassificationCode> <!-- CPV kode-->
+                <cbc:ItemClassificationCode listID="STI">UNSPSC12345678</cbc:ItemClassificationCode> <!-- CPV kode-->
             </cac:CommodityClassification>
 
             <!-- ... -->

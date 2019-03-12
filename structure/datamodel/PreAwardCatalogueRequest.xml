@@ -804,7 +804,7 @@
                     <Element>
                         <Term>cbc:CertificateTypeCode</Term>
                         <Name>General item requirement</Name> <!-- Har du forslag til mer informativ navn ? -->
-                        <Description>A general item requirement on superior level, that might contain specified requirements on sub level (ref. element "cbc:CertificateType").</Description>
+                        <Description>A general item requirement on superior level, that might contain specified requirements on sub level (ref. element "cbc:CertificateType"). </Description>
                         <!-- <DataType>Code</DataType> -->
                         <Value type="EXAMPLE">Energy consumption</Value>
                     </Element>
