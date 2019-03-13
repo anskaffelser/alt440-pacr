@@ -812,7 +812,8 @@
                     <Element>
                         <Term>cbc:CertificateType</Term>
                         <Name>Specified item requirement</Name>
-                        <Description>A specified item requirement based on the general item requirement from element "cbc:CertificateTypeCode". The specified item requirements might be functional requirements.</Description>
+                        <Description>A specified item requirement based on the general item requirement from element "cbc:CertificateTypeCode". The specified item requirements are
+                            sub-functional requirements of the general item requirement.</Description>
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Total energy consumption of the computer</Value>
                     </Element>
@@ -823,7 +824,7 @@
                         <Description>States whether the item are absolute or award required.</Description>
                         <DataType>Code</DataType>
                         <!-- <Reference type="CODE_LIST">relevance</Reference> -->
-                        <!-- Lage en kodeliste for absolute or award required ? -->
+                        <!-- Lage en kodeliste for absolute or award requirement ? -->
                         <Value type="EXAMPLE">Absolute requirement</Value> <!-- Absolute or award requirement. Vi dropper ordet "requirement" ?-->
                     </Element>
 
@@ -855,7 +856,7 @@
                             <Term>cbc:ID</Term>
                             <Name>Attachment identifier</Name>
                             <Description>The identifier for the attachment</Description>
-                            <DataType>DocumentReference</DataType>
+                            <DataType>Identifier</DataType> <!-- Sto DocumentReference her før, men det skal stå identifier ? -->
                             <Value type="EXAMPLE">1</Value>
                         </Element>
                         

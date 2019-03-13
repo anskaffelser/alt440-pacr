@@ -1420,7 +1420,7 @@
                         <Term>cbc:CertificateTypeCode</Term>
                         <Name>General item means of proof</Name>
                         <Description>A means of general item requirement provided in catalogue request.
-                            A general requirement might contain sub-requirement (called specified item means of proof requirement).</Description>
+                            A general requirement might contain sub-functional requirement (called specified item means of proof).</Description>
                         <Value type="EXAMPLE">Energy consumption</Value>
                         <!--<Name>Item means of proof type</Name>
                         <Description>A code specifying the type of the Item means of proof according to Directives 2014/24/EU, e.g., if it a label, test report etc.</Description>
@@ -1431,7 +1431,7 @@
                     <Element>
                         <Term>cbc:CertificateType</Term>
                         <Name>Specified item means of proof</Name>
-                        <Description>A means of specified item requirement provided in catalogue request. Specified item means of proofs are sub-elements</Description>
+                        <Description>A means of specified item requirement provided in catalogue request.</Description>
                         <Value type="EXAMPLE">Total energy consumption of the computer.</Value>
                         <!--<Name>Item means of proof name</Name>
                         <Description>Name of a item means of proof, e.g., the name of a label.</Description>

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rules/example/sweden-request-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/example/sweden-request-example.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rules/example/usecase3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/example/usecase3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" afterDir="false" />
     </list>
@@ -14,15 +17,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DockManager">
-    <window id="4">
+    <window id="5">
       <content type="file-editors">
         <state>
           <leaf>
             <file leaf-file-name="PreAwardCatalogueRequest.xml" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="524">
-                    <caret line="816" column="94" lean-forward="true" selection-start-line="816" selection-start-column="94" selection-end-line="816" selection-end-column="94" />
+                  <state relative-caret-position="380">
+                    <caret line="815" column="44" lean-forward="true" selection-start-line="815" selection-start-column="44" selection-end-line="815" selection-end-column="44" />
                   </state>
                 </provider>
               </entry>
@@ -37,35 +40,26 @@
       <file leaf-file-name="PreAwardCatalogue.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="1438" column="73" lean-forward="true" selection-start-line="1438" selection-start-column="73" selection-end-line="1438" selection-end-column="73" />
+            <state relative-caret-position="311">
+              <caret line="1427" column="61" lean-forward="true" selection-start-line="1427" selection-start-column="61" selection-end-line="1427" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Catalogue-example.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rules/example/Catalogue-example.xml">
+      <file leaf-file-name="sweden-request-example.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rules/example/sweden-request-example.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
-              <caret line="292" lean-forward="true" selection-start-line="292" selection-end-line="292" />
+            <state relative-caret-position="729">
+              <caret line="108" column="37" lean-forward="true" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CatalogueRequest-example.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml">
+      <file leaf-file-name="PreAwardCatalogueRequest-example.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1020">
-              <caret line="66" column="71" lean-forward="true" selection-start-line="66" selection-start-column="71" selection-end-line="66" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PreAwardCatalogue-example.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="308" column="38" lean-forward="true" selection-start-line="308" selection-start-column="38" selection-end-line="308" selection-end-column="38" />
+            <state relative-caret-position="253">
+              <caret line="206" column="34" lean-forward="true" selection-start-line="206" selection-start-column="34" selection-end-line="206" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -74,8 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>item</find>
-      <find>COMPO</find>
       <find>contract</find>
       <find>envi</find>
       <find>PreAwa</find>
@@ -104,6 +96,8 @@
       <find>priceamount</find>
       <find>certificat</find>
       <find>certificate</find>
+      <find>commodi</find>
+      <find>requirement</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,18 +151,18 @@
         <option value="$PROJECT_DIR$/rules/example/certificate-example.xml" />
         <option value="$PROJECT_DIR$/rules/example/Social-request-example.xml" />
         <option value="$PROJECT_DIR$/rules/example/Catalogue-example.xml" />
-        <option value="$PROJECT_DIR$/rules/example/sweden-request-example.xml" />
         <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" />
         <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
         <option value="$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml" />
-        <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" />
+        <option value="$PROJECT_DIR$/rules/example/sweden-request-example.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" />
+        <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="y" value="1" />
+    <option name="y" value="2" />
     <option name="width" value="1546" />
     <option name="height" value="868" />
   </component>
@@ -320,14 +314,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/structure/docs/DeliveryUnit.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/docs/Dimension.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
@@ -650,10 +636,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1464">
+          <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/codelist/relevance.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/rules/example/sweden-request-example.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+        <state relative-caret-position="729">
+          <caret line="108" column="37" lean-forward="true" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -664,45 +660,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2103">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
+        <state relative-caret-position="321">
           <caret line="308" column="38" lean-forward="true" selection-start-line="308" selection-start-column="38" selection-end-line="308" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="220" column="25" selection-start-line="220" selection-start-column="25" selection-end-line="220" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="66" column="71" lean-forward="true" selection-start-line="66" selection-start-column="71" selection-end-line="66" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1464">
-          <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="1438" column="73" lean-forward="true" selection-start-line="1438" selection-start-column="73" selection-end-line="1438" selection-end-column="73" />
+        <state relative-caret-position="253">
+          <caret line="206" column="34" lean-forward="true" selection-start-line="206" selection-start-column="34" selection-end-line="206" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="816" column="94" lean-forward="true" selection-start-line="816" selection-start-column="94" selection-end-line="816" selection-end-column="94" />
+        <state relative-caret-position="380">
+          <caret line="815" column="44" lean-forward="true" selection-start-line="815" selection-start-column="44" selection-end-line="815" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="1427" column="61" lean-forward="true" selection-start-line="1427" selection-start-column="61" selection-end-line="1427" selection-end-column="61" />
         </state>
       </provider>
     </entry>
