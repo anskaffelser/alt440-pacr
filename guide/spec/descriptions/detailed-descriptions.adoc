@@ -395,57 +395,44 @@ Example of Prices in Pre-Award Catalogue:
 ----
 
 
-== Environment, Social Responsibility and Ecological
+== Environment, Social Responsibility and Ecological requirements
 
-Public actors will have requirements related to the environment, ecologically produced food and fair trade. They will also demand that basic human rights are respected in the product production and trade. To be able to highlight products that meet some of these criteria, the PEPPOL BIS pre-award catalogue contains elements to document Environmental labelling and Social certificates and other means of proof. The labels are connected to the relevant product or service on line level enabling the buyer to evaluate them in the tendering tool. Detailed information about the different labels can be found on the issuing party’s web-site which is referred to via an URI.
+Public actors may have special green, social or innovative requirements to the works, supplies or services they intend to purchase, and they might ask for labels, test reports, certificates or other means of proof for these requirements.
 
-In post-awards process, when the buyer use the search engines in their eProcurement system to purchase the products and services, the labels will be visible and the buyer has the possibility to choose products that is marked with a label. The post-award catalogue has the same structure so it´s important to reuse the information used in pre-award catalogue.
-Several labels can be connected to each product. As part of the identification the code list is provided so the service provider can define and implement the information in the system.
+IMPORTANT: Contracting authorities requiring a specific label shall accept all
+labels that confirm that the works, supplies or services meet
+equivalent label requirements.
 
-The following can be used: link:https://vefa.difi.no/ehf/codelist/eco/[]
+These requirements are sent in the element `cac:Certificate` in the pre award catalogue request, and the economic operator sends their answer and attachments (if any), in the `cac:Certificate`-element in the pre award catalogue.
 
-Introducing these classification codes in pre-award catalogue will support the aim for sustainable procurement, and make it possible to measure the purchasing behaviour and monitor that the requirements from the tendering process are fulfilled.
-
-.Example of Classification codes
-[cols="^.^2a,8a", options="header"]
-|===
-<| Logo
-| Information
-
-| image::images/label-neo.png[Svanemerket]
-| *Svanemerket* +
-Classification Code (ID): NEO +
-Certificate TypeCode: EcoLabel (Environment)
-
-| image::images/label-fbl.png[Fairtrade]
-| *Fairtrade* +
-Classification Code (ID): FBL +
-Certificate TypeCode: SosialLabel (Social responsibility)
-
-| image::images/label-eop.png[EU organic products label]
-| *EU organic products label* +
-Classification Code (ID): EOP +
-Certificate TypeCode: OrganicLabel (Ecological)
-|===
+The `cac:Certificate` contains detailed information on the requirement(s), if the requirement is absolute or an award criteria. In addition, the type of evidence (means of proof) that can be used is stated as well.
 
 
-.Example of labeling in a Pre-Award Catalogue message.
+.Example of a green requirement in a Pre-Award Catalogue request message.
 [source, xml, indent=0]
 ----
 <cac:Certificate>
-  <cbc:ID>NEO</cbc:ID>
-  <cbc:CertificateTypeCode>EcoLabel</cbc:CertificateTypeCode>
-  <cbc:CertificateType>EcoLabel</cbc:CertificateType>
-  <cac:IssuerParty>
-    <cac:PartyName>
-      <cbc:Name>Svanemerket</cbc:Name>
-    </cac:PartyName>
-  </cac:IssuerParty>
-  <cac:DocumentReference>
-    <cbc:ID>http://www.svanemerket.no/</cbc:ID>
-  </cac:DocumentReference>
+    <cbc:ID>1</cbc:ID>
+    <cbc:DocumentTypeCode>Energy consumption</cbc:DocumentTypeCode> <1>
+    <cbc:DocumentType>Total energy consumption of the milk.</cbc:DocumentType> <2>
+    <cbc:Remarks>Absolute</cbc:Remarks> <3>
+    <cac:IssuerParty>
+        <cac:PartyName>
+            <cbc:Name>Nordic Ecolabelling</cbc:Name>
+        </cac:PartyName>
+    </cac:IssuerParty>
+    <cac:DocumentReference>
+        <cbc:ID>1</cbc:ID>
+        <cbc:CertificateTypeCode>Type 1</cbc:CertificateTypeCode> <4>
+        <cbc:CertificateType>Green requirement</cbc:CertificateType> <5>
+    </cac:DocumentReference>
 </cac:Certificate>
 ----
+<1> Main level requirement
+<2> Specific requirement
+<3> The requirement is absolute.
+<4> A Type 1 certificate is asked for as means of proof
+<5> Green requirement
 
 == Additional Item Properties
 
