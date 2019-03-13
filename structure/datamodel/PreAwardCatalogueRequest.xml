@@ -804,17 +804,17 @@
                     <Element>
                         <Term>cbc:CertificateTypeCode</Term>
                         <Name>General item requirement</Name> <!-- Har du forslag til mer informativ navn ? -->
-                        <Description>A general item requirement on superior level, that might contain specified requirements on sub level (ref. element "cbc:CertificateType"). </Description>
+                        <Description>A general item requirement on superior level, that might contain specified requirements on sub level (ref. element "cbc:CertificateType").</Description>
                         <!-- <DataType>Code</DataType> -->
                         <Value type="EXAMPLE">Energy consumption</Value>
                     </Element>
 
                     <Element>
                         <Term>cbc:CertificateType</Term>
-                        <Name>Specified item requirements</Name>
-                        <Description>A specified item requirement according to (based on) the general item requirement from element "cbc:CertificateTypeCode".</Description>
+                        <Name>Specified item requirement</Name>
+                        <Description>A specified item requirement based on the general item requirement from element "cbc:CertificateTypeCode". The specified item requirements might be functional requirements.</Description>
                         <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Total energy consumption of the computer.</Value>
+                        <Value type="EXAMPLE">Total energy consumption of the computer</Value>
                     </Element>
 
                     <Element>
@@ -862,8 +862,8 @@
                         <Element cardinality="0..1">
                             <Term>cbc:DocumentTypeCode</Term>
                             <Name>Item accepted evidence type</Name>
-                            <Description>The accepted evidence types from Procurement Directive art.44 are: Type 1 labelling (ISO 14024), Type 2 labelling (ISO 14021), Type 3 labelling (ISO 14025),
-                            Certification, Test report, or Other means of proof.</Description>
+                            <Description>Use one of the accepted evidence types from Procurement Directive art.44: Type 1 labelling (ISO 14024),
+                                Type 2 labelling (ISO 14021), Type 3 labelling (ISO 14025), Certification, Test report, or Other means of proof.</Description>
                             <!-- Lage en kodeliste her? -->
                             <Value type="EXAMPLE">Type 1</Value>
                         </Element>
@@ -871,7 +871,7 @@
                         <Element cardinality="0..1">
                             <Term>cbc:DocumentType</Term>
                             <Name>Item policy relevant requirement</Name>
-                            <Description>The policy relevant requirements are: green, social or innovative.</Description>
+                            <Description>The allowed policy relevant requirements are green, social or innovative.</Description>
                             <!-- Lage en kodeliste her? -->
                             <Value type="EXAMPLE">Green requirement</Value>
                         </Element>
@@ -887,8 +887,7 @@
                                 <Element>
                                     <Term>cbc:URI</Term>
                                     <Name>Item requirement reference</Name>
-                                    <Description>A reference to an external specification of the
-                                        item requirement.</Description>
+                                    <Description>A reference to an external specification of the item requirement.</Description>
                                     <DataType>Text</DataType>
                                     <Value type="EXAMPLE">http://www.nordic-ecolabel.org</Value>
                                 </Element>
