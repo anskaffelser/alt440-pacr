@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Catalogue policy relevant requirement</Title>
+    <Identifier>PolicyRelevantRequirement</Identifier>
+    <Version>1.0</Version>
+    <Agency>Difi</Agency>
+
+
+    <Code>
+        <Id>Green</Id>
+        <Name>Green requirement</Name>
+        <Description>Green requirement is used in a catalogue as a policy relevant requirement.</Description>
+    </Code>
+
+    <Code>
+        <Id>Social</Id>
+        <Name>Social requirement</Name>
+        <Description>Social requirement is used in a catalogue as a policy relevant requirement.</Description>
+    </Code>
+
+    <Code>
+        <Id>Innovative</Id>
+        <Name>Innovative requirement</Name>
+        <Description>Innovative requirement is used in a catalogue as a policy relevant requirement.</Description>
+    </Code>
+
+</CodeList>

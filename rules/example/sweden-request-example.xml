@@ -13,7 +13,7 @@
         <cac:Item>
             <!-- ... -->
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="STI">UNSPSC12345678</cbc:ItemClassificationCode> <!-- CPV kode-->
+                <cbc:ItemClassificationCode listID="STI">123456789</cbc:ItemClassificationCode> <!-- CPV kode-->
             </cac:CommodityClassification>
 
             <!-- ... -->
@@ -31,7 +31,7 @@
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
                     <cbc:DocumentTypeCode>EPD</cbc:DocumentTypeCode> <!-- EPD = TYPE 3 -->
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
 
@@ -39,7 +39,7 @@
                 <cbc:ID>2</cbc:ID>
                 <cbc:CertificateTypeCode>Land system change</cbc:CertificateTypeCode>
                 <cbc:CertificateType>(m2-years agr)/liter</cbc:CertificateType>
-                <cbc:Remarks>Award requirement</cbc:Remarks>
+                <cbc:Remarks>Award</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>X</cbc:Name>
@@ -48,7 +48,7 @@
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
                     <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
 
@@ -56,7 +56,7 @@
                 <cbc:ID>3</cbc:ID>
                 <cbc:CertificateTypeCode>Freshwater consumption</cbc:CertificateTypeCode>
                 <cbc:CertificateType>x (liter/liter)</cbc:CertificateType>
-                <cbc:Remarks>Absolute requirement</cbc:Remarks>
+                <cbc:Remarks>Absolute</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>X</cbc:Name>
@@ -65,7 +65,7 @@
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
                     <cbc:DocumentTypeCode>EPD</cbc:DocumentTypeCode> <!-- EPD = TYPE 3 -->
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
 
@@ -73,7 +73,7 @@
                 <cbc:ID>4</cbc:ID>
                 <cbc:CertificateTypeCode>Hazardous particles</cbc:CertificateTypeCode>
                 <cbc:CertificateType>(kg PM2.5-eq)/liter</cbc:CertificateType> <!-- PM2.5-eq = svevestøv -->
-                <cbc:Remarks>Award requirement</cbc:Remarks>
+                <cbc:Remarks>Award</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>X</cbc:Name>
@@ -82,7 +82,7 @@
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
                     <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
 
@@ -90,7 +90,7 @@
                 <cbc:ID>5</cbc:ID>
                 <cbc:CertificateTypeCode>Eutrophication, aquatic</cbc:CertificateTypeCode>
                 <cbc:CertificateType>x (kg NO3-eq)/liter</cbc:CertificateType>
-                <cbc:Remarks>Absolute requirement</cbc:Remarks>
+                <cbc:Remarks>Absolute</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>X</cbc:Name>
@@ -99,7 +99,7 @@
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
                     <cbc:DocumentTypeCode>EPD</cbc:DocumentTypeCode> <!-- EPD = TYPE 3 -->
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
 
@@ -107,7 +107,7 @@
                 <cbc:ID>6</cbc:ID>
                 <cbc:CertificateTypeCode>Aicidification</cbc:CertificateTypeCode>
                 <cbc:CertificateType>(m2 UES)/liter</cbc:CertificateType>
-                <cbc:Remarks>Award requirement</cbc:Remarks>
+                <cbc:Remarks>Award</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>X</cbc:Name>
@@ -116,7 +116,7 @@
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
                     <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
 
@@ -124,7 +124,7 @@
                 <cbc:ID>7</cbc:ID>
                 <cbc:CertificateTypeCode>Photochemical ozon</cbc:CertificateTypeCode>
                 <cbc:CertificateType>(m2*ppm*hours)/liter</cbc:CertificateType>
-                <cbc:Remarks>Award requirement</cbc:Remarks>
+                <cbc:Remarks>Award</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>X</cbc:Name>
@@ -133,7 +133,7 @@
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
                     <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
 
@@ -141,7 +141,7 @@
                 <cbc:ID>8</cbc:ID>
                 <cbc:CertificateTypeCode>Atmospheric aerosol loading</cbc:CertificateTypeCode>
                 <cbc:CertificateType>X</cbc:CertificateType>
-                <cbc:Remarks>Award requirement</cbc:Remarks>
+                <cbc:Remarks>Award</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>X</cbc:Name>
@@ -150,7 +150,7 @@
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
                     <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
 
@@ -158,7 +158,7 @@
                 <cbc:ID>9</cbc:ID>
                 <cbc:CertificateTypeCode>Biodiversity loss</cbc:CertificateTypeCode>
                 <cbc:CertificateType>X</cbc:CertificateType>
-                <cbc:Remarks>Award requirement</cbc:Remarks>
+                <cbc:Remarks>Award</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>X</cbc:Name>
@@ -167,7 +167,7 @@
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
                     <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
 

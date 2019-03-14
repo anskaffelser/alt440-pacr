@@ -250,7 +250,7 @@
             </cac:OriginCountry>
 
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="STI">CPC-3020000-1</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI">30200001</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
 
             <cac:TransactionConditions>
@@ -296,10 +296,10 @@
 
             <!-- tag::Certificate[] -->
             <cac:Certificate>
-                <cbc:ID>2</cbc:ID>
+                <cbc:ID>1</cbc:ID>
                 <cbc:CertificateTypeCode>Lifetime extension</cbc:CertificateTypeCode>
                 <cbc:CertificateType>Recirculate ink</cbc:CertificateType>
-                <cbc:Remarks>Absolute requirement</cbc:Remarks>
+                <cbc:Remarks>Absolute</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>Recycled Content</cbc:Name>
@@ -308,7 +308,7 @@
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
                     <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
                     <cac:Attachment>
                         <cac:ExternalReference>
                             <cbc:URI>https://www.ftc.gov/</cbc:URI>

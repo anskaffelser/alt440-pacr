@@ -450,10 +450,8 @@
                     <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
                         <Name>City name</Name>
-                        <Description>The common name of the city, town or village, where the Seller
-                            address is located.</Description>
+                        <Description>The common name of the city, town or village, where the address is located.</Description>
                         <DataType>Text</DataType>
-
                         <Value type="EXAMPLE">London</Value>
                     </Element>
 
@@ -505,7 +503,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:Price</Term>
-                    <Name>Price</Name>
+                    <Name>PRICE</Name>
                     <Description>To state both the estimated price and the total budget price
                         (maximum price), repeat the Price class for each type</Description>
                     <Property key="doc">structure/docs/Price-Request.adoc</Property>
@@ -793,19 +791,19 @@
                         report or any other means of proof.</Description>
                     <Property key="doc">structure/docs/Certificate-Request.adoc</Property>
 
-                    <Element> <!-- Ikke gjort noen endringer -->
+                    <Element>
                         <Term>cbc:ID</Term>
                         <Name>Item requirement identifier</Name>
-                        <Description>An identifier of the item requirement that allows referencing the item requirement.</Description>
+                        <Description>A unique identifier of the item requirement that allows referencing the item requirement.</Description>
                         <DataType>Identifier</DataType>
                         <Value type="EXAMPLE">1</Value>
                     </Element>
 
                     <Element>
                         <Term>cbc:CertificateTypeCode</Term>
-                        <Name>General item requirement</Name> <!-- Har du forslag til mer informativ navn ? -->
+                        <Name>General item requirement</Name>
                         <Description>A general item requirement on superior level, that might contain specified requirements on sub level (ref. element "cbc:CertificateType").</Description>
-                        <!-- <DataType>Code</DataType> -->
+                        <DataType>Text</DataType>
                         <Value type="EXAMPLE">Energy consumption</Value>
                     </Element>
 
@@ -821,11 +819,10 @@
                     <Element>
                         <Term>cbc:Remarks</Term>
                         <Name>Item Absolute or Award requirement</Name>
-                        <Description>States whether the item are absolute or award required.</Description>
+                        <Description>States whether the item are absolute or award required. Use codelist "Absolute or award criteria/requirement".</Description>
                         <DataType>Code</DataType>
-                        <!-- <Reference type="CODE_LIST">relevance</Reference> -->
-                        <!-- Lage en kodeliste for absolute or award requirement ? -->
-                        <Value type="EXAMPLE">Absolute requirement</Value> <!-- Absolute or award requirement. Vi dropper ordet "requirement" ?-->
+                        <Reference type="CODE_LIST">AbsoluteAwardCriteria</Reference>
+                        <Value type="EXAMPLE">Absolute</Value>
                     </Element>
 
                     <Element>
@@ -854,9 +851,9 @@
 
                         <Element>
                             <Term>cbc:ID</Term>
-                            <Name>Attachment identifier</Name>
-                            <Description>The identifier for the attachment</Description>
-                            <DataType>Identifier</DataType> <!-- Sto DocumentReference her før, men det skal stå identifier ? -->
+                            <Name>Item requirement attachment identifier</Name>
+                            <Description>The identifier for the requested item requirement attachment.</Description>
+                            <DataType>Identifier</DataType>
                             <Value type="EXAMPLE">1</Value>
                         </Element>
                         
@@ -864,17 +861,19 @@
                             <Term>cbc:DocumentTypeCode</Term>
                             <Name>Item accepted evidence type</Name>
                             <Description>Use one of the accepted evidence types from Procurement Directive art.44: Type 1 labelling (ISO 14024),
-                                Type 2 labelling (ISO 14021), Type 3 labelling (ISO 14025), Certification, Test report, or Other means of proof.</Description>
-                            <!-- Lage en kodeliste her? -->
+                                Type 2 labelling (ISO 14021), Type 3 labelling (ISO 14025), Certification, Test report, or Other means of proof. Use codelist "Accepted evidence type".</Description>
+                            <DataType>Code</DataType>
+                            <Reference type="CODE_LIST">EvidenceType</Reference>
                             <Value type="EXAMPLE">Type 1</Value>
                         </Element>
 
                         <Element cardinality="0..1">
                             <Term>cbc:DocumentType</Term>
                             <Name>Item policy relevant requirement</Name>
-                            <Description>The allowed policy relevant requirements are green, social or innovative.</Description>
-                            <!-- Lage en kodeliste her? -->
-                            <Value type="EXAMPLE">Green requirement</Value>
+                            <Description>The allowed policy relevant requirements are green, social or innovative. Use codelist "Catalogue policy relevant requirement".</Description>
+                            <DataType>Code</DataType>
+                            <Reference type="CODE_LIST">PolicyRelevantRequirement</Reference>
+                            <Value type="EXAMPLE">Green</Value>
                         </Element>
 
                         <Element>

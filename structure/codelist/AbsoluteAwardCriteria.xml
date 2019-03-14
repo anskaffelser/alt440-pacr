@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Absolute or award criteria/requirement</Title>
+    <Identifier>AbsoluteAward</Identifier>
+    <Version>1.0</Version>
+    <Agency>Difi</Agency>
+
+
+    <Code>
+        <Id>Absolute</Id>
+        <Name>Absolute criteria</Name>
+        <Description>Absolute criteria indicates that the requirement in a catalogue is mandatory, i.e. this requirement MUST be provided.</Description>
+    </Code>
+
+    <Code>
+        <Id>Award</Id>
+        <Name>Award criteria</Name>
+        <Description>Award criteria indicates that the requirement in a catalogue is optional, i.e. this requirement do not need to be provided.</Description>
+    </Code>
+
+
+</CodeList>
