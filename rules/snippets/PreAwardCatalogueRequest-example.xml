@@ -177,7 +177,7 @@
                 <cbc:ID>1</cbc:ID>
                 <cbc:CertificateTypeCode>Lifetime extension</cbc:CertificateTypeCode>
                 <cbc:CertificateType>Recirculate plastic</cbc:CertificateType>
-                <cbc:Remarks>Absolute requirement</cbc:Remarks>
+                <cbc:Remarks>Absolute</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>Nordic Ecolabelling</cbc:Name>
@@ -185,8 +185,8 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
                     <cac:Attachment>
                         <cac:ExternalReference>
                             <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
@@ -207,7 +207,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
+                    <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Green</cbc:DocumentType>
                     <cac:Attachment>
                         <cac:ExternalReference>
@@ -229,7 +229,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Type 2</cbc:DocumentTypeCode>
+                    <cbc:DocumentTypeCode>Type2</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Green</cbc:DocumentType>
                     <cac:Attachment>
                         <cac:ExternalReference>
