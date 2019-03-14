@@ -299,7 +299,6 @@
                 <cbc:ID>1</cbc:ID>
                 <cbc:CertificateTypeCode>Lifetime extension</cbc:CertificateTypeCode>
                 <cbc:CertificateType>Recirculate ink</cbc:CertificateType>
-                <cbc:Remarks>Absolute</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>Recycled Content</cbc:Name>
