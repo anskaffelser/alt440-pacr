@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Absolute or award criteria/requirement</Title>
-    <Identifier>AbsoluteAward</Identifier>
+    <Identifier>AbsoluteAwardCriteria</Identifier>
     <Version>1.0</Version>
     <Agency>Difi</Agency>
 
