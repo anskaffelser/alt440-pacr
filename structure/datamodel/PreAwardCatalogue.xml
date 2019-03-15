@@ -1405,8 +1405,9 @@
                 <Element cardinality="0..n">
                     <Term>cac:Certificate</Term>
                     <Name>Item means of proof</Name>
-                    <Description>A means of proof according to the Directives 2014/24/EU or other accepted proofs.</Description>
-                    <!-- <Description>A means of proof according to to Directives 2014/24/EU.</Description> -->
+                    <Description>Answer and attachments (if any) to functional requirement on a requested item in the pre award catalogue request. This has to be proven by a specification, label, test report
+                        or any other means of proof according to the Directives 2014/24/EU.</Description>
+                    <!-- <Description>A means of proof according to the Directives 2014/24/EU or other accepted proofs.</Description> -->
                     <Property key="doc">structure/docs/Certificate.adoc</Property>
 
                     <Element>

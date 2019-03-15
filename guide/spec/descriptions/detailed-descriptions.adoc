@@ -423,8 +423,8 @@ The `cac:Certificate` contains detailed information on the requirement(s), if th
     </cac:IssuerParty>
     <cac:DocumentReference>
         <cbc:ID>1</cbc:ID>
-        <cbc:CertificateTypeCode>Type 1</cbc:CertificateTypeCode> <4>
-        <cbc:CertificateType>Green requirement</cbc:CertificateType> <5>
+        <cbc:CertificateTypeCode>Type1</cbc:CertificateTypeCode> <4>
+        <cbc:CertificateType>Green</cbc:CertificateType> <5>
     </cac:DocumentReference>
 </cac:Certificate>
 ----
