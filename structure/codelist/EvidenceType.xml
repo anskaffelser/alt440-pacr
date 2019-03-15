@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Accepted evidence type</Title>
+    <Identifier>EvidenceType</Identifier>
+    <Version>1.0</Version>
+    <Agency>Difi</Agency>
+
+
+    <Code>
+        <Id>Type1</Id>
+        <Name>Type 1 labelling</Name>
+        <Description>Type 1 labelling (ISO 14024) is an accepted evidence type from Procurement Directive art.44.</Description>
+    </Code>
+
+    <Code>
+        <Id>Type2</Id>
+        <Name>Type 2 labelling</Name>
+        <Description>Type 2 labelling (ISO 14021) is an accepted evidence type from Procurement Directive art.44.</Description>
+    </Code>
+
+    <Code>
+        <Id>Type3</Id>
+        <Name>Type 3 labelling</Name>
+        <Description>Type 3 labelling (ISO 14025) is an accepted evidence type from Procurement Directive art.44.</Description>
+    </Code>
+
+    <Code>
+        <Id>Certification</Id>
+        <Name>Certification</Name>
+        <Description>Certification is an accepted evidence type from Procurement Directive art.44.</Description>
+    </Code>
+
+    <Code>
+        <Id>TestReport</Id>
+        <Name>Test report</Name>
+        <Description>Test report is an accepted evidence type from Procurement Directive art.44.</Description>
+    </Code>
+
+    <Code>
+        <Id>OtherMeansOfProof</Id>
+        <Name>Other means of Proof</Name>
+        <Description>Other means of proof is an accepted evidence type from Procurement Directive art.44.</Description>
+    </Code>
+
+    <Code>
+        <Id>NoProof</Id>
+        <Name>No proof</Name>
+        <Description>If item requirement do not have any means of proof use this evidence.</Description>
+    </Code>
+
+
+</CodeList>

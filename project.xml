@@ -129,6 +129,18 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/GS17009.xml</Path>
     </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/AbsoluteAwardCriteria.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/EvidenceType.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/PolicyRelevantRequirement.xml</Path>
+    </Resource>
 
     <!-- Namespaces -->
 

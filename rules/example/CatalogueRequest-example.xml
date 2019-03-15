@@ -130,12 +130,12 @@
         </cac:ItemSpecificationDocumentReference>
 
         <cac:CommodityClassification>
-            <cbc:ItemClassificationCode listID="STI" listName="eClass">CPC-30100000-9</cbc:ItemClassificationCode> <!-- CPV kode-->
+            <cbc:ItemClassificationCode listID="STI" listName="eClass">301000009</cbc:ItemClassificationCode> <!-- CPV kode-->
         </cac:CommodityClassification>
 
         <cac:AdditionalItemProperty>
             <cbc:ID>1</cbc:ID>
-            <cbc:Name>Zero lactose</cbc:Name>
+            <cbc:Name>Allergens</cbc:Name>
             <cbc:NameCode>INFO</cbc:NameCode>
             <cbc:Value>Milk contains 1% lactose per litre.</cbc:Value>
             <cbc:ValueQuantity unitCode="60">1</cbc:ValueQuantity>
@@ -156,7 +156,7 @@
             <cbc:ID>1</cbc:ID>
             <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode>
             <cbc:CertificateType>Total energy consumption of the milk.</cbc:CertificateType>
-            <cbc:Remarks>Absolute requirement</cbc:Remarks>
+            <cbc:Remarks>Absolute</cbc:Remarks>
             <cac:IssuerParty>
                 <cac:PartyName>
                     <cbc:Name>Nordic Ecolabelling</cbc:Name>
@@ -164,8 +164,8 @@
             </cac:IssuerParty>
             <cac:DocumentReference>
                 <cbc:ID>1</cbc:ID>
-                <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
-                <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode>
+                <cbc:DocumentType>Green</cbc:DocumentType>
                 <cac:Attachment>
                     <cac:ExternalReference>
                         <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
@@ -178,7 +178,7 @@
             <cbc:ID>2</cbc:ID>
             <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode>
             <cbc:CertificateType>Low energy usage when producing milk.</cbc:CertificateType>
-            <cbc:Remarks>Absolute requirement</cbc:Remarks>
+            <cbc:Remarks>Absolute</cbc:Remarks>
             <cac:IssuerParty>
                 <cac:PartyName>
                     <cbc:Name>Nordic Ecolabelling</cbc:Name>
@@ -186,11 +186,33 @@
             </cac:IssuerParty>
             <cac:DocumentReference>
                 <cbc:ID>1</cbc:ID>
-                <cbc:DocumentTypeCode>Type 2</cbc:DocumentTypeCode>
-                <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                <cbc:DocumentTypeCode>Type2</cbc:DocumentTypeCode>
+                <cbc:DocumentType>Green</cbc:DocumentType>
                 <cac:Attachment>
                     <cac:ExternalReference>
                         <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
+                    </cac:ExternalReference>
+                </cac:Attachment>
+            </cac:DocumentReference>
+        </cac:Certificate>
+
+        <cac:Certificate>
+            <cbc:ID>3</cbc:ID>
+            <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode>
+            <cbc:CertificateType>High capabilities</cbc:CertificateType>
+            <cbc:Remarks>Award</cbc:Remarks>
+            <cac:IssuerParty>
+                <cac:PartyName>
+                    <cbc:Name>EU Energy label</cbc:Name>
+                </cac:PartyName>
+            </cac:IssuerParty>
+            <cac:DocumentReference>
+                <cbc:ID>1</cbc:ID>
+                <cbc:DocumentTypeCode>NoProof</cbc:DocumentTypeCode>
+                <cbc:DocumentType>Green</cbc:DocumentType>
+                <cac:Attachment>
+                    <cac:ExternalReference>
+                        <cbc:URI>https://ec.europa.eu/info/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/energy-label-and-ecodesign_en</cbc:URI>
                     </cac:ExternalReference>
                 </cac:Attachment>
             </cac:DocumentReference>

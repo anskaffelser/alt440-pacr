@@ -1,0 +1,554 @@
+= Detailed Descriptions
+
+This chapter describes selected parts of the information contents of the EHF Pre-Award Catalogue and EHF Pre-Award Catalogue Request.
+
+== Parties and Roles
+
+The important parties and roles in pre-award catalogue and request is described below.
+
+****
+Contracting authority (CA)::
+The contracting authority or contracting entity who is buying supplies, services or tendering works.
+
+Economic operator (EO)::
+Party participating with a tender in a procurement process to sell goods, services or works.
+
+Customer::
+The customer is the legal person or organization who is in demand of a product, service or works. Examples of customer roles are buyer, consignee, debtor and contracting body.
+
+Supplier::
+The supplier is the legal person or organization who provides a product, service or works. Examples of supplier roles are seller, consignor, creditor and economic operator.
+****
+
+The following diagram illustrates the parties and roles involved in the Pre-Award Catalogue and Catalogue Request.
+
+{empty} +
+{empty} +
+
+.EHF Catalogue and request rolediagram.
+image::images/rolediagram.png[align="center",1200, 800]
+
+{empty} +
+
+
+== Validity Period
+
+In the Pre-Award the following validity periods can be stated:
+
+* Validity period on document level (mandatory), used to state the validity period for the entire Pre-Award Catalogue.
+* Validity period for a catalogue line
+* Validity period for price (See also section 4.7)
+
+WARNING: All validity periods shall have both start date and end date, and the start date shall be earlier than the end date
+
+
+Example of validity periods in a Pre-Award Catalogue:
+
+[source]
+.Document level (mandatory)
+----
+<cac:ValidityPeriod>
+    <cbc:StartDate>2018-01-01</cbc:StartDate>
+    <cbc:EndDate>2018-12-31</cbc:EndDate>
+</cac:ValidityPeriod>
+----
+
+[source]
+.Catalogue line
+----
+<cac:LineValidityPeriod>
+  <cbc:StartDate>2018-08-01</cbc:StartDate>
+  <cbc:EndDate>2018-12-31</cbc:EndDate>
+</cac:LineValidityPeriod>
+----
+
+[source]
+.Two different validity period for a given price
+----
+<cac:RequiredItemLocationQuantity>
+  <cac:Price>
+    <cbc:PriceAmount currencyID="NOK">75.00</cbc:PriceAmount>
+    <cac:ValidityPeriod>
+      <cbc:StartDate>2018-04-01</cbc:StartDate>
+      <cbc:EndDate>2018-04-30</cbc:EndDate>
+    </cac:ValidityPeriod>
+    <cac:ValidityPeriod>
+      <cbc:StartDate>2018-08-01</cbc:StartDate>
+      <cbc:EndDate>2018-08-31</cbc:EndDate>
+    </cac:ValidityPeriod>
+  </cac:Price>
+<cac:RequiredItemLocationQuantity>
+----
+
+
+== Related Products and Accessories
+
+Products can be related to each other for ordering or logistic purposes. All related products shall also be sent as separate Catalogue lines.
+
+Types of relations:
+
+* Required related items are products that are bundled and ordered/invoiced together, e.g. bottles and deposits.
+* Component related items are products that are connected in a product line or a logistics structure, e.g. consumer units and trading units of the same article.
+* Complementary related item is used for items that might be sold together with a product, e.g. disk station to a laptop.
+
+Examples of related products in a Pre-Award Catalogue message
+
+.Bundled products
+[source, xml, indent=0]
+----
+<cac:RequiredRelatedItem>
+    <cbc:ID>987654</cbc:ID>
+    <cbc:Quantity unitCode="EA">1</cbc:Quantity>
+</cac:RequiredRelatedItem>
+----
+
+.Logistics structure
+[source, xml, indent=0]
+----
+<cac:ComponentRelatedItem>
+    <cbc:ID>89388789930</cbc:ID>
+    <cbc:Quantity unitCode="EA">12</cbc:Quantity>
+</cac:ComponentRelatedItem>
+----
+
+.Accessories
+[source, xml, indent=0]
+----
+<cac:ComplementaryRelatedItem>
+    <cbc:ID>123456</cbc:ID>
+    <cbc:Quantity unitCode="EA">1</cbc:Quantity>
+</cac:ComplementaryRelatedItem>
+----
+
+== Quantities and Units
+
+There are various quantities and units that can be used in the Pre-award catalogue. Here is a detailed list of relevant quantities and units:
+
+****
+Orderable unit (OrderableUnit)::
+The unit in which the item described in this catalogue line can be ordered.
+
+Item net quantity (ContentUnitQuantity)::
+The net quantity of the item that is contained in each consumable unit (excluding packaging material), e.g. ml in bottles of shampoo.
+
+Order quantity increment (OrderQuantityIncrementNumeric)::
+Possible limitation to the number of articles that can be ordered. If the Quantity increment is 6 the article shall be ordered in a quantity of 6, 12, 18 etc.
+
+Minimum order quantity (MinimumOrderQuantity)::
+The smallest number of items that can be ordered (most often 1).
+
+Maximum order quantity (MaximumOrderQuantity)::
+The largest number of items that can be ordered (most often unlimited).
+
+Packed quantity (Item/PackQuantity)::
+Number of items on next lower level, e.g. number of Consumer units in a Trading unit.
+
+Consumable unit quantity (Item/PackSizeNumeric)::
+Number of Consumer items in the orderable unit. E.g. number of bottles on a pallet.
+
+Item quantity for component related item(ComponentRelatedItem/Quantity)::
+Quantity of the related component.
+
+Handling unit height or length or width or gross weight (Dimension/Measure)::
+The dimensions of the handling unit.
+
+Handling unit minimum storage temperature (Dimension/MinimumMeasure)::
+The lower margin of the recommended storage temperature range for the item.
+
+Handling unit maximum storage temperature (Dimension/MaximumMeasure)::
+The upper margin of the recommended storage temperature range for the item.
+
+Handling unit minimum storage humidity (Dimension/MinimumMeasure)::
+The lower margin of the recommended storage humidity range for the item.
+
+Handling unit maximum storage humidity (Dimension/MaximumMeasure)::
+The upper margin of the recommended storage humidity range for the item.
+
+Item property value quantity (AdditionalItemProperty/ValueQuantity)::
+The quantity of the requested item property.
+
+****
+
+.Example of quantites and units.
+
+[cols="5h,2,2,2,2", options="header"]
+|===
+|Description |Element (from CatalogueLine level) |1 bottle | Case of 6 bottles | Pallet of 18 cases
+|*Line identifier*| ID| 1| 2| 3
+|*Sellers item identifier* | SellersItemIdentification/ID | 2222| 222| 22
+|*Item name* | Item/Name |Milk 1L|6 x 1L Milk| Milk
+|*Orderable Unit* | OrderableUnit| EA| CS| PF
+|*Packaging level* | PackLevelCode|CU |TU| DU
+|*Packed quantity* |Item/PackQuantity|  |6 |18
+|*Packed quantity unit* |Item/PackQuantity/@unitCode| |EA |CS
+|*Consumable unit quantity*|Item/PackSizeNumeric |1 |6 |180
+|*Item net quantity* |ContentUnitQuantity |250|1500|30000
+|*Item net quantity unit*|ContentUnitQuantity/@unitCode|MLT|MLT|MLT
+|*Minimum order quantity*|MinimumOrderQuantity|1 | 1| 1
+|*Minimum order quantity unit*|MinimumOrderQuantity/@unitCode|EA |CS | PF
+|*Component related item identifier*|ComponentRelatedItem/ID| |2222 | 222
+|*Item quantity for component related item*|ComponentRelatedItem/Quantity| |10 |18
+
+|===
+
+[source]
+.Example of catalogue line with line identifier = 1 from the above table.
+----
+<cac:CatalogueLine>
+  <cbc:ID>1</cbc:ID>
+  <cbc:OrderableUnit>EA</cbc:OrderableUnit>
+  <cbc:ContentUnitQuantity unitCode="MLT">250</cbc:ContentUnitQuantity>
+  <cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
+  <cbc:MinimumOrderQuantity unitCode="EA">1</cbc:MinimumOrderQuantity>
+  <cbc:PackLevelCode>CU</cbc:PackLevelCode>
+  ...
+  <cac:Item>
+    <cbc:Name languageID="en">Milk 1 Liter</cbc:Name>
+    <cbc:PackSizeNumeric>1</cbc:PackSizeNumeric>
+    <cac:SellersItemIdentification>
+      <cbc:ID>2222</cbc:ID>
+    </cac:SellersItemIdentification>
+  ...
+  </cac:Item>
+  ...
+</cac:CatalogueLine>
+----
+
+== Logistics Information
+
+The Pre-Award Catalogue includes elements to support the need for logistics information which is a requirement in many industries. These elements are not mandatory, but trading partners can agree upon the use in the commercial agreements.
+
+The Logistics elements can be used to specify different pack levels for the same article. This shall be done as follows:
+
+* Each pack level is regarded as a unique product and shall be sent as a separate Catalogue line and identified with a unique ID such as GTIN.
+* Information about pack level is done in the element PackLevelCode on line level. The Pack level codes are based on the Edifact/Eancom-standard and the following codes are available (codes in brackets are used in some business sectors in Norway):
+** DU = Dispatch Unit (T-Pak)
+** HN = Handling Unit (level between TU and DU). Not commonly used.
+** TU = Traded Unit (D-Pak or L-Pak)
+** CU = Consumer Unit (F-Pak)
+* It shall be stated if the pack level is orderable.
+* The relation between pack levels shall be specified, e.g. that a Dispatch unit contains Traded units.
+
+WARNING: When component related items are used, all the items in the Pre-Award Catalogue shall specify the Sellers item identifier
+
+Below is an example of Logistics information in a Pre-Award Catalogue message.
+
+.Catalogue line for Dispatch unit, highest pack level.
+[source, xml, indent=0]
+----
+<cac:CatalogueLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:OrderableIndicator>false</cbc:OrderableIndicator>
+		<cbc:PackLevelCode>DU</cbc:PackLevelCode>
+		<cac:ComponentRelatedItem>
+			<cbc:ID>222222</cbc:ID> <!--1-->
+			<cbc:Quantity unitCode="EA">12</cbc:Quantity> <!--2-->
+		</cac:ComponentRelatedItem>
+		<cac:Item>
+			<cbc:Description>Soft drink, pallet</cbc:Description>
+			<cbc:PackQuantity unitCode="EA">1</cbc:PackQuantity>
+			<cbc:Name languageID="en">Soft drink</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>111111</cbc:ID>
+			</cac:SellersItemIdentification>
+		</cac:Item>
+	</cac:CatalogueLine>
+----
+<1>  References the sellers item identification for the component line
+<2>  Quantity of that component (each dispatch unit contains 12 traded units)
+
+
+.Catalogue line for Traded unit.
+[source, xml, indent=0]
+----
+<cac:CatalogueLine>
+    <cbc:ID>2</cbc:ID>
+    <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+    <cbc:OrderableUnit>5</cbc:OrderableUnit>
+    <cbc:PackLevelCode>TU</cbc:PackLevelCode>
+    <cac:ComponentRelatedItem>
+        <cbc:ID>333333</cbc:ID> <!--1-->
+        <cbc:Quantity unitCode="EA">6</cbc:Quantity> <!--2-->
+    </cac:ComponentRelatedItem>
+    <cac:Item>
+        <cbc:Description>Soft drink, trading unit</cbc:Description>
+        <cbc:PackQuantity unitCode="EA">1</cbc:PackQuantity>
+        <cbc:Name languageID="en">Soft drink</cbc:Name>
+        <cac:SellersItemIdentification>
+            <cbc:ID>222222</cbc:ID>
+        </cac:SellersItemIdentification>
+    </cac:Item>
+</cac:CatalogueLine>
+----
+<1>  References the sellers item identification for the component line
+<2>  Quantity of that component (each traded unit contains 6 consumer units)
+
+.Catalogue line for Consumer unit, lowest pack level.
+[source, xml, indent=0]
+----
+<cac:CatalogueLine>
+    <cbc:ID>3</cbc:ID>
+    <cbc:OrderableIndicator>false</cbc:OrderableIndicator>
+    <cbc:PackLevelCode>CU</cbc:PackLevelCode>
+    <cac:Item>
+        <cbc:Description>Soft drink 4-pack</cbc:Description>
+        <cbc:PackQuantity unitCode="EA">1</cbc:PackQuantity>
+        <cbc:Name languageID="en">Soft drink</cbc:Name>
+        <cac:SellersItemIdentification>
+            <cbc:ID>333333</cbc:ID>
+        </cac:SellersItemIdentification>
+    </cac:Item>
+</cac:CatalogueLine>
+----
+
+
+== Attachments
+
+Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended to use external references in the form of URI’s for attachments.
+
+If binary objects are attached to the Pre-Award Catalogue, the valid values for mimetype can be found in codelist.
+
+
+.Example of using external reference
+[source, xml, indent=0]
+----
+<cac:Item>
+  ...
+  <cac:ItemSpecificationDocumentReference>
+    <cbc:ID>LK8788</cbc:ID>
+    <cbc:DocumentDescription>Product image</cbc:DocumentDescription>
+    <cac:Attachment>
+      <cac:ExternalReference>
+        <cbc:URI>http://img.trioving.net/Låskasser/LK8788_PRD_FPM_000.JPG</cbc:URI>
+      </cac:ExternalReference>
+    </cac:Attachment>
+  </cac:ItemSpecificationDocumentReference>
+  ...
+</cac:Item>
+----
+
+[source, xml, indent=0]
+.Example of using attached binary objects
+----
+<cac:ItemSpecificationDocumentReference>
+    <cbc:ID>2384-34232-342-34-2333</cbc:ID>
+    <cac:Attachment>
+        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specification.pdf"
+            >ZGVmYXVsdA==</cbc:EmbeddedDocumentBinaryObject>
+    </cac:Attachment>
+</cac:ItemSpecificationDocumentReference>
+----
+
+
+== Prices
+
+All prices in the format are related to the article or service within this Pre-Award Catalogue. The following prices can be stated:
+
+* Item price is net price including all discounts and charges but excluded Vat.
+* Item comparison unit price defining price for a certain quantity. Used for comparing prices for different articles with various quantities.
+* Conditional price related to a specific location or a certain quantity.
+* Campaign price.
+
+Be aware that no Gross prices can be sent in the format (price before discount and charges). All prices shall have Currency as an attribute. Currency shall be according to Code list.
+
+Example of Prices in Pre-Award Catalogue:
+
+
+.Item Price
+[source, xml, indent=0]
+----
+<cac:RequiredItemLocationQuantity>
+  <cac:Price>
+    <cbc:PriceAmount currencyID="NOK">100.00</cbc:PriceAmount>
+    <cac:ValidityPeriod>
+      <cbc:StartDate>2012-04-26</cbc:StartDate>
+      <cbc:EndDate>2012-05-26</cbc:EndDate>
+    </cac:ValidityPeriod>
+  </cac:Price>
+<cac:RequiredItemLocationQuantity>
+----
+
+
+.Comparison Price
+[source, xml, indent=0]
+----
+<cac:ItemComparision>
+  <cbc:PriceAmount currencyID="NOK">100.00</cbc:PriceAmount>
+  <cbc:Quantity unitCode="EA">1</cbc:Quantity>
+</cac:ItemComparision>
+----
+
+
+.Conditional Price
+[source, xml, indent=0]
+----
+<cac:RequiredItemLocationQuantity>
+  <cac:Price>
+    <cbc:PriceAmount currencyID="NOK">75.00</cbc:PriceAmount>
+    <cbc:BaseQuantity unitCode="EA">100</cbc:BaseQuantity>
+    <cac:ValidityPeriod>
+      <cbc:StartDate>2012-04-26</cbc:StartDate>
+      <cbc:EndDate>2012-05-26</cbc:EndDate>
+    </cac:ValidityPeriod>
+  </cac:Price>
+<cac:RequiredItemLocationQuantity>
+----
+
+
+== Environment, Social Responsibility and Ecological requirements
+
+Public actors may have special green, social or innovative requirements to the works, supplies or services they intend to purchase, and they might ask for labels, test reports, certificates or other means of proof for these requirements.
+
+IMPORTANT: Contracting authorities requiring a specific label shall accept all
+labels that confirm that the works, supplies or services meet
+equivalent label requirements.
+
+These requirements are sent in the element `cac:Certificate` in the pre award catalogue request, and the economic operator sends their answer and attachments (if any), in the `cac:Certificate`-element in the pre award catalogue.
+
+The `cac:Certificate` contains detailed information on the requirement(s), if the requirement is absolute or an award criteria. In addition, the type of evidence (means of proof) that can be used is stated as well.
+
+
+.Example of a green requirement in a Pre-Award Catalogue request message.
+[source, xml, indent=0]
+----
+<cac:Certificate>
+    <cbc:ID>1</cbc:ID>
+    <cbc:DocumentTypeCode>Energy consumption</cbc:DocumentTypeCode> <1>
+    <cbc:DocumentType>Total energy consumption of the milk.</cbc:DocumentType> <2>
+    <cbc:Remarks>Absolute</cbc:Remarks> <3>
+    <cac:IssuerParty>
+        <cac:PartyName>
+            <cbc:Name>Nordic Ecolabelling</cbc:Name>
+        </cac:PartyName>
+    </cac:IssuerParty>
+    <cac:DocumentReference>
+        <cbc:ID>1</cbc:ID>
+        <cbc:CertificateTypeCode>Type 1</cbc:CertificateTypeCode> <4>
+        <cbc:CertificateType>Green requirement</cbc:CertificateType> <5>
+    </cac:DocumentReference>
+</cac:Certificate>
+----
+<1> Main level requirement
+<2> Specific requirement
+<3> The requirement is absolute.
+<4> A Type 1 certificate is asked for as means of proof
+<5> Green requirement
+
+== Additional Item Properties
+
+Additional properties are meant for product properties that cannot be sent in any of the defined elements in Pre-Award Catalogue. Additional properties consist of the Name of the property and the actual Value.
+
+.Example of additional properties:
+* Color
+* Allergens +
+Legal values: YES, NO, UNKNOWN, FREE.
+* Nutrition +
+Stated with amount per 100 g/ml.
+* Genetically modified +
+Legal values: True, False
+
+.Example of use in the Pre-Award Catalogue message
+====
+
+[source, xml, indent=0]
+----
+<cac:AdditionalItemProperty>
+  <cbc:Name>Color</cbc:Name>
+  <cbc:Value>Red</cbc:Value>
+  <cbc:ValueQualifier>Color</cbc:ValueQualifier>
+</cac:AdditionalItemProperty>
+----
+
+[source, xml, indent=0]
+----
+<cac:AdditionalItemProperty>
+  <cbc:Name>NutritionProtein</cbc:Name>
+  <cbc:ValueQuantity unitCode="GRM">2.5</cbc:ValueQuantity>
+  <cbc:ValueQualifier>Nutrition</cbc:ValueQualifier>
+</cac:AdditionalItemProperty>
+----
+
+[source, xml, indent=0]
+----
+<cac:AdditionalItemProperty>
+    <cbc:Name>Allergens</cbc:Name>
+    <cbc:NameCode listID="CodeListID">Allergens</cbc:NameCode>
+    <cbc:Value>Item contains 5% hazelnuts by volume.</cbc:Value>
+    <cbc:ValueQuantity unitCode="60">5</cbc:ValueQuantity>
+    <cbc:ValueQualifier>HAZELNUTS</cbc:ValueQualifier>
+</cac:AdditionalItemProperty>
+----
+
+[source, xml, indent=0]
+----
+<cac:AdditionalItemProperty>
+  <cbc:Name>GeneticallyModified</cbc:Name>
+  <cbc:Value>True</cbc:Value>
+</cac:AdditionalItemProperty>
+----
+====
+
+
+== Hazardous Item
+
+If a product is classified as Hazardous item, a reference to the relevant UNDG-code shall be stated and further specification shall be provided in an attached document or on a web-site (URI).
+
+.Example of UNDG code
+[source, xml, indent=0]
+----
+<cac:HazardousItem>
+    <cbc:ID>0024</cbc:ID>
+    <cbc:UNDGCode>ADR</cbc:UNDGCode>
+</cac:HazardousItem>
+----
+
+.Example of attachement with further specification
+[source, xml, indent=0]
+----
+<cac:ItemSpecificationDocumentReference>
+    <cbc:ID>1</cbc:ID>
+    <cbc:DocumentDescription>HMS Safety sheet</cbc:DocumentDescription>
+    <cac:Attachment>
+        <cac:ExternalReference>
+            <cbc:URI>http://www.klif.no/no/Tema/Kjemikalier/Klassifisering-og-merking-av-kjemikalier-CLP/Klassifisering-CLP-avsnitt-I-II-og-V/</cbc:URI>
+        </cac:ExternalReference>
+    </cac:Attachment>
+</cac:ItemSpecificationDocumentReference>
+----
+
+== Keyword
+
+Keywords are sent to let the Buyer search for a product without knowing the Product ID or name. Keywords can be repeated, but the number should be limited to ensure correct handling in the receiving system.  If more than one Keyword is sent, they should be put in the same tag separated by the %-sign since this is already being used by several actors (but a different sign can be agreed by the trading partners).
+
+
+.Example of several Keywords in the same tag.
+[source, xml, indent=0]
+----
+<cac:Item>
+  <cbc:Description> Pallet of water </cbc:Description>
+  <cbc:Name>Water</cbc:Name>
+  <cbc:Keyword>sparkling%natural%water</cbc:Keyword>
+  <cac:SellersItemIdentification>
+    <cbc:ID>111111</cbc:ID>
+  </cac:SellersItemIdentification>
+</cac:Item>
+----
+
+== VAT
+
+VAT information on line level is provided in the class `cac:ClassifiedTaxCategory`.
+
+VAT information is optional in the Pre-Award Catalogue. Catalogue receivers may require VAT-information in the Pre-Award Catalogue.
+
+
+.Example of using VAT.
+[source, xml, indent=0]
+----
+<cac:ClassifiedTaxCategory>
+    <cbc:ID>S</cbc:ID>
+    <cbc:Percent>25</cbc:Percent>
+    <cac:TaxScheme>
+        <cbc:ID>VAT</cbc:ID>
+    </cac:TaxScheme>
+</cac:ClassifiedTaxCategory>
+----

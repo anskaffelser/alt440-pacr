@@ -214,7 +214,7 @@
             </cac:OriginCountry>
 
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="STI">CPC-3020000-4</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI">30200004</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
 
             <cac:TransactionConditions>
@@ -259,7 +259,6 @@
                 <cbc:ID>1</cbc:ID>
                 <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode>
                 <cbc:CertificateType>Total energy consumption of the milk.</cbc:CertificateType>
-                <cbc:Remarks>Absolute requirement</cbc:Remarks>
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>Nordic Ecolabelling</cbc:Name>
@@ -267,8 +266,50 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
-                    <cbc:DocumentType>Green requirement</cbc:DocumentType>
+                    <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode>
+                    <cbc:DocumentType>Test report</cbc:DocumentType>
+                    <cac:Attachment>
+                        <cac:ExternalReference>
+                            <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
+                        </cac:ExternalReference>
+                    </cac:Attachment>
+                </cac:DocumentReference>
+            </cac:Certificate>
+
+            <cac:Certificate>
+                <cbc:ID>1</cbc:ID>
+                <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Total energy consumption of the milk.</cbc:CertificateType>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>Nordic Ecolabelling</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+                <cac:DocumentReference>
+                    <cbc:ID>1</cbc:ID>
+                    <cbc:DocumentTypeCode>OtherMeansOfProof</cbc:DocumentTypeCode>
+                    <cbc:DocumentType>Test report</cbc:DocumentType>
+                    <cbc:DocumentDescription>The lab test report provide detailed information about the item requirement. See the attachment.</cbc:DocumentDescription>
+                    <cac:Attachment>
+                        <cac:ExternalReference>
+                            <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
+                        </cac:ExternalReference>
+                    </cac:Attachment>
+                </cac:DocumentReference>
+            </cac:Certificate>
+
+            <cac:Certificate>
+                <cbc:ID>2</cbc:ID>
+                <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Total energy consumption of the milk.</cbc:CertificateType>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>Nordic Ecolabelling</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+                <cac:DocumentReference>
+                    <cbc:ID>1</cbc:ID>
+                    <cbc:DocumentTypeCode>NoProof</cbc:DocumentTypeCode>
                     <cac:Attachment>
                         <cac:ExternalReference>
                             <cbc:URI>http://www.nordic-ecolabel.org/</cbc:URI>
