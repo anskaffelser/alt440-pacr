@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/guide/spec/descriptions/detailed-descriptions.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/descriptions/detailed-descriptions.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="PreAwardCatalogue.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="1408" column="91" selection-start-line="1408" selection-start-column="91" selection-end-line="1408" selection-end-column="91" />
+            <state relative-caret-position="528">
+              <caret line="1416" column="57" selection-start-line="1416" selection-start-column="57" selection-end-line="1416" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -663,8 +662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="1408" column="91" selection-start-line="1408" selection-start-column="91" selection-end-line="1408" selection-end-column="91" />
+        <state relative-caret-position="528">
+          <caret line="1416" column="57" selection-start-line="1416" selection-start-column="57" selection-end-line="1416" selection-end-column="57" />
         </state>
       </provider>
     </entry>

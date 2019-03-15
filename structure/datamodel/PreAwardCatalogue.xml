@@ -1414,7 +1414,7 @@
                         <Term>cbc:ID</Term>
                         <Name>Item means of proof identifier</Name>
                         <Description>A unique identifier being unique in a transaction for an Item means of proof.
-                            This identifier MUST be similar to the catalogue request identifier.</Description>
+                            This identifier MUST be equal to the catalogue request identifier.</Description>
                         <DataType>Identifier</DataType>
                         <Value type="EXAMPLE">1</Value>
                     </Element>
