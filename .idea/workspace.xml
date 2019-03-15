@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/datamodel/part/contact.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/part/contact.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/datamodel/part/item-classification.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/part/item-classification.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure/datamodel/part/postal-address.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/part/postal-address.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,26 +20,8 @@
       <file leaf-file-name="PreAwardCatalogue.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="30" column="56" lean-forward="true" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Catalogue-example.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rules/example/Catalogue-example.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1307">
-              <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvidenceType.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/structure/codelist/EvidenceType.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            <state relative-caret-position="562">
+              <caret line="577" column="128" selection-start-line="577" selection-start-column="128" selection-end-line="577" selection-end-column="128" />
             </state>
           </provider>
         </entry>
@@ -52,8 +29,8 @@
       <file leaf-file-name="PreAwardCatalogueRequest.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="831">
-              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+            <state relative-caret-position="579">
+              <caret line="869" column="34" lean-forward="true" selection-start-line="869" selection-start-column="34" selection-end-line="869" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -98,7 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>importance</find>
       <find>attachmen</find>
       <find>attac</find>
       <find>componentre</find>
@@ -126,8 +102,9 @@
       <find>provider</find>
       <find>date</find>
       <find>validity</find>
-      <find>cac</find>
       <find>cac:</find>
+      <find>cac</find>
+      <find>minimumorder</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,10 +159,10 @@
         <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
         <option value="$PROJECT_DIR$/rules/example/Catalogue-example.xml" />
         <option value="$PROJECT_DIR$/guide/spec/descriptions/detailed-descriptions.adoc" />
-        <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/part/postal-address.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/part/item-classification.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/part/contact.xml" />
+        <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" />
       </list>
     </option>
@@ -657,15 +634,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="30" column="56" lean-forward="true" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+        <state relative-caret-position="562">
+          <caret line="577" column="128" selection-start-line="577" selection-start-column="128" selection-end-line="577" selection-end-column="128" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        <state relative-caret-position="579">
+          <caret line="869" column="34" lean-forward="true" selection-start-line="869" selection-start-column="34" selection-end-line="869" selection-end-column="34" />
         </state>
       </provider>
     </entry>
