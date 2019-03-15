@@ -2,7 +2,7 @@
 <Element xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1" cardinality="0..n">
  
         <Term>cac:CommodityClassification</Term>
-        <Name>Commodity classification</Name>
+        <Name>COMMODITY CLASSIFICATION</Name>
         <Description>A classification of this item according to a specific system for classifying commodities.</Description>
         <Property key="doc">structure/docs/CommodityClassification-Request.adoc</Property>
         

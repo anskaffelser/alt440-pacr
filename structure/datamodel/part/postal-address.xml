@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Element xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1" cardinality="0..1">
     <Term>cac:PostalAddress</Term>
-    <Name>Postal address</Name>
+    <Name>POSTAL ADDRESS</Name>
     
         <Element cardinality="0..1">
             <Term>cbc:StreetName</Term>
@@ -22,7 +22,7 @@
         <Element cardinality="0..1">
             <Term>cbc:CityName</Term>
             <Name>City name</Name>
-            <Description>The common name of the city, town or village, where the Seller address is located.</Description>
+            <Description>The common name of the city, town or village, where the address is located.</Description>
             <DataType>Text</DataType>
             
             <Value type="EXAMPLE">London</Value>

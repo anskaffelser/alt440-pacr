@@ -41,7 +41,7 @@
             <Term>cbc:ID</Term>
             <Name>Transaction identifier</Name>
             <Description>An identifier for this pre-award catalogue request document that allows
-                referencing</Description>
+                referencing.</Description>
             <DataType>Document reference</DataType>
 
             <Attribute>
@@ -50,7 +50,6 @@
                 <Description>The version number of this catalogue request</Description>
                 <Value type="EXAMPLE">13.1</Value>
             </Attribute>
-
             <Value type="EXAMPLE">Transaction-02</Value>
         </Element>
 
@@ -76,7 +75,7 @@
 
         <Element>
             <Term>cac:ReceiverParty</Term>
-            <Name>Receiver party or Economic operator</Name>
+            <Name>RECEIVER PARTY OR ECONOMIC OPERATOR</Name>
             <Description>Any natural or legal person or public entity or group of such persons
                 and/or entities, including any temporary association of undertakings, which offers
                 the execution of works and/or a work, the supply of products or the provision of
@@ -102,7 +101,7 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
-                <Name>Party identification</Name>
+                <Name>PARTY IDENTIFICATION</Name>
                 <Reference type="RULE">EHF-PACR-R003</Reference>
                 <Element>
                     <Term>cbc:ID</Term>
@@ -126,7 +125,7 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
-                <Name>Party name</Name>
+                <Name>PARTY NAME</Name>
                 <Reference type="RULE">EHF-PACR-R003</Reference>
 
                 <Element>
@@ -143,15 +142,15 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyLegalEntity</Term>
-                <Name>Receiver/Economic operators legal entity information</Name>
+                <Name>RECEIVER/ECONOMIC OPERATORS LEGAL ENTITY INFORMATION</Name>
 
                 <Element>
                     <Term>cac:RegistrationAddress</Term>
-                    <Name>Receiver/Economic operators legal registration address</Name>
+                    <Name>RECEIVER/ECONOMIC OPERATORS LEGAL REGISTRATION ADDRESS</Name>
 
                     <Element>
                         <Term>cac:Country</Term>
-                        <Name>Country</Name>
+                        <Name>COUNTRY</Name>
 
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
@@ -175,7 +174,7 @@
 
         <Element>
             <Term>cac:ProviderParty</Term>
-            <Name>Contracting body</Name>
+            <Name>CONTRACTING BODY</Name>
             <Description>The contracting authority or contracting entity who is buying supplies,
                 services or public works using a tendering procedure as described in the applicable
                 directive </Description>
@@ -200,7 +199,7 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
-                <Name>Party identification</Name>
+                <Name>PARTY IDENTIFICATION</Name>
                 <Reference type="RULE">EHF-PACR-R002</Reference>
 
 
@@ -225,7 +224,7 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
-                <Name>Party name</Name>
+                <Name>PARTY NAME</Name>
                 <Reference type="RULE">EHF-PACR-R002</Reference>
 
                 <Element>
@@ -243,15 +242,15 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyLegalEntity</Term>
-                <Name>Contracting body legal entity information</Name>
+                <Name>CONTRACTING BODY LEGAL ENTITY INFORMATION</Name>
 
                 <Element>
                     <Term>cac:RegistrationAddress</Term>
-                    <Name>Contracting body legal registration address</Name>
+                    <Name>CONTRACTING BODY LEGAL REGISTRATION ADDRESS</Name>
 
                     <Element>
                         <Term>cac:Country</Term>
-                        <Name>Country</Name>
+                        <Name>COUNTRY</Name>
 
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
@@ -269,12 +268,11 @@
             </Element>
 
             <Include>part/contact.xml</Include>
-
         </Element>
 
         <Element cardinality="0..1">
             <Term>cac:RequestedCatalogueReference</Term>
-            <Name>Previous requested catalogue reference</Name>
+            <Name>PREVIOUS REQUESTED CATALOGUE REFERENCE</Name>
             <Description>A reference to a specific Catalogue request; used if the Catalogue Request
                 is updated.</Description>
             <Element>
@@ -297,10 +295,9 @@
         </Element>
 
 
-
         <Element>
             <Term>cac:ReferencedContract</Term>
-            <Name>Call for tenders reference</Name>
+            <Name>CALL FOR TENDERS REFERENCE</Name>
 
             <Element>
                 <Term>cbc:ID</Term>
@@ -314,7 +311,7 @@
 
         <Element cardinality="1..n">
             <Term>cac:CatalogueRequestLine</Term>
-            <Name>Catalogue request line</Name>
+            <Name>CATALOGUE REQUEST LINE</Name>
             <Description>A line in a pre-award catalogue request specifying</Description>
 
             <Element>
@@ -328,7 +325,7 @@
 
             <Element cardinality="0..1">
                 <Term>cac:LineValidityPeriod</Term>
-                <Name>Line delivery period</Name>
+                <Name>LINE DELIVERY PERIOD</Name>
                 <Description>The requested delivery period for this item request. If used, both
                     start and end date must be present</Description>
                 <Property key="doc">structure/docs/LineValidityPeriod-Request.adoc</Property>
@@ -336,9 +333,9 @@
                 <Element>
                     <Term>cbc:StartDate</Term>
                     <Name>Period start date</Name>
-                    <Description>The requested delivery start date for the item, the date must be
-                        the same, or ealier than the delivery end date. Format YYYY-MM-DD. Date
-                        shall not include timezone information. </Description>
+                    <Description>The requested delivery start date for the item. The date must be
+                        the same or earlier than the delivery end date. Format YYYY-MM-DD. Date
+                        shall not include timezone information.</Description>
                     <DataType>Date</DataType>
                     <Reference type="RULE">EHF-COMMON-R030</Reference>
                     <Reference type="RULE">EHF-PACR-R013</Reference>
@@ -348,7 +345,7 @@
                 <Element>
                     <Term>cbc:EndDate</Term>
                     <Name>Period end date</Name>
-                    <Description>The requested delivery end date for the item, the date must be the
+                    <Description>The requested delivery end date for the item. The date must be the
                         same, or later than the delivery start date. Format YYYY-MM-DD. Date shall
                         not include timezone information.</Description>
                     <DataType>Date</DataType>
@@ -360,7 +357,7 @@
 
             <Element cardinality="1..n">
                 <Term>cac:RequiredItemLocationQuantity</Term>
-                <Name>Required Item location quantity</Name>
+                <Name>REQUESTED ITEM LOCATION QUANTITY</Name>
                 <Property key="doc"
                     >structure/docs/RequiredItemLocationQuantity-Request.adoc</Property>
 
@@ -385,16 +382,13 @@
                             resulting in a 3 alphanumeric code when used as a unit of measure. </Description>
                         <DataType>Code</DataType>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        
                         <Value type="EXAMPLE">C62</Value>
                     </Attribute>
 
                     <Value type="EXAMPLE">2 rooms</Value>
-
                 </Element>
 
                 <Element cardinality="0..1">
-
                     <Term>cbc:MaximumQuantity</Term>
                     <Name>Maximum quantity</Name>
                     <Description>The maximum quantity for this item request/location. To specify an
@@ -424,7 +418,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:ApplicableTerritoryAddress</Term>
-                    <Name>Applicable sales location</Name>
+                    <Name>APPLICABLE SALES LOCATION</Name>
                     <Description>This element is used if there are specific locations requested for
                         the item.</Description>
                     <Property key="doc"
@@ -543,7 +537,7 @@
 
             <Element>
                 <Term>cac:Item</Term>
-                <Name>Item request</Name>
+                <Name>ITEM REQUEST</Name>
                 <Property key="doc">structure/docs/Item-Request.adoc</Property>
 
                 <Element cardinality="0..1">
@@ -566,9 +560,8 @@
 
                 <Element cardinality="0..n">
                     <Term>cac:ItemSpecificationDocumentReference</Term>
-                    <Name>Additional document reference</Name>
-                    <Property key="doc"
-                        >structure/docs/ItemSpecificationDocumentReference-Request.adoc</Property>
+                    <Name>ADDITIONAL DOCUMENT REFERENCE</Name>
+                    <Property key="doc">structure/docs/ItemSpecificationDocumentReference-Request.adoc</Property>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -588,11 +581,11 @@
 
                     <Element>
                         <Term>cac:Attachment</Term>
-                        <Name>Attachment</Name>
+                        <Name>ATTACHMENT</Name>
 
                         <Element>
                             <Term>cac:ExternalReference</Term>
-                            <Name>External reference</Name>
+                            <Name>EXTERNAL REFERENCE</Name>
 
                             <Element>
                                 <Term>cbc:URI</Term>
@@ -636,7 +629,7 @@
 
                 <Element cardinality="0..n">
                     <Term>cac:AdditionalItemProperty</Term>
-                    <Name>Requested item property and requested item information</Name>
+                    <Name>REQUESTED ITEM PROPERTY AND REQUESTED ITEM INFORMATION</Name>
                     <Description>This element is used to provide information on both requested item
                         properties and requested item information. The element cbc:NameCode is used
                         to specify if the information in this element repetition is a property or an
@@ -724,7 +717,7 @@
 
                     <Element cardinality="0..1">
                         <Term>cac:ItemPropertyGroup</Term>
-                        <Name>Item property classification</Name>
+                        <Name>ITEM PROPERTY CLASSIFICATION</Name>
                         <Description>A classification of an item property according to a
                             standardized property system.</Description>
 
@@ -760,7 +753,7 @@
 
                     <Element cardinality="0..1">
                         <Term>cac:ItemPropertyRange</Term>
-                        <Name>Item property range</Name>
+                        <Name>ITEM PROPERTY RANGE</Name>
 
                         <Element cardinality="0..1">
                             <Term>cbc:MinimumValue</Term>
@@ -785,7 +778,7 @@
 
                 <Element cardinality="0..n">
                     <Term>cac:Certificate</Term>
-                    <Name>Requested item requirements</Name>
+                    <Name>REQUESTED ITEM REQUIREMENT</Name>
                     <Description>A functional requirement on an item that is not related to a
                         property of the item and has to be proven by a specification, label, test
                         report or any other means of proof.</Description>
@@ -827,11 +820,11 @@
 
                     <Element>
                         <Term>cac:IssuerParty</Term>
-                        <Name>Issuer party</Name>
+                        <Name>ISSUER PARTY</Name>
 
                         <Element>
                             <Term>cac:PartyName</Term>
-                            <Name>Party name</Name>
+                            <Name>PARTY NAME</Name>
 
                             <Element>
                                 <Term>cbc:Name</Term>
@@ -847,7 +840,7 @@
 
                     <Element cardinality="0..n">
                         <Term>cac:DocumentReference</Term>
-                        <Name>Document reference</Name>
+                        <Name>DOCUMENT REFERENCE</Name>
 
                         <Element>
                             <Term>cbc:ID</Term>
@@ -878,11 +871,11 @@
 
                         <Element>
                             <Term>cac:Attachment</Term>
-                            <Name>Attachment</Name>
+                            <Name>ATTACHMENT</Name>
 
                             <Element>
                                 <Term>cac:ExternalReference</Term>
-                                <Name>External reference</Name>
+                                <Name>EXTERNAL REFERENCE</Name>
 
                                 <Element>
                                     <Term>cbc:URI</Term>

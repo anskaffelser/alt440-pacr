@@ -99,9 +99,9 @@
 
         <Element>
             <Term>cac:ValidityPeriod</Term>
-            <Name>Pre-award catalogue validity period</Name>
-            <Description>The validity period must include both start date and end date, and the start date must be
-                earlier than the end date</Description>
+            <Name>PRE-AWARD CATALOGUE VALIDITY PERIOD</Name>
+            <Description>The validity period must include both start date and end date. The start date must be
+                earlier than the end date.</Description>
 
             <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
 
@@ -130,7 +130,7 @@
 
         <Element cardinality="0..1">
             <Term>cac:ReferencedContract</Term>
-            <Name>Contract reference</Name>
+            <Name>CONTRACT REFERENCE</Name>
             <Description>A reference to a contract that can be identified.</Description>
             <Property key="doc">structure/docs/ReferencedContract.adoc</Property>
 
@@ -144,7 +144,7 @@
 
             <Element>
                 <Term>cac:ContractDocumentReference</Term>
-                <Name>Procurement reference</Name>
+                <Name>PROCUREMENT REFERENCE</Name>
 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -160,7 +160,7 @@
 
         <Element>
             <Term>cac:ProviderParty</Term>
-            <Name>Provider party</Name>
+            <Name>PROVIDER PARTY</Name>
             <Description>The party that sends the catalogue.</Description>
             <Property key="doc">structure/docs/ProviderParty.adoc</Property>
 
@@ -184,7 +184,7 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
-                <Name>Party identification</Name>
+                <Name>PARTY IDENTIFICATION</Name>
                 <Reference type="RULE">EHF-PAC-R002</Reference>
 
                 <Element>
@@ -207,7 +207,7 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
-                <Name>Party name</Name>
+                <Name>PARTY NAME</Name>
                 <Reference type="RULE">EHF-PAC-R002</Reference>
 
                 <Element>
@@ -225,7 +225,7 @@
 
         <Element>
             <Term>cac:ReceiverParty</Term>
-            <Name>Catalogue receiver</Name>
+            <Name>CATALOGUE RECEIVER</Name>
             <Description>The party to which the catalogue is sent.</Description>
             <Property key="doc">structure/docs/ReceiverParty.adoc</Property>
 
@@ -248,7 +248,7 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
-                <Name>Party identification</Name>
+                <Name>PARTY IDENTIFICATION</Name>
                 <Reference type="RULE">EHF-PAC-R003</Reference>
 
 
@@ -273,7 +273,7 @@
 
             <Element cardinality="0..1">
                 <Term>cac:PartyName</Term>
-                <Name>Party name</Name>
+                <Name>PARTY NAME</Name>
                 <DataType>Text</DataType>
                 <Reference type="RULE">EHF-PAC-R003</Reference>
 
@@ -292,17 +292,17 @@
 
         <Element cardinality="0..1">
             <Term>cac:SellerSupplierParty</Term>
-            <Name>Catalogue supplier</Name>
-            <Description>The party that provides the items specified in the catalog, must be used if the supplier is different from the catalogue provider</Description>
+            <Name>CATALOGUE SUPPLIER</Name>
+            <Description>The party that provides the items specified in the catalogue, must be used if the supplier is different from the catalogue provider.</Description>
             <Property key="doc">structure/docs/SellerSupplierParty.adoc</Property>
 
             <Element>
                 <Term>cac:Party</Term>
-                <Name>Party</Name>
+                <Name>PARTY</Name>
 
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
-                    <Name>Party identification</Name>
+                    <Name>PARTY IDENTIFICATION</Name>
                     <Reference type="RULE">EHF-PAC-R004</Reference>
 
                     <Element>
@@ -326,7 +326,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:PartyName</Term>
-                    <Name>Party name</Name>
+                    <Name>PARTY NAME</Name>
                     <DataType>Text</DataType>
                     <Reference type="RULE">EHF-PAC-R004</Reference>
 
@@ -348,17 +348,17 @@
 
         <Element cardinality="0..1">
             <Term>cac:ContractorCustomerParty</Term>
-            <Name>Catalogue Customer</Name>
+            <Name>CATALOGUE CUSTOMER</Name>
             <Description>The party who may order from the catalogue, must be used if the customer party is different from the receiver party</Description>
             <Property key="doc">structure/docs/ContractorCustomerParty.adoc</Property>
 
             <Element>
                 <Term>cac:Party</Term>
-                <Name>Party</Name>
+                <Name>PARTY</Name>
 
                 <Element cardinality="0..1">
                     <Term>cac:PartyIdentification</Term>
-                    <Name>Party identification</Name>
+                    <Name>PARTY IDENTIFICATION</Name>
                     <Reference type="RULE">EHF-PAC-R005</Reference>
 
                     <Element>
@@ -382,7 +382,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:PartyName</Term>
-                    <Name>Party name</Name>
+                    <Name>PARTY NAME</Name>
                     <Reference type="RULE">EHF-PAC-R005</Reference>
 
                     <Element>
@@ -402,7 +402,7 @@
 
         <Element cardinality="1..n">
             <Term>cac:CatalogueLine</Term>
-            <Name>Pre-award catalogue line</Name>
+            <Name>PRE-AWARD CATALOGUE LINE</Name>
             <Description>Detailed information of an item, price and its composition  in a pre-award catalogue.</Description>
             <Property key="doc">structure/docs/CatalogueLine.adoc</Property>
 
@@ -417,7 +417,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:ActionCode</Term>
                 <Name>Line action code</Name>
-                <Description>Used to instruct the catalogue receier on what action should be taken
+                <Description>Used to instruct the catalogue receiver on what action should be taken
                     on the identified line when revising a catalogue. See rule on catalogue version
                     ID. When using Update or Delete codes, the entire Catalogue Line is updated or
                     deleted.</Description>
@@ -437,7 +437,7 @@
             <Element>
                 <Term>cbc:OrderableIndicator</Term>
                 <Name>Catalogue line orderable indicator</Name>
-                <Description>Indicates whether the catalogue line can be ordered. Allowed values are ´true´ or ´false</Description>
+                <Description>Indicates whether the catalogue line can be ordered. Allowed values are 'true' or 'false'.</Description>
                 <DataType>Boolean</DataType>
 
                 <Value type="EXAMPLE">true</Value>
@@ -446,7 +446,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:OrderableUnit</Term>
                 <Name>Orderable unit</Name>
-                <Description>The unit in which the item described in this catalogue line can be ordered. Mandatory if the item is orderable
+                <Description>The unit in which the item described in this catalogue line can be ordered. Mandatory if the item is orderable.
                     Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                     The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                 </Description>
@@ -464,11 +464,11 @@
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Quantity unit code</Name>
-                    <Description>The unit of the quantity  Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                    <Description>The unit of the quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                         The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                     </Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
-                    
+
                     <Value type="EXAMPLE">MLT</Value>
                 </Attribute>
 
@@ -489,15 +489,14 @@
                 <DataType>Quantity</DataType>
                 <Reference type="RULE">EHF-PAC-R009</Reference>
                 <Reference type="RULE">EHF-PAC-R010</Reference>
+
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Quantity unit code</Name>
-                    <Description>The unit of the quantity  Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                    <Description>The unit of the quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                         The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                     </Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
-                    
-
                     <Value type="EXAMPLE">EA</Value>
                 </Attribute>
 
@@ -514,7 +513,7 @@
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Quantity unit code</Name>
-                    <Description>The unit of the quantity  Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                    <Description>The unit of the quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                         The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                     </Description>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
@@ -545,13 +544,13 @@
 
             <Element cardinality="0..1">
                 <Term>cac:LineValidityPeriod</Term>
-                <Name>Line validity period</Name>
+                <Name>LINE VALIDITY PERIOD</Name>
                 <Description>The line validity period must be the same, or within the document validity period, if it exists.</Description>
 
                 <Element>
                     <Term>cbc:StartDate</Term>
                     <Name>Period start date</Name>
-                    <Description>The line validity start date, the date must be the same, or earlier than the delivery end date.
+                    <Description>The line validity start date. The date must be the same or earlier than the delivery end date.
                         Format YYYY-MM-DD. Date shall not include timezone information. </Description>
                     <DataType>Date</DataType>
                     <Reference type="RULE">EHF-PAC-R007</Reference>
@@ -563,7 +562,7 @@
                 <Element>
                     <Term>cbc:EndDate</Term>
                     <Name>Period end date</Name>
-                    <Description>The line validity end date, the date must be the same, or later than the delivery start date.
+                    <Description>The line validity end date. The date must be the same or later than the delivery start date.
                         Format YYYY-MM-DD. Date shall not include timezone information.</Description>
                     <DataType>Date</DataType>
                     <Reference type="RULE">EHF-PAC-R007</Reference>
@@ -575,7 +574,7 @@
 
             <Element cardinality="0..n">
                 <Term>cac:ItemComparison</Term>
-                <Name>Item comparison</Name>
+                <Name>ITEM COMPARISON</Name>
                 <Description>Used for comparing prices for different articles with various quantities. E.g. Price of each liter.</Description>
                 <Property key="doc">structure/docs/ItemComparison.adoc</Property>
 
@@ -604,7 +603,7 @@
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity  Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                        <Description>The unit of the quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
@@ -619,7 +618,7 @@
 
             <Element cardinality="0..n">
                 <Term>cac:ComponentRelatedItem</Term>
-                <Name>Component related item</Name>
+                <Name>COMPONENT RELATED ITEM</Name>
                 <Description>Component related items are products that are connected in a product line or a logistics structure, e.g. consumer units and trading units of the same article.</Description>
                 <Property key="doc">structure/docs/ComponentRelatedItem.adoc</Property>
 
@@ -634,26 +633,26 @@
                 <Element cardinality="0..1">
                     <Term>cbc:Quantity</Term>
                     <Name>Related item quantity</Name>
-                    <Description>Quantity of a related item</Description>
+                    <Description>Quantity of a related item.</Description>
                     <DataType>Quantity</DataType>
+
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity  Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                        <Description>The unit of the quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        
-
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
+
                     <Value type="EXAMPLE">5</Value>
                 </Element>
             </Element>
 
             <Element cardinality="0..n">
                 <Term>cac:RequiredRelatedItem</Term>
-                <Name>Required related item</Name>
+                <Name>REQUIRED RELATED ITEM</Name>
                 <Description>Required related items are products that are bundled and ordered/invoiced together, e.g. bottles and desposits.</Description>
                 <!-- <Property key="doc">structure/docs/required-related.adoc</Property> -->
 
@@ -670,24 +669,24 @@
                     <Name>Related item quantity</Name>
                     <Description>Required related item quantity, the quantity of the products bundled with the products on this line.</Description>
                     <DataType>Quantity</DataType>
+
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity  Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                        <Description>The unit of the quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        
-
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
+
                     <Value type="EXAMPLE">10</Value>
                 </Element>
             </Element>
 
             <Element cardinality="0..n">
                 <Term>cac:ComplementaryRelatedItem</Term>
-                <Name>Complementary related item</Name>
+                <Name>COMPLEMENTARY RELATED ITEM</Name>
                 <Description>Complementary related item is used for items that might be sold together with a product, e.g. disk station to a laptop.</Description>
                 <Property key="doc">structure/docs/ComplementaryRelatedItem.adoc</Property>
 
@@ -707,7 +706,7 @@
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity  Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                        <Description>The unit of the quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
@@ -721,7 +720,7 @@
 
             <Element cardinality="0..n">
                 <Term>cac:ReplacedRelatedItem</Term>
-                <Name>Replacement product</Name>
+                <Name>REPLACEMENT PRODUCT</Name>
                 <Description>Replacement product is used to identify a product replacing an existing product in the Catalogue.</Description>
                 <!-- <Property key="doc">structure/docs/ReplacedRelatedItem.adoc</Property> -->
 
@@ -741,7 +740,7 @@
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity  Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                        <Description>The unit of the quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
@@ -755,7 +754,7 @@
 
             <Element cardinality="0..n">
                 <Term>cac:RequiredItemLocationQuantity</Term>
-                <Name>Item Location Quantity</Name>
+                <Name>ITEM LOCATION QUANTITY</Name>
                 <Description>Properties of the item in this catalogue line that are dependent on location and quantity.</Description>
                 <Property key="doc">structure/docs/RequiredItemLocationQuantity.adoc</Property>
 
@@ -768,12 +767,10 @@
                     <Attribute usage="optional">
                         <Term>unitCode</Term>
                         <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity  Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                        <Description>The unit of the quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        
-
                         <Value type="EXAMPLE">EA</Value>
                     </Attribute>
 
@@ -803,7 +800,7 @@
 
                 <Element cardinality="0..n">
                     <Term>cac:ApplicableTerritoryAddress</Term>
-                    <Name>Delivery location</Name>
+                    <Name>DELIVERY LOCATION</Name>
 
                     <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
@@ -824,7 +821,7 @@
                     <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
                         <Name>City name</Name>
-                        <Description>The common name of the city, town or village, where the Seller address is located.</Description>
+                        <Description>The common name of the city, town or village, where the address is located.</Description>
                         <DataType>Text</DataType>
 
                         <Value type="EXAMPLE">London</Value>
@@ -849,7 +846,7 @@
 
                     <Element cardinality="0..1">
                         <Term>cac:AddressLine</Term>
-                        <Name>Address line LINE</Name>
+                        <Name>ADDRESS LINE</Name>
 
                         <Element>
                             <Term>cbc:Line</Term>
@@ -864,7 +861,7 @@
 
                     <Element>
                         <Term>cac:Country</Term>
-                        <Name>Country</Name>
+                        <Name>COUNTRY</Name>
 
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
@@ -879,7 +876,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:Price</Term>
-                    <Name>Price</Name>
+                    <Name>PRICE</Name>
                     <Description>Used to give the item net price as well as conditional price related to a specific location
                         or a quantity, as well as campaign prices.</Description>
                     <Property key="doc">structure/docs/Price.adoc</Property>
@@ -920,14 +917,14 @@
 
                     <Element cardinality="0..n">
                         <Term>cac:ValidityPeriod</Term>
-                        <Name>Price validity period</Name>
-                        <Description>The price validity period must be the same, or within the line validity period if it exists</Description>
+                        <Name>PRICE VALIDITY PERIOD</Name>
+                        <Description>The price validity period must be the same, or within the line validity period if it exists.</Description>
                         <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
 
                         <Element>
                             <Term>cbc:StartDate</Term>
                             <Name>Period start date</Name>
-                            <Description>The price validity period start date, the date must be the same, or ealier than the delivery end date.
+                            <Description>The price validity period start date. The date must be the same or earlier than the delivery end date.
                                 Format YYYY-MM-DD. Date shall not include timezone information. </Description>
                             <DataType>Date</DataType>
                             <Reference type="RULE">EHF-PAC-R011</Reference>
@@ -939,7 +936,7 @@
                         <Element>
                             <Term>cbc:EndDate</Term>
                             <Name>Period end date</Name>
-                            <Description>The price validity period end date, the date must be the same, or later than the delivery start date.
+                            <Description>The price validity period end date. The date must be the same or later than the delivery start date.
                                 Format YYYY-MM-DD. Date shall not include timezone information.</Description>
                             <DataType>Date</DataType>
                             <Reference type="RULE">EHF-PAC-R011</Reference>
@@ -955,7 +952,7 @@
 
             <Element>
                 <Term>cac:Item</Term>
-                <Name>Pre-award catalogue item details</Name>
+                <Name>PRE-AWARD CATALOGUE ITEM DETAILS</Name>
                 <Property key="doc">structure/docs/Item.adoc</Property>
 
                 <Element cardinality="0..n">
@@ -984,14 +981,13 @@
                     <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity  Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                        <Description>The unit of the quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
                             The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                         </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        
-
                         <Value type="EXAMPLE">XBX</Value>
                     </Attribute>
+
                     <Value type="EXAMPLE">12</Value>
                 </Element>
 
@@ -1042,14 +1038,14 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:SellersItemIdentification</Term>
-                    <Name>Sellers item identification</Name>
+                    <Name>SELLERS ITEM IDENTIFICATION</Name>
                     <Reference type="RULE">EHF-PAC-R012</Reference>
 
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Item sellers identifier</Name>
                         <Description>An identifier, assigned by the seller, for the item. This element is not mandatory because
-                            some companies may not have the identifier yer at the time of issuing the pre-award catalogue.</Description>
+                            some companies may not have the identifier yet at the time of issuing the pre-award catalogue.</Description>
                         <DataType>Identifier</DataType>
                         <Value type="EXAMPLE">A2</Value>
                     </Element>
@@ -1058,7 +1054,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:ManufacturersItemIdentification</Term>
-                    <Name>Manufacturers item identification</Name>
+                    <Name>MANUFACTURERS ITEM IDENTIFICATION</Name>
 
                     <Element>
                         <Term>cbc:ID</Term>
@@ -1072,7 +1068,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:StandardItemIdentification</Term>
-                    <Name>Standard item identification</Name>
+                    <Name>STANDARD ITEM IDENTIFICATION</Name>
                     <Reference type="RULE">EHF-PAC-R012</Reference>
 
                     <Element>
@@ -1107,7 +1103,7 @@
 
                 <Element cardinality="0..n">
                     <Term>cac:ItemSpecificationDocumentReference</Term>
-                    <Name>Attached item specifications</Name>
+                    <Name>ATTACHED ITEM SPECIFICATION</Name>
                     <Description>Attachments can be sent on line level in the Catalogue. This can be images or additional
                         descriptions of a product. It is strongly recommended to use external references in the form of URI's for attachments.</Description>
                     <Property key="doc">structure/docs/ItemSpecificationDocumentReference.adoc</Property>
@@ -1148,7 +1144,7 @@
 
                     <Element cardinality="0..1">
                         <Term>cac:Attachment</Term>
-                        <Name>Attachment</Name>
+                        <Name>ATTACHMENT</Name>
 
                         <Element cardinality="0..1">
                             <Term>cbc:EmbeddedDocumentBinaryObject</Term>
@@ -1172,7 +1168,7 @@
 
                         <Element cardinality="0..1">
                             <Term>cac:ExternalReference</Term>
-                            <Name>External reference</Name>
+                            <Name>EXTERNAL REFERENCE</Name>
 
                             <Element cardinality="0..1">
                                 <Term>cbc:URI</Term>
@@ -1189,7 +1185,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:OriginCountry</Term>
-                    <Name>Origin country</Name>
+                    <Name>ORIGIN COUNTRY</Name>
 
                     <Element cardinality="0..1">
                         <Term>cbc:IdentificationCode</Term>
@@ -1206,7 +1202,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:TransactionConditions</Term>
-                    <Name>Transaction conditions</Name>
+                    <Name>TRANSACTION CONDITIONS</Name>
 
                     <Element cardinality="0..1">
                         <Term>cbc:ActionCode</Term>
@@ -1231,7 +1227,7 @@
 
                 <Element cardinality="0..n">
                     <Term>cac:HazardousItem</Term>
-                    <Name>Hazardous item</Name>
+                    <Name>HAZARDOUS ITEM</Name>
 
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
@@ -1257,7 +1253,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:ClassifiedTaxCategory</Term>
-                    <Name>Classified tax category</Name>
+                    <Name>CLASSIFIED TAX CATEGORY</Name>
                     <Description>VAT information</Description>
                     <Property key="doc">structure/docs/ClassifiedTaxCategory.adoc</Property>
 
@@ -1285,7 +1281,7 @@
 
                     <Element>
                         <Term>cac:TaxScheme</Term>
-                        <Name>Tax scheme</Name>
+                        <Name>TAX SCHEME</Name>
 
                         <Element>
                             <Term>cbc:ID</Term>
@@ -1298,7 +1294,7 @@
 
                 <Element cardinality="0..n">
                     <Term>cac:AdditionalItemProperty</Term>
-                    <Name>Additional item property</Name>
+                    <Name>ADDITIONAL ITEM PROPERTY</Name>
                     <Description>Additional properties are meant for product properties that cannot be sent in any of the defined elements in PreAward Catalogue. Additional properties consist of the Name of the property and the actual Value.</Description>
                     <Property key="doc">structure/docs/AdditionalItemProperty.adoc</Property>
 
@@ -1370,11 +1366,11 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:ManufacturerParty</Term>
-                    <Name>Manufacturer party</Name>
+                    <Name>MANUFACTURER PARTY</Name>
 
                     <Element>
                         <Term>cac:PartyName</Term>
-                        <Name>Party name</Name>
+                        <Name>PARTY NAME</Name>
 
                         <Element>
                             <Term>cbc:Name</Term>
@@ -1387,7 +1383,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cac:ItemInstance</Term>
-                    <Name>Item instance</Name>
+                    <Name>ITEM INSTANCE</Name>
                     <Description>A trackable, unique instantiation of this item.</Description>
 
                     <Element cardinality="0..1">
@@ -1404,7 +1400,7 @@
 
                 <Element cardinality="0..n">
                     <Term>cac:Certificate</Term>
-                    <Name>Item means of proof</Name>
+                    <Name>ITEM MEANS OF PROOF</Name>
                     <Description>Answer and attachments (if any) to functional requirement on a requested item in the pre award catalogue request. This has to be proven by a specification, label, test report
                         or any other means of proof according to the Directives 2014/24/EU.</Description>
                     <!-- <Description>A means of proof according to the Directives 2014/24/EU or other accepted proofs.</Description> -->
@@ -1454,12 +1450,12 @@
 
                     <Element>
                         <Term>cac:IssuerParty</Term>
-                        <Name>Item means of proof issuer party</Name>
+                        <Name>ITEM MEANS OF PROOF ISSUER PARTY</Name>
                         <Description>The party issuing the means of proof for the item. E.g., the organisation that issues a label or test reports, etc.</Description>
 
                         <Element>
                             <Term>cac:PartyName</Term>
-                            <Name>Party name</Name>
+                            <Name>PARTY NAME</Name>
                             <DataType>Text</DataType>
 
                             <Element>
@@ -1474,7 +1470,7 @@
 
                     <Element cardinality="0..n">
                         <Term>cac:DocumentReference</Term>
-                        <Name>Document reference</Name>
+                        <Name>DOCUMENT REFERENCE</Name>
                         <!--<Description>
                             This element is bound to two different business terms:
                             Item means of proof reference or Item requirement reference.
@@ -1536,11 +1532,11 @@
 
                         <Element cardinality="0..1">
                             <Term>cac:Attachment</Term>
-                            <Name>Attachment</Name>
+                            <Name>ATTACHMENT</Name>
                             
                             <Element cardinality="0..1">
                                 <Term>cac:ExternalReference</Term>
-                                <Name>External reference</Name>
+                                <Name>EXTERNAL REFERENCE</Name>
                                 
                                 <Element cardinality="0..1">
                                     <Term>cbc:URI</Term>
@@ -1557,7 +1553,7 @@
 
                 <Element cardinality="0..n">
                     <Term>cac:Dimension</Term>
-                    <Name>Handling unit dimensions</Name>
+                    <Name>HANDLING UNIT DIMENSIONS</Name>
                     <Description>The element is used for describing the various dimensions of the handling
                         unit. The element cbc:AttributeID is used to define which dimension is
                         described by the dimension element. The following mapping applies for the
@@ -1657,7 +1653,7 @@
 
             <Element cardinality="0..1">
                 <Term>cac:CallForTendersLineReference</Term>
-                <Name>Call for Tenders line reference</Name>
+                <Name>CALL FOR TENDERS LINE REFERENCE</Name>
                 <Description>Reference to a Line on a Call For Tenders document.</Description>
                 <Property key="doc">structure/docs/CallForTendersLineReference.adoc</Property>
 
