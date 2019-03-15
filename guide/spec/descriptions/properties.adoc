@@ -1,0 +1,53 @@
+= Additional Item Properties
+
+Additional properties are meant for product properties that cannot be sent in any of the defined elements in Pre-Award Catalogue. Additional properties consist of the Name of the property and the actual Value.
+
+.Example of additional properties:
+* Color
+* Allergens +
+Legal values: YES, NO, UNKNOWN, FREE.
+* Nutrition +
+Stated with amount per 100 g/ml.
+* Genetically modified +
+Legal values: True, False
+
+.Example of use in the Pre-Award Catalogue message
+====
+
+[source, xml, indent=0]
+----
+<cac:AdditionalItemProperty>
+  <cbc:Name>Color</cbc:Name>
+  <cbc:Value>Red</cbc:Value>
+  <cbc:ValueQualifier>Color</cbc:ValueQualifier>
+</cac:AdditionalItemProperty>
+----
+
+[source, xml, indent=0]
+----
+<cac:AdditionalItemProperty>
+  <cbc:Name>NutritionProtein</cbc:Name>
+  <cbc:ValueQuantity unitCode="GRM">2.5</cbc:ValueQuantity>
+  <cbc:ValueQualifier>Nutrition</cbc:ValueQualifier>
+</cac:AdditionalItemProperty>
+----
+
+[source, xml, indent=0]
+----
+<cac:AdditionalItemProperty>
+    <cbc:Name>Allergens</cbc:Name>
+    <cbc:NameCode listID="CodeListID">Allergens</cbc:NameCode>
+    <cbc:Value>Item contains 5% hazelnuts by volume.</cbc:Value>
+    <cbc:ValueQuantity unitCode="60">5</cbc:ValueQuantity>
+    <cbc:ValueQualifier>HAZELNUTS</cbc:ValueQualifier>
+</cac:AdditionalItemProperty>
+----
+
+[source, xml, indent=0]
+----
+<cac:AdditionalItemProperty>
+  <cbc:Name>GeneticallyModified</cbc:Name>
+  <cbc:Value>True</cbc:Value>
+</cac:AdditionalItemProperty>
+----
+====

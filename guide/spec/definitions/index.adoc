@@ -23,6 +23,12 @@ The party that sends the catalogue.
 Catalogue receiver::
 The party that receives the catalogue.
 
+Contracting authority (CA)::
+The contracting authority or contracting entity who is buying supplies, services or tendering works.
+
+Economic operator (EO)::
+Party participating with a tender in a procurement process to sell goods, services or works.
+
 Supplier::
 The supplier is the legal person or organization who provides a product, service or works. Examples of supplier roles are seller, consignor, creditor and economic operator.
 

@@ -1,0 +1,36 @@
+= Attachments
+
+Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended to use external references in the form of URI’s for attachments.
+
+If binary objects are attached to the Pre-Award Catalogue, the valid values for mimetype can be found in codelist.
+
+
+.Example of using external reference
+[source, xml, indent=0]
+----
+<cac:Item>
+  ...
+  <cac:ItemSpecificationDocumentReference>
+    <cbc:ID>LK8788</cbc:ID>
+    <cbc:DocumentDescription>Product image</cbc:DocumentDescription>
+    <cac:Attachment>
+      <cac:ExternalReference>
+        <cbc:URI>http://img.trioving.net/Låskasser/LK8788_PRD_FPM_000.JPG</cbc:URI>
+      </cac:ExternalReference>
+    </cac:Attachment>
+  </cac:ItemSpecificationDocumentReference>
+  ...
+</cac:Item>
+----
+
+[source, xml, indent=0]
+.Example of using attached binary objects
+----
+<cac:ItemSpecificationDocumentReference>
+    <cbc:ID>2384-34232-342-34-2333</cbc:ID>
+    <cac:Attachment>
+        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specification.pdf"
+            >ZGVmYXVsdA==</cbc:EmbeddedDocumentBinaryObject>
+    </cac:Attachment>
+</cac:ItemSpecificationDocumentReference>
+----

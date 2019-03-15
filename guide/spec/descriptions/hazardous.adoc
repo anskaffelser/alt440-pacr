@@ -1,0 +1,26 @@
+= Hazardous Item
+
+If a product is classified as Hazardous item, a reference to the relevant UNDG-code shall be stated and further specification shall be provided in an attached document or on a web-site (URI).
+
+.Example of UNDG code
+[source, xml, indent=0]
+----
+<cac:HazardousItem>
+    <cbc:ID>0024</cbc:ID>
+    <cbc:UNDGCode>ADR</cbc:UNDGCode>
+</cac:HazardousItem>
+----
+
+.Example of attachement with further specification
+[source, xml, indent=0]
+----
+<cac:ItemSpecificationDocumentReference>
+    <cbc:ID>1</cbc:ID>
+    <cbc:DocumentDescription>HMS Safety sheet</cbc:DocumentDescription>
+    <cac:Attachment>
+        <cac:ExternalReference>
+            <cbc:URI>http://www.klif.no/no/Tema/Kjemikalier/Klassifisering-og-merking-av-kjemikalier-CLP/Klassifisering-CLP-avsnitt-I-II-og-V/</cbc:URI>
+        </cac:ExternalReference>
+    </cac:Attachment>
+</cac:ItemSpecificationDocumentReference>
+----

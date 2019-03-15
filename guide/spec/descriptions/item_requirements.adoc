@@ -1,0 +1,37 @@
+
+= Environment, Social Responsibility and Ecological requirements
+
+Public actors may have special green, social or innovative requirements to the works, supplies or services they intend to purchase, and they might ask for labels, test reports, certificates or other means of proof for these requirements.
+
+IMPORTANT: Contracting authorities requiring a specific label shall accept all labels that confirm that the works, supplies or services meet *equivalent* label requirements.
+
+These requirements are sent in the element `cac:Certificate` in the pre award catalogue request, and the economic operator sends their answer and attachments (if any), in the `cac:Certificate`-element in the pre award catalogue.
+
+The `cac:Certificate` contains detailed information on the requirement(s), if the requirement is absolute or an award criteria. In addition, the type of evidence (means of proof) that can be used is stated as well.
+
+
+.Example of a green requirement in a Pre-Award Catalogue request message.
+[source, xml, indent=0]
+----
+<cac:Certificate>
+    <cbc:ID>1</cbc:ID>
+    <cbc:DocumentTypeCode>Energy consumption</cbc:DocumentTypeCode> <1>
+    <cbc:DocumentType>Total energy consumption of the computer.</cbc:DocumentType> <2>
+    <cbc:Remarks>Absolute</cbc:Remarks> <3>
+    <cac:IssuerParty>
+        <cac:PartyName>
+            <cbc:Name>NA</cbc:Name>
+        </cac:PartyName>
+    </cac:IssuerParty>
+    <cac:DocumentReference>
+        <cbc:ID>1</cbc:ID>
+        <cbc:CertificateTypeCode>Type 1</cbc:CertificateTypeCode> <4>
+        <cbc:CertificateType>Green requirement</cbc:CertificateType> <5>
+    </cac:DocumentReference>
+</cac:Certificate>
+----
+<1> Main level requirement
+<2> Specific requirement
+<3> The requirement is absolute.
+<4> A Type 1 certificate is asked for as means of proof
+<5> Green requirement
