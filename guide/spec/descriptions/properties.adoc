@@ -36,7 +36,7 @@ Legal values: True, False
 ----
 <cac:AdditionalItemProperty>
     <cbc:Name>Allergens</cbc:Name>
-    <cbc:NameCode listID="CodeListID">Allergens</cbc:NameCode>
+    <cbc:NameCode>Allergens</cbc:NameCode>
     <cbc:Value>Item contains 5% hazelnuts by volume.</cbc:Value>
     <cbc:ValueQuantity unitCode="60">5</cbc:ValueQuantity>
     <cbc:ValueQualifier>HAZELNUTS</cbc:ValueQualifier>

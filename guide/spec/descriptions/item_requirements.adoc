@@ -1,5 +1,5 @@
 
-= Environment, Social Responsibility and Ecological requirements
+= Environment, Social and Innovative requirements
 
 Public actors may have special green, social or innovative requirements to the works, supplies or services they intend to purchase, and they might ask for labels, test reports, certificates or other means of proof for these requirements.
 
@@ -10,13 +10,14 @@ These requirements are sent in the element `cac:Certificate` in the pre award ca
 The `cac:Certificate` contains detailed information on the requirement(s), if the requirement is absolute or an award criteria. In addition, the type of evidence (means of proof) that can be used is stated as well.
 
 
-.Example of a green requirement in a Pre-Award Catalogue request message.
+
+.Example showing a requirement to fulfill the EU GPP energy criteria for computers, and stating that a Type 1 (or equivalent) certificate can be used as means of proof.
 [source, xml, indent=0]
 ----
 <cac:Certificate>
     <cbc:ID>1</cbc:ID>
-    <cbc:DocumentTypeCode>Energy consumption</cbc:DocumentTypeCode> <1>
-    <cbc:DocumentType>Total energy consumption of the computer.</cbc:DocumentType> <2>
+    <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode> <1>
+    <cbc:CertificateType>EU GPP Criteria - Minimum energy performance of the computer.</cbc:CertificateType> <2>
     <cbc:Remarks>Absolute</cbc:Remarks> <3>
     <cac:IssuerParty>
         <cac:PartyName>
@@ -25,13 +26,95 @@ The `cac:Certificate` contains detailed information on the requirement(s), if th
     </cac:IssuerParty>
     <cac:DocumentReference>
         <cbc:ID>1</cbc:ID>
-        <cbc:CertificateTypeCode>Type 1</cbc:CertificateTypeCode> <4>
-        <cbc:CertificateType>Green requirement</cbc:CertificateType> <5>
+        <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode> <4>
+        <cbc:DocumentType>Green</cbc:DocumentType> <5>
+        <cac:Attachment>
+            <cac:ExternalReference>
+                <cbc:URI>http://www.eu-energystar.org/specifications.htm</cbc:URI> <6>
+            </cac:ExternalReference>
+        </cac:Attachment>
     </cac:DocumentReference>
 </cac:Certificate>
 ----
 <1> Main level requirement
 <2> Specific requirement
 <3> The requirement is absolute.
-<4> A Type 1 certificate is asked for as means of proof
+<4> A Type 1 certificate is asked for as the means of proof level
 <5> Green requirement
+<6> Reference to the specification of the suggested means of proof.
+
+
+.Example showing a response to this requirement in the pre-award catalogue, providing another type of proof then what is mentioned in the request.
+[source, xml, indent=0]
+----
+<cac:Certificate>
+    <cbc:ID>1</cbc:ID><1>
+    <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode> <2>
+    <cbc:CertificateType>EU GPP Criteria - Minimum energy performance of the computer.</cbc:CertificateType> <3>
+    <cac:IssuerParty>
+        <cac:PartyName>
+            <cbc:Name>NA</cbc:Name>
+        </cac:PartyName>
+    </cac:IssuerParty>
+    <cac:DocumentReference>
+        <cbc:ID>1</cbc:ID>
+        <cbc:DocumentTypeCode>TestReport</cbc:DocumentTypeCode> <4>
+        <cbc:DocumentType>EU Energy Star</cbc:DocumentType> <5>
+        <cbc:DocumentDescription>Registered in Energy Star database</cbc:DocumentDescription><6>
+        <cac:Attachment>
+            <cac:ExternalReference>
+                <cbc:URI>http://www.eu-energystar.org/database-register.htm</cbc:URI> <7>
+            </cac:ExternalReference>
+        </cac:Attachment>
+    </cac:DocumentReference>
+</cac:Certificate>
+----
+<1> The identifier must be the same as what was sent in the request.
+<2> References to the general requirement as sent in the request
+<3> Reference to the specific requirement as sent in the request
+<4> Means of proof level provided
+<5> Specific means of proof details
+<6> Description of the means of proof
+<7> Link to the database for registration.
+
+
+== Life cycle analysis (LCA)
+
+Below you can find two examples on how to state requirements on LCA
+
+[source, xml, indent=0]
+----
+<cac:Certificate>
+              <cbc:ID>1</cbc:ID>
+              <cbc:CertificateTypeCode>Climate change (GWP)</cbc:CertificateTypeCode>
+              <cbc:CertificateType>Max 4 (kg C02-e)/liter</cbc:CertificateType>
+              <cbc:Remarks>Absolute</cbc:Remarks>
+              <cac:IssuerParty>
+                  <cac:PartyName>
+                      <cbc:Name>X</cbc:Name>
+                  </cac:PartyName>
+              </cac:IssuerParty>
+              <cac:DocumentReference>
+                  <cbc:ID>1</cbc:ID>
+                  <cbc:DocumentTypeCode>Type 3</cbc:DocumentTypeCode>
+                  <cbc:DocumentType>Green</cbc:DocumentType>
+              </cac:DocumentReference>
+          </cac:Certificate>
+
+          <cac:Certificate>
+              <cbc:ID>2</cbc:ID>
+              <cbc:CertificateTypeCode>Land system change</cbc:CertificateTypeCode>
+              <cbc:CertificateType>(m2-years agr)/liter</cbc:CertificateType>
+              <cbc:Remarks>Award</cbc:Remarks>
+              <cac:IssuerParty>
+                  <cac:PartyName>
+                      <cbc:Name>X</cbc:Name>
+                  </cac:PartyName>
+              </cac:IssuerParty>
+              <cac:DocumentReference>
+                  <cbc:ID>1</cbc:ID>
+                  <cbc:DocumentTypeCode>Other</cbc:DocumentTypeCode>
+                  <cbc:DocumentType>Green</cbc:DocumentType>
+              </cac:DocumentReference>
+          </cac:Certificate>
+----

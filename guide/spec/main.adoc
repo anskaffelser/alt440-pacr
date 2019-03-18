@@ -29,7 +29,7 @@ include::requirements/index.adoc[]
 
 include::model/index.adoc[]
 
-include::descriptions/detailed-descriptions.adoc[]
+include::descriptions/index.adoc[]
 
 //include::bindings/index.adoc[]
 
