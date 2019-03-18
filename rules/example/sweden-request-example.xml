@@ -30,7 +30,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>EPD</cbc:DocumentTypeCode> <!-- EPD = TYPE 3 -->
+                    <cbc:DocumentTypeCode>Type3</cbc:DocumentTypeCode> <!-- EPD = TYPE 3 -->
                     <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
@@ -47,7 +47,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
+                    <cbc:DocumentTypeCode>Other</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
@@ -64,7 +64,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>EPD</cbc:DocumentTypeCode> <!-- EPD = TYPE 3 -->
+                    <cbc:DocumentTypeCode>Type3</cbc:DocumentTypeCode> <!-- EPD = TYPE 3 -->
                     <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
@@ -81,7 +81,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
+                    <cbc:DocumentTypeCode>Other</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
@@ -98,7 +98,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>EPD</cbc:DocumentTypeCode> <!-- EPD = TYPE 3 -->
+                    <cbc:DocumentTypeCode>Type3</cbc:DocumentTypeCode> <!-- EPD = TYPE 3 -->
                     <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
@@ -115,7 +115,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
+                    <cbc:DocumentTypeCode>Other</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
@@ -132,7 +132,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
+                    <cbc:DocumentTypeCode>Other</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
@@ -149,7 +149,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
+                    <cbc:DocumentTypeCode>Other</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
@@ -166,7 +166,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Y</cbc:DocumentTypeCode>
+                    <cbc:DocumentTypeCode>Other</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Green</cbc:DocumentType>
                 </cac:DocumentReference>
             </cac:Certificate>
