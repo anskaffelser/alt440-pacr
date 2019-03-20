@@ -4,7 +4,7 @@ This chapter describes selected parts of the information contents of the EHF Pre
 
 == Information found in both transactions
 
-:leveloffset: +1
+:leveloffset: +2
 
 include::roles.adoc[]
 
@@ -20,9 +20,11 @@ include::item-requirements.adoc[]
 
 include::vat-info.adoc[]
 
-:leveloffset: -1
+:leveloffset: -2
 
 == Information specific to the pre-award catalogue
+
+:leveloffset: +2
 
 include::related-products.adoc[]
 
@@ -34,4 +36,4 @@ include::hazardous.adoc[]
 
 include::keywords.adoc[]
 
-:leveloffset: -1
+:leveloffset: -2

@@ -7,7 +7,7 @@ v{revision}
 :icons: font
 :stem:
 :toc: left
-:toclevels: 2
+:toclevels: 3
 :source-highlighter: coderay
 :source-language: xml
 :sectanchors:
