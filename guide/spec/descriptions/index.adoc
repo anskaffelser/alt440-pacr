@@ -2,8 +2,9 @@
 
 This chapter describes selected parts of the information contents of the EHF Pre-Award Catalogue and EHF Pre-Award Catalogue Request.
 
-:leveloffset: +1
+== Information found in both transactions
 
+:leveloffset: +1
 
 include::roles.adoc[]
 
@@ -18,6 +19,8 @@ include::properties.adoc[]
 include::item-requirements.adoc[]
 
 include::vat-info.adoc[]
+
+:leveloffset: -1
 
 == Information specific to the pre-award catalogue
 
