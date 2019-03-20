@@ -1,6 +1,8 @@
 = Validity Period
 
-In the Pre-Award the following validity periods can be stated:
+In the catalogue request the contracting authority can state the requested delivery period for an item by using the element 'cac:LineValidityPeriod'.
+
+In the Pre-Award Catalogue the following validity periods can be stated:
 
 * Validity period on document level (mandatory), used to state the validity period for the entire Pre-Award Catalogue.
 * Validity period for a catalogue line

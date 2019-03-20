@@ -1,9 +1,8 @@
 = VAT
 
-VAT information on line level is provided in the class `cac:ClassifiedTaxCategory`.
+VAT information on line level is provided in the class `cac:ClassifiedTaxCategory` in both the pre-award catalogue request and the pre-award catalogue.
 
-VAT information is optional in the Pre-Award Catalogue. Catalogue receivers may require VAT-information in the Pre-Award Catalogue.
-
+VAT information is optional in both transactions, but if the contracting authority has sent VAT info in the pre-award catalogue request, the economic operator should provide this information in the corresponding pre-award catalogue. 
 
 .Example of using VAT.
 [source, xml, indent=0]

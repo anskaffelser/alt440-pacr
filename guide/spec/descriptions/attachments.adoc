@@ -1,11 +1,15 @@
 = Attachments
 
-Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended to use external references in the form of URI’s for attachments.
+Attachments can be sent on line level in the pre award catalogue request, to add further item specifications. In the request no binary attachments are allowed, only providing external uri to the document, and also the possibility to add information on hash-value.
 
-If binary objects are attached to the Pre-Award Catalogue, the valid values for mimetype can be found in codelist.
+In the pre-award catalogue additional specifications or product images can be sent. In both the request and the catalogue, the element used is `cac:ItemSpecificationDocumentReference`
+
+====
+IMPORTANT: It is strongly recommended to use external references in the form of URI’s for attachments.
+====
 
 
-.Example of using external reference
+.Example of using external reference in the pre-award catalogue
 [source, xml, indent=0]
 ----
 <cac:Item>
@@ -22,6 +26,8 @@ If binary objects are attached to the Pre-Award Catalogue, the valid values for 
   ...
 </cac:Item>
 ----
+
+If binary objects are attached to the Pre-Award Catalogue, the valid values for mimetype can be found in codelist.
 
 [source, xml, indent=0]
 .Example of using attached binary objects

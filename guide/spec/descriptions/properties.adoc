@@ -1,37 +1,74 @@
-= Additional Item Properties
+= Requested Item Properties
 
-Additional properties are meant for product properties that cannot be sent in any of the defined elements in Pre-Award Catalogue. Additional properties consist of the Name of the property and the actual Value.
+Requested item properties, like a specific colour of an item, can be sent in the element `cac:AdditionalItemProperty`. This element can contain information on requested property name, quantity, range, classification and request relevance, i.e if the property request is mandatory, optional, forbidden or for information. If the relevance code is set to mandatory, information on that property shall be included in the corresponding pre-award catalogue, using the identifier as sent in the request, if code is forbidden this cannot be a property of the item, and hence its value shall not be sent in the catalogue.
 
-.Example of additional properties:
-* Color
-* Allergens +
-Legal values: YES, NO, UNKNOWN, FREE.
-* Nutrition +
-Stated with amount per 100 g/ml.
-* Genetically modified +
-Legal values: True, False
-
-.Example of use in the Pre-Award Catalogue message
-====
-
+.Example to request a specific proportion of fat in milk
 [source, xml, indent=0]
 ----
 <cac:AdditionalItemProperty>
-  <cbc:Name>Color</cbc:Name>
-  <cbc:Value>Red</cbc:Value>
-  <cbc:ValueQualifier>Color</cbc:ValueQualifier>
+  <cbc:ID>1</cbc:ID>
+  <cbc:Name>Fat</cbc:Name>
+  <cbc:ValueQuantiy unitCode="P1">3</cbc:ValueQuantity>
+  <cbc:ValueQualifier>Proportion of fat</cbc:ValueQualifier>
+  <cbc:ImportanceCode>M</cbc:ImportanceCode>
 </cac:AdditionalItemProperty>
 ----
 
+.Example to request a specific range of item net quantity
 [source, xml, indent=0]
 ----
 <cac:AdditionalItemProperty>
+  <cbc:ID>2</cbc:ID>
+  <cbc:Name>Item net quantity</cbc:Name>
+  <cac:ItemPropertyRange>
+      <cbc:MinimumValue>1 liter</cbc:MinimumValue>
+      <cbc:MaximumValue>1,75 liters</cbc:MaximumValue>
+  </cac:ItemPropertyRange>
+  <cbc:ImportanceCode>O</cbc:ImportanceCode>
+</cac:AdditionalItemProperty>
+----
+
+
+
+= Additional Item Properties
+Additional properties are meant to send information on item properties, and all properties that is corresponding to a requested item property from the pre-award catalogue request, shall use the identifier and name as sent in the request.
+Additional item properties are sent in the element `cac:AdditionalItemProperty`.
+
+.Example of a pre-award catalogue property as a response to the requested property of 3% fat in milk (as in the above chapter)
+[source, xml, indent=0]
+----
+<cac:AdditionalItemProperty>
+  <cbc:ID>1</cbc:ID>
+  <cbc:Name>Fat</cbc:Name>
+  <cbc:ValueQuantiy unitCode="P1">3</cbc:ValueQuantity>
+  <cbc:ValueQualifier>Proportion of fat</cbc:ValueQualifier>
+</cac:AdditionalItemProperty>
+----
+
+.Example of a pre-award catalogue property as a response to the requested minimum and maximum range of the net quantity (as in the above chapter)
+[source, xml, indent=0]
+----
+<cac:AdditionalItemProperty>
+  <cbc:ID>2</cbc:ID>
+  <cbc:Name>Item net quantity</cbc:Name>
+  <cbc:ValueQuantiy unitCode="LTR">1.5</cbc:ValueQuantity>
+</cac:AdditionalItemProperty>
+----
+
+== Other examples of additional properties in a pre-award catalogue
+====
+.Nutrition
+[source, xml, indent=0]
+----
+<cac:AdditionalItemProperty>
+  <cbc:ID>1</cbc:ID>
   <cbc:Name>NutritionProtein</cbc:Name>
   <cbc:ValueQuantity unitCode="GRM">2.5</cbc:ValueQuantity>
   <cbc:ValueQualifier>Nutrition</cbc:ValueQualifier>
 </cac:AdditionalItemProperty>
 ----
 
+.Allergens
 [source, xml, indent=0]
 ----
 <cac:AdditionalItemProperty>
@@ -43,6 +80,7 @@ Legal values: True, False
 </cac:AdditionalItemProperty>
 ----
 
+.Genetically modified
 [source, xml, indent=0]
 ----
 <cac:AdditionalItemProperty>

@@ -1,6 +1,29 @@
 = Prices
 
-All prices in the format are related to the article or service within this Pre-Award Catalogue. The following prices can be stated:
+
+In the pre-award catalogue request the contracting authority can specify the minimum and maximum price, using the element `cac:RequiredItemLocationQuantity/cac:Price`. The prices can be specific for a location, meaning different locations can have different minimum and maximum prices.
+
+.UBL example requesting both a minimum and a maximum price
+[source, xml, indent=0]
+----
+<cac:RequiredItemLocationQuantity>
+    <cac:Price>
+        <cbc:PriceAmount currencyID="NOK">5000</cbc:PriceAmount>
+        <cbc:PriceTypeCode>NE</cbc:PriceTypeCode> <1>
+    </cac:Price>
+</cac:RequiredItemLocationQuantity>
+<cac:RequiredItemLocationQuantity>
+    <cac:Price>
+        <cbc:PriceAmount currencyID="NOK">2500</cbc:PriceAmount>
+        <cbc:PriceTypeCode>ABG</cbc:PriceTypeCode> <2>
+    </cac:Price>
+</cac:RequiredItemLocationQuantity>
+----
+<1> Code *NE* to indicate maximum prices
+<2> Code *ABG* to indicate minimum prices
+
+
+In the corresponding pre-award catalogue the following prices can be stated:
 
 * Item price is net price including all discounts and charges but excluded Vat.
 * Item comparison unit price defining price for a certain quantity. Used for comparing prices for different articles with various quantities.
@@ -9,7 +32,7 @@ All prices in the format are related to the article or service within this Pre-A
 
 Be aware that no Gross prices can be sent in the format (price before discount and charges). All prices shall have Currency as an attribute. Currency shall be according to Code list.
 
-Example of Prices in Pre-Award Catalogue:
+Example of prices in Pre-Award Catalogue:
 
 
 .Item Price
@@ -17,11 +40,7 @@ Example of Prices in Pre-Award Catalogue:
 ----
 <cac:RequiredItemLocationQuantity>
   <cac:Price>
-    <cbc:PriceAmount currencyID="NOK">100.00</cbc:PriceAmount>
-    <cac:ValidityPeriod>
-      <cbc:StartDate>2012-04-26</cbc:StartDate>
-      <cbc:EndDate>2012-05-26</cbc:EndDate>
-    </cac:ValidityPeriod>
+    <cbc:PriceAmount currencyID="NOK">3000.00</cbc:PriceAmount>
   </cac:Price>
 <cac:RequiredItemLocationQuantity>
 ----
@@ -31,8 +50,8 @@ Example of Prices in Pre-Award Catalogue:
 [source, xml, indent=0]
 ----
 <cac:ItemComparision>
-  <cbc:PriceAmount currencyID="NOK">100.00</cbc:PriceAmount>
-  <cbc:Quantity unitCode="EA">1</cbc:Quantity>
+  <cbc:PriceAmount currencyID="NOK">270.00</cbc:PriceAmount>
+  <cbc:Quantity unitCode="EA">10</cbc:Quantity>
 </cac:ItemComparision>
 ----
 
@@ -42,12 +61,8 @@ Example of Prices in Pre-Award Catalogue:
 ----
 <cac:RequiredItemLocationQuantity>
   <cac:Price>
-    <cbc:PriceAmount currencyID="NOK">75.00</cbc:PriceAmount>
+    <cbc:PriceAmount currencyID="NOK">29.00</cbc:PriceAmount>
     <cbc:BaseQuantity unitCode="EA">100</cbc:BaseQuantity>
-    <cac:ValidityPeriod>
-      <cbc:StartDate>2012-04-26</cbc:StartDate>
-      <cbc:EndDate>2012-05-26</cbc:EndDate>
-    </cac:ValidityPeriod>
   </cac:Price>
 <cac:RequiredItemLocationQuantity>
 ----
