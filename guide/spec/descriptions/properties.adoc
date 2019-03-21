@@ -52,7 +52,7 @@ Additional item properties are sent in the element `cac:AdditionalItemProperty`.
 <cac:CatalogueLine>
     <cbc:ID>1</cbc:ID>
     <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
-    <cbc:OrderableUnit>LTR</cbc:OrderableUnit>
+    <cbc:OrderableUnit>XCT</cbc:OrderableUnit>
     <cbc:ContentUnitQuantity unitCode="LTR">1.50</cbc:ContentUnitQuantity> <1>
     ...
 ----
