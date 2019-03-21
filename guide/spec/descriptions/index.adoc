@@ -16,7 +16,7 @@ include::prices.adoc[]
 
 include::properties.adoc[]
 
-include::item-requirements.adoc[]
+include::item_requirements.adoc[]
 
 include::vat-info.adoc[]
 
