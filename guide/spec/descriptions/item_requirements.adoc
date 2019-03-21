@@ -26,7 +26,7 @@ The `cac:Certificate` contains detailed information on the requirement(s), if th
     </cac:IssuerParty>
     <cac:DocumentReference>
         <cbc:ID>1</cbc:ID>
-        <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode> <4>
+        <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode> <4>
         <cbc:DocumentType>Green</cbc:DocumentType> <5>
         <cac:Attachment>
             <cac:ExternalReference>
@@ -96,7 +96,7 @@ Below you can find two examples on how to state requirements on LCA
     </cac:IssuerParty>
     <cac:DocumentReference>
       <cbc:ID>1</cbc:ID>
-      <cbc:DocumentTypeCode>Type 3</cbc:DocumentTypeCode>
+      <cbc:DocumentTypeCode>Type3</cbc:DocumentTypeCode>
       <cbc:DocumentType>Green</cbc:DocumentType>
     </cac:DocumentReference>
 </cac:Certificate>
