@@ -37,6 +37,7 @@ Example of validity periods in a Pre-Award Catalogue:
 <cac:RequiredItemLocationQuantity>
   <cac:Price>
     <cbc:PriceAmount currencyID="NOK">75.00</cbc:PriceAmount>
+    <cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
     <cac:ValidityPeriod>
       <cbc:StartDate>2018-04-01</cbc:StartDate>
       <cbc:EndDate>2018-04-30</cbc:EndDate>

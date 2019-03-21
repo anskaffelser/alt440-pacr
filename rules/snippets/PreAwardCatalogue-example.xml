@@ -276,9 +276,8 @@
             <!-- tag::AdditionalItemProperty[] -->
             <cac:AdditionalItemProperty>
                 <cbc:ID>1</cbc:ID>
-                <cbc:Name>Blue pen</cbc:Name>
-                <cbc:NameCode>PROP</cbc:NameCode>
-                <cbc:Value>Blue design</cbc:Value>
+                <cbc:Name>Pen</cbc:Name>
+                <cbc:Value>Blue</cbc:Value>
                 <cbc:ValueQuantity unitCode="C62">20</cbc:ValueQuantity>
                 <cbc:ValueQualifier>Blue</cbc:ValueQualifier>
             </cac:AdditionalItemProperty>
@@ -306,7 +305,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode>
+                    <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Green</cbc:DocumentType>
                     <cac:Attachment>
                         <cac:ExternalReference>

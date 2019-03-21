@@ -22,22 +22,22 @@ Below is an example of Logistics information in a Pre-Award Catalogue message.
 [source, xml, indent=0]
 ----
 <cac:CatalogueLine>
-		<cbc:ID>1</cbc:ID>
-		<cbc:OrderableIndicator>false</cbc:OrderableIndicator>
-		<cbc:PackLevelCode>DU</cbc:PackLevelCode>
-		<cac:ComponentRelatedItem>
-			<cbc:ID>222222</cbc:ID> <!--1-->
-			<cbc:Quantity unitCode="EA">12</cbc:Quantity> <!--2-->
-		</cac:ComponentRelatedItem>
-		<cac:Item>
-			<cbc:Description>Soft drink, pallet</cbc:Description>
-			<cbc:PackQuantity unitCode="EA">1</cbc:PackQuantity>
-			<cbc:Name languageID="en">Soft drink</cbc:Name>
-			<cac:SellersItemIdentification>
-				<cbc:ID>111111</cbc:ID>
-			</cac:SellersItemIdentification>
-		</cac:Item>
-	</cac:CatalogueLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:OrderableIndicator>false</cbc:OrderableIndicator>
+    <cbc:PackLevelCode>DU</cbc:PackLevelCode>
+    <cac:ComponentRelatedItem>
+        <cbc:ID>222222</cbc:ID> <!--1-->
+        <cbc:Quantity unitCode="EA">12</cbc:Quantity> <!--2-->
+    </cac:ComponentRelatedItem>
+    <cac:Item>
+        <cbc:Description>Soft drink, pallet</cbc:Description>
+        <cbc:PackQuantity unitCode="EA">1</cbc:PackQuantity>
+        <cbc:Name languageID="en">Soft drink</cbc:Name>
+        <cac:SellersItemIdentification>
+            <cbc:ID>111111</cbc:ID>
+        </cac:SellersItemIdentification>
+    </cac:Item>
+</cac:CatalogueLine>
 ----
 <1>  References the sellers item identification for the component line
 <2>  Quantity of that component (each dispatch unit contains 12 traded units)

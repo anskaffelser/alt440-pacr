@@ -136,13 +136,12 @@
         <cac:AdditionalItemProperty>
             <cbc:ID>1</cbc:ID>
             <cbc:Name>Allergens</cbc:Name>
-            <cbc:NameCode>INFO</cbc:NameCode>
             <cbc:Value>Milk contains 1% lactose per litre.</cbc:Value>
             <cbc:ValueQuantity unitCode="60">1</cbc:ValueQuantity>
             <cbc:ValueQualifier>Lactose</cbc:ValueQualifier>
             <cbc:ImportanceCode>M</cbc:ImportanceCode>
             <cac:ItemPropertyGroup>
-                <cbc:ID>111</cbc:ID>
+                <cbc:ID>0173-1#07-WDA055#004</cbc:ID>
                 <cbc:Name>Milk</cbc:Name>
                 <cbc:ImportanceCode>M</cbc:ImportanceCode>
             </cac:ItemPropertyGroup>
@@ -164,7 +163,7 @@
             </cac:IssuerParty>
             <cac:DocumentReference>
                 <cbc:ID>1</cbc:ID>
-                <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode>
+                <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
                 <cbc:DocumentType>Green</cbc:DocumentType>
                 <cac:Attachment>
                     <cac:ExternalReference>
@@ -186,7 +185,7 @@
             </cac:IssuerParty>
             <cac:DocumentReference>
                 <cbc:ID>1</cbc:ID>
-                <cbc:DocumentTypeCode>Type2</cbc:DocumentTypeCode>
+                <cbc:DocumentTypeCode>Type 2</cbc:DocumentTypeCode>
                 <cbc:DocumentType>Green</cbc:DocumentType>
                 <cac:Attachment>
                     <cac:ExternalReference>

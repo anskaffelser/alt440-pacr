@@ -8,19 +8,19 @@
 
 
     <Code>
-        <Id>Type1</Id>
+        <Id>Type 1</Id>
         <Name>Type 1 labelling</Name>
         <Description>Type 1 labelling (ISO 14024) is an accepted evidence type from Procurement Directive art.44.</Description>
     </Code>
 
     <Code>
-        <Id>Type2</Id>
+        <Id>Type 2</Id>
         <Name>Type 2 labelling</Name>
         <Description>Type 2 labelling (ISO 14021) is an accepted evidence type from Procurement Directive art.44.</Description>
     </Code>
 
     <Code>
-        <Id>Type3</Id>
+        <Id>Type 3</Id>
         <Name>Type 3 labelling</Name>
         <Description>Type 3 labelling (ISO 14025) is an accepted evidence type from Procurement Directive art.44.</Description>
     </Code>

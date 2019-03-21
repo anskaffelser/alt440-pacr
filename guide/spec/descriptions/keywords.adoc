@@ -8,7 +8,7 @@ Keywords are sent to let the Buyer search for a product without knowing the Prod
 ----
 <cac:Item>
   <cbc:Description> Pallet of water </cbc:Description>
-  <cbc:Name>Water</cbc:Name>
+  <cbc:Name languageID="en">Water</cbc:Name>
   <cbc:Keyword>sparkling%natural%water</cbc:Keyword>
   <cac:SellersItemIdentification>
     <cbc:ID>111111</cbc:ID>

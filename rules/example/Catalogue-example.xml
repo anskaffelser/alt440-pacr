@@ -239,7 +239,6 @@
             <cac:AdditionalItemProperty> <!-- Er dette gjort riktig ? -->
                 <cbc:ID>1</cbc:ID>
                 <cbc:Name>Fatcontant</cbc:Name>
-                <cbc:NameCode>PROP</cbc:NameCode>
                 <cbc:Value>Red carton</cbc:Value>
                 <cbc:ValueQuantity unitCode="C62">50</cbc:ValueQuantity>
                 <cbc:ValueQualifier>Red</cbc:ValueQualifier>
@@ -266,7 +265,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode>
+                    <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Test report</cbc:DocumentType>
                     <cac:Attachment>
                         <cac:ExternalReference>
@@ -335,7 +334,7 @@
         </cac:Item>
 
         <cac:CallForTendersLineReference>
-            <cbc:LineID>AA32</cbc:LineID>
+            <cbc:LineID>123456</cbc:LineID>
         </cac:CallForTendersLineReference>
     </cac:CatalogueLine>
 

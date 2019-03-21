@@ -85,36 +85,36 @@ Below you can find two examples on how to state requirements on LCA
 [source, xml, indent=0]
 ----
 <cac:Certificate>
-              <cbc:ID>1</cbc:ID>
-              <cbc:CertificateTypeCode>Climate change (GWP)</cbc:CertificateTypeCode>
-              <cbc:CertificateType>Max 4 (kg C02-e)/liter</cbc:CertificateType>
-              <cbc:Remarks>Absolute</cbc:Remarks>
-              <cac:IssuerParty>
-                  <cac:PartyName>
-                      <cbc:Name>X</cbc:Name>
-                  </cac:PartyName>
-              </cac:IssuerParty>
-              <cac:DocumentReference>
-                  <cbc:ID>1</cbc:ID>
-                  <cbc:DocumentTypeCode>Type 3</cbc:DocumentTypeCode>
-                  <cbc:DocumentType>Green</cbc:DocumentType>
-              </cac:DocumentReference>
-          </cac:Certificate>
+    <cbc:ID>1</cbc:ID>
+    <cbc:CertificateTypeCode>Climate change (GWP)</cbc:CertificateTypeCode>
+    <cbc:CertificateType>Max 4 (kg C02-e)/liter</cbc:CertificateType>
+    <cbc:Remarks>Absolute</cbc:Remarks>
+    <cac:IssuerParty>
+      <cac:PartyName>
+          <cbc:Name>X</cbc:Name>
+      </cac:PartyName>
+    </cac:IssuerParty>
+    <cac:DocumentReference>
+      <cbc:ID>1</cbc:ID>
+      <cbc:DocumentTypeCode>Type 3</cbc:DocumentTypeCode>
+      <cbc:DocumentType>Green</cbc:DocumentType>
+    </cac:DocumentReference>
+</cac:Certificate>
 
-          <cac:Certificate>
-              <cbc:ID>2</cbc:ID>
-              <cbc:CertificateTypeCode>Land system change</cbc:CertificateTypeCode>
-              <cbc:CertificateType>(m2-years agr)/liter</cbc:CertificateType>
-              <cbc:Remarks>Award</cbc:Remarks>
-              <cac:IssuerParty>
-                  <cac:PartyName>
-                      <cbc:Name>X</cbc:Name>
-                  </cac:PartyName>
-              </cac:IssuerParty>
-              <cac:DocumentReference>
-                  <cbc:ID>1</cbc:ID>
-                  <cbc:DocumentTypeCode>Other</cbc:DocumentTypeCode>
-                  <cbc:DocumentType>Green</cbc:DocumentType>
-              </cac:DocumentReference>
-          </cac:Certificate>
+<cac:Certificate>
+    <cbc:ID>2</cbc:ID>
+    <cbc:CertificateTypeCode>Land system change</cbc:CertificateTypeCode>
+    <cbc:CertificateType>(m2-years agr)/liter</cbc:CertificateType>
+    <cbc:Remarks>Award</cbc:Remarks>
+    <cac:IssuerParty>
+      <cac:PartyName>
+          <cbc:Name>X</cbc:Name>
+      </cac:PartyName>
+    </cac:IssuerParty>
+    <cac:DocumentReference>
+      <cbc:ID>1</cbc:ID>
+      <cbc:DocumentTypeCode>Other</cbc:DocumentTypeCode>
+      <cbc:DocumentType>Green</cbc:DocumentType>
+    </cac:DocumentReference>
+</cac:Certificate>
 ----
