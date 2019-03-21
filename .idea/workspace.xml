@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/spec/descriptions/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/descriptions/index.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/spec/descriptions/item_requirements.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/descriptions/item_requirements.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/spec/descriptions/keywords.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/descriptions/keywords.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/spec/descriptions/logistics.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/descriptions/logistics.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guide/spec/descriptions/validity-period.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/descriptions/validity-period.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rules/example/Catalogue-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/example/Catalogue-example.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/structure/codelist/EvidenceType.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/codelist/EvidenceType.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,17 +26,17 @@
       <file leaf-file-name="PreAwardCatalogue.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1412">
-              <caret line="627" column="90" selection-start-line="627" selection-start-column="90" selection-end-line="627" selection-end-column="90" />
+            <state relative-caret-position="630">
+              <caret line="1661" column="54" selection-start-line="1661" selection-start-column="54" selection-end-line="1661" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PreAwardCatalogueRequest.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PreAwardCatalogueRequest.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="792" column="72" lean-forward="true" selection-start-line="792" selection-start-column="72" selection-end-line="792" selection-end-column="72" />
+            <state relative-caret-position="715">
+              <caret line="852" column="55" selection-start-line="852" selection-start-column="55" selection-end-line="852" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -49,16 +45,7 @@
         <entry file="file://$PROJECT_DIR$/structure/codelist/EvidenceType.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PreAwardCatalogueRequest-example.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -75,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item_requirements.adoc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="item_requirements.adoc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/guide/spec/descriptions/item_requirements.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
@@ -87,11 +74,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CatalogueRequest-example.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="187" column="42" lean-forward="true" selection-start-line="187" selection-start-column="42" selection-end-line="187" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>attachmen</find>
       <find>attac</find>
       <find>componentre</find>
       <find>requiredre</find>
@@ -121,6 +116,7 @@
       <find>cac:</find>
       <find>cac</find>
       <find>minimumorder</find>
+      <find>certifica</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,26 +164,26 @@
         <option value="$PROJECT_DIR$/structure/datamodel/part/postal-address.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/part/item-classification.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/part/contact.xml" />
-        <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" />
-        <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" />
         <option value="$PROJECT_DIR$/rules/example/sweden-request-example.xml" />
-        <option value="$PROJECT_DIR$/structure/codelist/EvidenceType.xml" />
-        <option value="$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml" />
-        <option value="$PROJECT_DIR$/rules/example/Catalogue-example.xml" />
-        <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" />
-        <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
         <option value="$PROJECT_DIR$/guide/spec/descriptions/validity-period.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/descriptions/item_requirements.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/descriptions/keywords.adoc" />
         <option value="$PROJECT_DIR$/guide/spec/descriptions/logistics.adoc" />
+        <option value="$PROJECT_DIR$/structure/codelist/EvidenceType.xml" />
+        <option value="$PROJECT_DIR$/rules/example/Catalogue-example.xml" />
+        <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml" />
+        <option value="$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml" />
+        <option value="$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml" />
+        <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" />
+        <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-18" />
-    <option name="y" value="165" />
-    <option name="width" value="1932" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-6" />
+    <option name="y" value="2" />
+    <option name="width" value="1238" />
+    <option name="height" value="663" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -313,16 +309,16 @@
     </configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-18" y="165" width="1932" height="1038" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18789144" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1875" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50156575" side_tool="true" visible="true" weight="0.045073375" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5015625" side_tool="true" visible="true" weight="0.03937729" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49843425" visible="true" weight="0.045073375" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4984375" visible="true" weight="0.03937729" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -556,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1412">
-          <caret line="627" column="90" selection-start-line="627" selection-start-column="90" selection-end-line="627" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/codelist/PolicyRelevantRequirement.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -577,52 +566,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2021">
-          <caret line="207" column="35" lean-forward="true" selection-start-line="207" selection-start-column="35" selection-end-line="207" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rules/example/sweden-request-example.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="792" column="72" lean-forward="true" selection-start-line="792" selection-start-column="72" selection-end-line="792" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rules/example/Catalogue-example.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="336" column="30" selection-start-line="336" selection-start-column="30" selection-end-line="336" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="307" column="47" selection-start-line="307" selection-start-column="47" selection-end-line="307" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/codelist/EvidenceType.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -663,6 +610,55 @@
             <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rules/example/Catalogue-example.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="267" column="46" lean-forward="true" selection-start-line="267" selection-start-column="46" selection-end-line="267" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogue-example.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="307" column="46" selection-start-line="307" selection-start-column="46" selection-end-line="307" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rules/snippets/PreAwardCatalogueRequest-example.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="230" column="46" selection-start-line="230" selection-start-column="46" selection-end-line="230" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/codelist/EvidenceType.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rules/example/CatalogueRequest-example.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="187" column="42" lean-forward="true" selection-start-line="187" selection-start-column="42" selection-end-line="187" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="1661" column="54" selection-start-line="1661" selection-start-column="54" selection-end-line="1661" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="852" column="55" selection-start-line="852" selection-start-column="55" selection-end-line="852" selection-end-column="55" />
         </state>
       </provider>
     </entry>

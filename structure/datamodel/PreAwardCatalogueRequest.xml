@@ -850,7 +850,7 @@
                                 Type 2 labelling (ISO 14021), Type 3 labelling (ISO 14025), Certification, Test report, or Other means of proof. Use codelist "Accepted evidence type".</Description>
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">EvidenceType</Reference>
-                            <Value type="EXAMPLE">Type 1</Value>
+                            <Value type="EXAMPLE">Type2</Value>
                         </Element>
 
                         <Element cardinality="0..1">

@@ -265,7 +265,7 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Type 1</cbc:DocumentTypeCode>
+                    <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode>
                     <cbc:DocumentType>Test report</cbc:DocumentType>
                     <cac:Attachment>
                         <cac:ExternalReference>

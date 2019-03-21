@@ -1659,7 +1659,7 @@
                                 type".</Description>
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">EvidenceType</Reference>
-                            <Value type="EXAMPLE">Type 1</Value>
+                            <Value type="EXAMPLE">Type1</Value>
                             <!--<Description>
                                 Pseudo code indicating the DocumentReference as an Items means of proof reference
                                 or an Item requirement reference.
