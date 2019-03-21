@@ -48,12 +48,15 @@ Additional item properties are sent in the element `cac:AdditionalItemProperty`.
 .Example of a pre-award catalogue property as a response to the requested minimum and maximum range of the net quantity (as in the above chapter)
 [source, xml, indent=0]
 ----
-<cac:AdditionalItemProperty>
-  <cbc:ID>2</cbc:ID>
-  <cbc:Name>Item net quantity</cbc:Name>
-  <cbc:ValueQuantiy unitCode="LTR">1.5</cbc:ValueQuantity>
-</cac:AdditionalItemProperty>
+
+<cac:CatalogueLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+    <cbc:OrderableUnit>H87</cbc:OrderableUnit>
+    <cbc:ContentUnitQuantity unitCode="LTR">1.50</cbc:ContentUnitQuantity> <1>
+    ...
 ----
+<1> The item net quantity is sent in the ContentUnitQuantity in the pre-award catalogue
 
 == Other examples of additional properties in a pre-award catalogue
 ====
