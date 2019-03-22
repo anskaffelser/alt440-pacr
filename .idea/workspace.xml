@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="952f0b7a-b354-49ef-b995-87c0ea1845fe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/guide/spec/descriptions/item_requirements.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/guide/spec/descriptions/item_requirements.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure/codelist/UNCL5387.xml" beforeDir="false" afterPath="$PROJECT_DIR$/structure/codelist/UNCL5387.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,22 +48,24 @@
         <entry file="file://$PROJECT_DIR$/guide/spec/descriptions/validity-period.adoc">
           <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="816">
-                <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+              <first_editor relative-caret-position="51">
+                <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item_requirements.adoc" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/guide/spec/descriptions/item_requirements.adoc">
-          <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="476">
-                <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="UNCL5387-req.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/structure/codelist/UNCL5387-req.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="UNCL5387.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/structure/codelist/UNCL5387.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="627" column="46" lean-forward="true" selection-start-line="627" selection-start-column="46" selection-end-line="627" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -81,8 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>attac</find>
-      <find>componentre</find>
       <find>requiredre</find>
       <find>cac:item</find>
       <find>embedded</find>
@@ -109,8 +109,10 @@
       <find>cac:</find>
       <find>cac</find>
       <find>minimumorder</find>
-      <find>certifica</find>
       <find>certificate</find>
+      <find>taxsubto</find>
+      <find>taxsu</find>
+      <find>certifica</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,8 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/structure/docs/LineValidityPeriod.adoc" />
-        <option value="$PROJECT_DIR$/structure/docs/LineValidityPeriod-Request.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/ReceiverParty.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/RequiredItemLocationQuantity-Request.adoc" />
         <option value="$PROJECT_DIR$/structure/docs/CatalogueRequestLine.adoc" />
@@ -170,6 +170,8 @@
         <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogue.xml" />
         <option value="$PROJECT_DIR$/structure/datamodel/PreAwardCatalogueRequest.xml" />
         <option value="$PROJECT_DIR$/guide/spec/descriptions/item_requirements.adoc" />
+        <option value="$PROJECT_DIR$/rules/example/I_10032910_20190304000281.xml" />
+        <option value="$PROJECT_DIR$/structure/codelist/UNCL5387.xml" />
       </list>
     </option>
   </component>
@@ -270,6 +272,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jsr\IdeaProjects\alt440-pacr\rules\example" />
       <recent name="C:\Users\jsr\IdeaProjects\alt440-pacr\rules\snippets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -353,25 +356,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/guide/spec/images/catalogueRequestDiagram.png" />
-    <entry file="file://$PROJECT_DIR$/structure/docs/ReferencedContract.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/docs/RequiredItemLocationQuantity.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="8" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structure/docs/RequiredRelatedItem.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
@@ -567,16 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide/spec/descriptions/validity-period.adoc">
-      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="816">
-            <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/guide/spec/descriptions/logistics.adoc">
       <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
         <state split_layout="SPLIT">
@@ -653,6 +627,33 @@
             <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rules/example/I_10032910_20190304000281.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="3617" column="32" lean-forward="true" selection-start-line="3617" selection-start-column="32" selection-end-line="3617" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/spec/descriptions/validity-period.adoc">
+      <provider selected="true" editor-type-id="split-provider[text-editor;AsciiDocPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="51">
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/codelist/UNCL5387-req.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure/codelist/UNCL5387.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="627" column="46" lean-forward="true" selection-start-line="627" selection-start-column="46" selection-end-line="627" selection-end-column="46" />
         </state>
       </provider>
     </entry>
