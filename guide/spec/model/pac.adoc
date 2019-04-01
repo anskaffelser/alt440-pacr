@@ -1,5 +1,5 @@
 [[information-model-pac]]
 = Information model Pre-award catalogue
 
-.Class diagram PreAward catalogue request
+.Class diagram PreAward catalogue
 image::images/PreAwardCatalogue.jpg[Pre-award catalogue class diagram]
