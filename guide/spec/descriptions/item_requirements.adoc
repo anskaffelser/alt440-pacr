@@ -5,36 +5,16 @@ Public actors may have special green, social or innovative requirements to the w
 
 IMPORTANT: Contracting authorities requiring a specific label shall accept all labels that confirm that the works, supplies or services meet *equivalent* label requirements.
 
-These requirements are sent in the element `cac:Certificate` in the pre award catalogue request, and the economic operator sends their answer and attachments (if any), in the `cac:Certificate`-element in the pre award catalogue.
+These requirements are sent in the element 'cac:Certificate' in the pre award catalogue request, and the economic operator sends their answer and attachments (if any), in the `cac:Certificate`-element in the pre award catalogue.
 
-The `cac:Certificate` contains detailed information on the requirement(s), if the requirement is absolute or an award criteria. In addition, the type of evidence (means of proof) that can be used is stated as well.
+The 'cac:Certificate' contains detailed information on the requirement(s), if the requirement is absolute or an award criteria. In addition, the type of evidence (means of proof) that can be used is stated as well.
 
 
 
 .Example showing a requirement to fulfill the EU GPP energy criteria for computers, and stating that a Type 1 (or equivalent) certificate can be used as means of proof.
 [source, xml, indent=0]
 ----
-<cac:Certificate>
-    <cbc:ID>1</cbc:ID>
-    <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode> <1>
-    <cbc:CertificateType>EU GPP Criteria - Minimum energy performance of the computer.</cbc:CertificateType> <2>
-    <cbc:Remarks>Absolute</cbc:Remarks> <3>
-    <cac:IssuerParty>
-        <cac:PartyName>
-            <cbc:Name>NA</cbc:Name>
-        </cac:PartyName>
-    </cac:IssuerParty>
-    <cac:DocumentReference>
-        <cbc:ID>1</cbc:ID>
-        <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode> <4>
-        <cbc:DocumentType>Green</cbc:DocumentType> <5>
-        <cac:Attachment>
-            <cac:ExternalReference>
-                <cbc:URI>http://www.eu-energystar.org/specifications.htm</cbc:URI> <6>
-            </cac:ExternalReference>
-        </cac:Attachment>
-    </cac:DocumentReference>
-</cac:Certificate>
+include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=Certificate]
 ----
 <1> Main level requirement
 <2> Specific requirement
@@ -47,27 +27,7 @@ The `cac:Certificate` contains detailed information on the requirement(s), if th
 .Example showing a response to this requirement in the pre-award catalogue, providing another type of proof then what is mentioned in the request.
 [source, xml, indent=0]
 ----
-<cac:Certificate>
-    <cbc:ID>1</cbc:ID><1>
-    <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode> <2>
-    <cbc:CertificateType>EU GPP Criteria - Minimum energy performance of the computer.</cbc:CertificateType> <3>
-    <cac:IssuerParty>
-        <cac:PartyName>
-            <cbc:Name>NA</cbc:Name>
-        </cac:PartyName>
-    </cac:IssuerParty>
-    <cac:DocumentReference>
-        <cbc:ID>1</cbc:ID>
-        <cbc:DocumentTypeCode>TestReport</cbc:DocumentTypeCode> <4>
-        <cbc:DocumentType>EU Energy Star</cbc:DocumentType> <5>
-        <cbc:DocumentDescription>Registered in Energy Star database</cbc:DocumentDescription><6>
-        <cac:Attachment>
-            <cac:ExternalReference>
-                <cbc:URI>http://www.eu-energystar.org/database-register.htm</cbc:URI> <7>
-            </cac:ExternalReference>
-        </cac:Attachment>
-    </cac:DocumentReference>
-</cac:Certificate>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=Certificate]
 ----
 <1> The identifier must be the same as what was sent in the request.
 <2> References to the general requirement as sent in the request
@@ -84,37 +44,5 @@ Below you can find two examples on how to state requirements on LCA
 
 [source, xml, indent=0]
 ----
-<cac:Certificate>
-    <cbc:ID>1</cbc:ID>
-    <cbc:CertificateTypeCode>Climate change (GWP)</cbc:CertificateTypeCode>
-    <cbc:CertificateType>Max 4 (kg C02-e)/liter</cbc:CertificateType>
-    <cbc:Remarks>Absolute</cbc:Remarks>
-    <cac:IssuerParty>
-      <cac:PartyName>
-          <cbc:Name>X</cbc:Name>
-      </cac:PartyName>
-    </cac:IssuerParty>
-    <cac:DocumentReference>
-      <cbc:ID>1</cbc:ID>
-      <cbc:DocumentTypeCode>Type3</cbc:DocumentTypeCode>
-      <cbc:DocumentType>Green</cbc:DocumentType>
-    </cac:DocumentReference>
-</cac:Certificate>
-
-<cac:Certificate>
-    <cbc:ID>2</cbc:ID>
-    <cbc:CertificateTypeCode>Land system change</cbc:CertificateTypeCode>
-    <cbc:CertificateType>(m2-years agr)/liter</cbc:CertificateType>
-    <cbc:Remarks>Award</cbc:Remarks>
-    <cac:IssuerParty>
-      <cac:PartyName>
-          <cbc:Name>X</cbc:Name>
-      </cac:PartyName>
-    </cac:IssuerParty>
-    <cac:DocumentReference>
-      <cbc:ID>1</cbc:ID>
-      <cbc:DocumentTypeCode>Other</cbc:DocumentTypeCode>
-      <cbc:DocumentType>Green</cbc:DocumentType>
-    </cac:DocumentReference>
-</cac:Certificate>
+include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=LCA]
 ----

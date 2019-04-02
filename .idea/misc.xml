@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectResources">
+    <resource url="http://difi.no/xsd/vefa/validator/1.0" location="$USER_HOME$/Library/vefa-validator.xsd" />
+    <resource url="urn:fdc:difi.no:2017:vefa:structure-1" location="$USER_HOME$/Library/vefa-structure/structure.xsd" />
+    <resource url="urn:fdc:difi.no:2017:vefa:structure:CodeList-1" location="$USER_HOME$/Library/vefa-structure/codelist.xsd" />
+    <resource url="urn:fdc:difi.no:2017:vefa:structure:Syntax-1" location="$USER_HOME$/Library/vefa-structure/syntax.xsd" />
     <resource url="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2" location="$USER_HOME$/Library/ubl-2.2/maindoc/UBL-Catalogue-2.2.xsd" />
     <resource url="urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2" location="$USER_HOME$/Library/ubl-2.2/maindoc/UBL-CatalogueRequest-2.2.xsd" />
     <default-html-doctype>jar:file:\C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.1.5\lib\platform-impl.jar!\standardSchemas\xhtml1-transitional.xsd</default-html-doctype>
     <xml-schema-version>XMLSchema_1_1</xml-schema-version>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

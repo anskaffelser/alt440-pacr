@@ -13,26 +13,17 @@ Examples of related products in a Pre-Award Catalogue message
 .Bundled products
 [source, xml, indent=0]
 ----
-<cac:RequiredRelatedItem>
-    <cbc:ID>987654</cbc:ID>
-    <cbc:Quantity unitCode="EA">1</cbc:Quantity>
-</cac:RequiredRelatedItem>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=BundledProducts]
 ----
 
 .Logistics structure
 [source, xml, indent=0]
 ----
-<cac:ComponentRelatedItem>
-    <cbc:ID>89388789930</cbc:ID>
-    <cbc:Quantity unitCode="EA">12</cbc:Quantity>
-</cac:ComponentRelatedItem>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=LogisticsStructure]
 ----
 
 .Accessories
 [source, xml, indent=0]
 ----
-<cac:ComplementaryRelatedItem>
-    <cbc:ID>123456</cbc:ID>
-    <cbc:Quantity unitCode="EA">1</cbc:Quantity>
-</cac:ComplementaryRelatedItem>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=Accessories]
 ----

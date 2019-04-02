@@ -7,11 +7,5 @@ VAT information is optional in both transactions, but if the contracting authori
 .Example of using VAT.
 [source, xml, indent=0]
 ----
-<cac:ClassifiedTaxCategory>
-    <cbc:ID>S</cbc:ID>
-    <cbc:Percent>25</cbc:Percent>
-    <cac:TaxScheme>
-        <cbc:ID>VAT</cbc:ID>
-    </cac:TaxScheme>
-</cac:ClassifiedTaxCategory>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=ClassifiedTaxCategory]
 ----

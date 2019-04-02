@@ -5,27 +5,13 @@ Requested item properties, like a specific colour of an item, can be sent in the
 .Example to request a specific proportion of fat in milk
 [source, xml, indent=0]
 ----
-<cac:AdditionalItemProperty>
-  <cbc:ID>1</cbc:ID>
-  <cbc:Name>Fat</cbc:Name>
-  <cbc:ValueQuantiy unitCode="P1">3</cbc:ValueQuantity>
-  <cbc:ValueQualifier>Proportion of fat</cbc:ValueQualifier>
-  <cbc:ImportanceCode>M</cbc:ImportanceCode>
-</cac:AdditionalItemProperty>
+include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=Request-of-fat-in-milk]
 ----
 
 .Example to request a specific range of item net quantity
 [source, xml, indent=0]
 ----
-<cac:AdditionalItemProperty>
-  <cbc:ID>2</cbc:ID>
-  <cbc:Name>Item net quantity</cbc:Name>
-  <cac:ItemPropertyRange>
-      <cbc:MinimumValue>1 liter</cbc:MinimumValue>
-      <cbc:MaximumValue>1,75 liters</cbc:MaximumValue>
-  </cac:ItemPropertyRange>
-  <cbc:ImportanceCode>O</cbc:ImportanceCode>
-</cac:AdditionalItemProperty>
+include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=Request-of-specific-range]
 ----
 
 
@@ -37,58 +23,35 @@ Additional item properties are sent in the element `cac:AdditionalItemProperty`.
 .Example of a pre-award catalogue property as a response to the requested property of 3% fat in milk (as in the above chapter)
 [source, xml, indent=0]
 ----
-<cac:AdditionalItemProperty>
-  <cbc:ID>1</cbc:ID>
-  <cbc:Name>Fat</cbc:Name>
-  <cbc:ValueQuantiy unitCode="P1">3</cbc:ValueQuantity>
-  <cbc:ValueQualifier>Proportion of fat</cbc:ValueQualifier>
-</cac:AdditionalItemProperty>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=AdditionalItemProperty]
 ----
 
 .Example of a pre-award catalogue property as a response to the requested minimum and maximum range of the net quantity (as in the above chapter)
 [source, xml, indent=0]
 ----
-
-<cac:CatalogueLine>
-    <cbc:ID>1</cbc:ID>
-    <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
-    <cbc:OrderableUnit>XCT</cbc:OrderableUnit>
-    <cbc:ContentUnitQuantity unitCode="LTR">1.50</cbc:ContentUnitQuantity> <1>
-    ...
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=AdditionalItemProperty2]
 ----
 <1> The item net quantity is sent in the ContentUnitQuantity in the pre-award catalogue
 
 == Other examples of additional properties in a pre-award catalogue
+
 ====
 .Nutrition
 [source, xml, indent=0]
 ----
-<cac:AdditionalItemProperty>
-  <cbc:ID>1</cbc:ID>
-  <cbc:Name>NutritionProtein</cbc:Name>
-  <cbc:ValueQuantity unitCode="GRM">2.5</cbc:ValueQuantity>
-  <cbc:ValueQualifier>Nutrition</cbc:ValueQualifier>
-</cac:AdditionalItemProperty>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=Nutrition]
 ----
 
 .Allergens
 [source, xml, indent=0]
 ----
-<cac:AdditionalItemProperty>
-    <cbc:Name>Allergens</cbc:Name>
-    <cbc:NameCode>Allergens</cbc:NameCode>
-    <cbc:Value>Item contains 5% hazelnuts by volume.</cbc:Value>
-    <cbc:ValueQuantity unitCode="60">5</cbc:ValueQuantity>
-    <cbc:ValueQualifier>HAZELNUTS</cbc:ValueQualifier>
-</cac:AdditionalItemProperty>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=Allergens]
 ----
 
 .Genetically modified
 [source, xml, indent=0]
 ----
-<cac:AdditionalItemProperty>
-  <cbc:Name>GeneticallyModified</cbc:Name>
-  <cbc:Value>True</cbc:Value>
-</cac:AdditionalItemProperty>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=GeneticallyModified]
 ----
+
 ====

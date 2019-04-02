@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ubl:Catalogue
+        xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+    <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pac:1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
+    <cbc:ID>j3a3-ik53-tr35-3fw7</cbc:ID>
+    <cbc:IssueDate>2018-11-20</cbc:IssueDate>
+
+    <!-- tag::ValidityPeriod[] -->
+    <cac:ValidityPeriod>
+        <cbc:StartDate>2018-11-20</cbc:StartDate>
+        <cbc:EndDate>2018-12-30</cbc:EndDate>
+    </cac:ValidityPeriod>
+    <!-- end::ValidityPeriod[] -->
+
+
+    <cac:ProviderParty>
+        <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="0192">987654325</cbc:ID>
+        </cac:PartyIdentification>
+    </cac:ProviderParty>
+
+    <cac:ReceiverParty>
+        <cbc:EndpointID schemeID="0192">123456785</cbc:EndpointID>
+        <!-- tag::PartyIdentification[] -->
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="0192">123456785</cbc:ID>
+        </cac:PartyIdentification>
+        <!-- end::PartyIdentification[] -->
+    </cac:ReceiverParty>
+
+
+    <!-- tag::AdditionalItemProperty2[] -->
+    <cac:CatalogueLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+        <cbc:OrderableUnit>XCT</cbc:OrderableUnit>
+        <cbc:ContentUnitQuantity unitCode="LTR">1.50</cbc:ContentUnitQuantity> <!--1-->
+         <!-- ... -->
+        <!-- end::AdditionalItemProperty2[] -->
+
+
+        <!-- tag::LineValidityPeriod[] -->
+        <cac:LineValidityPeriod>
+            <cbc:StartDate>2018-11-20</cbc:StartDate>
+            <cbc:EndDate>2018-12-15</cbc:EndDate>
+        </cac:LineValidityPeriod>
+        <!-- end::LineValidityPeriod[] -->
+
+
+        <!-- tag::ItemComparison[] -->
+        <cac:ItemComparison>
+            <cbc:PriceAmount currencyID="NOK">270.00</cbc:PriceAmount>
+            <cbc:Quantity unitCode="EA">10</cbc:Quantity>
+        </cac:ItemComparison>
+        <!-- end::ItemComparison[] -->
+
+        <!-- tag::LogisticsStructure[] -->
+        <cac:ComponentRelatedItem>
+            <cbc:ID>89388789930</cbc:ID>
+            <cbc:Quantity unitCode="EA">12</cbc:Quantity>
+        </cac:ComponentRelatedItem>
+        <!-- end::LogisticsStructure[] -->
+
+        <!-- tag::BundledProducts[] -->
+        <cac:RequiredRelatedItem>
+            <cbc:ID>987654</cbc:ID>
+            <cbc:Quantity unitCode="EA">1</cbc:Quantity>
+        </cac:RequiredRelatedItem>
+        <!-- end::BundledProducts[] -->
+
+        <!-- tag::Accessories[] -->
+        <cac:ComplementaryRelatedItem>
+            <cbc:ID>123456</cbc:ID>
+            <cbc:Quantity unitCode="EA">1</cbc:Quantity>
+        </cac:ComplementaryRelatedItem>
+        <!-- end::Accessories[] -->
+
+        <cac:ReplacedRelatedItem>
+            <cbc:ID>BB</cbc:ID>
+            <cbc:Quantity unitCode="EA">1</cbc:Quantity>
+        </cac:ReplacedRelatedItem>
+
+        <!-- tag::Diff-LineValidityPeriod[] -->
+        <cac:RequiredItemLocationQuantity>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="NOK">75.00</cbc:PriceAmount>
+                <cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
+                <cac:ValidityPeriod>
+                    <cbc:StartDate>2018-11-20</cbc:StartDate>
+                    <cbc:EndDate>2018-11-30</cbc:EndDate>
+                </cac:ValidityPeriod>
+                <cac:ValidityPeriod>
+                    <cbc:StartDate>2018-12-01</cbc:StartDate>
+                    <cbc:EndDate>2018-12-10</cbc:EndDate>
+                </cac:ValidityPeriod>
+            </cac:Price>
+        </cac:RequiredItemLocationQuantity>
+        <!-- end::Diff-LineValidityPeriod[] -->
+
+        <!-- tag::Prices[] -->
+        <cac:RequiredItemLocationQuantity>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="NOK">5000</cbc:PriceAmount>
+                <cbc:PriceTypeCode>NE</cbc:PriceTypeCode> <!--1-->
+            </cac:Price>
+        </cac:RequiredItemLocationQuantity>
+        <cac:RequiredItemLocationQuantity>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="NOK">2500</cbc:PriceAmount>
+                <cbc:PriceTypeCode>ABG</cbc:PriceTypeCode> <!--2-->
+            </cac:Price>
+        </cac:RequiredItemLocationQuantity>
+        <!-- end::Prices[] -->
+
+        <!-- tag::ConditionalPrice[] -->
+        <cac:RequiredItemLocationQuantity>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="NOK">29.00</cbc:PriceAmount>
+            </cac:Price>
+        </cac:RequiredItemLocationQuantity>
+        <!-- end::ConditionalPrice[] -->
+
+
+        <!-- tag::Item-Price[] -->
+        <cac:RequiredItemLocationQuantity>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="NOK">3000.00</cbc:PriceAmount>
+            </cac:Price>
+        </cac:RequiredItemLocationQuantity>
+        <!-- end::Item-Price[] -->
+
+        <cac:Item>
+            <cbc:Name>Product name</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>2222</cbc:ID>
+            </cac:SellersItemIdentification>
+            <!-- tag::ItemSpecificationDocumentReference[] -->
+            <cac:ItemSpecificationDocumentReference>
+                <cbc:ID>LK8788</cbc:ID>
+                <cbc:DocumentDescription>Product image</cbc:DocumentDescription>
+                <cac:Attachment>
+                    <cac:ExternalReference>
+                        <cbc:URI>http://img.trioving.net/Låskasser/LK8788_PRD_FPM_000.JPG</cbc:URI>
+                    </cac:ExternalReference>
+                </cac:Attachment>
+            </cac:ItemSpecificationDocumentReference>
+            <!-- end::ItemSpecificationDocumentReference[] -->
+
+            <!-- tag::ItemSpecificationDocumentReference2[] -->
+            <cac:ItemSpecificationDocumentReference>
+                <cbc:ID>2384-34232-342-34-2333</cbc:ID>
+                <cac:Attachment>
+                    <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specification.pdf"
+                    >ZGVmYXVsdA==</cbc:EmbeddedDocumentBinaryObject>
+                </cac:Attachment>
+            </cac:ItemSpecificationDocumentReference>
+            <!-- end::ItemSpecificationDocumentReference2[] -->
+
+            <!-- tag::Example-of-attachment[] -->
+            <cac:ItemSpecificationDocumentReference>
+                <cbc:ID>1</cbc:ID>
+                <cbc:DocumentDescription>HMS Safety sheet</cbc:DocumentDescription>
+                <cac:Attachment>
+                    <cac:ExternalReference>
+                        <cbc:URI>http://www.klif.no/no/Tema/Kjemikalier/Klassifisering-og-merking-av-kjemikalier-CLP/Klassifisering-CLP-avsnitt-I-II-og-V/</cbc:URI>
+                    </cac:ExternalReference>
+                </cac:Attachment>
+            </cac:ItemSpecificationDocumentReference>
+            <!-- end::Example-of-attachment[] -->
+
+
+
+
+            <!-- tag::UNDG-Code[] -->
+            <cac:HazardousItem>
+                <cbc:ID>0024</cbc:ID>
+                <cbc:UNDGCode>ADR</cbc:UNDGCode>
+            </cac:HazardousItem>
+            <!-- end::UNDG-Code[] -->
+
+
+            <!-- tag::ClassifiedTaxCategory[] -->
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <!-- end::ClassifiedTaxCategory[] -->
+
+
+            <!-- tag::AdditionalItemProperty[] -->
+            <cac:AdditionalItemProperty>
+                <cbc:ID>1</cbc:ID>
+                <cbc:Name>Fat</cbc:Name>
+                <cbc:Value>Red</cbc:Value>
+                <cbc:ValueQuantity unitCode="P1">3</cbc:ValueQuantity>
+                <cbc:ValueQualifier>Proportion of fat</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <!-- end::AdditionalItemProperty[] -->
+
+            <!-- tag::Nutrition[] -->
+            <cac:AdditionalItemProperty>
+                <cbc:ID>1</cbc:ID>
+                <cbc:Name>NutritionProtein</cbc:Name>
+                <cbc:Value>Nutrition</cbc:Value>
+                <cbc:ValueQuantity unitCode="GRM">2.5</cbc:ValueQuantity>
+                <cbc:ValueQualifier>Nutrition</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <!-- end::Nutrition[] -->
+
+            <!-- tag::Allergens[] -->
+            <cac:AdditionalItemProperty>
+                <cbc:Name>Allergens</cbc:Name>
+                <cbc:Value>Item contains 5% hazelnuts by volume.</cbc:Value>
+                <cbc:ValueQuantity unitCode="60">5</cbc:ValueQuantity>
+                <cbc:ValueQualifier>HAZELNUTS</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <!-- end::Allergens[] -->
+
+            <!-- tag::GeneticallyModified[] -->
+            <cac:AdditionalItemProperty>
+                <cbc:Name>GeneticallyModified</cbc:Name>
+                <cbc:Value>True</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <!-- end::GeneticallyModified[] -->
+
+
+
+            <!-- tag::Certificate[] -->
+            <cac:Certificate>
+                <cbc:ID>1</cbc:ID> <!--1-->
+                <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode> <!--2-->
+                <cbc:CertificateType>EU GPP Criteria - Minimum energy performance of the computer.</cbc:CertificateType> <!--3-->
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>NA</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+                <cac:DocumentReference>
+                    <cbc:ID>1</cbc:ID>
+                    <cbc:DocumentTypeCode>TestReport</cbc:DocumentTypeCode> <!--4-->
+                    <cbc:DocumentType>EU Energy Star</cbc:DocumentType> <!--5-->
+                    <cbc:DocumentDescription>Registered in Energy Star database</cbc:DocumentDescription> <!--6-->
+                    <cac:Attachment>
+                        <cac:ExternalReference>
+                            <cbc:URI>http://www.eu-energystar.org/database-register.htm</cbc:URI> <!--7-->
+                        </cac:ExternalReference>
+                    </cac:Attachment>
+                </cac:DocumentReference>
+            </cac:Certificate>
+            <!-- end::Certificate[] -->
+
+
+        </cac:Item>
+
+
+    </cac:CatalogueLine>
+
+    <!-- tag::CatalogueLine-Equal-1[] -->
+    <cac:CatalogueLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+        <cbc:OrderableUnit>MLT</cbc:OrderableUnit>
+        <cbc:ContentUnitQuantity unitCode="MLT">250</cbc:ContentUnitQuantity>
+        <cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
+        <cbc:MinimumOrderQuantity unitCode="EA">1</cbc:MinimumOrderQuantity>
+        <cbc:PackLevelCode>CU</cbc:PackLevelCode>
+        <!-- ... -->
+        <cac:Item>
+            <cbc:Name languageID="en">Milk 1 Liter</cbc:Name>
+            <cbc:PackSizeNumeric>1</cbc:PackSizeNumeric>
+            <cac:SellersItemIdentification>
+                <cbc:ID>2222</cbc:ID>
+            </cac:SellersItemIdentification>
+            <!-- ... -->
+        </cac:Item>
+        <!-- ... -->
+    </cac:CatalogueLine>
+    <!-- end::CatalogueLine-Equal-1[] -->
+
+    <!-- tag::CatalogueLine-DispatchUnit[] -->
+    <cac:CatalogueLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:OrderableIndicator>false</cbc:OrderableIndicator>
+        <cbc:PackLevelCode>DU</cbc:PackLevelCode>
+        <cac:ComponentRelatedItem>
+            <cbc:ID>222222</cbc:ID> <!--1-->
+            <cbc:Quantity unitCode="EA">12</cbc:Quantity> <!--2-->
+        </cac:ComponentRelatedItem>
+        <cac:Item>
+            <cbc:Description>Soft drink, pallet</cbc:Description>
+            <cbc:PackQuantity unitCode="EA">1</cbc:PackQuantity>
+            <cbc:Name languageID="en">Soft drink</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>111111</cbc:ID>
+            </cac:SellersItemIdentification>
+        </cac:Item>
+    </cac:CatalogueLine>
+    <!-- end::CatalogueLine-DispatchUnit[] -->
+
+    <!-- tag::CatalogueLine-TradedUnit[] -->
+    <cac:CatalogueLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+        <cbc:OrderableUnit>MLT</cbc:OrderableUnit>
+        <cbc:PackLevelCode>TU</cbc:PackLevelCode>
+        <cac:ComponentRelatedItem>
+            <cbc:ID>333333</cbc:ID> <!--1-->
+            <cbc:Quantity unitCode="EA">6</cbc:Quantity> <!--2-->
+        </cac:ComponentRelatedItem>
+        <cac:Item>
+            <cbc:Description>Soft drink, trading unit</cbc:Description>
+            <cbc:PackQuantity unitCode="EA">1</cbc:PackQuantity>
+            <cbc:Name languageID="en">Soft drink</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>222222</cbc:ID>
+            </cac:SellersItemIdentification>
+        </cac:Item>
+    </cac:CatalogueLine>
+    <!-- end::CatalogueLine-TradedUnit[] -->
+
+    <!-- tag::CatalogueLine-ConsumerUnit[] -->
+    <cac:CatalogueLine>
+        <cbc:ID>3</cbc:ID>
+        <cbc:OrderableIndicator>false</cbc:OrderableIndicator>
+        <cbc:PackLevelCode>CU</cbc:PackLevelCode>
+        <cac:Item>
+            <cbc:Description>Soft drink 4-pack</cbc:Description>
+            <cbc:PackQuantity unitCode="EA">1</cbc:PackQuantity>
+            <cbc:Name languageID="en">Soft drink</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>333333</cbc:ID>
+            </cac:SellersItemIdentification>
+        </cac:Item>
+    </cac:CatalogueLine>
+    <!-- end::CatalogueLine-ConsumerUnit[] -->
+
+    <cac:CatalogueLine>
+        <cbc:ID>3</cbc:ID>
+        <cbc:OrderableIndicator>false</cbc:OrderableIndicator>
+        <!-- tag::Keyword[] -->
+        <cac:Item>
+            <cbc:Description> Pallet of water </cbc:Description>
+            <cbc:Name languageID="en">Water</cbc:Name>
+            <cbc:Keyword>sparkling%natural%water</cbc:Keyword>
+            <cac:SellersItemIdentification>
+                <cbc:ID>111111</cbc:ID>
+            </cac:SellersItemIdentification>
+        </cac:Item>
+        <!-- end::Keyword[] -->
+
+    </cac:CatalogueLine>
+
+
+</ubl:Catalogue>

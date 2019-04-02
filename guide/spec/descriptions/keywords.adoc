@@ -6,12 +6,5 @@ Keywords are sent to let the Buyer search for a product without knowing the Prod
 .Example of several Keywords in the same tag.
 [source, xml, indent=0]
 ----
-<cac:Item>
-  <cbc:Description> Pallet of water </cbc:Description>
-  <cbc:Name languageID="en">Water</cbc:Name>
-  <cbc:Keyword>sparkling%natural%water</cbc:Keyword>
-  <cac:SellersItemIdentification>
-    <cbc:ID>111111</cbc:ID>
-  </cac:SellersItemIdentification>
-</cac:Item>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=Keyword]
 ----

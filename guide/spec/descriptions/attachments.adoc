@@ -25,18 +25,13 @@ IMPORTANT: It is strongly recommended to use external references in the form of 
   </cac:ItemSpecificationDocumentReference>
   ...
 </cac:Item>
+
 ----
 
 If binary objects are attached to the Pre-Award Catalogue, the valid values for mimetype can be found in codelist.
 
-[source, xml, indent=0]
 .Example of using attached binary objects
+[source, xml, indent=0]
 ----
-<cac:ItemSpecificationDocumentReference>
-    <cbc:ID>2384-34232-342-34-2333</cbc:ID>
-    <cac:Attachment>
-        <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="specification.pdf"
-            >ZGVmYXVsdA==</cbc:EmbeddedDocumentBinaryObject>
-    </cac:Attachment>
-</cac:ItemSpecificationDocumentReference>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=ItemSpecificationDocumentReference2]
 ----

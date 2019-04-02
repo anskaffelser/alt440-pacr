@@ -13,39 +13,20 @@ WARNING: All validity periods shall have both start date and end date, and the s
 
 Example of validity periods in a Pre-Award Catalogue:
 
-[source]
 .Document level (mandatory)
+[source, xml, indent=0]
 ----
-<cac:ValidityPeriod>
-    <cbc:StartDate>2018-01-01</cbc:StartDate>
-    <cbc:EndDate>2018-12-31</cbc:EndDate>
-</cac:ValidityPeriod>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=ValidityPeriod]
 ----
 
-[source]
 .Catalogue line
+[source, xml, indent=0]
 ----
-<cac:LineValidityPeriod>
-  <cbc:StartDate>2018-08-01</cbc:StartDate>
-  <cbc:EndDate>2018-12-31</cbc:EndDate>
-</cac:LineValidityPeriod>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=LineValidityPeriod]
 ----
 
-[source]
 .Two different validity period for a given price
+[source, xml, indent=0]
 ----
-<cac:RequiredItemLocationQuantity>
-  <cac:Price>
-    <cbc:PriceAmount currencyID="NOK">75.00</cbc:PriceAmount>
-    <cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
-    <cac:ValidityPeriod>
-      <cbc:StartDate>2018-04-01</cbc:StartDate>
-      <cbc:EndDate>2018-04-30</cbc:EndDate>
-    </cac:ValidityPeriod>
-    <cac:ValidityPeriod>
-      <cbc:StartDate>2018-08-01</cbc:StartDate>
-      <cbc:EndDate>2018-08-31</cbc:EndDate>
-    </cac:ValidityPeriod>
-  </cac:Price>
-<cac:RequiredItemLocationQuantity>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=Diff-LineValidityPeriod]
 ----

@@ -69,25 +69,8 @@ The quantity of the requested item property.
 
 |===
 
-[source]
 .Example of catalogue line with line identifier = 1 from the above table.
+[source, xml, indent=0]
 ----
-<cac:CatalogueLine>
-  <cbc:ID>1</cbc:ID>
-  <cbc:OrderableUnit>EA</cbc:OrderableUnit>
-  <cbc:ContentUnitQuantity unitCode="MLT">250</cbc:ContentUnitQuantity>
-  <cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
-  <cbc:MinimumOrderQuantity unitCode="EA">1</cbc:MinimumOrderQuantity>
-  <cbc:PackLevelCode>CU</cbc:PackLevelCode>
-  ...
-  <cac:Item>
-    <cbc:Name languageID="en">Milk 1 Liter</cbc:Name>
-    <cbc:PackSizeNumeric>1</cbc:PackSizeNumeric>
-    <cac:SellersItemIdentification>
-      <cbc:ID>2222</cbc:ID>
-    </cac:SellersItemIdentification>
-  ...
-  </cac:Item>
-  ...
-</cac:CatalogueLine>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=CatalogueLine-Equal-1]
 ----
