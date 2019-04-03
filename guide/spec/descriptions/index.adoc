@@ -8,6 +8,8 @@ This chapter describes selected parts of the information contents of the EHF Pre
 
 include::roles.adoc[]
 
+include::classification.adoc[]
+
 include::validity-period.adoc[]
 
 include::attachments.adoc[]
@@ -26,7 +28,7 @@ include::vat-info.adoc[]
 
 :leveloffset: +2
 
-include::classification.adoc[]
+
 
 include::related-products.adoc[]
 
