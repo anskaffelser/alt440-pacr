@@ -175,7 +175,17 @@
             <!-- end::Example-of-attachment[] -->
 
 
+            <!-- tag::unspsc[] -->
+            <cac:CommodityClassification>
+                <cbc:ItemClassificationCode listID="MP" listName="UNSPSC">14111511</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <!-- end::unspsc[] -->
 
+            <!-- tag::cpv[] -->
+            <cac:CommodityClassification>
+                <cbc:ItemClassificationCode listID="STI" listName="CPV">230498234</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <!-- end::cpv[] -->
 
             <!-- tag::UNDG-Code[] -->
             <cac:HazardousItem>

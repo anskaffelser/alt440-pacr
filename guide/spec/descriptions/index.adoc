@@ -26,6 +26,8 @@ include::vat-info.adoc[]
 
 :leveloffset: +2
 
+include::classification.adoc[]
+
 include::related-products.adoc[]
 
 include::quantities-units.adoc[]
