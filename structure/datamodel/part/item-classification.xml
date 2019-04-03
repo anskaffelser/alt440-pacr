@@ -20,11 +20,11 @@
                 <Value type="EXAMPLE">STI</Value>
             </Attribute>
             
-            <Attribute usage="optional">
+            <Attribute usage="Optional">
                 <Term>listName</Term>
                 <Name>Item request classification name</Name>
                 <Description>The name of the classification for this item.</Description>
-                <Value type="EXAMPLE">eClass</Value>
+                <Value type="EXAMPLE">CPV</Value>
             </Attribute>
             
             <Value type="EXAMPLE">230482343</Value>
