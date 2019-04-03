@@ -15,6 +15,6 @@ include::../../{snippet-dir}/Catalogue-guide.xml[tags=unspsc]
 .Example of CPV code as classification
 [source, xml, indent=0]
 ----
-include::../../{snippet-dir}/Catalogue-guide.xml[tags=cpv] <1>
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=cpv]
 ----
-<1> listID = STI states that the code is a CPV code 
+<1> listID = STI states that the code is a CPV code

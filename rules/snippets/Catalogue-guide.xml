@@ -183,7 +183,7 @@
 
             <!-- tag::cpv[] -->
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="STI" listName="CPV">230498234</cbc:ItemClassificationCode>
+                <cbc:ItemClassificationCode listID="STI" listName="CPV">230498234</cbc:ItemClassificationCode> <!--1-->
             </cac:CommodityClassification>
             <!-- end::cpv[] -->
 
