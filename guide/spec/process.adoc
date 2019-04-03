@@ -3,35 +3,6 @@
 
 {empty} +
 
-== Pre-Award Catalogue
-
-{empty} +
-
-=== Process Diagram
-
-The following diagram illustrates the basic EHF Pre-Award Catalogue process.
-
-.EHF Pre-Award Catalogue process.
-image::images/catalogueDiagram1.png[align="center",900,900]
-
-{empty} +
-
-=== Use Case
-
-//==== Use case
-
-On behalf of many municipalities or governmental entities a central unit has been given the task to accomplish a tender for the group on office supplies.
-
-The call for tender includes a structured pre-award catalogue request with the needs for the group. The economic operator (tenderer) that prepares the tender downloads or receive the catalogue request as part of the procurement documents. The pre-award catalogue request is containing descriptions of product and services the group needs in a generic way, e.g. blue pen.
-
-Economic operators choose their own products or services that fulfills the requirement and make use of a supplier eSubmission system to fill out the requested information as product number, product description, UoM (unit of measure) code, price, link to pictures and labels for environmental and social labels if required and so on. If the contracting authority provided structured information on the required goods, services or works base on codified property systems, for instance, provided by classification systems like GPC or eCl@ss, the economic operator can use this information to retrieve the necessary data on the offered goods, services or works from their product information systems. Futhermore, by using the aforementioned classification systems they can provide these product information in a structured way as well, so that it facilitates the automatic procession and evaluation of the tender.
-
-After finalizing the pre-award catalogue they include the catalogue together with other structured documents or non-structured documents as PDF into the system. The system prepares for submission towards the tender systems by sending the bid package to the access point connected.
-
-When contracting authority receive, through their access point, the pre-award catalogues from different tenderers, as part of the bid packages they lock down the offers. When time for open the bids, tendering system import the pre-award catalogue xml files in to their valuation service and find the best offer of products and/or services.
-
-The central unit import the catalogue into their catalogue tool and check the quality. According to the contract the supplier is sending a post-award catalogue that’s compared towards the pre-award catalogue from the tender. When the catalogue is ok the central unit sends it out of their access point, based on a distribution list in the catalogue tool. The different municipalities or governmental entities is receiving the approved pre-award catalogue in their catalogue tool connected to their eProcurement system. When the catalogue already is approved, the system can automatically display the catalogue content in the eProcurement search engine used by the different entities buyers.
-
 
 == Pre-Award Catalogue Request
 
@@ -78,3 +49,33 @@ The economic operator uses the Pre-award catalogue request to match the requirem
 The contracting authority receives the Pre-award catalogue and automatically evaluate the tenders from the various economic operator. The contracting authority choses the winner and inform all participating economic operator and then sends the contract for signing to the winning economic operator.
 
 The winning Pre-award catalogue will be then the basis for placing orders, receiving reception of goods and services and atomically checking of sent invoices.
+
+== Pre-Award Catalogue
+
+{empty} +
+
+=== Process Diagram
+
+The following diagram illustrates the basic EHF Pre-Award Catalogue process.
+
+.EHF Pre-Award Catalogue process.
+image::images/catalogueDiagram1.png[align="center",900,900]
+
+{empty} +
+
+=== Use Case
+
+//==== Use case
+
+On behalf of many municipalities or governmental entities a central unit has been given the task to accomplish a tender for the group on office supplies.
+
+The call for tender includes a structured pre-award catalogue request with the needs for the group. The economic operator (tenderer) that prepares the tender downloads or receive the catalogue request as part of the procurement documents. The pre-award catalogue request is containing descriptions of product and services the group needs in a generic way, e.g. blue pen.
+
+Economic operators choose their own products or services that fulfills the requirement and make use of a supplier eSubmission system to fill out the requested information as product number, product description, UoM (unit of measure) code, price, link to pictures and labels for environmental and social labels if required and so on. If the contracting authority provided structured information on the required goods, services or works base on codified property systems, for instance, provided by classification systems like GPC or eCl@ss, the economic operator can use this information to retrieve the necessary data on the offered goods, services or works from their product information systems. Futhermore, by using the aforementioned classification systems they can provide these product information in a structured way as well, so that it facilitates the automatic procession and evaluation of the tender.
+
+After finalizing the pre-award catalogue they include the catalogue together with other structured documents or non-structured documents as PDF into the system. The system prepares for submission towards the tender systems by sending the bid package to the access point connected.
+
+When contracting authority receive, through their access point, the pre-award catalogues from different tenderers, as part of the bid packages they lock down the offers. When time for open the bids, tendering system import the pre-award catalogue xml files in to their valuation service and find the best offer of products and/or services.
+
+The central unit import the catalogue into their catalogue tool and check the quality. According to the contract the supplier is sending a post-award catalogue that’s compared towards the pre-award catalogue from the tender. When the catalogue is ok the central unit sends it out of their access point, based on a distribution list in the catalogue tool. The different municipalities or governmental entities is receiving the approved pre-award catalogue in their catalogue tool connected to their eProcurement system. When the catalogue already is approved, the system can automatically display the catalogue content in the eProcurement search engine used by the different entities buyers.
+
