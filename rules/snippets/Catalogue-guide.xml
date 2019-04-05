@@ -95,6 +95,7 @@
                     <cbc:StartDate>2018-11-20</cbc:StartDate>
                     <cbc:EndDate>2018-11-30</cbc:EndDate>
                 </cac:ValidityPeriod>
+                
                 <cac:ValidityPeriod>
                     <cbc:StartDate>2018-12-01</cbc:StartDate>
                     <cbc:EndDate>2018-12-10</cbc:EndDate>
@@ -173,7 +174,6 @@
                 </cac:Attachment>
             </cac:ItemSpecificationDocumentReference>
             <!-- end::Example-of-attachment[] -->
-
 
             <!-- tag::unspsc[] -->
             <cac:CommodityClassification>
@@ -286,7 +286,6 @@
         <!-- ... -->
         <cac:Item>
             <cbc:Name languageID="en">Milk 1 Liter</cbc:Name>
-            <cbc:PackSizeNumeric>1</cbc:PackSizeNumeric>
             <cac:SellersItemIdentification>
                 <cbc:ID>2222</cbc:ID>
             </cac:SellersItemIdentification>

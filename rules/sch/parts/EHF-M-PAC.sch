@@ -44,10 +44,7 @@
     <rule context="cac:CatalogueLine">
         
         <let name="CatalogueLineValidityStart" value="if(exists(cac:LineValidityPeriod/cbc:StartDate)) then number(translate(cac:LineValidityPeriod/cbc:StartDate,'-','')) else $CatalogueValidityStart"/>
-        <let name="CatalogueLineValidityEnd" value="if(exists(cac:LineValidityPeriod/cbc:EndDate)) then number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) else $CatalogueValidityEnd"/>
-        <let name="CataloguePriceValidityStart" value="if(exists(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:StartDate)) then number(translate(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:StartDate,'-','')) else $CatalogueLineValidityStart"/>
-        <let name="CataloguePriceValidityEnd" value="if(exists(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:EndDate)) then number(translate(cac:RequiredItemLocationQuantity/cac:Price/cac:ValidityPeriod/cbc:EndDate,'-','')) else $CatalogueLineValidityEnd"/>
-        
+        <let name="CatalogueLineValidityEnd" value="if(exists(cac:LineValidityPeriod/cbc:EndDate)) then number(translate(cac:LineValidityPeriod/cbc:EndDate,'-','')) else $CatalogueValidityEnd"/>  
         
         <assert id="EHF-PAC-R008"
                 test="not(cbc:MaximumOrderQuantity) or number(cbc:MaximumOrderQuantity) &gt;= 0"
@@ -70,14 +67,30 @@
             test="($CatalogueLineValidityStart &lt;= $CatalogueLineValidityEnd)"
             flag="fatal">A line validity period end date SHALL be later or equal to the line validity period start date
         </assert>
+
+    </rule>
+    
+    
+    <rule context="cac:Price/cac:ValidityPeriod">
+        
+        <let name="CataloguePriceValidityStart"
+            value="if(exists(cbc:StartDate)) then number(translate(cbc:StartDate,'-','')) else 0"/>
+        <let name="CataloguePriceValidityEnd"
+            value="if(exists(cbc:EndDate)) then number(translate(cbc:EndDate,'-','')) else 99999999"/>
+        
+        <let name="CatalogueLineValidityStart"
+            value="if(exists(ancestor::cac:CatalogueLine/cac:LineValidityPeriod/cbc:StartDate)) then number(translate(ancestor::cac:CatalogueLine/cac:LineValidityPeriod/cbc:StartDate,'-','')) else $CatalogueValidityStart"/>
+        <let name="CatalogueLineValidityEnd"
+            value="if(exists(ancestor::cac:CatalogueLine/cac:LineValidityPeriod/cbc:EndDate)) then number(translate(ancestor::cac:CatalogueLine/cac:LineValidityPeriod/cbc:EndDate,'-','')) else $CatalogueValidityEnd"/>
         
         <assert id="EHF-PAC-R011"
             test="($CataloguePriceValidityStart &gt;= $CatalogueLineValidityStart) and ($CataloguePriceValidityStart &lt;= $CatalogueLineValidityEnd) 
             and ($CataloguePriceValidityEnd &lt;= $CatalogueLineValidityEnd) and ($CataloguePriceValidityEnd &gt;= $CatalogueLineValidityStart)"        
-            flag="fatal">Price validity start date SHALL be within the range of the catalogue line or catalogue validity period</assert>
+            flag="fatal">Price validity start and end date SHALL be within the range of the catalogue line or catalogue validity period</assert>
         <assert id="EHF-PAC-R016"
             test="($CataloguePriceValidityStart &lt;= $CataloguePriceValidityEnd)"
             flag="fatal">A price validity period end date SHALL be later or equal to the price validity period start date
+            
         </assert>
     </rule>
 

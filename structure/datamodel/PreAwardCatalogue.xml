@@ -38,7 +38,7 @@
 
         <Element>
             <Term>cbc:ID</Term>
-            <Name>Pre-award catalogue identifier</Name>
+            <Name>Document identifier</Name>
             <Description>The identifier that enables referencing of the document instance for
                 various purposes including referencing between transactions that are part of the
                 same process.</Description>
@@ -851,7 +851,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cbc:MinimumQuantity</Term>
-                    <Name>Minimum quantity</Name>
+                    <Name>Item price minimum quantity</Name>
                     <Description>The minimum quantity that can be ordered to qualify for a specific
                         price.</Description>
                     <DataType>Quantity</DataType>
@@ -876,7 +876,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cbc:MaximumQuantity</Term>
-                    <Name>Maximum quantity</Name>
+                    <Name>Item price maximum quantity</Name>
                     <Description>The maximum quantity that can be ordered to qualify for a specific
                         price.</Description>
                     <DataType>Quantity</DataType>
@@ -1113,7 +1113,7 @@
 
                 <Element cardinality="0..1">
                     <Term>cbc:PackSizeNumeric</Term>
-                    <Name>Packed units</Name>
+                    <Name>Consumable unit quantity</Name>
                     <Description>The packaging the item is available inside the orderable unit (next
                         lower level packaging), and which contains the number of the unit described
                         in Packed quantity. </Description>
@@ -1231,7 +1231,7 @@
                     <Term>cac:ItemSpecificationDocumentReference</Term>
                     <Name>ATTACHED ITEM SPECIFICATION</Name>
                     <Description>Attachments can be sent on line level in the Catalogue. This can be
-                        images or additional descriptions of a product. It is strongly recommended
+                        images or additional descriptions of a product. Please note that only one product main image can be sent pr. item. It is strongly recommended
                         to use external references in the form of URI's for
                         attachments.</Description>
                     <Property key="doc"
@@ -1452,15 +1452,6 @@
                         <Value type="EXAMPLE">Color</Value>
 
                     </Element>
-
-                    <!--  <Element cardinality="0..1">
-                        <Term>cbc:NameCode</Term>
-                        <Name>Item property classification code</Name>
-                        <Description>Code for the item property according to a property code system
-                        </Description>
-                        <DataType>Code</DataType>
-                        <Value type="EXAMPLE">35</Value>
-                    </Element>
 -->
                     <Element>
                         <Term>cbc:Value</Term>
@@ -1563,45 +1554,39 @@
 
                     <Element>
                         <Term>cbc:CertificateTypeCode</Term>
-                        <Name>General item means of proof</Name>
-                        <Description>A means of general item requirement provided in catalogue
+                        <Name>General item requirement</Name>
+                        <Description>The general item requirement, as provided in catalogue
                             request. A general requirement might contain sub-functional requirement
-                            (called specified item means of proof).</Description>
+                            (called detailed requirements, and sent in the cbc:CertificateType element).</Description>
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Energy consumption</Value>
-                        <!--<Name>Item means of proof type</Name>
-                        <Description>A code specifying the type of the Item means of proof according to Directives 2014/24/EU, e.g., if it a label, test report etc.</Description>
-                        <DataType>Code</DataType>
-                        <Value type="EXAMPLE">NEO</Value> -->
+  
                     </Element>
 
                     <Element>
                         <Term>cbc:CertificateType</Term>
-                        <Name>Specified item means of proof</Name>
-                        <Description>A means of specified item requirement provided in catalogue
+                        <Name>Sub-functional item requirement</Name>
+                        <Description>The sub-functional requirement, as provided in catalogue
                             request.</Description>
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Total energy consumption of the computer.</Value>
-                        <!--<Name>Item means of proof name</Name>
-                        <Description>Name of a item means of proof, e.g., the name of a label.</Description>
+                     
+                    </Element>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cbc:Remarks</Term>
+                        <Name>Requirement remarks</Name>
+                        <Description>Remarks to the stated requirements</Description>
                         <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Nordic Ecolabel</Value> -->
+                        <Value type="EXAMPLE">Requirement is fulfilled</Value>
                     </Element>
 
-                    <!-- <Element cardinality="0..1">
-                        <Term>cbc:Remarks</Term>
-                        <Name>Item means of proof absolute or award requirement</Name>
-                        <Description>Item means of absolute or award requirement.</Description>
-                        <Value type="EXAMPLE">Absolute requirement</Value>
-
-                    </Element> -->
 
                     <Element>
                         <Term>cac:IssuerParty</Term>
-                        <Name>ITEM MEANS OF PROOF ISSUER PARTY</Name>
-                        <Description>The party issuing the means of proof for the item. E.g., the
+                        <Name>ITEM REQUIREMENT ISSUER PARTY</Name>
+                        <Description>The party issuing the requirements for this item. E.g., the
                             organisation that issues a label or test reports, etc.</Description>
-
                         <Element>
                             <Term>cac:PartyName</Term>
                             <Name>PARTY NAME</Name>
@@ -1620,39 +1605,22 @@
 
                     <Element cardinality="0..n">
                         <Term>cac:DocumentReference</Term>
-                        <Name>DOCUMENT REFERENCE</Name>
-                        <!--<Description>
-                            This element is bound to two different business terms:
-                            Item means of proof reference or Item requirement reference.
-                            To indicate the, if the document reference is a reference
-                            to an means of proof, use the code Item_means_of_proof_reference.
-                            For an Item requirement reference use the code
-                            Item_requirement_reference.
-                        </Description> -->
+                        <Name>ITEM MEANS OF PROOF REFERENCE</Name>
+                        <Description>This element is used to indicate the means of proof used for the corresponding requirement</Description>
 
 
                         <Element>
                             <Term>cbc:ID</Term>
-                            <Name>Item means of proof attachment identifier</Name>
-                            <Description>The identifier for the item means of proof
-                                attachment.</Description>
+                            <Name>Item means of proof identifier</Name>
+                            <Description>The identifier for the item means of proof.</Description>
                             <DataType>Identifier</DataType>
                             <Value type="EXAMPLE">1</Value>
-                            <!-- <Name>Item means of proof reference or Item requirement reference</Name>
-                            <Description>
-                                Item means of proof reference is reference to an external specification
-                                of the provided means of proof. An Item requirement reference is a
-                                reference to the corresponding Item requirement given in the corresponding
-                                pre-award catalogue request this pre-award catalogue is build on.
-                            </Description>
-                            <DataType>Identifier</DataType>
-                            <Value type="EXAMPLE">http://www.nordic-ecolabel.org</Value> -->
                         </Element>
 
                         <Element cardinality="0..1">
                             <Term>cbc:DocumentTypeCode</Term>
-                            <Name>Item means of proof accepted evidence type</Name>
-                            <Description>Use one of the accepted evidence types from Procurement
+                            <Name>Item means of proof type</Name>
+                            <Description>Use one of the evidence types from Procurement
                                 Directive art.44: Type 1 labelling (ISO 14024), Type 2 labelling
                                 (ISO 14021), Type 3 labelling (ISO 14025), Certification, Test
                                 report, or Other means of proof. Use codelist "Accepted evidence
@@ -1660,33 +1628,23 @@
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">EvidenceType</Reference>
                             <Value type="EXAMPLE">Type1</Value>
-                            <!--<Description>
-                                Pseudo code indicating the DocumentReference as an Items means of proof reference
-                                or an Item requirement reference.
-                            </Description>
-                            <DataType>Code</DataType>
-                            <Value type="FIXED">Item_means_of_proof_reference or Item_requirement_reference</Value> -->
+                           
                         </Element>
 
                         <Element cardinality="0..1">
                             <Term>cbc:DocumentType</Term>
-                            <Name>Item means of proof type</Name>
-                            <Description>A code specifying the type of the Item means of proof
-                                according to Directives 2014/24/EU, e.g., if it is a label, test
-                                report etc.</Description>
-                            <DataType>Code</DataType>
-                            <!-- Skal det være code eller text her ? -->
-                            <Value type="EXAMPLE">Test report</Value>
+                            <Name>Item means of proof</Name>
+                            <Description>The name of the specific item means of proof</Description>
+                            <DataType>Text</DataType>
+                            <Value type="EXAMPLE">Svanemerket</Value>
                         </Element>
 
                         <Element cardinality="0..n">
                             <Term>cbc:DocumentDescription</Term>
-                            <Name>Other means of proof description</Name>
-                            <Description>If accepted evidence type (ref. element "DocumentTypeCode"
-                                in Catalogue Request) is "other means of proof" use this element to
-                                describe this evidence type.</Description>
+                            <Name>Item means of proof description</Name>
+                            <Description>Description of the means of proof</Description>
                             <DataType>Text</DataType>
-                            <Value type="EXAMPLE">Can be proved by lab test from X- company.</Value>
+                            <Value type="EXAMPLE">Laboratory test report</Value>
                         </Element>
 
                         <Element cardinality="0..1">
@@ -1699,7 +1657,7 @@
 
                                 <Element cardinality="0..1">
                                     <Term>cbc:URI</Term>
-                                    <Name>Item means of proof reference</Name>
+                                    <Name>Item means of proof URI</Name>
                                     <Description>A reference to an external specification of the
                                         provided means of proof.</Description>
                                     <DataType>Text</DataType>
@@ -1765,7 +1723,7 @@
 
                     <Element cardinality="0..1">
                         <Term>cbc:MinimumMeasure</Term>
-                        <Name>Handling unit minimum storage temperature</Name>
+                        <Name>Handling unit minimum storage temperature or humidity</Name>
                         <Description> The minimum dimensions of the handling unit: (1) Handling unit
                             minimum storage temperature: The lower margin of the recommended storage
                             temperature range for the item. (2) Handling unit minimum storage
@@ -1794,7 +1752,7 @@
 
                     <Element cardinality="0..1">
                         <Term>cbc:MaximumMeasure</Term>
-                        <Name>Handling unit maximum storage temperature</Name>
+                        <Name>Handling unit maximum storage temperature or humidity</Name>
                         <Description> The maximum dimensions of the handling unit: (1) Handling unit
                             maximum storage temperature: The upper margin of the recommended storage
                             temperature range for the item. (2) Handling unit maximum storage
