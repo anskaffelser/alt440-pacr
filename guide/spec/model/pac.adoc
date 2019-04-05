@@ -2,4 +2,4 @@
 = Information model Pre-award catalogue
 
 .Class diagram PreAward catalogue
-image::images/PreAwardCatalogue.jpg[Pre-award catalogue class diagram]
+image::images/PreAward-Catalogue.jpg[Pre-award catalogue class diagram]

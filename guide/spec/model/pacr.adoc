@@ -2,4 +2,4 @@
 = Information model Pre-award catalogue request
 
 .Class diagram PreAward catalogue request
-image::images/CatalogueRequest.jpg[catalogue request class diagram]
+image::images/PreAward-CatalogueRequest.jpg[catalogue request class diagram]
