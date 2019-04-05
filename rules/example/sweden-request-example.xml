@@ -86,9 +86,20 @@
 
     <cac:CatalogueRequestLine>
         <cbc:ID>1</cbc:ID>
+
+        
+        <cac:RequiredItemLocationQuantity>
+            
+            <cac:Price>
+                <cbc:PriceAmount currencyID="NOK">7000.00</cbc:PriceAmount>
+                <cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
+            </cac:Price>
+        </cac:RequiredItemLocationQuantity>
+        
         <!-- ... -->
 
         <cac:Item>
+            <cbc:Name>test</cbc:Name>
             <!-- ... -->
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode listID="STI">123456789</cbc:ItemClassificationCode> <!-- CPV kode-->
