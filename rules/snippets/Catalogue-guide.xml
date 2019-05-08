@@ -210,7 +210,6 @@
             <cac:AdditionalItemProperty>
                 <cbc:ID>1</cbc:ID>
                 <cbc:Name>Fat</cbc:Name>
-                <cbc:Value>Red</cbc:Value>
                 <cbc:ValueQuantity unitCode="P1">3</cbc:ValueQuantity>
                 <cbc:ValueQualifier>Proportion of fat</cbc:ValueQualifier>
             </cac:AdditionalItemProperty>
