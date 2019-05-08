@@ -135,4 +135,61 @@
 			</cac:CatalogueLine>
 		</Catalogue>
 	</test>
+	<test id="7">
+		<assert>
+			<success>EHF-PAC-R007</success>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+			
+			<cac:ValidityPeriod>
+				<cbc:StartDate>2018-09-01</cbc:StartDate>
+				<cbc:EndDate>2019-08-31</cbc:EndDate>
+			</cac:ValidityPeriod>
+			
+			<cac:CatalogueLine>
+				<cac:LineValidityPeriod>
+					<cbc:StartDate>2018-09-01</cbc:StartDate>
+					<cbc:EndDate>2018-12-31</cbc:EndDate>
+				</cac:LineValidityPeriod>
+			</cac:CatalogueLine>
+			
+			<cac:CatalogueLine>
+				<cac:LineValidityPeriod>
+					<cbc:StartDate>2019-01-01</cbc:StartDate>
+					<cbc:EndDate>2019-08-31</cbc:EndDate>
+				</cac:LineValidityPeriod>
+			</cac:CatalogueLine>
+		</Catalogue>
+	</test>
+	
+	<test id="7">
+		<assert>
+			<error>EHF-PAC-R007</error>
+		</assert>
+		<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+			
+			<cac:ValidityPeriod>
+				<cbc:StartDate>2018-09-01</cbc:StartDate>
+				<cbc:EndDate>2019-08-31</cbc:EndDate>
+			</cac:ValidityPeriod>
+			
+			<cac:CatalogueLine>
+				<cac:LineValidityPeriod>
+					<cbc:StartDate>2018-09-01</cbc:StartDate>
+					<cbc:EndDate>2018-12-31</cbc:EndDate>
+				</cac:LineValidityPeriod>
+			</cac:CatalogueLine>
+			
+			<cac:CatalogueLine>
+				<cac:LineValidityPeriod>
+					<cbc:StartDate>2019-01-01</cbc:StartDate>
+					<cbc:EndDate>2019-09-30</cbc:EndDate>
+				</cac:LineValidityPeriod>
+			</cac:CatalogueLine>
+		</Catalogue>
+	</test>
 </testSet>
