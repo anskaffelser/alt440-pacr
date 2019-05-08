@@ -55,17 +55,17 @@ The quantity of the requested item property.
 |*Line identifier*| ID| 1| 2| 3
 |*Sellers item identifier* | SellersItemIdentification/ID | 2222| 222| 22
 |*Item name* | Item/Name |Milk 1L|6 x 1L Milk| Milk
-|*Orderable Unit* | OrderableUnit| EA| CS| PF
+|*Orderable Unit* | OrderableUnit| XBO| CS| PF
 |*Packaging level* | PackLevelCode|CU |TU| DU
 |*Packed quantity* |Item/PackQuantity|  |6 |18
-|*Packed quantity unit* |Item/PackQuantity/@unitCode| |EA |CS
-|*Consumable unit quantity*|Item/PackSizeNumeric |1 |6 |180
-|*Item net quantity* |ContentUnitQuantity |250|1500|30000
+|*Packed quantity unit* |Item/PackQuantity/@unitCode| |XBO |CS
+|*Consumable unit quantity*|Item/PackSizeNumeric |1 |6 |108
+|*Item net quantity* |ContentUnitQuantity |1000|6000|108000
 |*Item net quantity unit*|ContentUnitQuantity/@unitCode|MLT|MLT|MLT
 |*Minimum order quantity*|MinimumOrderQuantity|1 | 1| 1
-|*Minimum order quantity unit*|MinimumOrderQuantity/@unitCode|EA |CS | PF
+|*Minimum order quantity unit*|MinimumOrderQuantity/@unitCode|XBO |CS | PF
 |*Component related item identifier*|ComponentRelatedItem/ID| |2222 | 222
-|*Item quantity for component related item*|ComponentRelatedItem/Quantity| |10 |18
+|*Item quantity for component related item*|ComponentRelatedItem/Quantity| |6 |18
 
 |===
 

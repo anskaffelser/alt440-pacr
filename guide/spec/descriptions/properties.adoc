@@ -1,57 +1,27 @@
 = Requested Item Properties
 
-Requested item properties, like a specific colour of an item, can be sent in the element `cac:AdditionalItemProperty`. This element can contain information on requested property name, quantity, range, classification and request relevance, i.e if the property request is mandatory, optional, forbidden or for information. If the relevance code is set to mandatory, information on that property shall be included in the corresponding pre-award catalogue, using the identifier as sent in the request, if code is forbidden this cannot be a property of the item, and hence its value shall not be sent in the catalogue.
+Requested item properties are used in the pre-award catalogue request transaction to request specific properties of an item, like a specific colour of an item, and is sent in the UBL element `cac:AdditionalItemProperty`. This element can contain information on requested property name, quantity, range, classification and request relevance, i.e if the property request is mandatory, optional, forbidden or for information. If the relevance code is set to mandatory, information on that property shall be included in the corresponding pre-award catalogue, if code is forbidden this cannot be a property of the item, and hence its value shall not be sent in the catalogue.
+
+The requested item property identifier must be unique within one request, and this identifier must also be used in the corresponding pre-award catalogue, if the element sent.
+
+See further details and examples of the response in a pre-award catalogue in chapter <<additional-prop>>
 
 .Example to request a specific proportion of fat in milk
 [source, xml, indent=0]
 ----
 include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=Request-of-fat-in-milk]
 ----
+<1> Unique (in this request) identifier
+<2> the name of the requested property as free text
+<3> The quantity and unit code requested, here 3%
+<4> The relevance code, according to {relevance}
 
 .Example to request a specific range of item net quantity
 [source, xml, indent=0]
 ----
 include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=Request-of-specific-range]
 ----
-
-
-
-= Additional Item Properties
-Additional properties are meant to send information on item properties, and all properties that is corresponding to a requested item property from the pre-award catalogue request, shall use the identifier and name as sent in the request.
-Additional item properties are sent in the element `cac:AdditionalItemProperty`.
-
-.Example of a pre-award catalogue property as a response to the requested property of 3% fat in milk (as in the above chapter)
-[source, xml, indent=0]
-----
-include::../../{snippet-dir}/Catalogue-guide.xml[tags=AdditionalItemProperty]
-----
-
-.Example of a pre-award catalogue property as a response to the requested minimum and maximum range of the net quantity (as in the above chapter)
-[source, xml, indent=0]
-----
-include::../../{snippet-dir}/Catalogue-guide.xml[tags=AdditionalItemProperty2]
-----
-<1> The item net quantity is sent in the ContentUnitQuantity in the pre-award catalogue
-
-== Other examples of additional properties in a pre-award catalogue
-
-====
-.Nutrition
-[source, xml, indent=0]
-----
-include::../../{snippet-dir}/Catalogue-guide.xml[tags=Nutrition]
-----
-
-.Allergens
-[source, xml, indent=0]
-----
-include::../../{snippet-dir}/Catalogue-guide.xml[tags=Allergens]
-----
-
-.Genetically modified
-[source, xml, indent=0]
-----
-include::../../{snippet-dir}/Catalogue-guide.xml[tags=GeneticallyModified]
-----
-
-====
+<1> the name of the requested property as free text
+<2> Minimum requested item net quantity
+<3> Maximim requested item net quantity
+<4> The relevance code, according to {relevance}

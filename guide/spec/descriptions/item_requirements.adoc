@@ -5,9 +5,9 @@ Public actors may have special green, social or innovative requirements to the w
 
 IMPORTANT: Contracting authorities requiring a specific label shall accept all labels that confirm that the works, supplies or services meet *equivalent* label requirements.
 
-These requirements are sent in the element 'cac:Certificate' in the pre award catalogue request, and the economic operator sends their answer and attachments (if any), in the `cac:Certificate`-element in the pre award catalogue.
+These requirements are sent in the element 'cac:Certificate' in the pre award catalogue request, and the economic operator sends their answer and attachments (if any), in the `cac:Certificate`-element in the pre-award catalogue.
 
-The 'cac:Certificate' contains detailed information on the requirement(s), if the requirement is absolute or an award criteria. In addition, the type of evidence (means of proof) that can be used is stated as well.
+The 'cac:Certificate' contains detailed information on the requirement(s), if the requirement is an absolute criteria (must be fulfilled) or an award criteria. In addition, the type of evidence (means of proof) that can be used is stated as well.
 
 
 
@@ -18,7 +18,7 @@ include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=Certificate]
 ----
 <1> Main level requirement
 <2> Specific requirement
-<3> The requirement is absolute.
+<3> The requirement is absolute, use codes from {criteria}
 <4> A Type 1 certificate is asked for as the means of proof level
 <5> Green requirement
 <6> Reference to the specification of the suggested means of proof.

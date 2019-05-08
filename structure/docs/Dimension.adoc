@@ -2,8 +2,14 @@ include::guide/settings.adoc[]
 
 //= Dimension
 
-.UBL example of dimension
+.UBL example of providing information on the height of packages
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=Dimension]
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=Dimension-ht]
+----
+
+.UBL example of stating minimum and maximum temperature
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/PreAwardCatalogue-example.xml[tags=Dimension-tmp]
 ----

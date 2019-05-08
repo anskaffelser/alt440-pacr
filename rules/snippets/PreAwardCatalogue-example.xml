@@ -316,14 +316,19 @@
             </cac:Certificate>
             <!-- end::Certificate[] -->
 
-            <!-- tag::Dimension[] -->
+            <!-- tag::Dimension-ht[] -->
             <cac:Dimension>
                 <cbc:AttributeID>HT</cbc:AttributeID>
-                <cbc:Measure unitCode="CMT">6</cbc:Measure>
+                <cbc:Measure unitCode="CMT">600</cbc:Measure>
+            </cac:Dimension>
+            <!-- end::Dimension-ht[] -->
+            <!-- tag::Dimension-tmp[] -->
+            <cac:Dimension>
+                <cbc:AttributeID>TC</cbc:AttributeID>
                 <cbc:MinimumMeasure unitCode="CEL">1</cbc:MinimumMeasure>
                 <cbc:MaximumMeasure unitCode="CEL">15</cbc:MaximumMeasure>
             </cac:Dimension>
-            <!-- end::Dimension[] -->
+            <!-- end::Dimension-tmp[] -->
 
         </cac:Item>
         <!-- end::Item[] -->

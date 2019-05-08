@@ -1,10 +1,11 @@
 //Internal
-:link-pracc-req: https://test-vefa.difi.no/alt440/pacr/syntax/PreAwardCatalogueRequest/tree/[Pre award catalogue request]
-:link-pracc-cat: https://test-vefa.difi.no/alt440/pacr/syntax/catalogue/tree/[Pre award catalogue]
-:link-codelist: https://test-vefa.difi.no/alt440/pacr/codelist/[Code list section]
-:codelist-ICD: https://test-vefa.difi.no/alt440/pacr/codelist/ICD/[ICD list]
-:eaid: https://test-vefa.difi.no/alt440/pacr/codelist/eaid/[Code list for electronic address]
-
+:link-pracc-req: link:/alt440/pacr/syntax/PreAwardCatalogueRequest/tree/[Pre award catalogue request]
+:link-pracc-cat: link:/alt440/pacr/syntax/catalogue/tree/[Pre award catalogue]
+:link-codelist: link:/alt440/pacr/codelist/[Code list section]
+:codelist-ICD: link:/alt440/pacr/codelist/ICD/[ICD list]
+:eaid: link:/alt440/pacr/codelist/eaid/[Code list for electronic address]
+:relevance: link:/alt440/pacr/codelist/relevance/[Property relevance codes]
+:criteria: link:/alt440/pacr/codelist/AbsoluteAwardCriteria/[Absolute or award criteria codes]
 
 
 //PEPPOL

@@ -1,0 +1,44 @@
+[[additional-prop]]
+= Additional Item Properties
+
+Additional properties are used to send information on item properties
+
+IMPORTANT: All properties that is corresponding to a requested item property from the pre-award catalogue request, shall use the identifier and name as sent in the request.
+
+Additional item properties are sent in pre-award catalogue in the UBL element `cac:AdditionalItemProperty`.
+
+.Example of a pre-award catalogue property as a response to the requested property of 3% fat in milk (as in the above chapter)
+[source, xml, indent=0]
+----
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=AdditionalItemProperty]
+----
+
+.Example of a pre-award catalogue property as a response to the requested minimum and maximum range of the net quantity (as in the above chapter)
+[source, xml, indent=0]
+----
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=AdditionalItemProperty2]
+----
+<1> The item net quantity is sent in the ContentUnitQuantity in the pre-award catalogue
+
+== Other examples of additional properties in a pre-award catalogue
+
+====
+.Nutrition
+[source, xml, indent=0]
+----
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=Nutrition]
+----
+
+.Allergens
+[source, xml, indent=0]
+----
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=Allergens]
+----
+
+.Genetically modified
+[source, xml, indent=0]
+----
+include::../../{snippet-dir}/Catalogue-guide.xml[tags=GeneticallyModified]
+----
+
+====

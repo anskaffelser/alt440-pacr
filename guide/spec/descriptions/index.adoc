@@ -28,7 +28,7 @@ include::vat-info.adoc[]
 
 :leveloffset: +2
 
-
+include::catalogue-properties.adoc[]
 
 include::related-products.adoc[]
 

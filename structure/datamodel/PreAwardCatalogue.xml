@@ -1231,9 +1231,9 @@
                     <Term>cac:ItemSpecificationDocumentReference</Term>
                     <Name>ATTACHED ITEM SPECIFICATION</Name>
                     <Description>Attachments can be sent on line level in the Catalogue. This can be
-                        images or additional descriptions of a product. Please note that only one product main image can be sent pr. item. It is strongly recommended
-                        to use external references in the form of URI's for
-                        attachments.</Description>
+                        images or additional descriptions of a product. Please note that only one
+                        product main image can be sent pr. item. It is strongly recommended to use
+                        external references in the form of URI's for attachments.</Description>
                     <Property key="doc"
                         >structure/docs/ItemSpecificationDocumentReference.adoc</Property>
 
@@ -1452,7 +1452,20 @@
                         <Value type="EXAMPLE">Color</Value>
 
                     </Element>
--->
+                    <Element cardinality="0..1">
+                        <Term>cbc:NameCode</Term>
+                        <Name>Item property code</Name>
+                        <Description>Code for the item property according to a property code system,
+                            bilaterally agreed</Description>
+                        <DataType>Code</DataType>
+                        <Attribute>
+                            <Term>listID</Term>
+                            <Name>Name code list id.</Name>
+                            <Description>An identifier for the code list used for the Name code,
+                                this is bilaterally agreed</Description>
+                        </Attribute>
+                    </Element>
+
                     <Element>
                         <Term>cbc:Value</Term>
                         <Name>Item property value</Name>
@@ -1529,7 +1542,20 @@
                         <Reference type="RULE">EHF-COMMON-R030</Reference>
                         <Value type="EXAMPLE">2017-12-31</Value>
                     </Element>
-
+                    
+                    <Element cardinality="0..1">
+                        <Term>cac:LotIdentification</Term>
+                        <Name>Lot identification</Name>
+                        <Element cardinality="0..1">
+                            <Term>cbc:LotNumberID</Term>
+                            <Name>Item batch identifier</Name>
+                            <Description>Identifies the production batch that the item(s) listed in
+                                the catalogue line were part of.</Description>
+                            <DataType>Identifier</DataType>
+                            <Value type="EXAMPLE">B-10</Value>
+                        </Element>
+                    </Element>
+                    
                 </Element>
 
                 <Element cardinality="0..n">
@@ -1555,12 +1581,13 @@
                     <Element>
                         <Term>cbc:CertificateTypeCode</Term>
                         <Name>General item requirement</Name>
-                        <Description>The general item requirement, as provided in catalogue
-                            request. A general requirement might contain sub-functional requirement
-                            (called detailed requirements, and sent in the cbc:CertificateType element).</Description>
+                        <Description>The general item requirement, as provided in catalogue request.
+                            A general requirement might contain sub-functional requirement (called
+                            detailed requirements, and sent in the cbc:CertificateType
+                            element).</Description>
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Energy consumption</Value>
-  
+
                     </Element>
 
                     <Element>
@@ -1570,9 +1597,9 @@
                             request.</Description>
                         <DataType>Text</DataType>
                         <Value type="EXAMPLE">Total energy consumption of the computer.</Value>
-                     
+
                     </Element>
-                    
+
                     <Element cardinality="0..1">
                         <Term>cbc:Remarks</Term>
                         <Name>Requirement remarks</Name>
@@ -1606,7 +1633,8 @@
                     <Element cardinality="0..n">
                         <Term>cac:DocumentReference</Term>
                         <Name>ITEM MEANS OF PROOF REFERENCE</Name>
-                        <Description>This element is used to indicate the means of proof used for the corresponding requirement</Description>
+                        <Description>This element is used to indicate the means of proof used for
+                            the corresponding requirement</Description>
 
 
                         <Element>
@@ -1620,15 +1648,14 @@
                         <Element cardinality="0..1">
                             <Term>cbc:DocumentTypeCode</Term>
                             <Name>Item means of proof type</Name>
-                            <Description>Use one of the evidence types from Procurement
-                                Directive art.44: Type 1 labelling (ISO 14024), Type 2 labelling
-                                (ISO 14021), Type 3 labelling (ISO 14025), Certification, Test
-                                report, or Other means of proof. Use codelist "Accepted evidence
-                                type".</Description>
+                            <Description>Use one of the evidence types from Procurement Directive
+                                art.44: Type 1 labelling (ISO 14024), Type 2 labelling (ISO 14021),
+                                Type 3 labelling (ISO 14025), Certification, Test report, or Other
+                                means of proof. Use codelist "Accepted evidence type".</Description>
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">EvidenceType</Reference>
                             <Value type="EXAMPLE">Type1</Value>
-                           
+
                         </Element>
 
                         <Element cardinality="0..1">
@@ -1784,16 +1811,16 @@
 
             <Element cardinality="0..1">
                 <Term>cac:CallForTendersLineReference</Term>
-                <Name>CALL FOR TENDERS LINE REFERENCE</Name>
-                <Description>Reference to a Line on a Call For Tenders document.</Description>
+                <Name>ITEM REQUEST LINE REFERENCE</Name>
+                <Description>Reference to a Line in the corresponding pre-award catalogue request, or another relevant Call For Tenders document.</Description>
                 <Property key="doc">structure/docs/CallForTendersLineReference.adoc</Property>
 
                 <Element>
                     <Term>cbc:LineID</Term>
-                    <Name>Requested deliverable identifier</Name>
-                    <Description>Identifier for a requested deliverable.</Description>
+                    <Name>Requested item identifier</Name>
+                    <Description>Identifier for a requested item, use unique line identifier as received in the pre-award catalogue request (or other relevant call for tender documents).</Description>
                     <DataType>Identifier</DataType>
-                    <Value type="EXAMPLE">11112222</Value>
+                    <Value type="EXAMPLE">12</Value>
                 </Element>
             </Element>
         </Element>

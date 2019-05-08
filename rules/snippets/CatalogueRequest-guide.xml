@@ -61,22 +61,22 @@
             <!-- tag::Request-of-fat-in-milk[] -->
             <cac:AdditionalItemProperty>
                 <cbc:ID>1</cbc:ID>
-                <cbc:Name>Fat</cbc:Name>
-                <cbc:ValueQuantity unitCode="P1">3</cbc:ValueQuantity>
+                <cbc:Name>Fat</cbc:Name> <!--1-->
+                <cbc:ValueQuantity unitCode="P1">3</cbc:ValueQuantity> <!--2-->
                 <cbc:ValueQualifier>Proportion of fat</cbc:ValueQualifier>
-                <cbc:ImportanceCode>M</cbc:ImportanceCode>
+                <cbc:ImportanceCode>M</cbc:ImportanceCode> <!--3-->
             </cac:AdditionalItemProperty>
             <!-- end::Request-of-fat-in-milk[] -->
 
             <!-- tag::Request-of-specific-range[] -->
             <cac:AdditionalItemProperty>
                 <cbc:ID>2</cbc:ID>
-                <cbc:Name>Item net quantity</cbc:Name>
+                <cbc:Name>Item net quantity</cbc:Name> <!--1-->
                 <cac:ItemPropertyRange>
-                    <cbc:MinimumValue>1 liter</cbc:MinimumValue>
-                    <cbc:MaximumValue>1,75 liters</cbc:MaximumValue>
+                    <cbc:MinimumValue>1 liter</cbc:MinimumValue> <!--2-->
+                    <cbc:MaximumValue>1,75 liters</cbc:MaximumValue> <!--3-->
                 </cac:ItemPropertyRange>
-                <cbc:ImportanceCode>O</cbc:ImportanceCode>
+                <cbc:ImportanceCode>O</cbc:ImportanceCode> <!--4-->
             </cac:AdditionalItemProperty>
             <!-- end::Request-of-specific-range[] -->
 

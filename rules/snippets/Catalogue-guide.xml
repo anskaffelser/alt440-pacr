@@ -278,10 +278,10 @@
     <cac:CatalogueLine>
         <cbc:ID>1</cbc:ID>
         <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
-        <cbc:OrderableUnit>MLT</cbc:OrderableUnit>
-        <cbc:ContentUnitQuantity unitCode="MLT">250</cbc:ContentUnitQuantity>
+        <cbc:OrderableUnit>XBO</cbc:OrderableUnit>
+        <cbc:ContentUnitQuantity unitCode="MLT">1000</cbc:ContentUnitQuantity>
         <cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
-        <cbc:MinimumOrderQuantity unitCode="EA">1</cbc:MinimumOrderQuantity>
+        <cbc:MinimumOrderQuantity unitCode="XBO">1</cbc:MinimumOrderQuantity>
         <cbc:PackLevelCode>CU</cbc:PackLevelCode>
         <!-- ... -->
         <cac:Item>
@@ -302,7 +302,7 @@
         <cbc:PackLevelCode>DU</cbc:PackLevelCode>
         <cac:ComponentRelatedItem>
             <cbc:ID>222222</cbc:ID> <!--1-->
-            <cbc:Quantity unitCode="EA">12</cbc:Quantity> <!--2-->
+            <cbc:Quantity unitCode="XBO">12</cbc:Quantity> <!--2-->
         </cac:ComponentRelatedItem>
         <cac:Item>
             <cbc:Description>Soft drink, pallet</cbc:Description>
@@ -319,11 +319,11 @@
     <cac:CatalogueLine>
         <cbc:ID>2</cbc:ID>
         <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
-        <cbc:OrderableUnit>MLT</cbc:OrderableUnit>
+        <cbc:OrderableUnit>XCS</cbc:OrderableUnit>
         <cbc:PackLevelCode>TU</cbc:PackLevelCode>
         <cac:ComponentRelatedItem>
             <cbc:ID>333333</cbc:ID> <!--1-->
-            <cbc:Quantity unitCode="EA">6</cbc:Quantity> <!--2-->
+            <cbc:Quantity unitCode="XBO">6</cbc:Quantity> <!--2-->
         </cac:ComponentRelatedItem>
         <cac:Item>
             <cbc:Description>Soft drink, trading unit</cbc:Description>
