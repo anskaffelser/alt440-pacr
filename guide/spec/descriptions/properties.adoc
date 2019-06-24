@@ -1,8 +1,8 @@
 = Requested Item Properties
 
-Requested item properties are used in the pre-award catalogue request transaction to request specific properties of an item, like a specific colour of an item, and is sent in the UBL element `cac:AdditionalItemProperty`. This element can contain information on requested property name, quantity, range, classification and request relevance, i.e if the property request is mandatory, optional, forbidden or for information. If the relevance code is set to mandatory, information on that property shall be included in the corresponding pre-award catalogue, if code is forbidden this cannot be a property of the item, and hence its value shall not be sent in the catalogue.
+Requested item properties are used in the pre-award catalogue request transaction to request specific properties of an item, like a specific colour of an item, and is sent in the UBL element `cac:AdditionalItemProperty`. This element can contain information on requested property name, quantity, range, classification and request relevance, i.e if the property request is optional, forbidden or used for evaluation purposes. If the relevance code is not set this means that information on that property shall be included in the corresponding pre-award catalogue, i.e it is mandatory. If the code is F (forbidden) this cannot be a property of the item, and hence its value shall not be sent in the catalogue.
 
-The requested item property identifier must be unique within one request, and this identifier must also be used in the corresponding pre-award catalogue, if the element sent.
+IMPORTANT: The requested item property identifier must be unique within one request, and this identifier must also be used in the corresponding pre-award catalogue, if the element sent.
 
 See further details and examples of the response in a pre-award catalogue in chapter <<additional-prop>>
 

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:CodeList-1">
+    <Title>Requested elements</Title>
+    <Identifier>Requested_elements</Identifier>
+    <Version>1.0</Version>
+    <Agency>Difi</Agency>
+    <Code>
+        <Id>BG-024</Id>
+        <Name>LINE DELIVERY PERIOD</Name>
+    </Code>
+    <Code>
+        <Id>BT-040</Id>
+        <Name>Minimum quantity</Name>
+    </Code>
+    <Code>
+        <Id>BT-041</Id>
+        <Name>Maximum quantity</Name>
+    </Code>
+    <Code>
+        <Id>BG-026</Id>
+        <Name>APPLICABLE SALES LOCATION</Name>
+    </Code>
+    <Code>
+        <Id>BT-042</Id>
+        <Name>Address line 1</Name>
+    </Code>
+    <Code>
+        <Id>BT-043</Id>
+        <Name>Address line 2</Name>
+    </Code>
+    <Code>
+        <Id>BT-044</Id>
+        <Name>City name</Name>
+    </Code>
+    <Code>
+        <Id>BT-045</Id>
+        <Name>Post code</Name>
+    </Code>
+    <Code>
+        <Id>BT-046</Id>
+        <Name>Country subdivision</Name>
+    </Code>
+    <Code>
+        <Id>BG-027</Id>
+        <Name>ADDRESS LINE</Name>
+    </Code>
+    <Code>
+        <Id>BG-029</Id>
+        <Name>PRICE</Name>
+    </Code>
+    <Code>
+        <Id>BT-051</Id>
+        <Name>Item request description</Name>
+    </Code>
+    <Code>
+        <Id>BG-031</Id>
+        <Name>ADDITIONAL DOCUMENT REFERENCE</Name>
+    </Code>
+    <Code>
+        <Id>BT-054</Id>
+        <Name>Document description</Name>
+    </Code>
+    <Code>
+        <Id>BT-056</Id>
+        <Name>Document digest</Name>
+    </Code>
+    <Code>
+        <Id>BT-057</Id>
+        <Name>Document digest method code</Name>
+    </Code>
+    <Code>
+        <Id>BG-034</Id>
+        <Name>COMMODITY CLASSIFICATION</Name>
+    </Code>
+    <Code>
+        <Id>BG-035</Id>
+        <Name>REQUESTED ITEM PROPERTY</Name>
+    </Code>
+    <Code>
+        <Id>BT-062</Id>
+        <Name>Item property code</Name>
+    </Code>
+    <Code>
+        <Id>BT-063</Id>
+        <Name>Requested item property value</Name>
+    </Code>
+    <Code>
+        <Id>BT-064</Id>
+        <Name>Requested item property value quantity</Name>
+    </Code>
+    <Code>
+        <Id>BT-065</Id>
+        <Name>Requested item property description</Name>
+    </Code>
+    <Code>
+        <Id>BG-036</Id>
+        <Name>ITEM PROPERTY CLASSIFICATION</Name>
+    </Code>
+    <Code>
+        <Id>BT-068</Id>
+        <Name>Item property classification name</Name>
+    </Code>
+    <Code>
+        <Id>BG-037</Id>
+        <Name>ITEM PROPERTY RANGE</Name>
+    </Code>
+    <Code>
+        <Id>BT-070</Id>
+        <Name>Requested item property minimum value</Name>
+    </Code>
+    <Code>
+        <Id>BT-071</Id>
+        <Name>Requested item property maximum value</Name>
+    </Code>
+    <Code>
+        <Id>BG-038</Id>
+        <Name>REQUESTED ITEM REQUIREMENT</Name>
+    </Code>
+    <Code>
+        <Id>BG-041</Id>
+        <Name>DOCUMENT REFERENCE</Name>
+    </Code>
+    <Code>
+        <Id>BT-078</Id>
+        <Name>Item accepted evidence type</Name>
+    </Code>
+    <Code>
+        <Id>BT-079</Id>
+        <Name>Item requirement policy type</Name>
+    </Code>
+    <Code>
+        <Id>BG-042</Id>
+        <Name>ATTACHMENT</Name>
+    </Code>
+</CodeList>

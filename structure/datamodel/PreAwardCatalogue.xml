@@ -1,478 +1,726 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
-
-    <Term>catalogue</Term>
-    <Name>Pre-Award Catalogue</Name>
-
-    <Property key="sch:prefix">EHF-PAC</Property>
-    <Property key="sch:identifier">pac-basic</Property>
-    <Property key="sch:pathprefix">pacr</Property>
-
-    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2</Namespace>
-    <Namespace prefix="cac"
-        >urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
-    <Namespace prefix="cbc"
-        >urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
-
-    <Document>
-        <Term>ubl:Catalogue</Term>
-
-        <Element>
-            <Term>cbc:CustomizationID</Term>
-            <Name>Specification identification</Name>
-            <Description>An identification of the specification containing the total set of rules
+   <Term>catalogue</Term>
+   <Name>Pre-Award Catalogue</Name>
+   <Property key="sch:prefix">EHF-PAC</Property>
+   <Property key="sch:identifier">pac-basic</Property>
+   <Property key="sch:pathprefix">pacr</Property>
+   <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2</Namespace>
+   <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+   <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+   <Document>
+      <Term>ubl:Catalogue</Term>
+      <Element>
+         <Term>cbc:CustomizationID</Term>
+         <Name>Specification identification</Name>
+         <Description>An identification of the specification containing the total set of rules
                 regarding semantic content, cardinalities and business rules to which the data
                 contained in the instance document conforms.</Description>
-            <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:pac:1.0</Value>
-        </Element>
-
-        <Element>
-            <Term>cbc:ProfileID</Term>
-            <Name>Business process type identifier</Name>
-            <Description>Identifies the business process context in which the transaction appears.
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">BT-001</Reference>
+         <Value type="FIXED">urn:fdc:difi.no:2017:ehf:pac:1.0</Value>
+      </Element>
+      <Element>
+         <Term>cbc:ProfileID</Term>
+         <Name>Business process type identifier</Name>
+         <Description>Identifies the business process context in which the transaction appears.
                 It enables the buyer to process the document in an appropriate way.</Description>
-            <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:profile:03:1.0</Value>
-        </Element>
-
-        <Element>
-            <Term>cbc:ID</Term>
-            <Name>Document identifier</Name>
-            <Description>The identifier that enables referencing of the document instance for
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">BT-002</Reference>
+         <Value type="FIXED">urn:fdc:difi.no:2017:ehf:profile:03:1.0</Value>
+      </Element>
+      <Element>
+         <Term>cbc:ID</Term>
+         <Name>Document identifier</Name>
+         <Description>The identifier that enables referencing of the document instance for
                 various purposes including referencing between transactions that are part of the
                 same process.</Description>
-            <DataType>Identifier</DataType>
-            <Value type="EXAMPLE">123</Value>
-        </Element>
-
-        <Element cardinality="0..1">
-            <Term>cbc:ActionCode</Term>
-            <Name>Catalogue action code</Name>
-            <Description>Identifies how a received catalogue should be used against existing
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">BT-003</Reference>
+         <Value type="EXAMPLE">123</Value>
+      </Element>
+      <Element cardinality="0..1">
+         <Term>cbc:ActionCode</Term>
+         <Name>Catalogue action code</Name>
+         <Description>Identifies how a received catalogue should be used against existing
                 catalogue lines sent in previous catalogues, so that no discrepancies occur between
                 the suppliers and customers information. Describes how to treat existing items, not
                 part of the received catalogue and those that are included (unchanged, changed or
                 deleted). Default action is to fully replace the source catalogue.</Description>
-            <DataType>Code</DataType>
-            <Reference type="CODE_LIST">ActionCode_header</Reference>
-            <Value type="EXAMPLE">Add</Value>
-        </Element>
-
-        <Element cardinality="0..1">
-            <Term>cbc:Name</Term>
-            <Name>Catalogue name</Name>
-            <Description>A name of the catalogue for general reference.</Description>
-            <DataType>Text</DataType>
-            <Value type="EXAMPLE">Catalogue for office supplies</Value>
-        </Element>
-
-        <Element>
-            <Term>cbc:IssueDate</Term>
-            <Name>Catalogue issue date</Name>
-            <Description>The date on which the catalogue instance was issued, format YYYY-MM-DD.
+         <DataType>Code</DataType>
+         <Reference type="BUSINESS_TERM">BT-004</Reference>
+         <Reference type="CODE_LIST">ActionCode_header</Reference>
+         <Value type="EXAMPLE">Add</Value>
+      </Element>
+      <Element cardinality="0..1">
+         <Term>cbc:Name</Term>
+         <Name>Catalogue name</Name>
+         <Description>A name of the catalogue for general reference.</Description>
+         <DataType>Text</DataType>
+         <Reference type="BUSINESS_TERM">BT-005</Reference>
+         <Value type="EXAMPLE">Catalogue for office supplies</Value>
+      </Element>
+      <Element>
+         <Term>cbc:IssueDate</Term>
+         <Name>Catalogue issue date</Name>
+         <Description>The date on which the catalogue instance was issued, format YYYY-MM-DD.
                 Date shall not include timezone information</Description>
+         <DataType>Date</DataType>
+         <Reference type="BUSINESS_TERM">BT-006</Reference>
+         <Reference type="RULE">EHF-COMMON-R030</Reference>
+         <Value type="EXAMPLE">2017-06-01</Value>
+      </Element>
+      <Element cardinality="0..1">
+         <Term>cbc:IssueTime</Term>
+         <Name>Catalogue issue time</Name>
+         <Description>The time on which the pre-award catalogue was issued. Time shall not
+                include timezone information.</Description>
+         <DataType>Time</DataType>
+         <Reference type="BUSINESS_TERM">BT-007</Reference>
+         <Value type="EXAMPLE">10:00:00</Value>
+      </Element>
+      <Element cardinality="0..1">
+         <Term>cbc:Note</Term>
+         <Name>General payment conditions</Name>
+         <Description>Textual description of the general payment conditions that apply to all
+                items in the catalogue.</Description>
+         <DataType>Text</DataType>
+         <Reference type="BUSINESS_TERM">BT-008</Reference>
+      </Element>
+      <Element cardinality="0..1">
+         <Term>cbc:VersionID</Term>
+         <Name>Catalogue version</Name>
+         <Description>The version ID of a catalogue.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">BT-009</Reference>
+         <Value type="EXAMPLE">1</Value>
+      </Element>
+      <Element>
+         <Term>cac:ValidityPeriod</Term>
+         <Name>PRE-AWARD CATALOGUE VALIDITY PERIOD</Name>
+         <Description>The validity period must include both start date and end date. The start
+                date must be earlier than the end date.</Description>
+         <Reference type="BUSINESS_TERM">BG-001</Reference>
+         <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
+         <Element>
+            <Term>cbc:StartDate</Term>
+            <Name>Period start date</Name>
+            <Description>The date when the period starts, format YYYY-MM-DD. Date shall not
+                    include timezone information</Description>
             <DataType>Date</DataType>
+            <Reference type="BUSINESS_TERM">BT-010</Reference>
+            <Reference type="RULE">EHF-PAC-R001</Reference>
             <Reference type="RULE">EHF-COMMON-R030</Reference>
             <Value type="EXAMPLE">2017-06-01</Value>
-        </Element>
-
-        <Element cardinality="0..1">
-            <Term>cbc:IssueTime</Term>
-            <Name>Catalogue issue time</Name>
-            <Description>The time on which the pre-award catalogue was issued. Time shall not
-                include timezone information.</Description>
-            <DataType>Time</DataType>
-
-            <Value type="EXAMPLE">10:00:00</Value>
-        </Element>
-
-        <Element cardinality="0..1">
-            <Term>cbc:Note</Term>
-            <Name>General payment conditions</Name>
-            <Description>Textual description of the general payment conditions that apply to all
-                items in the catalogue.</Description>
-            <DataType>Text</DataType>
-        </Element>
-
-        <Element cardinality="0..1">
-            <Term>cbc:VersionID</Term>
-            <Name>Catalogue version</Name>
-            <Description>The version ID of a catalogue.</Description>
-            <DataType>Identifier</DataType>
-            <Value type="EXAMPLE">1</Value>
-        </Element>
-
-        <Element>
-            <Term>cac:ValidityPeriod</Term>
-            <Name>PRE-AWARD CATALOGUE VALIDITY PERIOD</Name>
-            <Description>The validity period must include both start date and end date. The start
-                date must be earlier than the end date.</Description>
-
-            <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
-
-            <Element>
-                <Term>cbc:StartDate</Term>
-                <Name>Period start date</Name>
-                <Description>The date when the period starts, format YYYY-MM-DD. Date shall not
+         </Element>
+         <Element>
+            <Term>cbc:EndDate</Term>
+            <Name>Period end date</Name>
+            <Description>The date when the period ends, format YYYY-MM-DD. Date shall not
                     include timezone information</Description>
-                <DataType>Date</DataType>
-                <Reference type="RULE">EHF-PAC-R001</Reference>
-                <Reference type="RULE">EHF-COMMON-R030</Reference>
-                <Value type="EXAMPLE">2017-06-01</Value>
-            </Element>
-
-            <Element>
-                <Term>cbc:EndDate</Term>
-                <Name>Period end date</Name>
-                <Description>The date when the period ends, format YYYY-MM-DD. Date shall not
-                    include timezone information</Description>
-                <DataType>Date</DataType>
-                <Reference type="RULE">EHF-PAC-R001</Reference>
-                <Reference type="RULE">EHF-COMMON-R030</Reference>
-                <Value type="EXAMPLE">2017-06-30</Value>
-            </Element>
-        </Element>
-
-        <Element cardinality="0..1">
-            <Term>cac:ReferencedContract</Term>
-            <Name>CONTRACT REFERENCE</Name>
-            <Description>A reference to a contract that can be identified.</Description>
-            <Property key="doc">structure/docs/ReferencedContract.adoc</Property>
-
-            <Element cardinality="0..1">
-                <Term>cbc:ID</Term>
-                <Name>Contract identifier</Name>
-                <Description>Normally not used in pre-award catalogues, but might be used in
+            <DataType>Date</DataType>
+            <Reference type="BUSINESS_TERM">BT-011</Reference>
+            <Reference type="RULE">EHF-PAC-R001</Reference>
+            <Reference type="RULE">EHF-COMMON-R030</Reference>
+            <Value type="EXAMPLE">2017-06-30</Value>
+         </Element>
+      </Element>
+      <Element cardinality="0..1">
+         <Term>cac:ReferencedContract</Term>
+         <Name>CONTRACT REFERENCE</Name>
+         <Description>A reference to a contract that can be identified.</Description>
+         <Reference type="BUSINESS_TERM">BG-002</Reference>
+         <Property key="doc">structure/docs/ReferencedContract.adoc</Property>
+         <Element cardinality="0..1">
+            <Term>cbc:ID</Term>
+            <Name>Contract identifier</Name>
+            <Description>Normally not used in pre-award catalogues, but might be used in
                     re-opening of Tender, DPS etc.</Description>
-                <DataType>Identifier</DataType>
-                <Value type="EXAMPLE">21381</Value>
-            </Element>
-
+            <DataType>Identifier</DataType>
+            <Reference type="BUSINESS_TERM">BT-012</Reference>
+            <Value type="EXAMPLE">21381</Value>
+         </Element>
+         <Element>
+            <Term>cac:ContractDocumentReference</Term>
+            <Name>PROCUREMENT REFERENCE</Name>
+            <Reference type="BUSINESS_TERM">BG-003</Reference>
             <Element>
-                <Term>cac:ContractDocumentReference</Term>
-                <Name>PROCUREMENT REFERENCE</Name>
-
-                <Element>
-                    <Term>cbc:ID</Term>
-                    <Name>Reference number</Name>
-                    <Description>An identifier that is specified by the buyer and used as a
+               <Term>cbc:ID</Term>
+               <Name>Reference number</Name>
+               <Description>An identifier that is specified by the buyer and used as a
                         reference number for all documents in the procurement process. It is also
                         known as procurement project identifier, procurement reference number or
                         contract folder identifier.</Description>
-                    <DataType>Document reference</DataType>
-                    <Value type="EXAMPLE">PPID-2</Value>
-                </Element>
+               <DataType>Document reference</DataType>
+               <Reference type="BUSINESS_TERM">BT-013</Reference>
+               <Value type="EXAMPLE">PPID-2</Value>
             </Element>
-        </Element>
-
-        <Element>
-            <Term>cac:ProviderParty</Term>
-            <Name>PROVIDER PARTY</Name>
-            <Description>The party that sends the catalogue.</Description>
-            <Property key="doc">structure/docs/ProviderParty.adoc</Property>
-
-            <Element cardinality="0..1">
-                <Term>cbc:EndpointID</Term>
-                <Name>Catalogue provider electronic address identifier</Name>
-                <Description>The electronic address of the party that sends the
+         </Element>
+      </Element>
+      <Element>
+         <Term>cac:ProviderParty</Term>
+         <Name>PROVIDER PARTY</Name>
+         <Description>The party that sends the catalogue.</Description>
+         <Reference type="BUSINESS_TERM">BG-004</Reference>
+         <Property key="doc">structure/docs/ProviderParty.adoc</Property>
+         <Element cardinality="0..1">
+            <Term>cbc:EndpointID</Term>
+            <Name>Catalogue provider electronic address identifier</Name>
+            <Description>The electronic address of the party that sends the
                     catalogue.</Description>
-                <DataType>Identifier</DataType>
-                <Reference type="RULE">EHF-COMMON-R010</Reference>
-
-                <Attribute>
-                    <Term>schemeID</Term>
-                    <Name>Identification scheme identifier</Name>
-                    <Description>The identification of the identification scheme.</Description>
-                    <Reference type="CODE_LIST">eaid</Reference>
-                    <Value type="EXAMPLE">0192</Value>
-                </Attribute>
-
-                <Value type="EXAMPLE">123456785</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cac:PartyIdentification</Term>
-                <Name>PARTY IDENTIFICATION</Name>
-                <Reference type="RULE">EHF-PAC-R002</Reference>
-
-                <Element>
-                    <Term>cbc:ID</Term>
-                    <Name>Catalogue provider standard identifier</Name>
-                    <Description>The standard identifier of the party that sends the
+            <DataType>Identifier</DataType>
+            <Reference type="BUSINESS_TERM">BT-014</Reference>
+            <Reference type="RULE">EHF-COMMON-R010</Reference>
+            <Attribute>
+               <Term>schemeID</Term>
+               <Name>Identification scheme identifier</Name>
+               <Description>The identification of the identification scheme.</Description>
+               <Reference type="CODE_LIST">eaid</Reference>
+               <Value type="EXAMPLE">0192</Value>
+            </Attribute>
+            <Value type="EXAMPLE">123456785</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyIdentification</Term>
+            <Name>PARTY IDENTIFICATION</Name>
+            <Reference type="BUSINESS_TERM">BG-005</Reference>
+            <Reference type="RULE">EHF-PAC-R002</Reference>
+            <Element>
+               <Term>cbc:ID</Term>
+               <Name>Catalogue provider standard identifier</Name>
+               <Description>The standard identifier of the party that sends the
                         catalogue.</Description>
-                    <DataType>Identifier</DataType>
-                    <Reference type="RULE">EHF-COMMON-R011</Reference>
-                    <Reference type="RULE">EHF-COMMON-R040</Reference>
-
-                    <Attribute usage="optional">
-                        <Term>schemeID</Term>
-                        <Name>Scheme identifier for provider party identification</Name>
-                        <Reference type="CODE_LIST">ICD</Reference>
-                        <Value type="EXAMPLE">0192</Value>
-                    </Attribute>
-                    <Value type="EXAMPLE">123456785</Value>
-                </Element>
+               <DataType>Identifier</DataType>
+               <Reference type="BUSINESS_TERM">BT-015</Reference>
+               <Reference type="RULE">EHF-COMMON-R011</Reference>
+               <Reference type="RULE">EHF-COMMON-R040</Reference>
+               <Attribute usage="optional">
+                  <Term>schemeID</Term>
+                  <Name>Scheme identifier for provider party identification</Name>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0192</Value>
+               </Attribute>
+               <Value type="EXAMPLE">123456785</Value>
             </Element>
-
-            <Element cardinality="0..1">
-                <Term>cac:PartyName</Term>
-                <Name>PARTY NAME</Name>
-                <Reference type="RULE">EHF-PAC-R002</Reference>
-
-                <Element>
-                    <Term>cbc:Name</Term>
-                    <Name>Catalogue provider name</Name>
-                    <Description>The name of the party that sends the catalogue.Use in absence of,
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyName</Term>
+            <Name>PARTY NAME</Name>
+            <Reference type="BUSINESS_TERM">BG-006</Reference>
+            <Reference type="RULE">EHF-PAC-R002</Reference>
+            <Element>
+               <Term>cbc:Name</Term>
+               <Name>Catalogue provider name</Name>
+               <Description>The name of the party that sends the catalogue.Use in absence of,
                         or additon to party identifier</Description>
-                    <DataType>Text</DataType>
-                    <Value type="EXAMPLE">Provider name</Value>
-                </Element>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-016</Reference>
+               <Value type="EXAMPLE">Provider name</Value>
             </Element>
-
-            <Include>part/postal-address.xml</Include>
-
-        </Element>
-
-        <Element>
-            <Term>cac:ReceiverParty</Term>
-            <Name>CATALOGUE RECEIVER</Name>
-            <Description>The party to which the catalogue is sent.</Description>
-            <Property key="doc">structure/docs/ReceiverParty.adoc</Property>
-
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PostalAddress</Term>
+            <Name>POSTAL ADDRESS</Name>
+            <Reference type="BUSINESS_TERM">BG-007</Reference>
             <Element cardinality="0..1">
-                <Term>cbc:EndpointID</Term>
-                <Name>Catalogue receiver electronic address identifier</Name>
-                <Description>The electronic address of the party to which the catalogue is
+               <Term>cbc:StreetName</Term>
+               <Name>Address line 1</Name>
+               <Description>The main address line in an address.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-017</Reference>
+               <Value type="EXAMPLE">Main Street 1</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:AdditionalStreetName</Term>
+               <Name>Address line 2</Name>
+               <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-018</Reference>
+               <Value type="EXAMPLE">Po Box 351</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CityName</Term>
+               <Name>City name</Name>
+               <Description>The common name of the city, town or village, where the address is located.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-019</Reference>
+               <Value type="EXAMPLE">London</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:PostalZone</Term>
+               <Name>Post code</Name>
+               <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                    </Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-020</Reference>
+               <Value type="EXAMPLE">W1G 8LZ</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CountrySubentity</Term>
+               <Name>Country subdivision</Name>
+               <Description>The subdivision of a country.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-021</Reference>
+               <Value type="EXAMPLE">Region A</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:AddressLine</Term>
+               <Name>ADDRESS LINE</Name>
+               <Reference type="BUSINESS_TERM">BG-008</Reference>
+               <Element>
+                  <Term>cbc:Line</Term>
+                  <Name>Address line 3</Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the
+                            main line.
+                        </Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-022</Reference>
+                  <Value type="EXAMPLE">Building 23</Value>
+               </Element>
+            </Element>
+            <Element>
+               <Term>cac:Country</Term>
+               <Name>COUNTRY</Name>
+               <Reference type="BUSINESS_TERM">BG-009</Reference>
+               <Element>
+                  <Term>cbc:IdentificationCode</Term>
+                  <Name>Country code</Name>
+                  <Description>A code that identifies the country.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-023</Reference>
+                  <Reference type="CODE_LIST">ISO3166</Reference>
+                  <Value type="EXAMPLE">GB</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+      <Element>
+         <Term>cac:ReceiverParty</Term>
+         <Name>CATALOGUE RECEIVER</Name>
+         <Description>The party to which the catalogue is sent.</Description>
+         <Reference type="BUSINESS_TERM">BG-010</Reference>
+         <Property key="doc">structure/docs/ReceiverParty.adoc</Property>
+         <Element cardinality="0..1">
+            <Term>cbc:EndpointID</Term>
+            <Name>Catalogue receiver electronic address identifier</Name>
+            <Description>The electronic address of the party to which the catalogue is
                     sent.</Description>
-                <DataType>Identifier</DataType>
-                <Reference type="RULE">EHF-COMMON-R010</Reference>
-
-                <Attribute>
-                    <Term>schemeID</Term>
-                    <Name>Identification scheme identifier</Name>
-                    <Description>The identification of the identification scheme.</Description>
-                    <Reference type="CODE_LIST">eaid</Reference>
-                    <Value type="EXAMPLE">0192</Value>
-                </Attribute>
-                <Value type="EXAMPLE">987654325</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cac:PartyIdentification</Term>
-                <Name>PARTY IDENTIFICATION</Name>
-                <Reference type="RULE">EHF-PAC-R003</Reference>
-
-
-                <Element>
-                    <Term>cbc:ID</Term>
-                    <Name>Catalogue receiver standard identifier</Name>
-                    <Description>The standard identifier of the party to which the catalogue is
+            <DataType>Identifier</DataType>
+            <Reference type="BUSINESS_TERM">BT-024</Reference>
+            <Reference type="RULE">EHF-COMMON-R010</Reference>
+            <Attribute>
+               <Term>schemeID</Term>
+               <Name>Identification scheme identifier</Name>
+               <Description>The identification of the identification scheme.</Description>
+               <Reference type="CODE_LIST">eaid</Reference>
+               <Value type="EXAMPLE">0192</Value>
+            </Attribute>
+            <Value type="EXAMPLE">987654325</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyIdentification</Term>
+            <Name>PARTY IDENTIFICATION</Name>
+            <Reference type="BUSINESS_TERM">BG-011</Reference>
+            <Reference type="RULE">EHF-PAC-R003</Reference>
+            <Element>
+               <Term>cbc:ID</Term>
+               <Name>Catalogue receiver standard identifier</Name>
+               <Description>The standard identifier of the party to which the catalogue is
                         sent.</Description>
-                    <DataType>Identifier</DataType>
-                    <Reference type="RULE">EHF-COMMON-R011</Reference>
-                    <Reference type="RULE">EHF-COMMON-R040</Reference>
-
-                    <Attribute usage="optional">
-                        <Term>schemeID</Term>
-                        <Name>Scheme identifier for receiver party identification</Name>
-                        <Reference type="CODE_LIST">ICD</Reference>
-                        <Value type="EXAMPLE">0192</Value>
-                    </Attribute>
-
-                    <Value type="EXAMPLE">987654325</Value>
-                </Element>
+               <DataType>Identifier</DataType>
+               <Reference type="BUSINESS_TERM">BT-025</Reference>
+               <Reference type="RULE">EHF-COMMON-R011</Reference>
+               <Reference type="RULE">EHF-COMMON-R040</Reference>
+               <Attribute usage="optional">
+                  <Term>schemeID</Term>
+                  <Name>Scheme identifier for receiver party identification</Name>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0192</Value>
+               </Attribute>
+               <Value type="EXAMPLE">987654325</Value>
             </Element>
-
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PartyName</Term>
+            <Name>PARTY NAME</Name>
+            <Reference type="BUSINESS_TERM">BG-012</Reference>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">BT-025</Reference>
+            <Reference type="RULE">EHF-PAC-R003</Reference>
+            <Element>
+               <Term>cbc:Name</Term>
+               <Name>Catalogue receiver name</Name>
+               <Description>The name of the party to which the catalogue is sent.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-026</Reference>
+               <Value type="EXAMPLE">Catalogue receiver name</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:PostalAddress</Term>
+            <Name>POSTAL ADDRESS</Name>
+            <Reference type="BUSINESS_TERM">BG-013</Reference>
             <Element cardinality="0..1">
-                <Term>cac:PartyName</Term>
-                <Name>PARTY NAME</Name>
-                <DataType>Text</DataType>
-                <Reference type="RULE">EHF-PAC-R003</Reference>
-
-                <Element>
-                    <Term>cbc:Name</Term>
-                    <Name>Catalogue receiver name</Name>
-                    <Description>The name of the party to which the catalogue is sent.</Description>
-                    <DataType>Text</DataType>
-                    <Value type="EXAMPLE">Catalogue receiver name</Value>
-                </Element>
+               <Term>cbc:StreetName</Term>
+               <Name>Address line 1</Name>
+               <Description>The main address line in an address.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-027</Reference>
+               <Value type="EXAMPLE">Main Street 1</Value>
             </Element>
-
-            <Include>part/postal-address.xml</Include>
-
-        </Element>
-
-        <Element cardinality="0..1">
-            <Term>cac:SellerSupplierParty</Term>
-            <Name>CATALOGUE SUPPLIER</Name>
-            <Description>The party that provides the items specified in the catalogue, must be used
+            <Element cardinality="0..1">
+               <Term>cbc:AdditionalStreetName</Term>
+               <Name>Address line 2</Name>
+               <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-028</Reference>
+               <Value type="EXAMPLE">Po Box 351</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CityName</Term>
+               <Name>City name</Name>
+               <Description>The common name of the city, town or village, where the address is located.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-029</Reference>
+               <Value type="EXAMPLE">London</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:PostalZone</Term>
+               <Name>Post code</Name>
+               <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                    </Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-030</Reference>
+               <Value type="EXAMPLE">W1G 8LZ</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:CountrySubentity</Term>
+               <Name>Country subdivision</Name>
+               <Description>The subdivision of a country.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-031</Reference>
+               <Value type="EXAMPLE">Region A</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:AddressLine</Term>
+               <Name>ADDRESS LINE</Name>
+               <Reference type="BUSINESS_TERM">BG-014</Reference>
+               <Element>
+                  <Term>cbc:Line</Term>
+                  <Name>Address line 3</Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the
+                            main line.
+                        </Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-032</Reference>
+                  <Value type="EXAMPLE">Building 23</Value>
+               </Element>
+            </Element>
+            <Element>
+               <Term>cac:Country</Term>
+               <Name>COUNTRY</Name>
+               <Reference type="BUSINESS_TERM">BG-015</Reference>
+               <Element>
+                  <Term>cbc:IdentificationCode</Term>
+                  <Name>Country code</Name>
+                  <Description>A code that identifies the country.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-033</Reference>
+                  <Reference type="CODE_LIST">ISO3166</Reference>
+                  <Value type="EXAMPLE">GB</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+      <Element cardinality="0..1">
+         <Term>cac:SellerSupplierParty</Term>
+         <Name>CATALOGUE SUPPLIER</Name>
+         <Description>The party that provides the items specified in the catalogue, must be used
                 if the supplier is different from the catalogue provider.</Description>
-            <Property key="doc">structure/docs/SellerSupplierParty.adoc</Property>
-
-            <Element>
-                <Term>cac:Party</Term>
-                <Name>PARTY</Name>
-
-                <Element cardinality="0..1">
-                    <Term>cac:PartyIdentification</Term>
-                    <Name>PARTY IDENTIFICATION</Name>
-                    <Reference type="RULE">EHF-PAC-R004</Reference>
-
-                    <Element>
-                        <Term>cbc:ID</Term>
-                        <Name>Catalogue supplier standard identifier</Name>
-                        <Description>The standard identifier of the party that provides the items
+         <Reference type="BUSINESS_TERM">BG-016</Reference>
+         <Property key="doc">structure/docs/SellerSupplierParty.adoc</Property>
+         <Element>
+            <Term>cac:Party</Term>
+            <Name>PARTY</Name>
+            <Reference type="BUSINESS_TERM">BG-017</Reference>
+            <Element cardinality="0..1">
+               <Term>cac:PartyIdentification</Term>
+               <Name>PARTY IDENTIFICATION</Name>
+               <Reference type="BUSINESS_TERM">BG-018</Reference>
+               <Reference type="RULE">EHF-PAC-R004</Reference>
+               <Element>
+                  <Term>cbc:ID</Term>
+                  <Name>Catalogue supplier standard identifier</Name>
+                  <Description>The standard identifier of the party that provides the items
                             specified in the catalogue.</Description>
-                        <DataType>Identifier</DataType>
-                        <Reference type="RULE">EHF-COMMON-R011</Reference>
-                        <Reference type="RULE">EHF-COMMON-R040</Reference>
-
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name>Scheme identifier for catalogue supplier party
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">BT-034</Reference>
+                  <Reference type="RULE">EHF-COMMON-R011</Reference>
+                  <Reference type="RULE">EHF-COMMON-R040</Reference>
+                  <Attribute usage="optional">
+                     <Term>schemeID</Term>
+                     <Name>Scheme identifier for catalogue supplier party
                                 identification</Name>
-                            <Reference type="CODE_LIST">ICD</Reference>
-                            <Value type="EXAMPLE">0192</Value>
-                        </Attribute>
-
-                        <Value type="EXAMPLE">123456785</Value>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:PartyName</Term>
-                    <Name>PARTY NAME</Name>
-                    <DataType>Text</DataType>
-                    <Reference type="RULE">EHF-PAC-R004</Reference>
-
-                    <Element>
-                        <Term>cbc:Name</Term>
-                        <Name>Catalogue supplier name</Name>
-                        <Description>The party that provides the items specified in the
-                            catalogue.</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Seller name</Value>
-                    </Element>
-                </Element>
-
-                <Include>part/postal-address.xml</Include>
-
-                <Include>part/contact.xml</Include>
-
+                     <Reference type="CODE_LIST">ICD</Reference>
+                     <Value type="EXAMPLE">0192</Value>
+                  </Attribute>
+                  <Value type="EXAMPLE">123456785</Value>
+               </Element>
             </Element>
-        </Element>
-
-        <Element cardinality="0..1">
-            <Term>cac:ContractorCustomerParty</Term>
-            <Name>CATALOGUE CUSTOMER</Name>
-            <Description>The party who may order from the catalogue, must be used if the customer
+            <Element cardinality="0..1">
+               <Term>cac:PartyName</Term>
+               <Name>PARTY NAME</Name>
+               <Reference type="BUSINESS_TERM">BG-019</Reference>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-034</Reference>
+               <Reference type="RULE">EHF-PAC-R004</Reference>
+               <Element>
+                  <Term>cbc:Name</Term>
+                  <Name>Catalogue supplier name</Name>
+                  <Description>The party that provides the items specified in the
+                            catalogue.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-035</Reference>
+                  <Value type="EXAMPLE">Seller name</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PostalAddress</Term>
+               <Name>POSTAL ADDRESS</Name>
+               <Reference type="BUSINESS_TERM">BG-020</Reference>
+               <Element cardinality="0..1">
+                  <Term>cbc:StreetName</Term>
+                  <Name>Address line 1</Name>
+                  <Description>The main address line in an address.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-036</Reference>
+                  <Value type="EXAMPLE">Main Street 1</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2</Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-037</Reference>
+                  <Value type="EXAMPLE">Po Box 351</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City name</Name>
+                  <Description>The common name of the city, town or village, where the address is located.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-038</Reference>
+                  <Value type="EXAMPLE">London</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:PostalZone</Term>
+                  <Name>Post code</Name>
+                  <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                        </Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-039</Reference>
+                  <Value type="EXAMPLE">W1G 8LZ</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision</Name>
+                  <Description>The subdivision of a country.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-040</Reference>
+                  <Value type="EXAMPLE">Region A</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:AddressLine</Term>
+                  <Name>ADDRESS LINE</Name>
+                  <Reference type="BUSINESS_TERM">BG-021</Reference>
+                  <Element>
+                     <Term>cbc:Line</Term>
+                     <Name>Address line 3</Name>
+                     <Description>An additional address line in an address that can be used to give further details supplementing the
+                                main line.
+                            </Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">BT-041</Reference>
+                     <Value type="EXAMPLE">Building 23</Value>
+                  </Element>
+               </Element>
+               <Element>
+                  <Term>cac:Country</Term>
+                  <Name>COUNTRY</Name>
+                  <Reference type="BUSINESS_TERM">BG-022</Reference>
+                  <Element>
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
+                     <Description>A code that identifies the country.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">BT-042</Reference>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">GB</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Contact</Term>
+               <Name>CONTACT PERSON</Name>
+               <Reference type="BUSINESS_TERM">BG-023</Reference>
+               <Element cardinality="0..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Contact point</Name>
+                  <Description>The contact point's name.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-043</Reference>
+                  <Value type="EXAMPLE">Ola Nordmann</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Telephone</Term>
+                  <Name>Contact telephone number</Name>
+                  <Description>A phone number for the contact point.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-044</Reference>
+                  <Value type="EXAMPLE">94384329</Value>
+               </Element>
+               <Element>
+                  <Term>cbc:ElectronicMail</Term>
+                  <Name>Contact email address</Name>
+                  <Description>An e-mail address for the contact point.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-045</Reference>
+                  <Value type="EXAMPLE">ola.nordmann@supplier.no</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+      <Element cardinality="0..1">
+         <Term>cac:ContractorCustomerParty</Term>
+         <Name>CATALOGUE CUSTOMER</Name>
+         <Description>The party who may order from the catalogue, must be used if the customer
                 party is different from the receiver party</Description>
-            <Property key="doc">structure/docs/ContractorCustomerParty.adoc</Property>
-
-            <Element>
-                <Term>cac:Party</Term>
-                <Name>PARTY</Name>
-
-                <Element cardinality="0..1">
-                    <Term>cac:PartyIdentification</Term>
-                    <Name>PARTY IDENTIFICATION</Name>
-                    <Reference type="RULE">EHF-PAC-R005</Reference>
-
-                    <Element>
-                        <Term>cbc:ID</Term>
-                        <Name>Catalogue customer standard identifier</Name>
-                        <Description>Standard identifier of the party who may order from the
+         <Reference type="BUSINESS_TERM">BG-024</Reference>
+         <Property key="doc">structure/docs/ContractorCustomerParty.adoc</Property>
+         <Element>
+            <Term>cac:Party</Term>
+            <Name>PARTY</Name>
+            <Reference type="BUSINESS_TERM">BG-025</Reference>
+            <Element cardinality="0..1">
+               <Term>cac:PartyIdentification</Term>
+               <Name>PARTY IDENTIFICATION</Name>
+               <Reference type="BUSINESS_TERM">BG-026</Reference>
+               <Reference type="RULE">EHF-PAC-R005</Reference>
+               <Element>
+                  <Term>cbc:ID</Term>
+                  <Name>Catalogue customer standard identifier</Name>
+                  <Description>Standard identifier of the party who may order from the
                             catalogue.</Description>
-                        <DataType>Identifier</DataType>
-                        <Reference type="RULE">EHF-COMMON-R011</Reference>
-                        <Reference type="RULE">EHF-COMMON-R040</Reference>
-
-                        <Attribute usage="optional">
-                            <Term>schemeID</Term>
-                            <Name>Scheme identifier for catalogue customer party
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">BT-046</Reference>
+                  <Reference type="RULE">EHF-COMMON-R011</Reference>
+                  <Reference type="RULE">EHF-COMMON-R040</Reference>
+                  <Attribute usage="optional">
+                     <Term>schemeID</Term>
+                     <Name>Scheme identifier for catalogue customer party
                                 identification</Name>
-                            <Reference type="CODE_LIST">ICD</Reference>
-                            <Value type="EXAMPLE">0192</Value>
-                        </Attribute>
-
-                        <Value type="EXAMPLE">987654325</Value>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:PartyName</Term>
-                    <Name>PARTY NAME</Name>
-                    <Reference type="RULE">EHF-PAC-R005</Reference>
-
-                    <Element>
-                        <Term>cbc:Name</Term>
-                        <Name>Catalogue customer name</Name>
-                        <Description>Name of the party who may order from the
-                            catalogue.</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Customer name</Value>
-                    </Element>
-                </Element>
-
-
-                <Include>part/contact.xml</Include>
-
+                     <Reference type="CODE_LIST">ICD</Reference>
+                     <Value type="EXAMPLE">0192</Value>
+                  </Attribute>
+                  <Value type="EXAMPLE">987654325</Value>
+               </Element>
             </Element>
-        </Element>
-
-        <Element cardinality="1..n">
-            <Term>cac:CatalogueLine</Term>
-            <Name>PRE-AWARD CATALOGUE LINE</Name>
-            <Description>Detailed information of an item, price and its composition in a pre-award
+            <Element cardinality="0..1">
+               <Term>cac:PartyName</Term>
+               <Name>PARTY NAME</Name>
+               <Reference type="BUSINESS_TERM">BG-027</Reference>
+               <Reference type="RULE">EHF-PAC-R005</Reference>
+               <Element>
+                  <Term>cbc:Name</Term>
+                  <Name>Catalogue customer name</Name>
+                  <Description>Name of the party who may order from the
+                            catalogue.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-047</Reference>
+                  <Value type="EXAMPLE">Customer name</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Contact</Term>
+               <Name>CONTACT PERSON</Name>
+               <Reference type="BUSINESS_TERM">BG-028</Reference>
+               <Element cardinality="0..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Contact point</Name>
+                  <Description>The contact point's name.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-048</Reference>
+                  <Value type="EXAMPLE">Ola Nordmann</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Telephone</Term>
+                  <Name>Contact telephone number</Name>
+                  <Description>A phone number for the contact point.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-049</Reference>
+                  <Value type="EXAMPLE">94384329</Value>
+               </Element>
+               <Element>
+                  <Term>cbc:ElectronicMail</Term>
+                  <Name>Contact email address</Name>
+                  <Description>An e-mail address for the contact point.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-050</Reference>
+                  <Value type="EXAMPLE">ola.nordmann@supplier.no</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+      <Element cardinality="1..n">
+         <Term>cac:CatalogueLine</Term>
+         <Name>PRE-AWARD CATALOGUE LINE</Name>
+         <Description>Detailed information of an item, price and its composition in a pre-award
                 catalogue.</Description>
-            <Property key="doc">structure/docs/CatalogueLine.adoc</Property>
-
-            <Element>
-                <Term>cbc:ID</Term>
-                <Name>Pre-award catalogue line identifier</Name>
-                <Description>Each line must have an identifier that is unique within the document to
+         <Reference type="BUSINESS_TERM">BG-029</Reference>
+         <Property key="doc">structure/docs/CatalogueLine.adoc</Property>
+         <Element>
+            <Term>cbc:ID</Term>
+            <Name>Pre-award catalogue line identifier</Name>
+            <Description>Each line must have an identifier that is unique within the document to
                     make it possible to reference the line. For example, from other
                     documents.</Description>
-                <DataType>Identifier</DataType>
-                <Value type="EXAMPLE">1</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cbc:ActionCode</Term>
-                <Name>Line action code</Name>
-                <Description>Used to instruct the catalogue receiver on what action should be taken
+            <DataType>Identifier</DataType>
+            <Reference type="BUSINESS_TERM">BT-051</Reference>
+            <Value type="EXAMPLE">1</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:ActionCode</Term>
+            <Name>Line action code</Name>
+            <Description>Used to instruct the catalogue receiver on what action should be taken
                     on the identified line when revising a catalogue. See rule on catalogue version
                     ID. When using Update or Delete codes, the entire Catalogue Line is updated or
                     deleted.</Description>
-                <DataType>Code</DataType>
-                <Reference type="CODE_LIST">ActionCode_line</Reference>
-                <Value type="EXAMPLE">Update</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cbc:ContractSubdivision</Term>
-                <Name>Contract subdivision</Name>
-                <Description>A relevant subdivision of the contract a catalogue refers
+            <DataType>Code</DataType>
+            <Reference type="BUSINESS_TERM">BT-052</Reference>
+            <Reference type="CODE_LIST">ActionCode_line</Reference>
+            <Value type="EXAMPLE">Update</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:ContractSubdivision</Term>
+            <Name>Contract subdivision</Name>
+            <Description>A relevant subdivision of the contract a catalogue refers
                     to.</Description>
-                <DataType>Text</DataType>
-                <Value type="EXAMPLE">Part 2</Value>
-            </Element>
-
-            <Element>
-                <Term>cbc:OrderableIndicator</Term>
-                <Name>Catalogue line orderable indicator</Name>
-                <Description>Indicates whether the catalogue line can be ordered. Allowed values are
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">BT-053</Reference>
+            <Value type="EXAMPLE">Part 2</Value>
+         </Element>
+         <Element>
+            <Term>cbc:OrderableIndicator</Term>
+            <Name>Catalogue line orderable indicator</Name>
+            <Description>Indicates whether the catalogue line can be ordered. Allowed values are
                     'true' or 'false'.</Description>
-                <DataType>Boolean</DataType>
-
-                <Value type="EXAMPLE">true</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cbc:OrderableUnit</Term>
-                <Name>Orderable unit</Name>
-                <Description>The unit in which the item described in this catalogue line can be
+            <DataType>Boolean</DataType>
+            <Reference type="BUSINESS_TERM">BT-054</Reference>
+            <Value type="EXAMPLE">true</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:OrderableUnit</Term>
+            <Name>Orderable unit</Name>
+            <Description>The unit in which the item described in this catalogue line can be
                     ordered. Mandatory if the item is orderable. Codes for unit of packaging from
                     UNECE Recommendation No. 21 can be used in accordance with the descriptions in
                     the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The 2
@@ -480,183 +728,174 @@
                     avoid duplication with existing code values in UNECE Recommendation No. 20, each
                     code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting
                     in a 3 alphanumeric code when used as a unit of measure. </Description>
-                <DataType>Code</DataType>
-                <Reference type="CODE_LIST">UNECERec20</Reference>
-
-                <Value type="EXAMPLE">MLT</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cbc:ContentUnitQuantity</Term>
-                <Name>Item net quantity</Name>
-                <Description>The net quantity of the item that is contained in each consumable unit,
+            <DataType>Code</DataType>
+            <Reference type="BUSINESS_TERM">BT-055</Reference>
+            <Reference type="CODE_LIST">UNECERec20</Reference>
+            <Value type="EXAMPLE">MLT</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:ContentUnitQuantity</Term>
+            <Name>Item net quantity</Name>
+            <Description>The net quantity of the item that is contained in each consumable unit,
                     excluding any packaging materials.</Description>
-                <DataType>Quantity</DataType>
-                <Attribute>
-                    <Term>unitCode</Term>
-                    <Name>Quantity unit code</Name>
-                    <Description>The unit of the quantity. Codes for unit of packaging from UNECE
+            <DataType>Quantity</DataType>
+            <Reference type="BUSINESS_TERM">BT-056</Reference>
+            <Attribute>
+               <Term>unitCode</Term>
+               <Name>Quantity unit code</Name>
+               <Description>The unit of the quantity. Codes for unit of packaging from UNECE
                         Recommendation No. 21 can be used in accordance with the descriptions in the
                         "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The 2
                         character alphanumeric code values in UNECE Recommendation 21 shall be used.
                         To avoid duplication with existing code values in UNECE Recommendation No.
                         20, each code value from UNECE Recommendation 21 shall be prefixed with an
                         “X”, resulting in a 3 alphanumeric code when used as a unit of measure. </Description>
-                    <Reference type="CODE_LIST">UNECERec20</Reference>
-
-                    <Value type="EXAMPLE">MLT</Value>
-                </Attribute>
-
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cbc:OrderQuantityIncrementNumeric</Term>
-                <Name>Order quantity increment</Name>
-                <Description>Possible limitation to the number of articles that can be ordered. If
+               <Reference type="CODE_LIST">UNECERec20</Reference>
+               <Value type="EXAMPLE">MLT</Value>
+            </Attribute>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:OrderQuantityIncrementNumeric</Term>
+            <Name>Order quantity increment</Name>
+            <Description>Possible limitation to the number of articles that can be ordered. If
                     the Quantity increment is 6 the article must be ordered in a quantity of 6, 12,
                     18 etc.</Description>
-                <DataType>Quantity</DataType>
-                <Value type="EXAMPLE">5</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cbc:MinimumOrderQuantity</Term>
-                <Name>Minimum order quantity</Name>
-                <Description>The smallest number of items that can be ordered.</Description>
-                <DataType>Quantity</DataType>
-                <Reference type="RULE">EHF-PAC-R009</Reference>
-                <Reference type="RULE">EHF-PAC-R010</Reference>
-
-                <Attribute>
-                    <Term>unitCode</Term>
-                    <Name>Quantity unit code</Name>
-                    <Description>The unit of the quantity. Codes for unit of packaging from UNECE
+            <DataType>Quantity</DataType>
+            <Reference type="BUSINESS_TERM">BT-057</Reference>
+            <Value type="EXAMPLE">5</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:MinimumOrderQuantity</Term>
+            <Name>Minimum order quantity</Name>
+            <Description>The smallest number of items that can be ordered.</Description>
+            <DataType>Quantity</DataType>
+            <Reference type="BUSINESS_TERM">BT-058</Reference>
+            <Reference type="RULE">EHF-PAC-R009</Reference>
+            <Reference type="RULE">EHF-PAC-R010</Reference>
+            <Attribute>
+               <Term>unitCode</Term>
+               <Name>Quantity unit code</Name>
+               <Description>The unit of the quantity. Codes for unit of packaging from UNECE
                         Recommendation No. 21 can be used in accordance with the descriptions in the
                         "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The 2
                         character alphanumeric code values in UNECE Recommendation 21 shall be used.
                         To avoid duplication with existing code values in UNECE Recommendation No.
                         20, each code value from UNECE Recommendation 21 shall be prefixed with an
                         “X”, resulting in a 3 alphanumeric code when used as a unit of measure. </Description>
-                    <Reference type="CODE_LIST">UNECERec20</Reference>
-                    <Value type="EXAMPLE">EA</Value>
-                </Attribute>
-
-                <Value type="DEFAULT">1</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cbc:MaximumOrderQuantity</Term>
-                <Name>Maximum order quantity</Name>
-                <Description>The largest number of items that can be ordered.</Description>
-                <DataType>Quantity</DataType>
-                <Reference type="RULE">EHF-PAC-R008</Reference>
-                <Reference type="RULE">EHF-PAC-R010</Reference>
-                <Attribute>
-                    <Term>unitCode</Term>
-                    <Name>Quantity unit code</Name>
-                    <Description>The unit of the quantity. Codes for unit of packaging from UNECE
+               <Reference type="CODE_LIST">UNECERec20</Reference>
+               <Value type="EXAMPLE">EA</Value>
+            </Attribute>
+            <Value type="DEFAULT">1</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:MaximumOrderQuantity</Term>
+            <Name>Maximum order quantity</Name>
+            <Description>The largest number of items that can be ordered.</Description>
+            <DataType>Quantity</DataType>
+            <Reference type="BUSINESS_TERM">BT-059</Reference>
+            <Reference type="RULE">EHF-PAC-R008</Reference>
+            <Reference type="RULE">EHF-PAC-R010</Reference>
+            <Attribute>
+               <Term>unitCode</Term>
+               <Name>Quantity unit code</Name>
+               <Description>The unit of the quantity. Codes for unit of packaging from UNECE
                         Recommendation No. 21 can be used in accordance with the descriptions in the
                         "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The 2
                         character alphanumeric code values in UNECE Recommendation 21 shall be used.
                         To avoid duplication with existing code values in UNECE Recommendation No.
                         20, each code value from UNECE Recommendation 21 shall be prefixed with an
                         “X”, resulting in a 3 alphanumeric code when used as a unit of measure. </Description>
-                    <Reference type="CODE_LIST">UNECERec20</Reference>
-
-
-                    <Value type="EXAMPLE">EA</Value>
-                </Attribute>
-
-                <Value type="EXAMPLE">1000</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cbc:WarrantyInformation</Term>
-                <Name>Catalogue line warranty information</Name>
-                <Description>Warranty information that applies to the catalogue line
+               <Reference type="CODE_LIST">UNECERec20</Reference>
+               <Value type="EXAMPLE">EA</Value>
+            </Attribute>
+            <Value type="EXAMPLE">1000</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:WarrantyInformation</Term>
+            <Name>Catalogue line warranty information</Name>
+            <Description>Warranty information that applies to the catalogue line
                     item.</Description>
-                <DataType>Text</DataType>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cbc:PackLevelCode</Term>
-                <Name>Handling unit packaging level</Name>
-                <Description>The packaging level of the orderable unit used to indicate different
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">BT-060</Reference>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:PackLevelCode</Term>
+            <Name>Handling unit packaging level</Name>
+            <Description>The packaging level of the orderable unit used to indicate different
                     pack levels and their relation.</Description>
-                <DataType>Code</DataType>
-                <Reference type="CODE_LIST">GS17009</Reference>
-
-                <Value type="EXAMPLE">TU</Value>
-            </Element>
-
-            <Element cardinality="0..1">
-                <Term>cac:LineValidityPeriod</Term>
-                <Name>LINE VALIDITY PERIOD</Name>
-                <Description>The line validity period must be the same, or within the document
+            <DataType>Code</DataType>
+            <Reference type="BUSINESS_TERM">BT-061</Reference>
+            <Reference type="CODE_LIST">GS17009</Reference>
+            <Value type="EXAMPLE">TU</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:LineValidityPeriod</Term>
+            <Name>LINE VALIDITY PERIOD</Name>
+            <Description>The line validity period must be the same, or within the document
                     validity period, if it exists.</Description>
-
-                <Element>
-                    <Term>cbc:StartDate</Term>
-                    <Name>Period start date</Name>
-                    <Description>The line validity start date. The date must be the same or earlier
+            <Reference type="BUSINESS_TERM">BG-030</Reference>
+            <Element>
+               <Term>cbc:StartDate</Term>
+               <Name>Period start date</Name>
+               <Description>The line validity start date. The date must be the same or earlier
                         than the delivery end date. Format YYYY-MM-DD. Date shall not include
                         timezone information. </Description>
-                    <DataType>Date</DataType>
-                    <Reference type="RULE">EHF-PAC-R007</Reference>
-                    <Reference type="RULE">EHF-PAC-R013</Reference>
-                    <Reference type="RULE">EHF-COMMON-R030</Reference>
-                    <Value type="EXAMPLE">2017-06-01</Value>
-                </Element>
-
-                <Element>
-                    <Term>cbc:EndDate</Term>
-                    <Name>Period end date</Name>
-                    <Description>The line validity end date. The date must be the same or later than
+               <DataType>Date</DataType>
+               <Reference type="BUSINESS_TERM">BT-062</Reference>
+               <Reference type="RULE">EHF-PAC-R007</Reference>
+               <Reference type="RULE">EHF-PAC-R013</Reference>
+               <Reference type="RULE">EHF-COMMON-R030</Reference>
+               <Value type="EXAMPLE">2017-06-01</Value>
+            </Element>
+            <Element>
+               <Term>cbc:EndDate</Term>
+               <Name>Period end date</Name>
+               <Description>The line validity end date. The date must be the same or later than
                         the delivery start date. Format YYYY-MM-DD. Date shall not include timezone
                         information.</Description>
-                    <DataType>Date</DataType>
-                    <Reference type="RULE">EHF-PAC-R007</Reference>
-                    <Reference type="RULE">EHF-PAC-R013</Reference>
-                    <Reference type="RULE">EHF-COMMON-R030</Reference>
-                    <Value type="EXAMPLE">2017-06-15</Value>
-                </Element>
+               <DataType>Date</DataType>
+               <Reference type="BUSINESS_TERM">BT-063</Reference>
+               <Reference type="RULE">EHF-PAC-R007</Reference>
+               <Reference type="RULE">EHF-PAC-R013</Reference>
+               <Reference type="RULE">EHF-COMMON-R030</Reference>
+               <Value type="EXAMPLE">2017-06-15</Value>
             </Element>
-
-            <Element cardinality="0..n">
-                <Term>cac:ItemComparison</Term>
-                <Name>ITEM COMPARISON</Name>
-                <Description>Used for comparing prices for different articles with various
+         </Element>
+         <Element cardinality="0..n">
+            <Term>cac:ItemComparison</Term>
+            <Name>ITEM COMPARISON</Name>
+            <Description>Used for comparing prices for different articles with various
                     quantities. E.g. Price of each liter.</Description>
-                <Property key="doc">structure/docs/ItemComparison.adoc</Property>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:PriceAmount</Term>
-                    <Name>Standardized unit price</Name>
-                    <Description>Item comparison unit price defining price for a certain
+            <Reference type="BUSINESS_TERM">BG-031</Reference>
+            <Property key="doc">structure/docs/ItemComparison.adoc</Property>
+            <Element cardinality="0..1">
+               <Term>cbc:PriceAmount</Term>
+               <Name>Standardized unit price</Name>
+               <Description>Item comparison unit price defining price for a certain
                         quantity.</Description>
-                    <DataType>PriceAmount</DataType>
-                    <Reference type="RULE">EHF-PAC-R006</Reference>
-
-                    <Attribute>
-                        <Term>currencyID</Term>
-                        <Name>Currency identifier</Name>
-                        <Description>Currency code from ISO 4217</Description>
-                        <Reference type="CODE_LIST">ISO4217</Reference>
-                        <Value type="EXAMPLE">SEK</Value>
-                    </Attribute>
-                    <Value type="EXAMPLE">120.00</Value>
-                </Element>
-
-                <Element>
-                    <Term>cbc:Quantity</Term>
-                    <Name>Standard unit quantity</Name>
-                    <Description>E.g. if consumable units are bottles and each bottle contains 0,333
+               <DataType>PriceAmount</DataType>
+               <Reference type="BUSINESS_TERM">BT-064</Reference>
+               <Reference type="RULE">EHF-PAC-R006</Reference>
+               <Attribute>
+                  <Term>currencyID</Term>
+                  <Name>Currency identifier</Name>
+                  <Description>Currency code from ISO 4217</Description>
+                  <Reference type="CODE_LIST">ISO4217</Reference>
+                  <Value type="EXAMPLE">SEK</Value>
+               </Attribute>
+               <Value type="EXAMPLE">120.00</Value>
+            </Element>
+            <Element>
+               <Term>cbc:Quantity</Term>
+               <Name>Standard unit quantity</Name>
+               <Description>E.g. if consumable units are bottles and each bottle contains 0,333
                         liters the standard unit quantity is 0,333.</Description>
-                    <DataType>Quantity</DataType>
-                    <Attribute>
-                        <Term>unitCode</Term>
-                        <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity. Codes for unit of packaging from
+               <DataType>Quantity</DataType>
+               <Reference type="BUSINESS_TERM">BT-065</Reference>
+               <Attribute>
+                  <Term>unitCode</Term>
+                  <Name>Quantity unit code</Name>
+                  <Description>The unit of the quantity. Codes for unit of packaging from
                             UNECE Recommendation No. 21 can be used in accordance with the
                             descriptions in the "Intro" section of UN/ECE Recommendation 20,
                             Revision 11 (2015): The 2 character alphanumeric code values in UNECE
@@ -664,43 +903,39 @@
                             values in UNECE Recommendation No. 20, each code value from UNECE
                             Recommendation 21 shall be prefixed with an “X”, resulting in a 3
                             alphanumeric code when used as a unit of measure. </Description>
-                        <Reference type="CODE_LIST">UNECERec20</Reference>
-
-
-                        <Value type="EXAMPLE">H87</Value>
-                    </Attribute>
-                    <Value type="EXAMPLE">0.333</Value>
-                </Element>
-
+                  <Reference type="CODE_LIST">UNECERec20</Reference>
+                  <Value type="EXAMPLE">H87</Value>
+               </Attribute>
+               <Value type="EXAMPLE">0.333</Value>
             </Element>
-
-            <Element cardinality="0..n">
-                <Term>cac:ComponentRelatedItem</Term>
-                <Name>COMPONENT RELATED ITEM</Name>
-                <Description>Component related items are products that are connected in a product
+         </Element>
+         <Element cardinality="0..n">
+            <Term>cac:ComponentRelatedItem</Term>
+            <Name>COMPONENT RELATED ITEM</Name>
+            <Description>Component related items are products that are connected in a product
                     line or a logistics structure, e.g. consumer units and trading units of the same
                     article.</Description>
-                <Property key="doc">structure/docs/ComponentRelatedItem.adoc</Property>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:ID</Term>
-                    <Name>Item standard identifier</Name>
-                    <Description>Indicate the seller's identifier for the related
+            <Reference type="BUSINESS_TERM">BG-032</Reference>
+            <Property key="doc">structure/docs/ComponentRelatedItem.adoc</Property>
+            <Element cardinality="0..1">
+               <Term>cbc:ID</Term>
+               <Name>Item standard identifier</Name>
+               <Description>Indicate the seller's identifier for the related
                         item.</Description>
-                    <DataType>Identifier</DataType>
-                    <Value type="EXAMPLE">1234</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:Quantity</Term>
-                    <Name>Related item quantity</Name>
-                    <Description>Quantity of a related item.</Description>
-                    <DataType>Quantity</DataType>
-
-                    <Attribute>
-                        <Term>unitCode</Term>
-                        <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity. Codes for unit of packaging from
+               <DataType>Identifier</DataType>
+               <Reference type="BUSINESS_TERM">BT-066</Reference>
+               <Value type="EXAMPLE">1234</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Quantity</Term>
+               <Name>Related item quantity</Name>
+               <Description>Quantity of a related item.</Description>
+               <DataType>Quantity</DataType>
+               <Reference type="BUSINESS_TERM">BT-067</Reference>
+               <Attribute>
+                  <Term>unitCode</Term>
+                  <Name>Quantity unit code</Name>
+                  <Description>The unit of the quantity. Codes for unit of packaging from
                             UNECE Recommendation No. 21 can be used in accordance with the
                             descriptions in the "Intro" section of UN/ECE Recommendation 20,
                             Revision 11 (2015): The 2 character alphanumeric code values in UNECE
@@ -708,41 +943,39 @@
                             values in UNECE Recommendation No. 20, each code value from UNECE
                             Recommendation 21 shall be prefixed with an “X”, resulting in a 3
                             alphanumeric code when used as a unit of measure. </Description>
-                        <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Value type="EXAMPLE">EA</Value>
-                    </Attribute>
-
-                    <Value type="EXAMPLE">5</Value>
-                </Element>
+                  <Reference type="CODE_LIST">UNECERec20</Reference>
+                  <Value type="EXAMPLE">EA</Value>
+               </Attribute>
+               <Value type="EXAMPLE">5</Value>
             </Element>
-
-            <Element cardinality="0..n">
-                <Term>cac:RequiredRelatedItem</Term>
-                <Name>REQUIRED RELATED ITEM</Name>
-                <Description>Required related items are products that are bundled and
+         </Element>
+         <Element cardinality="0..n">
+            <Term>cac:RequiredRelatedItem</Term>
+            <Name>REQUIRED RELATED ITEM</Name>
+            <Description>Required related items are products that are bundled and
                     ordered/invoiced together, e.g. bottles and desposits.</Description>
-                <!-- <Property key="doc">structure/docs/required-related.adoc</Property> -->
-
-                <Element cardinality="0..1">
-                    <Term>cbc:ID</Term>
-                    <Name>Item standard identifier</Name>
-                    <Description>Indicate the seller's identifier for the related
+            <Reference type="BUSINESS_TERM">BG-033</Reference>
+            <!-- <Property key="doc">structure/docs/required-related.adoc</Property> -->
+            <Element cardinality="0..1">
+               <Term>cbc:ID</Term>
+               <Name>Item standard identifier</Name>
+               <Description>Indicate the seller's identifier for the related
                         item.</Description>
-                    <DataType>Identifier</DataType>
-                    <Value type="EXAMPLE">AA</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:Quantity</Term>
-                    <Name>Related item quantity</Name>
-                    <Description>Required related item quantity, the quantity of the products
+               <DataType>Identifier</DataType>
+               <Reference type="BUSINESS_TERM">BT-068</Reference>
+               <Value type="EXAMPLE">AA</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Quantity</Term>
+               <Name>Related item quantity</Name>
+               <Description>Required related item quantity, the quantity of the products
                         bundled with the products on this line.</Description>
-                    <DataType>Quantity</DataType>
-
-                    <Attribute>
-                        <Term>unitCode</Term>
-                        <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity. Codes for unit of packaging from
+               <DataType>Quantity</DataType>
+               <Reference type="BUSINESS_TERM">BT-069</Reference>
+               <Attribute>
+                  <Term>unitCode</Term>
+                  <Name>Quantity unit code</Name>
+                  <Description>The unit of the quantity. Codes for unit of packaging from
                             UNECE Recommendation No. 21 can be used in accordance with the
                             descriptions in the "Intro" section of UN/ECE Recommendation 20,
                             Revision 11 (2015): The 2 character alphanumeric code values in UNECE
@@ -750,40 +983,39 @@
                             values in UNECE Recommendation No. 20, each code value from UNECE
                             Recommendation 21 shall be prefixed with an “X”, resulting in a 3
                             alphanumeric code when used as a unit of measure. </Description>
-                        <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Value type="EXAMPLE">EA</Value>
-                    </Attribute>
-
-                    <Value type="EXAMPLE">10</Value>
-                </Element>
+                  <Reference type="CODE_LIST">UNECERec20</Reference>
+                  <Value type="EXAMPLE">EA</Value>
+               </Attribute>
+               <Value type="EXAMPLE">10</Value>
             </Element>
-
-            <Element cardinality="0..n">
-                <Term>cac:ComplementaryRelatedItem</Term>
-                <Name>COMPLEMENTARY RELATED ITEM</Name>
-                <Description>Complementary related item is used for items that might be sold
+         </Element>
+         <Element cardinality="0..n">
+            <Term>cac:ComplementaryRelatedItem</Term>
+            <Name>COMPLEMENTARY RELATED ITEM</Name>
+            <Description>Complementary related item is used for items that might be sold
                     together with a product, e.g. disk station to a laptop.</Description>
-                <Property key="doc">structure/docs/ComplementaryRelatedItem.adoc</Property>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:ID</Term>
-                    <Name>Item standard identifier</Name>
-                    <Description>Indicate the seller's identifier for the related
+            <Reference type="BUSINESS_TERM">BG-034</Reference>
+            <Property key="doc">structure/docs/ComplementaryRelatedItem.adoc</Property>
+            <Element cardinality="0..1">
+               <Term>cbc:ID</Term>
+               <Name>Item standard identifier</Name>
+               <Description>Indicate the seller's identifier for the related
                         item.</Description>
-                    <DataType>Identifier</DataType>
-                    <Value type="EXAMPLE">A2</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:Quantity</Term>
-                    <Name>Related item quantity</Name>
-                    <Description>Complementary item quantity, the quantity of the products that
+               <DataType>Identifier</DataType>
+               <Reference type="BUSINESS_TERM">BT-070</Reference>
+               <Value type="EXAMPLE">A2</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Quantity</Term>
+               <Name>Related item quantity</Name>
+               <Description>Complementary item quantity, the quantity of the products that
                         might be sold together with the products on this line.</Description>
-                    <DataType>Quantity</DataType>
-                    <Attribute>
-                        <Term>unitCode</Term>
-                        <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity. Codes for unit of packaging from
+               <DataType>Quantity</DataType>
+               <Reference type="BUSINESS_TERM">BT-071</Reference>
+               <Attribute>
+                  <Term>unitCode</Term>
+                  <Name>Quantity unit code</Name>
+                  <Description>The unit of the quantity. Codes for unit of packaging from
                             UNECE Recommendation No. 21 can be used in accordance with the
                             descriptions in the "Intro" section of UN/ECE Recommendation 20,
                             Revision 11 (2015): The 2 character alphanumeric code values in UNECE
@@ -791,75 +1023,39 @@
                             values in UNECE Recommendation No. 20, each code value from UNECE
                             Recommendation 21 shall be prefixed with an “X”, resulting in a 3
                             alphanumeric code when used as a unit of measure. </Description>
-                        <Reference type="CODE_LIST">UNECERec20</Reference>
-
-
-                        <Value type="EXAMPLE">EA</Value>
-                    </Attribute>
-                    <Value type="EXAMPLE">1000</Value>
-                </Element>
+                  <Reference type="CODE_LIST">UNECERec20</Reference>
+                  <Value type="EXAMPLE">EA</Value>
+               </Attribute>
+               <Value type="EXAMPLE">1000</Value>
             </Element>
-
-            <Element cardinality="0..n">
-                <Term>cac:ReplacedRelatedItem</Term>
-                <Name>REPLACEMENT PRODUCT</Name>
-                <Description>Replacement product is used to identify a product replacing an existing
+         </Element>
+         <Element cardinality="0..n">
+            <Term>cac:ReplacedRelatedItem</Term>
+            <Name>REPLACEMENT PRODUCT</Name>
+            <Description>Replacement product is used to identify a product replacing an existing
                     product in the Catalogue.</Description>
-                <!-- <Property key="doc">structure/docs/ReplacedRelatedItem.adoc</Property> -->
-
-                <Element cardinality="0..1">
-                    <Term>cbc:ID</Term>
-                    <Name>Item standard identifier</Name>
-                    <Description>Indicate the seller's identifier for the related
+            <Reference type="BUSINESS_TERM">BG-035</Reference>
+            <!-- <Property key="doc">structure/docs/ReplacedRelatedItem.adoc</Property> -->
+            <Element cardinality="0..1">
+               <Term>cbc:ID</Term>
+               <Name>Item standard identifier</Name>
+               <Description>Indicate the seller's identifier for the related
                         item.</Description>
-                    <DataType>Identifier</DataType>
-                    <Value type="EXAMPLE">AA</Value>
-                </Element>
-
-                <Element>
-                    <Term>cbc:Quantity</Term>
-                    <Name>Related item quantity</Name>
-                    <Description>Replaced item quantity, the quantity of the products replacing the
-                        products on this line.</Description>
-                    <DataType>Quantity</DataType>
-                    <Attribute>
-                        <Term>unitCode</Term>
-                        <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity. Codes for unit of packaging from
-                            UNECE Recommendation No. 21 can be used in accordance with the
-                            descriptions in the "Intro" section of UN/ECE Recommendation 20,
-                            Revision 11 (2015): The 2 character alphanumeric code values in UNECE
-                            Recommendation 21 shall be used. To avoid duplication with existing code
-                            values in UNECE Recommendation No. 20, each code value from UNECE
-                            Recommendation 21 shall be prefixed with an “X”, resulting in a 3
-                            alphanumeric code when used as a unit of measure. </Description>
-                        <Reference type="CODE_LIST">UNECERec20</Reference>
-
-
-                        <Value type="EXAMPLE">EA</Value>
-                    </Attribute>
-                    <Value type="EXAMPLE">10</Value>
-                </Element>
+               <DataType>Identifier</DataType>
+               <Reference type="BUSINESS_TERM">BT-072</Reference>
+               <Value type="EXAMPLE">AA</Value>
             </Element>
-
-            <Element cardinality="0..n">
-                <Term>cac:RequiredItemLocationQuantity</Term>
-                <Name>ITEM LOCATION QUANTITY</Name>
-                <Description>Properties of the item in this catalogue line that are dependent on
-                    location and quantity.</Description>
-                <Property key="doc">structure/docs/RequiredItemLocationQuantity.adoc</Property>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:MinimumQuantity</Term>
-                    <Name>Item price minimum quantity</Name>
-                    <Description>The minimum quantity that can be ordered to qualify for a specific
-                        price.</Description>
-                    <DataType>Quantity</DataType>
-
-                    <Attribute usage="optional">
-                        <Term>unitCode</Term>
-                        <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity. Codes for unit of packaging from
+            <Element>
+               <Term>cbc:Quantity</Term>
+               <Name>Related item quantity</Name>
+               <Description>Replaced item quantity, the quantity of the products replacing the
+                        products on this line.</Description>
+               <DataType>Quantity</DataType>
+               <Reference type="BUSINESS_TERM">BT-073</Reference>
+               <Attribute>
+                  <Term>unitCode</Term>
+                  <Name>Quantity unit code</Name>
+                  <Description>The unit of the quantity. Codes for unit of packaging from
                             UNECE Recommendation No. 21 can be used in accordance with the
                             descriptions in the "Intro" section of UN/ECE Recommendation 20,
                             Revision 11 (2015): The 2 character alphanumeric code values in UNECE
@@ -867,24 +1063,53 @@
                             values in UNECE Recommendation No. 20, each code value from UNECE
                             Recommendation 21 shall be prefixed with an “X”, resulting in a 3
                             alphanumeric code when used as a unit of measure. </Description>
-                        <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Value type="EXAMPLE">EA</Value>
-                    </Attribute>
-
-                    <Value type="EXAMPLE">2 rooms</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:MaximumQuantity</Term>
-                    <Name>Item price maximum quantity</Name>
-                    <Description>The maximum quantity that can be ordered to qualify for a specific
+                  <Reference type="CODE_LIST">UNECERec20</Reference>
+                  <Value type="EXAMPLE">EA</Value>
+               </Attribute>
+               <Value type="EXAMPLE">10</Value>
+            </Element>
+         </Element>
+         <Element cardinality="0..n">
+            <Term>cac:RequiredItemLocationQuantity</Term>
+            <Name>ITEM LOCATION QUANTITY</Name>
+            <Description>Properties of the item in this catalogue line that are dependent on
+                    location and quantity.</Description>
+            <Reference type="BUSINESS_TERM">BG-036</Reference>
+            <Property key="doc">structure/docs/RequiredItemLocationQuantity.adoc</Property>
+            <Element cardinality="0..1">
+               <Term>cbc:MinimumQuantity</Term>
+               <Name>Item price minimum quantity</Name>
+               <Description>The minimum quantity that can be ordered to qualify for a specific
                         price.</Description>
-                    <DataType>Quantity</DataType>
-
-                    <Attribute usage="optional">
-                        <Term>unitCode</Term>
-                        <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity Codes for unit of packaging from UNECE
+               <DataType>Quantity</DataType>
+               <Reference type="BUSINESS_TERM">BT-074</Reference>
+               <Attribute usage="optional">
+                  <Term>unitCode</Term>
+                  <Name>Quantity unit code</Name>
+                  <Description>The unit of the quantity. Codes for unit of packaging from
+                            UNECE Recommendation No. 21 can be used in accordance with the
+                            descriptions in the "Intro" section of UN/ECE Recommendation 20,
+                            Revision 11 (2015): The 2 character alphanumeric code values in UNECE
+                            Recommendation 21 shall be used. To avoid duplication with existing code
+                            values in UNECE Recommendation No. 20, each code value from UNECE
+                            Recommendation 21 shall be prefixed with an “X”, resulting in a 3
+                            alphanumeric code when used as a unit of measure. </Description>
+                  <Reference type="CODE_LIST">UNECERec20</Reference>
+                  <Value type="EXAMPLE">EA</Value>
+               </Attribute>
+               <Value type="EXAMPLE">2 rooms</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:MaximumQuantity</Term>
+               <Name>Item price maximum quantity</Name>
+               <Description>The maximum quantity that can be ordered to qualify for a specific
+                        price.</Description>
+               <DataType>Quantity</DataType>
+               <Reference type="BUSINESS_TERM">BT-075</Reference>
+               <Attribute usage="optional">
+                  <Term>unitCode</Term>
+                  <Name>Quantity unit code</Name>
+                  <Description>The unit of the quantity Codes for unit of packaging from UNECE
                             Recommendation No. 21 can be used in accordance with the descriptions in
                             the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The
                             2 character alphanumeric code values in UNECE Recommendation 21 shall be
@@ -892,211 +1117,203 @@
                             Recommendation No. 20, each code value from UNECE Recommendation 21
                             shall be prefixed with an “X”, resulting in a 3 alphanumeric code when
                             used as a unit of measure. </Description>
-                        <Reference type="CODE_LIST">UNECERec20</Reference>
-
-
-                        <Value type="EXAMPLE">EA</Value>
-                    </Attribute>
-
-                    <Value type="EXAMPLE">3 rooms</Value>
-                </Element>
-
-                <Element cardinality="0..n">
-                    <Term>cac:ApplicableTerritoryAddress</Term>
-                    <Name>DELIVERY LOCATION</Name>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:StreetName</Term>
-                        <Name>Address line 1</Name>
-                        <Description>The main address line in an address.</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Main Street 1</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:AdditionalStreetName</Term>
-                        <Name>Address line 2</Name>
-                        <Description>An additional address line in an address that can be used to
+                  <Reference type="CODE_LIST">UNECERec20</Reference>
+                  <Value type="EXAMPLE">EA</Value>
+               </Attribute>
+               <Value type="EXAMPLE">3 rooms</Value>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cac:ApplicableTerritoryAddress</Term>
+               <Name>DELIVERY LOCATION</Name>
+               <Reference type="BUSINESS_TERM">BG-037</Reference>
+               <Element cardinality="0..1">
+                  <Term>cbc:StreetName</Term>
+                  <Name>Address line 1</Name>
+                  <Description>The main address line in an address.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-076</Reference>
+                  <Value type="EXAMPLE">Main Street 1</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2</Name>
+                  <Description>An additional address line in an address that can be used to
                             give further details supplementing the main line.</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Po Box 351</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:CityName</Term>
-                        <Name>City name</Name>
-                        <Description>The common name of the city, town or village, where the address
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-077</Reference>
+                  <Value type="EXAMPLE">Po Box 351</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City name</Name>
+                  <Description>The common name of the city, town or village, where the address
                             is located.</Description>
-                        <DataType>Text</DataType>
-
-                        <Value type="EXAMPLE">London</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:PostalZone</Term>
-                        <Name>Post code</Name>
-                        <Description>The identifier for an addressable group of properties according
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-078</Reference>
+                  <Value type="EXAMPLE">London</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:PostalZone</Term>
+                  <Name>Post code</Name>
+                  <Description>The identifier for an addressable group of properties according
                             to the relevant postal service. </Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">W1G 8LZ</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:CountrySubentity</Term>
-                        <Name>Country subdivision</Name>
-                        <Description>The subdivision of a country.</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Region A</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cac:AddressLine</Term>
-                        <Name>ADDRESS LINE</Name>
-
-                        <Element>
-                            <Term>cbc:Line</Term>
-                            <Name>Address line 3</Name>
-                            <Description>An additional address line in an address that can be used
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-079</Reference>
+                  <Value type="EXAMPLE">W1G 8LZ</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision</Name>
+                  <Description>The subdivision of a country.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-080</Reference>
+                  <Value type="EXAMPLE">Region A</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:AddressLine</Term>
+                  <Name>ADDRESS LINE</Name>
+                  <Reference type="BUSINESS_TERM">BG-038</Reference>
+                  <Element>
+                     <Term>cbc:Line</Term>
+                     <Name>Address line 3</Name>
+                     <Description>An additional address line in an address that can be used
                                 to give further details supplementing the main line. </Description>
-                            <DataType>Text</DataType>
-                            <Value type="EXAMPLE">Building 23</Value>
-                        </Element>
-                    </Element>
-
-                    <Element>
-                        <Term>cac:Country</Term>
-                        <Name>COUNTRY</Name>
-
-                        <Element>
-                            <Term>cbc:IdentificationCode</Term>
-                            <Name>Country code</Name>
-                            <Description>A code that identifies the country.</Description>
-                            <DataType>Code</DataType>
-                            <Reference type="CODE_LIST">ISO3166</Reference>
-                            <Value type="EXAMPLE">GB</Value>
-                        </Element>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:Price</Term>
-                    <Name>PRICE</Name>
-                    <Description>Used to give the item net price as well as conditional price
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">BT-081</Reference>
+                     <Value type="EXAMPLE">Building 23</Value>
+                  </Element>
+               </Element>
+               <Element>
+                  <Term>cac:Country</Term>
+                  <Name>COUNTRY</Name>
+                  <Reference type="BUSINESS_TERM">BG-039</Reference>
+                  <Element>
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
+                     <Description>A code that identifies the country.</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">BT-082</Reference>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">GB</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Price</Term>
+               <Name>PRICE</Name>
+               <Description>Used to give the item net price as well as conditional price
                         related to a specific location or a quantity, as well as campaign
                         prices.</Description>
-                    <Property key="doc">structure/docs/Price.adoc</Property>
-
-                    <Element>
-                        <Term>cbc:PriceAmount</Term>
-                        <Name>Item net price</Name>
-                        <Description>The net price has to be equal with the gross price less the
+               <Reference type="BUSINESS_TERM">BG-040</Reference>
+               <Property key="doc">structure/docs/Price.adoc</Property>
+               <Element>
+                  <Term>cbc:PriceAmount</Term>
+                  <Name>Item net price</Name>
+                  <Description>The net price has to be equal with the gross price less the
                             item price discount. The price for the item at the specified
                             locations.</Description>
-                        <DataType>PriceAmount</DataType>
-                        <Attribute>
-                            <Term>currencyID</Term>
-                            <Name>Currency identifier</Name>
-                            <Reference type="CODE_LIST">ISO4217</Reference>
-                            <Value type="EXAMPLE">SEK</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">100.00</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:PriceTypeCode</Term>
-                        <Name>Item price type</Name>
-                        <Description>The type of the price so that the receiver knows if the price
+                  <DataType>PriceAmount</DataType>
+                  <Reference type="BUSINESS_TERM">BT-083</Reference>
+                  <Attribute>
+                     <Term>currencyID</Term>
+                     <Name>Currency identifier</Name>
+                     <Reference type="CODE_LIST">ISO4217</Reference>
+                     <Value type="EXAMPLE">SEK</Value>
+                  </Attribute>
+                  <Value type="EXAMPLE">100.00</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:PriceTypeCode</Term>
+                  <Name>Item price type</Name>
+                  <Description>The type of the price so that the receiver knows if the price
                             may be changed is indicative. When prices are temporary the validity
                             period for the price should be defined by stating the price validity
                             period.</Description>
-                        <DataType>Code</DataType>
-                        <Reference type="CODE_LIST">UNCL5387</Reference>
-                        <Value type="EXAMPLE">CP</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:OrderableUnitFactorRate</Term>
-                        <Name>Orderable unit factor rate</Name>
-                        <Description>The factor by which the base price unit of an item can be
+                  <DataType>Code</DataType>
+                  <Reference type="BUSINESS_TERM">BT-084</Reference>
+                  <Reference type="CODE_LIST">UNCL5387</Reference>
+                  <Value type="EXAMPLE">CP</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:OrderableUnitFactorRate</Term>
+                  <Name>Orderable unit factor rate</Name>
+                  <Description>The factor by which the base price unit of an item can be
                             converted to the orderable unit.</Description>
-                        <DataType>Decimal</DataType>
-                        <Value type="EXAMPLE">10</Value>
-                    </Element>
-
-                    <Element cardinality="0..n">
-                        <Term>cac:ValidityPeriod</Term>
-                        <Name>PRICE VALIDITY PERIOD</Name>
-                        <Description>The price validity period must be the same, or within the line
+                  <DataType>Decimal</DataType>
+                  <Reference type="BUSINESS_TERM">BT-085</Reference>
+                  <Value type="EXAMPLE">10</Value>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cac:ValidityPeriod</Term>
+                  <Name>PRICE VALIDITY PERIOD</Name>
+                  <Description>The price validity period must be the same, or within the line
                             validity period if it exists.</Description>
-                        <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
-
-                        <Element>
-                            <Term>cbc:StartDate</Term>
-                            <Name>Period start date</Name>
-                            <Description>The price validity period start date. The date must be the
+                  <Reference type="BUSINESS_TERM">BG-041</Reference>
+                  <Property key="doc">structure/docs/ValidityPeriod.adoc</Property>
+                  <Element>
+                     <Term>cbc:StartDate</Term>
+                     <Name>Period start date</Name>
+                     <Description>The price validity period start date. The date must be the
                                 same or earlier than the delivery end date. Format YYYY-MM-DD. Date
                                 shall not include timezone information. </Description>
-                            <DataType>Date</DataType>
-                            <Reference type="RULE">EHF-PAC-R011</Reference>
-                            <Reference type="RULE">EHF-PAC-R016</Reference>
-                            <Reference type="RULE">EHF-COMMON-R030</Reference>
-                            <Value type="EXAMPLE">2017-06-01</Value>
-                        </Element>
-
-                        <Element>
-                            <Term>cbc:EndDate</Term>
-                            <Name>Period end date</Name>
-                            <Description>The price validity period end date. The date must be the
+                     <DataType>Date</DataType>
+                     <Reference type="BUSINESS_TERM">BT-086</Reference>
+                     <Reference type="RULE">EHF-PAC-R011</Reference>
+                     <Reference type="RULE">EHF-PAC-R016</Reference>
+                     <Reference type="RULE">EHF-COMMON-R030</Reference>
+                     <Value type="EXAMPLE">2017-06-01</Value>
+                  </Element>
+                  <Element>
+                     <Term>cbc:EndDate</Term>
+                     <Name>Period end date</Name>
+                     <Description>The price validity period end date. The date must be the
                                 same or later than the delivery start date. Format YYYY-MM-DD. Date
                                 shall not include timezone information.</Description>
-                            <DataType>Date</DataType>
-                            <Reference type="RULE">EHF-PAC-R011</Reference>
-                            <Reference type="RULE">EHF-PAC-R016</Reference>
-                            <Reference type="RULE">EHF-COMMON-R030</Reference>
-                            <Value type="EXAMPLE">2017-06-15</Value>
-                        </Element>
-                    </Element>
-
-                </Element>
-
+                     <DataType>Date</DataType>
+                     <Reference type="BUSINESS_TERM">BT-087</Reference>
+                     <Reference type="RULE">EHF-PAC-R011</Reference>
+                     <Reference type="RULE">EHF-PAC-R016</Reference>
+                     <Reference type="RULE">EHF-COMMON-R030</Reference>
+                     <Value type="EXAMPLE">2017-06-15</Value>
+                  </Element>
+               </Element>
             </Element>
-
-            <Element>
-                <Term>cac:Item</Term>
-                <Name>PRE-AWARD CATALOGUE ITEM DETAILS</Name>
-                <Property key="doc">structure/docs/Item.adoc</Property>
-
-                <Element cardinality="0..n">
-                    <Term>cbc:Description</Term>
-                    <Name>Item description</Name>
-                    <Description>The Item description allows for describing the item and its
+         </Element>
+         <Element>
+            <Term>cac:Item</Term>
+            <Name>PRE-AWARD CATALOGUE ITEM DETAILS</Name>
+            <Reference type="BUSINESS_TERM">BG-042</Reference>
+            <Property key="doc">structure/docs/Item.adoc</Property>
+            <Element cardinality="0..n">
+               <Term>cbc:Description</Term>
+               <Name>Item description</Name>
+               <Description>The Item description allows for describing the item and its
                         features in more detail than the Item name. It is only allowed to send one
                         description element pr. language.</Description>
-                    <DataType>Text</DataType>
-
-                    <Attribute usage="optional">
-                        <Term>languageID</Term>
-                        <Name>Language identifier</Name>
-                        <Description>Language identifier to indicate which language the description
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-088</Reference>
+               <Attribute usage="optional">
+                  <Term>languageID</Term>
+                  <Name>Language identifier</Name>
+                  <Description>Language identifier to indicate which language the description
                             is stated in.</Description>
-                        <Reference type="CODE_LIST">languageCode</Reference>
-                        <Value type="EXAMPLE">en</Value>
-                    </Attribute>
-                    <Value type="EXAMPLE">This is a rather long item description, often very
+                  <Reference type="CODE_LIST">languageCode</Reference>
+                  <Value type="EXAMPLE">en</Value>
+               </Attribute>
+               <Value type="EXAMPLE">This is a rather long item description, often very
                         detailed</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:PackQuantity</Term>
-                    <Name>Packed Quantity</Name>
-                    <Description>The number of packed units that are in the orderable
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:PackQuantity</Term>
+               <Name>Packed Quantity</Name>
+               <Description>The number of packed units that are in the orderable
                         unit.</Description>
-                    <DataType>Quantity</DataType>
-
-                    <Attribute>
-                        <Term>unitCode</Term>
-                        <Name>Quantity unit code</Name>
-                        <Description>The unit of the quantity. Codes for unit of packaging from
+               <DataType>Quantity</DataType>
+               <Reference type="BUSINESS_TERM">BT-089</Reference>
+               <Attribute>
+                  <Term>unitCode</Term>
+                  <Name>Quantity unit code</Name>
+                  <Description>The unit of the quantity. Codes for unit of packaging from
                             UNECE Recommendation No. 21 can be used in accordance with the
                             descriptions in the "Intro" section of UN/ECE Recommendation 20,
                             Revision 11 (2015): The 2 character alphanumeric code values in UNECE
@@ -1104,386 +1321,393 @@
                             values in UNECE Recommendation No. 20, each code value from UNECE
                             Recommendation 21 shall be prefixed with an “X”, resulting in a 3
                             alphanumeric code when used as a unit of measure. </Description>
-                        <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Value type="EXAMPLE">XBX</Value>
-                    </Attribute>
-
-                    <Value type="EXAMPLE">12</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:PackSizeNumeric</Term>
-                    <Name>Consumable unit quantity</Name>
-                    <Description>The packaging the item is available inside the orderable unit (next
+                  <Reference type="CODE_LIST">UNECERec20</Reference>
+                  <Value type="EXAMPLE">XBX</Value>
+               </Attribute>
+               <Value type="EXAMPLE">12</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:PackSizeNumeric</Term>
+               <Name>Consumable unit quantity</Name>
+               <Description>The packaging the item is available inside the orderable unit (next
                         lower level packaging), and which contains the number of the unit described
                         in Packed quantity. </Description>
-                    <DataType>Decimal</DataType>
-                </Element>
-
-                <Element cardinality="1..n">
-                    <Term>cbc:Name</Term>
-                    <Name>Item name</Name>
-                    <Description>A name for an item.</Description>
-                    <DataType>Text</DataType>
-
-
-                    <Attribute usage="optional">
-                        <Term>languageID</Term>
-                        <Name>Language identifier</Name>
-                        <Description>Language identifier to indicate which language the description
+               <DataType>Decimal</DataType>
+               <Reference type="BUSINESS_TERM">BT-090</Reference>
+            </Element>
+            <Element cardinality="1..n">
+               <Term>cbc:Name</Term>
+               <Name>Item name</Name>
+               <Description>A name for an item.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-091</Reference>
+               <Attribute usage="optional">
+                  <Term>languageID</Term>
+                  <Name>Language identifier</Name>
+                  <Description>Language identifier to indicate which language the description
                             is stated in.</Description>
-                        <Reference type="CODE_LIST">languageCode</Reference>
-                        <Value type="EXAMPLE">en</Value>
-                    </Attribute>
-                    <Value type="EXAMPLE">Item name</Value>
-
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:Keyword</Term>
-                    <Name>Item key words</Name>
-                    <Description>Used to specify searchable keywords and/or synonyms for the
+                  <Reference type="CODE_LIST">languageCode</Reference>
+                  <Value type="EXAMPLE">en</Value>
+               </Attribute>
+               <Value type="EXAMPLE">Item name</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Keyword</Term>
+               <Name>Item key words</Name>
+               <Description>Used to specify searchable keywords and/or synonyms for the
                         specific item.</Description>
-                    <DataType>Text</DataType>
-                    <Value type="EXAMPLE">Toothpaste</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:BrandName</Term>
-                    <Name>Item brand name</Name>
-                    <Description>Name of the brand of the item to allow economic operators to
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-092</Reference>
+               <Value type="EXAMPLE">Toothpaste</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:BrandName</Term>
+               <Name>Item brand name</Name>
+               <Description>Name of the brand of the item to allow economic operators to
                         distinctively describe an item in their catalogue or pre-award
                         catalogue.</Description>
-                    <DataType>Text</DataType>
-                    <Value type="EXAMPLE">Solidox</Value>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:SellersItemIdentification</Term>
-                    <Name>SELLERS ITEM IDENTIFICATION</Name>
-                    <Reference type="RULE">EHF-PAC-R012</Reference>
-
-                    <Element>
-                        <Term>cbc:ID</Term>
-                        <Name>Item sellers identifier</Name>
-                        <Description>An identifier, assigned by the seller, for the item. This
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">BT-093</Reference>
+               <Value type="EXAMPLE">Solidox</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:SellersItemIdentification</Term>
+               <Name>SELLERS ITEM IDENTIFICATION</Name>
+               <Reference type="BUSINESS_TERM">BG-043</Reference>
+               <Reference type="RULE">EHF-PAC-R012</Reference>
+               <Element>
+                  <Term>cbc:ID</Term>
+                  <Name>Item sellers identifier</Name>
+                  <Description>An identifier, assigned by the seller, for the item. This
                             element is not mandatory because some companies may not have the
                             identifier yet at the time of issuing the pre-award
                             catalogue.</Description>
-                        <DataType>Identifier</DataType>
-                        <Value type="EXAMPLE">A2</Value>
-                    </Element>
-
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:ManufacturersItemIdentification</Term>
-                    <Name>MANUFACTURERS ITEM IDENTIFICATION</Name>
-
-                    <Element>
-                        <Term>cbc:ID</Term>
-                        <Name>Manufacturers item identifier</Name>
-                        <Description>The manufacturer's identifier for the item.</Description>
-                        <DataType>Identifier</DataType>
-
-                        <Value type="EXAMPLE">B32</Value>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:StandardItemIdentification</Term>
-                    <Name>STANDARD ITEM IDENTIFICATION</Name>
-                    <Reference type="RULE">EHF-PAC-R012</Reference>
-
-                    <Element>
-                        <Term>cbc:ID</Term>
-                        <Name>Item standard identifier</Name>
-                        <Description>The standard identifier of the catalogue item.</Description>
-                        <DataType>Identifier</DataType>
-                        <Reference type="RULE">EHF-COMMON-R040</Reference>
-
-                        <Attribute>
-                            <Term>schemeID</Term>
-                            <Name>Item standard identifier identification scheme identifier</Name>
-                            <Description>The identification scheme identifier of the Item standard
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">BT-094</Reference>
+                  <Value type="EXAMPLE">A2</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:ManufacturersItemIdentification</Term>
+               <Name>MANUFACTURERS ITEM IDENTIFICATION</Name>
+               <Reference type="BUSINESS_TERM">BG-044</Reference>
+               <Element>
+                  <Term>cbc:ID</Term>
+                  <Name>Manufacturers item identifier</Name>
+                  <Description>The manufacturer's identifier for the item.</Description>
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">BT-095</Reference>
+                  <Value type="EXAMPLE">B32</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:StandardItemIdentification</Term>
+               <Name>STANDARD ITEM IDENTIFICATION</Name>
+               <Reference type="BUSINESS_TERM">BG-045</Reference>
+               <Reference type="RULE">EHF-PAC-R012</Reference>
+               <Element>
+                  <Term>cbc:ID</Term>
+                  <Name>Item standard identifier</Name>
+                  <Description>The standard identifier of the catalogue item.</Description>
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">BT-096</Reference>
+                  <Reference type="RULE">EHF-COMMON-R040</Reference>
+                  <Attribute>
+                     <Term>schemeID</Term>
+                     <Name>Item standard identifier identification scheme identifier</Name>
+                     <Description>The identification scheme identifier of the Item standard
                                 identifier</Description>
-                            <Reference type="CODE_LIST">ICD</Reference>
-                            <Value type="EXAMPLE">0160</Value>
-
-                        </Attribute>
-
-                        <Value type="EXAMPLE">984719043710294792</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:ExtendedID</Term>
-                        <Name>Item sellers extended identifier</Name>
-                        <Description>An extended identifier issued by the seller to identify items
+                     <Reference type="CODE_LIST">ICD</Reference>
+                     <Value type="EXAMPLE">0160</Value>
+                  </Attribute>
+                  <Value type="EXAMPLE">984719043710294792</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ExtendedID</Term>
+                  <Name>Item sellers extended identifier</Name>
+                  <Description>An extended identifier issued by the seller to identify items
                             with specific properties. Used for structured identification of an Item
                             variant.</Description>
-                        <DataType>Identifier</DataType>
-
-                        <Value type="EXAMPLE">A23-Z45</Value>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..n">
-                    <Term>cac:ItemSpecificationDocumentReference</Term>
-                    <Name>ATTACHED ITEM SPECIFICATION</Name>
-                    <Description>Attachments can be sent on line level in the Catalogue. This can be
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">BT-097</Reference>
+                  <Value type="EXAMPLE">A23-Z45</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cac:ItemSpecificationDocumentReference</Term>
+               <Name>ATTACHED ITEM SPECIFICATION</Name>
+               <Description>Attachments can be sent on line level in the Catalogue. This can be
                         images or additional descriptions of a product. Please note that only one
                         product main image can be sent pr. item. It is strongly recommended to use
                         external references in the form of URI's for attachments.</Description>
-                    <Property key="doc"
-                        >structure/docs/ItemSpecificationDocumentReference.adoc</Property>
-
-                    <Element>
-                        <Term>cbc:ID</Term>
-                        <Name>Attachment identifier</Name>
-                        <Description>An identifier that can be used to reference the attached
+               <Reference type="BUSINESS_TERM">BG-046</Reference>
+               <Property key="doc">structure/docs/ItemSpecificationDocumentReference.adoc</Property>
+               <Element>
+                  <Term>cbc:ID</Term>
+                  <Name>Attachment identifier</Name>
+                  <Description>An identifier that can be used to reference the attached
                             document, such as an unique identifier.</Description>
-                        <DataType>DocumentReference</DataType>
-                        <Value type="EXAMPLE">88d15eaa-3805-42e4-825f-5e240838104d</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:DocumentTypeCode</Term>
-                        <Name>Attachment description code</Name>
-                        <Description>A functional description of the attachment, expressed as a
+                  <DataType>DocumentReference</DataType>
+                  <Reference type="BUSINESS_TERM">BT-098</Reference>
+                  <Value type="EXAMPLE">88d15eaa-3805-42e4-825f-5e240838104d</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:DocumentTypeCode</Term>
+                  <Name>Attachment description code</Name>
+                  <Description>A functional description of the attachment, expressed as a
                             code.</Description>
-                        <DataType>Code</DataType>
-                        <Reference type="CODE_LIST">UNCL1001</Reference>
-
-                        <Value type="EXAMPLE">6</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:DocumentType</Term>
-                        <Name>Document type</Name>
-                        <Description>A functional description of the attachment.</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Product specification</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:DocumentDescription</Term>
-                        <Name>Attachment description</Name>
-                        <Description>A short description of the attached document</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Report providing specification of products.</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cac:Attachment</Term>
-                        <Name>ATTACHMENT</Name>
-
-                        <Element cardinality="0..1">
-                            <Term>cbc:EmbeddedDocumentBinaryObject</Term>
-                            <Name>Attached document</Name>
-                            <Description>A binary large object containing an attached document. Base
+                  <DataType>Code</DataType>
+                  <Reference type="BUSINESS_TERM">BT-099</Reference>
+                  <Reference type="CODE_LIST">UNCL1001</Reference>
+                  <Value type="EXAMPLE">6</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:DocumentType</Term>
+                  <Name>Document type</Name>
+                  <Description>A functional description of the attachment.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-100</Reference>
+                  <Value type="EXAMPLE">Product specification</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:DocumentDescription</Term>
+                  <Name>Attachment description</Name>
+                  <Description>A short description of the attached document</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-101</Reference>
+                  <Value type="EXAMPLE">Report providing specification of products.</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:Attachment</Term>
+                  <Name>ATTACHMENT</Name>
+                  <Reference type="BUSINESS_TERM">BG-047</Reference>
+                  <Element cardinality="0..1">
+                     <Term>cbc:EmbeddedDocumentBinaryObject</Term>
+                     <Name>Attached document</Name>
+                     <Description>A binary large object containing an attached document. Base
                                 64 encoded.</Description>
-                            <DataType>BinaryObject</DataType>
-                            <Attribute>
-                                <Term>mimeCode</Term>
-                                <Description>Mime type of the attached document</Description>
-                                <Reference type="CODE_LIST">MimeCode</Reference>
-                                <Value type="EXAMPLE">application/pdf</Value>
-                            </Attribute>
-
-                            <Attribute>
-                                <Term>filename</Term>
-                                <Description>File name of the attached document</Description>
-                                <Value type="EXAMPLE">prod-spec.pdf</Value>
-                            </Attribute>
-                            <Value type="EXAMPLE">YU4gRVhBTVBMRSBGSUxF</Value>
-                        </Element>
-
-                        <Element cardinality="0..1">
-                            <Term>cac:ExternalReference</Term>
-                            <Name>EXTERNAL REFERENCE</Name>
-
-                            <Element cardinality="0..1">
-                                <Term>cbc:URI</Term>
-                                <Name>External item specification URI</Name>
-                                <Description>URI reference to external item information or
+                     <DataType>BinaryObject</DataType>
+                     <Reference type="BUSINESS_TERM">BT-102</Reference>
+                     <Attribute>
+                        <Term>mimeCode</Term>
+                        <Description>Mime type of the attached document</Description>
+                        <Reference type="CODE_LIST">MimeCode</Reference>
+                        <Value type="EXAMPLE">application/pdf</Value>
+                     </Attribute>
+                     <Attribute>
+                        <Term>filename</Term>
+                        <Description>File name of the attached document</Description>
+                        <Value type="EXAMPLE">prod-spec.pdf</Value>
+                     </Attribute>
+                     <Value type="EXAMPLE">YU4gRVhBTVBMRSBGSUxF</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:ExternalReference</Term>
+                     <Name>EXTERNAL REFERENCE</Name>
+                     <Reference type="BUSINESS_TERM">BG-048</Reference>
+                     <Element cardinality="0..1">
+                        <Term>cbc:URI</Term>
+                        <Name>External item specification URI</Name>
+                        <Description>URI reference to external item information or
                                     specifications. E.g. web address </Description>
-                                <DataType>Identifier</DataType>
-                                <Value type="EXAMPLE"
-                                    >https://test-vefa.difi.no/peppolbis/pracc/catalogue</Value>
-                            </Element>
-                        </Element>
-                    </Element>
-
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:OriginCountry</Term>
-                    <Name>ORIGIN COUNTRY</Name>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:IdentificationCode</Term>
-                        <Name>Item origin country</Name>
-                        <Description>The code identifying the country from which the item
+                        <DataType>Identifier</DataType>
+                        <Reference type="BUSINESS_TERM">BT-103</Reference>
+                        <Value type="EXAMPLE">https://test-vefa.difi.no/peppolbis/pracc/catalogue</Value>
+                     </Element>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:OriginCountry</Term>
+               <Name>ORIGIN COUNTRY</Name>
+               <Reference type="BUSINESS_TERM">BG-049</Reference>
+               <Element cardinality="0..1">
+                  <Term>cbc:IdentificationCode</Term>
+                  <Name>Item origin country</Name>
+                  <Description>The code identifying the country from which the item
                             originates. Commonly used in cross border trade for statistical and
                             customs purposes.</Description>
-                        <DataType>Code</DataType>
-                        <Reference type="CODE_LIST">ISO3166</Reference>
-                        <Value type="EXAMPLE">CN</Value>
-                    </Element>
-                </Element>
-
-                <Include>part/item-classification.xml</Include>
-
-                <Element cardinality="0..1">
-                    <Term>cac:TransactionConditions</Term>
-                    <Name>TRANSACTION CONDITIONS</Name>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:ActionCode</Term>
-                        <Name>Transaction conditions code</Name>
-                        <Description>Coded description of the specific transaction conditions
+                  <DataType>Code</DataType>
+                  <Reference type="BUSINESS_TERM">BT-104</Reference>
+                  <Reference type="CODE_LIST">ISO3166</Reference>
+                  <Value type="EXAMPLE">CN</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cac:CommodityClassification</Term>
+               <Name>COMMODITY CLASSIFICATION</Name>
+               <Description>A classification of this item according to a specific system for classifying commodities.</Description>
+               <Reference type="BUSINESS_TERM">BG-050</Reference>
+               <Property key="doc">structure/docs/CommodityClassification-Request.adoc</Property>
+               <Element>
+                  <Term>cbc:ItemClassificationCode</Term>
+                  <Name>Item request classification code</Name>
+                  <Description>A code for classifying the item by its type or nature</Description>
+                  <DataType>Code</DataType>
+                  <Reference type="BUSINESS_TERM">BT-105</Reference>
+                  <Attribute>
+                     <Term>listID</Term>
+                     <Name>Item classification identification scheme identifier</Name>
+                     <Description>The identification scheme identifier of the Item classification identifier</Description>
+                     <Reference type="CODE_LIST">UNCL7143</Reference>
+                     <Value type="EXAMPLE">STI</Value>
+                  </Attribute>
+                  <Attribute usage="Optional">
+                     <Term>listName</Term>
+                     <Name>Item request classification name</Name>
+                     <Description>The name of the classification for this item.</Description>
+                     <Value type="EXAMPLE">CPV</Value>
+                  </Attribute>
+                  <Value type="EXAMPLE">230482343</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:TransactionConditions</Term>
+               <Name>TRANSACTION CONDITIONS</Name>
+               <Reference type="BUSINESS_TERM">BG-051</Reference>
+               <Element cardinality="0..1">
+                  <Term>cbc:ActionCode</Term>
+                  <Name>Transaction conditions code</Name>
+                  <Description>Coded description of the specific transaction conditions
                             (purchasing, sales, payment) for an item. </Description>
-                        <DataType>Code</DataType>
-                        <Reference type="CODE_LIST">TransactionCondition</Reference>
-                        <Value type="EXAMPLE">SER</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:Description</Term>
-                        <Name>Transaction conditions</Name>
-                        <Description>Textual description of the specific transaction conditions
+                  <DataType>Code</DataType>
+                  <Reference type="BUSINESS_TERM">BT-106</Reference>
+                  <Reference type="CODE_LIST">TransactionCondition</Reference>
+                  <Value type="EXAMPLE">SER</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Description</Term>
+                  <Name>Transaction conditions</Name>
+                  <Description>Textual description of the specific transaction conditions
                             (purchasing, sales, payment) for an item </Description>
-                        <DataType>Text</DataType>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..n">
-                    <Term>cac:HazardousItem</Term>
-                    <Name>HAZARDOUS ITEM</Name>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:ID</Term>
-                        <Name>Hazardous hazard class identifier</Name>
-                        <Description>Specification of the hazardous nature of an item according to a
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-107</Reference>
+               </Element>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cac:HazardousItem</Term>
+               <Name>HAZARDOUS ITEM</Name>
+               <Reference type="BUSINESS_TERM">BG-052</Reference>
+               <Element cardinality="0..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Hazardous hazard class identifier</Name>
+                  <Description>Specification of the hazardous nature of an item according to a
                             classification schema. </Description>
-                        <DataType>Identifier</DataType>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:UNDGCode</Term>
-                        <Name>Hazardous item UNDG code</Name>
-                        <Description>Specification of the hazardous nature of an item according to
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">BT-108</Reference>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:UNDGCode</Term>
+                  <Name>Hazardous item UNDG code</Name>
+                  <Description>Specification of the hazardous nature of an item according to
                             the UNDG classification schema. </Description>
-                        <DataType>Code</DataType>
-                        <Reference type="CODE_LIST">UNCL8273</Reference>
-
-                        <Value type="EXAMPLE">ADR</Value>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:ClassifiedTaxCategory</Term>
-                    <Name>CLASSIFIED TAX CATEGORY</Name>
-                    <Description>VAT information</Description>
-                    <Property key="doc">structure/docs/ClassifiedTaxCategory.adoc</Property>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:ID</Term>
-                        <Name>Item VAT category code</Name>
-                        <Description>The VAT category for the item</Description>
-                        <DataType>Code</DataType>
-                        <Reference type="CODE_LIST">UNCL5305</Reference>
-
-                        <Value type="EXAMPLE">S</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:Percent</Term>
-                        <Name>Item VAT rate</Name>
-                        <Description>The VAT rate, represented as percentage that applies to the
+                  <DataType>Code</DataType>
+                  <Reference type="BUSINESS_TERM">BT-109</Reference>
+                  <Reference type="CODE_LIST">UNCL8273</Reference>
+                  <Value type="EXAMPLE">ADR</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:ClassifiedTaxCategory</Term>
+               <Name>CLASSIFIED TAX CATEGORY</Name>
+               <Description>VAT information</Description>
+               <Reference type="BUSINESS_TERM">BG-053</Reference>
+               <Property key="doc">structure/docs/ClassifiedTaxCategory.adoc</Property>
+               <Element cardinality="0..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Item VAT category code</Name>
+                  <Description>The VAT category for the item</Description>
+                  <DataType>Code</DataType>
+                  <Reference type="BUSINESS_TERM">BT-110</Reference>
+                  <Reference type="CODE_LIST">UNCL5305</Reference>
+                  <Value type="EXAMPLE">S</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Percent</Term>
+                  <Name>Item VAT rate</Name>
+                  <Description>The VAT rate, represented as percentage that applies to the
                             item. A VAT rate of zero percent is applied for calculation purposes
                             even if the item is outside the scope of VAT. Unless specific trade
                             reasons apply such as exemptions.</Description>
-                        <DataType>Percentage</DataType>
-                        <Reference type="RULE">EHF-PAC-R014</Reference>
-                        <Reference type="RULE">EHF-PAC-R015</Reference>
-                        <Value type="EXAMPLE">25</Value>
-                    </Element>
-
-                    <Element>
-                        <Term>cac:TaxScheme</Term>
-                        <Name>TAX SCHEME</Name>
-
-                        <Element>
-                            <Term>cbc:ID</Term>
-                            <Name>Tax scheme identifier</Name>
-                            <DataType>Identifier</DataType>
-                            <Value type="FIXED">VAT</Value>
-                        </Element>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..n">
-                    <Term>cac:AdditionalItemProperty</Term>
-                    <Name>ADDITIONAL ITEM PROPERTY</Name>
-                    <Description>Additional properties are meant for product properties that cannot
+                  <DataType>Percentage</DataType>
+                  <Reference type="BUSINESS_TERM">BT-111</Reference>
+                  <Reference type="RULE">EHF-PAC-R014</Reference>
+                  <Reference type="RULE">EHF-PAC-R015</Reference>
+                  <Value type="EXAMPLE">25</Value>
+               </Element>
+               <Element>
+                  <Term>cac:TaxScheme</Term>
+                  <Name>TAX SCHEME</Name>
+                  <Reference type="BUSINESS_TERM">BG-054</Reference>
+                  <Element>
+                     <Term>cbc:ID</Term>
+                     <Name>Tax scheme identifier</Name>
+                     <DataType>Identifier</DataType>
+                     <Reference type="BUSINESS_TERM">BT-112</Reference>
+                     <Value type="FIXED">VAT</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cac:AdditionalItemProperty</Term>
+               <Name>ADDITIONAL ITEM PROPERTY</Name>
+               <Description>Additional properties are meant for product properties that cannot
                         be sent in any of the defined elements in PreAward Catalogue. Additional
                         properties consist of the Name of the property and the actual
                         Value.</Description>
-                    <Property key="doc">structure/docs/AdditionalItemProperty.adoc</Property>
-
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:ID</Term>
-                        <Name>Item property identifier</Name>
-                        <Description>A property identifier for the property of the item
+               <Reference type="BUSINESS_TERM">BG-055</Reference>
+               <Property key="doc">structure/docs/AdditionalItemProperty.adoc</Property>
+               <Element cardinality="0..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Item property identifier</Name>
+                  <Description>A property identifier for the property of the item
                             request.</Description>
-                        <DataType>Identifier</DataType>
-                        <Value type="EXAMPLE">PROP-34</Value>
-                    </Element>
-
-                    <Element>
-                        <Term>cbc:Name</Term>
-                        <Name>Item property name</Name>
-                        <Description>The name of the property.The name must be sufficiently
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">BT-113</Reference>
+                  <Value type="EXAMPLE">34</Value>
+               </Element>
+               <Element>
+                  <Term>cbc:Name</Term>
+                  <Name>Item property name</Name>
+                  <Description>The name of the property.The name must be sufficiently
                             descriptive to define the value. The definition may be supplemented with
                             the property unit of measure when relevant.</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Color</Value>
-
-                    </Element>
-                    <Element cardinality="0..1">
-                        <Term>cbc:NameCode</Term>
-                        <Name>Item property code</Name>
-                        <Description>Code for the item property according to a property code system,
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-114</Reference>
+                  <Value type="EXAMPLE">Color</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:NameCode</Term>
+                  <Name>Item property code</Name>
+                  <Description>Code for the item property according to a property code system,
                             bilaterally agreed</Description>
-                        <DataType>Code</DataType>
-                        <Attribute>
-                            <Term>listID</Term>
-                            <Name>Name code list id.</Name>
-                            <Description>An identifier for the code list used for the Name code,
+                  <DataType>Code</DataType>
+                  <Reference type="BUSINESS_TERM">BT-115</Reference>
+                  <Attribute>
+                     <Term>listID</Term>
+                     <Name>Name code list id.</Name>
+                     <Description>An identifier for the code list used for the Name code,
                                 this is bilaterally agreed</Description>
-                        </Attribute>
-                    </Element>
-
-                    <Element>
-                        <Term>cbc:Value</Term>
-                        <Name>Item property value</Name>
-                        <Description>The value of the item property</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Red</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:ValueQuantity</Term>
-                        <Name>Item property value quantity</Name>
-                        <Description>The quantity of the item property.</Description>
-                        <DataType>Quantity</DataType>
-
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Value quantity unit of measure</Name>
-                            <Description>The unit of measure that applies to the value quantity.
+                  </Attribute>
+               </Element>
+               <Element>
+                  <Term>cbc:Value</Term>
+                  <Name>Item property value</Name>
+                  <Description>The value of the item property</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-116</Reference>
+                  <Value type="EXAMPLE">Red</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ValueQuantity</Term>
+                  <Name>Item property value quantity</Name>
+                  <Description>The quantity of the item property.</Description>
+                  <DataType>Quantity</DataType>
+                  <Reference type="BUSINESS_TERM">BT-117</Reference>
+                  <Attribute>
+                     <Term>unitCode</Term>
+                     <Name>Value quantity unit of measure</Name>
+                     <Description>The unit of measure that applies to the value quantity.
                                 Codes for unit of packaging from UNECE Recommendation No. 21 can be
                                 used in accordance with the descriptions in the "Intro" section of
                                 UN/ECE Recommendation 20, Revision 11 (2015): The 2 character
@@ -1492,246 +1716,241 @@
                                 Recommendation No. 20, each code value from UNECE Recommendation 21
                                 shall be prefixed with an “X”, resulting in a 3 alphanumeric code
                                 when used as a unit of measure. </Description>
-                            <DataType>Code</DataType>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-
-                            <Value type="EXAMPLE">C62</Value>
-                        </Attribute>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:ValueQualifier</Term>
-                        <Name>Property description</Name>
-                        <Description>Free text description of the property</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Red</Value>
-                    </Element>
-
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:ManufacturerParty</Term>
-                    <Name>MANUFACTURER PARTY</Name>
-
-                    <Element>
-                        <Term>cac:PartyName</Term>
-                        <Name>PARTY NAME</Name>
-
-                        <Element>
-                            <Term>cbc:Name</Term>
-                            <Name>Manufacturer name</Name>
-                            <Description>The name of the party that manufactures the
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">BT-117</Reference>
+                     <Reference type="CODE_LIST">UNECERec20</Reference>
+                     <Value type="EXAMPLE">C62</Value>
+                  </Attribute>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ValueQualifier</Term>
+                  <Name>Property description</Name>
+                  <Description>Free text description of the property</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-118</Reference>
+                  <Value type="EXAMPLE">Red</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:ManufacturerParty</Term>
+               <Name>MANUFACTURER PARTY</Name>
+               <Reference type="BUSINESS_TERM">BG-056</Reference>
+               <Element>
+                  <Term>cac:PartyName</Term>
+                  <Name>PARTY NAME</Name>
+                  <Reference type="BUSINESS_TERM">BG-057</Reference>
+                  <Element>
+                     <Term>cbc:Name</Term>
+                     <Name>Manufacturer name</Name>
+                     <Description>The name of the party that manufactures the
                                 item.</Description>
-                            <DataType>Text</DataType>
-                        </Element>
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cac:ItemInstance</Term>
-                    <Name>ITEM INSTANCE</Name>
-                    <Description>A trackable, unique instantiation of this item.</Description>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:BestBeforeDate</Term>
-                        <Name>Item best before date</Name>
-                        <Description>The date until when the relevant item qualities will remain at
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">BT-119</Reference>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:ItemInstance</Term>
+               <Name>ITEM INSTANCE</Name>
+               <Description>A trackable, unique instantiation of this item.</Description>
+               <Reference type="BUSINESS_TERM">BG-058</Reference>
+               <Element cardinality="0..1">
+                  <Term>cbc:BestBeforeDate</Term>
+                  <Name>Item best before date</Name>
+                  <Description>The date until when the relevant item qualities will remain at
                             their best. Used to express the best before date of the item or items in
                             the line instance.</Description>
-                        <DataType>Date</DataType>
-                        <Reference type="RULE">EHF-COMMON-R030</Reference>
-                        <Value type="EXAMPLE">2017-12-31</Value>
-                    </Element>
-                    
-                    <Element cardinality="0..1">
-                        <Term>cac:LotIdentification</Term>
-                        <Name>Lot identification</Name>
-                        <Element cardinality="0..1">
-                            <Term>cbc:LotNumberID</Term>
-                            <Name>Item batch identifier</Name>
-                            <Description>Identifies the production batch that the item(s) listed in
+                  <DataType>Date</DataType>
+                  <Reference type="BUSINESS_TERM">BT-120</Reference>
+                  <Reference type="RULE">EHF-COMMON-R030</Reference>
+                  <Value type="EXAMPLE">2017-12-31</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:LotIdentification</Term>
+                  <Name>Lot identification</Name>
+                  <Reference type="BUSINESS_TERM">BG-059</Reference>
+                  <Element cardinality="0..1">
+                     <Term>cbc:LotNumberID</Term>
+                     <Name>Item batch identifier</Name>
+                     <Description>Identifies the production batch that the item(s) listed in
                                 the catalogue line were part of.</Description>
-                            <DataType>Identifier</DataType>
-                            <Value type="EXAMPLE">B-10</Value>
-                        </Element>
-                    </Element>
-                    
-                </Element>
-
-                <Element cardinality="0..n">
-                    <Term>cac:Certificate</Term>
-                    <Name>ITEM MEANS OF PROOF</Name>
-                    <Description>Answer and attachments (if any) to functional requirement on a
+                     <DataType>Identifier</DataType>
+                     <Reference type="BUSINESS_TERM">BT-121</Reference>
+                     <Value type="EXAMPLE">B-10</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cac:Certificate</Term>
+               <Name>ITEM MEANS OF PROOF</Name>
+               <Description>Answer and attachments (if any) to functional requirement on a
                         requested item in the pre award catalogue request. This has to be proven by
                         a specification, label, test report or any other means of proof according to
                         the Directives 2014/24/EU.</Description>
-                    <!-- <Description>A means of proof according to the Directives 2014/24/EU or other accepted proofs.</Description> -->
-                    <Property key="doc">structure/docs/Certificate.adoc</Property>
-
-                    <Element>
-                        <Term>cbc:ID</Term>
-                        <Name>Item means of proof identifier</Name>
-                        <Description>A unique identifier being unique in a transaction for an Item
+               <Reference type="BUSINESS_TERM">BG-060</Reference>
+               <!-- <Description>A means of proof according to the Directives 2014/24/EU or other accepted proofs.</Description> -->
+               <Property key="doc">structure/docs/Certificate.adoc</Property>
+               <Element>
+                  <Term>cbc:ID</Term>
+                  <Name>Item means of proof identifier</Name>
+                  <Description>A unique identifier being unique in a transaction for an Item
                             means of proof. This identifier MUST be equal to the catalogue request
                             identifier.</Description>
-                        <DataType>Identifier</DataType>
-                        <Value type="EXAMPLE">1</Value>
-                    </Element>
-
-                    <Element>
-                        <Term>cbc:CertificateTypeCode</Term>
-                        <Name>General item requirement</Name>
-                        <Description>The general item requirement, as provided in catalogue request.
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">BT-122</Reference>
+                  <Value type="EXAMPLE">1</Value>
+               </Element>
+               <Element>
+                  <Term>cbc:CertificateTypeCode</Term>
+                  <Name>General item requirement</Name>
+                  <Description>The general item requirement, as provided in catalogue request.
                             A general requirement might contain sub-functional requirement (called
                             detailed requirements, and sent in the cbc:CertificateType
                             element).</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Energy consumption</Value>
-
-                    </Element>
-
-                    <Element>
-                        <Term>cbc:CertificateType</Term>
-                        <Name>Sub-functional item requirement</Name>
-                        <Description>The sub-functional requirement, as provided in catalogue
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-123</Reference>
+                  <Value type="EXAMPLE">Energy consumption</Value>
+               </Element>
+               <Element>
+                  <Term>cbc:CertificateType</Term>
+                  <Name>Sub-functional item requirement</Name>
+                  <Description>The sub-functional requirement, as provided in catalogue
                             request.</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Total energy consumption of the computer.</Value>
-
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:Remarks</Term>
-                        <Name>Requirement remarks</Name>
-                        <Description>Remarks to the stated requirements</Description>
-                        <DataType>Text</DataType>
-                        <Value type="EXAMPLE">Requirement is fulfilled</Value>
-                    </Element>
-
-
-                    <Element>
-                        <Term>cac:IssuerParty</Term>
-                        <Name>ITEM REQUIREMENT ISSUER PARTY</Name>
-                        <Description>The party issuing the requirements for this item. E.g., the
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-124</Reference>
+                  <Value type="EXAMPLE">Total energy consumption of the computer.</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Remarks</Term>
+                  <Name>Requirement remarks</Name>
+                  <Description>Remarks to the stated requirements</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">BT-125</Reference>
+                  <Value type="EXAMPLE">Requirement is fulfilled</Value>
+               </Element>
+               <Element>
+                  <Term>cac:IssuerParty</Term>
+                  <Name>ITEM REQUIREMENT ISSUER PARTY</Name>
+                  <Description>The party issuing the requirements for this item. E.g., the
                             organisation that issues a label or test reports, etc.</Description>
-                        <Element>
-                            <Term>cac:PartyName</Term>
-                            <Name>PARTY NAME</Name>
-                            <DataType>Text</DataType>
-
-                            <Element>
-                                <Term>cbc:Name</Term>
-                                <Name>Item means of proof issuer party name</Name>
-                                <Description>Name of the party issuing the means of proof for the
+                  <Reference type="BUSINESS_TERM">BG-061</Reference>
+                  <Element>
+                     <Term>cac:PartyName</Term>
+                     <Name>PARTY NAME</Name>
+                     <Reference type="BUSINESS_TERM">BG-062</Reference>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">BT-125</Reference>
+                     <Element>
+                        <Term>cbc:Name</Term>
+                        <Name>Item means of proof issuer party name</Name>
+                        <Description>Name of the party issuing the means of proof for the
                                     item.</Description>
-                                <DataType>Text</DataType>
-                                <Value type="EXAMPLE">Nordic Ecolabelling</Value>
-                            </Element>
-                        </Element>
-                    </Element>
-
-                    <Element cardinality="0..n">
-                        <Term>cac:DocumentReference</Term>
-                        <Name>ITEM MEANS OF PROOF REFERENCE</Name>
-                        <Description>This element is used to indicate the means of proof used for
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-126</Reference>
+                        <Value type="EXAMPLE">Nordic Ecolabelling</Value>
+                     </Element>
+                  </Element>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cac:DocumentReference</Term>
+                  <Name>ITEM MEANS OF PROOF REFERENCE</Name>
+                  <Description>This element is used to indicate the means of proof used for
                             the corresponding requirement</Description>
-
-
-                        <Element>
-                            <Term>cbc:ID</Term>
-                            <Name>Item means of proof identifier</Name>
-                            <Description>The identifier for the item means of proof.</Description>
-                            <DataType>Identifier</DataType>
-                            <Value type="EXAMPLE">1</Value>
-                        </Element>
-
-                        <Element cardinality="0..1">
-                            <Term>cbc:DocumentTypeCode</Term>
-                            <Name>Item means of proof type</Name>
-                            <Description>Use one of the evidence types from Procurement Directive
+                  <Reference type="BUSINESS_TERM">BG-063</Reference>
+                  <Element>
+                     <Term>cbc:ID</Term>
+                     <Name>Item means of proof identifier</Name>
+                     <Description>The identifier for the item means of proof.</Description>
+                     <DataType>Identifier</DataType>
+                     <Reference type="BUSINESS_TERM">BT-127</Reference>
+                     <Value type="EXAMPLE">1</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:DocumentTypeCode</Term>
+                     <Name>Item means of proof type</Name>
+                     <Description>Use one of the evidence types from Procurement Directive
                                 art.44: Type 1 labelling (ISO 14024), Type 2 labelling (ISO 14021),
                                 Type 3 labelling (ISO 14025), Certification, Test report, or Other
                                 means of proof. Use codelist "Accepted evidence type".</Description>
-                            <DataType>Code</DataType>
-                            <Reference type="CODE_LIST">EvidenceType</Reference>
-                            <Value type="EXAMPLE">Type1</Value>
-
-                        </Element>
-
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">BT-128</Reference>
+                     <Reference type="CODE_LIST">EvidenceType</Reference>
+                     <Value type="EXAMPLE">Type1</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:DocumentType</Term>
+                     <Name>Item means of proof</Name>
+                     <Description>The name of the specific item means of proof</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">BT-129</Reference>
+                     <Value type="EXAMPLE">Svanemerket</Value>
+                  </Element>
+                  <Element cardinality="0..n">
+                     <Term>cbc:DocumentDescription</Term>
+                     <Name>Item means of proof description</Name>
+                     <Description>Description of the means of proof</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">BT-130</Reference>
+                     <Value type="EXAMPLE">Laboratory test report</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:Attachment</Term>
+                     <Name>ATTACHMENT</Name>
+                     <Reference type="BUSINESS_TERM">BG-064</Reference>
+                     <Element cardinality="0..1">
+                        <Term>cac:ExternalReference</Term>
+                        <Name>EXTERNAL REFERENCE</Name>
+                        <Reference type="BUSINESS_TERM">BG-065</Reference>
                         <Element cardinality="0..1">
-                            <Term>cbc:DocumentType</Term>
-                            <Name>Item means of proof</Name>
-                            <Description>The name of the specific item means of proof</Description>
-                            <DataType>Text</DataType>
-                            <Value type="EXAMPLE">Svanemerket</Value>
-                        </Element>
-
-                        <Element cardinality="0..n">
-                            <Term>cbc:DocumentDescription</Term>
-                            <Name>Item means of proof description</Name>
-                            <Description>Description of the means of proof</Description>
-                            <DataType>Text</DataType>
-                            <Value type="EXAMPLE">Laboratory test report</Value>
-                        </Element>
-
-                        <Element cardinality="0..1">
-                            <Term>cac:Attachment</Term>
-                            <Name>ATTACHMENT</Name>
-
-                            <Element cardinality="0..1">
-                                <Term>cac:ExternalReference</Term>
-                                <Name>EXTERNAL REFERENCE</Name>
-
-                                <Element cardinality="0..1">
-                                    <Term>cbc:URI</Term>
-                                    <Name>Item means of proof URI</Name>
-                                    <Description>A reference to an external specification of the
+                           <Term>cbc:URI</Term>
+                           <Name>Item means of proof URI</Name>
+                           <Description>A reference to an external specification of the
                                         provided means of proof.</Description>
-                                    <DataType>Text</DataType>
-                                    <Value type="EXAMPLE">http://www.nordic-ecolabel.org</Value>
-                                </Element>
-                            </Element>
+                           <DataType>Text</DataType>
+                           <Reference type="BUSINESS_TERM">BT-131</Reference>
+                           <Value type="EXAMPLE">http://www.nordic-ecolabel.org</Value>
                         </Element>
-
-                    </Element>
-                </Element>
-
-                <Element cardinality="0..n">
-                    <Term>cac:Dimension</Term>
-                    <Name>HANDLING UNIT DIMENSIONS</Name>
-                    <Description>The element is used for describing the various dimensions of the
+                     </Element>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cac:Dimension</Term>
+               <Name>HANDLING UNIT DIMENSIONS</Name>
+               <Description>The element is used for describing the various dimensions of the
                         handling unit. The element cbc:AttributeID is used to define which dimension
                         is described by the dimension element. The following mapping applies for the
                         cbc:AttributeID: HT = Handling unit height, LN = Handling unit length, WD =
                         Handling unit width, AAB = Handling unit gross weight, TC = Handling unit
                         minimum/maximum temperature, AAO = Handling unit minimum/maximum storage
                         humidity </Description>
-                    <Property key="doc">structure/docs/Dimension.adoc</Property>
-
-                    <Element>
-                        <Term>cbc:AttributeID</Term>
-                        <Name>Attribute identifier</Name>
-                        <Description>An identifier for the attribute to which the measure
+               <Reference type="BUSINESS_TERM">BG-066</Reference>
+               <Property key="doc">structure/docs/Dimension.adoc</Property>
+               <Element>
+                  <Term>cbc:AttributeID</Term>
+                  <Name>Attribute identifier</Name>
+                  <Description>An identifier for the attribute to which the measure
                             applies.</Description>
-                        <DataType>Identifier</DataType>
-                        <Reference type="CODE_LIST">UNCL6313</Reference>
-                        <Value type="EXAMPLE">HT</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:Measure</Term>
-                        <Name> Handling unit height or length or width or gross weight </Name>
-                        <Description> The dimensions of the handling unit: (1) Handling unit height:
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">BT-132</Reference>
+                  <Reference type="CODE_LIST">UNCL6313</Reference>
+                  <Value type="EXAMPLE">HT</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Measure</Term>
+                  <Name> Handling unit height or length or width or gross weight </Name>
+                  <Description> The dimensions of the handling unit: (1) Handling unit height:
                             The vertical height of the orderable unit. (2) Handling unit length: The
                             horizontal measure of the longer site of the orderable unit. (3)
                             Handling unit width: The horizontal measure of the shorter side of the
                             orderable unit. (4) Handling unit gross weight: The gross weight of the
                             orderable unit including its packaging. </Description>
-                        <DataType>Quantity</DataType>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Unit of measure</Name>
-                            <Description>The unit of measure that applies to the value quantity.
+                  <DataType>Quantity</DataType>
+                  <Reference type="BUSINESS_TERM">BT-133</Reference>
+                  <Attribute>
+                     <Term>unitCode</Term>
+                     <Name>Unit of measure</Name>
+                     <Description>The unit of measure that applies to the value quantity.
                                 Codes for unit of packaging from UNECE Recommendation No. 21 can be
                                 used in accordance with the descriptions in the "Intro" section of
                                 UN/ECE Recommendation 20, Revision 11 (2015): The 2 character
@@ -1740,27 +1959,27 @@
                                 Recommendation No. 20, each code value from UNECE Recommendation 21
                                 shall be prefixed with an “X”, resulting in a 3 alphanumeric code
                                 when used as a unit of measure. </Description>
-                            <DataType>Code</DataType>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-
-                            <Value type="EXAMPLE">C62</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">3</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:MinimumMeasure</Term>
-                        <Name>Handling unit minimum storage temperature or humidity</Name>
-                        <Description> The minimum dimensions of the handling unit: (1) Handling unit
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">BT-133</Reference>
+                     <Reference type="CODE_LIST">UNECERec20</Reference>
+                     <Value type="EXAMPLE">C62</Value>
+                  </Attribute>
+                  <Value type="EXAMPLE">3</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:MinimumMeasure</Term>
+                  <Name>Handling unit minimum storage temperature or humidity</Name>
+                  <Description> The minimum dimensions of the handling unit: (1) Handling unit
                             minimum storage temperature: The lower margin of the recommended storage
                             temperature range for the item. (2) Handling unit minimum storage
                             humidity: The lower margin of the recommended storage temperature range
                             for the item. </Description>
-                        <DataType>Quantity</DataType>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Unit of measure</Name>
-                            <Description>The unit of measure that applies to the value quantity.
+                  <DataType>Quantity</DataType>
+                  <Reference type="BUSINESS_TERM">BT-134</Reference>
+                  <Attribute>
+                     <Term>unitCode</Term>
+                     <Name>Unit of measure</Name>
+                     <Description>The unit of measure that applies to the value quantity.
                                 Codes for unit of packaging from UNECE Recommendation No. 21 can be
                                 used in accordance with the descriptions in the "Intro" section of
                                 UN/ECE Recommendation 20, Revision 11 (2015): The 2 character
@@ -1769,27 +1988,27 @@
                                 Recommendation No. 20, each code value from UNECE Recommendation 21
                                 shall be prefixed with an “X”, resulting in a 3 alphanumeric code
                                 when used as a unit of measure. </Description>
-                            <DataType>Code</DataType>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-
-                            <Value type="EXAMPLE">C62</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">10</Value>
-                    </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:MaximumMeasure</Term>
-                        <Name>Handling unit maximum storage temperature or humidity</Name>
-                        <Description> The maximum dimensions of the handling unit: (1) Handling unit
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">BT-134</Reference>
+                     <Reference type="CODE_LIST">UNECERec20</Reference>
+                     <Value type="EXAMPLE">C62</Value>
+                  </Attribute>
+                  <Value type="EXAMPLE">10</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:MaximumMeasure</Term>
+                  <Name>Handling unit maximum storage temperature or humidity</Name>
+                  <Description> The maximum dimensions of the handling unit: (1) Handling unit
                             maximum storage temperature: The upper margin of the recommended storage
                             temperature range for the item. (2) Handling unit maximum storage
                             humidity: The upper margin of the recommended storage humidity range for
                             the item. </Description>
-                        <DataType>Quantity</DataType>
-                        <Attribute>
-                            <Term>unitCode</Term>
-                            <Name>Unit of measure</Name>
-                            <Description>The unit of measure that applies to the value quantity.
+                  <DataType>Quantity</DataType>
+                  <Reference type="BUSINESS_TERM">BT-135</Reference>
+                  <Attribute>
+                     <Term>unitCode</Term>
+                     <Name>Unit of measure</Name>
+                     <Description>The unit of measure that applies to the value quantity.
                                 Codes for unit of packaging from UNECE Recommendation No. 21 can be
                                 used in accordance with the descriptions in the "Intro" section of
                                 UN/ECE Recommendation 20, Revision 11 (2015): The 2 character
@@ -1798,31 +2017,30 @@
                                 Recommendation No. 20, each code value from UNECE Recommendation 21
                                 shall be prefixed with an “X”, resulting in a 3 alphanumeric code
                                 when used as a unit of measure. </Description>
-                            <DataType>Code</DataType>
-                            <Reference type="CODE_LIST">UNECERec20</Reference>
-
-                            <Value type="EXAMPLE">C62</Value>
-                        </Attribute>
-                        <Value type="EXAMPLE">15</Value>
-                    </Element>
-                </Element>
-
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">BT-135</Reference>
+                     <Reference type="CODE_LIST">UNECERec20</Reference>
+                     <Value type="EXAMPLE">C62</Value>
+                  </Attribute>
+                  <Value type="EXAMPLE">15</Value>
+               </Element>
             </Element>
-
-            <Element cardinality="0..1">
-                <Term>cac:CallForTendersLineReference</Term>
-                <Name>ITEM REQUEST LINE REFERENCE</Name>
-                <Description>Reference to a Line in the corresponding pre-award catalogue request, or another relevant Call For Tenders document.</Description>
-                <Property key="doc">structure/docs/CallForTendersLineReference.adoc</Property>
-
-                <Element>
-                    <Term>cbc:LineID</Term>
-                    <Name>Requested item identifier</Name>
-                    <Description>Identifier for a requested item, use unique line identifier as received in the pre-award catalogue request (or other relevant call for tender documents).</Description>
-                    <DataType>Identifier</DataType>
-                    <Value type="EXAMPLE">12</Value>
-                </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:CallForTendersLineReference</Term>
+            <Name>ITEM REQUEST LINE REFERENCE</Name>
+            <Description>Reference to a Line in the corresponding pre-award catalogue request, or another relevant Call For Tenders document.</Description>
+            <Reference type="BUSINESS_TERM">BG-067</Reference>
+            <Property key="doc">structure/docs/CallForTendersLineReference.adoc</Property>
+            <Element>
+               <Term>cbc:LineID</Term>
+               <Name>Requested item identifier</Name>
+               <Description>Identifier for a requested item, use unique line identifier as received in the pre-award catalogue request (or other relevant call for tender documents).</Description>
+               <DataType>Identifier</DataType>
+               <Reference type="BUSINESS_TERM">BT-136</Reference>
+               <Value type="EXAMPLE">12</Value>
             </Element>
-        </Element>
-    </Document>
+         </Element>
+      </Element>
+   </Document>
 </Syntax>

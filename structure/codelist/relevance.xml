@@ -8,11 +8,6 @@
     
 
     <Code>
-        <Id>M</Id>
-        <Name>Mandatory</Name>
-    </Code>
-
-    <Code>
         <Id>O</Id>
         <Name>Optional</Name>
     </Code>
@@ -23,8 +18,8 @@
     </Code>
     
     <Code>
-        <Id>I</Id>
-        <Name>For information</Name>
+        <Id>E</Id>
+        <Name>Evaluation</Name>
     </Code>
 
 </CodeList>

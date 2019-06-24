@@ -158,7 +158,7 @@
                 <cbc:Value>Red</cbc:Value>
                 <cbc:ValueQuantity unitCode="C62">50</cbc:ValueQuantity>
                 <cbc:ValueQualifier>Black</cbc:ValueQualifier>
-                <cbc:ImportanceCode>M</cbc:ImportanceCode>
+                <cbc:ImportanceCode>E</cbc:ImportanceCode>
                 <cac:ItemPropertyGroup>
                     <cbc:ID>46468</cbc:ID>
                     <cbc:Name>Pen</cbc:Name>
