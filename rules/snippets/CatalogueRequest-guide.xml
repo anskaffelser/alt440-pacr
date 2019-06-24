@@ -60,11 +60,11 @@
 
             <!-- tag::Request-of-fat-in-milk[] -->
             <cac:AdditionalItemProperty>
-                <cbc:ID>1</cbc:ID>
-                <cbc:Name>Fat</cbc:Name> <!--1-->
-                <cbc:ValueQuantity unitCode="P1">3</cbc:ValueQuantity> <!--2-->
+                <cbc:ID>1</cbc:ID><!--1-->
+                <cbc:Name>Fat</cbc:Name> <!--2-->
+                <cbc:ValueQuantity unitCode="P1">3</cbc:ValueQuantity> <!--3-->
                 <cbc:ValueQualifier>Proportion of fat</cbc:ValueQualifier>
-            </cac:AdditionalItemProperty>
+            </cac:AdditionalItemProperty> <!--4-->
             <!-- end::Request-of-fat-in-milk[] -->
 
             <!-- tag::Request-of-specific-range[] -->
@@ -78,6 +78,14 @@
                 <cbc:ImportanceCode>O</cbc:ImportanceCode> <!--4-->
             </cac:AdditionalItemProperty>
             <!-- end::Request-of-specific-range[] -->
+            
+            <!-- tag::Request-element[] -->
+            <cac:AdditionalItemProperty>
+                <cbc:ID>3</cbc:ID><!--1-->
+                <cbc:Name>Item net quantity</cbc:Name> <!--3-->
+                <cbc:NameCode>BT-056</cbc:NameCode><!--2-->
+            </cac:AdditionalItemProperty> 
+            <!-- end::Request-element[] -->
 
             <!-- tag::Certificate[] -->
             <cac:Certificate>

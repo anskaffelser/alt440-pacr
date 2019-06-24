@@ -14,7 +14,7 @@ include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=Request-of-fat-in-m
 <1> Unique (in this request) identifier
 <2> the name of the requested property as free text
 <3> The quantity and unit code requested, here 3%
-<4> The relevance code, according to {relevance}
+<4> No relevance code is sent, hence it is mandatory to send this information in the corresponding pre-award catalogue
 
 .Example to request a specific range of item net quantity
 [source, xml, indent=0]
@@ -25,3 +25,12 @@ include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=Request-of-specific
 <2> Minimum requested item net quantity
 <3> Maximim requested item net quantity
 <4> The relevance code, according to {relevance}
+
+.Example to request a specific element
+[source, xml, indent=0]
+----
+include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=Request-element]
+----
+<1> Unique (in this request) identifier
+<2> Business term identifier of the requested element
+<3> the name of the requested element as found in the code list

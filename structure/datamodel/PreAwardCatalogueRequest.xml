@@ -840,15 +840,12 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:NameCode</Term>
-                  <Name>Item property code</Name>
-                  <Description>Code for the item property according to a property code system, bilaterally agreed</Description>
+                  <Name>Requested element code</Name>
+                  <Description>Code to indicate a specific element to be returned in the Pre-award catalogue, the code consists of the business term identifier for the elements that can be requested. (Optional elements at line level)</Description>
                   <DataType>Code</DataType>
                   <Reference type="BUSINESS_TERM">BT-062</Reference>
-                  <Attribute>
-                     <Term>listID</Term>
-                     <Name>Name code list id.</Name>
-                     <Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
-                  </Attribute>
+                  <Reference type="CODE_LIST">Requested_elements</Reference>
+
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Value</Term>
@@ -890,7 +887,7 @@
                   <Reference type="BUSINESS_TERM">BT-065</Reference>
                   <Value type="EXAMPLE">Light or dark red</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:ImportanceCode</Term>
                   <Name>Requested item property relevance</Name>
                   <Description>Relevance of the requested property in the
@@ -898,7 +895,7 @@
                   <DataType>Code</DataType>
                   <Reference type="BUSINESS_TERM">BT-066</Reference>
                   <Reference type="CODE_LIST">relevance</Reference>
-                  <Value type="EXAMPLE">M</Value>
+                  <Value type="EXAMPLE">O</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:ItemPropertyGroup</Term>

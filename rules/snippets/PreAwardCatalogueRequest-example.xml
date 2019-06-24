@@ -162,7 +162,7 @@
                 <cac:ItemPropertyGroup>
                     <cbc:ID>46468</cbc:ID>
                     <cbc:Name>Pen</cbc:Name>
-                    <cbc:ImportanceCode>I</cbc:ImportanceCode>
+                    <cbc:ImportanceCode>O</cbc:ImportanceCode>
                 </cac:ItemPropertyGroup>
                 <cac:ItemPropertyRange>
                     <cbc:MinimumValue>10</cbc:MinimumValue>
