@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>UNCL4405 Status description code</Title>
+    <Identifier>UNCL4405</Identifier>
+    <Version>D.19A</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>Difi</Subset>
+    <Code>
+        <Id>69</Id>
+        <Name>Recommended</Name>
+        <Description>The object is favoured in preference to other alternatives.</Description>  
+    </Code>
+    <Code>
+        <Id>120</Id>
+        <Name>Alternative</Name>
+        <Description>The information is an alternative to the request</Description>
+    </Code>
+  
+</CodeList>

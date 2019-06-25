@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..1">
+    <Term>ext:UBLExtensions</Term>
+
+    <Element>
+        <Term>ext:UBLExtension</Term>
+
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Extension identifier</Name>
+            <Value type="FIXED">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Value>
+        </Element>
+
+        <Element>
+            <Term>cbc:Name</Term>
+            <Name>Extension name</Name>
+            <Value type="FIXED">Delivery location</Value>
+        </Element>
+
+        <Element>
+            <Term>ext:ExtensionContent</Term>
+
+            <Element>
+                <Term>cac:DeliveryLocation</Term>
+                <Description>A container for delivery location</Description>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:Description</Term>
+                    <Name>Location description</Name>
+                    <Description>Text describing the requirements connected to the location</Description>
+                    <DataType>Text</DataType>
+                    <Value type="EXAMPLE">Maximum 1 hour drive from stated location coordinates</Value>
+                </Element> 
+
+                <Element>
+                    <Term>cac:LocationCoordinate</Term>
+                    <Name>Location Coordinate</Name>
+                    <Description>The geographical coordinates of this location, giving the location's latitude and longitude in degrees and minutes (modulo 60)</Description>
+
+                    <Element>
+                        <Term>cbc:LatitudeDegreesMeasure</Term>
+                        <Name>Latitude Degrees</Name>
+                        <Description>The degree component of a latitude measured in degrees and 
+                            minutes.</Description>
+                        <DataType>Measure</DataType>
+                        
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Unit of measure</Name>
+                            <Description>The unit of measure indicating degrees (unit of angle) from UNECE Recommendation No. 20 (Code= 'DD')</Description>
+                            <DataType>Code</DataType>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="FIXED">DD</Value>
+                        </Attribute>
+            
+                        <Value type="EXAMPLE">40</Value>
+                    </Element>
+
+                    <Element>
+                        <Term>cbc:LatitudeMinutesMeasure</Term>
+                        <Name>Latitude Minutes</Name>
+                        <Description>The minutes component of a latitude measured in degrees and 
+                            minutes (modulo 60).</Description>
+                        <DataType>Measure</DataType>
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Unit of measure</Name>
+                            <Description>The unit of measure indicating minutes (unit of angle) from UNECE Recommendation No. 20 (Code= 'D61')</Description>
+                            <DataType>Code</DataType>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="FIXED">D61</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">26.767</Value>
+                    </Element>
+
+                    <Element>
+                        <Term>cbc:LatitudeDirectionCode</Term>
+                        <Name>Latitude Direction Code</Name>
+                        <Description>A code signifying the direction of latitude measurement from
+                            the equator (north or south).</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="CODE_LIST">latitude</Reference>
+                        <Value type="EXAMPLE">N</Value>
+                    </Element>
+
+                    <Element>
+                        <Term>cbc:LongitudeDegreesMeasure</Term>
+                        <Name>Longitude Degrees</Name>
+                        <Description>The degree component of a longitude measured in degrees and 
+                            minutes.</Description>
+                        <DataType>Measure</DataType>
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Unit of measure</Name>
+                            <Description>The unit of measure indicating degrees (unit of angle) from UNECE Recommendation No. 20 (Code= 'DD')</Description>
+                            <DataType>Code</DataType>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="FIXED">DD</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">79</Value>
+                    </Element>
+
+                    <Element>
+                        <Term>cbc:LongitudeMinutesMeasure</Term>
+                        <Name>Longitude Minutes</Name>
+                        <Description>The minutes component of a longitude measured in degrees and 
+                            minutes (modulo 60).</Description>
+                        <DataType>Measure</DataType>
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Unit of measure</Name>
+                            <Description>The unit of measure indicating minutes (unit of angle) from UNECE Recommendation No. 20 (Code= 'D61')</Description>
+                            <DataType>Code</DataType>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="FIXED">D61</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">58.933</Value>
+                    </Element>
+
+                    <Element>
+                        <Term>cbc:LongitudeDirectionCode</Term>
+                        <Name>Longitude Direction Code</Name>
+                        <Description>A code signifying the direction of longitude measurement from
+                            the equator (east or west).</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="CODE_LIST">longitude</Reference>
+                        <Value type="EXAMPLE">W</Value>
+                    </Element>
+                </Element>
+
+            </Element>
+
+        </Element>
+
+    </Element>
+
+</Element>

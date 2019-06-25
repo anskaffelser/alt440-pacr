@@ -1,6 +1,17 @@
 = Validity Period
 
-In the catalogue request the contracting authority can state the requested delivery period for an item by using the element 'cac:LineValidityPeriod'.
+In the catalogue request the contracting authority can state the requested delivery period for an item by using the element 'cac:LineValidityPeriod'. If several options exist for the requested delivery period of a particular item/service, the contracting authority can state which is the preferred period (only one instance allowed), and what is the alternative period(s).
+
+.Example of the requested delivery period in the pre-award catalogue request
+[source, xml, indent=0]
+----
+include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=ValidityPeriod;ValidityPeriod2]
+----
+<1> Code 69 indicating the preferred delivery period
+<2> Code 120 indicating an alternative delivery period
+
+WARNING: Only one instance of Line validity period with Validity description code = '69' is allowed for the same item/service
+
 
 In the Pre-Award Catalogue the following validity periods can be stated:
 

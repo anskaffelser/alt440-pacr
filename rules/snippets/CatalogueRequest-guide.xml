@@ -30,10 +30,21 @@
     <cac:ReferencedContract>
         <cbc:ID>1234-2018</cbc:ID>
     </cac:ReferencedContract>
-
+    <!-- tag::ValidityPeriod[] -->
     <cac:CatalogueRequestLine>
-        <cbc:ID>5134432</cbc:ID>
-
+        <cbc:ID>1</cbc:ID>
+        <cac:LineValidityPeriod>
+            <cbc:StartDate>2018-10-11</cbc:StartDate>
+            <cbc:EndDate>2018-10-13</cbc:EndDate>
+            <cbc:DescriptionCode>69</cbc:DescriptionCode> <!--1-->
+        </cac:LineValidityPeriod>
+        
+        <!-- Code omitted for clarity -->
+        
+        <!-- end::ValidityPeriod[] -->
+        
+        
+        
         <cac:RequiredItemLocationQuantity>
             <cbc:MinimumQuantity>1</cbc:MinimumQuantity>
             <cbc:MaximumQuantity>10</cbc:MaximumQuantity>
@@ -151,6 +162,136 @@
 
 
 
+    </cac:CatalogueRequestLine>
+    <!-- tag::ValidityPeriod2[] --> 
+    <cac:CatalogueRequestLine>
+        <cbc:ID>2</cbc:ID>      
+        <cac:LineValidityPeriod>
+            <cbc:StartDate>2018-10-25</cbc:StartDate>
+            <cbc:EndDate>2018-10-27</cbc:EndDate>
+            <cbc:DescriptionCode>120</cbc:DescriptionCode> <!--2-->
+        </cac:LineValidityPeriod>
+        <!-- end::ValidityPeriod2[] -->
+        
+        
+        
+        <cac:RequiredItemLocationQuantity>
+            <cbc:MinimumQuantity>1</cbc:MinimumQuantity>
+            <cbc:MaximumQuantity>10</cbc:MaximumQuantity>
+            <cac:ApplicableTerritoryAddress>
+                <cbc:StreetName>Via Goffredo Mameli 25</cbc:StreetName>
+                <cbc:AdditionalStreetName>Building 2</cbc:AdditionalStreetName>
+                <cbc:CityName>Porchiano Del Monte</cbc:CityName>
+                <cbc:PostalZone>05022</cbc:PostalZone>
+                <cbc:CountrySubentity>Provinsen Terni</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode>IT</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:ApplicableTerritoryAddress>
+            
+            <cac:Price>
+                <cbc:PriceAmount currencyID="NOK">5000</cbc:PriceAmount>
+                <cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
+            </cac:Price>
+        </cac:RequiredItemLocationQuantity>
+        
+        <cac:Item>
+            <cbc:Name>Pen</cbc:Name>
+            
+            
+            <!-- tag::Request-of-fat-in-milk[] -->
+            <cac:AdditionalItemProperty>
+                <cbc:ID>1</cbc:ID><!--1-->
+                <cbc:Name>Fat</cbc:Name> <!--2-->
+                <cbc:ValueQuantity unitCode="P1">3</cbc:ValueQuantity> <!--3-->
+                <cbc:ValueQualifier>Proportion of fat</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty> <!--4-->
+            <!-- end::Request-of-fat-in-milk[] -->
+            
+            <!-- tag::Request-of-specific-range[] -->
+            <cac:AdditionalItemProperty>
+                <cbc:ID>2</cbc:ID>
+                <cbc:Name>Item net quantity</cbc:Name> <!--1-->
+                <cac:ItemPropertyRange>
+                    <cbc:MinimumValue>1 liter</cbc:MinimumValue> <!--2-->
+                    <cbc:MaximumValue>1,75 liters</cbc:MaximumValue> <!--3-->
+                </cac:ItemPropertyRange>
+                <cbc:ImportanceCode>O</cbc:ImportanceCode> <!--4-->
+            </cac:AdditionalItemProperty>
+            <!-- end::Request-of-specific-range[] -->
+            
+            <!-- tag::Request-element[] -->
+            <cac:AdditionalItemProperty>
+                <cbc:ID>3</cbc:ID><!--1-->
+                <cbc:Name>Item net quantity</cbc:Name> <!--3-->
+                <cbc:NameCode>BT-056</cbc:NameCode><!--2-->
+            </cac:AdditionalItemProperty> 
+            <!-- end::Request-element[] -->
+            
+            <!-- tag::Certificate[] -->
+            <cac:Certificate>
+                <cbc:ID>1</cbc:ID>
+                <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode> <!--1-->
+                <cbc:CertificateType>EU GPP Criteria - Minimum energy performance of the computer.</cbc:CertificateType> <!--2-->
+                <cbc:Remarks>Absolute</cbc:Remarks> <!--3-->
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>NA</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+                <cac:DocumentReference>
+                    <cbc:ID>1</cbc:ID>
+                    <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode> <!--4-->
+                    <cbc:DocumentType>Green</cbc:DocumentType> <!--5-->
+                    <cac:Attachment>
+                        <cac:ExternalReference>
+                            <cbc:URI>http://www.eu-energystar.org/specifications.htm</cbc:URI> <!--6-->
+                        </cac:ExternalReference>
+                    </cac:Attachment>
+                </cac:DocumentReference>
+            </cac:Certificate>
+            <!-- end::Certificate[] -->
+            
+            <!-- tag::LCA[] -->
+            <cac:Certificate>
+                <cbc:ID>1</cbc:ID>
+                <cbc:CertificateTypeCode>Climate change (GWP)</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Max 4 (kg C02-e)/liter</cbc:CertificateType>
+                <cbc:Remarks>Absolute</cbc:Remarks>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>X</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+                <cac:DocumentReference>
+                    <cbc:ID>1</cbc:ID>
+                    <cbc:DocumentTypeCode>Type3</cbc:DocumentTypeCode>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
+                </cac:DocumentReference>
+            </cac:Certificate>
+            
+            <cac:Certificate>
+                <cbc:ID>2</cbc:ID>
+                <cbc:CertificateTypeCode>Land system change</cbc:CertificateTypeCode>
+                <cbc:CertificateType>(m2-years agr)/liter</cbc:CertificateType>
+                <cbc:Remarks>Award</cbc:Remarks>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>X</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+                <cac:DocumentReference>
+                    <cbc:ID>1</cbc:ID>
+                    <cbc:DocumentTypeCode>Other</cbc:DocumentTypeCode>
+                    <cbc:DocumentType>Green</cbc:DocumentType>
+                </cac:DocumentReference>
+            </cac:Certificate>
+            <!-- end::LCA[] -->
+            
+        </cac:Item>
+        
+        
+        
     </cac:CatalogueRequestLine>
 
 

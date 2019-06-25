@@ -487,6 +487,8 @@
          <Name>CATALOGUE REQUEST LINE</Name>
          <Description>A line in a pre-award catalogue request specifying</Description>
          <Reference type="BUSINESS_TERM">BG-023</Reference>
+         
+         <Include>parts/delivery_location.xml</Include>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Catalogue request item identifier</Name>
@@ -527,6 +529,15 @@
                <Reference type="RULE">EHF-PACR-R013</Reference>
                <Value type="EXAMPLE">2017-06-15</Value>
             </Element>
+            <Element>
+               <Term>cbc:DescriptionCode</Term>
+               <Name>Validity description code</Name>
+               <Description>Code to indicate preferred or alternative dates</Description>
+               <DataType>Code</DataType>
+               <Reference type="BUSINESS_TERM">BT-081</Reference>
+               <Reference type="CODE_LIST">UNCL4405</Reference>
+               <Value type="EXAMPLE">2017-06-15</Value>
+            </Element>
          </Element>
          <Element cardinality="1..n">
             <Term>cac:RequiredItemLocationQuantity</Term>
@@ -554,7 +565,7 @@
                             value from UNECE Recommendation 21 shall be prefixed with an “X”,
                             resulting in a 3 alphanumeric code when used as a unit of measure. </Description>
                   <DataType>Code</DataType>
-                  <Reference type="BUSINESS_TERM">BT-040</Reference>
+              
                   <Reference type="CODE_LIST">UNECERec20</Reference>
                   <Value type="EXAMPLE">C62</Value>
                </Attribute>
@@ -580,7 +591,7 @@
                             value from UNECE Recommendation 21 shall be prefixed with an “X”,
                             resulting in a 3 alphanumeric code when used as a unit of measure. </Description>
                   <DataType>Code</DataType>
-                  <Reference type="BUSINESS_TERM">BT-041</Reference>
+              
                   <Reference type="CODE_LIST">UNECERec20</Reference>
                   <Value type="EXAMPLE">C62</Value>
                </Attribute>
@@ -874,7 +885,7 @@
                                 shall be prefixed with an “X”, resulting in a 3 alphanumeric code
                                 when used as a unit of measure. </Description>
                      <DataType>Code</DataType>
-                     <Reference type="BUSINESS_TERM">BT-064</Reference>
+                  
                      <Reference type="CODE_LIST">UNECERec20</Reference>
                      <Value type="EXAMPLE">C62</Value>
                   </Attribute>
@@ -921,15 +932,15 @@
                      <Reference type="BUSINESS_TERM">BT-068</Reference>
                      <Value type="EXAMPLE">red</Value>
                   </Element>
-                  <Element>
+                  <Element cardinality="0..1">
                      <Term>cbc:ImportanceCode</Term>
-                     <Name>Item property relevance</Name>
-                     <Description>States whether the property described is Mandatory (M),
-                                Optional (O), Forbidden (F), For information (I).</Description>
+                     <Name>Item property classification relevance</Name>
+                     <Description>States whether the property classification code is
+                                Optional (O), Forbidden (F), For evaluation (E).</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">BT-069</Reference>
                      <Reference type="CODE_LIST">relevance</Reference>
-                     <Value type="EXAMPLE">M</Value>
+                     <Value type="EXAMPLE">F</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">

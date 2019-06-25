@@ -677,6 +677,9 @@
                 catalogue.</Description>
          <Reference type="BUSINESS_TERM">BG-029</Reference>
          <Property key="doc">structure/docs/CatalogueLine.adoc</Property>
+         
+         <Include>parts/delivery_location.xml</Include>
+         
          <Element>
             <Term>cbc:ID</Term>
             <Name>Pre-award catalogue line identifier</Name>
