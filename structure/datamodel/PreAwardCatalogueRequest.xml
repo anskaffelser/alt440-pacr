@@ -855,7 +855,7 @@
                   <Description>Code to indicate a specific element to be returned in the Pre-award catalogue, the code consists of the business term identifier for the elements that can be requested. (Optional elements at line level)</Description>
                   <DataType>Code</DataType>
                   <Reference type="BUSINESS_TERM">BT-062</Reference>
-                  <Reference type="CODE_LIST">Requested_elements</Reference>
+                  <Reference type="CODE_LIST">requested_elements</Reference>
 
                </Element>
                <Element cardinality="0..1">

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeList xmlns="urn:fdc:difi.no:2017:vefa:CodeList-1">
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    
     <Title>Requested elements</Title>
-    <Identifier>Requested_elements</Identifier>
+    <Identifier>requested_elements</Identifier>
     <Version>1.0</Version>
     <Agency>Difi</Agency>
+    
     <Code>
         <Id>BT-052</Id>
         <Name>Line action code</Name>
