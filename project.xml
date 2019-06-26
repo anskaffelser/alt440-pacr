@@ -147,11 +147,11 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/longitude.xml</Path>
+        <Path>structure/codelist/LongitudeDirection.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/latitude.xml</Path>
+        <Path>structure/codelist/LatitudeDirection.xml</Path>
     </Resource>
 
     <!-- Namespaces -->
