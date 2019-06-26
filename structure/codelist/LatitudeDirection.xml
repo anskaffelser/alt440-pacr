@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Latitude direction</Title>
-    <Identifier>LatitudeDirection</Identifier>
+    <Identifier>latitude</Identifier>
     <Version>1.0</Version>
     <Agency>Difi</Agency>
     
