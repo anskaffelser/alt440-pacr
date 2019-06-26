@@ -343,7 +343,6 @@
             <Term>cac:PartyName</Term>
             <Name>PARTY NAME</Name>
             <Reference type="BUSINESS_TERM">BG-012</Reference>
-            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-025</Reference>
             <Reference type="RULE">EHF-PAC-R003</Reference>
             <Element>
@@ -470,7 +469,6 @@
                <Term>cac:PartyName</Term>
                <Name>PARTY NAME</Name>
                <Reference type="BUSINESS_TERM">BG-019</Reference>
-               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-034</Reference>
                <Reference type="RULE">EHF-PAC-R004</Reference>
                <Element>
@@ -1841,7 +1839,6 @@
                      <Term>cac:PartyName</Term>
                      <Name>PARTY NAME</Name>
                      <Reference type="BUSINESS_TERM">BG-062</Reference>
-                     <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-125</Reference>
                      <Element>
                         <Term>cbc:Name</Term>
