@@ -9,7 +9,7 @@
         <Element>
             <Term>cbc:ID</Term>
             <Name>Extension identifier</Name>
-            <Value type="FIXED">urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2</Value>
+            <Value type="FIXED">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Value>
         </Element>
 
         <Element>
