@@ -80,7 +80,7 @@
                         <Description>A code signifying the direction of latitude measurement from
                             the equator (north or south).</Description>
                         <DataType>Code</DataType>
-                        <Reference type="CODE_LIST">latitude</Reference>
+                        <Reference type="CODE_LIST">LatitudeDirection</Reference>
                         <Value type="EXAMPLE">N</Value>
                     </Element>
 
@@ -124,7 +124,7 @@
                         <Description>A code signifying the direction of longitude measurement from
                             the equator (east or west).</Description>
                         <DataType>Code</DataType>
-                        <Reference type="CODE_LIST">longitude</Reference>
+                        <Reference type="CODE_LIST">LongitudeDirection</Reference>
                         <Value type="EXAMPLE">W</Value>
                     </Element>
                 </Element>

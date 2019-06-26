@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Longitude direction</Title>
-    <Identifier>longitude</Identifier>
+    <Identifier>LongitudeDirection</Identifier>
     <Version>1.0</Version>
     <Agency>Difi</Agency>
     
