@@ -3,7 +3,8 @@
 <ubl:Catalogue
         xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+        xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
 
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pac:1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
