@@ -1,11 +1,11 @@
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
    <Term>catalogue</Term>
-   <Name>Pre-Award Catalogue</Name>
+   <Name>Pre-Award Catalogue 1.0</Name>
    <Property key="sch:prefix">EHF-PAC</Property>
    <Property key="sch:identifier">pac-basic</Property>
    <Property key="sch:pathprefix">pacr</Property>
    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2</Namespace>
-   <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+   <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
    <Namespace prefix="ext">urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2</Namespace>
 
@@ -677,9 +677,9 @@
                 catalogue.</Description>
          <Reference type="BUSINESS_TERM">BG-029</Reference>
          <Property key="doc">structure/docs/CatalogueLine.adoc</Property>
-         
+
          <Include>parts/delivery_location.xml</Include>
-         
+
          <Element>
             <Term>cbc:ID</Term>
             <Name>Pre-award catalogue line identifier</Name>

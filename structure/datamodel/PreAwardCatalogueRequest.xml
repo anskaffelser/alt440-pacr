@@ -1,6 +1,6 @@
 <Syntax xmlns="urn:fdc:difi.no:2017:vefa:structure:Syntax-1">
    <Term>PreAwardCatalogueRequest</Term>
-   <Name>PreAward Catalogue Request</Name>
+   <Name>PreAward Catalogue Request 1.0</Name>
    <Property key="sch:prefix">EHF-PACR</Property>
    <Property key="sch:identifier">pacr-basic</Property>
    <Property key="sch:pathprefix">pacr</Property>
@@ -489,7 +489,7 @@
          <Name>CATALOGUE REQUEST LINE</Name>
          <Description>A line in a pre-award catalogue request specifying</Description>
          <Reference type="BUSINESS_TERM">BG-023</Reference>
-         
+
          <Include>parts/delivery_location.xml</Include>
          <Element>
             <Term>cbc:ID</Term>
@@ -567,7 +567,7 @@
                             value from UNECE Recommendation 21 shall be prefixed with an “X”,
                             resulting in a 3 alphanumeric code when used as a unit of measure. </Description>
                   <DataType>Code</DataType>
-              
+
                   <Reference type="CODE_LIST">UNECERec20</Reference>
                   <Value type="EXAMPLE">C62</Value>
                </Attribute>
@@ -593,7 +593,7 @@
                             value from UNECE Recommendation 21 shall be prefixed with an “X”,
                             resulting in a 3 alphanumeric code when used as a unit of measure. </Description>
                   <DataType>Code</DataType>
-              
+
                   <Reference type="CODE_LIST">UNECERec20</Reference>
                   <Value type="EXAMPLE">C62</Value>
                </Attribute>
@@ -887,7 +887,7 @@
                                 shall be prefixed with an “X”, resulting in a 3 alphanumeric code
                                 when used as a unit of measure. </Description>
                      <DataType>Code</DataType>
-                  
+
                      <Reference type="CODE_LIST">UNECERec20</Reference>
                      <Value type="EXAMPLE">C62</Value>
                   </Attribute>

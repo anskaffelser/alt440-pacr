@@ -5,27 +5,14 @@
     <testfolder>snippets</testfolder>
     <testfolder>unit-PAC</testfolder>
     <testfolder>unit-PACR</testfolder>
-    
-    <configuration>
-        <identifier>ehf-pacr-base-1.0</identifier>
-        <title>EHF PreAward Catalogue Request</title>
-        <inherit>ubl-cataloguerequest-2.2</inherit>
-        <file source="sch/EHF-PACR.sch" path="xsl/EHF-PACR.xsl"  />
-    </configuration>
-    
-    <configuration>
-        <identifier>ehf-pac-base-1.0</identifier>
-        <title>EHF Pre-Award Catalogue 1.0</title>
-        <inherit>ubl-catalogue-2.2</inherit>
-        <file source="sch/EHF-PAC.sch" path="xsl/EHF-PAC.xsl"  />
-    </configuration>
 
     <configuration>
         <identifier>ehf-pacr-1.0</identifier>
         <title>EHF Pre-Award Catalogue Request 1.0 </title>
         <profileId>urn:fdc:difi.no:2017:ehf:profile:03:1.0</profileId>
         <customizationId>urn:fdc:difi.no:2017:ehf:pacr:1.0</customizationId>
-        <inherit>ehf-pacr-base-1.0</inherit>
+        <!-- <inherit>ubl-cataloguerequest-2.2</inherit> -->
+        <file path="sch/EHF-PACR.sch" />
     </configuration>
 
     <configuration>
@@ -33,7 +20,8 @@
         <title>EHF Pre-Award Catalogue 1.0</title>
         <profileId>urn:fdc:difi.no:2017:ehf:profile:03:1.0</profileId>
         <customizationId>urn:fdc:difi.no:2017:ehf:pac:1.0</customizationId>
-        <inherit>ehf-pac-base-1.0</inherit>
+        <!-- <inherit>ubl-catalogue-2.2</inherit> -->
+        <file path="sch/EHF-PAC.sch" />
     </configuration>
 
 </buildConfigurations>

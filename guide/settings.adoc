@@ -3,7 +3,7 @@
 
 :doctitle: EHF Pre-Award Catalogue and Catalogue Request
 
-:revision: 1.0.0
+:revision: 1.0.0 RC1
 :shared-dir: shared
 
 :rules-dir: /tmp/rules

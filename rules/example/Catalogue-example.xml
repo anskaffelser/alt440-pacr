@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <ubl:Catalogue
         xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
