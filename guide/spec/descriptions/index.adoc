@@ -20,7 +20,7 @@ include::properties.adoc[]
 
 include::item_requirements.adoc[]
 
-include::vat-info.adoc
+include::vat-info.adoc[]
 
 include::extensions.adoc[]
 
