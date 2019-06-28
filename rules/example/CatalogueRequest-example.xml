@@ -90,6 +90,7 @@
         <cac:LineValidityPeriod>
             <cbc:StartDate>2019-02-02</cbc:StartDate>
             <cbc:EndDate>2019-03-05</cbc:EndDate>
+            <cbc:DescriptionCode>69</cbc:DescriptionCode>
         </cac:LineValidityPeriod>
 
         <cac:RequiredItemLocationQuantity>

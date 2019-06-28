@@ -538,7 +538,7 @@
                <DataType>Code</DataType>
                <Reference type="BUSINESS_TERM">BT-081</Reference>
                <Reference type="CODE_LIST">UNCL4405</Reference>
-               <Value type="EXAMPLE">2017-06-15</Value>
+               <Value type="EXAMPLE">69</Value>
             </Element>
          </Element>
          <Element cardinality="1..n">

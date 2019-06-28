@@ -96,6 +96,7 @@
         <cac:LineValidityPeriod>
             <cbc:StartDate>2018-10-11</cbc:StartDate>
             <cbc:EndDate>2018-12-30</cbc:EndDate>
+            <cbc:DescriptionCode>69</cbc:DescriptionCode>
         </cac:LineValidityPeriod>
         <!-- end::LineValidityPeriod-Request[] -->
 
