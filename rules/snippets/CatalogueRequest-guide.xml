@@ -73,12 +73,9 @@
 
             <!-- tag::Request-of-fat-in-milk[] -->
             <cac:AdditionalItemProperty>
-                <cbc:ID>1</cbc:ID>
-                <!--1-->
-                <cbc:Name>Fat</cbc:Name>
-                <!--2-->
-                <cbc:ValueQuantity unitCode="P1">3</cbc:ValueQuantity>
-                <!--3-->
+                <cbc:ID>1</cbc:ID><!--1-->
+                <cbc:Name>Fat</cbc:Name><!--2-->
+                <cbc:ValueQuantity unitCode="P1">3</cbc:ValueQuantity><!--3-->
                 <cbc:ValueQualifier>Proportion of fat</cbc:ValueQualifier>
             </cac:AdditionalItemProperty>
             <!--4-->
@@ -87,40 +84,30 @@
             <!-- tag::Request-of-specific-range[] -->
             <cac:AdditionalItemProperty>
                 <cbc:ID>2</cbc:ID>
-                <cbc:Name>Item net quantity</cbc:Name>
-                <!--1-->
+                <cbc:Name>Item net quantity</cbc:Name><!--1-->
                 <cac:ItemPropertyRange>
-                    <cbc:MinimumValue>1 liter</cbc:MinimumValue>
-                    <!--2-->
-                    <cbc:MaximumValue>1,75 liters</cbc:MaximumValue>
-                    <!--3-->
+                    <cbc:MinimumValue>1 liter</cbc:MinimumValue><!--2-->
+                    <cbc:MaximumValue>1,75 liters</cbc:MaximumValue><!--3-->
                 </cac:ItemPropertyRange>
-                <cbc:ImportanceCode>O</cbc:ImportanceCode>
-                <!--4-->
+                <cbc:ImportanceCode>O</cbc:ImportanceCode><!--4-->
             </cac:AdditionalItemProperty>
             <!-- end::Request-of-specific-range[] -->
 
             <!-- tag::Request-element[] -->
             <cac:AdditionalItemProperty>
-                <cbc:ID>3</cbc:ID>
-                <!--1-->
-                <cbc:Name>Item net quantity</cbc:Name>
-                <!--3-->
-                <cbc:NameCode>BT-056</cbc:NameCode>
-                <!--2-->
+                <cbc:ID>3</cbc:ID><!--1-->
+                <cbc:Name>Item net quantity</cbc:Name><!--3-->
+                <cbc:NameCode>BT-056</cbc:NameCode><!--2-->
             </cac:AdditionalItemProperty>
             <!-- end::Request-element[] -->
 
             <!-- tag::Certificate[] -->
             <cac:Certificate>
                 <cbc:ID>1</cbc:ID>
-                <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode>
-                <!--1-->
+                <cbc:CertificateTypeCode>Energy consumption</cbc:CertificateTypeCode><!--1-->
                 <cbc:CertificateType>EU GPP Criteria - Minimum energy performance of the
-                    computer.</cbc:CertificateType>
-                <!--2-->
-                <cbc:Remarks>Absolute</cbc:Remarks>
-                <!--3-->
+                    computer.</cbc:CertificateType><!--2-->
+                <cbc:Remarks>Absolute</cbc:Remarks><!--3-->
                 <cac:IssuerParty>
                     <cac:PartyName>
                         <cbc:Name>NA</cbc:Name>
@@ -128,14 +115,11 @@
                 </cac:IssuerParty>
                 <cac:DocumentReference>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode>
-                    <!--4-->
-                    <cbc:DocumentType>Green</cbc:DocumentType>
-                    <!--5-->
+                    <cbc:DocumentTypeCode>Type1</cbc:DocumentTypeCode><!--4-->
+                    <cbc:DocumentType>Green</cbc:DocumentType><!--5-->
                     <cac:Attachment>
                         <cac:ExternalReference>
-                            <cbc:URI>http://www.eu-energystar.org/specifications.htm</cbc:URI>
-                            <!--6-->
+                            <cbc:URI>http://www.eu-energystar.org/specifications.htm</cbc:URI><!--6-->
                         </cac:ExternalReference>
                     </cac:Attachment>
                 </cac:DocumentReference>

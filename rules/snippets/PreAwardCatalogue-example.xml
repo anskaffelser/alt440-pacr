@@ -277,7 +277,7 @@
             <cac:AdditionalItemProperty>
                 <cbc:ID>1</cbc:ID>
                 <cbc:Name>Pen</cbc:Name>
-                <cbc:Value>Blue</cbc:Value>
+                <cbc:Value>Blue artline pen</cbc:Value>
                 <cbc:ValueQuantity unitCode="C62">20</cbc:ValueQuantity>
                 <cbc:ValueQualifier>Blue</cbc:ValueQualifier>
             </cac:AdditionalItemProperty>

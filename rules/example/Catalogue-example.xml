@@ -109,7 +109,7 @@
         </cac:Party>
     </cac:ContractorCustomerParty>
 
-    <cac:CatalogueLine> <!-- Jobb herifra i morgen -->
+    <cac:CatalogueLine>
         <cbc:ID>1</cbc:ID>
         <cbc:ActionCode>Update</cbc:ActionCode>
         <cbc:ContractSubdivision>Part 1</cbc:ContractSubdivision>
@@ -236,10 +236,10 @@
             </cac:ClassifiedTaxCategory>
 
 
-            <cac:AdditionalItemProperty> <!-- Er dette gjort riktig ? -->
+            <cac:AdditionalItemProperty>
                 <cbc:ID>1</cbc:ID>
                 <cbc:Name>Fatcontant</cbc:Name>
-                <cbc:Value>Red carton</cbc:Value>
+                <cbc:Value>Item contains 0,2% fat.</cbc:Value>
                 <cbc:ValueQuantity unitCode="C62">50</cbc:ValueQuantity>
                 <cbc:ValueQualifier>Red</cbc:ValueQualifier>
             </cac:AdditionalItemProperty>
