@@ -4,6 +4,7 @@
 
     <Element>
         <Term>ext:UBLExtension</Term>
+        <Name>Extension for delivery location coordinate</Name>
 
         <Element>
             <Term>cbc:ID</Term>
@@ -13,16 +14,17 @@
 
         <Element>
             <Term>cbc:Name</Term>
-            <Name>Extension name</Name>
+            <Name>Extension name, Delivery location</Name>
             <Value type="FIXED">Delivery location</Value>
         </Element>
 
         <Element>
             <Term>ext:ExtensionContent</Term>
+            <Name>Delivery location coordinate information</Name>
 
             <Element>
                 <Term>cac:DeliveryLocation</Term>
-                <Description>A container for delivery location</Description>
+                <Description>A container for delivery location coordinate</Description>
 
                 <Element cardinality="0..1">
                     <Term>cbc:Description</Term>
@@ -47,7 +49,7 @@
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Unit of measure</Name>
-                            <Description>The unit of measure indicating degrees (unit of angle) from UNECE Recommendation No. 20 (Code= 'DD')</Description>
+                            <Description>The unit of measure indicating degrees (unit of angle) from UNECE Recommendation No. 20 (Code must be 'DD')</Description>
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="FIXED">DD</Value>
@@ -65,7 +67,7 @@
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Unit of measure</Name>
-                            <Description>The unit of measure indicating minutes (unit of angle) from UNECE Recommendation No. 20 (Code= 'D61')</Description>
+                            <Description>The unit of measure indicating minutes (unit of angle) from UNECE Recommendation No. 20 (Code must be 'D61')</Description>
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="FIXED">D61</Value>
@@ -92,7 +94,7 @@
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Unit of measure</Name>
-                            <Description>The unit of measure indicating degrees (unit of angle) from UNECE Recommendation No. 20 (Code= 'DD')</Description>
+                            <Description>The unit of measure indicating degrees (unit of angle) from UNECE Recommendation No. 20 (Code must be 'DD')</Description>
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="FIXED">DD</Value>
@@ -109,7 +111,7 @@
                         <Attribute>
                             <Term>unitCode</Term>
                             <Name>Unit of measure</Name>
-                            <Description>The unit of measure indicating minutes (unit of angle) from UNECE Recommendation No. 20 (Code= 'D61')</Description>
+                            <Description>The unit of measure indicating minutes (unit of angle) from UNECE Recommendation No. 20 (Code must be 'D61')</Description>
                             <DataType>Code</DataType>
                             <Reference type="CODE_LIST">UNECERec20</Reference>
                             <Value type="FIXED">D61</Value>

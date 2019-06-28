@@ -3,7 +3,8 @@
 <ubl:Catalogue
         xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+        xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
 
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:pac:1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:03:1.0</cbc:ProfileID>
@@ -352,6 +353,27 @@
     <!-- end::CatalogueLine-ConsumerUnit[] -->
 
     <cac:CatalogueLine>
+        <!-- tag::extension[] -->
+        <ext:UBLExtensions>
+            <ext:UBLExtension>
+                <cbc:ID>urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</cbc:ID>
+                <cbc:Name>Delivery location</cbc:Name>
+                <ext:ExtensionContent>
+                    <cac:DeliveryLocation>
+                        <cbc:Description>Maximum 1 hour drive from stated location coordinates</cbc:Description>
+                        <cac:LocationCoordinate>
+                            <cbc:LatitudeDegreesMeasure unitCode="DD">40</cbc:LatitudeDegreesMeasure>
+                            <cbc:LatitudeMinutesMeasure unitCode="D61">26.767</cbc:LatitudeMinutesMeasure>
+                            <cbc:LatitudeDirectionCode>N</cbc:LatitudeDirectionCode>
+                            <cbc:LongitudeDegreesMeasure unitCode="DD">79</cbc:LongitudeDegreesMeasure>
+                            <cbc:LongitudeMinutesMeasure unitCode="D61">58.933</cbc:LongitudeMinutesMeasure>
+                            <cbc:LongitudeDirectionCode>W</cbc:LongitudeDirectionCode>
+                        </cac:LocationCoordinate>
+                    </cac:DeliveryLocation>
+                </ext:ExtensionContent>
+            </ext:UBLExtension>
+        </ext:UBLExtensions>       
+        <!-- end::extension[] -->
         <cbc:ID>3</cbc:ID>
         <cbc:OrderableIndicator>false</cbc:OrderableIndicator>
         <!-- tag::Keyword[] -->
@@ -366,6 +388,8 @@
         <!-- end::Keyword[] -->
 
     </cac:CatalogueLine>
+    
+
 
 
 </ubl:Catalogue>

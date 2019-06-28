@@ -1,0 +1,11 @@
+= Delivery location coordinate
+
+In the pre-award catalogue request, the contracting authority can specify the location coordinate for delivery, as well as a description/comment on the location coordinate. This is done by using the UBL extension element.
+
+.Example of a particular location stated, and a comment that 1 hour drive from the given location is allowed
+[source, xml, indent=0]
+----
+include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=extension]
+----
+
+In the corresponding pre-award catalogue the economic operator can provide coordinates for the exact delivery, as well as a description/comment.
