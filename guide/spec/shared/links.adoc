@@ -4,7 +4,7 @@
 :link-codelist: link:/alt440/pacr/codelist/[Code list section]
 :codelist-ICD: link:/alt440/pacr/codelist/ICD/[ICD list]
 :eaid: link:/alt440/pacr/codelist/eaid/[Code list for electronic address]
-:relevance: link:/alt440/pacr/codelist/relevance/[Property relevance codes]
+:relevance: link:/ehf-pre/g2/pacr/codelist/relevance/[Property relevance codes]
 :criteria: link:/alt440/pacr/codelist/AbsoluteAwardCriteria/[Absolute or award criteria codes]
 
 

@@ -23,7 +23,7 @@ include::../../{snippet-dir}/CatalogueRequest-guide.xml[tags=Request-of-specific
 ----
 <1> the name of the requested property as free text
 <2> Minimum requested item net quantity
-<3> Maximim requested item net quantity
+<3> Maximum requested item net quantity
 <4> The relevance code, according to {relevance}
 
 .Example to request a specific element
