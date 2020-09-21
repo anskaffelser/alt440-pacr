@@ -1,0 +1,16 @@
+site_draft:
+  id: ehf-preaward-g2-pacr-1.0-draft
+  type: site
+  path: target/site
+  properties:
+    domain: anskaffelser.dev
+    path: preaward/g2/spec/draft/pacr-1.0
+
+site_current:
+  mode: release
+  id: ehf-preaward-g2-pacr-1.0-current
+  type: site
+  path: target/site
+  properties:
+    domain: anskaffelser.dev
+    path: preaward/g2/spec/current/pacr-1.0
