@@ -6,6 +6,7 @@
     <testfolder>unit-PAC</testfolder>
     <testfolder>unit-PACR</testfolder>
 
+    <package>EHF Pre-Award Catalogue Request 1.0</package>
     <configuration>
         <identifier>ehf-pacr-1.0</identifier>
         <title>EHF Pre-Award Catalogue Request 1.0 </title>
@@ -15,6 +16,7 @@
         <file path="sch/EHF-PACR.sch" />
     </configuration>
 
+    <package>EHF Pre-Award Catalogue 1.0</package>
     <configuration>
         <identifier>ehf-pac-1.0</identifier>
         <title>EHF Pre-Award Catalogue 1.0</title>

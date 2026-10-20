@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
 PROJECT=$(dirname $(readlink -f "$0"))
 
 if [ -e $PROJECT/target ]; then
@@ -10,7 +12,8 @@ fi
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target:/target difi/vefa-structure:0.7
 
 # Validator
-docker run --rm -i -v $PROJECT:/src difi/vefa-validator build -x -t -n no.difi.ehf.preaward.g2.pacr -a rules -target target/validator /src
+docker pull ghcr.io/anskaffelser/validator:latest || exit 1
+docker run --rm -i -v $PROJECT:/src ghcr.io/anskaffelser/validator:latest build -x -t -n no.difi.ehf.preaward.g2.pacr -a rules -target target/validator /src
 
 # Schematron
 for sch in $PROJECT/rules/sch/*.sch; do
